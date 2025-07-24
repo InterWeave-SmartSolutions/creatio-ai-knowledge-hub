@@ -1,0 +1,99 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Chrome (Creatio Client)",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}",
+      "urlFilter": "*/0/ViewModule.aspx*",
+      "sourceMaps": true,
+      "trace": true
+    },
+    {
+      "name": "Launch Chrome (Creatio Client)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost/your-creatio-instance",
+      "webRoot": "${workspaceFolder}",
+      "userDataDir": "${workspaceFolder}/.chrome-debug",
+      "sourceMaps": true,
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "--disable-web-security",
+        "--disable-features=VizDisplayCompositor"
+      ]
+    },
+    {
+      "name": "Debug Node.js Script",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "Debug Jest Tests",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": [
+        "--runInBand",
+        "--no-cache",
+        "--no-coverage",
+        "${relativeFile}"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    },
+    {
+      "name": "Debug Current Test",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": [
+        "--runInBand",
+        "--no-cache",
+        "--no-coverage",
+        "${fileBasenameNoExtension}"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    },
+    {
+      "name": "Attach to .NET Process",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
+    },
+    {
+      "name": "Debug REST API Calls",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/debug-scripts/api-tester.js",
+      "console": "integratedTerminal",
+      "env": {
+        "CREATIO_URL": "http://localhost/your-creatio-instance",
+        "DEBUG": "true"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Creatio Full Stack",
+      "configurations": [
+        "Launch Chrome (Creatio Client)",
+        "Attach to .NET Process"
+      ]
+    }
+  ]
+}

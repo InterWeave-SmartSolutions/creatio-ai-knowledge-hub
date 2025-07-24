@@ -1,0 +1,42 @@
+{
+  "recommendations": [
+    // Essential Creatio extensions
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    
+    // JavaScript/TypeScript development
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-css",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    
+    // Git integration
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    
+    // Database tools (for Creatio DB work)
+    "ms-mssql.mssql",
+    "oracle.oracledevtools",
+    
+    // XML/Schema support (for Creatio schemas)
+    "redhat.vscode-xml",
+    "dotjoshjohnson.xml",
+    
+    // C# support (for server-side Creatio development)
+    "ms-dotnettools.csharp",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    
+    // REST client for API testing
+    "humao.rest-client",
+    
+    // Code formatting and linting
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    
+    // Debugging and development tools
+    "ms-vscode.vscode-js-debug",
+    "firefox-devtools.vscode-firefox-debug"
+  ]
+}
