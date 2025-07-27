@@ -149,3 +149,20 @@ web.config.user
 *.rar
 *.7z
 *.tar.gz
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Large data directories
+ai_optimization/
+videos/
+creatio-academy-archive/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+knowledge_hub.db
