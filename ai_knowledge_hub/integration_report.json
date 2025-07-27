@@ -1,0 +1,49 @@
+{
+  "integration_summary": {
+    "completed_at": "2025-07-24T14:23:46.146704",
+    "videos_processed": 13,
+    "pdfs_processed": 14,
+    "total_commands": 1,
+    "command_categories": 1,
+    "database_path": "ai_knowledge_hub/knowledge_hub.db",
+    "search_index_path": "ai_knowledge_hub/search_index",
+    "command_reference_path": "ai_knowledge_hub/command_reference"
+  },
+  "video_processing": {
+    "total_videos": 13,
+    "processed_successfully": 13,
+    "topics_identified": 7,
+    "total_commands_from_videos": 0,
+    "complexity_distribution": {
+      "beginner": 3,
+      "intermediate": 4,
+      "advanced": 6
+    }
+  },
+  "pdf_processing": {
+    "total_pdfs": 14,
+    "total_pages": 938,
+    "topics_identified": 7,
+    "total_commands_from_pdfs": 2,
+    "average_sections_per_pdf": 86.0
+  },
+  "search_capabilities": {
+    "full_text_search": true,
+    "topic_based_search": true,
+    "command_lookup": true,
+    "code_example_search": true,
+    "cross_content_search": true
+  },
+  "mcp_server": {
+    "status": "configured",
+    "endpoints": [
+      "/api/v1/search",
+      "/api/v1/commands",
+      "/api/v1/videos",
+      "/api/v1/pdfs",
+      "/api/v1/code-examples"
+    ],
+    "database_integration": true,
+    "ai_assistance_ready": true
+  }
+}

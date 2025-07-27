@@ -1,0 +1,27 @@
+{
+  "server_info": {
+    "name": "Creatio AI Knowledge Hub",
+    "version": "1.0.0",
+    "description": "MCP server for AI assistance with Creatio development",
+    "capabilities": [
+      "content_search",
+      "command_lookup",
+      "code_examples",
+      "documentation_query",
+      "video_transcript_access",
+      "pdf_content_search"
+    ]
+  },
+  "database_config": {
+    "db_path": "ai_knowledge_hub/knowledge_hub.db",
+    "search_index_path": "ai_knowledge_hub/search_index",
+    "command_reference_path": "ai_knowledge_hub/command_reference"
+  },
+  "endpoints": {
+    "search": "/api/v1/search",
+    "commands": "/api/v1/commands",
+    "videos": "/api/v1/videos",
+    "pdfs": "/api/v1/pdfs",
+    "code_examples": "/api/v1/code-examples"
+  }
+}

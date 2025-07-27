@@ -1,0 +1,1066 @@
+{
+  "crm": [
+    {
+      "type": "video",
+      "id": "a0bdf5f21b6e",
+      "title": "Recording4",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "eac8aef2e9d8",
+      "title": "Recording11",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "00c0d9c85309",
+      "title": "Recording9",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "94f242f6b98e",
+      "title": "Recording7",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "0bac334fdee7",
+      "title": "Recording6",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "2cf1ccd103ed",
+      "title": "Recording5",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "a76b4482f3f4",
+      "title": "Recording8",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "db306ec3abcf",
+      "title": "Recording10",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "f9a1e3e989fc",
+      "title": "Recording3",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "323e73c9889e",
+      "title": "Recording12",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "1ef702163ad0",
+      "title": "Recording2",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "6dd3fd41c2f4",
+      "title": "Recording1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "4d8790aa1530",
+      "title": "Creatio Developer 6",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "0d8c1c94a6ac",
+      "title": "Creatio Developer 12",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "addfd1e21857",
+      "title": "Creatio Developer 11",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "38bec6aacd2b",
+      "title": "Creatiodeveloperbinder",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "04a8f92b7f0e",
+      "title": "Creatio Developer 9",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "27276e54b313",
+      "title": "Creatio Developer 4",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ca3cafc45c28",
+      "title": "Creatio Developer 3",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "dae911bfb043",
+      "title": "Creatio Developer 1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "bda5cfd0d222",
+      "title": "Creatio Developer 5",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "376c4c757de4",
+      "title": "Creatio Developer 10",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "2d2e22451694",
+      "title": "Creatio Developer 8",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "a0ef9f2541a8",
+      "title": "Creatio Developer 2",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "e8c5b73e93de",
+      "title": "Creatio Developer 7",
+      "relevance": 1.0
+    }
+  ],
+  "development": [
+    {
+      "type": "video",
+      "id": "a0bdf5f21b6e",
+      "title": "Recording4",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "eac8aef2e9d8",
+      "title": "Recording11",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "00c0d9c85309",
+      "title": "Recording9",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "94f242f6b98e",
+      "title": "Recording7",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "5ec4f4200f2e",
+      "title": "Recording13",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "0bac334fdee7",
+      "title": "Recording6",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "2cf1ccd103ed",
+      "title": "Recording5",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "a76b4482f3f4",
+      "title": "Recording8",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "db306ec3abcf",
+      "title": "Recording10",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "f9a1e3e989fc",
+      "title": "Recording3",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "323e73c9889e",
+      "title": "Recording12",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "1ef702163ad0",
+      "title": "Recording2",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "6dd3fd41c2f4",
+      "title": "Recording1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "4d8790aa1530",
+      "title": "Creatio Developer 6",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "0d8c1c94a6ac",
+      "title": "Creatio Developer 12",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "addfd1e21857",
+      "title": "Creatio Developer 11",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "38bec6aacd2b",
+      "title": "Creatiodeveloperbinder",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "04a8f92b7f0e",
+      "title": "Creatio Developer 9",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "27276e54b313",
+      "title": "Creatio Developer 4",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ca3cafc45c28",
+      "title": "Creatio Developer 3",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "dae911bfb043",
+      "title": "Creatio Developer 1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "bda5cfd0d222",
+      "title": "Creatio Developer 5",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "376c4c757de4",
+      "title": "Creatio Developer 10",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ccbbced9d46e",
+      "title": "Creatio Developer 13",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "2d2e22451694",
+      "title": "Creatio Developer 8",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "a0ef9f2541a8",
+      "title": "Creatio Developer 2",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "e8c5b73e93de",
+      "title": "Creatio Developer 7",
+      "relevance": 1.0
+    }
+  ],
+  "configuration": [
+    {
+      "type": "video",
+      "id": "a0bdf5f21b6e",
+      "title": "Recording4",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "eac8aef2e9d8",
+      "title": "Recording11",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "00c0d9c85309",
+      "title": "Recording9",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "94f242f6b98e",
+      "title": "Recording7",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "5ec4f4200f2e",
+      "title": "Recording13",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "0bac334fdee7",
+      "title": "Recording6",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "2cf1ccd103ed",
+      "title": "Recording5",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "a76b4482f3f4",
+      "title": "Recording8",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "db306ec3abcf",
+      "title": "Recording10",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "f9a1e3e989fc",
+      "title": "Recording3",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "323e73c9889e",
+      "title": "Recording12",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "1ef702163ad0",
+      "title": "Recording2",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "6dd3fd41c2f4",
+      "title": "Recording1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "4d8790aa1530",
+      "title": "Creatio Developer 6",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "0d8c1c94a6ac",
+      "title": "Creatio Developer 12",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "addfd1e21857",
+      "title": "Creatio Developer 11",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "38bec6aacd2b",
+      "title": "Creatiodeveloperbinder",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "04a8f92b7f0e",
+      "title": "Creatio Developer 9",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "27276e54b313",
+      "title": "Creatio Developer 4",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ca3cafc45c28",
+      "title": "Creatio Developer 3",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "dae911bfb043",
+      "title": "Creatio Developer 1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "bda5cfd0d222",
+      "title": "Creatio Developer 5",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "376c4c757de4",
+      "title": "Creatio Developer 10",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ccbbced9d46e",
+      "title": "Creatio Developer 13",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "2d2e22451694",
+      "title": "Creatio Developer 8",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "a0ef9f2541a8",
+      "title": "Creatio Developer 2",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "e8c5b73e93de",
+      "title": "Creatio Developer 7",
+      "relevance": 1.0
+    }
+  ],
+  "ui_ux": [
+    {
+      "type": "video",
+      "id": "a0bdf5f21b6e",
+      "title": "Recording4",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "eac8aef2e9d8",
+      "title": "Recording11",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "00c0d9c85309",
+      "title": "Recording9",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "94f242f6b98e",
+      "title": "Recording7",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "5ec4f4200f2e",
+      "title": "Recording13",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "0bac334fdee7",
+      "title": "Recording6",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "2cf1ccd103ed",
+      "title": "Recording5",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "a76b4482f3f4",
+      "title": "Recording8",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "db306ec3abcf",
+      "title": "Recording10",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "f9a1e3e989fc",
+      "title": "Recording3",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "323e73c9889e",
+      "title": "Recording12",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "1ef702163ad0",
+      "title": "Recording2",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "6dd3fd41c2f4",
+      "title": "Recording1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "4d8790aa1530",
+      "title": "Creatio Developer 6",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "0d8c1c94a6ac",
+      "title": "Creatio Developer 12",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "addfd1e21857",
+      "title": "Creatio Developer 11",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "38bec6aacd2b",
+      "title": "Creatiodeveloperbinder",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "04a8f92b7f0e",
+      "title": "Creatio Developer 9",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "27276e54b313",
+      "title": "Creatio Developer 4",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ca3cafc45c28",
+      "title": "Creatio Developer 3",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "dae911bfb043",
+      "title": "Creatio Developer 1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "bda5cfd0d222",
+      "title": "Creatio Developer 5",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "376c4c757de4",
+      "title": "Creatio Developer 10",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ccbbced9d46e",
+      "title": "Creatio Developer 13",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "2d2e22451694",
+      "title": "Creatio Developer 8",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "a0ef9f2541a8",
+      "title": "Creatio Developer 2",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "e8c5b73e93de",
+      "title": "Creatio Developer 7",
+      "relevance": 1.0
+    }
+  ],
+  "database": [
+    {
+      "type": "video",
+      "id": "a0bdf5f21b6e",
+      "title": "Recording4",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "eac8aef2e9d8",
+      "title": "Recording11",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "00c0d9c85309",
+      "title": "Recording9",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "94f242f6b98e",
+      "title": "Recording7",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "5ec4f4200f2e",
+      "title": "Recording13",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "0bac334fdee7",
+      "title": "Recording6",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "2cf1ccd103ed",
+      "title": "Recording5",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "a76b4482f3f4",
+      "title": "Recording8",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "db306ec3abcf",
+      "title": "Recording10",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "f9a1e3e989fc",
+      "title": "Recording3",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "323e73c9889e",
+      "title": "Recording12",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "1ef702163ad0",
+      "title": "Recording2",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "6dd3fd41c2f4",
+      "title": "Recording1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "4d8790aa1530",
+      "title": "Creatio Developer 6",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "0d8c1c94a6ac",
+      "title": "Creatio Developer 12",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "addfd1e21857",
+      "title": "Creatio Developer 11",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "38bec6aacd2b",
+      "title": "Creatiodeveloperbinder",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "04a8f92b7f0e",
+      "title": "Creatio Developer 9",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "27276e54b313",
+      "title": "Creatio Developer 4",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ca3cafc45c28",
+      "title": "Creatio Developer 3",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "dae911bfb043",
+      "title": "Creatio Developer 1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "bda5cfd0d222",
+      "title": "Creatio Developer 5",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "376c4c757de4",
+      "title": "Creatio Developer 10",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ccbbced9d46e",
+      "title": "Creatio Developer 13",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "2d2e22451694",
+      "title": "Creatio Developer 8",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "a0ef9f2541a8",
+      "title": "Creatio Developer 2",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "e8c5b73e93de",
+      "title": "Creatio Developer 7",
+      "relevance": 1.0
+    }
+  ],
+  "bpm": [
+    {
+      "type": "video",
+      "id": "eac8aef2e9d8",
+      "title": "Recording11",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "94f242f6b98e",
+      "title": "Recording7",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "5ec4f4200f2e",
+      "title": "Recording13",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "0bac334fdee7",
+      "title": "Recording6",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "2cf1ccd103ed",
+      "title": "Recording5",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "a76b4482f3f4",
+      "title": "Recording8",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "db306ec3abcf",
+      "title": "Recording10",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "f9a1e3e989fc",
+      "title": "Recording3",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "323e73c9889e",
+      "title": "Recording12",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "1ef702163ad0",
+      "title": "Recording2",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "6dd3fd41c2f4",
+      "title": "Recording1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "4d8790aa1530",
+      "title": "Creatio Developer 6",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "0d8c1c94a6ac",
+      "title": "Creatio Developer 12",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "addfd1e21857",
+      "title": "Creatio Developer 11",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "38bec6aacd2b",
+      "title": "Creatiodeveloperbinder",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ca3cafc45c28",
+      "title": "Creatio Developer 3",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "dae911bfb043",
+      "title": "Creatio Developer 1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "bda5cfd0d222",
+      "title": "Creatio Developer 5",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "376c4c757de4",
+      "title": "Creatio Developer 10",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ccbbced9d46e",
+      "title": "Creatio Developer 13",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "2d2e22451694",
+      "title": "Creatio Developer 8",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "a0ef9f2541a8",
+      "title": "Creatio Developer 2",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "e8c5b73e93de",
+      "title": "Creatio Developer 7",
+      "relevance": 1.0
+    }
+  ],
+  "integration": [
+    {
+      "type": "video",
+      "id": "94f242f6b98e",
+      "title": "Recording7",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "5ec4f4200f2e",
+      "title": "Recording13",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "2cf1ccd103ed",
+      "title": "Recording5",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "a76b4482f3f4",
+      "title": "Recording8",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "db306ec3abcf",
+      "title": "Recording10",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "f9a1e3e989fc",
+      "title": "Recording3",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "323e73c9889e",
+      "title": "Recording12",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "1ef702163ad0",
+      "title": "Recording2",
+      "relevance": 1.0
+    },
+    {
+      "type": "video",
+      "id": "6dd3fd41c2f4",
+      "title": "Recording1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "0d8c1c94a6ac",
+      "title": "Creatio Developer 12",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "38bec6aacd2b",
+      "title": "Creatiodeveloperbinder",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ca3cafc45c28",
+      "title": "Creatio Developer 3",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "dae911bfb043",
+      "title": "Creatio Developer 1",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "bda5cfd0d222",
+      "title": "Creatio Developer 5",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "376c4c757de4",
+      "title": "Creatio Developer 10",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "ccbbced9d46e",
+      "title": "Creatio Developer 13",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "2d2e22451694",
+      "title": "Creatio Developer 8",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "a0ef9f2541a8",
+      "title": "Creatio Developer 2",
+      "relevance": 1.0
+    },
+    {
+      "type": "pdf",
+      "id": "e8c5b73e93de",
+      "title": "Creatio Developer 7",
+      "relevance": 1.0
+    }
+  ]
+}
