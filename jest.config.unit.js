@@ -1,0 +1,31 @@
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  displayName: 'Unit Tests',
+  testMatch: ['**/tests/unit/**/*.test.(ts|js)', '**/src/**/*.unit.test.(ts|js)'],
+  collectCoverageFrom: [
+    'src/**/*.{ts,js}',
+    '!src/**/*.d.ts',
+    '!src/**/*.spec.{ts,js}',
+    '!src/**/*.test.{ts,js}',
+    '!src/**/index.{ts,js}',
+  ],
+  coverageDirectory: 'coverage/unit',
+  coverageReporters: ['text', 'lcov', 'html', 'json-summary'],
+  setupFilesAfterEnv: ['<rootDir>/tests/setup/unit.setup.ts'],
+  clearMocks: true,
+  resetMocks: true,
+  restoreMocks: true,
+  testTimeout: 10000,
+  verbose: true,
+  errorOnDeprecated: true,
+  collectCoverage: true,
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80,
+    },
+  },
+};

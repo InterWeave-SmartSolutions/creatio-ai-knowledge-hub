@@ -1,0 +1,626 @@
+{
+  "version": "1.0.0",
+  "generated": "2025-01-27T10:30:00Z",
+  "description": "Comprehensive command reference for Creatio AI Knowledge Hub",
+  "categories": {
+    "system": {
+      "name": "System Management",
+      "description": "Core system operations and management commands",
+      "commands": [
+        {
+          "name": "Start MCP Server",
+          "command": "python ai_knowledge_hub/enhanced_mcp_server.py",
+          "description": "Starts the Model Context Protocol server for AI agent integration",
+          "category": "system",
+          "usage": "python ai_knowledge_hub/enhanced_mcp_server.py [--host HOST] [--port PORT]",
+          "examples": [
+            "python ai_knowledge_hub/enhanced_mcp_server.py",
+            "python ai_knowledge_hub/enhanced_mcp_server.py --host 0.0.0.0 --port 8080"
+          ],
+          "options": [
+            {
+              "flag": "--host",
+              "description": "Server host address",
+              "default": "localhost",
+              "type": "string"
+            },
+            {
+              "flag": "--port",
+              "description": "Server port number",
+              "default": "8000",
+              "type": "integer"
+            },
+            {
+              "flag": "--debug",
+              "description": "Enable debug mode",
+              "default": false,
+              "type": "boolean"
+            }
+          ],
+          "related": ["system_status", "server_stop"],
+          "tags": ["server", "mcp", "startup"]
+        },
+        {
+          "name": "System Status",
+          "command": "./run_complete_pipeline.sh status",
+          "description": "Checks the current status of all system components",
+          "category": "system",
+          "usage": "./run_complete_pipeline.sh status [--verbose]",
+          "examples": [
+            "./run_complete_pipeline.sh status",
+            "./run_complete_pipeline.sh status --verbose"
+          ],
+          "options": [
+            {
+              "flag": "--verbose",
+              "description": "Show detailed status information",
+              "default": false,
+              "type": "boolean"
+            }
+          ],
+          "related": ["health_check", "diagnostics"],
+          "tags": ["status", "monitoring", "health"]
+        },
+        {
+          "name": "Health Check",
+          "command": "curl http://localhost:8000/health",
+          "description": "Performs a basic health check on the MCP server",
+          "category": "system",
+          "usage": "curl [OPTIONS] http://localhost:8000/health",
+          "examples": [
+            "curl http://localhost:8000/health",
+            "curl -s http://localhost:8000/health | jq",
+            "curl -H \"Authorization: Bearer API_KEY\" http://localhost:8000/health"
+          ],
+          "options": [
+            {
+              "flag": "-s",
+              "description": "Silent mode",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "-H",
+              "description": "Add header",
+              "type": "string"
+            }
+          ],
+          "related": ["system_status", "diagnostics"],
+          "tags": ["health", "monitoring", "api"]
+        }
+      ]
+    },
+    "processing": {
+      "name": "Content Processing",
+      "description": "Commands for processing and managing content",
+      "commands": [
+        {
+          "name": "Run Complete Pipeline",
+          "command": "./run_complete_pipeline.sh run",
+          "description": "Executes the complete content processing pipeline from start to finish",
+          "category": "processing",
+          "usage": "./run_complete_pipeline.sh run [OPTIONS]",
+          "examples": [
+            "./run_complete_pipeline.sh run",
+            "./run_complete_pipeline.sh run --force-refresh",
+            "./run_complete_pipeline.sh run --skip-videos"
+          ],
+          "options": [
+            {
+              "flag": "--force-refresh",
+              "description": "Force refresh of all content",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--skip-videos",
+              "description": "Skip video processing",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--parallel",
+              "description": "Number of parallel processes",
+              "default": 2,
+              "type": "integer"
+            }
+          ],
+          "related": ["check_dependencies", "clean_cache"],
+          "tags": ["pipeline", "processing", "content"]
+        },
+        {
+          "name": "Process Videos",
+          "command": "python scripts/utilities/transcription_processor.py",
+          "description": "Processes video content including transcription and analysis",
+          "category": "processing",
+          "usage": "python scripts/utilities/transcription_processor.py [OPTIONS]",
+          "examples": [
+            "python scripts/utilities/transcription_processor.py",
+            "python scripts/utilities/transcription_processor.py --model large-v2",
+            "python scripts/utilities/transcription_processor.py --input-dir videos/ --output-dir transcripts/"
+          ],
+          "options": [
+            {
+              "flag": "--model",
+              "description": "Whisper model to use",
+              "default": "base",
+              "type": "string",
+              "choices": ["tiny", "base", "small", "medium", "large", "large-v2"]
+            },
+            {
+              "flag": "--input-dir",
+              "description": "Input directory for videos",
+              "default": "videos/",
+              "type": "string"
+            },
+            {
+              "flag": "--output-dir",
+              "description": "Output directory for transcripts",
+              "default": "transcripts/",
+              "type": "string"
+            },
+            {
+              "flag": "--batch-size",
+              "description": "Number of videos to process in parallel",
+              "default": 1,
+              "type": "integer"
+            }
+          ],
+          "related": ["download_videos", "analyze_content"],
+          "tags": ["video", "transcription", "whisper"]
+        },
+        {
+          "name": "Download Videos",
+          "command": "./run_download.sh start",
+          "description": "Downloads video content from configured sources",
+          "category": "processing",
+          "usage": "./run_download.sh [ACTION] [OPTIONS]",
+          "examples": [
+            "./run_download.sh start",
+            "./run_download.sh resume",
+            "./run_download.sh status"
+          ],
+          "options": [
+            {
+              "flag": "start",
+              "description": "Start video download process",
+              "type": "action"
+            },
+            {
+              "flag": "resume",
+              "description": "Resume interrupted downloads",
+              "type": "action"
+            },
+            {
+              "flag": "status",
+              "description": "Check download status",
+              "type": "action"
+            },
+            {
+              "flag": "stop",
+              "description": "Stop download process",
+              "type": "action"
+            }
+          ],
+          "related": ["process_videos", "clean_cache"],
+          "tags": ["download", "video", "youtube"]
+        }
+      ]
+    },
+    "search": {
+      "name": "Search & Query",
+      "description": "Commands for searching and querying content",
+      "commands": [
+        {
+          "name": "Search Content",
+          "command": "curl \"http://localhost:8000/mcp/search?q=QUERY\"",
+          "description": "Searches for content using the MCP API",
+          "category": "search",
+          "usage": "curl \"http://localhost:8000/mcp/search?q=QUERY[&OPTIONS]\"",
+          "examples": [
+            "curl \"http://localhost:8000/mcp/search?q=Creatio%20installation\"",
+            "curl \"http://localhost:8000/mcp/search?q=workflow&type=video&limit=10\"",
+            "curl -H \"Authorization: Bearer API_KEY\" \"http://localhost:8000/mcp/search?q=configuration\""
+          ],
+          "options": [
+            {
+              "flag": "q",
+              "description": "Search query (required)",
+              "type": "string",
+              "required": true
+            },
+            {
+              "flag": "type",
+              "description": "Content type filter",
+              "type": "string",
+              "choices": ["all", "video", "documentation", "pdf"]
+            },
+            {
+              "flag": "limit",
+              "description": "Maximum number of results",
+              "default": 10,
+              "type": "integer"
+            },
+            {
+              "flag": "offset",
+              "description": "Result offset for pagination",
+              "default": 0,
+              "type": "integer"
+            }
+          ],
+          "related": ["get_content", "advanced_search"],
+          "tags": ["search", "api", "query"]
+        },
+        {
+          "name": "Advanced Search",
+          "command": "curl -X POST \"http://localhost:8000/mcp/search/advanced\"",
+          "description": "Performs advanced search with complex filtering",
+          "category": "search",
+          "usage": "curl -X POST \"http://localhost:8000/mcp/search/advanced\" -H \"Content-Type: application/json\" -d '{...}'",
+          "examples": [
+            "curl -X POST \"http://localhost:8000/mcp/search/advanced\" -H \"Content-Type: application/json\" -d '{\"query\":\"workflow\",\"filters\":{\"type\":[\"documentation\"]}}'",
+            "curl -X POST \"http://localhost:8000/mcp/search/advanced\" -H \"Content-Type: application/json\" -d '{\"query\":\"installation\",\"sort\":[{\"field\":\"date\",\"order\":\"desc\"}]}'"
+          ],
+          "options": [
+            {
+              "flag": "query",
+              "description": "Search query",
+              "type": "string",
+              "required": true
+            },
+            {
+              "flag": "filters",
+              "description": "Search filters object",
+              "type": "object"
+            },
+            {
+              "flag": "sort",
+              "description": "Sort configuration array",
+              "type": "array"
+            },
+            {
+              "flag": "facets",
+              "description": "Facets to include",
+              "type": "array"
+            }
+          ],
+          "related": ["search_content", "get_content"],
+          "tags": ["search", "advanced", "filters"]
+        },
+        {
+          "name": "Get Content",
+          "command": "curl \"http://localhost:8000/mcp/content/CONTENT_ID\"",
+          "description": "Retrieves detailed information for specific content",
+          "category": "search",
+          "usage": "curl \"http://localhost:8000/mcp/content/CONTENT_ID[?OPTIONS]\"",
+          "examples": [
+            "curl \"http://localhost:8000/mcp/content/lf-yWsJ4p0Q\"",
+            "curl \"http://localhost:8000/mcp/content/lf-yWsJ4p0Q?include_related=true\"",
+            "curl \"http://localhost:8000/mcp/content/lf-yWsJ4p0Q?format=markdown\""
+          ],
+          "options": [
+            {
+              "flag": "include_related",
+              "description": "Include related content",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "format",
+              "description": "Response format",
+              "default": "json",
+              "type": "string",
+              "choices": ["json", "text", "markdown"]
+            }
+          ],
+          "related": ["search_content", "batch_content"],
+          "tags": ["content", "details", "api"]
+        }
+      ]
+    },
+    "maintenance": {
+      "name": "Maintenance & Cleanup",
+      "description": "Commands for system maintenance and cleanup",
+      "commands": [
+        {
+          "name": "Clean Cache",
+          "command": "./run_complete_pipeline.sh clean",
+          "description": "Cleans temporary files and cached data",
+          "category": "maintenance",
+          "usage": "./run_complete_pipeline.sh clean [OPTIONS]",
+          "examples": [
+            "./run_complete_pipeline.sh clean",
+            "./run_complete_pipeline.sh clean --all",
+            "./run_complete_pipeline.sh clean --logs-only"
+          ],
+          "options": [
+            {
+              "flag": "--all",
+              "description": "Clean all cached data including processed content",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--logs-only",
+              "description": "Clean only log files",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--temp-only",
+              "description": "Clean only temporary files",
+              "default": false,
+              "type": "boolean"
+            }
+          ],
+          "related": ["check_dependencies", "system_reset"],
+          "tags": ["cleanup", "cache", "maintenance"]
+        },
+        {
+          "name": "Check Dependencies",
+          "command": "./run_complete_pipeline.sh check",
+          "description": "Verifies all system dependencies are installed and configured",
+          "category": "maintenance",
+          "usage": "./run_complete_pipeline.sh check [OPTIONS]",
+          "examples": [
+            "./run_complete_pipeline.sh check",
+            "./run_complete_pipeline.sh check --verbose",
+            "./run_complete_pipeline.sh check --fix-missing"
+          ],
+          "options": [
+            {
+              "flag": "--verbose",
+              "description": "Show detailed dependency information",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--fix-missing",
+              "description": "Attempt to install missing dependencies",
+              "default": false,
+              "type": "boolean"
+            }
+          ],
+          "related": ["system_status", "diagnostics"],
+          "tags": ["dependencies", "verification", "setup"]
+        },
+        {
+          "name": "System Diagnostics",
+          "command": "bash diagnose.sh",
+          "description": "Runs comprehensive system diagnostics",
+          "category": "maintenance",
+          "usage": "bash diagnose.sh [OPTIONS]",
+          "examples": [
+            "bash diagnose.sh",
+            "bash diagnose.sh --save-report",
+            "bash diagnose.sh --check-all"
+          ],
+          "options": [
+            {
+              "flag": "--save-report",
+              "description": "Save diagnostic report to file",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--check-all",
+              "description": "Run all diagnostic checks",
+              "default": false,
+              "type": "boolean"
+            }
+          ],
+          "related": ["health_check", "system_status"],
+          "tags": ["diagnostics", "troubleshooting", "debug"]
+        },
+        {
+          "name": "System Reset",
+          "command": "bash reset_system.sh",
+          "description": "Completely resets the system to initial state",
+          "category": "maintenance",
+          "usage": "bash reset_system.sh [OPTIONS]",
+          "examples": [
+            "bash reset_system.sh",
+            "bash reset_system.sh --backup-data",
+            "bash reset_system.sh --keep-config"
+          ],
+          "options": [
+            {
+              "flag": "--backup-data",
+              "description": "Backup existing data before reset",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--keep-config",
+              "description": "Preserve configuration files",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--force",
+              "description": "Force reset without confirmation",
+              "default": false,
+              "type": "boolean"
+            }
+          ],
+          "related": ["clean_cache", "check_dependencies"],
+          "tags": ["reset", "cleanup", "initialization"]
+        }
+      ]
+    },
+    "development": {
+      "name": "Development & Testing",
+      "description": "Commands for development and testing purposes",
+      "commands": [
+        {
+          "name": "Run Tests",
+          "command": "python -m pytest tests/",
+          "description": "Runs the test suite",
+          "category": "development",
+          "usage": "python -m pytest [OPTIONS] [TESTS]",
+          "examples": [
+            "python -m pytest tests/",
+            "python -m pytest tests/test_search.py -v",
+            "python -m pytest tests/ --coverage"
+          ],
+          "options": [
+            {
+              "flag": "-v",
+              "description": "Verbose output",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--coverage",
+              "description": "Generate coverage report",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "-k",
+              "description": "Run tests matching pattern",
+              "type": "string"
+            }
+          ],
+          "related": ["lint_code", "format_code"],
+          "tags": ["testing", "pytest", "development"]
+        },
+        {
+          "name": "Format Code",
+          "command": "black .",
+          "description": "Formats Python code using Black formatter",
+          "category": "development",
+          "usage": "black [OPTIONS] [FILES]",
+          "examples": [
+            "black .",
+            "black ai_knowledge_hub/",
+            "black --check ."
+          ],
+          "options": [
+            {
+              "flag": "--check",
+              "description": "Check if formatting is needed",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--diff",
+              "description": "Show diff of changes",
+              "default": false,
+              "type": "boolean"
+            }
+          ],
+          "related": ["lint_code", "run_tests"],
+          "tags": ["formatting", "black", "code-quality"]
+        },
+        {
+          "name": "Lint Code",
+          "command": "flake8 .",
+          "description": "Lints Python code for style and errors",
+          "category": "development",
+          "usage": "flake8 [OPTIONS] [FILES]",
+          "examples": [
+            "flake8 .",
+            "flake8 ai_knowledge_hub/",
+            "flake8 --statistics ."
+          ],
+          "options": [
+            {
+              "flag": "--statistics",
+              "description": "Show error statistics",
+              "default": false,
+              "type": "boolean"
+            },
+            {
+              "flag": "--max-line-length",
+              "description": "Maximum line length",
+              "default": 88,
+              "type": "integer"
+            }
+          ],
+          "related": ["format_code", "run_tests"],
+          "tags": ["linting", "flake8", "code-quality"]
+        }
+      ]
+    }
+  },
+  "global_options": {
+    "--help": {
+      "description": "Show help information",
+      "applies_to": "all"
+    },
+    "--version": {
+      "description": "Show version information",
+      "applies_to": "python_scripts"
+    },
+    "--verbose": {
+      "description": "Enable verbose output",
+      "applies_to": "most"
+    },
+    "--quiet": {
+      "description": "Suppress output",
+      "applies_to": "most"
+    }
+  },
+  "aliases": {
+    "start": "python ai_knowledge_hub/enhanced_mcp_server.py",
+    "status": "./run_complete_pipeline.sh status",
+    "process": "./run_complete_pipeline.sh run",
+    "clean": "./run_complete_pipeline.sh clean",
+    "check": "./run_complete_pipeline.sh check",
+    "search": "curl \"http://localhost:8000/mcp/search?q=",
+    "health": "curl http://localhost:8000/health"
+  },
+  "quick_reference": {
+    "most_used": [
+      "python ai_knowledge_hub/enhanced_mcp_server.py",
+      "./run_complete_pipeline.sh run",
+      "./run_complete_pipeline.sh status",
+      "curl \"http://localhost:8000/mcp/search?q=QUERY\"",
+      "./run_complete_pipeline.sh clean"
+    ],
+    "troubleshooting": [
+      "bash diagnose.sh",
+      "curl http://localhost:8000/health",
+      "./run_complete_pipeline.sh check",
+      "bash reset_system.sh"
+    ],
+    "development": [
+      "python -m pytest tests/",
+      "black .",
+      "flake8 ."
+    ]
+  },
+  "environment_variables": {
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key for enhanced processing",
+      "required": false,
+      "default": null
+    },
+    "MCP_HOST": {
+      "description": "MCP server host address",
+      "required": false,
+      "default": "localhost"
+    },
+    "MCP_PORT": {
+      "description": "MCP server port number",
+      "required": false,
+      "default": "8000"
+    },
+    "WHISPER_MODEL": {
+      "description": "Whisper model for transcription",
+      "required": false,
+      "default": "base"
+    },
+    "MAX_CONCURRENT_PROCESSES": {
+      "description": "Maximum concurrent processing tasks",
+      "required": false,
+      "default": "2"
+    },
+    "DEBUG": {
+      "description": "Enable debug mode",
+      "required": false,
+      "default": "false"
+    }
+  }
+}

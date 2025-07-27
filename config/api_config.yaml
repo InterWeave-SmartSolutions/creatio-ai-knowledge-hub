@@ -1,0 +1,193 @@
+# MCP Server API Configuration
+
+# Server Settings
+server:
+  host: "0.0.0.0"
+  port: 8000
+  title: "Creatio Academy MCP Server"
+  description: "Model Context Protocol server for AI agent access to Creatio Academy content"
+  version: "1.0.0"
+  debug: false
+
+# Security Settings
+security:
+  secret_key: "your-secret-key-here-change-in-production"
+  algorithm: "HS256"
+  access_token_expire_minutes: 30
+  
+# Authentication
+auth:
+  # Simple auth for demo - replace with proper user management
+  demo_users:
+    admin: "password"  # Change this!
+    demo: "demo"
+
+# Rate Limiting
+rate_limits:
+  default: "100/minute"
+  search: "30/minute"
+  transcript: "60/minute" 
+  code_examples: "20/minute"
+  documentation: "40/minute"
+  auth: "5/minute"
+  websocket: "10/minute"
+
+# CORS Settings
+cors:
+  allow_origins: ["*"]  # Configure for production
+  allow_credentials: true
+  allow_methods: ["*"]
+  allow_headers: ["*"]
+
+# Data Paths
+data:
+  transcriptions_path: "transcriptions"
+  documentation_path: "creatio-academy-archive/pages/raw"
+  
+# Search Settings
+search:
+  max_results_per_type: 50
+  snippet_context_length: 200
+  max_files_to_process: 100
+
+# Code Extraction
+code_extraction:
+  max_files_to_process: 50
+  min_code_length: 20
+  languages:
+    - "JavaScript"
+    - "Python" 
+    - "C#"
+    - "SQL"
+    - "XML"
+    - "JSON"
+
+# WebSocket Settings
+websocket:
+  stream_delay: 0.1  # seconds between streamed results
+  max_connections: 100
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "mcp_server.log"
+
+# MCP Server and API Configuration
+server:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  log_level: "INFO"
+  reload: false
+
+# MCP (Model Context Protocol) Configuration
+mcp:
+  enabled: true
+  version: "2024-11-05"
+  server_name: "creatio-academy-mcp"
+  server_version: "1.0.0"
+  capabilities:
+    - "search"
+    - "retrieve"
+    - "analyze"
+    - "stream"
+  tools:
+    - name: "search_content"
+      description: "Search through video transcripts and metadata"
+    - name: "get_transcript"
+      description: "Retrieve full transcript for a video"
+    - name: "extract_code"
+      description: "Extract code examples from content"
+    - name: "get_video_info"
+      description: "Get metadata and summary for a video"
+
+# Authentication Settings
+auth:
+  enabled: true
+  secret_key: "${SECRET_KEY:-your-secret-key-here}"
+  algorithm: "HS256"
+  access_token_expire_minutes: 30
+  api_key_header: "X-API-Key"
+  
+# Rate Limiting
+rate_limiting:
+  enabled: true
+  default_rate: "100/minute"
+  authenticated_rate: "500/minute"
+  burst_limit: 50
+  storage: "memory"  # or "redis"
+
+# Database Configuration
+database:
+  type: "sqlite"
+  url: "sqlite:///./data/academy.db"
+  echo: false
+  pool_size: 20
+  max_overflow: 0
+
+# Search Engine Configuration
+search:
+  engine: "embedded"  # or "elasticsearch"
+  elasticsearch:
+    host: "localhost"
+    port: 9200
+    index_name: "creatio_academy"
+  embedding:
+    model: "all-MiniLM-L6-v2"
+    dimensions: 384
+  similarity_threshold: 0.7
+
+# Content Directories
+content:
+  transcriptions_dir: "./transcriptions"
+  cache_dir: "./cache"
+  uploads_dir: "./uploads"
+  static_dir: "./static"
+
+# WebSocket Configuration
+websocket:
+  enabled: true
+  max_connections: 100
+  heartbeat_interval: 30
+  message_queue_size: 1000
+
+# API Documentation
+docs:
+  title: "Creatio Academy API"
+  description: "REST API for accessing Creatio Academy video content, transcripts, and metadata"
+  version: "1.0.0"
+  contact:
+    name: "API Support"
+    email: "support@example.com"
+  license:
+    name: "MIT"
+    url: "https://opensource.org/licenses/MIT"
+
+# CORS Settings
+cors:
+  allow_origins: ["*"]
+  allow_credentials: true
+  allow_methods: ["*"]
+  allow_headers: ["*"]
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "./logs/api.log"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+# Content Processing
+processing:
+  chunk_size: 1000
+  overlap: 200
+  max_content_length: 1000000
+  supported_formats: [".txt", ".json", ".yaml", ".srt"]
+
+# Cache Configuration
+cache:
+  ttl: 3600  # 1 hour
+  max_size: 1000
+  cleanup_interval: 300  # 5 minutes

@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+bin/
+obj/
+out/
+
+# Logs
+*.log
+Logs/
+
+# IDE files
+.vscode/
+.vs/
+*.suo
+*.user
+
+# Git
+.git/
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Minified files
+*.min.js
+*.min.css
+
+# Generated files
+*.generated.*
+
+# Creatio specific
+packages/
+App_Data/
