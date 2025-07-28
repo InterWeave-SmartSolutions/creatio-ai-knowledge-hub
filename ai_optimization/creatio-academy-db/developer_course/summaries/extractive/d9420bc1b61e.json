@@ -1,0 +1,36 @@
+{
+  "summary_id": "d9420bc1b61e",
+  "content_id": "c73636779bcc",
+  "summary_type": "extractive",
+  "summary_text": "So today we will focus on web services, making our own classes at creation server side and make it work at the web service, right C sharp code and practice with calling of web services from creation site and from third party applications. As an example, you can see when we run some query at our creation list page, you see some request and response, which usually includes a lot of properties, a lot of different values. So my plan is to create a web service that will work at server side and will be capable to calculate maximum price of reality objects, filtering them by type and offer type. And if your code does not change such session state variables, it means that iAS can afford running your methods simultaneously, utilizing multi-thread support, utilizing multi-core CPU, and generally making your service calls processed much faster. And in general, when you operate with database like this, you must go to the database physically to see corresponding table, corresponding columns, just to make sure that all your columns that you work with are present and so they represent what you expect from them. It's possible to use different operators like Groove by having, and sometimes you will notice that use of direct database approach gives you more flexibility and more powerful tools than using just entity support and using entity schema clearing methods. And this select class works a bit faster because it doesn't include entity data model, it doesn't create corresponding instances for working with entities and in general, it consumes less memory. So WCF and to our base service class makes all that is necessary to initialize user connection at the moment when our customer runs this HTTP post method. So you should understand that even if it looks like easy thing and line by line execution, physically it is a synchronous code, which means we send requests, then browser waits, then we get some response. It looks like status 200 means it was collected correctly, web service runs and returns our maximum price for apartments for sale.",
+  "key_points": [
+    "So today we will focus on web services, making our own classes at creation server side and make it work at the web service, right C sharp code and practice with calling of web services from creation site and from third party applications.",
+    "As an example, you can see when we run some query at our creation list page, you see some request and response, which usually includes a lot of properties, a lot of different values.",
+    "So my plan is to create a web service that will work at server side and will be capable to calculate maximum price of reality objects, filtering them by type and offer type.",
+    "And if your code does not change such session state variables, it means that iAS can afford running your methods simultaneously, utilizing multi-thread support, utilizing multi-core CPU, and generally making your service calls processed much faster.",
+    "And in general, when you operate with database like this, you must go to the database physically to see corresponding table, corresponding columns, just to make sure that all your columns that you work with are present and so they represent what you expect from them."
+  ],
+  "keywords": [
+    "service",
+    "data",
+    "web",
+    "code",
+    "let",
+    "use",
+    "need",
+    "okay",
+    "method",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 349,
+  "original_length": 14700,
+  "compression_ratio": 0.023741496598639455,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:53:08.448665",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1219,
+    "method": "tfidf_position_ranking"
+  }
+}

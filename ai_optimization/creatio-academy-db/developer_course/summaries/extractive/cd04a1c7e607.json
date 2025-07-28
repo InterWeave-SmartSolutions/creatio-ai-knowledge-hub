@@ -1,0 +1,38 @@
+{
+  "summary_id": "cd04a1c7e607",
+  "content_id": "606ea808918e",
+  "summary_type": "extractive",
+  "summary_text": "In case if your script task finishes with return true, it means that process engine is ready to \nexecute next step immediately and no errors detected. But if you want to intentionally stop your process at some step in order to investigate status \nparameters, variables and so on, you can additional temporary items into your process that will display some data\n\n--- Page 7 ---\n\nusing any kind of show message, any kind of messaging like pre configured page or automatic auto generated page. I will user actions and \nthe most recommended option, I think the most popular, the most let's say useful is now pre configured page item. # Speaker 1\n\nSo I will use something like average price output page and we can also use the same title just to make it good \nlooking at our configuration section. And when this \nprocess item start, according to this mapping, SQL text will load data from SQL text parameter and average price \nUSD will load data from corresponding average price process parameter. # Speaker 1\n\nUser can easily go back to the process by looking at notification panel business process tasks show corresponding \npage, save it and that's how the page will be fixed. # Speaker 1\n\nIf you run your process with no background option, it means that from user point of view, insert or update will take \nsome time plus time for running of your process because it will Be started at the same scope at the same thread. It's if you set run following elements in \nthe background physically system performs scheduling of your process according to insert event into one time \nexecution with the help of background process scheduler and it will finally start in a separate thread. Okay, parent reality, we can take it from start signal so we can take it from process \nparameters switching to process elements reality added and then double click on unique identifier. So for any modern package \nwhere this option is turned on in order to make fast compilation, your event handling with embedded process will not \nwork.",
+  "key_points": [
+    "In case if your script task finishes with return true, it means that process engine is ready to \nexecute next step immediately and no errors detected.",
+    "But if you want to intentionally stop your process at some step in order to investigate status \nparameters, variables and so on, you can additional temporary items into your process that will display some data\n\n--- Page 7 ---\n\nusing any kind of show message, any kind of messaging like pre configured page or automatic auto generated page.",
+    "I will user actions and \nthe most recommended option, I think the most popular, the most let's say useful is now pre configured page item.",
+    "# Speaker 1\n\nSo I will use something like average price output page and we can also use the same title just to make it good \nlooking at our configuration section.",
+    "And when this \nprocess item start, according to this mapping, SQL text will load data from SQL text parameter and average price \nUSD will load data from corresponding average price process parameter."
+  ],
+  "keywords": [
+    "process",
+    "speaker",
+    "page",
+    "data",
+    "let",
+    "okay",
+    "code",
+    "use",
+    "user",
+    "make"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 349,
+  "original_length": 14870,
+  "compression_ratio": 0.023470073974445192,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:52:15.268076",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1127,
+    "method": "tfidf_position_ranking"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "summary_id": "405ef4ff4465",
+  "content_id": "7c589e42742e",
+  "summary_type": "abstractive",
+  "summary_text": "If you experience some problems with your app and if you start to get error messages about some files are not cannot be written or you have some file system access issues, especially you can face it during calculation, you can  create a separate setting. You can find your app folder Terrasoft web folder and add special role IIs underscore I users. This will grant unlimited file systemaccess to create your application.",
+  "key_points": [
+    "If you experience some problems with your app and if you start to get error messages about some files are not cannot be written or you have some file system access issues, especially you can face it during calculation, you can  create a separate setting.",
+    "You can find your app folder Terrasoft web folder and add special role IIs underscore I users.",
+    "This will grant unlimited file systemaccess to create your application."
+  ],
+  "keywords": [
+    "application",
+    "created",
+    "users",
+    "creation",
+    "data",
+    "database",
+    "let",
+    "objects",
+    "speaker",
+    "folder"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 72,
+  "original_length": 646,
+  "compression_ratio": 0.11145510835913312,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:54:03.506180",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

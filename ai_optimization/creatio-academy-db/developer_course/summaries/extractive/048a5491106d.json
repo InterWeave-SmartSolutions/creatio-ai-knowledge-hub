@@ -1,0 +1,38 @@
+{
+  "summary_id": "048a5491106d",
+  "content_id": "797e8d613a2f",
+  "summary_type": "extractive",
+  "summary_text": "So today we will focus on the web services, making our own \nclasses at creation server side and make it work at the web service, write C Sharp code and practice with calling of \nweb services from Creature client side and from third party applications. If your data type of \narguments and results if display the type is simple and standard like string, decimal, integer, guid or boolean or \nsomething like this, which is very easy for creation, to decode, to parse, then you need no additional settings and the \nsystem will be capable to run such a service and you will be able to transfer such relatively simple parameters as \narguments or get result data. # Speaker 1\n\nVisa data service web service is a good example of a web service which is designed to get some arguments and\n\n--- Page 4 ---\n\nreturn some results using complex data type. This class is \ncalled request options and you can see that in case if you need to transfer complex data arguments, you must create \nsuch a data type such class for your data transfer and you must decorate it with data contract C sharp attribute for a \nclass and data member C sharp attribute for all fields or properties that you plan to serialize that you plan actually to \ntransport. And if your code does not change such session state variables, it means that IIS can afford running your \nmethods simultaneously utilizing multi thread support, utilizing multi core CPU and generally making your web \nservice calls processed much faster. # Speaker 1\n\nSo now I'm searching through C files which include service contract attribute and I will find approximately 200 web \nservices created out of the box in creatio based studio product. --- Page 7 ---\n\n# Speaker 1\n\nOne of them is very easy get example so this is just an example of a method which will return us okay string and if it, \nif we get it means that our web service is present Normally compiled and fully operational, this method get max \nprice by type id. So \nwe use only standard data types, which means we will have no problems with serializing and deserializing and we do \nnot need any additional data contract class in case if you have more complicated scenario, of course it makes sense \nto use data contract and so you may pass much more parameters properties and you can easily extend such \nstructures. It was couple of days before and we used this code and \nwe used entity schema query class to make data selection and then we processed it with for each statement and we \nused entity data model here because as a result we get collection of entity class instances where we have special \ncolumns with data values and we can get such values from each data row. # Speaker 1\n\nWe get this user connection as a property and this property is ready for use when at the moment when our method \nis called so WCF and our base service class makes all that is necessary to initialize user connection at the moment \nwhen our customer runs this HTTP post method.",
+  "key_points": [
+    "So today we will focus on the web services, making our own \nclasses at creation server side and make it work at the web service, write C Sharp code and practice with calling of \nweb services from Creature client side and from third party applications.",
+    "If your data type of \narguments and results if display the type is simple and standard like string, decimal, integer, guid or boolean or \nsomething like this, which is very easy for creation, to decode, to parse, then you need no additional settings and the \nsystem will be capable to run such a service and you will be able to transfer such relatively simple parameters as \narguments or get result data.",
+    "# Speaker 1\n\nVisa data service web service is a good example of a web service which is designed to get some arguments and\n\n--- Page 4 ---\n\nreturn some results using complex data type.",
+    "This class is \ncalled request options and you can see that in case if you need to transfer complex data arguments, you must create \nsuch a data type such class for your data transfer and you must decorate it with data contract C sharp attribute for a \nclass and data member C sharp attribute for all fields or properties that you plan to serialize that you plan actually to \ntransport.",
+    "And if your code does not change such session state variables, it means that IIS can afford running your \nmethods simultaneously utilizing multi thread support, utilizing multi core CPU and generally making your web \nservice calls processed much faster."
+  ],
+  "keywords": [
+    "service",
+    "web",
+    "speaker",
+    "data",
+    "let",
+    "code",
+    "web service",
+    "use",
+    "need",
+    "okay"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 532,
+  "original_length": 15057,
+  "compression_ratio": 0.03533240353324035,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:54:03.584352",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1014,
+    "method": "tfidf_position_ranking"
+  }
+}

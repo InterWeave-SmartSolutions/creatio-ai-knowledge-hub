@@ -1,0 +1,60 @@
+{
+  "summary_id": "5d88cb0c5e93",
+  "content_id": "c7028f12cf1e",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: record, entity, section, database, server",
+  "key_points": [
+    "record",
+    "entity",
+    "section",
+    "database",
+    "server"
+  ],
+  "keywords": [
+    "data",
+    "git",
+    "need",
+    "package",
+    "object",
+    "like",
+    "repository",
+    "file",
+    "changes",
+    "make"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 17806,
+  "compression_ratio": 0.0003931259126137257,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:51:19.649594",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "record",
+        "entity",
+        "section",
+        "database",
+        "server"
+      ],
+      "keywords": [
+        "data",
+        "git",
+        "need",
+        "package",
+        "object",
+        "like",
+        "repository",
+        "file",
+        "changes",
+        "make"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

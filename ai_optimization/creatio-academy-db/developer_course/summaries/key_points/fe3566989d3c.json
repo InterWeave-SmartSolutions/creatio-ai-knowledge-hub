@@ -1,0 +1,45 @@
+{
+  "summary_id": "fe3566989d3c",
+  "content_id": "797e8d613a2f",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: party applications.\nINSTRUCTION: getting some responses at client side.\nINSTRUCTION: party applications.\nCONCEPT: module\nCONCEPT: entity\nCONCEPT: json\nNOTE: you need \nto remember that web service is a special piece of functionality that was specially designed to be called from client \nside.\nNOTE: to have a corresponding data types.",
+  "key_points": [
+    "INSTRUCTION: party applications.",
+    "INSTRUCTION: getting some responses at client side.",
+    "INSTRUCTION: party applications.",
+    "CONCEPT: module",
+    "CONCEPT: entity",
+    "CONCEPT: json",
+    "NOTE: you need \nto remember that web service is a special piece of functionality that was specially designed to be called from client \nside.",
+    "NOTE: to have a corresponding data types."
+  ],
+  "keywords": [
+    "service",
+    "web",
+    "speaker",
+    "data",
+    "let",
+    "code",
+    "web service",
+    "use",
+    "need",
+    "okay"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 50,
+  "original_length": 15057,
+  "compression_ratio": 0.0033207146177857477,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:54:09.488935",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

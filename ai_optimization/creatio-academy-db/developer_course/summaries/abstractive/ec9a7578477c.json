@@ -1,0 +1,32 @@
+{
+  "summary_id": "ec9a7578477c",
+  "content_id": "3ae506ca01ce",
+  "summary_type": "abstractive",
+  "summary_text": "Vikrat: Today's day five of our development on creation platform guided learning and we continue to work with some parts of the user interface. So, I'd like to move forward to study some server site items and also I need to tell you about QuesaQI and they're possibly interested in migration from Ques aQI to the Freedom Y.",
+  "key_points": [
+    "Vikrat: Today's day five of our development on creation platform guided learning and we continue to work with some parts of the user interface.",
+    "So, I'd like to move forward to study some server site items and also I need to tell you about QuesaQI and they're possibly interested in migration from Ques aQI to the Freedom Y."
+  ],
+  "keywords": [
+    "account",
+    "details",
+    "connected",
+    "entity",
+    "main",
+    "record",
+    "addresses",
+    "connection",
+    "separate",
+    "use"
+  ],
+  "topics": [],
+  "summary_length": 58,
+  "original_length": 705,
+  "compression_ratio": 0.08226950354609928,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:57:29.813261",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

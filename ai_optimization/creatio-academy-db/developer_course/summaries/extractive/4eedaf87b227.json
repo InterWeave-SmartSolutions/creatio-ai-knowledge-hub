@@ -1,0 +1,36 @@
+{
+  "summary_id": "4eedaf87b227",
+  "content_id": "ce77ce58529f",
+  "summary_type": "extractive",
+  "summary_text": "Today we will do first steps of our development career, so we'll discuss how general development is recommended to be performed in C-sharp, what are the environments, how to set up our own environment, and also we'll probably switch our own environment in a special mode, to enable full available set of tools for developer creation. And server site includes programming with data model, working with database, writing your own C-sharp scripts, making your own classes, of course, integrating with modern, powerful tools like Visual Studio or RIDER. So in this case, it's possible to run single environment, including for example, developer and couple of analysts, but they have to agree with each other how they will work, especially when developer will start to do some compilation or some debugging or other actions that will make their website to hang for some time. So in invite email, you have chance to download such a zip archive file and depending on the platform Windows or Linux and depending on the target database, makers of SQL or Quaspre, we find the three different options. Go to Microsoft SQL Server Management Studio, database, write button, click, restore database from file, from device. If you prefer to run connection to your database using Windows credentials, then you have to go to advanced settings of the pool, find identity, and change this identity to some specific Windows user account, which you expect to use for connection between application server and database. But once I'm running just a single developer environment, which probably will never experience high load conditions when having hundreds or even thousands of queries per second. So the main sense of building packages is to make management of such configuration easier, to make possible separate development, and let's say splitting over responsibilities, sharing responsibilities, and splitting of all system functions into separate parts that could be developed separately and transported and delivered separately. And also, if you plan to make your new solutions in Freedom UI, in these cases, you will probably see that when you manage your application with Application Hub, System performs creating of your packages automatically. So if you work with base product, which already includes a lot of functionality, for example, it's a banking product, sales, service or marketing, then it makes sense to create your packages dependent from all this parent diagram.",
+  "key_points": [
+    "Today we will do first steps of our development career, so we'll discuss how general development is recommended to be performed in C-sharp, what are the environments, how to set up our own environment, and also we'll probably switch our own environment in a special mode, to enable full available set of tools for developer creation.",
+    "And server site includes programming with data model, working with database, writing your own C-sharp scripts, making your own classes, of course, integrating with modern, powerful tools like Visual Studio or RIDER.",
+    "So in this case, it's possible to run single environment, including for example, developer and couple of analysts, but they have to agree with each other how they will work, especially when developer will start to do some compilation or some debugging or other actions that will make their website to hang for some time.",
+    "So in invite email, you have chance to download such a zip archive file and depending on the platform Windows or Linux and depending on the target database, makers of SQL or Quaspre, we find the three different options.",
+    "Go to Microsoft SQL Server Management Studio, database, write button, click, restore database from file, from device."
+  ],
+  "keywords": [
+    "creation",
+    "file",
+    "windows",
+    "use",
+    "package",
+    "database",
+    "need",
+    "server",
+    "just",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 394,
+  "original_length": 16093,
+  "compression_ratio": 0.02448269433915367,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T17:00:43.974633",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1363,
+    "method": "tfidf_position_ranking"
+  }
+}

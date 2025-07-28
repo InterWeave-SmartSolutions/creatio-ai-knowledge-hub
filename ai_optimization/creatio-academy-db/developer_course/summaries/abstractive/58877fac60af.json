@@ -1,0 +1,35 @@
+{
+  "summary_id": "58877fac60af",
+  "content_id": "81ddf5a48985",
+  "summary_type": "abstractive",
+  "summary_text": "Foreign session number 10 of our development on creation platform Guided Learning. Today we will prepare with the to prepare for the certification for the development exam. And I will explain what certification is, how it's held and how to prepare.",
+  "key_points": [
+    "Foreign session number 10 of our development on creation platform Guided Learning.",
+    "Today we will prepare with the to prepare for the certification for the development exam.",
+    "And I will explain what certification is, how it's held and how to prepare."
+  ],
+  "keywords": [
+    "certification",
+    "development",
+    "support",
+    "check",
+    "creation",
+    "exam",
+    "like",
+    "speaker",
+    "prepare",
+    "questions"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 41,
+  "original_length": 631,
+  "compression_ratio": 0.06497622820919176,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:52:40.741118",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

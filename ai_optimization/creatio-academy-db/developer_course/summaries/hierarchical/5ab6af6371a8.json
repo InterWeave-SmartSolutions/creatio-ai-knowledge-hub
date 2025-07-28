@@ -1,0 +1,60 @@
+{
+  "summary_id": "5ab6af6371a8",
+  "content_id": "623e1ee007a4",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: page, schema, field, customization, integration",
+  "key_points": [
+    "page",
+    "schema",
+    "field",
+    "customization",
+    "integration"
+  ],
+  "keywords": [
+    "process",
+    "data",
+    "page",
+    "let",
+    "code",
+    "use",
+    "user",
+    "make",
+    "okay",
+    "time"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 14513,
+  "compression_ratio": 0.00048232619031213393,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:56:28.300375",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "page",
+        "schema",
+        "field",
+        "customization",
+        "integration"
+      ],
+      "keywords": [
+        "process",
+        "data",
+        "page",
+        "let",
+        "code",
+        "use",
+        "user",
+        "make",
+        "okay",
+        "time"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

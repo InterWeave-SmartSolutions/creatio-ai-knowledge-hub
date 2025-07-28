@@ -1,0 +1,45 @@
+{
+  "summary_id": "aae7f86f02e3",
+  "content_id": "7c589e42742e",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: topic.\nINSTRUCTION: we can make an \nobject named the same as this view and we will have the same columns in our object the same as available in view.\nINSTRUCTION: it will show you some interesting trick, how you can use creation objects to read data from sources not \ncreated by creation system.\nCONCEPT: entity\nCONCEPT: database\nCONCEPT: server\nNOTE: that you need some additional permissions and when you place \nyour environment, your app into some protected folders like Cub or C program files or somewhere in users.\nNOTE: property here.",
+  "key_points": [
+    "INSTRUCTION: topic.",
+    "INSTRUCTION: we can make an \nobject named the same as this view and we will have the same columns in our object the same as available in view.",
+    "INSTRUCTION: it will show you some interesting trick, how you can use creation objects to read data from sources not \ncreated by creation system.",
+    "CONCEPT: entity",
+    "CONCEPT: database",
+    "CONCEPT: server",
+    "NOTE: that you need some additional permissions and when you place \nyour environment, your app into some protected folders like Cub or C program files or somewhere in users.",
+    "NOTE: property here."
+  ],
+  "keywords": [
+    "speaker",
+    "page",
+    "data",
+    "like",
+    "okay",
+    "object",
+    "let",
+    "code",
+    "make",
+    "use"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 92,
+  "original_length": 17746,
+  "compression_ratio": 0.0051842668770427135,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:51:19.153827",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

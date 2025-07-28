@@ -1,0 +1,60 @@
+{
+  "summary_id": "8112754e8ccf",
+  "content_id": "c326b609b172",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: page, schema, customization, integration, business process",
+  "key_points": [
+    "page",
+    "schema",
+    "customization",
+    "integration",
+    "business process"
+  ],
+  "keywords": [
+    "data",
+    "let",
+    "test",
+    "like",
+    "exam",
+    "use",
+    "client",
+    "process",
+    "yes",
+    "homework"
+  ],
+  "topics": [],
+  "summary_length": 8,
+  "original_length": 12853,
+  "compression_ratio": 0.0006224227806737727,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:58:41.667542",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "page",
+        "schema",
+        "customization",
+        "integration",
+        "business process"
+      ],
+      "keywords": [
+        "data",
+        "let",
+        "test",
+        "like",
+        "exam",
+        "use",
+        "client",
+        "process",
+        "yes",
+        "homework"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

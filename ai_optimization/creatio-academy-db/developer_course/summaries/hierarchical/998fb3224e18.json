@@ -1,0 +1,60 @@
+{
+  "summary_id": "998fb3224e18",
+  "content_id": "c326b609b172",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: server, database, sql, data, package",
+  "key_points": [
+    "server",
+    "database",
+    "sql",
+    "data",
+    "package"
+  ],
+  "keywords": [
+    "data",
+    "let",
+    "test",
+    "like",
+    "exam",
+    "use",
+    "client",
+    "process",
+    "yes",
+    "homework"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 12853,
+  "compression_ratio": 0.000544619933089551,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T17:01:39.152224",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "server",
+        "database",
+        "sql",
+        "data",
+        "package"
+      ],
+      "keywords": [
+        "data",
+        "let",
+        "test",
+        "like",
+        "exam",
+        "use",
+        "client",
+        "process",
+        "yes",
+        "homework"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

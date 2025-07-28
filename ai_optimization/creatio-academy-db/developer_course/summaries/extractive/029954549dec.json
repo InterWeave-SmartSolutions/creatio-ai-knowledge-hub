@@ -1,0 +1,36 @@
+{
+  "summary_id": "029954549dec",
+  "content_id": "d57347054e45",
+  "summary_type": "extractive",
+  "summary_text": "This is Microsoft SQL Server query which selects ID, name, birth date and we use some SQL functions like date, diff function to make some kind of calculation here. I prefer to use as much as possible for base and a product standard components because creating new components usually takes significantly longer without clear, let's say, profitability for end customer. So this is result of work of big number of JavaScript files and such JavaScript files consume information about controls, about settings, about what they have to build and thanks to base product architects, we do not need to type or develop such code ourselves. So require GS is used in creation and its main purpose is to keep and handle all such client side modules structure in browser memory, providing the ability to load only necessary modules when they are requested for certain page and which makes quite good performance because in total our client side now has probably one thousand of modules, one thousand of small JavaScript files. The config div represents visual part of the page and physically this is an array in JavaScript and this array includes set of items and each item represents one control on the page. Now you should remember that view config div represents set of information, so it's just array of JavaScript objects and each JavaScript object represents information about control that you want to see on the page. Okay, in general, view config div represents UI structure, set of user interface items that you plan to see. When finished and data changes are saved, page editor creates new set of items like div array, for example, and saves it into this code. The reason why developers use this architectural pattern is to make application more manageable, to make it easy to develop or replace view, to make it easy to extend our model, and to make more or less structure a way to handle all events and to make business logic inside of view model. me my boss is over me all day and it's difficult for the course thank you very much no problem thank you thank you thank you thank you tomorrow yes so our session is over if any other questions hi Vigrat how far is sorry hi the battery yes please yes the compiler is successful but give me a message can I share that with you okay I will stop sharing so please base I'm sharing yes you see oh yes it's a warning message this warning message does not prevent you from from next steps so when you do some server side coding possibly previously you so in your previous experience maybe you also faced some warning messages and unfortunately for me it's not clear how to get rid of it easily it looks like some leftovers made by base product developers maybe we can also see it at my own environment surprisingly I probably told maybe which version currently you're running so maybe you have just a bit older version than I do because I recently switched to the latest one and your version may be not the same latest but this is not critical so you can just see this compilation result but the development I can complete yeah in general it's not ideal but it's something that is satisfactory so you can continue your work okay I can go to the system mode and the right so you can do next examples next steps of our videos so you can work normally yes okay okay thank you but I asked question if if I download the window 11 bro do I have to repeat the all step in the first lecture or it's installed by default unfortunately I have no experience of upgrading windows from home to pro I believe it should only change some files on your windows and it will not be like clean environment so you should have the same IIS website you should have the same stuff and I did not check it by my own so I have no information no practical experience with it so my company gave me a laptop with windows pro and I never tried to run on windows home and upgrade it yeah yeah thank you thank you very much to entry thank you too Paisel so our session is over thanks all of you watch this video to the end see you tomorrow goodbye goodbye",
+  "key_points": [
+    "This is Microsoft SQL Server query which selects ID, name, birth date and we use some SQL functions like date, diff function to make some kind of calculation here.",
+    "I prefer to use as much as possible for base and a product standard components because creating new components usually takes significantly longer without clear, let's say, profitability for end customer.",
+    "So this is result of work of big number of JavaScript files and such JavaScript files consume information about controls, about settings, about what they have to build and thanks to base product architects, we do not need to type or develop such code ourselves.",
+    "So require GS is used in creation and its main purpose is to keep and handle all such client side modules structure in browser memory, providing the ability to load only necessary modules when they are requested for certain page and which makes quite good performance because in total our client side now has probably one thousand of modules, one thousand of small JavaScript files.",
+    "The config div represents visual part of the page and physically this is an array in JavaScript and this array includes set of items and each item represents one control on the page."
+  ],
+  "keywords": [
+    "data",
+    "page",
+    "code",
+    "like",
+    "object",
+    "use",
+    "make",
+    "let",
+    "just",
+    "need"
+  ],
+  "topics": [],
+  "summary_length": 745,
+  "original_length": 17300,
+  "compression_ratio": 0.0430635838150289,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:57:09.628317",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1532,
+    "method": "tfidf_position_ranking"
+  }
+}

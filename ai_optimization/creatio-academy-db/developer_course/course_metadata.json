@@ -1,0 +1,525 @@
+{
+  "course_title": "Creatio Developer Course",
+  "processing_date": "2025-07-23T16:42:19.516861",
+  "total_content_items": 27,
+  "content_breakdown": {
+    "video": 13,
+    "pdf": 14
+  },
+  "content_summary": [
+    {
+      "content_id": "ce77ce58529f",
+      "title": "Recording1",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording1.mp4"
+    },
+    {
+      "content_id": "afa6bd273034",
+      "title": "Recording10",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording10.mp4"
+    },
+    {
+      "content_id": "4080e9e2e7d9",
+      "title": "Recording11",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording11.mp4"
+    },
+    {
+      "content_id": "d25ef65c6448",
+      "title": "Recording12",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording12.mp4"
+    },
+    {
+      "content_id": "c326b609b172",
+      "title": "Recording13",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording13.mp4"
+    },
+    {
+      "content_id": "c7028f12cf1e",
+      "title": "Recording2",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording2.mp4"
+    },
+    {
+      "content_id": "d57347054e45",
+      "title": "Recording3",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording3.mp4"
+    },
+    {
+      "content_id": "f80956f90642",
+      "title": "Recording4",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording4.mp4"
+    },
+    {
+      "content_id": "3ae506ca01ce",
+      "title": "Recording5",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording5.mp4"
+    },
+    {
+      "content_id": "f74604cafd68",
+      "title": "Recording6",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording6.mp4"
+    },
+    {
+      "content_id": "623e1ee007a4",
+      "title": "Recording7",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording7.mp4"
+    },
+    {
+      "content_id": "c73636779bcc",
+      "title": "Recording8",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording8.mp4"
+    },
+    {
+      "content_id": "ac0721a4f286",
+      "title": "Recording9",
+      "type": "video",
+      "chunk_count": 1,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/Recording9.mp4"
+    },
+    {
+      "content_id": "8248991c3929",
+      "title": "Creatio Developer 1",
+      "type": "pdf",
+      "chunk_count": 131,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-1.pdf"
+    },
+    {
+      "content_id": "64b48b00fe9b",
+      "title": "Creatio Developer 10",
+      "type": "pdf",
+      "chunk_count": 114,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-10.pdf"
+    },
+    {
+      "content_id": "751f211990f5",
+      "title": "Creatio Developer 11",
+      "type": "pdf",
+      "chunk_count": 118,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-11.pdf"
+    },
+    {
+      "content_id": "699402ad4f39",
+      "title": "Creatio Developer 12",
+      "type": "pdf",
+      "chunk_count": 120,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-12.pdf"
+    },
+    {
+      "content_id": "81ddf5a48985",
+      "title": "Creatio Developer 13",
+      "type": "pdf",
+      "chunk_count": 94,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-13.pdf"
+    },
+    {
+      "content_id": "e936e7320501",
+      "title": "Creatio Developer 2",
+      "type": "pdf",
+      "chunk_count": 129,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-2.pdf"
+    },
+    {
+      "content_id": "7c589e42742e",
+      "title": "Creatio Developer 3",
+      "type": "pdf",
+      "chunk_count": 149,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-3.pdf"
+    },
+    {
+      "content_id": "3c30ea1c92f0",
+      "title": "Creatio Developer 4",
+      "type": "pdf",
+      "chunk_count": 1070,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-4.pdf"
+    },
+    {
+      "content_id": "37206dabe436",
+      "title": "Creatio Developer 5",
+      "type": "pdf",
+      "chunk_count": 114,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-5.pdf"
+    },
+    {
+      "content_id": "7ce29bfbf05e",
+      "title": "Creatio Developer 6",
+      "type": "pdf",
+      "chunk_count": 118,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-6.pdf"
+    },
+    {
+      "content_id": "606ea808918e",
+      "title": "Creatio Developer 7",
+      "type": "pdf",
+      "chunk_count": 104,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-7.pdf"
+    },
+    {
+      "content_id": "797e8d613a2f",
+      "title": "Creatio Developer 8",
+      "type": "pdf",
+      "chunk_count": 107,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-8.pdf"
+    },
+    {
+      "content_id": "bbecd2297326",
+      "title": "Creatio Developer 9",
+      "type": "pdf",
+      "chunk_count": 837,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/Creatio-Developer-9.pdf"
+    },
+    {
+      "content_id": "05031a09507b",
+      "title": "Creatiodeveloperbinder",
+      "type": "pdf",
+      "chunk_count": 3193,
+      "source_file": "/mnt/c/Users/amago/Desktop/InterWeave Documents/Creatio/Developer Course/transcripts/CreatioDeveloperBinder.pdf"
+    }
+  ],
+  "course_structure": {
+    "sessions": [
+      {
+        "session_number": 1,
+        "title": "Recording1",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 2,
+        "title": "Recording10",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Development",
+          "Detail",
+          "Configuration"
+        ]
+      },
+      {
+        "session_number": 3,
+        "title": "Recording11",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Section",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 4,
+        "title": "Recording12",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Web Service",
+          "Integration",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 5,
+        "title": "Recording13",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 6,
+        "title": "Recording2",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Package"
+        ]
+      },
+      {
+        "session_number": 7,
+        "title": "Recording3",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 8,
+        "title": "Recording4",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Section",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 9,
+        "title": "Recording5",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Development",
+          "Detail",
+          "Configuration"
+        ]
+      },
+      {
+        "session_number": 10,
+        "title": "Recording6",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Section",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 11,
+        "title": "Recording7",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Package",
+          "Business Process",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 12,
+        "title": "Recording8",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Web Service",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 13,
+        "title": "Recording9",
+        "content_type": "video",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Section",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 14,
+        "title": "Creatio Developer 1",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Javascript",
+          "Development",
+          "Page",
+          "Database"
+        ]
+      },
+      {
+        "session_number": 15,
+        "title": "Creatio Developer 10",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Detail",
+          "Development",
+          "Page",
+          "Entity",
+          "Configuration"
+        ]
+      },
+      {
+        "session_number": 16,
+        "title": "Creatio Developer 11",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Detail",
+          "Section",
+          "Development",
+          "Page",
+          "Module"
+        ]
+      },
+      {
+        "session_number": 17,
+        "title": "Creatio Developer 12",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Integration",
+          "Development",
+          "Page",
+          "Web Service"
+        ]
+      },
+      {
+        "session_number": 18,
+        "title": "Creatio Developer 13",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Integration",
+          "Javascript",
+          "Sql",
+          "Development",
+          "Package",
+          "Page"
+        ]
+      },
+      {
+        "session_number": 19,
+        "title": "Creatio Developer 2",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Package"
+        ]
+      },
+      {
+        "session_number": 20,
+        "title": "Creatio Developer 3",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 21,
+        "title": "Creatio Developer 4",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 22,
+        "title": "Creatio Developer 5",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Detail",
+          "Development",
+          "Page",
+          "Entity",
+          "Configuration"
+        ]
+      },
+      {
+        "session_number": 23,
+        "title": "Creatio Developer 6",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Detail",
+          "Section",
+          "Development",
+          "Page",
+          "Module"
+        ]
+      },
+      {
+        "session_number": 24,
+        "title": "Creatio Developer 7",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Section",
+          "Development",
+          "Package",
+          "Page",
+          "Business Process",
+          "Configuration"
+        ]
+      },
+      {
+        "session_number": 25,
+        "title": "Creatio Developer 8",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Web Service",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 26,
+        "title": "Creatio Developer 9",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Page",
+          "Section",
+          "Development"
+        ]
+      },
+      {
+        "session_number": 27,
+        "title": "Creatiodeveloperbinder",
+        "content_type": "pdf",
+        "estimated_topics": [
+          "Creatio",
+          "Javascript",
+          "Development",
+          "Page",
+          "Database"
+        ]
+      }
+    ],
+    "topics_covered": [
+      "Creatio",
+      "Integration",
+      "Detail",
+      "Section",
+      "Javascript",
+      "Module",
+      "Sql",
+      "Development",
+      "Entity",
+      "Package",
+      "Page",
+      "Web Service",
+      "Database",
+      "Business Process",
+      "Configuration"
+    ],
+    "learning_progression": []
+  },
+  "total_chunks": 6411
+}

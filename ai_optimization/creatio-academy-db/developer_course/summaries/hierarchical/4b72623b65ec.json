@@ -1,0 +1,60 @@
+{
+  "summary_id": "4b72623b65ec",
+  "content_id": "d25ef65c6448",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: page, schema, field, integration, business process",
+  "key_points": [
+    "page",
+    "schema",
+    "field",
+    "integration",
+    "business process"
+  ],
+  "keywords": [
+    "data",
+    "use",
+    "let",
+    "service",
+    "need",
+    "like",
+    "clear",
+    "process",
+    "okay",
+    "save"
+  ],
+  "topics": [],
+  "summary_length": 8,
+  "original_length": 16631,
+  "compression_ratio": 0.0004810294029222536,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:58:36.691939",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "page",
+        "schema",
+        "field",
+        "integration",
+        "business process"
+      ],
+      "keywords": [
+        "data",
+        "use",
+        "let",
+        "service",
+        "need",
+        "like",
+        "clear",
+        "process",
+        "okay",
+        "save"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

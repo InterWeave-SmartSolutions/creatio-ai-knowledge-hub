@@ -1,0 +1,33 @@
+{
+  "summary_id": "c880ae1ec0d4",
+  "content_id": "c73636779bcc",
+  "summary_type": "abstractive",
+  "summary_text": "Today we will focus on web services, making our own classes at creation server side and make it work at the web service. Today is session number eight of our development on creation platform guided learning. And we will continue to work with server side features and functionality.",
+  "key_points": [
+    "Today we will focus on web services, making our own classes at creation server side and make it work at the web service.",
+    "Today is session number eight of our development on creation platform guided learning.",
+    "And we will continue to work with server side features and functionality."
+  ],
+  "keywords": [
+    "services",
+    "web",
+    "server",
+    "web services",
+    "client",
+    "different",
+    "functionality",
+    "service",
+    "data",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 48,
+  "original_length": 698,
+  "compression_ratio": 0.06876790830945559,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:59:56.126488",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

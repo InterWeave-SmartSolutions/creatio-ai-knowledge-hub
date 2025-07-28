@@ -1,0 +1,43 @@
+{
+  "summary_id": "ca13a37f2a18",
+  "content_id": "f80956f90642",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: find Workplace Setup.\nINSTRUCTION: your sections will be displayed in a different order.\nINSTRUCTION: one is classic UI second one which is younger.\nCONCEPT: database\nCONCEPT: server\nCONCEPT: record\nNOTE: to say that other items were changed.\nNOTE: and this warning will tell us that such studio workplace was already registered somewhere in parent package and even more it was registered at one more time in another parent package.",
+  "key_points": [
+    "INSTRUCTION: find Workplace Setup.",
+    "INSTRUCTION: your sections will be displayed in a different order.",
+    "INSTRUCTION: one is classic UI second one which is younger.",
+    "CONCEPT: database",
+    "CONCEPT: server",
+    "CONCEPT: record",
+    "NOTE: to say that other items were changed.",
+    "NOTE: and this warning will tell us that such studio workplace was already registered somewhere in parent package and even more it was registered at one more time in another parent package."
+  ],
+  "keywords": [
+    "let",
+    "okay",
+    "data",
+    "save",
+    "like",
+    "page",
+    "commission",
+    "type",
+    "code",
+    "column"
+  ],
+  "topics": [],
+  "summary_length": 70,
+  "original_length": 15100,
+  "compression_ratio": 0.004635761589403974,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:51:18.570046",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

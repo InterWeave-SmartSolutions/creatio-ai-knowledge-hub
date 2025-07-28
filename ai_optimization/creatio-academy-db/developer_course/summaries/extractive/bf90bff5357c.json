@@ -1,0 +1,38 @@
+{
+  "summary_id": "bf90bff5357c",
+  "content_id": "bbecd2297326",
+  "summary_type": "extractive",
+  "summary_text": "--- Page 1 ---\n\n# Speaker 1\n\nToday is session number four of our development on Creature Platform Guided learning set of practical sessions \nthat we do for developing different features and functionality that requires some programming on Creature Platform \nand previously we finished with building our own section named Realty and we managed to set up List View, we \nmanaged to make a form page for it, we also added some default values and we. So such columns I would like to call data fields and data fields represents \nconnection between controls and real life data column of your main object that this page works with. # Speaker 3\n\nSo simply speaking we made read only column that will be automatically loaded each time offer type is set and each \ntime offer type changed or cleared. # Speaker 3\n\n--- Page 31 ---\n\nWe can read it from the database if we use related objects, if we use offer type and if we display commission \npercent and this commission percent will be obtained from corresponding record from our offer type. Okay, we need price, we need commission so we can collapse all other new config div items till we will face \nview model config. # Speaker 3\n\nBy default this folder is somewhere in temp Catalog Windows temp I decided to make it different so we can find logs \nand as you can see we have zero which means main application logs and log folder which. So this telemetry \nlog for creation will be extremely helpful in case if you need to make some experiments and get logs directly in \nonline mode from your cloud environments, including even production systems. # Speaker 3\n\nOkay and first of all I will check available action here and in comparison with page level we have more options here \nand I plan to use simple static filter Business rule Static filter will not require any as you can see static filter will not \nrequire any special conditions I mean for triggering so it will be applied always. So you will see we have some different contexts, different types and let's go back to our realty, try to \nselect manager system only shows us only context with a certain type. # Speaker 1\n\nIn total and you can't break the way how pages code and what handlers are called there until you will write your own \ncontrol, I think so in Freedom UI we have different conditions for programming.",
+  "key_points": [
+    "--- Page 1 ---\n\n# Speaker 1\n\nToday is session number four of our development on Creature Platform Guided learning set of practical sessions \nthat we do for developing different features and functionality that requires some programming on Creature Platform \nand previously we finished with building our own section named Realty and we managed to set up List View, we \nmanaged to make a form page for it, we also added some default values and we.",
+    "So such columns I would like to call data fields and data fields represents \nconnection between controls and real life data column of your main object that this page works with.",
+    "# Speaker 3\n\nSo simply speaking we made read only column that will be automatically loaded each time offer type is set and each \ntime offer type changed or cleared.",
+    "# Speaker 3\n\n--- Page 31 ---\n\nWe can read it from the database if we use related objects, if we use offer type and if we display commission \npercent and this commission percent will be obtained from corresponding record from our offer type.",
+    "Okay, we need price, we need commission so we can collapse all other new config div items till we will face \nview model config."
+  ],
+  "keywords": [
+    "speaker",
+    "page",
+    "let",
+    "okay",
+    "data",
+    "save",
+    "like",
+    "speaker page",
+    "commission",
+    "type"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 415,
+  "original_length": 17931,
+  "compression_ratio": 0.023144275277452456,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:54:27.282800",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1580,
+    "method": "tfidf_position_ranking"
+  }
+}

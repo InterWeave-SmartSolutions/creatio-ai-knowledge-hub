@@ -1,0 +1,38 @@
+{
+  "summary_id": "80b65e17bc23",
+  "content_id": "e936e7320501",
+  "summary_type": "extractive",
+  "summary_text": "So the step one is to make sure everything from your changes is saved on disk and step two is to use any \nkind of version control systems to operate with set of your files and folders from your disk in order to deliver \nchanges. This is a necessary so it's like mandatory step if you want to use git \nwe need to initialize repository I prefer to use as much as possible of graphical user interface to operate with git \nbecause it's easier, it makes less chance of mistakes and much more visual. Let's imagine another developer environment opens some changes or creates new items, finally saves on \ndisk, then commits everything to file system, then performs git commit at GitHub client or sorry, at git client. In our case, apply changes means create new table with \ncorresponding set of columns and provide necessary column settings and everything should be well done at the \ndatabase to make our object fully operational. # Speaker 1\n\n--- Page 17 ---\n\nThey see their environment, they fill in with data, they think that everything looks okay and then they just export their \npackage install for example in test environment and then they realize they miss lookup contents and they also miss \nlookup registering data. I recommend you to use data items as much as possible and when you create data item this tool actually is \na snapshot of some data records taken from your source developer environment. I'm \ninterested in date of creation created on column here in the list of saved columns, data item is a snapshot of data, \nso we will take this data from our source database and save it as part of our package. # Speaker 1\n\nSo now our solution is full and if we export this package as Zip archive then if we import it somewhere on test \nenvironment to work and user will be able to find our new lookup in lookup section, user will be able to find its \ncontents and user will see such data. Also we have new object here and \nphysically it means big set of files and folders used inside of package folder. # Speaker 1\n\nAnd next time when you export your package and import in some target environment because of change the date of \nmodification, this item will be processed and corresponding updates will be performed.",
+  "key_points": [
+    "So the step one is to make sure everything from your changes is saved on disk and step two is to use any \nkind of version control systems to operate with set of your files and folders from your disk in order to deliver \nchanges.",
+    "This is a necessary so it's like mandatory step if you want to use git \nwe need to initialize repository I prefer to use as much as possible of graphical user interface to operate with git \nbecause it's easier, it makes less chance of mistakes and much more visual.",
+    "Let's imagine another developer environment opens some changes or creates new items, finally saves on \ndisk, then commits everything to file system, then performs git commit at GitHub client or sorry, at git client.",
+    "In our case, apply changes means create new table with \ncorresponding set of columns and provide necessary column settings and everything should be well done at the \ndatabase to make our object fully operational.",
+    "# Speaker 1\n\n--- Page 17 ---\n\nThey see their environment, they fill in with data, they think that everything looks okay and then they just export their \npackage install for example in test environment and then they realize they miss lookup contents and they also miss \nlookup registering data."
+  ],
+  "keywords": [
+    "data",
+    "speaker",
+    "need",
+    "package",
+    "like",
+    "git",
+    "object",
+    "repository",
+    "file",
+    "let"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 398,
+  "original_length": 18186,
+  "compression_ratio": 0.021884966457714726,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:51:18.256711",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1240,
+    "method": "tfidf_position_ranking"
+  }
+}

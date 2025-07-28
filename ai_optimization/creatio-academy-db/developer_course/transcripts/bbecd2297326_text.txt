@@ -1,0 +1,5234 @@
+--- Page 1 ---
+
+ 
+  
+  
+Speaker 1
+ 
+ Today is session number four of our development on Creature Platform Guided learning set of practical sessions 
+that we do for developing different features and functionality that requires some programming on Creature Platform 
+and previously we finished with building our own section named Realty and we managed to set up List View, we 
+managed to make a form page for it, we also added some default values and we.  
+  
+ 
+  
+Speaker 2
+ 
+ Made some required fields and it was.  
+  
+  
+Speaker 1
+ 
+ Pretty much easy and we used only.  
+  
+ 
+  
+Speaker 2
+ 
+ No code customization tools for this.  
+  
+  
+Speaker 1
+ 
+ Also we managed to make a button which had a custom handler.  
+  
+ 
+  
+Speaker 2
+ 
+ So we made a button push me button and this custom handler shows some console output. We can also display 
+some pop up.  
+  
+  
+Speaker 1
+ 
+ Messages and also we can do any kind of JavaScript code behind this button. Today I will show you a bit.  
+  
+ 
+  
+Speaker 2
+ 
+ More complicated examples of how you can.  
+   
+
+--- Page 2 ---
+
+ Speaker 1
+ 
+ Do some programming and coding and also we will discuss debugging. So you will see how it's possible to stop 
+execution of your code and.  
+  
+ 
+  
+Speaker 2
+ 
+ Make it executed line by line.  
+  
+  
+Speaker 1
+ 
+ By line and to see all the.  
+  
+ 
+  
+Speaker 2
+ 
+ Variables and to see all the conditions.  
+  
+  
+Speaker 1
+ 
+ So so to make something that you probably get used to do when you operate with any like modern version, modern.  
+  
+ 
+  
+Speaker 2
+ 
+ Development environment like Visual Studio or other so today question today's session I would.  
+  
+  
+Speaker 1
+ 
+ Like to warm up with Simple Question.  
+  
+ 
+  
+Speaker 2
+ 
+ Which is about organizing of your sections. It's probably not so obvious so I.  
+  
+  
+Speaker 1
+ 
+ Will tell you all apps it's like Synthetic Workplace which includes all registered sections in one list.  
+ 
+
+--- Page 3 ---
+
+ 
+ 
+  
+Speaker 2
+ 
+ We have Studio out of the box.  
+  
+  
+Speaker 1
+ 
+ Workplace, we have customer360 because it's a result of loaded contacts and accounts.  
+  
+ 
+  
+Speaker 2
+ 
+ So our loaded customer360 app also caused creation of new Workplace. Such workplaces also can be created, you 
+can manage them and you can put your sections into it. You can also create data items for workplaces if you want to 
+transport them between environments.  
+  
+  
+Speaker 1
+ 
+ I would like to show you something.  
+  
+ 
+  
+Speaker 2
+ 
+ That I think will be useful. It's about organizing of Workplace for your users and for my developer purpose it will be 
+quite often when we will.  
+  
+  
+Speaker 1
+ 
+ Need to switch between our created section.  
+  
+ 
+  
+Speaker 2
+ 
+ And some system sections like Process library, process logs or lookups and system settings.  
+  
+  
+Speaker 1
+ 
+ So I plan simply to put my new Created Reality section into this Studio Workplace. That will be very easy, but I need 
+to demonstrate it. To show how you can do this, go to Settings.  
+   
+Speaker 2
+
+--- Page 4 ---
+
+ 
+  
+ Then find Workplace Setup. Workplace Setup helps us to create new workplace or to manage existing workplaces. 
+As you can see, some workplaces are.  
+  
+  
+Speaker 1
+ 
+ Present but not shown even if we are administrators.  
+  
+ 
+  
+Speaker 2
+ 
+ So that it's very interesting because it's one of not so many places where.  
+  
+  
+Speaker 1
+ 
+ User permissions Are still matter when we run system under administrator privilege.  
+  
+ 
+  
+Speaker 2
+ 
+ So now you can see I see only four workplaces.  
+  
+  
+Speaker 1
+ 
+ But in total it looks like we.  
+  
+ 
+  
+Speaker 2
+ 
+ Have at least 5. And productivity workplace seems to not showing anything and not having any permission settings.  
+  
+  
+Speaker 1
+ 
+ So that's probably why we are not seeing it. Okay, let's go to studio workplace.  
+  
+ 
+  
+Speaker 2
+ 
+
+--- Page 5 ---
+
+ We have set of sections for a workplace. Also it will be interesting for you to know that sections have positions.  
+  
+  
+Speaker 1
+ 
+ Let me show you columns set up for sections list. We can arrange and add the position column.  
+  
+ 
+  
+Speaker 2
+ 
+ Now you will understand why I display this position. Any section in a workplace has its position and position 
+organizes order. So it is used to specify order of sections in a workplace.  
+  
+  
+Speaker 1
+ 
+ If we rearrange such items such sections.  
+  
+ 
+  
+Speaker 2
+ 
+ Position will be changed. And finally your sections will be displayed in a different order.  
+  
+  
+Speaker 1
+ 
+ Sometimes this order is not so consistent.  
+  
+ 
+  
+Speaker 2
+ 
+ You see UI management and message templates, they have the same position.  
+  
+  
+Speaker 1
+ 
+ And sometimes UI management will be on top.  
+  
+ 
+  
+Speaker 2
+ 
+ Sometimes message templates will be on top.  
+  
+  
+Speaker 1
+ 
+
+--- Page 6 ---
+
+ Depending on how data will be loaded at a certain time. Because sorting by this position it makes some ambitious 
+result. Okay, so what I plan to do.  
+  
+ 
+  
+Speaker 2
+ 
+ I plan to add one more section in the list system will show me only sections that are not listed here. And it's 
+interesting to see here that we have couple of accounts section.  
+  
+  
+Speaker 1
+ 
+ It's very unusual.  
+  
+ 
+  
+Speaker 2
+ 
+ Couple of calls and couple of contacts. One of the possible explanation why we.  
+  
+  
+Speaker 1
+ 
+ Have two different account section is that.  
+  
+ 
+  
+Speaker 2
+ 
+ One of them is section for Classic.  
+  
+  
+Speaker 1
+ 
+ Ui, another is Freedom UI section. We can also display columns here which.  
+  
+ 
+  
+Speaker 2
+ 
+ Will let you understand what we are looking at.  
+  
+  
+Speaker 1
+ 
+ So we can just squeeze a bit title display e.g.  
+   
+Speaker 2
+
+--- Page 7 ---
+
+ 
+  
+ Created on column save column settings.  
+  
+  
+Speaker 1
+ 
+ Now when we try to add you.  
+  
+ 
+  
+Speaker 2
+ 
+ Will see title, you will see created on and one of them is 19, another is 24.  
+  
+  
+Speaker 1
+ 
+ And it looks like first one is classic UI, second one which is younger.  
+  
+ 
+  
+Speaker 2
+ 
+ This is freedom UI.  
+  
+  
+Speaker 1
+ 
+ So that's how you can detect which one is necessary for you to add.  
+  
+ 
+  
+Speaker 2
+ 
+ In my case, I plan to find realty section created recently and we can see it at the end of this list. You see, its position 
+is also not so consistent.  
+  
+  
+Speaker 1
+ 
+ But it guarantees that it will be at the end.  
+  
+ 
+  
+Speaker 2
+ 
+ But it's not so comfortable to see this item at the very end of this list. So possibly we would like to move it upper.  
+   
+
+--- Page 8 ---
+
+ Speaker 1
+ 
+ So let's go to do this.  
+  
+ 
+  
+Speaker 2
+ 
+ You can move it even on the first top position. Unfortunately we cannot move it upper than home. And if you don't 
+really like, we can suppress this home page for a workplace. You can see homepage you can clear.  
+  
+  
+Speaker 1
+ 
+ It if you want and realty will be position zero. So when we save it we can.  
+  
+ 
+  
+Speaker 2
+ 
+ Also reward this page.  
+  
+  
+Speaker 1
+ 
+ Probably we will see our reality section.  
+  
+ 
+  
+Speaker 2
+ 
+ Directly at Studio Workplace at zero position. But it's also important to say that other items were changed so they 
+changed.  
+  
+  
+Speaker 1
+ 
+ Their position because reality shifted them.  
+  
+ 
+  
+Speaker 2
+ 
+ So if we want to transport such change, we must make a corresponding data item.  
+  
+  
+Speaker 1
+ 
+ Or we can use help of data binding tool.  
+
+--- Page 9 ---
+
+  
+ 
+  
+Speaker 2
+ 
+ This data binding tool helps us to.  
+  
+  
+Speaker 1
+ 
+ Remember positions of O sections here and we can just click Bind Workplace, specify.  
+  
+ 
+  
+Speaker 2
+ 
+ Target package and click save. Then we can see what was created. It was three different data items. One of them is 
+sysworkplace studio. It doesn't really necessary because this workplace is already present at our system.  
+  
+  
+Speaker 1
+ 
+ And when we for example try to.  
+  
+ 
+  
+Speaker 2
+ 
+ Actualize data and save it, we will.  
+  
+  
+Speaker 1
+ 
+ See warning and this warning will tell us that such Studio Workplace was already.  
+  
+ 
+  
+Speaker 2
+ 
+ Registered somewhere in parent package.  
+  
+  
+Speaker 1
+ 
+ And even more it was registered one more time in another parent package.  
+  
+  
+Speaker 2
+ 
+
+--- Page 10 ---
+
+ 
+ But it's not a big mistake. So it's not a mistake at all. This is warning that tells us that.  
+  
+  
+Speaker 1
+ 
+ Such data is already present somewhere in parent packages data items. So maybe we are doing it. So something 
+that is unnecessary, but let it be. You can save it this warning, but.  
+  
+ 
+  
+Speaker 2
+ 
+ It'S not a mistake. Another one is sys module in Workplace. This is a system table which keeps information about 
+section which is called module and workplace.  
+  
+  
+Speaker 1
+ 
+ So you can see data and you can see all the sections in Workplace.  
+  
+ 
+  
+Speaker 2
+ 
+ Studio were listed here. And also it's important to mention that forced update option must be applied for.  
+  
+  
+Speaker 1
+ 
+ Position column because otherwise update or position.  
+  
+ 
+  
+Speaker 2
+ 
+ Will be not performed.  
+  
+  
+Speaker 1
+ 
+ You probably remember from our Tuesday session that when you create data items, it's.  
+  
+ 
+  
+Speaker 3
+ 
+ Possible that you will make data item that will perform update, not an insert.  
+   
+
+--- Page 11 ---
+
+ Speaker 1
+ 
+ In case of update in case of.  
+  
+ 
+  
+Speaker 3
+ 
+ Target record was found.  
+  
+  
+Speaker 1
+ 
+ By the way, I prefer to make it not by this key.  
+  
+ 
+  
+Speaker 2
+ 
+ I prefer to make it by this.  
+  
+  
+Speaker 1
+ 
+ Key and found by id.  
+  
+ 
+  
+Speaker 3
+ 
+ So if record was found by ID.  
+  
+  
+Speaker 1
+ 
+ And then it will update target database.  
+  
+ 
+  
+Speaker 3
+ 
+ According to loaded data and in our case only position will be updated. Okay, we can save it.  
+  
+ 
+  
+Speaker 2
+ 
+ Now you can see that save was.  
+
+--- Page 12 ---
+
+  
+  
+Speaker 1
+ 
+ Successful, but we have a lot of warnings related to parent data that was already registered in base product. And 
+this is valid set of warnings because our change caused the change of position of all previously registered sections 
+in Studio Workplace. So simply all of the registered sections had different position because we moved our reality to 
+the top and we.  
+  
+ 
+  
+Speaker 2
+ 
+ Had a warning that tells us that you're trying to Change the data which was originally declared somewhere else.  
+  
+  
+Speaker 1
+ 
+ So maybe you're doing it wrong.  
+  
+ 
+  
+Speaker 2
+ 
+ So please take care. Here is your warning.  
+  
+  
+Speaker 1
+ 
+ But this warning is still so we can ignore this. And last one is admin unit in workplace.  
+  
+ 
+  
+Speaker 2
+ 
+ This is about access permissions. System administrators have full access to Studio.  
+  
+  
+Speaker 1
+ 
+ Workplace and probably this data is also.  
+  
+ 
+  
+Speaker 2
+ 
+ Present in our database.  
+   
+Speaker 1
+
+--- Page 13 ---
+
+  
+ Yes, so maybe not so necessary to save it.  
+  
+ 
+  
+Speaker 2
+ 
+ So it's warning, not an error in case if you have an error. For example, you save the same data twice in the same 
+package.  
+  
+  
+Speaker 1
+ 
+ In this case, save button will show you error message and save button will not disappear. If save button was 
+disappeared, means your.  
+  
+ 
+  
+Speaker 2
+ 
+ Data item was normally saved.  
+  
+  
+Speaker 1
+ 
+ If save button did not disappear, it means an error. It's like serious mistake and the system.  
+  
+ 
+  
+Speaker 2
+ 
+ Will not allow you to save such data. It happens only when you save the.  
+  
+  
+Speaker 1
+ 
+ Same data twice in the same package. Okay, so it was set of client modules of sorry, set of data items.  
+  
+ 
+  
+Speaker 2
+ 
+ Automatically created by help of data binding tool.  
+  
+  
+Speaker 1
+ 
+ When we registered our reality section in a studio workplace, now we have comfort. Here is our new created section. 
+Here is set of processes we will manage very soon.  
+ 
+
+--- Page 14 ---
+
+ 
+ 
+  
+Speaker 2
+ 
+ Here we have lookups which we also often look at.  
+  
+  
+Speaker 1
+ 
+ And we'll use it and some other.  
+  
+ 
+  
+Speaker 2
+ 
+ System sections that we may need.  
+  
+  
+Speaker 1
+ 
+ So we now have very comfortable conditions and easy transitions between different sections. So it was just a 
+simple example how you can organize your workplaces in.  
+  
+ 
+  
+Speaker 2
+ 
+ More complicated based products like sales, service and marketing.  
+  
+  
+Speaker 1
+ 
+ You will see more workplaces, more sections inside.  
+  
+ 
+  
+Speaker 2
+ 
+ And you also can create your own workplace with sections that you think will be necessary to use for your end.  
+  
+  
+Speaker 1
+ 
+ Users with particular roles.  
+  
+  
+Speaker 2
+ 
+
+--- Page 15 ---
+
+ 
+ And you can provide permissions for such.  
+  
+  
+Speaker 1
+ 
+ Sections and for such workplaces.  
+  
+ 
+  
+Speaker 2
+ 
+ And what is important for you to understand that you can create many different.  
+  
+  
+Speaker 1
+ 
+ Workplaces and include the same section many times. So if you added some section to some workplace, it doesn't 
+mean that you can't do it with another workplace. So one context section can be added.  
+  
+ 
+  
+Speaker 2
+ 
+ In different places with no limitations.  
+  
+  
+Speaker 1
+ 
+ In my case, I have my applications.  
+  
+ 
+  
+Speaker 2
+ 
+ Workplace with real T section and I also have.  
+  
+  
+Speaker 1
+ 
+ Just a second. So what I wanted to show you.  
+  
+ 
+  
+Speaker 2
+ 
+ We can use the same section in.  
+   
+Speaker 1
+
+--- Page 16 ---
+
+  
+ Different workplaces and it's not a problem if we specify the same section in.  
+  
+ 
+  
+Speaker 2
+ 
+ Different workplaces many times. So physically this is the same section.  
+  
+  
+Speaker 1
+ 
+ The same data shown in different places. Just a second. Okay, so what we will do today, it was a warm up example 
+that.  
+  
+ 
+  
+Speaker 2
+ 
+ I think will be interesting for you to know. So let's do something more serious. Let's think of improvements of our 
+future section of Our reality section. And now I want you to see how you can do some calculations, how.  
+  
+  
+Speaker 1
+ 
+ You can do some more serious programming.  
+  
+ 
+  
+Speaker 2
+ 
+ Inside of Creature client side page using.  
+  
+  
+Speaker 1
+ 
+ Some JavaScript and using creature tools and let's say data platform. First of all I will explain you some business 
+ideas. So what we plan to do, my.  
+  
+ 
+  
+Speaker 2
+ 
+ Plan is to show you some recalculations and it could be a good example.  
+  
+  
+Speaker 1
+ 
+
+--- Page 17 ---
+
+ If we for example create one more column, call it commission. So it will be our future profit from the deal. And this 
+commission will be dependent on price. So it's normally and very typical for realty to have commission as some 
+percent from price.  
+  
+ 
+  
+Speaker 2
+ 
+ And also we have to take care.  
+  
+  
+Speaker 1
+ 
+ About the type offer.  
+  
+ 
+  
+Speaker 2
+ 
+ So for sale we have one formula.  
+  
+  
+Speaker 1
+ 
+ And for rental we will have another formula.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, let's do it step by step. So first of all we need new column.  
+  
+  
+Speaker 1
+ 
+ New column can be added to this very easily. We can just go to modify our page. Then we can add new number 
+column.  
+  
+ 
+  
+Speaker 2
+ 
+ Carefully dropping it here it will be named Commission. And as we have a price in.  
+  
+  
+Speaker 1
+ 
+ US dollars, so let it be a commission. Also in the same currency, the inner column name will be USR.  
+   
+
+--- Page 18 ---
+
+ 
+ Speaker 2
+ 
+ Commission.  
+  
+  
+Speaker 1
+ 
+ And we confirm such code for this column. The data format will be decimal with two digits. Okay, great. Decimal 
+with two digits. And we want to make this commission calculated automatically so we don't allow users.  
+  
+ 
+  
+Speaker 2
+ 
+ To manually change it. That's why I will set read only.  
+  
+  
+Speaker 1
+ 
+ Option on I temporary hide place attachments tab. So my commission will be read only.  
+  
+ 
+  
+Speaker 2
+ 
+ And also just to make it easier.  
+  
+  
+Speaker 1
+ 
+ To find in div array, I will name its element code so we can type it as we wish Commission USD. Let it be our element 
+code.  
+  
+ 
+  
+Speaker 3
+ 
+ This element code will be used in.  
+  
+ 
+  
+Speaker 2
+ 
+ View config, div and also physically it.  
+   
+Speaker 1
+
+--- Page 19 ---
+
+  
+ Will be used for building real page.  
+  
+ 
+  
+Speaker 3
+ 
+ HTML markup with set of divs inside.  
+  
+  
+Speaker 1
+ 
+ And this code will be used.  
+  
+ 
+  
+Speaker 3
+ 
+ To name set of items and div HTML tags inside of our page.  
+  
+  
+Speaker 1
+ 
+ So element code, it's about physical component.  
+  
+ 
+  
+Speaker 2
+ 
+ Representation on the page.  
+  
+  
+Speaker 1
+ 
+ Okay, you already know this and that's all I can just save System will.  
+  
+ 
+  
+Speaker 2
+ 
+ Automatically modify our object.  
+  
+  
+Speaker 1
+ 
+ It will save changes to our page code which we can find here if.  
+   
+Speaker 2
+
+--- Page 20 ---
+
+ 
+  
+ We click open source code. So now let's just click save and.  
+  
+  
+Speaker 1
+ 
+ That'S probably will be enough for the beginning. So this change will be made in objects and in our client module. 
+Okay, finally it's saved.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, we can move on.  
+  
+  
+Speaker 1
+ 
+ And now we can close this page editor. Go to main page.  
+  
+ 
+  
+Speaker 2
+ 
+ As you can see, I did not even reload it.  
+  
+  
+Speaker 1
+ 
+ We can just open it again and.  
+  
+ 
+  
+Speaker 2
+ 
+ Probably we will immediately see our new column and it's read only.  
+  
+  
+Speaker 1
+ 
+ So you see this lock sign which.  
+  
+ 
+  
+Speaker 2
+ 
+ Tells us that column is read only. So now we need to think of.  
+   
+
+--- Page 21 ---
+
+ Speaker 1
+ 
+ Implementing read calculation and it will be.  
+  
+ 
+  
+Speaker 3
+ 
+ Triggered by change of price. And also we want to make it.  
+  
+  
+Speaker 1
+ 
+ Dependent on offer type. So for the sales offer type it.  
+  
+ 
+  
+Speaker 3
+ 
+ Will be more or less okay if.  
+  
+  
+Speaker 1
+ 
+ We make commission like 2% from list price from our price of realty shown here. So to be quite fair and good 
+enough commission for our business and for.  
+  
+ 
+  
+Speaker 3
+ 
+ Sales it's totally okay.  
+  
+  
+Speaker 1
+ 
+ Now let's create some sample for house for rental.  
+  
+ 
+  
+Speaker 3
+ 
+ Our rental price will be 1200 bucks.  
+  
+  
+Speaker 1
+ 
+ For some house in Miami.  
+ 
+
+--- Page 22 ---
+
+ 
+ 
+  
+Speaker 3
+ 
+ I'm not sure that can we find.  
+  
+  
+Speaker 1
+ 
+ So cheap houses in Miami for maybe it's not like not in a high.  
+  
+ 
+  
+Speaker 3
+ 
+ Season and some area. And as you can see, commission will be recalculated. And we need to make another formula 
+for rentals. So for rentals probably it will be quite enough if we will ask for.  
+  
+  
+Speaker 1
+ 
+ 50% from monthly payment price if this is a rental.  
+  
+ 
+  
+Speaker 3
+ 
+ So for rentals we will have another percentage. So for sales it will be 1% or 2% value.  
+  
+  
+Speaker 1
+ 
+ And for rental it will be 50% from price value.  
+  
+ 
+  
+Speaker 3
+ 
+ So when we will do some calculation we have to take care about it. But also you should be mentally ready.  
+  
+  
+Speaker 1
+ 
+ That in real life business it really.  
+  
+  
+Speaker 3
+ 
+
+--- Page 23 ---
+
+ 
+ Often happens that such ratios, such formulas.  
+  
+  
+Speaker 1
+ 
+ Can be changed from time to time.  
+  
+ 
+  
+Speaker 3
+ 
+ And once we introduce hard coded value like 2% a month later our customer.  
+  
+  
+Speaker 1
+ 
+ May call us and say, you know.  
+  
+ 
+  
+Speaker 3
+ 
+ Now conditions were changed so we need to modify this percent and now it will be 2.5. Could you please change it? 
+And if we hard code it, of course it's not so good idea to go into code and change it. Then deliver changes to 
+production.  
+  
+  
+Speaker 1
+ 
+ So it will be really expensive.  
+  
+ 
+  
+Speaker 3
+ 
+ To make such changes.  
+  
+  
+Speaker 1
+ 
+ And our customer will be not ready.  
+  
+ 
+  
+Speaker 3
+ 
+ Will be not really happy if we.  
+   
+
+--- Page 24 ---
+
+ Speaker 1
+ 
+ Ask for example for half, maybe for a couple of hours of work to be paid. If we want to change just one number.  
+  
+ 
+  
+Speaker 3
+ 
+ Ideally customers should be able to change such ratios themselves. We have several options to do this. For 
+example, we can make a separate.  
+  
+  
+Speaker 1
+ 
+ Table which will keep necessary percents.  
+  
+ 
+  
+Speaker 2
+ 
+ Or we can use some system settings for this.  
+  
+  
+Speaker 1
+ 
+ Or as you can see, our ratio is really stick to offer type.  
+  
+ 
+  
+Speaker 3
+ 
+ So probably we can add new column.  
+  
+  
+Speaker 1
+ 
+ To offer type lookup in order to save one value in percent for sales.  
+  
+ 
+  
+Speaker 3
+ 
+ And another value in percent for rentals. I will show you how we can do this. Let's focus on objects Again, now we 
+have offer type object, we can open it for edit. I prefer to work from configuration section. Maybe you would like to 
+focus on application first.  
+  
+  
+Speaker 1
+ 
+
+--- Page 25 ---
+
+ In this case you can do the same if you. Oh, I did not save it. Oh, sorry. Okay, my fault. Ruby House for rental Save it.  
+  
+ 
+  
+Speaker 3
+ 
+ Great. So if you prefer to focus on application, you can go to Application hub, you may find your realty app, you.  
+  
+  
+Speaker 1
+ 
+ Might check your data models and that's.  
+  
+ 
+  
+Speaker 3
+ 
+ How you can find corresponding object. Or you can switch to advanced settings to see all the contents of your 
+solution. So you may practically do almost the same as you can do it here.  
+  
+  
+Speaker 1
+ 
+ So I just get used to work.  
+  
+ 
+  
+Speaker 2
+ 
+ With this configuration section.  
+  
+ 
+  
+Speaker 3
+ 
+ Also it has some useful actions like.  
+  
+  
+Speaker 1
+ 
+ Save packages to file system. So that's why I stick to this.  
+  
+ 
+  
+Speaker 3
+ 
+ Approach and I feel more confident when.  
+   
+
+--- Page 26 ---
+
+ Speaker 1
+ 
+ Work here because I have full available.  
+  
+ 
+  
+Speaker 3
+ 
+ Set of tools to manage my system set my system configuration setup. So we opened corresponding object, we have 
+inheritance from base lookup and that's why we have eight inherited columns and we did not add any other own 
+columns so far.  
+  
+ 
+  
+Speaker 2
+ 
+ So for each reality offer type for.  
+  
+ 
+  
+Speaker 3
+ 
+ Rental or sale, we can add one more column to be number. Maybe we can do it with quite high precision.  
+  
+  
+Speaker 1
+ 
+ Okay, two digits after decimal point.  
+  
+ 
+  
+Speaker 3
+ 
+ We can call it something like commission percent.  
+  
+  
+Speaker 1
+ 
+ So we can even specify what is.  
+  
+ 
+  
+Speaker 3
+ 
+ The available range of our data values here just to make it clear for any user what type of value should be put here. 
+So if we specify from 0 to 100 it means from 0 to 100%.  
+   
+Speaker 1
+
+--- Page 27 ---
+
+  
+ And it will be clear how to.  
+  
+ 
+  
+Speaker 2
+ 
+ Put some value here if you want.  
+  
+ 
+  
+Speaker 3
+ 
+ To save for example 2%. One more column is not a big deal, so we can easily add it save and publish.  
+  
+  
+Speaker 1
+ 
+ But after we do this we may.  
+  
+ 
+  
+Speaker 3
+ 
+ Start to get some additional unexpected difficulties. Now I will show it. Probably sometimes I get it, sometimes not. 
+But anyway I have to tell you about this. So we added new column to some object that was already present for today 
+morning. So it was already created recently. That's why we can face some unexpected behavior. Let me show you 
+what I'm talking about. Now you can see it's very close and easy to switch between our section.  
+  
+  
+Speaker 1
+ 
+ And for example lookups.  
+  
+ 
+  
+Speaker 3
+ 
+ Let's go to reality offer type lookup and let's try to see its data. Now we have name and description. Okay, let's try to 
+set up columns to display. Name is okay here description is also okay and we can try to display one more column. 
+Commission percent looks good and we can save it. Okay, here this commission percent looks good. We need to 
+Provide some initial data. Because we have to support our solution.  
+  
+  
+Speaker 1
+ 
+ With some initial values for calculations.  
+   
+
+--- Page 28 ---
+
+ 
+ Speaker 3
+ 
+ And we agreed that for a sale it will be enough for us to specify 2%. According to this helpful message, 2% will look 
+like this 2.00, so it means just 2. And for rentals we expect to earn 50% but from monthly payment. So our price will 
+represent monthly payment. That's why for rentals we will have significantly bigger value. So it looks like our data is 
+okay here, but we changed columns and we added some data. So possibly we have to look at data part and find 
+corresponding object reality.  
+  
+  
+Speaker 1
+ 
+ Offer type object.  
+  
+ 
+  
+Speaker 3
+ 
+ So not object data item for this. Let me find it. This one Offer type. It looks like it was created by data binding tool, so 
+we could also. No, no. This is lookup registering. Now I need to find it here this one values. So now we have one 
+more column here. We can update this data item with the help of data binding tool. Or we can manually modify it by 
+adding one more column. As you can see, originally this column was not present here because we created data item 
+before adding new columns to the object. So now we have one more column here we have new data. 2% for sale, 
+50% for rental. We have to save it. Everything is okay. So our new column, our new values are here in our data part. 
+Great.  
+  
+ 
+  
+Speaker 3
+ 
+ It looks like we still did not need to do any additional steps related.  
+  
+  
+Speaker 1
+ 
+ To adding new column into existing object.  
+  
+ 
+  
+Speaker 3
+ 
+ But some of you may start to feel some difficulties and such difficulties are connected with the way how server side 
+system remembers information about objects. And unfortunately it may happen that your kind of difficulty which you 
+will finally face will be inability to display data here or inability to use new column a bit later. In order to fix this, you 
+may need maintenance tools for creation so which we already installed. Maintenance tools can help us to restart the 
+app or clear regis if I need it. I will do this restart but a bit later. Now I will try to avoid this to show you what will 
+happen if you did not perform a restart. So let's check will we be able to make all the way all the settings as I plan to 
+do this and will we need restart or not?  
+   
+Speaker 3
+
+--- Page 29 ---
+
+ 
+  
+ So let's go. Now we have offer type which also has additional data. For sale value we have one additional data and 
+for rental value we also have another additional data. And it's really lucky for us that it's possible to get such 
+additional data out from this lookup somewhere at.  
+  
+  
+Speaker 1
+ 
+ The top where we can easily use such data columns.  
+  
+ 
+  
+Speaker 3
+ 
+ Now I plan to show you how to get data out from a lookup. We will use again page editor. Our task is to get decimal 
+value from this offer type lookup and display it somewhere. The reason why we need to display is to make it visual 
+and also to make it fully no code.  
+  
+  
+Speaker 1
+ 
+ So.  
+  
+ 
+  
+Speaker 3
+ 
+ Now you will see this trick how we can make data out from existing lookup. We have new fields here, but if you add 
+any it will add new.  
+  
+  
+Speaker 1
+ 
+ Column to your object and it will.  
+  
+ 
+  
+Speaker 3
+ 
+ Add a new control to your page. So such columns I would like to call data fields and data fields represents 
+connection between controls and real life data column of your main object that this page works with. But if you 
+scroll down you will find interesting set of components called inputs. Inputs are designed to organize input only 
+without direct connection with your main data object and without direct save of any data that you input into this call. 
+Simply speaking, inputs are controls that you use for inputs but not intended to.  
+  
+  
+Speaker 1
+ 
+ Save data from them or at least.  
+   
+
+--- Page 30 ---
+
+ 
+ Speaker 3
+ 
+ Not save into main primary object with the standard tools. So maybe you will save it somewhere somehow else. Let 
+me show you how I can use this for our task. I need number control. So I will take number and carefully drag and 
+drop it somewhere on my page. This is a just control just input field with no any connection to any kind of objects 
+and the data model. But we have additional function which will be really helpful for us. We can ask system to fill this 
+number control from some column that we can take out from existing lookups or existing from existing fields. Let 
+me show you how we can do this. We go to data source, click on this lookup button and then we will search. So 
+select some data field that we will use to fill this control. Realty related objects.  
+  
+ 
+  
+Speaker 3
+ 
+ It will show us all existing lookup columns in our realty object and then we will find offer type extended and system 
+will show us only suitable on the compatible field which will be you can be used within decimal number control. This 
+is our commission percent so we will select it and here now you will see some changes. Title appeared the same as 
+title of your column inside of your offer type lookup Code appeared and cannot be edited. This is read only and also 
+you can unlock it. So this column will be constantly read only. Title position okay title on the page and element code 
+number input. So we can call it something like commission percent okay and save change of our element code.  
+  
+ 
+  
+Speaker 3
+ 
+ So simply speaking we made read only column that will be automatically loaded each time offer type is set and each 
+time offer type changed or cleared. Let's save our changes and we will see how it works. By the way, please confirm 
+with plus in our chat if you follow me directly during the session. So I need to know, should I allow you some pause 
+to do some steps after I demonstrate it? Marcel, thank you, Andre. Thank you. Okay, I will go. Not too fast. So you 
+will have enough time. If something is not good and you would like me to stop for.  
+  
+  
+Speaker 1
+ 
+ A while, tell me please.  
+  
+ 
+  
+Speaker 3
+ 
+ Okay, Monica, thank you again. Secret and Rakhi, thank you for mentioning. Great. So we saved our page. Then we 
+can go to our page close, open it again. Now you see this commission percentage shown. Okay, Maybe we can 
+reward the page just to suppress any possible issue with the browser cache. So let's open again. Apartment of New 
+Orleans we have offer type sale. But you see this commission percent is not shown. Okay, let's try to select another 
+one. Rental or I chose sale again. Okay, rental 50 sale 202. Okay, save it. Close. Such data will be not possible to see 
+in list. So we have no reality column which will represent our commission percent.  
+  
+  
+Speaker 3
+ 
+
+--- Page 31 ---
+
+ 
+ We can read it from the database if we use related objects, if we use offer type and if we display commission 
+percent and this commission percent will be obtained from corresponding record from our offer type. But you see, 
+now we have some troubles. We have some troubles and system does not recognize commission percent column 
+fully. Probably it also shows us some error messages, I believe. Let's try to reload it and see what happens. No, no 
+error message. It just doesn't show us corresponding values. But they are definitely there. So we can go to lookups, 
+we can find our offer type lookup. We can find columns there. So our commission percent is here. So what is 
+happening and why we have such a trouble? And if you open the page, you see no initial value here.  
+  
+ 
+  
+Speaker 3
+ 
+ But if you click there and back to sale now you see this value is okay, save, close, open and still it doesn't work. So 
+we still have some problem with this additional column.  
+  
+  
+Speaker 1
+ 
+ And this problem unfortunately cannot be solved.  
+  
+ 
+  
+Speaker 2
+ 
+ By logging out and logging in.  
+  
+  
+Speaker 1
+ 
+ So let me show you. I try to log out.  
+  
+ 
+  
+Speaker 2
+ 
+ Maybe thinking.  
+  
+  
+Speaker 1
+ 
+ There is something like a user session cache issue. Then I try to log in.  
+  
+ 
+  
+Speaker 2
+ 
+ When you work with client side, it's.  
+   
+Speaker 1
+
+--- Page 32 ---
+
+  
+ Better to keep your browser console on.  
+  
+ 
+  
+Speaker 2
+ 
+ Probably you will see some interesting messages.  
+  
+  
+Speaker 1
+ 
+ There or a lot of red messages.  
+  
+ 
+  
+Speaker 2
+ 
+ In case of errors.  
+  
+  
+Speaker 1
+ 
+ So it's important to see it quick.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, opening our realty section, ignoring all.  
+  
+  
+Speaker 1
+ 
+ Warnings here, open it once again and you see no, it did not help us. So unfortunately logging out and logging in.  
+  
+ 
+  
+Speaker 3
+ 
+ Doesn'T help you and the only solution.  
+  
+  
+Speaker 1
+ 
+ Which we can do is restart our app or shut it down and start.  
+   
+
+--- Page 33 ---
+
+ 
+ Speaker 3
+ 
+ It again for example with the help of IIS Manager. But it will take more than minute for us to normally shut down and 
+start. So we have a quick solution.  
+  
+  
+Speaker 1
+ 
+ This is restart our app and we.  
+  
+ 
+  
+Speaker 3
+ 
+ Have a maintenance tools for this restart application. This is the only way to quickly fix this issue.  
+  
+  
+Speaker 1
+ 
+ Now you see we have some.  
+  
+ 
+  
+Speaker 2
+ 
+ Errors in browser console, but it looks.  
+  
+ 
+  
+Speaker 3
+ 
+ Like not very critical.  
+  
+  
+Speaker 1
+ 
+ So now restart is being performed.  
+  
+ 
+  
+Speaker 3
+ 
+ We can check what's happening with our memory and with our processes using task manage.  
+  
+  
+Speaker 1
+ 
+
+--- Page 34 ---
+
+ W3WP . Looks like we have the same worker.  
+  
+ 
+  
+Speaker 3
+ 
+ Process, but it has a comment to.  
+  
+  
+Speaker 1
+ 
+ Restart so possibly to rewards some of its assemblies.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, so we restarted our app.  
+  
+  
+Speaker 1
+ 
+ We go to reality section.  
+  
+ 
+  
+Speaker 2
+ 
+ Now we already will see the difference.  
+  
+  
+Speaker 1
+ 
+ Now you see that commission percent here.  
+  
+ 
+  
+Speaker 2
+ 
+ Was normally displayed in this list previously it was not normal.  
+  
+  
+Speaker 1
+ 
+ And if we open any record now.  
+  
+  
+Speaker 2
+ 
+
+--- Page 35 ---
+
+ 
+ Commission percent will be fully normally loaded.  
+  
+  
+Speaker 1
+ 
+ When we just open the page. So you see commission percent loaded correctly if you take any other value. Yes. If you 
+go to rental. Yes, it's okay.  
+  
+ 
+  
+Speaker 2
+ 
+ So now we fixed it.  
+  
+  
+Speaker 1
+ 
+ And that's why I had to use this add on called maintenance tools for creature.  
+  
+ 
+  
+Speaker 2
+ 
+ Such add on helps me easily restart.  
+  
+  
+Speaker 1
+ 
+ The app with just waiting approximately 10 seconds. And it's much easier than restarting my app by shutting down 
+and starting again.  
+  
+ 
+  
+Speaker 2
+ 
+ My worker process or recycling worker process.  
+  
+  
+Speaker 1
+ 
+ It's possible, so it will take significantly longer.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, so we fixed this question with.  
+   
+
+--- Page 36 ---
+
+ Speaker 1
+ 
+ The commission percent and now.  
+  
+ 
+  
+Speaker 3
+ 
+ Our task.  
+  
+ 
+  
+Speaker 2
+ 
+ Is.  
+  
+  
+Speaker 1
+ 
+ To make actual calculation.  
+  
+ 
+  
+Speaker 2
+ 
+ So now we can think of how.  
+  
+  
+Speaker 1
+ 
+ To trace changes of price or commission percent.  
+  
+ 
+  
+Speaker 2
+ 
+ Luckily commission percent will be available for.  
+  
+  
+Speaker 1
+ 
+ Us the same as any attribute for a real column.  
+  
+ 
+  
+Speaker 2
+ 
+ So commission percent will be also an attribute for us.  
+
+--- Page 37 ---
+
+  
+  
+Speaker 1
+ 
+ So if this value changes or if.  
+  
+ 
+  
+Speaker 2
+ 
+ This value changes, as you can see.  
+  
+  
+Speaker 1
+ 
+ It will be changed in case if you clear in case if you set.  
+  
+ 
+  
+Speaker 2
+ 
+ Some offer type or if you change to another offer type, commission percent is changed.  
+  
+  
+Speaker 1
+ 
+ So price or commission percent should trigger recalculation of commission.  
+  
+ 
+  
+Speaker 2
+ 
+ I will show you how we can do this. Let's go to our configuration section.  
+  
+  
+Speaker 1
+ 
+ Find client modules. We are working with form page. So when we look at this stuff you can see this is a real T form 
+page. That's why I know where to open corresponding code. So you can also open the code from page editor if you 
+want. I just feel it's more comfortable to work here. So form page open source code. That's how we can go directly 
+to the JavaScript part of it and See what's happening.  
+  
+ 
+  
+Speaker 2
+ 
+ Andrean is asking is it possible to use this add on in a cloud environment?  
+   
+Speaker 1
+
+--- Page 38 ---
+
+  
+ Yes, all creation apps from Marketplace can be installed on cloud systems.  
+  
+ 
+  
+Speaker 2
+ 
+ Absolutely the same as you can install it locally. When you install any add on, you.  
+  
+  
+Speaker 1
+ 
+ Use only web interface.  
+  
+ 
+  
+Speaker 2
+ 
+ So it will work absolutely the same.  
+  
+ 
+  
+Speaker 3
+ 
+ Let me show you.  
+  
+  
+Speaker 1
+ 
+ So you go to Settings, you go to Application management, Application Hub and then you click Install or Add new 
+application.  
+  
+ 
+  
+Speaker 3
+ 
+ And you can select something from this.  
+  
+  
+Speaker 1
+ 
+ List or you can select Marketplace Powered.  
+  
+ 
+  
+Speaker 2
+ 
+ And it will work absolutely the same.  
+ 
+
+--- Page 39 ---
+
+ 
+  
+Speaker 1
+ 
+ If you run it in cloud. Thank you Adrian for your interesting question. Let's move on with your code. So we found 
+reality form page.  
+  
+ 
+  
+Speaker 2
+ 
+ We decided to open directly its source code.  
+  
+  
+Speaker 1
+ 
+ That's how we open this tab.  
+  
+ 
+  
+Speaker 2
+ 
+ We can try to find our commission diff part.  
+  
+  
+Speaker 1
+ 
+ You can see this our commission column. It was added by help of page editor.  
+  
+ 
+  
+Speaker 2
+ 
+ So practically we should not modify this. But it will be interesting to see how it will be connected with the.  
+  
+  
+Speaker 1
+ 
+ Data attribute PDS USR commission USR so.  
+  
+ 
+  
+Speaker 2
+ 
+ This is our attribute name.  
+  
+  
+Speaker 1
+ 
+ Okay, we can collapse temporary all such things.  
+
+--- Page 40 ---
+
+  
+ 
+  
+Speaker 2
+ 
+ I will only show you.  
+  
+  
+Speaker 1
+ 
+ So price. Okay, we need price, we need commission so we can collapse all other new config div items till we will face 
+view model config. So attributes of view model config represent.  
+  
+ 
+  
+Speaker 2
+ 
+ Set of variables that can be saved.  
+  
+  
+Speaker 1
+ 
+ On the page level.  
+  
+ 
+  
+Speaker 2
+ 
+ And we already started to work with.  
+  
+  
+Speaker 1
+ 
+ It yesterday I just tried to explain you such attributes and now we will work with them. So for the price column we 
+see this attribute name. Okay? And for the percent here.  
+  
+ 
+  
+Speaker 2
+ 
+ We have this attribute name and finally.  
+  
+  
+Speaker 1
+ 
+ We will save our data into commission.  
+   
+Speaker 2
+ 
+
+--- Page 41 ---
+
+ 
+ 
+ Attribute which has this name.  
+  
+  
+Speaker 1
+ 
+ This is important. Okay, I will collapse anything else to make it clear and quite compact for you. So we are interested 
+in price attribute.  
+  
+ 
+  
+Speaker 2
+ 
+ Percent attribute and commission attribute.  
+  
+  
+Speaker 1
+ 
+ Okay? Nothing else.  
+  
+ 
+  
+Speaker 2
+ 
+ Model config is not interesting. And then we will do something with handlers.  
+  
+  
+Speaker 1
+ 
+ I already have an example which will.  
+  
+ 
+  
+Speaker 3
+ 
+ Make it possible for us to do it quickly. So let me show you this example of the code examples reading UI and then 
+we need calculated field example.  
+  
+  
+Speaker 1
+ 
+ Field example. So now I will use a special.  
+  
+ 
+  
+Speaker 3
+ 
+ Pre designed handler name. Probably we need to look at Academy.  
+
+--- Page 42 ---
+
+  
+  
+Speaker 1
+ 
+ To explain all possible handler names.  
+  
+ 
+  
+Speaker 3
+ 
+ So let's go to Academy, let's go.  
+  
+  
+Speaker 1
+ 
+ To go to guides development.  
+  
+ 
+  
+Speaker 3
+ 
+ Front end.  
+  
+  
+Speaker 1
+ 
+ Freedom UI and somewhere we will see some client schema references handlers.  
+  
+ 
+  
+Speaker 3
+ 
+ Yes, this is an article explaining handlers and their definition. So we have some set of standard names for handlers 
+and they represent some.  
+  
+  
+Speaker 1
+ 
+ Important steps of page life cycle. In our case, we are interested in the handler which is triggered each time when 
+some data, some attribute data changed.  
+  
+ 
+  
+Speaker 3
+ 
+ At our page changes the attribute.  
+  
+  
+Speaker 1
+ 
+
+--- Page 43 ---
+
+ So this handler is called handle view.  
+  
+ 
+  
+Speaker 3
+ 
+ Model attribute change request. Let me show you my example. Handle view model attribute change request.  
+  
+  
+Speaker 1
+ 
+ So simply speaking, this handler will be.  
+  
+ 
+  
+Speaker 3
+ 
+ Called each time when any column value.  
+  
+  
+Speaker 1
+ 
+ Changes at our user at our client.  
+  
+ 
+  
+Speaker 3
+ 
+ Side page in our browser. So this handler will be triggered quite often. We copy this code.  
+  
+  
+Speaker 1
+ 
+ We will also.  
+  
+ 
+  
+Speaker 3
+ 
+ Paste it for you and we will copy it and put it to our examples in our handlers area. So this is an array, we have to 
+keep syntax well. And that's why I try to paste.  
+  
+  
+Speaker 1
+ 
+ It like this, keeping commas, brackets and so on.  
+   
+Speaker 3
+ 
+
+--- Page 44 ---
+
+ 
+ 
+ So now you see, this piece of code was just simply added.  
+  
+  
+Speaker 1
+ 
+ This piece of code was added and let's check what we can do with it. Of course we have to take care about attribute 
+names because they are always unique. Each time you do the same example again, you will see different unique 
+names.  
+  
+ 
+  
+Speaker 2
+ 
+ So how we can check it?  
+  
+  
+Speaker 1
+ 
+ This handler will be called quite often for each column change.  
+  
+ 
+  
+Speaker 3
+ 
+ And in order to make it efficient.  
+  
+  
+Speaker 1
+ 
+ We need to check if some column.  
+  
+ 
+  
+Speaker 2
+ 
+ That we are interested had changed or not. If yes, then we do our recalculation.  
+  
+  
+Speaker 1
+ 
+ If not, we should do nothing in.  
+  
+ 
+  
+Speaker 2
+ 
+ Order to save system resources. So we check request property here and.  
+
+--- Page 45 ---
+
+  
+  
+Speaker 1
+ 
+ We have attribute name. And if this attribute name is our price, then this is logical or attribute name is our 
+commission percent.  
+  
+ 
+  
+Speaker 2
+ 
+ Then we do some calculation, but we.  
+  
+  
+Speaker 1
+ 
+ Have to actualize our names so you.  
+  
+ 
+  
+Speaker 2
+ 
+ Can see our list of attributes for the price.  
+  
+  
+Speaker 1
+ 
+ Here is our attribute name. Let's copy it and carefully paste here. And also as we already have it in our clipboard here 
+when we need to read it, then the same for commission percent. Let's make sure this is our attribute name. Let me 
+show you. Yes, it looks like it is already the same because generated by system and I usually do same examples. 
+That's a bit strange shifts. Okay, Very unusual. Okay, we did this. So so now you see if price changed, if commission 
+percent changes, then we take price value. We take commission value.  
+  
+ 
+  
+Speaker 2
+ 
+ So how we do this? I already showed you yesterday.  
+  
+  
+Speaker 1
+ 
+ We have to use operator await. Then request is our argument dollar context and then we have access to our certain 
+attribute.  
+  
+ 
+  
+Speaker 2
+ 
+ So we have just a variable in.  
+ 
+
+--- Page 46 ---
+
+ 
+  
+Speaker 1
+ 
+ Our JavaScript code for price for percent. Then we do calculation of commission as result of multiplication and don't 
+Forget to.  
+  
+ 
+  
+Speaker 2
+ 
+ Divide by 100 because commission percent represents.  
+  
+  
+Speaker 1
+ 
+ Percent, not just a decimal value. Okay, and then we will save our commission percent. We have to Provide correct 
+value. Here is our commission attribute.  
+  
+ 
+  
+Speaker 2
+ 
+ If we do it incorrectly, we will fail.  
+  
+  
+Speaker 1
+ 
+ So this is important. Our commission value will be finally saved into this. Okay, now it's ready and we can check how 
+it works by saving our code.  
+  
+ 
+  
+Speaker 3
+ 
+ I provided an example for you, so you can also check out your example.  
+  
+  
+Speaker 1
+ 
+ Just a second. Okay, saving was successful and we can move on with our checks. Let's go to realty section, open 
+the page. Let's try to trigger change of price or change offer type, for example. Like this, nothing happens.  
+  
+ 
+  
+Speaker 2
+ 
+ Probably it's because of cache.  
+   
+Speaker 1
+
+--- Page 47 ---
+
+  
+ So let's reload the page. Reloading helps to fight with browser cache effect. Open again, try to make changes.  
+  
+ 
+  
+Speaker 2
+ 
+ Now you can see that recalculation works well.  
+  
+  
+Speaker 1
+ 
+ So we have our price for rental of our apartment.  
+  
+ 
+  
+Speaker 2
+ 
+ And you see our commission is correctly.  
+  
+  
+Speaker 1
+ 
+ Recalculated and we can save our data.  
+  
+ 
+  
+Speaker 2
+ 
+ Commission will be also saved.  
+  
+  
+Speaker 1
+ 
+ We can see it here. Commission is our legal valid column, so it will be saved.  
+  
+ 
+  
+Speaker 2
+ 
+ Let's open some sale example.  
+  
+  
+Speaker 1
+ 
+ Now you can see.  
+   
+
+--- Page 48 ---
+
+ 
+ Speaker 2
+ 
+ Okay, price was not changed.  
+  
+  
+Speaker 1
+ 
+ Commission is already calculated. Let's check if we switch from sale to rental.  
+  
+ 
+  
+Speaker 2
+ 
+ You see, commission was recalculated.  
+  
+  
+Speaker 1
+ 
+ If we switch back to sale, it's.  
+  
+ 
+  
+Speaker 2
+ 
+ Also quite well calculated.  
+  
+  
+Speaker 1
+ 
+ So now you see that our commission is quite fair for this amount of price for the house.  
+  
+ 
+  
+Speaker 2
+ 
+ So our recalculation also works well and.  
+  
+  
+Speaker 1
+ 
+ It shows even when page is opened. It looks like when page is opened our data filled in client side. So it triggers 
+recalculation even if we.  
+  
+ 
+  
+Speaker 2
+ 
+
+--- Page 49 ---
+
+ Do not change anything.  
+  
+  
+Speaker 1
+ 
+ But just open the page. Yes, we'll see.  
+  
+ 
+  
+Speaker 2
+ 
+ So it looks like our calculation is.  
+  
+  
+Speaker 1
+ 
+ Already done and works quite well.  
+  
+ 
+  
+Speaker 2
+ 
+ And of course everything works quite smoothly.  
+  
+  
+Speaker 1
+ 
+ When we have a pre programmed examples where everything is correct.  
+  
+ 
+  
+Speaker 2
+ 
+ But in real life you will do.  
+  
+  
+Speaker 1
+ 
+ Your own examples where some errors or mistakes could happen. So you will need to know how to debug this code.  
+  
+ 
+  
+Speaker 2
+ 
+ I will show you how to make.  
+  
+  
+Speaker 1
+ 
+ Such debug and you will see that's not so difficult. One of the easiest ways to debug.  
+
+--- Page 50 ---
+
+  
+ 
+  
+Speaker 2
+ 
+ Is to put a special debugger breakpoint into your code.  
+  
+  
+Speaker 1
+ 
+ Like this, the word debugger. If you provide such debugger statement, it means that you ask for debug session and 
+you stop execution of your JavaScript code. And if your browser has opened browser developer console.  
+  
+ 
+  
+Speaker 3
+ 
+ So if browser developer console is on.  
+  
+  
+Speaker 1
+ 
+ Then your debugging will work for you. But this approach has also disadvantage.  
+  
+ 
+  
+Speaker 2
+ 
+ And when you finished your debugging, you.  
+  
+  
+Speaker 1
+ 
+ Should not forget to remove all your debugger lines.  
+  
+ 
+  
+Speaker 2
+ 
+ Save your changes again.  
+  
+  
+Speaker 1
+ 
+ And ideally you have to run your.  
+  
+  
+Speaker 2
+ 
+
+--- Page 51 ---
+
+ 
+ Logic again just to make sure you did not accidentally damage anything.  
+  
+  
+Speaker 1
+ 
+ Because when you save, you have chance that something will be incorrectly saved. Something will go not so well. 
+Okay, so let me show you how we can do this type of debugging.  
+  
+ 
+  
+Speaker 2
+ 
+ I need to explain and I need to show you.  
+  
+  
+Speaker 1
+ 
+ We can go to this is easy.  
+  
+ 
+  
+Speaker 2
+ 
+ Way to put debugger word. I will show you a bit more professional way to debug. We can go to our section open 
+page which we plan to debug.  
+  
+  
+Speaker 1
+ 
+ Then we enable browser developer console.  
+  
+ 
+  
+Speaker 2
+ 
+ You can do it by F12 or control shift I.  
+  
+  
+Speaker 1
+ 
+ And when you do this, you then.  
+  
+ 
+  
+Speaker 2
+ 
+ Go to Sources tab. You see, we already opened some set of scripts here. We don't need it now.  
+   
+
+--- Page 52 ---
+
+ Speaker 1
+ 
+ Let's close everything and then we can.  
+  
+ 
+  
+Speaker 2
+ 
+ Just search and you see we have.  
+  
+  
+Speaker 1
+ 
+ A USR reality form page part of the URL.  
+  
+ 
+  
+Speaker 2
+ 
+ So it's a page, it's a name.  
+  
+  
+Speaker 1
+ 
+ Of client module and we can try to find it.  
+  
+ 
+  
+Speaker 2
+ 
+ Control p Open file.  
+  
+  
+Speaker 1
+ 
+ Let's try Control p open file. Which one? Reality form page USR realty form page. We have two options here, probably 
+because of browser cache.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, if you do not want to.  
+  
+  
+Speaker 1
+ 
+ Guess which one is correct, we can go back reload the page.  
+ 
+
+--- Page 53 ---
+
+ 
+ 
+  
+Speaker 2
+ 
+ So we will suppress any kind of.  
+  
+  
+Speaker 1
+ 
+ Cache and then we will open it again. And we have just one option, single option to select corresponding file Control 
+P . Okay, open the page, then control p open file and press ctrl P realty.  
+  
+ 
+  
+Speaker 2
+ 
+ And you see only one form page here.  
+  
+  
+Speaker 1
+ 
+ So no any cached, no any duplicates that will make you confused. And you probably may select Incorrect 1. So let's 
+open the only one you.  
+  
+ 
+  
+Speaker 2
+ 
+ See set of equalizable strings here. But the most important of course is our code. And you will see our module text 
+here.  
+  
+  
+Speaker 1
+ 
+ Big part with view config div some.  
+  
+ 
+  
+Speaker 2
+ 
+ Part view model config. And finally you will have your header handlers. Part we are interested in debugging 
+somewhere here.  
+  
+  
+Speaker 1
+ 
+ For example, we can click on this.  
+   
+Speaker 2
+
+--- Page 54 ---
+
+ 
+  
+ Line number which will make a breakpoint for us.  
+  
+  
+Speaker 1
+ 
+ So it's the same as debugger, but.  
+  
+ 
+  
+Speaker 2
+ 
+ It doesn't change the source of our client module.  
+  
+  
+Speaker 1
+ 
+ So we can use browser debugging tools for this.  
+  
+ 
+  
+Speaker 2
+ 
+ Click on the line number.  
+  
+  
+Speaker 1
+ 
+ That's how we activate breakpoint. So here we have one breakpoint that we just clicked here. Then when your 
+browser developer console is on and execution comes to this line.  
+  
+ 
+  
+Speaker 2
+ 
+ Execution will be stopped. Let me show you.  
+  
+  
+Speaker 1
+ 
+ If you change for example offer type from rental to sale, you see These.  
+  
+ 
+  
+Speaker 2
+ 
+
+--- Page 55 ---
+
+ Lines are executed and now code stops and we can go line by line.  
+  
+  
+Speaker 1
+ 
+ Now we have to use tools that.  
+  
+ 
+  
+Speaker 2
+ 
+ Will help us to proceed with this piece. The most popular, I think the Most.  
+  
+  
+Speaker 1
+ 
+ Efficient is F10 which is a step over running of a line without going into sub functions for it. So I will press F10. Now 
+you see my price was taken from the column percent. Now you see new percent was taken when offer type 
+changed.  
+  
+ 
+  
+Speaker 2
+ 
+ Then you can see commission was recalculated.  
+  
+  
+Speaker 1
+ 
+ Now you will see commission will be set here. So my commission is now 26, so I expect it to be saved here.  
+  
+ 
+  
+Speaker 2
+ 
+ Yes, 26 and then we move on.  
+  
+  
+Speaker 1
+ 
+ So here we can use resume F8 hotkey to normally continue execution.  
+  
+ 
+  
+Speaker 2
+ 
+ That's how we can check this code. If we change the price.  
+   
+Speaker 1
+
+--- Page 56 ---
+
+  
+ You will see the Same I press F10 I have another commission F8.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, we can make more serious price.  
+  
+  
+Speaker 1
+ 
+ For an apartment.  
+  
+ 
+  
+Speaker 2
+ 
+ And obviously we'll have more serious commission. So that's how you can debug your code.  
+  
+  
+Speaker 1
+ 
+ Also, if your code has something has.  
+  
+ 
+  
+Speaker 3
+ 
+ Some obvious mistakes and causes runtime errors, you will also see such runtime errors in your sources tab. You 
+will also see your console which will be full of red messages. So in case if your code fails in runtime of course you 
+should take care about it and look at your console tab and check if everything works well or not. When you finished 
+your debugging you should click on wine number again removing your breakpoint and then your code will run 
+without stops. It's interesting to see what value we will see in case if we will clear overtype.  
+  
+  
+Speaker 1
+ 
+ Now let's check. You see that percent is empty so percent is null. Trying to multiply null on price results in zero.  
+  
+ 
+  
+Speaker 2
+ 
+ So that's how we will clear.  
+  
+  
+Speaker 1
+ 
+ Okay, when we have some valid percent, we can move on with F8 and you see setting is done.  
+
+--- Page 57 ---
+
+  
+ 
+  
+Speaker 3
+ 
+ If you have any questions related to this debugging, please tell me. As you can see, debugging can be.  
+  
+ 
+  
+Speaker 2
+ 
+ Really effective if your code is more.  
+  
+ 
+  
+Speaker 3
+ 
+ Complex, if you have sub functions. If you are not sure what values you finally get from your code so you can check 
+it out with the help of browser developer tools. Okay, probably we got an hour of our session, so let's make a few five 
+minutes break and then move on with next topics related to programming. I also plan to show you some examples 
+of programming of validation. So I plan to show you validation.  
+  
+  
+Speaker 1
+ 
+ And.  
+  
+ 
+  
+Speaker 3
+ 
+ Different validators so different clones will be used for universal validation. And also I plan to show you some 
+examples of so we already displayed debugging but also you need to know a bit more about logging. Okay, so let's 
+make a five minutes break.  
+  
+  
+Speaker 1
+ 
+ Foreign.  
+  
+ 
+  
+Speaker 2
+ 
+ So today I want you to see.  
+  
+  
+Speaker 1
+ 
+ Some more technical things about how client side works and how we can do.  
+
+--- Page 58 ---
+
+  
+ 
+  
+Speaker 3
+ 
+ Some technical steps with it. So we already know how to debug our code. I would also like to you to see that we 
+have quite developed logging.  
+  
+  
+Speaker 1
+ 
+ So I will show you login mechanisms.  
+  
+ 
+  
+Speaker 3
+ 
+ That are available on Creature platform. Here is our installed app and this is our folder with installed application. We 
+go to terrasoftware web and you already know that Creature uses analog libraries.  
+  
+  
+Speaker 1
+ 
+ To provide the different logs and save them In Creature web server.  
+  
+ 
+  
+Speaker 3
+ 
+ The most important log file for us is invoke targets config because here we can change default file to save our all 
+default folder to save all our logs. You may be interested in the way how we can do some logging. So we have so 
+called appenders and targets and probably have to start from appender first. So analog config I should use analog 
+config first. And we have a lot of loggers.  
+  
+  
+Speaker 1
+ 
+ As well appender so they are synonym.  
+  
+ 
+  
+Speaker 3
+ 
+ Logger or appender they are synonyms. So you can see a lot of different loggers registered and appenders are 
+settings that will collect log messages. And finally appenders will be connected with physical files. So you see we 
+have more than 100 different loggers and logger is a.  
+  
+  
+Speaker 1
+ 
+ Logical thing that you can use in your program code. Appender is a place that is used to collect your data and save 
+
+--- Page 59 ---
+
+it.  
+  
+ 
+  
+Speaker 3
+ 
+ So we have a lot of loggers, a lot of targets. Sorry, targets. And you see we have so appenders it means it's a setting 
+that represents physical file. Also targets are synonym and appenders shows us that we also have a lot of different 
+logs that are saved here. And you can see different messages, different settings. So what do you need to know 
+about this? So Croatia has a lot of default types of logs and all of them will be saved in a folder which we specify 
+when we install our application. So in Analog Targets config line number three we have setting to save our logs to.  
+  
+ 
+  
+Speaker 3
+ 
+ By default this folder is somewhere in temp Catalog Windows temp I decided to make it different so we can find logs 
+and as you can see we have zero which means main application logs and log folder which.  
+  
+ 
+  
+Speaker 2
+ 
+ Which.  
+  
+  
+Speaker 1
+ 
+ Sorry.  
+  
+ 
+  
+Speaker 3
+ 
+ A log folder which means loader part is not so interesting because it has no customizable items that will be 
+interested for us to Interesting for us to see so loader is very technical and we have just several log files here, 
+nothing very spectacular. And zero folder is what we really need because it's a log set of logs for our main 
+application. And then we go inside, we see logs for each separate date. So you see for different days you have logs 
+in different folder which makes it easy to find. And then you see different logs here. In total we have more than 50 
+different files with logs saved here. So a lot of different logs, a lot of different files. And what is the most important 
+for.  
+  
+  
+Speaker 1
+ 
+ You from the maintenance point of view?  
+  
+  
+Speaker 3
+ 
+
+--- Page 60 ---
+
+ 
+ I think the most important is error log. Error log represents all exceptions and keeps information about all exceptions 
+that happened in your system. So error log shows all errors and of course you should take care about.  
+  
+  
+Speaker 1
+ 
+ It because usually it is important and.  
+  
+ 
+  
+Speaker 3
+ 
+ Sometimes you may find some errors which are not related to your changes. So you may simply speaking find some 
+errors from base product like this 1 error parent schema is now parent ID sets to empty and so on. But it looks like 
+nothing very critical for our application. You see the same error many times and it looks like not very important. But 
+if you will get some error messages here related to your functionality and your users will start to complain about 
+something is not working. Of course you cannot ignore this. You may ask me why we have some errors in a wait 
+production release software. The answer is that Croatia is quite big and we have more than 200 libraries. We have 
+millions of use cases that could be checked and used.  
+  
+  
+Speaker 1
+ 
+ So it's really hard to test everything.  
+  
+ 
+  
+Speaker 3
+ 
+ And to polish any line of code.  
+  
+  
+Speaker 1
+ 
+ So it should show it so it.  
+  
+ 
+  
+Speaker 3
+ 
+ Could not fail in any way. So in real life, in any big system, some errors usually happen.  
+  
+  
+Speaker 1
+ 
+ But in our case it's not so.  
+  
+  
+Speaker 3
+ 
+
+--- Page 61 ---
+
+ 
+ Critical so you can simply ignore. But if you will find another errors with some user complaints, of course you should 
+take care of it. So from maintenance point of view, I think looking at such error log is quite important. And this is 
+something that you should do regularly. If you support some big creation implementation by your own. In cloud 
+conditions, looking at such logs is complicated because you will not be able to directly go to cloud based file system 
+to get it. So you only can ask for help at support team. By the way, you should know Support team lives here support 
+creation.com so they work 24, 7. It means you can ask them any time, anytime you need, even on weekends. And if 
+you ask for example for a yesterday logs for a searching website, they can give it for you.  
+  
+ 
+  
+Speaker 3
+ 
+ But it will be more efficient for you if you can Collect logs by yourself. And that's why I plan to show you some 
+special tool which makes it easier if you need to collect logs from cloud based environment. So I will show you Now 
+I'm talking about telemetry log for creation. This is a special add on which we can get from Application Hub New 
+application Marketplace powered. Then we can just search for the word log and we will easily find this Hokku app or 
+telemetry log for creation. So Hoku is a company physically this company is like founded by our creation employees 
+and this is something just so you should consider it made by creature and you can install this telemetry log. This is 
+for free. Agree Confirm. You see it was just updated 2023 November. Okay. And install it.  
+  
+ 
+  
+Speaker 3
+ 
+ It takes just almost no time, maybe 20 seconds. And you will see that new app is installed to our system. So you'll be 
+able to collect vlogs but you'll be able to collect only runtime created logs. So it's like listener for logs. You will not be 
+able to collect yesterday logs, but if you do some experiments and you need to see how logs look like when you do 
+your experiments in cloud. So this app will be extremely helpful for you because it shows you all the messages all 
+the log messages that are saved on disk. So you can listen to any logs saved on disk. Let's patiently wait for its 
+installation. Surprisingly it takes a bit longer than I expected. But it's okay now it's not so critical. Maybe we can look 
+at browser developer console here. But usually no trouble should be present.  
+  
+ 
+  
+Speaker 3
+ 
+ Okay, wait for a minute. And I'm also curious about what is happening at my website. Oh, dotnet exe was running so 
+it looks like compilation was done. So system decided it needs to compile and that's why it was so slow. Okay, finally 
+our compilation finished. We can download installation log to see what it took so long and what operation took so 
+long to install. So now you will see results. Okay, great. Here's our installation logs started 26:58, so almost 27, 
+finished 29. It looks like 2 minutes and 3 seconds and yeah, it's a bit longer than usual. And 27:15, 28:56 so it looks 
+like full configuration compilation was performed. That's why it took so long and okay, no problem, we can live with 
+it. So now you will see one more app here in this list Telemetry and you can reload this tab.  
+  
+ 
+  
+Speaker 3
+ 
+ Now you will see one more item at our settings page. Previously called System Designer, currently it's called 
+Settings. So I Will show you how you can use this telemetry log here. Yes. Now let me show you.  
+   
+Speaker 1
+
+--- Page 62 ---
+
+  
+ We can check.  
+  
+ 
+  
+Speaker 3
+ 
+ You probably remember we looked at our logger and appenders. So we have appenders, we have loggers here.  
+  
+  
+Speaker 1
+ 
+ So we can listen for a certain.  
+  
+ 
+  
+Speaker 3
+ 
+ Logs in order to get some error.  
+  
+  
+Speaker 1
+ 
+ Messages for the certain, let's say subject or certain area of functionality.  
+  
+ 
+  
+Speaker 3
+ 
+ And you can also listen everything like this, which will mean that you look and get every message. And I'll try to find a 
+logger for SQL. Do we have anything? No, Let me find a corresponding logger. SQL. Oh, so it's called JSoft Core DB.  
+  
+  
+Speaker 1
+ 
+ Executor SQL log appender.  
+  
+ 
+  
+Speaker 3
+ 
+ Okay, will it be DB executor? And we're only interested in for example errors.  
+  
+  
+Speaker 1
+ 
+ So I plan to make example of.  
+   
+Speaker 3
+
+--- Page 63 ---
+
+ 
+  
+ Listening of DB execution errors. And I especially will do some example which makes such an error. Let's go to 
+customer360, find accounts and let's try to remove some account. Obviously we will not be able to do this because it 
+has some connections with existing contacts. So I try to delete this account. Now you see no messages here. Try to 
+do this. Of course I see error messages and here I expect to get. I expect to get error messages. Oh, I should 
+subscribe. I should remember to subscribe.  
+  
+  
+Speaker 1
+ 
+ Okay, let's try to delete once again. Yes, error message appears.  
+  
+ 
+  
+Speaker 3
+ 
+ Logger pattern.  
+  
+  
+Speaker 1
+ 
+ Maybe you should use info subscribe.  
+  
+ 
+  
+Speaker 3
+ 
+ I will try to delete it once again.  
+  
+  
+Speaker 1
+ 
+ Yes, now you see, funny thing, but.  
+  
+ 
+  
+Speaker 2
+ 
+ It was not an error, it was just a warning.  
+  
+ 
+  
+Speaker 3
+ 
+ So like yellow color, which means this is not an error, just a warning.  
+   
+
+--- Page 64 ---
+
+ Speaker 1
+ 
+ And okay, so I got some text.  
+  
+ 
+  
+Speaker 3
+ 
+ Message from our DB executor and you see that my message has an error. So exception occurred, statement 
+terminated. And you see that we get some text messages and logs.  
+  
+ 
+  
+Speaker 2
+ 
+ You can also get the same logs.  
+  
+  
+Speaker 1
+ 
+ If you go to your files, you.  
+  
+ 
+  
+Speaker 3
+ 
+ Will find SQL JSON here we will have similar information. So you see my delete statement failed.  
+  
+  
+Speaker 1
+ 
+ So it conflicted with foreign reference constraint.  
+  
+ 
+  
+Speaker 3
+ 
+ And it's interesting that for the SQL.  
+  
+  
+Speaker 1
+ 
+ Errors, system logs only queries that were failed.  
+  
+ 
+  
+Speaker 3
+ 
+
+--- Page 65 ---
+
+ So only queries that failed to be executed at the database. In my case, I intentionally made an error for the database 
+level and showed.  
+  
+  
+Speaker 1
+ 
+ You how you can handle it and.  
+  
+ 
+  
+Speaker 3
+ 
+ How you can track it. You can also use all existing loggers for all messages subscribe. You will have plenty of 
+different messages here. Just when you go to any part.  
+  
+  
+Speaker 1
+ 
+ Of your system, when you open any.  
+  
+ 
+  
+Speaker 2
+ 
+ Section, you will start to get more.  
+  
+ 
+  
+Speaker 3
+ 
+ And more Logs because system usually writes.  
+  
+  
+Speaker 1
+ 
+ Something to logs and it has quite verbose logging. So you will have more and more data.  
+  
+ 
+  
+Speaker 3
+ 
+ You see more messages appeared, some of.  
+  
+  
+Speaker 1
+ 
+ Them are useless for you and so.  
+   
+Speaker 3
+
+--- Page 66 ---
+
+ 
+  
+ You have to play a bit with it. But finally you will be able to do the same as you can do with log files. So this telemetry 
+log for creation will be extremely helpful in case if you need to make some experiments and get logs directly in 
+online mode from your cloud environments, including even production systems.  
+  
+  
+Speaker 1
+ 
+ So this can be really helpful for you. Please remember about this telemetry log and we have some buttons here.  
+  
+ 
+  
+Speaker 3
+ 
+ What is this? As you can see we have some help message explaining how to use this some button which shows or it 
+runs.  
+  
+  
+Speaker 1
+ 
+ And stops a listening of logs.  
+  
+ 
+  
+Speaker 3
+ 
+ So green means run, red means stopped and that's how you can also use it. So listening all of the logs will provide 
+you a lot of verbose noisy messages. It's up to you. So maybe this will be interesting for you. So just remember the 
+name of the tool is telemetry for Creatio.  
+  
+  
+Speaker 1
+ 
+ You can easily install it from Marketplace.  
+  
+ 
+  
+Speaker 3
+ 
+ Okay, so what else you need to know about client site?  
+  
+  
+Speaker 1
+ 
+ We will work with details soon and.  
+  
+  
+Speaker 3
+ 
+
+--- Page 67 ---
+
+ 
+ Before we doing this I need to explain you how to do validation. As you can see my previous program was a bit more 
+oriented on classic ui.  
+  
+  
+Speaker 1
+ 
+ So sometimes I jump from topics topics and that's why we are not following directly from this schedule.  
+  
+ 
+  
+Speaker 3
+ 
+ So I plan to provide you material like step by step slightly improving complexity of topics. So I think it's not so hard, 
+not so difficult for you to study.  
+  
+  
+Speaker 1
+ 
+ This material this way.  
+  
+ 
+  
+Speaker 3
+ 
+ So let's move on validation. What it is about and this is.  
+  
+  
+Speaker 1
+ 
+ Check of data before it will be.  
+  
+ 
+  
+Speaker 3
+ 
+ Saved at server side. Let's return back to our reality section and let's look at our data value. So when we add new 
+values it may happen that user may save some very incorrect values. For example, we can try to save.  
+  
+  
+Speaker 1
+ 
+ Negative price as you can see as.  
+  
+ 
+  
+Speaker 3
+ 
+ A result we have negative commission. It's also possible to save negative area and also system does not prevent us 
+from doing such things. So we can save it. And as you can see from system point of view, there is no troubles, no 
+errors. But of course we have trouble from business point of view because we can't normally summarize values, we 
+
+--- Page 68 ---
+
+can't normally calculate commission.  
+  
+  
+Speaker 1
+ 
+ So we have to make some kind.  
+  
+ 
+  
+Speaker 3
+ 
+ Of protection for our data input. And luckily we have this on the platform level as existing validation tools. Let me 
+show you how to use it. We also need to program this. Unfortunately, validation is only available when you do 
+programming, so it's not a no code setting. But we are not afraid of this. Let's go to our configuration section, find.  
+  
+  
+Speaker 1
+ 
+ Our form page again, open its source code again.  
+  
+ 
+  
+Speaker 3
+ 
+ And I need to show you some examples at our Academy documentation which will really help you. So we have some 
+architectural SDK things at front end documentation, but we have.  
+  
+  
+Speaker 1
+ 
+ A lot of useful examples in platform.  
+  
+ 
+  
+Speaker 3
+ 
+ Customization area of our academy. And we have examples for Freedom UI for fields examples and we have 
+examples of population of fields. So it's example of calculations that we already discussed. And we have example of 
+validation of.  
+  
+ 
+  
+Speaker 2
+ 
+ Field which we are interested right now.  
+  
+  
+Speaker 3
+ 
+
+--- Page 69 ---
+
+ 
+ So I will share useful links for such articles.  
+  
+  
+Speaker 1
+ 
+ I recommend you to read it or.  
+  
+ 
+  
+Speaker 3
+ 
+ Just maybe look at it. So let me explain how we plan to move on. We have special area in our code named 
+validators. Let me show you. So we have handlers and we have validators.  
+  
+  
+Speaker 1
+ 
+ So it's a special designed place for us to program special functions that will be used for checks of data during input. 
+And luckily we have examples at Academy.  
+  
+ 
+  
+Speaker 2
+ 
+ Which will help us to make it.  
+  
+  
+Speaker 1
+ 
+ Smoothly without spending too much time. So validators is a collection, this is not an array.  
+  
+ 
+  
+Speaker 2
+ 
+ Now you see, this is a collection. Each collection item should include its name.  
+  
+  
+Speaker 1
+ 
+ And implementation and validation.  
+  
+ 
+  
+Speaker 2
+ 
+ Implementation includes validator property which is a.  
+   
+
+--- Page 70 ---
+
+ Speaker 1
+ 
+ Function that finally should return something set of parameters and async property. Then when we finish with this 
+part, we will connect our created validator with set of columns. So we may use one validator for many different 
+columns by connecting them to our page attributes. So let me show you how we.  
+  
+ 
+  
+Speaker 2
+ 
+ Can do this and I already have.  
+  
+  
+Speaker 1
+ 
+ An example, we will not spend too.  
+  
+ 
+  
+Speaker 2
+ 
+ Much time on it.  
+  
+  
+Speaker 1
+ 
+ So now you will see how we can do this validation.  
+  
+ 
+  
+Speaker 2
+ 
+ First of all we go to validators.  
+  
+  
+Speaker 1
+ 
+ Area and we will provide some code here. I already have example, no difficulties. So Freedom UI validation example 
+and I need to provide this example of code.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, let me copy and paste for you.  
+  
+  
+Speaker 1
+ 
+
+--- Page 71 ---
+
+ This is example of our validation. Okay, no need to use cameras to show. Okay, so this is example of code.  
+  
+ 
+  
+Speaker 2
+ 
+ And I will also implement it.  
+  
+  
+Speaker 1
+ 
+ It's my own validators area. So copy and paste. What do you see here? So we register my validator with a specific 
+name. So this is a kind of type or maybe validator type, let's call it so. And we can declare different numbers or 
+unlimited number of different validators. This validator includes three major properties, whether it validator, function 
+parameters and async property.  
+  
+ 
+  
+Speaker 2
+ 
+ So probably we have to Start with parameters first.  
+  
+  
+Speaker 1
+ 
+ Because parameters are values that we can provide for each validated column and for different columns, we can 
+provide different parameter values.  
+  
+ 
+  
+Speaker 2
+ 
+ Here we have to declare what parameters we will have.  
+  
+ 
+  
+Speaker 3
+ 
+ In my case there are two parameters.  
+  
+  
+Speaker 1
+ 
+ Min value and message parameter.  
+  
+ 
+  
+Speaker 2
+ 
+ Validator function has a bit complex structure. This is one function, it returns another. 
+
+--- Page 72 ---
+
+ 
+  
+  
+Speaker 1
+ 
+ Function and first function requests config, Another function requests control inside of control. Unfortunately we 
+only have value so it makes it difficult for us to analyze several values from different columns on our page.  
+  
+ 
+  
+Speaker 2
+ 
+ But it makes it universal.  
+  
+  
+Speaker 1
+ 
+ If we have value, we don't know exact column. So we can use the same validator for many different columns or 
+different columns and it will be universal for us. So we can take value and from.  
+  
+ 
+  
+Speaker 2
+ 
+ The config we know what parameters to expect. So we have min value parameter and we have message parameter.  
+  
+  
+Speaker 1
+ 
+ Our check is quite simple.  
+  
+ 
+  
+Speaker 2
+ 
+ We get value and then compare with min value. And in case if our value is.  
+  
+  
+Speaker 1
+ 
+ Greater or equal than min value then we think that data is correct and our returned result will be null, which.  
+  
+ 
+  
+Speaker 2
+ 
+ Means no warnings, no messages, everything is okay. But in case that value is not.  
+   
+Speaker 1
+
+--- Page 73 ---
+
+  
+ Correct we have to return special type.  
+  
+ 
+  
+Speaker 2
+ 
+ Of result which is a JavaScript object with a specific name, the property inside.  
+  
+  
+Speaker 1
+ 
+ And with the message property inside of this property. So it's kind of nested JavaScript object and our message here 
+will be text, it should be displayed nearby problem control.  
+  
+ 
+  
+Speaker 3
+ 
+ And also this message will be explained.  
+  
+  
+Speaker 1
+ 
+ Displayed when we will try to save our page. So we will say try to save data system will check all the validators and it 
+will find that some columns are not correct and it will not allow to save it.  
+  
+ 
+  
+Speaker 2
+ 
+ So this is our example of a.  
+  
+ 
+  
+Speaker 3
+ 
+ Validation, but it's not applied yet.  
+  
+ 
+  
+Speaker 2
+ 
+ So we have to set up some.  
+  
+  
+Speaker 1
+ 
+ Columns which will work with this validator.  
+
+--- Page 74 ---
+
+  
+ 
+  
+Speaker 3
+ 
+ Otherwise our validator is useless because no.  
+  
+  
+Speaker 1
+ 
+ Column expect checks with it.  
+  
+ 
+  
+Speaker 2
+ 
+ So I do not need to change anything here. This code is universal as you can see. No any hard coded column names.  
+  
+  
+Speaker 1
+ 
+ Only one hard coded thing is a validator type name. Next step is connection of validator with.  
+  
+ 
+  
+Speaker 2
+ 
+ Certain columns or it's better to say with attributes.  
+  
+  
+Speaker 1
+ 
+ So I will show you examples how we can connect. Maybe I should do it here. How we can connect validators to 
+columns. I will put example so I have to find my price attribute. Let's go to my view model config div area. Here we 
+have attributes. Here is my price attribute inside of its structure.  
+  
+ 
+  
+Speaker 2
+ 
+ After module config I have to provide.  
+  
+  
+Speaker 1
+ 
+ Validators setting so I should carefully copy this and paste it here.  
+   
+Speaker 2
+ 
+
+--- Page 75 ---
+
+ 
+ 
+ And that's how I will put it. So here's my price attribute.  
+  
+  
+Speaker 1
+ 
+ Here is my validator. The type of validator should be matched.  
+  
+ 
+  
+Speaker 2
+ 
+ With what we created and parameter.  
+  
+  
+Speaker 1
+ 
+ So the minimum value for the price.  
+  
+ 
+  
+Speaker 2
+ 
+ I think it will be 50.  
+  
+ 
+  
+Speaker 3
+ 
+ So we will not allow to save.  
+  
+  
+Speaker 1
+ 
+ Any reality object with the price less than 50 bucks. Okay, and also we can use message, not just a plain string 
+constant which.  
+  
+ 
+  
+Speaker 2
+ 
+ Is also supported, but also we can use localizable string. Here is an example of a macro.  
+  
+  
+Speaker 1
+ 
+ That you can use for localizable strings.  
+   
+
+--- Page 76 ---
+
+ 
+ Speaker 2
+ 
+ And localizable strings are saved separately and can provide translations into other languages.  
+  
+  
+Speaker 1
+ 
+ So let me show you what localizable strings I plan to use. I will put it for you. And first, localizable string about price. 
+So my localizable string is named price cannot be less.  
+  
+ 
+  
+Speaker 2
+ 
+ I go to localizable strings. Probably we can save it before modifications.  
+  
+  
+Speaker 1
+ 
+ But now I will modify non localizable.  
+  
+ 
+  
+Speaker 2
+ 
+ Strings.  
+  
+  
+Speaker 1
+ 
+ Take significantly longer than usual. As you can see, my worker process consumed quite a lot of ram. It's more than 
+usual. Okay, we can try to create localizable string with the code price can't be less and the value is price cannot be 
+less than something. Okay, try to add and then I expect some troubles here.  
+  
+ 
+  
+Speaker 2
+ 
+ That's why I will try to save now.  
+  
+  
+Speaker 1
+ 
+ If it saves correctly, okay, no problem.  
+  
+  
+Speaker 2
+ 
+
+--- Page 77 ---
+
+ 
+ But in previous versions I experienced some.  
+  
+  
+Speaker 1
+ 
+ Troubles with localizable strings here and it turned out to save it. So when I added once, it physically.  
+  
+ 
+  
+Speaker 2
+ 
+ Added it twice and then denied to.  
+  
+  
+Speaker 1
+ 
+ Save because it tells that such localizable string already exists. In case, if you face this kind.  
+  
+ 
+  
+Speaker 2
+ 
+ Of issue when you add localizable string.  
+  
+  
+Speaker 1
+ 
+ Try to save and then get error message about duplicated localizable strings. You can just remove that visible one 
+that you created.  
+  
+ 
+  
+Speaker 2
+ 
+ Another one which is invisible will be still saved.  
+  
+  
+Speaker 1
+ 
+ So that's how you can bypass this bug.  
+  
+ 
+  
+Speaker 2
+ 
+ As you can see, Creature also as.  
+   
+Speaker 1
+
+--- Page 78 ---
+
+  
+ Any software, it has its own bugs. Sometimes bugs are detected, fixed new bugs appeared. So it's normal, more or 
+less normal for any software.  
+  
+ 
+  
+Speaker 2
+ 
+ Another localizable string that we will need is about area.  
+  
+  
+Speaker 1
+ 
+ So localizable string for area.  
+  
+ 
+  
+Speaker 2
+ 
+ And for its.  
+  
+  
+Speaker 1
+ 
+ Value here, save it.  
+  
+ 
+  
+Speaker 2
+ 
+ Area can't be less. Let's try to save.  
+  
+  
+Speaker 1
+ 
+ And my intention when I save each time I add the localizable string is to check do I have any bugs with localizable 
+string. It looks like in this version this.  
+  
+ 
+  
+Speaker 2
+ 
+ Bug was finally fixed.  
+  
+  
+Speaker 1
+ 
+ That's nice. So for the price we already set.  
+
+--- Page 79 ---
+
+  
+ 
+  
+Speaker 2
+ 
+ Settings, now we do the same for area. So let me show you what we.  
+  
+  
+Speaker 1
+ 
+ Do for area we will set validators setting for one column. We can use multiple validators so it's possible to make 
+checks with different criterias.  
+  
+ 
+  
+Speaker 2
+ 
+ And in my case for the area.  
+  
+  
+Speaker 1
+ 
+ I will use the same validator but.  
+  
+ 
+  
+Speaker 2
+ 
+ Minimum value will be 100 square feet.  
+  
+ 
+  
+Speaker 3
+ 
+ So it's close to 10 square meters. We think that we will not input any kind of realty less than 10 square meters or 100 
+square feet.  
+  
+  
+Speaker 1
+ 
+ And that's our limitation here.  
+  
+ 
+  
+Speaker 2
+ 
+ And we will use localizable string that.  
+   
+
+--- Page 80 ---
+
+ Speaker 1
+ 
+ We already successfully saved. Okay, now we have this example, save.  
+  
+ 
+  
+Speaker 2
+ 
+ It and then it's our turn to.  
+  
+  
+Speaker 1
+ 
+ Test and check out how our data were saved. How well it looks, we can close.  
+  
+ 
+  
+Speaker 2
+ 
+ Our editor, go to main app probably.  
+  
+ 
+  
+Speaker 3
+ 
+ Let'S reward it just to fight with.  
+  
+  
+Speaker 1
+ 
+ Any potential impact of browser cache issue. Then let's open any record and specially intentionally open the record 
+which has incorrect stuff here.  
+  
+ 
+  
+Speaker 2
+ 
+ Now you see that once we finished.  
+  
+  
+Speaker 1
+ 
+ And moved focus out of control, you see we have some checks and this checks displays error message.  
+  
+ 
+  
+Speaker 3
+ 
+
+--- Page 81 ---
+
+ Price can't be less than 50 bucks. Area can't be less than 100 square feet. If we try to save such data, system will 
+reject it tells us we have problems and we have to fix them. Okay, let's fix only price try to save. We still have trouble 
+with area. When we fix area, then our troubles are over and system saves it normally. Please note that if you do 
+something like this and try to save your data Validation works at client side so it doesn't send any messages to 
+server side. Now you see nothing appeared in network tab until we will fully fix our rental price. In this case you see 
+update query executed. So physical data was sent to server side only in case of successful client validation.  
+  
+ 
+  
+Speaker 3
+ 
+ So this validation may help you to improve your logic to make it more protected to get rid of like silly mistakes made 
+by end users.  
+  
+  
+Speaker 1
+ 
+ And I think that this is something that will be quite important in your future projects and implementation.  
+  
+ 
+  
+Speaker 2
+ 
+ Now I plan to show you some.  
+  
+  
+Speaker 1
+ 
+ Simple topic and it's simple but it's very important because such topic will be.  
+  
+ 
+  
+Speaker 2
+ 
+ Quite often faced in your projects. It will be not really directly connected with programming, but it's something that 
+you definitely should know about.  
+  
+  
+Speaker 1
+ 
+ I'm talking about typical settings of columns.  
+  
+ 
+  
+Speaker 2
+ 
+ That you need according to some conditions.  
+  
+  
+Speaker 1
+ 
+
+--- Page 82 ---
+
+ For example, some column must be visible.  
+  
+ 
+  
+Speaker 2
+ 
+ Only in case of a certain condition and otherwise should be hidden or another.  
+  
+  
+Speaker 1
+ 
+ Column must be required according to some conditions and otherwise should be optional. And also you may need 
+some like talk about visibility, about required settings or about read only columns. So such Typical settings for 
+columns are.  
+  
+ 
+  
+Speaker 3
+ 
+ Frequently faced in requirements from business owners and that's why such functionality was decided.  
+  
+ 
+  
+Speaker 2
+ 
+ To implement as a no code Tools.  
+  
+  
+Speaker 1
+ 
+ And developers code such functionality. Business rules Let me show you how you can manage such business rules 
+and I will show you a couple of examples. We can go to modify our page so edit page. Then we go to special button 
+business rules. Please note we have two types of business rules.  
+  
+ 
+  
+Speaker 2
+ 
+ Page business rules mainly used for controls.  
+  
+  
+Speaker 1
+ 
+ Visibility, maybe required property, read only property and also we have object business rules here it's called realty 
+business rules, but.  
+  
+  
+Speaker 2
+ 
+
+--- Page 83 ---
+
+ 
+ You should understand this is about object. Object business rules also offer us possibility.  
+  
+  
+Speaker 1
+ 
+ To make some filtering and depending on the type of business row, it will be physically saved into metadata of a.  
+  
+ 
+  
+Speaker 2
+ 
+ Page or into metadata of an object.  
+  
+  
+Speaker 1
+ 
+ So let me show you.  
+  
+ 
+  
+Speaker 2
+ 
+ Let's imagine our task is quite simple.  
+  
+  
+Speaker 1
+ 
+ To show comment only in case of type is not empty.  
+  
+ 
+  
+Speaker 2
+ 
+ So when we add new data, type.  
+  
+  
+Speaker 1
+ 
+ Could be not specified. In this case, comment should be hidden. Let me show you how we can do this.  
+  
+ 
+  
+Speaker 2
+ 
+ We can use page level business rules.  
+   
+Speaker 1
+
+--- Page 84 ---
+
+  
+ Because it's about column visibility add new rule. This rule will have automatically generated title to be applied to the 
+page and it has triggering condition, page is open or some condition changed.  
+  
+ 
+  
+Speaker 2
+ 
+ So we have if scenario and then action. Okay, let's start with if and now we will think of something like.  
+  
+  
+Speaker 1
+ 
+ I should do it a bit better with initial status. Okay, so if our type is not empty, then comment should be visible.  
+  
+ 
+  
+Speaker 2
+ 
+ Let's try to do this attribute or.  
+  
+  
+Speaker 1
+ 
+ Data field realty and our type okay, if type is not empty so we can use condition is filled in. If this condition is true, 
+then we will use action show elements on the.  
+  
+ 
+  
+Speaker 2
+ 
+ Page and we can decide what element.  
+  
+  
+Speaker 1
+ 
+ Will be shown to be Input column of a comment text comment okay, so if type is filled in comment will be visible.  
+  
+ 
+  
+Speaker 3
+ 
+ Otherwise comment will be hidden.  
+  
+  
+Speaker 1
+ 
+ So let's try to test how it works.  
+   
+
+--- Page 85 ---
+
+ 
+ Speaker 3
+ 
+ We can save it.  
+  
+ 
+  
+Speaker 2
+ 
+ Save our page.  
+  
+ 
+  
+Speaker 3
+ 
+ Now and let's check how it will be physically working for us.  
+  
+ 
+  
+Speaker 2
+ 
+ As you can see, each time you.  
+  
+  
+Speaker 1
+ 
+ Develop something, this is very important to immediately test it when it's ready and.  
+  
+ 
+  
+Speaker 2
+ 
+ When you make many different changes you.  
+  
+  
+Speaker 1
+ 
+ May think of okay, I will do many changes, then I will test them in total.  
+  
+ 
+  
+Speaker 2
+ 
+ I do not recommend you to follow this approach, so it's much better and more safer.  
+   
+Speaker 1
+
+--- Page 86 ---
+
+  
+ If you will do some small step.  
+  
+ 
+  
+Speaker 2
+ 
+ Then you go to your system and.  
+  
+  
+Speaker 1
+ 
+ Start to test it.  
+  
+ 
+  
+Speaker 2
+ 
+ Then you do another small step, then you do another test.  
+  
+  
+Speaker 1
+ 
+ The reason is that creature client side sometimes could bring you surprises and it will be not so clear according to.  
+  
+ 
+  
+Speaker 2
+ 
+ The error message text in your browser console. To understand what exact part is gave you such a surprise.  
+  
+  
+Speaker 1
+ 
+ So it's better to make small steps and to test it frequently. So once you get and start to.  
+  
+ 
+  
+Speaker 2
+ 
+ Get some error messages and you will.  
+  
+  
+Speaker 1
+ 
+ Easily understand that it was caused probably the most latest recent changes and you.  
+   
+Speaker 2
+
+--- Page 87 ---
+
+ 
+  
+ Should take care about it and maybe.  
+  
+  
+Speaker 1
+ 
+ Revert them maybe to look carefully and.  
+  
+ 
+  
+Speaker 2
+ 
+ You will find some errors. So small steps and frequent testing. This is what I recommend to you. So let's open any 
+record.  
+  
+  
+Speaker 1
+ 
+ Type is set, Comment is visible. It's clear the type. Now you see it's a bit uncertain, so it's not cleared and let's set it 
+again. Okay, if you clear it doesn't work.  
+  
+ 
+  
+Speaker 2
+ 
+ I think that we have a problem because of initial state of the square column. Let me show you how we can fix it.  
+  
+  
+Speaker 1
+ 
+ Initial state should be aligned with our business rule and in case if we.  
+  
+ 
+  
+Speaker 3
+ 
+ Check some condition and turn this column on. So make it visible. So by default this comment should be hidden. 
+Let's select comment, let's set its visibility default visibility not visible and then save our changes. So by default 
+comment will be hidden and according to the business rule, it will be enabled if type changed and became not 
+empty. Let's check it out. We need to reload. Fighting with browser cache.  
+  
+  
+Speaker 1
+ 
+ Clear.  
+  
+  
+Speaker 3
+ 
+
+--- Page 88 ---
+
+ 
+ Now you see our comment disappeared. If we set some type, it appeared again. If we change type, it appears again.  
+  
+  
+Speaker 1
+ 
+ If you clear, it hides.  
+  
+ 
+  
+Speaker 3
+ 
+ Hides? Yes. So that's how you can manage visibility and such setting. As you can see, it's a no code setting. So you 
+can make all the settings with your mouse. It doesn't require any programming. I would like you to see another 
+example. So you can also see visibility, editability and required property. And one more thing which is interesting I 
+think is about selecting values in lookups. Now we have selection of manager from contact. We can display 
+additional columns here. For example, contact type. Okay, I'm too lazy to scroll. I will type this. Now you see some 
+contexts have customer type, some contexts have employee type, and so on. Finally, my contacts list will include 
+many different persons and only some of them will represent my company employees.  
+  
+ 
+  
+Speaker 3
+ 
+ When I want to specify manager here, I definitely want to specify someone who is company employee and not just a 
+random contact. So I want to make some simple filter here which will help me to select only context with a certain 
+type. And we can do such filtering with the help of business rules. So let's go back to our page, go to business Rules. 
+Now I plan to use object level business rules. So here you see real to business rules which means realty object 
+business rules. Here was page. Now here is object level.  
+  
+ 
+  
+Speaker 3
+ 
+ Okay and first of all I will check available action here and in comparison with page level we have more options here 
+and I plan to use simple static filter Business rule Static filter will not require any as you can see static filter will not 
+require any special conditions I mean for triggering so it will be applied always. That's why it's called static. And I will 
+have a column which column I plan to use for filtering. This will be manager column and what filter I plan to use I 
+have to specify it with additional condition. Please note here those of you who use Windows Home probably you 
+may experience difficulties because it was found that users with Windows Home experienced troubles opening this 
+tab and it was simply not possible if you use Home Edition.  
+  
+ 
+  
+Speaker 3
+ 
+ So please be careful when you use this home version and just know about this. So this will be temporary not 
+available for you. I can make condition here. Contact type equals to a constant employee. So if this filter will be 
+constantly applied on my lookup, save it.  
+  
+  
+Speaker 1
+
+--- Page 89 ---
+
+ 
+ And then save it again.  
+  
+ 
+  
+Speaker 3
+ 
+ Now I save page and I will reload my main tab and you will see how this manager filter will work for us. Go back. 
+Okay, let's save changes. Close reload this reloading is necessary only to work with browser cache. Let's check. Now 
+let's try to select values. Here you select data. Now you see only context with employee type.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, let's make more examples better examples.  
+  
+  
+Speaker 1
+ 
+ And go to customer 360 add more contacts to make it representative and let's make a contact name something like 
+James Bond and type will be customer. Okay, one more Bruce Lee will be our employee and Bruce Willis will be also 
+our employee. So you will see we have some different contexts, different types and let's go back to our realty, try to 
+select manager system only shows us only context with a certain type.  
+  
+ 
+  
+Speaker 2
+ 
+ This is very simple filtering tool.  
+  
+  
+Speaker 1
+ 
+ As you can see we just used only mouse to set up this type of customization. But it's very efficient and that's why.  
+  
+ 
+  
+Speaker 2
+ 
+ I think it's important for you to know about it.  
+  
+  
+Speaker 1
+ 
+ Because even if it doesn't require programming.  
+  
+  
+Speaker 2
+ 
+
+--- Page 90 ---
+
+ 
+ But if you did not attend our.  
+  
+  
+Speaker 1
+ 
+ Customization course, you still need to know.  
+  
+ 
+  
+Speaker 2
+ 
+ That such type of filtering is supported. Also I can quickly show you another filtering of connected fields like filtering 
+cities by countries.  
+  
+  
+Speaker 1
+ 
+ So or maybe if we focus on us only. For example we can filter cities by states but Maybe for countries it will be more 
+clear and understandable.  
+  
+ 
+  
+Speaker 2
+ 
+ So let's go again to our page. In order to filter something by something.  
+  
+  
+Speaker 1
+ 
+ Of course we need to have connected lookups.  
+  
+ 
+  
+Speaker 2
+ 
+ Luckily in base product cities and countries are already connected.  
+  
+  
+Speaker 1
+ 
+ Each city has corresponding country reference. Let me show you cities lookup already has connections with country. 
+Let me select fields to display. We have names. I don't need time zone at all. But I want you to see country. Okay, 
+save it. Now you see a lot of different cities from different countries and it looks like data lookups. Data in our 
+lookups is already well, so let's do such settings. I will add two drop down columns to my page and it will be.  
+  
+ 
+  
+Speaker 2
+ 
+ Probably we have to start from country. 
+
+--- Page 91 ---
+
+ 
+  
+  
+Speaker 1
+ 
+ Because we plan to input data starting from country providing country value and then USR country copy and lookup. 
+We will use standard lookup. Country that is already present will be drop down list. Okay. And here element code will 
+be also country related. So that's how I add new lookup. Now I will show you CT's lookup. So it will be city confirm 
+lookup.  
+  
+ 
+  
+Speaker 2
+ 
+ That will be based on.  
+  
+  
+Speaker 1
+ 
+ It's also CT drop down list. And here we can name something like city. It will be enough. The most important is 
+uniqueness of this column. But city is good enough.  
+  
+ 
+  
+Speaker 2
+ 
+ Good unique value for us.  
+  
+  
+Speaker 1
+ 
+ Okay. Is it okay? Should be. I don't like. Yeah, probably there are limitations about the length of this. Okay, so what we 
+have here is country and city and we need to save it first in order to apply.  
+  
+ 
+  
+Speaker 3
+ 
+ Changes to the object level.  
+  
+  
+Speaker 1
+ 
+ And so to fully modify our data model properly to take maybe less than a minute our time. It okay, saved. Well, now 
+we go to business rules. So I will show you how we can make a object level business rule for connected lookups. 
+Let's add one more lookup. Action will be apply filter.  
+  
+ 
+  
+Speaker 3
+ 
+
+--- Page 92 ---
+
+ This is a special type of filter.  
+  
+  
+Speaker 1
+ 
+ Which is I think originally designed for connected lookups. And we can specify what column to filter. Obviously we 
+will filter cities by what another column by country. And this editor will automatically detect connections.  
+  
+ 
+  
+Speaker 2
+ 
+ Between cities and countries. So it will show us where city.  
+  
+  
+Speaker 1
+ 
+ Country which means country value inside of city lookup equals to value of country.  
+  
+ 
+  
+Speaker 2
+ 
+ Provided in our realty page and also automatic settings for clearing when country changed.  
+  
+  
+Speaker 1
+ 
+ Clearing cities when country changed or automatically set country if city was set and for example country was 
+empty. So you can do this also then country will be automatically populated.  
+  
+ 
+  
+Speaker 2
+ 
+ So this rule will work good for us.  
+  
+  
+Speaker 1
+ 
+ But what I need to add here is triggering condition.  
+  
+ 
+  
+Speaker 2
+ 
+ We need to change such Filter each.  
+   
+Speaker 1
+
+--- Page 93 ---
+
+  
+ Time when country changes, so page is opened or some changes and when country. Okay, we can select here is 
+filled in. Then we have to apply this filter. So if country changes and becomes filled in, then filter should be applied. 
+Otherwise you may face some glitches in.  
+  
+ 
+  
+Speaker 2
+ 
+ Working with this filter.  
+  
+  
+Speaker 1
+ 
+ Sometimes it will work, sometimes not.  
+  
+ 
+  
+Speaker 2
+ 
+ So you should not forget about this condition. Let's save it.  
+  
+  
+Speaker 1
+ 
+ Save page and then we will test it. You will see how it works. Great. You see data was successfully saved, page 
+saved.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, let's test. We need to reward it. And now let's check it out.  
+  
+  
+Speaker 1
+ 
+ So let's say Miami and you see.  
+  
+ 
+  
+Speaker 2
+ 
+ Country, you see city.  
+  
+  
+Speaker 1
+ 
+ Okay, Country, States, United States.  
+ 
+
+--- Page 94 ---
+
+ 
+ 
+  
+Speaker 2
+ 
+ Cities. As you may see, cities are filtered by country. You only see cities.  
+  
+  
+Speaker 1
+ 
+ Oh, Hartford, Frankfort.  
+  
+ 
+  
+Speaker 2
+ 
+ Looks like only.  
+  
+  
+Speaker 1
+ 
+ US cities I think. Okay, so now you see it looks.  
+  
+ 
+  
+Speaker 2
+ 
+ Looks like. Well, okay, let's take another example.  
+  
+  
+Speaker 1
+ 
+ No country, you see all cities from different country. Ararat, Astrakhan, Baghdad, you see Bishkek, you see Bratislava.  
+  
+ 
+  
+Speaker 2
+ 
+ So from different countries from.  
+  
+  
+Speaker 1
+ 
+ Okay, so if you set some city.  
+  
+ 
+  
+Speaker 2
+ 
+
+--- Page 95 ---
+
+ Country will be populated automatically in this case.  
+  
+  
+Speaker 1
+ 
+ But if you clear country, city was cleared automatically. So if we provide some country like Bangladesh, you will see 
+only filtered cities. Here if you change country to something else like Egypt, you will see only Egypt city. So filtering 
+works well.  
+  
+ 
+  
+Speaker 2
+ 
+ Let's go to our states.  
+  
+  
+Speaker 1
+ 
+ Now we have to search for Seattle.  
+  
+ 
+  
+Speaker 2
+ 
+ Yes, you see it finds and filter works well. So this type of filtering can be.  
+  
+ 
+  
+Speaker 3
+ 
+ Done not only for citizen countries. For example, you can make two connected hookups.  
+  
+  
+Speaker 1
+ 
+ One is type of document and second one is for example subtype.  
+  
+ 
+  
+Speaker 3
+ 
+ And subtype should have a lookup column.  
+  
+  
+Speaker 1
+ 
+ Referencing to corresponding type.  
+   
+Speaker 3
+
+--- Page 96 ---
+
+ 
+  
+ And in this case when user specifies type, it will be technically possible to.  
+  
+  
+Speaker 1
+ 
+ Filter subtypes according to selected type. But this canonic example with countries and cities, I think it's the easiest 
+to.  
+  
+ 
+  
+Speaker 2
+ 
+ Understand examples so you can also use it.  
+  
+  
+Speaker 1
+ 
+ Don't forget about business rules triggering by changing country. So save it. Probably that's enough for today and 
+we.  
+  
+ 
+  
+Speaker 2
+ 
+ Have one more session tomorrow that will.  
+  
+  
+Speaker 1
+ 
+ Be dedicated to our client side.  
+  
+ 
+  
+Speaker 2
+ 
+ I plan to show you how to.  
+  
+  
+Speaker 1
+ 
+ Make details and also probably answer your questions if appear. If you ask something about some cases with 
+programming inside of our pages in Freedom UI later we probably will also invest a bit of time into classic.  
+  
+ 
+  
+Speaker 2
+ 
+ UI examples and I think you'll be. 
+
+--- Page 97 ---
+
+ 
+  
+  
+Speaker 1
+ 
+ Interested in migration from Classic UI to Freedom ui. It will be only client side, so objects will be the same. I will 
+show you how you can do such migration.  
+  
+ 
+  
+Speaker 3
+ 
+ Thank you very much for your time.  
+  
+ 
+  
+Speaker 2
+ 
+ Today our session is over. In case. If you have any questions with your.  
+  
+  
+Speaker 1
+ 
+ Environments, with your homework, tell me please. It's important for me to know. Do you have any troubles or other 
+notes, any questions?  
+  
+ 
+  
+Speaker 4
+ 
+ I have one. Did we go over. I could have just missed this now. It could have just been me. Did we go over the 
+overriding. I think it was on the list of the. The kind of schedule for each day we had Parent overriding. Overriding a 
+parent method. Did we go over that and I just. Or is that something we have to go back to?  
+  
+  
+Speaker 1
+ 
+ You probably asked about something that you.  
+  
+ 
+  
+Speaker 2
+ 
+ Already saw in Classic UI with overriding of methods or this is something else. So can you explain the business 
+example?  
+  
+ 
+  
+Speaker 4
+ 
+
+--- Page 98 ---
+
+ No, sorry, I just saw it on the list on. So you know you have the list of the breakdown of each day. It was an. It's kind 
+of what you open up with this. With the start of each day.  
+  
+  
+Speaker 1
+ 
+ Oh, you mean this one?  
+  
+ 
+  
+Speaker 2
+ 
+ This is.  
+  
+  
+Speaker 1
+ 
+ Yeah, yeah. So this schedule is a bit outdated unfortunately. Okay, try to find some time and yes, there are some 
+topics that are not so applicable to Freedom UI and you may find something like alternative JavaScript editors. Okay, 
+I can explain you something and overriding of methods.  
+  
+ 
+  
+Speaker 4
+ 
+ That's it.  
+  
+  
+Speaker 1
+ 
+ It was possible in Classic ui, but it looks like fully not supported and not practical in Freedom ui. In Classic UI you 
+could rewrite or interfere into some life cycle stages of page by replacing its like critically important methods. In 
+Freedom UI you can write your.  
+  
+ 
+  
+Speaker 2
+ 
+ Own methods, but system does not allow.  
+  
+  
+Speaker 1
+ 
+ You to significantly change this life cycle. So it looks like I tried and.  
+  
+ 
+  
+Speaker 2
+ 
+ It looks like when you have for.  
+ 
+
+--- Page 99 ---
+
+ 
+  
+Speaker 1
+ 
+ Example some handler and you already know that there is a base product handler which is declared somewhere in 
+parent.  
+  
+ 
+  
+Speaker 2
+ 
+ Templates, you cannot replace it with your own. Rejecting execution of all parent implementation.  
+  
+  
+Speaker 1
+ 
+ So in Freedom UI you can write your own part and it will be.  
+  
+ 
+  
+Speaker 2
+ 
+ Just part of all the steps executed.  
+  
+  
+Speaker 1
+ 
+ In total and you can't break the way how pages code and what handlers are called there until you will write your own 
+control, I think so in Freedom UI we have different conditions for programming. I plan to update this program for.  
+  
+ 
+  
+Speaker 2
+ 
+ Our sessions and it's a bit outdated.  
+  
+  
+Speaker 1
+ 
+ Here, but I try to provide you the latest useful material and in the order which looks like the most, let's say natural. So 
+when you do simple settings, then.  
+  
+ 
+  
+Speaker 2
+ 
+ You do a bit more complex.  
+   
+Speaker 1
+
+--- Page 100 ---
+
+  
+ And so our flow of real topics that we study, I think it's quite optimal for current version.  
+  
+ 
+  
+Speaker 4
+ 
+ Thanks Mario.  
+  
+  
+Speaker 1
+ 
+ Thank you Paddy for questions and any.  
+  
+ 
+  
+Speaker 2
+ 
+ Any, any difficulties with your Homework.  
+  
+  
+Speaker 1
+ 
+ When you do examples, when you make your sections, Maybe. Maybe you have something to say.  
+  
+ 
+  
+Speaker 3
+ 
+ It happens that most of our participants watch videos like you now and then they decided to process video files 
+much later than finishing of the sessions. So I recommend you to invest some time between the sessions to watch 
+videos and practice. Because in this case you will easier understand our next topics. You will get more experience at 
+that topics and think it will be in general faster for you. So it will be faster boarding faster, let's say getting necessary 
+expertise for you as developers. So at the end of the sessions you'll be able to pass an exam. We call it Fast Track 
+certification, which includes homework very similar to what we do here and test. This test will require some time for 
+you to prepare.  
+  
+ 
+  
+Speaker 3
+ 
+ So at the end of the sessions next week, I will explain you some details how we will prepare for the exam, how it will 
+be organized and this is optional thing. So if you feel confident, you may apply for it. If not, you may use Academy 
+website and apply for certification much later. So if interested in preparation for the exam, also keep it in your mind. 
+And if you have some questions, feel free to ask. Also maybe you will want to write me some messages. Here is my 
+email. I will be happy to answer you and support you during your practicing with examples in our sessions. Thank 
+you for your time today. See you tomorrow as usual. And as usual, you will receive videos of today's session very 
+soon, maybe 40.  
+   
+Speaker 1
+
+--- Page 101 ---
+
+  
+ Or 50 minutes to get this video.  
+  
+ 
+  
+Speaker 3
+ 
+ Thank you and goodbye. See you tomorrow. Bye.  
+  
+  
+Speaker 1
+ 
+ It.

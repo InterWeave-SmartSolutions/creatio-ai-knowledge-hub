@@ -1,0 +1,35 @@
+{
+  "summary_id": "c7bf509705a0",
+  "content_id": "e936e7320501",
+  "summary_type": "abstractive",
+  "summary_text": "We will continue to do our first steps on creature platform. I will explain how to operate with packages, how to integrate with git and we will work with objects and data. If you have any questions, feel free to ask Tushar any questions.",
+  "key_points": [
+    "We will continue to do our first steps on creature platform.",
+    "I will explain how to operate with packages, how to integrate with git and we will work with objects and data.",
+    "If you have any questions, feel free to ask Tushar any questions."
+  ],
+  "keywords": [
+    "like",
+    "redis",
+    "number",
+    "regis",
+    "running",
+    "speaker",
+    "database",
+    "need",
+    "questions",
+    "files"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 44,
+  "original_length": 627,
+  "compression_ratio": 0.07017543859649122,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T17:00:01.197091",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "summary_id": "e5849eceec9d",
+  "content_id": "37206dabe436",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: today, this is about details.\nINSTRUCTION: we can open any account record.\nINSTRUCTION: we need to keep information for example about different types of addresses for our customer or different emails.\nCONCEPT: entity\nCONCEPT: database\nCONCEPT: server\nNOTE: piece of Creature configuration and you \nwill face it almost everywhere.\nNOTE: as knowledge how to build sections.",
+  "key_points": [
+    "INSTRUCTION: today, this is about details.",
+    "INSTRUCTION: we can open any account record.",
+    "INSTRUCTION: we need to keep information for example about different types of addresses for our customer or different emails.",
+    "CONCEPT: entity",
+    "CONCEPT: database",
+    "CONCEPT: server",
+    "NOTE: piece of Creature configuration and you \nwill face it almost everywhere.",
+    "NOTE: as knowledge how to build sections."
+  ],
+  "keywords": [
+    "speaker",
+    "page",
+    "let",
+    "package",
+    "object",
+    "classic",
+    "data",
+    "ui",
+    "okay",
+    "like"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 57,
+  "original_length": 14305,
+  "compression_ratio": 0.003984620761971339,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:51:18.475687",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "summary_id": "f262c194f3ec",
+  "content_id": "3ae506ca01ce",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: server, database, data, package, field",
+  "key_points": [
+    "server",
+    "database",
+    "data",
+    "package",
+    "field"
+  ],
+  "keywords": [
+    "let",
+    "page",
+    "package",
+    "object",
+    "data",
+    "classic",
+    "ui",
+    "okay",
+    "like",
+    "need"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 14013,
+  "compression_ratio": 0.0004995361450082067,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T17:00:30.776590",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "server",
+        "database",
+        "data",
+        "package",
+        "field"
+      ],
+      "keywords": [
+        "let",
+        "page",
+        "package",
+        "object",
+        "data",
+        "classic",
+        "ui",
+        "okay",
+        "like",
+        "need"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

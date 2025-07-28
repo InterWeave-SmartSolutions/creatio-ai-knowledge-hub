@@ -1,0 +1,1168 @@
+{
+  "summary_id": "120da1d5c2e8",
+  "content_id": "699402ad4f39",
+  "summary_type": "hierarchical",
+  "summary_text": "Document: Speaker 1\n\nMain Sections:\n• Speaker 1\n  - # Speaker 1\n\nToday is session number nine of our development on Creature platform guided learning.\n  - And today we will continue \nto study server side and we'll move on with integration tools.\n• Speaker 1\n  - # Speaker 1\n\nSo what we'll study today, how to use standard platform level tools to operate with data with the help of HTTP \nqueries.\n  - And we will discuss and I will show you examples of how to work with standard tools.\n• Speaker 1\n  - # Speaker 1\n\nSo don't be shy, ask any questions if you feel something that you need to know and let's move on.\n  - So integrations \nwith data tools.\n• Speaker 1\n  - # Speaker 1\n\nAs you can see we have other options to integrate with creation.\n  - We have two options for data transfer such called \nCRUD operations which means create, read, update and delete.\n• Speaker 1\n  - # Speaker 1\n\nIt's very specific to creature, but it offers you more options, more possibilities, more complicated calculations.\n  - And \nthat's why data services used for creation of client side and data service in general is more powerful than ODATA \nand more complex to program.\n• Speaker 1\n  - # Speaker 1\n\nWe had the class on Freedom UI section, we can open its page and then we made an action to calculate average \nprice with the help of business process.\n  - You remember we did this calculation, we started process, now we have \nsome results, average price in dollars.\n• Speaker 1\n  - # Speaker 1\n\nSo if interested, you can just watch yesterday video and get more details.\n  - So today we'll focus on data transfer \nintegration options.\n• Speaker 1\n  - # Speaker 1\n\nWe have a lot of documentation about it and if interesting you can find much more.\n  - And we have examples, we have \nreferences.\n• Speaker 1\n  - # Speaker 1\n\nOkay, so depending on what operation you need, you have to select the proper HTTP method, Get is used to select \npost for inserts, patch for updates, and HTTP Delete is used to perform physical delete operation.\n  - I will show you a \ncouple of examples and also you need to know that we have a lot of interesting documentation samples here.\n• Speaker 1\n  - # Speaker 1\n\nYou see, for different filters there are special expressions in let's say ODATA language.\n  - And so you can find a lot of \nexamples here.\n• Speaker 1\n  - # Speaker 1\n\nLet's read data from our reality object, but with the help of all data.\n  - First of all, I will use integration tool, I will use\n\n--- Page 3 ---\n\nPostman app and my yesterday cookies are not working anymore.\n• Speaker 1\n  - # Speaker 1\n\nWe provide login and password.\n  - No any special data, no any special headers.\n• Speaker 1\n  - # Speaker 1\n\nWe will have to make a selection of data records and we will make it get HTTP query.\n  - Let's do this.\n• Speaker 1\n  - # Speaker 1\n\nIf I provide no any parameters, system will try to read all of the data with all of the records, all of the columns.\n  - Let's \ntry to do this and run send for get queries we do not need to use BPM CSRF protection.\n• Speaker 1\n  - # Speaker 1\n\nAnd let me show you for example parameters for selecting data collection instance selected fields.\n  - So here I can see \nan example and it means dollar select so question dollar select and then we have columns with comma separated \nvalues to get necessary columns.\n• Speaker 1\n  - # Speaker 1\n\nYou see only requested columns.\n  - Now here and we can see all of the data.\n• Speaker 1\n  - # Speaker 1\n\nIn case if you will try to run such query in your browser, you do not need authentication because usually your browser \nis already authenticated in creation and you keep running session running pages of your creation in your browser.\n  - And that's why you don't usually need to prepare separate separate authentication for it.\n• Speaker 1\n  - # Speaker 1\n\nThen usr realty is also part of endpoint and it gives information to data what exact object you plan to operate with.\n  - Then I have to look at body row JSON and we have to provide some data for example USR name.\n• Speaker 1\n  - # Speaker 1\n\nNow we can go to our main app, sort by date of creation and we will immediately see that our data was added and \nwe can also check column values.\n  - Here you see price was added, we see column was added correctly.\n• Speaker 1\n  - # Speaker 1\n\nSo let's try to add very big number and it will be more than 1 billion.\n  - So we will see how system will react on this \nattempt.\n• Speaker 1\n  - # Speaker 1\n\nIn case if your task is to transport huge amounts of data, you have the only one option.\n  - This is your own \nprogramming of such data and your own parsing your data structures and your own database direct operations and \navoiding use of object model.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 5 ---\n\nSo you have to search for a better solution.\n  - So in case of big number of records to process, in case of very, let's say, \nhard speed requirements for your solution, the only suitable option is your own web service with your own data \nformats, your own direct database management without use of object model.\n• Speaker 1\n  - # Speaker 1\n\nAnd for some tasks I think it will work perfectly.\n  - But for some other tasks you may find that all data is not enough, \nmaybe because of hard load conditions you will finally realize that our data is not going perfect with hard, I would \nsay hardwood big amounts of data.\n• Speaker 1\n  - # Speaker 1\n\nSo it's appropriate way of operating with data using creature server side, it can do all the same operations like \ncreate, read, update and delete data and but it can do it a bit more efficiently.\n  - And also it supports different filter \ncondition macroses and it's much more rich when you need to select data from different tables, perform some \naggregations, perform some complex filtering.\n• Speaker 1\n  - # Speaker 1\n\nSo if you view source, you see a lot of settings and parameters that can be passed as arguments for data service.\n  - But it also has a response with a JSON.\n• Speaker 1\n  - # Speaker 1\n\nSo in documentation you will find that data service is promoted as integration tool.\n  - So it's a restful service.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 6 ---\n\nRecently created records are having more visits because we already had automatically creation for them.\n  - But also \nwe have.\n• Speaker 1\n  - # Speaker 1\n\nAdd the columns and instead of working with traditional set of columns we have in main object you can go to related \nobjects and then we will see all objects that are available for us according to lookup columns from main object and \nalso we will see reverse joins.\n  - We will see other entities that have lookup columns pointing to reality.\n• Speaker 1\n  - # Speaker 1\n\nIt's also possible to specify special conditions to select data.\n  - For example, we can only calculate number of records \nthat are in future or only visits where contact is specified.\n• Speaker 1\n  - # Speaker 1\n\nSo if you reload the data using this update refresh button, you see only one query was executed and if you go deeper \nin payload you will see that our column for calculation of aggregate number is also represented to the standard \ncolumn.\n  - Here we have some column path for it, some setting for Type of aggregation.\n• Speaker 1\n  - # Speaker 1\n\nSo in general folders work here like search folders in your outlook.\n  - So here we can specify some name and the filter \nconditions that will be useful for us to select only some searching data, not all of the data from our list.\n• Speaker 1\n  - # Speaker 1\n\nAnd aggregate filters will be used for selecting data applying conditions on connected records, not on reality data \nbut on connected records.\n  - In my case I plan to select only reality data where this visits count is greater or equal to\n\n--- Page 7 ---\n\nthree so we can make condition and here we have to select connected entity.\n• Speaker 1\n  - # Speaker 1\n\nSo in my case I will just do quantity calculation select and we have condition count greater or equal three that will be \nour filter condition.\n  - We also can make additional filters here like counting only visits in future or counting only visits \nwith not empty comment.\n• Speaker 1\n  - # Speaker 1\n\nWe use count for our aggregation so it will do selection only of records where some sub select some count of \nconnected data is greater than certain right expression and we have just value three here.\n  - So my example is to \ndemonstrate that data service web service is capable not only to read plain data from the data sections, but also it's \ncapable able to calculate aggregate columns and to use aggregate filters and you can use data service for your \nintegration.\n• Speaker 1\n  - # Speaker 1\n\nThen we go to postman create new actually you should be careful because data service is usually working with post \nqueries only.\n  - So we go to postman.\n• Speaker 1\n  - # Speaker 1\n\nThis is a post clear so we obviously will go will fail into CSRF protection if we do not care about it.\n  - So BPMCSRF \nheader and corresponding cookie value you should get it carefully copying full value and pasting it here.\n• Speaker 1\n  - # Speaker 1\n\nIn Classic UI we had an option to keep such code advanced mode and make this filtering like flying in the air without \nlanding anywhere in your system.\n  - But I personally think that this kind of advanced filter is not so good because once \nyou take time to build it, once you make complex conditions there is a highly likely situation then you will need it to \nsave.\n• Speaker 1\n  - # Speaker 1\n\nIf you don't like it you can also remove it.\n  - So I think it's not a problem.\n• Speaker 1\n  - # Speaker 1\n\nYou will need to remember data and save it somewhere.\n  - And in general it requires some quite strong professional \ndeveloper skills and architectural understanding of what you are doing.\n• Speaker 1\n  - # Speaker 1\n\nKeep some logging by yourself so it will be easier for you to detect and understand how actually it goes and do you \nhave any serious errors in your integration.\n  - So it's like a programmer task, but it's possible and in complex projects \nwe also do this and it works well.\n• Speaker 1\n  - # Speaker 1\n\nIt takes very little time to develop and gives quite quick and valuable results.\n  - Let me show you.\n• Speaker 1\n  - # Speaker 1\n\nJSON body this JSON body is also shown here for us and this JSON body represents some prices and I need to tell \nyou some physical sense of it.\n  - ID bank is one of the banks in Armenia and they sell gold bars, gold plates starting \nfrom 1 gram gold to up to 12 kilos gold, big gold slab and you see their prices are in local Armenian currency, \nArmenian drums.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 9 ---\n\nSo let's imagine we have a task to regularly get gold prices from this URL, from this API, save it in creatio and make it \npossible to run multiple times and correctly update such prices.\n  - I will use only no code tools for it and you will see \nhow we can do this.\n• Speaker 1\n  - # Speaker 1\n\nAnd in my case so I can also share with you this is kind of documentation but the most important we need example \nof call which works for us.\n  - Luckily we don't have any special protection, security or authentication necessary for this.\n• Speaker 1\n  - # Speaker 1\n\nWe will properly register our new third party web service here and then we'll be able to call this web service from our \nbusiness processes with the help of call web service item.\n  - This will not require actual development skills, but it \nrequires some engineering knowledge and understanding of HTTP queries and HTTP methods type and just a bit of \nunderstanding of JSON string and you will see that it's not very difficult.\n• Speaker 1\n  - # Speaker 1\n\nThis is classic package because our current package system setting points to it.\n  - But my plan is to save our data to \nfreedom UI realty package.\n• Speaker 1\n  - # Speaker 1\n\nThis will be saved as special metadata directly to the package.\n  - And we have a method here, so let's save it first.\n• Speaker 1\n  - # Speaker 1\n\nAnd in general one web service may have many methods so you can register them manually in order to use different \nfunctionality of the same web service.\n  - Get method the content type is JSON and response timeout is 5 seconds by\n\n--- Page 10 ---\n\ndefault, 5000 milliseconds means 5 seconds, no authentication necessary.\n• Speaker 1\n  - # Speaker 1\n\nIf you use get query like in our case you only can use method address parameters inside of this URL.\n  - If you use post, \nit's possible to fill in post body request body and it helps to get much more possibilities to transport different data \nvalues as arguments to your web service.\n• Speaker 1\n  - # Speaker 1\n\nSo if you do some operations with third party system which requires some authentication or requires some cookie \nfor like your user settings, then it's also possible to use it in your query.\n  - So it's very universal tool.\n• Speaker 1\n  - # Speaker 1\n\nSo my idea is to tell creatio how should I parse result data in order to extract specific values from it.\n  - So in my case \nresponse parameters can be added manually or we can use special very effective tool which is called quick setup \nand I will use example of my response body and give it to system in order to detect what are the possibilities, what \nare the possible values that we can get out from this example.\n• Speaker 1\n  - # Speaker 1\n\nAs you can see it was it detected that I have two collections one is called cash sell it list of sell prices so bank sells \ngold bars and cash byte it looks like they have this data.\n  - But zeros tell us that possibly they are not really planning to \nbuy anything.\n• Speaker 1\n  - # Speaker 1\n\nThis is very important because in real life examples, for example, you can call some foreign currency exchange rate \nservice and you know, we have almost 200 of different world currencies and you may face maybe 4 or 5 or even \n1000 of records, 4 or 500 or thousands of records with different values and parameters as response.\n  - So it will be \nreally important for you to select only parameters that you really need to get from results of web service.\n• Speaker 1\n  - # Speaker 1\n\nBut using this quick setup tool by examples is much more efficient.\n  - So I have a root item here which represents a \ncollection is array.\n• Speaker 1\n  - # Speaker 1\n\nBecause we see that for all data values here it will be nice if we have an integer so we can treat results as integer \nand system will be okay with it.\n  - But when we go to rate and see some examples sometimes.\n• Speaker 1\n  - # Speaker 1\n\nSo if you really need so you can parse this data lately after you've got it from the web service and then later and then \nyou can save it as you wish.\n  - In my case I keep it simple.\n• Speaker 1\n  - # Speaker 1\n\nOkay, so this example takes result data and parses it and finally will present our data as collection of data records.\n  - We can save it.\n• Speaker 1\n  - # Speaker 1\n\nBut it will require some C sharp scripting for us in order to keep data in redis memory.\n  - For example, I prefer to make \nit more simplified and no code.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 12 ---\n\nThe minimum one usr rate will be our rate column text 50.\n  - You may ask me why text?\n• Speaker 1\n  - # Speaker 1\n\nOne more small step we can go to lookups and register this object as lookup.\n  - So we click lookups new lookup find \nour gold prices save it.\n• Speaker 1\n  - # Speaker 1\n\nWe can create new process name it like USR yet road price main process this is main process because I also plan to \nuse sub process to parse my collection.\n  - That's why I call this processes main process.\n• Speaker 1\n  - # Speaker 1\n\nAnd sometimes full response body will be important because it will be it will include everything obtained from third \nparty without any parsing Boolean success property and probably that's enough.\n  - And we also have a SO request \nbody but it looks like this is an input parameter and only for very specific cases.\n• Speaker 1\n  - # Speaker 1\n\nAnd first of all I will show you some error handling in case if our request finished successfully.\n  - We can turn this flow \ninto conditional flow by clicking on this change type button and then set conditional flow so we can name it okay \nand we can check condition.\n• Speaker 1\n  - # Speaker 1\n\nSo if we not successfully code our web service, no need to try to perform next steps.\n  - We just need to stop our so \nabort our process and use a separate terminate item because it will be stored in our history of execution so we will \neasily understand that it finished with an error.\n• Speaker 1\n  - # Speaker 1\n\nThis protection means that for delete data we must use some parameter.\n  - If we don't, this will not allow us to save \nprocess and it will show us errors.\n• Speaker 1\n  - # Speaker 1\n\nSo we delete prices from our storage and then we can use so we have a Collection and we have two options.\n  - To use \nno code approach with sub process to parse collection or to use C Sharp code in order to parse our collection with \nprogramming.\n• Speaker 1\n  - # Speaker 1\n\nSo realty package should be dependent from dev classic and dev classic package should not be dependent from \nrealty.\n  - Yes, looks good.\n• Speaker 1\n  - # Speaker 1\n\nSo we'll use parameters and I was a process to accept collection data values and I will make my process name USR \nadd gold price subprocess.\n  - So it will be my sub process to add the gold prices.\n• Speaker 1\n  - # Speaker 1\n\nThen we will use our process and our process structure will be really simple.\n  - We will just use one add data item.\n• Speaker 1\n  - # Speaker 1\n\nNow we will use an item called sub process and I will use this orange item and place it into my diagram.\n  - Normally \nwhen you want to run a single instance of a sub process, you just specify your sub process name and single \ninstance call means you have to transport.\n• Speaker 1\n  - # Speaker 1\n\nSo I click on this lightning button, select process parameter and then I will select process elements and our get gold \nprices call web service.\n  - It returns collection and we have corresponding weight column in this correction.\n• Speaker 1\n  - # Speaker 1\n\nBut in here we can just run the process and we are interested that in finishing it fully synchronously.\n  - No strong \nreasons to run it in background creating some scheduler executed tasks.\n• Speaker 1\n  - # Speaker 1\n\nLet's reload it by clicking on this icon and we have to start main process.\n  - Let's start it.\n• Speaker 1\n  - # Speaker 1\n\nSo we can click on show trace data.\n  - You will see all the parameters in your collection.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 15 ---\n\nAlso it makes sense to look at the columns of creation, date of creation.\n  - Okay, and now you see we have all obtained \ndata saved in creation.\n• Speaker 1\n  - # Speaker 1\n\nAnd finally we have a process which takes probably less than hour to develop with all the explanations and we \nsuccessfully got our data.\n  - If we start this process one more time, you will see in our lookups, you will see new data.\n• Speaker 1\n  - # Speaker 1\n\nMy next topic for today is to explain you how to use Clio tool and explain why you need it.\n  - So first of all I should \nexplain why we have some additional tools and not inside of the base platform.\n• Speaker 1\n  - # Speaker 1\n\nAnd so it has a lot of different, let's say quite technical purpose, which probably will be not necessary for end users.\n  - So developers used it for a long time.\n• Speaker 1\n  - # Speaker 1\n\nSo generally you can consider as this tool was written by Creation in general, but this tool has open source code.\n  - You \ncan easily not easily, but you can analyze its source code.\n• Speaker 1\n  - # Speaker 1\n\nBut you should keep in mind that this tool was written by developers of base product, so they had their own reasons\n\n--- Page 16 ---\n\nand needs to operate inside of base product.\n  - And now you will see this difference.\n• Speaker 1\n  - # Speaker 1\n\nI already have it dotnet tool list G this is command showing me existing installed dotnet core tools on my PC and \nClio is already installed here.\n  - Okay, I can remove it dotnet to uninstall Clio G It means remove it from my system.\n• Speaker 1\n  - # Speaker 1\n\nOkay, let's install it.net sorry to install Clio G this is command that you can type in your windows command terminal.\n  - This is two this is common to install Clio.\n• Speaker 1\n  - # Speaker 1\n\nI have suspect that the most early created functions are at the top of this list and the most recently lately created \nfunctions are at the end of this list, you will not need all of them.\n  - So it's like a universal tool.\n• Speaker 1\n  - # Speaker 1\n\nSo I already have some previous environments registered.\n  - I have to register my current environment.\n• Speaker 1\n  - # Speaker 1\n\nSo it will be included into this file and then you will refer to it by name.\n  - This is easier than providing URL, login and \npassword each time when you need to operate with target environment.\n• Speaker 1\n  - # Speaker 1\n\nWow, we have some troubles in this file line 41.\n  - Probably because I have some older versions of such settings.\n• Speaker 1\n  - # Speaker 1\n\nSo now we can do some simple operations with it.\n  - Cleoping and then we have different options.\n• Speaker 1\n  - # Speaker 1\n\nYou remember when we modified some objects, added new columns, we had to restart our app to properly apply \nsuch changes.\n  - So we had such scenarios in our training when we needed it.\n• Speaker 1\n  - # Speaker 1\n\nLet me switch find it should be somewhere here.\n  - Yeah.\n• Speaker 1\n  - # Speaker 1\n\nBut if you want to use all power of existing Clio commands, you must perform special command and this command \nis named Install gate.\n  - This Command downloads from NuGet and installs in your target system special package \nwhich keeps DLL inside.\n• Speaker 1\n  - # Speaker 1\n\nLet's try to run a command to install gate Clio install gate ED1 this is required in case if you want to enable full power \nof Clio commands.\n  - So in my case, I will do it in my source environment.\n• Speaker 1\n  - # Speaker 1\n\nSo system tried to compile and failed exceeded narrow try count work process.\n  - So our IIS prevented our system to \ncompile.\n• Speaker 1\n  - # Speaker 1\n\nYou can see its size 5 megabyte of executables not so little files Bin and here, here and here are DLLs included as \nfile content for this Clio Gate package.\n  - So such DLLs are used to execute Clio commands.\n• Speaker 1\n  - # Speaker 1\n\nAnd this will be comments to save and load environment settings and Sorry, Save and load packages.\n  - Let me show \nyou.\n• Speaker 1\n  - # Speaker 1\n\nSo I will check availability of my second environment and it looks like should be okay.\n  - Yes, looks like Bing is okay.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 19 ---\n\nNot only one but several packages from source environment.\n  - Destination path is somewhere like this guided dev.\n• Speaker 1\n  - # Speaker 1\n\nLet's try first system will save three packages into gz files organized into one single zip file and then it will be done \nand as you can see it makes it as a one operation if you do save manually saving of an app or saving of a separate \npackage.\n  - So you will have to perform it with separate structure steps.\n• Speaker 1\n  - # Speaker 1\n\nSo you see we have location packages more file descriptor more than one file app descriptor JSON what it is what \npackage it's about real to migration No, I don't know.\n  - So something wrong with application descriptors we can check \nit at our file system.\n• Speaker 1\n  - # Speaker 1\n\nSomething is strange here and it looks like probably system failed to work with it but it looks like it's not a big trouble \nand you see one more issue here parent schema and was not found yes, this is more serious trouble because it \nlooks like our target environment was not fully prepared to install our changes because it miss customer 360 app \npossibly previous error message that we had here previous message with this stuff here probably it was also \nmissing corresponding app and we used so our solution expects that target system will help customer360 in my \nexample customers current our target environment did not have customer 360 that's why we have this stuff.\n  - So in \norder to fix it of course we have to install customer360 first and then our solution next.\n• Speaker 1\n  - # Speaker 1\n\nBut now we can test our target environment.\n  - So usually we need to reload it.\n• Speaker 1\n  - # Speaker 1\n\nManual load can be done with new application and then install from file.\n  - Now we have successful installation.\n• Speaker 1\n  - # Speaker 1\n\nAnd if we ever try to compile our package on target environment, we may have very unpleasant situation when we \nwill try to compile old contents of C sources instead of actual one.\n  - So in order to make correct export of your \nsolution to test in production, we need to save everything on disk.\n• Speaker 1\n  - # Speaker 1\n\nIt will be not so hard and thank you for your time.\n  - So now I just plan to make it correctly with save and load and then \nif everything goes well, we will see our Apps we will see our functionality loaded to our target environment if \nsomething goes not as planned.\n• Speaker 1\n  - # Speaker 1\n\nSo sys module entity USR realty no then this module in workplace studio so violation of primary key.\n  - Oh, it's because \nof data binding which does not keep correct IDs but duplicate cases module in workplace.\n• Speaker 1\n  - # Speaker 1\n\nWe have classic we miss reality sections here because such data items were not loaded.\n  - I will show you how you \ncan fix it.\n• Speaker 1\n  - # Speaker 1\n\nIt looks like we already have sys module in workplace ID and it looks like this data entity was not good.\n  - So we have \nsome items here and we have key which was not ID and key was used by section and workplace.\n• Speaker 1\n  - # Speaker 1\n\nGreat, and we can save it.\n  - And we have a lot of warnings, but it's about existing date.\n• Speaker 1\n  - # Speaker 1\n\nNow we will have a bit better version of it.\n  - Okay, saved.\n• Speaker 1\n  - # Speaker 1\n\nLoader text takes zip file, takes information about its items, all the packages, all the items of configuration and it \nanalyzes date of modification.\n  - If date of modification of the loaded item is the same as date of modification of items \nthat you have already in your target environment, then it just skips it.\n• Speaker 1\n  - # Speaker 1\n\nActually only base product stuff.\n  - Okay, don't care, no errors.\n• Speaker 1\n  - # Speaker 1\n\nSo that's how you can deliver your solution to test and check it out and perform corresponding full scale test for your \nsystem to check how it works.\n  - Now you see details were filled in.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 22 ---\n\nSo this is example of how you can read list of contacts from your database.\n  - Of course your queries could be much \nmore complicated.\n• Speaker 1\n  - # Speaker 1\n\nAnd that's why now we don't have any fancy good looking tool to run SQL query from application user interface.\n  - But \nnow this is something that you can do.\n• Speaker 1\n  - # Speaker 1\n\nSplit editor.\n  - More actions.\n• Speaker 1\n  - # Speaker 1\n\nAs usual you will receive video recording of today's session.\n  - If you have any questions, ask today or prepare \nquestions for tomorrow.\n• Speaker 1\n  - # Speaker 1\n\nSo if you agree to run Fast track certification, you should just respond to my email and we will arrange individual \ndate and time for you to run your exam.\n  - Your exam will include check of the homework.\n• Speaker 1\n  - # Speaker 1\n\nYou will see the type of the homework Raki is asking will include.\n  - So let me quickly show.\n• Speaker 1\n  - # Speaker 1\n\nSo it requires some javascripting and C Sharp scripting.\n  - And so it will not take too much time for you, I think, and I \nhope that it will be clear.\n• Speaker 1\n  - # Speaker 1\n\nSorry for staying a bit later than usual and if you will have more questions, so prepare for tomorrow, we will have \ntime for this.\n  - Thank you very much for today's session and goodbye.\n\nKey Concepts: json, entity, module, web service, schema",
+  "key_points": [
+    "json",
+    "entity",
+    "module",
+    "web service",
+    "schema",
+    "detail",
+    "integration",
+    "page",
+    "data",
+    "configuration"
+  ],
+  "keywords": [
+    "data",
+    "speaker",
+    "use",
+    "let",
+    "service",
+    "need",
+    "like",
+    "okay",
+    "web",
+    "clio"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 5423,
+  "original_length": 16974,
+  "compression_ratio": 0.3194886296689054,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:52:26.674714",
+  "metadata": {
+    "structure": {
+      "title": "Speaker 1",
+      "sections": [
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nToday is session number nine of our development on Creature platform guided learning.",
+            "And today we will continue \nto study server side and we'll move on with integration tools.",
+            "So yesterday we finished with our own web service.",
+            "It \nwas made at creation site, was made with the help of C Sharp sources and we programmed it, we saved it in file \nsystem."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo what we'll study today, how to use standard platform level tools to operate with data with the help of HTTP \nqueries.",
+            "And we will discuss and I will show you examples of how to work with standard tools.",
+            "And they are all data \nprotocol and data web service."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo don't be shy, ask any questions if you feel something that you need to know and let's move on.",
+            "So integrations \nwith data tools.",
+            "First of all I need to show you general integration capabilities that we have on board.",
+            "Go to \ndevelopment guides integrations options and here you can see standard options that we have."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAs you can see we have other options to integrate with creation.",
+            "We have two options for data transfer such called \nCRUD operations which means create, read, update and delete.",
+            "So standard simple operations that you may need to \nwork with your data and to organize.",
+            "Possibility to read some data for third party app or to make some inserts, \nupdates or deletes in creation by commands from other applications.",
+            "And we have two different options for this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt's very specific to creature, but it offers you more options, more possibilities, more complicated calculations.",
+            "And \nthat's why data services used for creation of client side and data service in general is more powerful than ODATA \nand more complex to program.",
+            "So I will show you both ODATA and Data Service.",
+            "You will see how it works.",
+            "Also, it's \nworth it to mention that we have another integration option to run business processes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe had the class on Freedom UI section, we can open its page and then we made an action to calculate average \nprice with the help of business process.",
+            "You remember we did this calculation, we started process, now we have \nsome results, average price in dollars.",
+            "Then we save it or close it.",
+            "And that's how we finish our process.",
+            "So physically \nwe did some calls to third part to process engine web service."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if interested, you can just watch yesterday video and get more details.",
+            "So today we'll focus on data transfer \nintegration options.",
+            "And I would like to start from OData because it's easier, it's more friendly for beginners and it's \nquite easy to start from scratch.",
+            "So what it is, this is a data transfer protocol which is supported at creation.",
+            "We have \nall documentation about it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe have a lot of documentation about it and if interesting you can find much more.",
+            "And we have examples, we have \nreferences.",
+            "So I prefer to show you something really useful.",
+            "This article, it explains some general basics about how \nto use OData."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, so depending on what operation you need, you have to select the proper HTTP method, Get is used to select \npost for inserts, patch for updates, and HTTP Delete is used to perform physical delete operation.",
+            "I will show you a \ncouple of examples and also you need to know that we have a lot of interesting documentation samples here.",
+            "And \none of the good ones is creation API documentation hosted at Documentor, get postman.",
+            "Com.",
+            "This is one of the \nbest sources that you can find for OData."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou see, for different filters there are special expressions in let's say ODATA language.",
+            "And so you can find a lot of \nexamples here.",
+            "Even batch queries Supported Batch queue means running single query with several parameters.",
+            "And each parameter explains to a system how to run a particular operation.",
+            "So it can be useful if your plan is to run \nmany data operations with one single query."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet's read data from our reality object, but with the help of all data.",
+            "First of all, I will use integration tool, I will use\n\n--- Page 3 ---\n\nPostman app and my yesterday cookies are not working anymore.",
+            "They will not help me to run queries.",
+            "I can check it \neasily so we can Try to run our web service and as you can see we have 401 not authorized.",
+            "It means that our \ncookies are related to expired session."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe provide login and password.",
+            "No any special data, no any special headers.",
+            "You may find some information here \nlike authentication and some accept content type for C session.",
+            "But it turns out to be not necessary to perform \nauthentication successfully.",
+            "So let me show you here we have some hidden headers made by postman like accept \ncontent type, application JSON and so on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe will have to make a selection of data records and we will make it get HTTP query.",
+            "Let's do this.",
+            "So let's go to \npostman, create a new get query.",
+            "We have to use our address of our app with 0 alias here and then we can look at \nthis example or we can look at this document or get postman.com examples.",
+            "So we need to do selection."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf I provide no any parameters, system will try to read all of the data with all of the records, all of the columns.",
+            "Let's \ntry to do this and run send for get queries we do not need to use BPM CSRF protection.",
+            "So for get queries, no cross \nsite request forgery protection needed.",
+            "And you see it took significant time, almost six seconds to run.",
+            "And as a \nresult we have Some JSON body with different data records about our reality record saved in database."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd let me show you for example parameters for selecting data collection instance selected fields.",
+            "So here I can see \nan example and it means dollar select so question dollar select and then we have columns with comma separated \nvalues to get necessary columns.",
+            "So I'm using this example, you can use this example and let me show you how we \ncan do it.",
+            "So question mark to switch to parameters Dover select is parameters specifying column names that we \nplan to use."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou see only requested columns.",
+            "Now here and we can see all of the data.",
+            "We can do some limitation.",
+            "So we can \nuse and another parameter dollar top three for example.",
+            "And when we do such selection, it will read only top three \nrecords for us."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn case if you will try to run such query in your browser, you do not need authentication because usually your browser \nis already authenticated in creation and you keep running session running pages of your creation in your browser.",
+            "And that's why you don't usually need to prepare separate separate authentication for it.",
+            "Okay, I think for selection it's \nquite clear.",
+            "So let me show you how you can do insert data."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen usr realty is also part of endpoint and it gives information to data what exact object you plan to operate with.",
+            "Then I have to look at body row JSON and we have to provide some data for example USR name.",
+            "This is mandatory \ndata from all data for integration it will be our name USR price USD okay, so you can see we have some data here.",
+            "If \nwe try to run a post query without CSRF settings we will get 403 because for post query we must perform BPM CSRF \nheader we must put corresponding cookie value.",
+            "Please carefully copy cookie value including some dots if they \npresent."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow we can go to our main app, sort by date of creation and we will immediately see that our data was added and \nwe can also check column values.",
+            "Here you see price was added, we see column was added correctly.",
+            "But what we \nreally interested you can see the type and offer type were set by default."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let's try to add very big number and it will be more than 1 billion.",
+            "So we will see how system will react on this \nattempt.",
+            "Now you see we have a quite rude error and this is error 500 internal error."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn case if your task is to transport huge amounts of data, you have the only one option.",
+            "This is your own \nprogramming of such data and your own parsing your data structures and your own database direct operations and \navoiding use of object model.",
+            "Because when you use object model, you also support all of the object events.",
+            "It \nworks not so fast."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 5 ---\n\nSo you have to search for a better solution.",
+            "So in case of big number of records to process, in case of very, let's say, \nhard speed requirements for your solution, the only suitable option is your own web service with your own data \nformats, your own direct database management without use of object model.",
+            "But in simple real life scenarios, I think \nall data will work well for you.",
+            "And it's relatively easy because you see it's not so hard to build such query to run it \neven when your third party app is used."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd for some tasks I think it will work perfectly.",
+            "But for some other tasks you may find that all data is not enough, \nmaybe because of hard load conditions you will finally realize that our data is not going perfect with hard, I would \nsay hardwood big amounts of data.",
+            "Maybe you will need some more complicated scenarios with reading data and \nperforming some calculations like preparing reports and running it with third party app.",
+            "And you will need some \naggregation, some complex filtering."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it's appropriate way of operating with data using creature server side, it can do all the same operations like \ncreate, read, update and delete data and but it can do it a bit more efficiently.",
+            "And also it supports different filter \ncondition macroses and it's much more rich when you need to select data from different tables, perform some \naggregations, perform some complex filtering.",
+            "I will demonstrate what data service can do.",
+            "And first of all I need to \ntell you the data service is mainly Used by inner creation client side pages."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you view source, you see a lot of settings and parameters that can be passed as arguments for data service.",
+            "But it also has a response with a JSON.",
+            "So now you see JSON string which can be parsed and such JSON data not \nso hard to operate with.",
+            "You can easily get corresponding values out from your results."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in documentation you will find that data service is promoted as integration tool.",
+            "So it's a restful service.",
+            "You can \nuse third party to compose queries for it.",
+            "And here it's promoted and advertised like an integration tool.",
+            "But in reality \nit's not so integration oriented, but it is say platform UI oriented."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 6 ---\n\nRecently created records are having more visits because we already had automatically creation for them.",
+            "But also \nwe have.",
+            "Oh, we don't make any action to add the data director here.",
+            "Okay, so we have some examples which already \nhave created data records in visits detail."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAdd the columns and instead of working with traditional set of columns we have in main object you can go to related \nobjects and then we will see all objects that are available for us according to lookup columns from main object and \nalso we will see reverse joins.",
+            "We will see other entities that have lookup columns pointing to reality.",
+            "In my case this \nis realty visit.",
+            "We have different options how to select data from it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt's also possible to specify special conditions to select data.",
+            "For example, we can only calculate number of records \nthat are in future or only visits where contact is specified.",
+            "So you can do different conditions here.",
+            "In my case I also \ntry to make it easy and calculate total number of visits.",
+            "And we can make the caption here visits count."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you reload the data using this update refresh button, you see only one query was executed and if you go deeper \nin payload you will see that our column for calculation of aggregate number is also represented to the standard \ncolumn.",
+            "Here we have some column path for it, some setting for Type of aggregation.",
+            "Aggregation Type 1 means \ncount and that's how system knows what to calculate and returns as some calculated number."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in general folders work here like search folders in your outlook.",
+            "So here we can specify some name and the filter \nconditions that will be useful for us to select only some searching data, not all of the data from our list.",
+            "Let's call it \nthree plus visits.",
+            "So let's imagine for some reasons we need to look at realty records where we have three and more \nvisits created."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd aggregate filters will be used for selecting data applying conditions on connected records, not on reality data \nbut on connected records.",
+            "In my case I plan to select only reality data where this visits count is greater or equal to\n\n--- Page 7 ---\n\nthree so we can make condition and here we have to select connected entity.",
+            "So not just dropping down here \ncontents of reality columns."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in my case I will just do quantity calculation select and we have condition count greater or equal three that will be \nour filter condition.",
+            "We also can make additional filters here like counting only visits in future or counting only visits \nwith not empty comment.",
+            "So whatever you think it will be useful you can do here.",
+            "Then we save it and that's how we \nsee result of this filtering."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe use count for our aggregation so it will do selection only of records where some sub select some count of \nconnected data is greater than certain right expression and we have just value three here.",
+            "So my example is to \ndemonstrate that data service web service is capable not only to read plain data from the data sections, but also it's \ncapable able to calculate aggregate columns and to use aggregate filters and you can use data service for your \nintegration.",
+            "But I think it's really hard because you will need to have a good make already good made examples to \nmake it work."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen we go to postman create new actually you should be careful because data service is usually working with post \nqueries only.",
+            "So we go to postman.",
+            "Regardless of the operation we will use post query and paste this URL should be \ncareful.",
+            "Okay Paste URL we have a huge body."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is a post clear so we obviously will go will fail into CSRF protection if we do not care about it.",
+            "So BPMCSRF \nheader and corresponding cookie value you should get it carefully copying full value and pasting it here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn Classic UI we had an option to keep such code advanced mode and make this filtering like flying in the air without \nlanding anywhere in your system.",
+            "But I personally think that this kind of advanced filter is not so good because once \nyou take time to build it, once you make complex conditions there is a highly likely situation then you will need it to \nsave.",
+            "So developers in Freedom UI decided that no advanced filters anymore.",
+            "If you need some complex filtering, \njust mentally prepare yourself to save it as a folder."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you don't like it you can also remove it.",
+            "So I think it's not a problem.",
+            "Thank you Adrian for your question.",
+            "And yes I \nagree we have some changes between Classic and Freedom UI and it looks like such changes were discussed so it's \nnot a real decrease of some important functionality."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou will need to remember data and save it somewhere.",
+            "And in general it requires some quite strong professional \ndeveloper skills and architectural understanding of what you are doing.",
+            "In general, I recommend you to run queries \nthat will not return you millions of records.",
+            "It's better to operate with data using some portions and both ODATA and \ndata service have their own limitation."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nKeep some logging by yourself so it will be easier for you to detect and understand how actually it goes and do you \nhave any serious errors in your integration.",
+            "So it's like a programmer task, but it's possible and in complex projects \nwe also do this and it works well.",
+            "So let's move on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt takes very little time to develop and gives quite quick and valuable results.",
+            "Let me show you.",
+            "So let's imagine we \nhave Creature app, we have different sections, data and so on and we have some third party application that we \nwant to call and to use its data to perform some data transfer.",
+            "Let me show you some example of it.",
+            "We have a node \nwith REST API samples so we can use something like this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nJSON body this JSON body is also shown here for us and this JSON body represents some prices and I need to tell \nyou some physical sense of it.",
+            "ID bank is one of the banks in Armenia and they sell gold bars, gold plates starting \nfrom 1 gram gold to up to 12 kilos gold, big gold slab and you see their prices are in local Armenian currency, \nArmenian drums."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 9 ---\n\nSo let's imagine we have a task to regularly get gold prices from this URL, from this API, save it in creatio and make it \npossible to run multiple times and correctly update such prices.",
+            "I will use only no code tools for it and you will see \nhow we can do this.",
+            "Also you may reproduce it just during today's session.",
+            "So let's start."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd in my case so I can also share with you this is kind of documentation but the most important we need example \nof call which works for us.",
+            "Luckily we don't have any special protection, security or authentication necessary for this.",
+            "You may also find a lot of other sources with similar functionality like currency exchange websites, like weather \nforecast websites, like other regular date that could be commonly interesting for people.",
+            "It's usually shared without \nany special restrictions."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe will properly register our new third party web service here and then we'll be able to call this web service from our \nbusiness processes with the help of call web service item.",
+            "This will not require actual development skills, but it \nrequires some engineering knowledge and understanding of HTTP queries and HTTP methods type and just a bit of \nunderstanding of JSON string and you will see that it's not very difficult.",
+            "So let's do this add new web service when \nwe Created system uses current package system settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is classic package because our current package system setting points to it.",
+            "But my plan is to save our data to \nfreedom UI realty package.",
+            "Let it be here.",
+            "This URI is like a main part which was extracted from our URL and it will be \nused as a like base part of our web service and then we can have many different methods."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis will be saved as special metadata directly to the package.",
+            "And we have a method here, so let's save it first.",
+            "Now \nyou see configuration section and let's go to all items.",
+            "You will see new type of item called web service and it's \nalready saved in our package.",
+            "So all you can do is to open its metadata."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd in general one web service may have many methods so you can register them manually in order to use different \nfunctionality of the same web service.",
+            "Get method the content type is JSON and response timeout is 5 seconds by\n\n--- Page 10 ---\n\ndefault, 5000 milliseconds means 5 seconds, no authentication necessary."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you use get query like in our case you only can use method address parameters inside of this URL.",
+            "If you use post, \nit's possible to fill in post body request body and it helps to get much more possibilities to transport different data \nvalues as arguments to your web service.",
+            "In my case I have no request parameters at all, but if you will do it \nsomething like yourself with different web services, you need to remember that we have all possible ways to transfer \ndata that is commonly used in the REST API."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you do some operations with third party system which requires some authentication or requires some cookie \nfor like your user settings, then it's also possible to use it in your query.",
+            "So it's very universal tool.",
+            "In my case I do not \nneed request parameters in this example but I need response parameters.",
+            "So let's save it again just not to lose \nanything."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo my idea is to tell creatio how should I parse result data in order to extract specific values from it.",
+            "So in my case \nresponse parameters can be added manually or we can use special very effective tool which is called quick setup \nand I will use example of my response body and give it to system in order to detect what are the possibilities, what \nare the possible values that we can get out from this example."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAs you can see it was it detected that I have two collections one is called cash sell it list of sell prices so bank sells \ngold bars and cash byte it looks like they have this data.",
+            "But zeros tell us that possibly they are not really planning to \nbuy anything.",
+            "And it's just like useless part of the data for us.",
+            "So we can select what part of data is interesting and \nwhat part can be skipped because in our case we do not need it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is very important because in real life examples, for example, you can call some foreign currency exchange rate \nservice and you know, we have almost 200 of different world currencies and you may face maybe 4 or 5 or even \n1000 of records, 4 or 500 or thousands of records with different values and parameters as response.",
+            "So it will be \nreally important for you to select only parameters that you really need to get from results of web service.",
+            "Because \nsometimes web service result body is quite excessive, including a lot of information that you don't plan to use or just \nnot useful for you.",
+            "In my case, I am interested in cache cell list and I will save it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut using this quick setup tool by examples is much more efficient.",
+            "So I have a root item here which represents a \ncollection is array.",
+            "And also it's interesting to mention that creature uses such thing called JSON path.",
+            "JSON path is \na kind of address of a value inside of a JSON body."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBecause we see that for all data values here it will be nice if we have an integer so we can treat results as integer \nand system will be okay with it.",
+            "But when we go to rate and see some examples sometimes.",
+            "So in general rate is a \ntext and sometimes we see thousand separators and sometimes you see it even twice."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you really need so you can parse this data lately after you've got it from the web service and then later and then \nyou can save it as you wish.",
+            "In my case I keep it simple.",
+            "I try to not spend too much time on such data type transfer.",
+            "So I prefer to keep it as text.",
+            "So it will be just a good for our demo."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, so this example takes result data and parses it and finally will present our data as collection of data records.",
+            "We can save it.",
+            "Save it.",
+            "And this information is now saved in our configuration section.",
+            "Now I propose to make a five \nminutes break."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut it will require some C sharp scripting for us in order to keep data in redis memory.",
+            "For example, I prefer to make \nit more simplified and no code.",
+            "So we will save our data into our database in just a simple lookup.",
+            "This lookup \nrequires integer weight and text rate.",
+            "We can easily create it ourselves in this package."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 12 ---\n\nThe minimum one usr rate will be our rate column text 50.",
+            "You may ask me why text?",
+            "The answer is because I do \ndemo of getting data in real life.",
+            "We will need to save our text values first or maybe to use them and process before \nsaving with the script task and then we will use a decimal value to save finally converted value and in my case I went \njust to keep it as demo for you."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOne more small step we can go to lookups and register this object as lookup.",
+            "So we click lookups new lookup find \nour gold prices save it.",
+            "So now we have this lookup we can open its contents but we have nothing there.",
+            "We can \nopen properties and create data binding item and save it into our package."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe can create new process name it like USR yet road price main process this is main process because I also plan to \nuse sub process to parse my collection.",
+            "That's why I call this processes main process.",
+            "No initial arguments simply \nstarting our process by manual start and the first step we need to do is call web service process item and which web \nservice to call."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd sometimes full response body will be important because it will be it will include everything obtained from third \nparty without any parsing Boolean success property and probably that's enough.",
+            "And we also have a SO request \nbody but it looks like this is an input parameter and only for very specific cases.",
+            "So I don't know how to make a no \ncode example with this response request body so we will not use it now."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd first of all I will show you some error handling in case if our request finished successfully.",
+            "We can turn this flow \ninto conditional flow by clicking on this change type button and then set conditional flow so we can name it okay \nand we can check condition.",
+            "This condition will include just boolean success property."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if we not successfully code our web service, no need to try to perform next steps.",
+            "We just need to stop our so \nabort our process and use a separate terminate item because it will be stored in our history of execution so we will \neasily understand that it finished with an error.",
+            "Okay, but if everything works well, we need to think of the place where \nwe plan to keep our data when we first run it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis protection means that for delete data we must use some parameter.",
+            "If we don't, this will not allow us to save \nprocess and it will show us errors.",
+            "So we must use some parameters here.",
+            "And this is kind of protection from \nunintentional delete of all the data.",
+            "But in our case we intentionally want to do this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we delete prices from our storage and then we can use so we have a Collection and we have two options.",
+            "To use \nno code approach with sub process to parse collection or to use C Sharp code in order to parse our collection with \nprogramming.",
+            "Of course I prefer no code approach.",
+            "Let's save temporary our current progress.",
+            "Oh, it tells that the \nchange is saved."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo realty package should be dependent from dev classic and dev classic package should not be dependent from \nrealty.",
+            "Yes, looks good.",
+            "Yes, looks good.",
+            "Very good.",
+            "So now no cyclic dependencies, no troubles."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we'll use parameters and I was a process to accept collection data values and I will make my process name USR \nadd gold price subprocess.",
+            "So it will be my sub process to add the gold prices.",
+            "I need parameters because the only \nway to transfer data from main process to sub process is sub process parameters.",
+            "One parameter will be integer.",
+            "So \nI add the parameter which will mean weight integer input which make it makes it read only inside of my process."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen we will use our process and our process structure will be really simple.",
+            "We will just use one add data item.",
+            "We \nwill add data into gold price object add price and we will fill one record and only couple of values weight and rate will \nbe filled in very easy rate and weight.",
+            "So rate will take its value from corresponding Rate text parameter weight \nClicking on this lightning button, we'll get its value from corresponding integer weight parameter."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow we will use an item called sub process and I will use this orange item and place it into my diagram.",
+            "Normally \nwhen you want to run a single instance of a sub process, you just specify your sub process name and single \ninstance call means you have to transport.",
+            "They are just pair of values and this means that you will run your sub \nprocess only once.",
+            "But in our case we plan to work with it and parse collection with the help of sub processes.",
+            "So I \nwill use special settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I click on this lightning button, select process parameter and then I will select process elements and our get gold \nprices call web service.",
+            "It returns collection and we have corresponding weight column in this correction.",
+            "So I have \nto double click it.",
+            "And that's how our sub process immediately turned into collection processing mode.",
+            "And it will run \nas many sub process instances as many collection data records we have."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut in here we can just run the process and we are interested that in finishing it fully synchronously.",
+            "No strong \nreasons to run it in background creating some scheduler executed tasks.",
+            "So we just can run it simply in a current \nthread.",
+            "Okay, when it runs we can also call it like add prices.",
+            "Okay, it prices and it will run ad vote price sub \nprocesses and we'll have as many sub processes as many collection records you found."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet's reload it by clicking on this icon and we have to start main process.",
+            "Let's start it.",
+            "But also before starting it we \ncan enable trace to be important for our debugging and we can also.",
+            "That's it.",
+            "Okay."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we can click on show trace data.",
+            "You will see all the parameters in your collection.",
+            "We can see technical \nparameters like response status, code 200 means everything is okay, full response body sometimes can be \nimportant.",
+            "And it looks like in our example everything went smoothly without any errors.",
+            "So this trace takes some \nadditional performance."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 15 ---\n\nAlso it makes sense to look at the columns of creation, date of creation.",
+            "Okay, and now you see we have all obtained \ndata saved in creation.",
+            "Physically this is text.",
+            "So if really needed we can use parsing.",
+            "We can use some C sharp \nscripting to parse such values into decimal and then save them into corresponding decimal fields."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd finally we have a process which takes probably less than hour to develop with all the explanations and we \nsuccessfully got our data.",
+            "If we start this process one more time, you will see in our lookups, you will see new data.",
+            "So you see date in time was changed."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nMy next topic for today is to explain you how to use Clio tool and explain why you need it.",
+            "So first of all I should \nexplain why we have some additional tools and not inside of the base platform.",
+            "So previously we already had a tool \nthat was necessary to support developers and this tool was called Let me show you Delivery Tools and Workspace \nConsole Overview."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd so it has a lot of different, let's say quite technical purpose, which probably will be not necessary for end users.",
+            "So developers used it for a long time.",
+            "But now this is an old tool which has its own disadvantages and developers \nwanted to make something new, so they made a new tool called Clio.",
+            "You can find it in GitHub, ATF Clio."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo generally you can consider as this tool was written by Creation in general, but this tool has open source code.",
+            "You \ncan easily not easily, but you can analyze its source code.",
+            "You can like propose your own improvements into it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut you should keep in mind that this tool was written by developers of base product, so they had their own reasons\n\n--- Page 16 ---\n\nand needs to operate inside of base product.",
+            "And now you will see this difference.",
+            "So let's go and I will show you \nhow to use it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI already have it dotnet tool list G this is command showing me existing installed dotnet core tools on my PC and \nClio is already installed here.",
+            "Okay, I can remove it dotnet to uninstall Clio G It means remove it from my system.",
+            "Now if we check we have no creature Clio tool on my PC.",
+            "This is a common line utility."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, let's install it.net sorry to install Clio G this is command that you can type in your windows command terminal.",
+            "This is two this is common to install Clio.",
+            "It will install the latest version.",
+            "Let's see what version we will have.",
+            "Now of \ncourse this comment requires Internet connection so it goes to nuget searches for the last package which it can \nfind."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI have suspect that the most early created functions are at the top of this list and the most recently lately created \nfunctions are at the end of this list, you will not need all of them.",
+            "So it's like a universal tool.",
+            "It has a lot of different \nparameters, a lot of different comments.",
+            "So I will show you the most important, the most practical that you may \nneed."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I already have some previous environments registered.",
+            "I have to register my current environment.",
+            "Clio reg web \napp I need to show you reg web app.",
+            "Of course you need to know how to spell certain comments, how to get their \nparameters.",
+            "So you can try to do something like this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it will be included into this file and then you will refer to it by name.",
+            "This is easier than providing URL, login and \npassword each time when you need to operate with target environment.",
+            "So let me register my current environment.",
+            "Clear reg the web app.",
+            "I already have some example, so let me type it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWow, we have some troubles in this file line 41.",
+            "Probably because I have some older versions of such settings.",
+            "Okay, \nlet's go where it tells users.",
+            "What else?",
+            "Users or user app data Local creation My user app data local creature."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now we can do some simple operations with it.",
+            "Cleoping and then we have different options.",
+            "But the easiest way \nis to use E key for environment and then environment name.",
+            "So this cleo ping will physically check availability of our \nweb service.",
+            "And if it's okay, you will see yellow."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou remember when we modified some objects, added new columns, we had to restart our app to properly apply \nsuch changes.",
+            "So we had such scenarios in our training when we needed it.",
+            "And simple log out and login did not \nhelp.",
+            "Okay, so let's move on.",
+            "We already started restart."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet me switch find it should be somewhere here.",
+            "Yeah.",
+            "Push pkg.",
+            "It has also short command install.",
+            "I don't know \nwhy developers did not show it here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut if you want to use all power of existing Clio commands, you must perform special command and this command \nis named Install gate.",
+            "This Command downloads from NuGet and installs in your target system special package \nwhich keeps DLL inside.",
+            "And this DLL includes all necessary web services that enable this set of commands.",
+            "So \nsuch web services, simply speaking, are parts of Clio to implement corresponding comments without this comment, \nwithout install gate, without additional package installed to your system, CLIO will be not capable to perform \ncorresponding commands."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet's try to run a command to install gate Clio install gate ED1 this is required in case if you want to enable full power \nof Clio commands.",
+            "So in my case, I will do it in my source environment.",
+            "This takes time because it Downloads \npackage from NuGet, it installs this package into your target environment.",
+            "This package is called Clio Gate.",
+            "So you \nwill see new package Clio gate in your system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo system tried to compile and failed exceeded narrow try count work process.",
+            "So our IIS prevented our system to \ncompile.",
+            "Let me check.",
+            "Did I detach?",
+            "Of course, my visual studio was detached."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can see its size 5 megabyte of executables not so little files Bin and here, here and here are DLLs included as \nfile content for this Clio Gate package.",
+            "So such DLLs are used to execute Clio commands.",
+            "They implement the \nimplement web services, install such classes into creature server side.",
+            "So that's actually how Clio may work on a \ncertain environment and how Clio may create and implement new comments.",
+            "Because if you want to run something, \nyour target system must be able to do this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd this will be comments to save and load environment settings and Sorry, Save and load packages.",
+            "Let me show \nyou.",
+            "I already have another test environment.",
+            "You probably forgot about it.",
+            "So we have D1 Studio as development \nenvironment and D2 second was used as a target and the test environment."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I will check availability of my second environment and it looks like should be okay.",
+            "Yes, looks like Bing is okay.",
+            "Here is my second environment.",
+            "So my plan is to show you the most useful usage of Clio for project development.",
+            "This is CI CD automation for saving and loading of packages."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 19 ---\n\nNot only one but several packages from source environment.",
+            "Destination path is somewhere like this guided dev.",
+            "Okay, let it be May 2024.",
+            "So we will finally have a result of a zip file including all our packages."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet's try first system will save three packages into gz files organized into one single zip file and then it will be done \nand as you can see it makes it as a one operation if you do save manually saving of an app or saving of a separate \npackage.",
+            "So you will have to perform it with separate structure steps.",
+            "As you can see it went but not so fully \ncorrectly."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you see we have location packages more file descriptor more than one file app descriptor JSON what it is what \npackage it's about real to migration No, I don't know.",
+            "So something wrong with application descriptors we can check \nit at our file system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSomething is strange here and it looks like probably system failed to work with it but it looks like it's not a big trouble \nand you see one more issue here parent schema and was not found yes, this is more serious trouble because it \nlooks like our target environment was not fully prepared to install our changes because it miss customer 360 app \npossibly previous error message that we had here previous message with this stuff here probably it was also \nmissing corresponding app and we used so our solution expects that target system will help customer360 in my \nexample customers current our target environment did not have customer 360 that's why we have this stuff.",
+            "So in \norder to fix it of course we have to install customer360 first and then our solution next.",
+            "In this case it will be loaded \nfully correctly."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut now we can test our target environment.",
+            "So usually we need to reload it.",
+            "We can find our items like oh, we don't \nhave any, probably did not like it.",
+            "Okay, we have to install customer360 here and then load our solution.",
+            "So you see \nonly Dev Classic was loaded here and recent stuff was not loaded."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nManual load can be done with new application and then install from file.",
+            "Now we have successful installation.",
+            "Great.",
+            "If we reload we will see customer360 app added.",
+            "Yes, customer360 was added."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd if we ever try to compile our package on target environment, we may have very unpleasant situation when we \nwill try to compile old contents of C sources instead of actual one.",
+            "So in order to make correct export of your \nsolution to test in production, we need to save everything on disk.",
+            "Then we have to take everything from disk update \npackages from file system.",
+            "Now you will see system will show us differences in C Sharp code.",
+            "Because both \nexamples were written here and here were written with the help of external editors."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt will be not so hard and thank you for your time.",
+            "So now I just plan to make it correctly with save and load and then \nif everything goes well, we will see our Apps we will see our functionality loaded to our target environment if \nsomething goes not as planned.",
+            "This is also good because we will see some exceptions.",
+            "You will see how we can \ntroubleshoot them.",
+            "It's important to understand how you may do some fixes when your package is not installed as \nyou plan."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo sys module entity USR realty no then this module in workplace studio so violation of primary key.",
+            "Oh, it's because \nof data binding which does not keep correct IDs but duplicate cases module in workplace.",
+            "So it's registering of a \nsection in the workplace and this duplicate is possible because of the way how data binding saves it.",
+            "So we have \none data item failed to load but in general okay, one more data item failed to load so we have only troubles in couple \nof data items."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe have classic we miss reality sections here because such data items were not loaded.",
+            "I will show you how you \ncan fix it.",
+            "Let's go to advanced settings.",
+            "Let's find our new packages loaded here so we can search for realty \npackage and we can see couple of data items.",
+            "So let's see only status has error or needs to actualize here so you \ncan see list of items that were failed to install Couple of SQL scripts from base product we don't care and only one \nitem in our reality package was not loaded."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt looks like we already have sys module in workplace ID and it looks like this data entity was not good.",
+            "So we have \nsome items here and we have key which was not ID and key was used by section and workplace.",
+            "So we can fix this \nit's not good and this is behavior made by data binding tool.",
+            "I don't really like it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nGreat, and we can save it.",
+            "And we have a lot of warnings, but it's about existing date.",
+            "So let's actualize it save it.",
+            "Just \na lot of warnings about reorganizing of the same existing set sections that are already present in data.",
+            "And also one \nmore thing which we potentially have the same trouble sys module and workplace for this realty and it's 26 my \napplication."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow we will have a bit better version of it.",
+            "Okay, saved.",
+            "Now let's try to run this transport again so it will be final one.",
+            "And this is example how you can automate delivery of your changes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLoader text takes zip file, takes information about its items, all the packages, all the items of configuration and it \nanalyzes date of modification.",
+            "If date of modification of the loaded item is the same as date of modification of items \nthat you have already in your target environment, then it just skips it.",
+            "And that's why if you have a big solution, but \nyou have tiny small changes, they are from recent upload that you did previously."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nActually only base product stuff.",
+            "Okay, don't care, no errors.",
+            "Okay, so our package with realty was fully correctly \nvoided.",
+            "All the items that we have were loaded well.",
+            "And we can test it at our user interface."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo that's how you can deliver your solution to test and check it out and perform corresponding full scale test for your \nsystem to check how it works.",
+            "Now you see details were filled in.",
+            "So everything works quite well.",
+            "And that's how you \ncan do some automation with Clio.",
+            "Clio has also a lot of interest in other comments I will show you just one of them."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 22 ---\n\nSo this is example of how you can read list of contacts from your database.",
+            "Of course your queries could be much \nmore complicated.",
+            "And when you run SQL queries please be extremely careful because SQL statements is the way \nhow you can easily damage your system, how it can easily destroy your database.",
+            "So you should be extremely \ncareful and please check your queries before execution."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd that's why now we don't have any fancy good looking tool to run SQL query from application user interface.",
+            "But \nnow this is something that you can do.",
+            "And the last information that you need to know about Clio is that it's also \npossible to use add on for Visual Studio named Clio Explorer.",
+            "So Clio Explorer Is an add on that you can use in Visual \nStudio code.",
+            "It automatically loads your information from file with connections for existing solutions."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSplit editor.",
+            "More actions.",
+            "Oh, probably this.",
+            "Yes, it was case sensitive.",
+            "I don't know why it's case sensitive."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAs usual you will receive video recording of today's session.",
+            "If you have any questions, ask today or prepare \nquestions for tomorrow.",
+            "Because we will have more time tomorrow.",
+            "Thank you very much for those who stayed for \nthis moment.",
+            "You will see videos soon."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you agree to run Fast track certification, you should just respond to my email and we will arrange individual \ndate and time for you to run your exam.",
+            "Your exam will include check of the homework.",
+            "So you should prepare \nhomework before exam starts.",
+            "So you will have a couple of weeks to do this and you should prepare for the test \nusing self assessment tests at Academy.",
+            "I will show and so at the exam we will look at your homework and you will \nrun your online exam test."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou will see the type of the homework Raki is asking will include.",
+            "So let me quickly show.",
+            "I planned to show it\n\n--- Page 23 ---\n\ntomorrow, but okay, if you ask now.",
+            "So let's do this, I will quickly show you.",
+            "So the type of the homework will include \nmaking your section, this one, making your detail, make programmed validation, some calculations, web service, and \nfor those who want to run an advanced level, some additional business process and adding data records and some \nautomatic update."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it requires some javascripting and C Sharp scripting.",
+            "And so it will not take too much time for you, I think, and I \nhope that it will be clear.",
+            "So we discussed all the steps how to do this.",
+            "If you will have more questions, you may ask \ntomorrow.",
+            "So Rakhi, I think that those who passed our sessions watched our videos and practiced with their own."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSorry for staying a bit later than usual and if you will have more questions, so prepare for tomorrow, we will have \ntime for this.",
+            "Thank you very much for today's session and goodbye."
+          ]
+        }
+      ],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "json",
+        "entity",
+        "module",
+        "web service",
+        "schema",
+        "detail",
+        "integration",
+        "page",
+        "data",
+        "configuration"
+      ],
+      "keywords": [
+        "data",
+        "speaker",
+        "use",
+        "let",
+        "service",
+        "need",
+        "like",
+        "okay",
+        "web",
+        "clio"
+      ],
+      "topics": [
+        "speaker"
+      ]
+    },
+    "method": "hierarchical_structural"
+  }
+}

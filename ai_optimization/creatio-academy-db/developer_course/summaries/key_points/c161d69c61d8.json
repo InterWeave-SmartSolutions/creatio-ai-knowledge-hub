@@ -1,0 +1,43 @@
+{
+  "summary_id": "c161d69c61d8",
+  "content_id": "d25ef65c6448",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: party web services with the help of no code tools with the help of settings for the services and call web service item.\nINSTRUCTION: of all, I need to show you general integration capabilities that we have on board.\nINSTRUCTION: party site in order to normally correctly call such service and to get response data parts such response.\nCONCEPT: entity\nCONCEPT: database\nCONCEPT: server\nNOTE: because if your task is to transport like one million of data.\nNOTE: functionality.",
+  "key_points": [
+    "INSTRUCTION: party web services with the help of no code tools with the help of settings for the services and call web service item.",
+    "INSTRUCTION: of all, I need to show you general integration capabilities that we have on board.",
+    "INSTRUCTION: party site in order to normally correctly call such service and to get response data parts such response.",
+    "CONCEPT: entity",
+    "CONCEPT: database",
+    "CONCEPT: server",
+    "NOTE: because if your task is to transport like one million of data.",
+    "NOTE: functionality."
+  ],
+  "keywords": [
+    "data",
+    "use",
+    "let",
+    "service",
+    "need",
+    "like",
+    "clear",
+    "process",
+    "okay",
+    "save"
+  ],
+  "topics": [],
+  "summary_length": 80,
+  "original_length": 16631,
+  "compression_ratio": 0.004810294029222536,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:51:21.785818",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

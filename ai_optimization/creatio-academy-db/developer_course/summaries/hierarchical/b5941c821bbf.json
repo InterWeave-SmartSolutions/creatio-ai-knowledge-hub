@@ -1,0 +1,1222 @@
+{
+  "summary_id": "b5941c821bbf",
+  "content_id": "8248991c3929",
+  "summary_type": "hierarchical",
+  "summary_text": "Document: Speaker 1\n\nMain Sections:\n• Speaker 1\n  - # Speaker 1\n\nToday is session number one of our development on Creation Platform Guided Learning.\n  - My name is Dmytro and I'm \nfrom Creation.\n• Speaker 1\n  - # Speaker 1\n\nAt the end of the course for some of you who would like to we will perform individual development certification.\n  - So \nit's kind of exam where you can show your skills, you will make your homework, prepare for the test and finally some \nof you will become certified Creation developers.\n• Speaker 1\n  - # Speaker 1\n\nThen we will work with packages with version control and enable git integration.\n  - Next sessions will include working \nwith object model, making data items, using some bit advanced examples of working with object, connecting it with \ndatabase views and so on.\n• Speaker 1\n  - # Speaker 1\n\nAnd then when finished I will show you server side programming in C Sharp and server side includes programming \nwith data model, working with database, writing your own C scripts, making your own classes of course integrating \nwith modern powerful tools like Visual Studio or Rider and I will show you how to debug, how to process object \nevents so how to do different server side things.\n  - Then we will work with classes with web services moving towards \nintegrations.\n• Speaker 1\n  - # Speaker 1\n\nI will show you examples of working with Clio of its functions and explain how you may improve your experience and \nin general how you may do your actions more efficiently if you operate with Clio.\n  - At the end we will take some time to \nprepare for the exam.\n• Speaker 1\n  - # Speaker 1\n\nIf you have any questions, please feel free to ask at any moment of time in chat or using your microphone.\n  - Whatever \nworks better for you.\n• Speaker 1\n  - # Speaker 1\n\nSo it also allows you to program and make more, let's say complex and more efficient solutions on the same \nplatform.\n  - We will study how to install it, how it's recommended to work with it, how to make a local environment and \na lot of steps with our 10 sessions training.\n• Speaker 1\n  - # Speaker 1\n\nSo don't hesitate, don't feel shy, even if you understand that Your question is very simple and silly.\n  - Don't worry about \nthis.\n• Speaker 1\n  - # Speaker 1\n\nSo in general it's much more safer to do some development, especially if it's complex development.\n  - Separately from \nyour production environment we have Academy website which has plenty of interesting articles related to creation, \ncustomization and development.\n• Speaker 1\n  - # Speaker 1\n\nSo developers can do some experiments, they can do some tries and they finally make some changes to the system \nwhich include functionality that customer asked and explained how to so how it should work.\n  - Solutions made on \ndeveloper environment can be easily exported into files and then we will have another environment which is called \npre production or simply I call it test environment.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 3 ---\n\nFinally when we decide that our solution is good enough, then we can go to production environment and choose \nproper moment of time to load our settings like the time where minimum of our users are active and then the same \nway as we imported solutions on test environment you can easily import it on production, also taking care about \nbacking up existing settings.\n  - And in general it's recommended to have some backups of your production \nenvironment.\n• Speaker 1\n  - # Speaker 1\n\nSo you can also do this, but this is at your own risk.\n  - Sometimes you can do customization and finally you may do \nsome changes which you would like to revert.\n• Speaker 1\n  - # Speaker 1\n\nSo server side machines, their licenses, database, all connections and other things that are very technical related to \norganizing of creation working.\n  - So everything is managed by creature cloud engineers.\n• Speaker 1\n  - # Speaker 1\n\nAnd of course, as they work with a single project, they will naturally need to exchange settings between each others.\n  - So they will need to see.\n• Speaker 1\n  - # Speaker 1\n\nFirst developers should submit their changes to version control like this.\n  - Second developer will get changes from \nversion control and vice versa.\n• Speaker 1\n  - # Speaker 1\n\nSo don't worry, we will do this and I will explain and you understand how to work with it.\n  - But first of all we need to \nmake our own environment and to see how we can do first steps.\n• Speaker 2\n  - # Speaker 2\n\nCould I ask a quick question before we move on?\n• Speaker 1\n  - # Speaker 1\n\nSorry.\n  - Please, please.\n• Speaker 2\n  - # Speaker 2\n\nSo to see here on this diagram where we have they all have separate databases.\n  - Is it strongly recommended to \nfollow that structure?\n• Speaker 1\n  - # Speaker 1\n\nThink that if you have different websites you must use different databases.\n  - But in some cases, for example, you \nhave one developer and couple of analysts.\n• Speaker 1\n  - # Speaker 1\n\nEspecially when developer will start to do some compilation or some debugging or other actions that will make their \nwebsite to hang for some time.\n  - So the main reason why it is not recommended to operate as many developers with \none site is such operations like compilation, like debugging and other scenarios where a website will be, let's say, will \nlook like it's hanging and not responding if all the team is okay with it and such developer actions are not performed \ntoo often.\n• Speaker 2\n  - # Speaker 2\n\nThanks Maria.\n  - --- Page 5 ---\n• Speaker 1\n  - # Speaker 1\n\nThanks Paddy for your questions.\n  - So let's move on.\n• Speaker 1\n  - # Speaker 1\n\nSo you will see exactly the same of what you will feel at production when you install your solution.\n  - So let's move on.\n• Speaker 1\n  - # Speaker 1\n\nYou probably have necessary files and maybe you even installed your system locally.\n  - But generally this is not easy.\n• Speaker 1\n  - # Speaker 1\n\nSo I prefer to keep it easy, especially as we are beginners.\n  - So to run Creatio on Windows, I'm using Windows 10 Pro.\n• Speaker 1\n  - # Speaker 1\n\nSo WebSocket connection is used and there are some troubles on version home.\n  - So you should expect if you use \nthis type of Windows and Windows Home, then you will see problems and you will only be able to operate with one \ntab at a moment, which is definitely not so comfortable.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 6 ---\n\nSo 16 is good and 8 is like minimum that you can look at.\n  - SSD Drive of course is also very recommended because of \ngeneral speed.\n• Speaker 1\n  - # Speaker 1\n\nI do not recommend you Express because it has limitations on amount of CPU cores used by server, amount of RAM \nand the size of the database.\n  - So Developer Edition works the best.\n• Speaker 1\n  - # Speaker 1\n\nMaybe no permissions, no hardware, let's say powerful enough to run it or some other technical reasons, or no \npermissions at your machines and so on.\n  - But you still want to practice this creation, you can go to creation.com \nwebsite sorry, this one probably have to log in there and then you can request.\n• Speaker 1\n  - # Speaker 1\n\nSo you can just try it free and provide some data about you and in minutes, maybe in a minute system will create a \nfree cloud trial environment for you which will be available for you if you log in at Creature website and then follow.\n  - And so you will have URL, login and password for your trial environment.\n• Speaker 1\n  - # Speaker 1\n\nSo let's go to academic guides.\n  - Then it will be about setup and administration and we have a set of articles related \nto on site deployment.\n• Speaker 1\n  - # Speaker 1\n\nWorking with the cloud version, you will not have full set of developer tools, you will not be able to use git, you will \nnot be able to perform server side debugging, no access to File system, so quite serious limitations.\n  - And Local \nsystem has all such features for you.\n• Speaker 1\n  - # Speaker 1\n\nYou can also install Redis as an image in Docker and unfortunately this is not set so you cannot easily find it in our \nofficial documentation.\n  - You can also use Redis or Windows and Redis for Windows is recommended on Developer \nEdition or Developer Environment.\n• Speaker 1\n  - # Speaker 1\n\nAnd one of them is Redis for Windows at GitHub made by some Poland guys T Porodowski and the current version \nis a bit older, but still good enough.\n  - So what you need to do is take this MSI file, download it.\n• Speaker 1\n  - # Speaker 1\n\nSo what you need to do is to download this MSI file, I will copy link address for you can download it, then you will find \nit on your disk.\n  - Then you should make sure you're running it under local administrator privilege.\n• Speaker 1\n  - # Speaker 1\n\nSo you can go to its settings and if you want you can change some parameters like login level.\n  - Default login level is \nnotice.\n• Speaker 1\n  - # Speaker 1\n\nSo the only possible issue you may have is Redis.\n  - Once you installed it's running so you will have no troubles with it.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 8 ---\n\nLet's see, do we have anything with downloads, what else we have here?\n  - So now you can see Linux version for \nversion 7 and Windows version 5.\n• Speaker 1\n  - # Speaker 1\n\nThis file is distributed as a big zip archive file.\n  - Let me explain what does it mean?\n• Speaker 1\n  - # Speaker 1\n\nSo you see this is a zip archive with 1 gigabyte and it has several maybe thousands of files inside.\n  - So what we need \nto do, we have to take this file if you for example start some new project maybe year after we finished today's \nsession.\n• Speaker 1\n  - # Speaker 1\n\nBut in general I recommend you to focus on SQL or Postgres because they are the most popular and I think the most \nattractive for solving your customization needs.\n  - So we have this file.\n• Speaker 1\n  - # Speaker 1\n\nThe reason is quite serious because if you deploy your creature somewhere in Windows protected folders, you will \nexperience additional difficulty with access of creation app to its own files because Windows protects it especially \nwhen system needs to modify such files.\n  - That's why I created my own folders.\n• Speaker 1\n  - # Speaker 1\n\nIf you use Windows Explorer, you can also do this unzipping automatically and it will take some time, probably up to\n\n--- Page 9 ---\n\none minute thanks to fast SSD on my disk, on my PC in total creation codes more than 20,000 tiny files.\n  - That's why \nthis unpacking will take some time.\n• Speaker 1\n  - # Speaker 1\n\nYou will not be able to run this bug file for Postgres oracle if you're interested.\n  - For example, in Postgres database \nyou should take another installation file.\n• Speaker 1\n  - # Speaker 1\n\nI expect that you already installed your Microsoft SQL Server and some management tools for it.\n  - The best one is \nMicrosoft SQL Server Management Studio and also I made some preparations on my SQL Server properties.\n• Speaker 1\n  - # Speaker 1\n\nIf you want to use this SQL Server and Windows, you can switch.\n  - But also you should remember once you switch this \noption and press ok, it will work only after you restart your SQL Server.\n• Speaker 1\n  - # Speaker 1\n\nMaybe 10 years ago this product was called BPM Online and from that times this file name is still generated with \nthese words.\n  - But of course physically this is creation.\n• Speaker 1\n  - # Speaker 1\n\nOkay, so we select this file, click OK system recognize that this is a valid backup file and we have to specify database \nname.\n  - So we have to provide database name.\n• Speaker 1\n  - # Speaker 1\n\nSo here we have to think of how creation website, how creation web app will connect to the database.\n  - We need to go \nto security logins and then we have to make a login for our connection.\n• Speaker 1\n  - # Speaker 1\n\nSo we can just click ok everything else by default.\n  - That's how I created new login for my SQL Server.\n• Speaker 1\n  - # Speaker 1\n\nAnd it's about enabling all necessary Windows components.\n  - Please note that this part is the most tricky and a lot of \nbeginners do mistakes here.\n• Speaker 1\n  - # Speaker 1\n\nWe have all links here.\n  - Now you can see that this and these are direct links.\n• Speaker 1\n  - # Speaker 1\n\nIf you forget about this, you will not successfully run your creation.\n  - So you should follow such recommendations and \nwe can do this.\n• Speaker 1\n  - # Speaker 1\n\nOkay, and this one as you can see in the manual, developers of this documentation decided just enable everything.\n  - In \nmy case I enabled only what was really necessary here.\n• Speaker 1\n  - # Speaker 1\n\nSo I think my windows is normally updated.\n  - I can skip this part and then I need to do some final preparations with \nregistering of my website in iis.\n• Speaker 1\n  - # Speaker 1\n\nIf you prefer to run connection to your database using Windows credentials, then you have to go to advanced \nsettings of the pool, find identity and change this identity to some specific Windows user account which you expect \nto use for connection between application server and database.\n  - This is necessary if your database server is set for \nWindows connections only.\n• Speaker 1\n  - # Speaker 1\n\nThey so turned out they are sensitive to the file names and path of the app and if it starts with the digit, some regular \nexpressions are failing inside of the angular and that's why you must start your application name with a digit.\n  - In my \ncase it's a D D1 studio.\n• Speaker 1\n  - # Speaker 1\n\nAnd when we do this first we register water part and physical path should point to root folder of our app this one and \nokay I copy this path for future.\n  - So we register root part of our app, but then we need to remember about its inner \nmain application part.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 12 ---\n\nThere are some also side quests that you may need like settings of different MIME types and so on.\n  - But from my \nexperience if you enable necessary Windows components, all the items like this will be good just out of the box so \nyou should not modify it if you perform Windows component settings.\n• Speaker 1\n  - # Speaker 1\n\nI hope so.\n  - Let's look in this connection strings file.\n• Speaker 1\n  - # Speaker 1\n\nIn your case, if you have your SQL Server located somewhere in your network, you will need your SQL Server network \nname including named instance.\n  - So full name in case if you have named instances of Microsoft SQL Server \ndatabase.\n• Speaker 1\n  - # Speaker 1\n\nYou remember we did it at the database.\n  - And then password equals this is my password for the login.\n• Speaker 1\n  - # Speaker 1\n\nAnd one more thing which we must do in case so we must do for our creation installation is Redis connection.\n  - So \nthis file also keeps information about how Creature may find Redis somewhere in the network.\n• Speaker 1\n  - # Speaker 1\n\nAlso we have another important parameter DB is number of so called Redis database, but it's more closer to call it \nstorage because Redis storage is a set of key value pairs saved in the Redis memory.\n  - And by default redis has 16\n\n--- Page 13 ---\n\ndifferent so called databases named from 0 till 15.\n• Speaker 1\n  - # Speaker 1\n\nOne more thing which I recommend you to do, but it's not required, it's optional.\n  - One, it's about creation logs.\n• Speaker 1\n  - # Speaker 1\n\nFor example somewhere at C creation logs so we can create this folder system will create itself if it's missing.\n  - So \nthat's how I do my settings for env targets config, this is optional and log targets Config this is example of my \nsettings and this can help you to easily access such files if you don't like going to Windows temp or if you have \nlimited settings as me working with this folder because of Windows protection.\n• Speaker 1\n  - # Speaker 1\n\nSo Google Chrome I think is one of the best for creation because of the fast JavaScript core and you can use also a \nlot of other Chromium based products and browsers and you can use Firefox, you can use Microsoft Edge and \nplease note Microsoft Internet Explorer is not supported at all.\n  - So you can use Chromium based browsers, you can \nuse Safari, you can use Edge.\n• Speaker 1\n  - # Speaker 1\n\nFirst login in supervisor and the same password supervisor.\n  - Also you can see at this login page you can see current \nversion number of the app we are running and I can click just log in.\n• Speaker 1\n  - # Speaker 1\n\nAnd in case if you have some troubles with setting of inner app here, in this case your login page will be okay.\n  - But \nwhen you start to provide login and password and then click login button, then you also may have some error \nmessages which will lead to let's say errors during start of your app and you will not see this page.\n• Speaker 1\n  - # Speaker 1\n\nSo now let's take a break and then we will move on.\n  - So next, what I wanted to show you now is about how we can do \nsome preparation of our system.\n• Speaker 1\n  - # Speaker 1\n\nAnd that's why I will show you how to disable this telephone.\n  - I go to the user profile, then go to additional settings.\n• Speaker 1\n  - # Speaker 1\n\nSo they are generally used by creation system.\n  - We can find system setting called show widget on login page and we \ncan disable it.\n• Speaker 1\n  - # Speaker 1\n\nSo looks good and we are going quite fast today.\n  - And probably that's because of not so many questions from your \nside.\n• Speaker 2\n  - # Speaker 2\n\nSorry Dimitri, I just.\n  - When you mentioned questions, I've just been writing down questions as we go.\n• Speaker 1\n  - # Speaker 1\n\nOr I can hold them all for you, please.\n  - It will be interesting because something which is not so boring like just a \nlecture so kind of dialogue.\n• Speaker 2\n  - # Speaker 2\n\nOkay, so my understanding.\n  - Sorry, this.\n• Speaker 1\n  - # Speaker 1\n\nGenerally we have two, let's say two options to support our customers.\n  - Normally we have no.\n• Speaker 2\n  - # Speaker 2\n\nThe other question and I have you kind of already answered.\n  - It's just I was.\n• Speaker 1\n  - # Speaker 1\n\nNot use Redis cluster because it's not mandatory, this is optional thing which makes a bit higher overall reliability of \nyour system.\n  - But once I'm running just a single developer environment which probably will never experience high \nload conditions when having hundreds or even thousands of queries per second.\n• Speaker 2\n  - # Speaker 2\n\nNo, that's brilliant.\n  - Cheers.\n• Speaker 1\n  - # Speaker 1\n\nThank you.\n  - Thank you, Paddy.\n• Speaker 1\n  - # Speaker 1\n\nYes, I'm going to install the SQL Server management.\n  - But what of what version exactly I should use on premise \ndeveloper.\n• Speaker 1\n  - # Speaker 1\n\nI my windows is 11 home.\n  - It.\n• Speaker 1\n  - # Speaker 1\n\nOkay, thank you, Peso.\n  - Let's move on.\n• Speaker 1\n  - # Speaker 1\n\nCurrently Such results are DLLs loaded from the database stored somewhere else.\n  - And the application is quite fine \nrunning with such assemblies.\n• Speaker 1\n  - # Speaker 1\n\nSo you try to compile, you have two errors with no file name.\n  - It's totally unclear what is wrong here, but you will \nconstantly get this error.\n• Speaker 1\n  - # Speaker 1\n\nNow you see this log is still going on because compilation is not finished.\n  - So compilation produces some messages \ninto this log file.\n• Speaker 1\n  - # Speaker 1\n\nYou only create folders, you do not provide any access and it works nice.\n  - So your compilation will not fail anymore.\n• Speaker 1\n  - # Speaker 1\n\nThey include a lot of classes and such DLLs are necessary, so they are vital for creation normal work.\n  - And when we \nwill switch now into another mode, which I need to tell you.\n• Speaker 1\n  - # Speaker 1\n\nEven if your main app is broken, so badly broken and it's not working, then you can type this address 0dev and go to \nconfiguration and try to fix so what we need to know about modes Creature has two different development modes.\n  - One is called Creature ID mode.\n• Speaker 1\n  - # Speaker 1\n\nSo you use only UI of creation to build it and modify it.\n  - We call this mode Creature ID mode and it means we use only \nCreature user interface tools.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 18 ---\n\nIn order to use full power, we have a special mode called External IDs.\n  - The main idea is to allow system to save a lot \nof settings directly on disk into file system and then use external editors to modify such contents.\n• Speaker 1\n  - # Speaker 1\n\nIf you see gray colored it means file system development mode is not turned on and it means that simply Creation ID \nis on.\n  - Now you can change this mode according to the manual.\n• Speaker 1\n  - # Speaker 1\n\nBut please remember before you will do any changes, make sure your system can be normally compiled.\n  - This is \nimportant for two reasons.\n• Speaker 1\n  - # Speaker 1\n\nSo line number 510 I found file design mode setting.\n  - Originally it was false.\n• Speaker 1\n  - # Speaker 1\n\nWill study what package is what package contents usually includes.\n  - So this original storage is in database in set of \nsystem tables inside of our database.\n• Speaker 2\n  - # Speaker 2\n\n--- Page 19 ---\n\nAre GUI changes saved in the same database.\n  - So say like if I just add some extra information to say a client, is that \nalso the.\n• Speaker 1\n  - # Speaker 1\n\nYes, yes, it's also stored in the database and database is primary storage for this.\n  - So when we.\n• Speaker 2\n  - # Speaker 2\n\nYeah, and then the only reason I'm interested in, I'm just asking that is how then does that work with version control?\n  - Say if you have multiple people working on the same.\n• Speaker 1\n  - # Speaker 1\n\nI wish I will now explain.\n  - You will see that.\n• Speaker 1\n  - # Speaker 1\n\nIn my case, I have only one storage code package for this editable stuff.\n  - So it performs almost nothing and it saves \nsome files on disk.\n• Speaker 1\n  - # Speaker 1\n\nAnd in order to finalize our switch, it also recommended.\n  - So according to the manual, we have a next step to compile \nit again.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 20 ---\n\nSo your homework for today will be just reproduce the same steps as I did and install your local creation system.\n  - Turn it into development in file system mode.\n• Speaker 1\n  - # Speaker 1\n\nSo it has hundreds or even thousands of changeable items and most of them are called schemas and we have \ndifferent types of such schemas.\n  - So you can when you hear schema you should understand some customizable \nchangeable item in creation, such items declare entities.\n• Speaker 1\n  - # Speaker 1\n\nSo objects are related to data model and we have plenty of different objects, but not only objects, we have a lot of \nother items.\n  - Client modules are responsible for page settings.\n• Speaker 1\n  - # Speaker 1\n\nSo it's quite difficult to manage such amount of settings in a list.\n  - So developers decided to make kind of big \ncontainers for them and they called them packages.\n• Speaker 1\n  - # Speaker 1\n\nIt's a studio app which includes only platform version and almost no business functionality except of hundreds of \nlookups.\n  - But in general we have almost no business sections.\n• Speaker 1\n  - # Speaker 1\n\nLuckily, Creature offers you possibility to look at any part of base product items.\n  - You can open any part of its\n\n--- Page 21 ---\n\nconfiguration code and you can see how exactly it was written, how exactly it was set.\n• Speaker 1\n  - # Speaker 1\n\nOf course you will have updated versions of such DLLs so they are not designed to be changed and they perform \njust low level functions of creation functioning.\n  - Also we have client side core parts in JavaScript which is also not \ndesigned to be changed and only changes when creation issues new version.\n• Speaker 1\n  - # Speaker 1\n\nSo the main sense of building packages is to make management of such configuration easier to make possible \nseparate development and let's say splitting of responsibilities, sharing responsibilities and like splitting of all \nsystem functions into separate parts.\n  - It could be developed separately and transported and delivered separately.\n• Speaker 1\n  - # Speaker 1\n\nWhy doesn't like this should be okay the name this is okay this package.\n  - Okay, let's try to run.\n• Speaker 1\n  - # Speaker 1\n\nYou can also see the same but you can see that some packages have quite big number of items like 800, like 400, \n300 and so on.\n  - And the main sense of the package is to make some separate functionality stored separately and \ncould be saved and delivered separately developed separately.\n• Speaker 1\n  - # Speaker 1\n\nThis is a special package named custom and custom package is designed for cases when you so when customer \ndoesn't think too much about storage of settings at all and when customer just don't know the architecture and they \njust want to customize system, save it, perform some no code settings and that's it.\n  - So custom is kind of default \npackage for such kind of customization, but for big projects it's not recommended because custom package is also \npresent on target environments and custom package may be not empty at target environments, for example at \nenvironment when you want to test or when your users are running in production.\n• Speaker 1\n  - # Speaker 1\n\nObviously we will create our own package or even several packages to save our customizations there and now you \nneed to remember there are two general approaches.\n  - You may manage packages yourself and it may mainly make \nsense if you develop something in Classic ui.\n• Speaker 1\n  - # Speaker 1\n\nI will click on this tiny create page button, this opens new package window and I will call it something like Dev \nClassic.\n  - So I intend to use this package for some classic UI stuff.\n• Speaker 1\n  - # Speaker 1\n\nIf you want to support this feature, you can use smart activation, but in general I think that it's not for our case, so \nnot so necessary.\n  - We don't have any version control for svn so we'll keep it empty, no version value and we will \ncreate and add dependencies.\n• Speaker 1\n  - # Speaker 1\n\nAnd when you have a dependency for a package, it means that this package will not work until parent packages \npresent into your system.\n  - So in my case calendar base requires CRT core base for some reasons and this is how \npackages are connected.\n• Speaker 1\n  - # Speaker 1\n\nThere are two common approaches how you can do this.\n  - One of the approaches which is now currently used by \nApplication Hub is to use package named CRT core.\n• Speaker 1\n  - # Speaker 1\n\nAnd in this case it makes sense to find the latest package here in this hierarchy except of custom and make your \npackage dependent on it.\n  - Thanks to parent dependencies you will have full access to parent packages including \nbase product section packages.\n• Speaker 1\n  - # Speaker 1\n\nI will make it dependent from.\n  - I can search studio and that's how I will do this.\n• Speaker 1\n  - # Speaker 1\n\nThe reason why we have so many different words for the same is incorrect translation.\n  - Originally in English it was \nmaintainer.\n• Speaker 1\n  - # Speaker 1\n\nSo in order to fully apply it, you have to log out and log in.\n  - Because cached system settings are loaded at the session \nstart only.\n• Speaker 1\n  - # Speaker 1\n\nNow you can see my dev Classic package is created after studio and thanks to this parent transitions I can get \naccess and logical visibility to any part of base product.\n  - So this is very important.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 24 ---\n\nNow our package is fully empty, so we will fill it in with some test settings tomorrow and we will continue tomorrow's \nsession with git integration.\n  - Now today our session is over.\n• Speaker 1\n  - # Speaker 1\n\nIn this case, you will need these update packages from file system action in order to tell creatio about some new \nchanges and in order to load such changes back to the database.\n  - So our session is over.\n• Speaker 2\n  - # Speaker 2\n\nThanks a million Demetri.\n  - That was very insightful.\n• Speaker 1\n  - # Speaker 1\n\nThank you Paddy.\n  - Thanks others, thank you for your time.\n• Speaker 2\n  - # Speaker 2\n\nThank you.\n• Speaker 1\n  - # Speaker 1\n\nBye.\n  - Thank you Sarah.\n\nKey Concepts: json, entity, module, web service, schema",
+  "key_points": [
+    "json",
+    "entity",
+    "module",
+    "web service",
+    "schema",
+    "detail",
+    "integration",
+    "page",
+    "data",
+    "customization"
+  ],
+  "keywords": [
+    "speaker",
+    "file",
+    "windows",
+    "use",
+    "creation",
+    "package",
+    "need",
+    "server",
+    "database",
+    "like"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 5345,
+  "original_length": 16588,
+  "compression_ratio": 0.32222088256571013,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:54:50.635854",
+  "metadata": {
+    "structure": {
+      "title": "Speaker 1",
+      "sections": [
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nToday is session number one of our development on Creation Platform Guided Learning.",
+            "My name is Dmytro and I'm \nfrom Creation.",
+            "So working as a trainer for many years and working in Creation for more than 18 years and quite a lot \nand I plan to share some experience and Creation development basics with you."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAt the end of the course for some of you who would like to we will perform individual development certification.",
+            "So \nit's kind of exam where you can show your skills, you will make your homework, prepare for the test and finally some \nof you will become certified Creation developers."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen we will work with packages with version control and enable git integration.",
+            "Next sessions will include working \nwith object model, making data items, using some bit advanced examples of working with object, connecting it with \ndatabase views and so on.",
+            "Then we will switch to work with UI user interface.",
+            "I will tell you about new Freedom UI \nuser interface and Classic ui."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd then when finished I will show you server side programming in C Sharp and server side includes programming \nwith data model, working with database, writing your own C scripts, making your own classes of course integrating \nwith modern powerful tools like Visual Studio or Rider and I will show you how to debug, how to process object \nevents so how to do different server side things.",
+            "Then we will work with classes with web services moving towards \nintegrations."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI will show you examples of working with Clio of its functions and explain how you may improve your experience and \nin general how you may do your actions more efficiently if you operate with Clio.",
+            "At the end we will take some time to \nprepare for the exam.",
+            "I will explain you how homework looks and what it includes and how to perform this, how to \nprepare for exam test and finally I hope some of you will be ready to get certified.",
+            "We call it fast track certification \nbecause you spent probably two weeks for our developer sessions."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you have any questions, please feel free to ask at any moment of time in chat or using your microphone.",
+            "Whatever \nworks better for you.",
+            "Today we are doing first steps on Creature platform, so I probably need to explain what it is in \nvery general.",
+            "So Creatio is a website heavily connected with the database and it's mainly designed to work as an \nenterprise level data management system and business process automation system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it also allows you to program and make more, let's say complex and more efficient solutions on the same \nplatform.",
+            "We will study how to install it, how it's recommended to work with it, how to make a local environment and \na lot of steps with our 10 sessions training."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo don't hesitate, don't feel shy, even if you understand that Your question is very simple and silly.",
+            "Don't worry about \nthis.",
+            "We are gathered here just to know more and know better about creation.",
+            "My task is to help you with it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in general it's much more safer to do some development, especially if it's complex development.",
+            "Separately from \nyour production environment we have Academy website which has plenty of interesting articles related to creation, \ncustomization and development.",
+            "Academy.creation.com Most of you already registered here because you registered \nfor the training session.",
+            "Okay, everything is off necessary on.",
+            "Okay, let it be."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo developers can do some experiments, they can do some tries and they finally make some changes to the system \nwhich include functionality that customer asked and explained how to so how it should work.",
+            "Solutions made on \ndeveloper environment can be easily exported into files and then we will have another environment which is called \npre production or simply I call it test environment."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 3 ---\n\nFinally when we decide that our solution is good enough, then we can go to production environment and choose \nproper moment of time to load our settings like the time where minimum of our users are active and then the same \nway as we imported solutions on test environment you can easily import it on production, also taking care about \nbacking up existing settings.",
+            "And in general it's recommended to have some backups of your production \nenvironment.",
+            "So that's how you will make a delivery from your development Stuff after testing to production."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you can also do this, but this is at your own risk.",
+            "Sometimes you can do customization and finally you may do \nsome changes which you would like to revert.",
+            "But in creature revert of changes, sometimes it's not very easy and \nsometimes it's really hard and was not designed originally.",
+            "So please take care.",
+            "Any development I think should be \nsafe."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo server side machines, their licenses, database, all connections and other things that are very technical related to \norganizing of creation working.",
+            "So everything is managed by creature cloud engineers.",
+            "And that's how most of our \ncustomers work with production and test environment.",
+            "But what about development?",
+            "It's better."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd of course, as they work with a single project, they will naturally need to exchange settings between each others.",
+            "So they will need to see.",
+            "Oh, sorry, this one is probably here.",
+            "It's my tool to make some draws for you.",
+            "Okay, so I just \nwant to say that if you have a team of developers, they will need to exchange settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFirst developers should submit their changes to version control like this.",
+            "Second developer will get changes from \nversion control and vice versa.",
+            "And version control will keep history of all the changes and it will help us to \nunderstand who did changes when it was done, what were the previous state of files, and so on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo don't worry, we will do this and I will explain and you understand how to work with it.",
+            "But first of all we need to \nmake our own environment and to see how we can do first steps."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nCould I ask a quick question before we move on?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSorry.",
+            "Please, please."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nSo to see here on this diagram where we have they all have separate databases.",
+            "Is it strongly recommended to \nfollow that structure?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThink that if you have different websites you must use different databases.",
+            "But in some cases, for example, you \nhave one developer and couple of analysts.",
+            "Yeah, and you would not like to create a separate environment for each \nanalyst because they are not planning to write any code, they do not need some debugging, they probably are not so \ninterested in the file system and so on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nEspecially when developer will start to do some compilation or some debugging or other actions that will make their \nwebsite to hang for some time.",
+            "So the main reason why it is not recommended to operate as many developers with \none site is such operations like compilation, like debugging and other scenarios where a website will be, let's say, will \nlook like it's hanging and not responding if all the team is okay with it and such developer actions are not performed \ntoo often."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nThanks Maria.",
+            "--- Page 5 ---"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThanks Paddy for your questions.",
+            "So let's move on.",
+            "We already know how it's recommended to organize your \nprocess.",
+            "Sorry, sorry here and how you should use.",
+            "And no delivery management here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you will see exactly the same of what you will feel at production when you install your solution.",
+            "So let's move on.",
+            "We need some local environment.",
+            "Why?",
+            "Because we are developers, we want to make our own first steps and we \nhave serious reasons to make this environment local."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou probably have necessary files and maybe you even installed your system locally.",
+            "But generally this is not easy.",
+            "Procedure.",
+            "A lot of participants of our training sessions usually face some troubles and difficulties during this \ninstallation."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I prefer to keep it easy, especially as we are beginners.",
+            "So to run Creatio on Windows, I'm using Windows 10 Pro.",
+            "You can also use Windows 11 Pro if you use Windows Home, Windows 10 or 11 Home.",
+            "So you should understand \nthat it will be not fully working, so you will experience some serious difficulties."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo WebSocket connection is used and there are some troubles on version home.",
+            "So you should expect if you use \nthis type of Windows and Windows Home, then you will see problems and you will only be able to operate with one \ntab at a moment, which is definitely not so comfortable.",
+            "So now you warned about it.",
+            "Okay, so I have a Windows PC."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 6 ---\n\nSo 16 is good and 8 is like minimum that you can look at.",
+            "SSD Drive of course is also very recommended because of \ngeneral speed.",
+            "So the most critical parameters are CPU and memory.",
+            "Okay, so you have one single PC and you can \nrun Creature on this single PC.",
+            "Croatia has two big server side parts."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI do not recommend you Express because it has limitations on amount of CPU cores used by server, amount of RAM \nand the size of the database.",
+            "So Developer Edition works the best.",
+            "So we have Database part and we also will \nmanage Web Server part implemented by Internet Information Services.",
+            "This is part of Windows and this is also one \nof the biggest component of the system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nMaybe no permissions, no hardware, let's say powerful enough to run it or some other technical reasons, or no \npermissions at your machines and so on.",
+            "But you still want to practice this creation, you can go to creation.com \nwebsite sorry, this one probably have to log in there and then you can request.",
+            "So you can ask for a trial \nenvironment.",
+            "Try it free environment."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you can just try it free and provide some data about you and in minutes, maybe in a minute system will create a \nfree cloud trial environment for you which will be available for you if you log in at Creature website and then follow.",
+            "And so you will have URL, login and password for your trial environment.",
+            "That's how you can do it easily and practice \nthis creation.",
+            "But if this will not work, I also can create an individual demo website."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let's go to academic guides.",
+            "Then it will be about setup and administration and we have a set of articles related \nto on site deployment.",
+            "We have a general deployment procedure which I recommend you to know to look at and I will \nalso post all necessary links into our chat.",
+            "This chat is also recorded the same as videos and also we have captions \nrecorded."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWorking with the cloud version, you will not have full set of developer tools, you will not be able to use git, you will \nnot be able to perform server side debugging, no access to File system, so quite serious limitations.",
+            "And Local \nsystem has all such features for you.",
+            "So what we need to do at the first step we can follow all of the general \nprocedure steps here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can also install Redis as an image in Docker and unfortunately this is not set so you cannot easily find it in our \nofficial documentation.",
+            "You can also use Redis or Windows and Redis for Windows is recommended on Developer \nEdition or Developer Environment.",
+            "You can consider by your own would you like to run it for test and production."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd one of them is Redis for Windows at GitHub made by some Poland guys T Porodowski and the current version \nis a bit older, but still good enough.",
+            "So what you need to do is take this MSI file, download it.",
+            "So let me show you and \nthen you can install it.",
+            "The question from Paddy, is it possible to run Redis on Windows subsystem for Linux?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo what you need to do is to download this MSI file, I will copy link address for you can download it, then you will find \nit on your disk.",
+            "Then you should make sure you're running it under local administrator privilege.",
+            "And finally after \ninstallation of all Redis settings, by default you will find C program files redis and this is all what Redis saves on your \ndisk.",
+            "So this is just set of its files."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you can go to its settings and if you want you can change some parameters like login level.",
+            "Default login level is \nnotice.",
+            "So it's like moderately verbose, not so verbose.",
+            "You can change log file position, you can change maximum \nnumber of databases allowed and so on.",
+            "But out of the box settings for Redis is good."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo the only possible issue you may have is Redis.",
+            "Once you installed it's running so you will have no troubles with it.",
+            "If you prefer to run Redis with Windows subsystem for Linux or inside Docker, you can also do this.",
+            "You can take \noriginal Docker images for this and original website is Redis IO.",
+            "Redis is developed by Community."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 8 ---\n\nLet's see, do we have anything with downloads, what else we have here?",
+            "So now you can see Linux version for \nversion 7 and Windows version 5.",
+            "But it's still good enough.",
+            "So creation doesn't use too much of new Commons.",
+            "So \nRedis is trouble free."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis file is distributed as a big zip archive file.",
+            "Let me explain what does it mean?",
+            "So invite email you have chance to \ndownload such zip archive file and depending on the platform, Windows or Linux and depending on the Target \ndatabase, Microsoft SQL or Postgres, you may find the three different options.",
+            "The only one option was in our email."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you see this is a zip archive with 1 gigabyte and it has several maybe thousands of files inside.",
+            "So what we need \nto do, we have to take this file if you for example start some new project maybe year after we finished today's \nsession.",
+            "So of course this version will be outdated."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut in general I recommend you to focus on SQL or Postgres because they are the most popular and I think the most \nattractive for solving your customization needs.",
+            "So we have this file.",
+            "I already downloaded it from inner creation \nsources.",
+            "So this file is on my disk."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThe reason is quite serious because if you deploy your creature somewhere in Windows protected folders, you will \nexperience additional difficulty with access of creation app to its own files because Windows protects it especially \nwhen system needs to modify such files.",
+            "That's why I created my own folders.",
+            "I keep some kind of structure of \nseveral websites running on my PC currently I will actually stop any execution any running website."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you use Windows Explorer, you can also do this unzipping automatically and it will take some time, probably up to\n\n--- Page 9 ---\n\none minute thanks to fast SSD on my disk, on my PC in total creation codes more than 20,000 tiny files.",
+            "That's why \nthis unpacking will take some time.",
+            "But in general this is just one time step and not so difficult I think.",
+            "So we will \nfinally have all the items ready."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou will not be able to run this bug file for Postgres oracle if you're interested.",
+            "For example, in Postgres database \nyou should take another installation file.",
+            "If you need it, I can share it with you.",
+            "For example, this one is for Windows \nand Postgres.",
+            "You will see DB and you will see different size twice less than Microsoft SQL and different extension \nbackup against bug."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI expect that you already installed your Microsoft SQL Server and some management tools for it.",
+            "The best one is \nMicrosoft SQL Server Management Studio and also I made some preparations on my SQL Server properties.",
+            "Let me \nshow you what is important here.",
+            "So let's go to see its properties of SQL Server."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you want to use this SQL Server and Windows, you can switch.",
+            "But also you should remember once you switch this \noption and press ok, it will work only after you restart your SQL Server.",
+            "This restart is a special action for SQL Server.",
+            "Don't forget about it if you will change authentication settings for your SQL Server.",
+            "In my case, this is already done \nand I already have my SQL Server."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nMaybe 10 years ago this product was called BPM Online and from that times this file name is still generated with \nthese words.",
+            "But of course physically this is creation.",
+            "So we will use this backup file.",
+            "How we'll use it very easily."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, so we select this file, click OK system recognize that this is a valid backup file and we have to specify database \nname.",
+            "So we have to provide database name.",
+            "I prefer some naming conventions here.",
+            "So I will call it D1 Studio.",
+            "But \nyou may name your database whatever you want."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo here we have to think of how creation website, how creation web app will connect to the database.",
+            "We need to go \nto security logins and then we have to make a login for our connection.",
+            "We can make a new login for it and we can \ncall it something like SQL Server Authentication Login, namely D1 Login.",
+            "Let it be so D1 Login will be our login name.",
+            "Login name is name of credential where you try to connect to your SQL Server."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we can just click ok everything else by default.",
+            "That's how I created new login for my SQL Server.",
+            "Then I have to \ngo to my database, find its security tab users and then I have to add user with the same name.",
+            "This is my username, \nthe same as login name.",
+            "And the only special setting I must do is go to membership and click DBoner."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd it's about enabling all necessary Windows components.",
+            "Please note that this part is the most tricky and a lot of \nbeginners do mistakes here.",
+            "So you should take it quite serious and perform all recommended steps here because \nthere are no optional items.",
+            "Everything is mandatory here.",
+            "So let's do this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe have all links here.",
+            "Now you can see that this and these are direct links.",
+            "So let me show you what you will see.",
+            "To \ntry to download you have to choose version 6 and according to your platform it's Windows X64.",
+            "So you should take \nthis one, click on it and download."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you forget about this, you will not successfully run your creation.",
+            "So you should follow such recommendations and \nwe can do this.",
+            "So you can find Control Panel programs and features.",
+            "Windows features on or off.",
+            "This will show this \nwindow and this window."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, and this one as you can see in the manual, developers of this documentation decided just enable everything.",
+            "In \nmy case I enabled only what was really necessary here.",
+            "And one of the most important thing is WebSocket protocol.",
+            "So you can enable what you see and finally click ok.",
+            "Wait for a couple of minutes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I think my windows is normally updated.",
+            "I can skip this part and then I need to do some final preparations with \nregistering of my website in iis.",
+            "There are two ways how we can do this.",
+            "Registering a separate website with \nseparate port Or I prefer registering of a website as an app inside of default website.",
+            "I prefer to use this one."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you prefer to run connection to your database using Windows credentials, then you have to go to advanced \nsettings of the pool, find identity and change this identity to some specific Windows user account which you expect \nto use for connection between application server and database.",
+            "This is necessary if your database server is set for \nWindows connections only.",
+            "I mean only Windows credentials.",
+            "In my case I prefer SQL Server credentials, so I will not \nchange any of settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThey so turned out they are sensitive to the file names and path of the app and if it starts with the digit, some regular \nexpressions are failing inside of the angular and that's why you must start your application name with a digit.",
+            "In my \ncase it's a D D1 studio.",
+            "I should select a proper application pool and specify physical path."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd when we do this first we register water part and physical path should point to root folder of our app this one and \nokay I copy this path for future.",
+            "So we register root part of our app, but then we need to remember about its inner \nmain application part."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 12 ---\n\nThere are some also side quests that you may need like settings of different MIME types and so on.",
+            "But from my \nexperience if you enable necessary Windows components, all the items like this will be good just out of the box so \nyou should not modify it if you perform Windows component settings.",
+            "So I actually only needed to register my \nwebsite in IIS Manager and that's all now the last part, the last step is special configuration file which we must \nmodify in order to make our system runnable."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI hope so.",
+            "Let's look in this connection strings file.",
+            "So this is my folder of my app.",
+            "This is loader part of it.",
+            "And the \nonly file system file that I must change to make my creation running is connection strings config file."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn your case, if you have your SQL Server located somewhere in your network, you will need your SQL Server network \nname including named instance.",
+            "So full name in case if you have named instances of Microsoft SQL Server \ndatabase.",
+            "In my case, this SQL Server.",
+            "This SQL Server has a name just a local host and it works for me maybe with \nnon capital.",
+            "Oh, okay."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou remember we did it at the database.",
+            "And then password equals this is my password for the login.",
+            "So that's how \nI can do this.",
+            "Probably this space is not necessary and nothing else.",
+            "So data source, initial catalog, user space ID \nand the password."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd one more thing which we must do in case so we must do for our creation installation is Redis connection.",
+            "So \nthis file also keeps information about how Creature may find Redis somewhere in the network.",
+            "So host should point \nto network name of your regis server."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAlso we have another important parameter DB is number of so called Redis database, but it's more closer to call it \nstorage because Redis storage is a set of key value pairs saved in the Redis memory.",
+            "And by default redis has 16\n\n--- Page 13 ---\n\ndifferent so called databases named from 0 till 15.",
+            "And as we keep several creation instances, we must keep such \nDB numbers unique.",
+            "If you run several creation environments on the same machine, you must take care to have a \npersonal unique values for each creature instance connected to the regis server."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOne more thing which I recommend you to do, but it's not required, it's optional.",
+            "One, it's about creation logs.",
+            "We can \ngo into terrasoft web, find envog, targets config and by default this line number 3 log dir this is folder on your disk \nwhere creation will save its logs by default.",
+            "As you can see, it points somewhere to temporary catalogs."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFor example somewhere at C creation logs so we can create this folder system will create itself if it's missing.",
+            "So \nthat's how I do my settings for env targets config, this is optional and log targets Config this is example of my \nsettings and this can help you to easily access such files if you don't like going to Windows temp or if you have \nlimited settings as me working with this folder because of Windows protection.",
+            "Okay, now everything is done.",
+            "So \nsave changes and we can start our website.",
+            "How we can do this?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo Google Chrome I think is one of the best for creation because of the fast JavaScript core and you can use also a \nlot of other Chromium based products and browsers and you can use Firefox, you can use Microsoft Edge and \nplease note Microsoft Internet Explorer is not supported at all.",
+            "So you can use Chromium based browsers, you can \nuse Safari, you can use Edge.",
+            "Currently I'm using Google Chrome and I'm quite happy with it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFirst login in supervisor and the same password supervisor.",
+            "Also you can see at this login page you can see current \nversion number of the app we are running and I can click just log in.",
+            "If everything was done correctly, you will see \nafter some time, maybe after a minute you will see our application successfully logged in."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd in case if you have some troubles with setting of inner app here, in this case your login page will be okay.",
+            "But \nwhen you start to provide login and password and then click login button, then you also may have some error \nmessages which will lead to let's say errors during start of your app and you will not see this page.",
+            "Now let's make a \n5 minutes break to refresh a bit and then we will move on.",
+            "I will show you what next we will do with our installed \nsystem."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now let's take a break and then we will move on.",
+            "So next, what I wanted to show you now is about how we can do \nsome preparation of our system.",
+            "Before continue, let's do some technical things and enable browser console, Ctrl \nshift I or F12 or you go to this, then more tools, this and then developer tools.",
+            "Okay, let's enable browser developer \nconsole."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd that's why I will show you how to disable this telephone.",
+            "I go to the user profile, then go to additional settings.",
+            "We will see some settings for call center parameters and then we can disable call center integration.",
+            "This will \nsuppress this login, excessive login at our console."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo they are generally used by creation system.",
+            "We can find system setting called show widget on login page and we \ncan disable it.",
+            "And also one more show widget on intro page.",
+            "It's also better disabled, but this is advertisement stuff \nwhich is currently not active.",
+            "And currently this advertisement only shows you some error messages in your \nbrowser."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo looks good and we are going quite fast today.",
+            "And probably that's because of not so many questions from your \nside.",
+            "But.",
+            "So if you have any questions, if you feel some, let's say uncertainty, please ask me."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nSorry Dimitri, I just.",
+            "When you mentioned questions, I've just been writing down questions as we go."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOr I can hold them all for you, please.",
+            "It will be interesting because something which is not so boring like just a \nlecture so kind of dialogue.",
+            "--- Page 15 ---"
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nOkay, so my understanding.",
+            "Sorry, this.",
+            "We're going back to the database section.",
+            "When there's two section."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nGenerally we have two, let's say two options to support our customers.",
+            "Normally we have no.",
+            "So almost no test data.",
+            "It means we will have very little number of useful values.",
+            "For example, I can show you some data which is quite \ncommon for you to expect like list of contacts."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nThe other question and I have you kind of already answered.",
+            "It's just I was."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNot use Redis cluster because it's not mandatory, this is optional thing which makes a bit higher overall reliability of \nyour system.",
+            "But once I'm running just a single developer environment which probably will never experience high \nload conditions when having hundreds or even thousands of queries per second."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nNo, that's brilliant.",
+            "Cheers.",
+            "Thanks Melin."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThank you.",
+            "Thank you, Paddy.",
+            "It's interesting actually.",
+            "You can also customize your iis but in my case I'm not running \nin under high load conditions or I do not need to allow like couple of thousands of users to log into my environment.",
+            "That's why I do not enable IIS based cluster."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYes, I'm going to install the SQL Server management.",
+            "But what of what version exactly I should use on premise \ndeveloper.",
+            "Oh no, download.",
+            "No, no, just scroll down a bit and the left part you will see a skilled developer.",
+            "So this \nskilled developer download now."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI my windows is 11 home.",
+            "It.",
+            "It's good.",
+            "It can be doing the step you are doing.",
+            "If you have no options to use Pro, you \ncan keep running on home."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, thank you, Peso.",
+            "Let's move on.",
+            "So now we have more or less okay running Creature Instance and I need to \nexplain you what next steps we will do.",
+            "So my main next goal is to show you file system development mode.",
+            "But in \nthe last versions we have some unusual behavior which you need to understand."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nCurrently Such results are DLLs loaded from the database stored somewhere else.",
+            "And the application is quite fine \nrunning with such assemblies.",
+            "But when we will switch to file system development mode, system will search for \nsuch files exactly here.",
+            "So we must compile our system before doing any file system operations and before doing \nany switches between environments.",
+            "So we have to compile our system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you try to compile, you have two errors with no file name.",
+            "It's totally unclear what is wrong here, but you will \nconstantly get this error.",
+            "So it's not random.",
+            "It will happen all the time when you try to compile."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow you see this log is still going on because compilation is not finished.",
+            "So compilation produces some messages \ninto this log file.",
+            "And if you will get compilation errors, you'll be able to get log.",
+            "You will get error details in this log."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou only create folders, you do not provide any access and it works nice.",
+            "So your compilation will not fail anymore.",
+            "It \nwill not show you such compilation issue.",
+            "This is the link to community Creation has quite powerful community.",
+            "So \nthis is about compilation error that you will certainly that you probably will have."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThey include a lot of classes and such DLLs are necessary, so they are vital for creation normal work.",
+            "And when we \nwill switch now into another mode, which I need to tell you.",
+            "So we will need these libraries in this space.",
+            "Okay, so I'm \ntelling you about this mode and I need to explain why we have modes.",
+            "So when we installed our creature system, we \ncan go to settings, we can get this page, it's called System Designer page."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nEven if your main app is broken, so badly broken and it's not working, then you can type this address 0dev and go to \nconfiguration and try to fix so what we need to know about modes Creature has two different development modes.",
+            "One is called Creature ID mode.",
+            "Let me show you guides development tools and we have two modes, Creature ID \nand External ID mode.",
+            "Let me explain what is the difference."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you use only UI of creation to build it and modify it.",
+            "We call this mode Creature ID mode and it means we use only \nCreature user interface tools.",
+            "This mode is perfect for beginners and it's also the only allowed to run at cloud \nconditions where you have no access to file system.",
+            "Creation ID is relatively simple and it's quite, let's say, well \nprotected."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 18 ---\n\nIn order to use full power, we have a special mode called External IDs.",
+            "The main idea is to allow system to save a lot \nof settings directly on disk into file system and then use external editors to modify such contents.",
+            "Also you can still \nuse internal editors, you can still use existing tools and open them in creatio ui."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you see gray colored it means file system development mode is not turned on and it means that simply Creation ID \nis on.",
+            "Now you can change this mode according to the manual.",
+            "So here is the article which I recommend you to read \nand this manual well, explain how we can switch between environments.",
+            "We need to make corresponding settings in \nweb config file depending on the platform.",
+            "For NET framework it means iis."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut please remember before you will do any changes, make sure your system can be normally compiled.",
+            "This is \nimportant for two reasons.",
+            "First reason is to get corporate necessary files in bin folder here software web \nconfiguration bin and also second reason is to make sure you have no common compilation issues like I explained \npreviously.",
+            "So we already performed this compilation.",
+            "Now we follow manuals to switch between environments."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo line number 510 I found file design mode setting.",
+            "Originally it was false.",
+            "I will carefully put it to oh sorry, no \nkidding.",
+            "I will carefully put it to true and then one more setting must be done a bit below.",
+            "Use static file content must \nbe set to false."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWill study what package is what package contents usually includes.",
+            "So this original storage is in database in set of \nsystem tables inside of our database.",
+            "So it's very important to understand Creation has out of the box big number of \ndata tables.",
+            "Most part of them are data tables for business entities and business data."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\n--- Page 19 ---\n\nAre GUI changes saved in the same database.",
+            "So say like if I just add some extra information to say a client, is that \nalso the."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYes, yes, it's also stored in the database and database is primary storage for this.",
+            "So when we."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nYeah, and then the only reason I'm interested in, I'm just asking that is how then does that work with version control?",
+            "Say if you have multiple people working on the same.",
+            "On the same, we'll say client, I will explain."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI wish I will now explain.",
+            "You will see that.",
+            "So originally we have all the content stored at the database.",
+            "But if we \nenable this file system development mode, then we have an option to save changeable part of it into files and what \nwe do customizing.",
+            "So like we make our own changes in this external ID mode."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn my case, I have only one storage code package for this editable stuff.",
+            "So it performs almost nothing and it saves \nsome files on disk.",
+            "We can track what's going on our disk.",
+            "Now let's go to javasoft web app JP configuration.",
+            "We \nhave a special PKG folder for such storage on disk."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd in order to finalize our switch, it also recommended.",
+            "So according to the manual, we have a next step to compile \nit again.",
+            "So it looks like we need to compile it one more time."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 20 ---\n\nSo your homework for today will be just reproduce the same steps as I did and install your local creation system.",
+            "Turn it into development in file system mode.",
+            "Make sure you can compile it normally and I recommend you to \ncompile it twice before you do any changes to make sure it's compiled and to get executables, DLLs and then after \nyou switched into this mode to make sure that system is fully operational and server side has no any visible, let's say \nincorrect parts.",
+            "We will study more about making creation settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it has hundreds or even thousands of changeable items and most of them are called schemas and we have \ndifferent types of such schemas.",
+            "So you can when you hear schema you should understand some customizable \nchangeable item in creation, such items declare entities.",
+            "For example, we can filter by item type like look only at \nobjects so we can see objects responsible for keeping address data and other objects are very simple and \nresponsible for keeping e.g."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo objects are related to data model and we have plenty of different objects, but not only objects, we have a lot of \nother items.",
+            "Client modules are responsible for page settings.",
+            "C sharp source codes are responsible for server side \nclasses programmed in C. Data items are responsible for data transfer between environments."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it's quite difficult to manage such amount of settings in a list.",
+            "So developers decided to make kind of big \ncontainers for them and they called them packages.",
+            "And the left part of this configuration section just remind how \nyou can get there.",
+            "So you go to settings, scroll down advanced settings or you type 0 dev in your browser 0 dev.",
+            "That's how you go to this configuration section."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt's a studio app which includes only platform version and almost no business functionality except of hundreds of \nlookups.",
+            "But in general we have almost no business sections.",
+            "Business functionalities is absent here.",
+            "So we have \nonly platform level tools like constructor setting which allow us to build our own apps."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLuckily, Creature offers you possibility to look at any part of base product items.",
+            "You can open any part of its\n\n--- Page 21 ---\n\nconfiguration code and you can see how exactly it was written, how exactly it was set.",
+            "So Creation has open source \nof base product configuration.",
+            "Configuration is a like changeable part of the system.",
+            "Also we have opposite one \nwhich is called Core."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOf course you will have updated versions of such DLLs so they are not designed to be changed and they perform \njust low level functions of creation functioning.",
+            "Also we have client side core parts in JavaScript which is also not \ndesigned to be changed and only changes when creation issues new version."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo the main sense of building packages is to make management of such configuration easier to make possible \nseparate development and let's say splitting of responsibilities, sharing responsibilities and like splitting of all \nsystem functions into separate parts.",
+            "It could be developed separately and transported and delivered separately.",
+            "So \neach package should be considered as a box for some items inside you can put unlimited number of items into it \nand probably it will be interesting to see how many items we have in different packages.",
+            "So let's do some simple \nselection."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWhy doesn't like this should be okay the name this is okay this package.",
+            "Okay, let's try to run.",
+            "Let's see what's wrong.",
+            "Maybe it expects something like this or maybe I'm doing something very stupid.",
+            "So let me check again."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can also see the same but you can see that some packages have quite big number of items like 800, like 400, \n300 and so on.",
+            "And the main sense of the package is to make some separate functionality stored separately and \ncould be saved and delivered separately developed separately."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is a special package named custom and custom package is designed for cases when you so when customer \ndoesn't think too much about storage of settings at all and when customer just don't know the architecture and they \njust want to customize system, save it, perform some no code settings and that's it.",
+            "So custom is kind of default \npackage for such kind of customization, but for big projects it's not recommended because custom package is also \npresent on target environments and custom package may be not empty at target environments, for example at \nenvironment when you want to test or when your users are running in production."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nObviously we will create our own package or even several packages to save our customizations there and now you \nneed to remember there are two general approaches.",
+            "You may manage packages yourself and it may mainly make \nsense if you develop something in Classic ui.",
+            "Classic UI is a legacy type of settings that we still have in our \napplication and still support.",
+            "And we have hundreds of maybe thousands of different partner solutions designed \npreviously in Classic ui."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI will click on this tiny create page button, this opens new package window and I will call it something like Dev \nClassic.",
+            "So I intend to use this package for some classic UI stuff.",
+            "That's why I will call it Dev.",
+            "Classic package has \nsome properties and compile into separate assembly is extremely useful feature and it's so useful.",
+            "So it's enabled by \ndefault and it makes our compilation time three or four times less than usual."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you want to support this feature, you can use smart activation, but in general I think that it's not for our case, so \nnot so necessary.",
+            "We don't have any version control for svn so we'll keep it empty, no version value and we will \ncreate and add dependencies.",
+            "Now I need to explain you one more important thing about packages and their \ndependencies."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd when you have a dependency for a package, it means that this package will not work until parent packages \npresent into your system.",
+            "So in my case calendar base requires CRT core base for some reasons and this is how \npackages are connected.",
+            "So if your package has dependency from some parent package, you may use some parent \npackage functionality like pages as templates objects."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThere are two common approaches how you can do this.",
+            "One of the approaches which is now currently used by \nApplication Hub is to use package named CRT core.",
+            "It gives us enough access to base product functionality and the \nCRT core is a good option for your solutions to be connected to the parent base product system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd in this case it makes sense to find the latest package here in this hierarchy except of custom and make your \npackage dependent on it.",
+            "Thanks to parent dependencies you will have full access to parent packages including \nbase product section packages.",
+            "So if you work with base product which already includes a Lot of functionality.",
+            "For \nexample, it's a banking, product, sales service or marketing.",
+            "Then it makes sense to create your packages dependent \nfrom all this parent diagram and it will be able so you will be able to customize parent packages."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI will make it dependent from.",
+            "I can search studio and that's how I will do this.",
+            "Any package has its own maintainer.",
+            "It's a text property written at packages.",
+            "Each package has its own maintainer."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThe reason why we have so many different words for the same is incorrect translation.",
+            "Originally in English it was \nmaintainer.",
+            "Then it was translated into Russian, then back to English.",
+            "That's how we get publisher.",
+            "I would prefer to \nhave everything just as maintainer here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in order to fully apply it, you have to log out and log in.",
+            "Because cached system settings are loaded at the session \nstart only.",
+            "So when changed it, you have to log out login and then you can create your own package.",
+            "And your \nmaintainer will be according to your system setting when you create your package."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow you can see my dev Classic package is created after studio and thanks to this parent transitions I can get \naccess and logical visibility to any part of base product.",
+            "So this is very important.",
+            "This is example how you can \ncreate packages for your own manually made the customizations mainly for Classic ui.",
+            "In future we will make more \npackages and we will use package for Freedom ui."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 24 ---\n\nNow our package is fully empty, so we will fill it in with some test settings tomorrow and we will continue tomorrow's \nsession with git integration.",
+            "Now today our session is over.",
+            "If you have any questions about it, tell me please.",
+            "You \nwill receive video recording very soon, probably in one hour if Zoom will be quick to convert video.",
+            "So I will send you \nvideo once it will be ready."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn this case, you will need these update packages from file system action in order to tell creatio about some new \nchanges and in order to load such changes back to the database.",
+            "So our session is over.",
+            "Thank you.",
+            "Thank you for \nyour time today."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nThanks a million Demetri.",
+            "That was very insightful."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThank you Paddy.",
+            "Thanks others, thank you for your time.",
+            "So see you tomorrow."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nThank you."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBye.",
+            "Thank you Sarah.",
+            "By."
+          ]
+        }
+      ],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "json",
+        "entity",
+        "module",
+        "web service",
+        "schema",
+        "detail",
+        "integration",
+        "page",
+        "data",
+        "customization"
+      ],
+      "keywords": [
+        "speaker",
+        "file",
+        "windows",
+        "use",
+        "creation",
+        "package",
+        "need",
+        "server",
+        "database",
+        "like"
+      ],
+      "topics": [
+        "speaker"
+      ]
+    },
+    "method": "hierarchical_structural"
+  }
+}

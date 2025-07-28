@@ -1,0 +1,33 @@
+{
+  "summary_id": "41e1b786bfe5",
+  "content_id": "623e1ee007a4",
+  "summary_type": "abstractive",
+  "summary_text": "Process library is a special section also available in studio workplace process library. It shows so it collects additional data related to process execution and we will be able to look at this data for process steps after they are executed. tracing will help us to keep parameters values.",
+  "key_points": [
+    "Process library is a special section also available in studio workplace process library.",
+    "It shows so it collects additional data related to process execution and we will be able to look at this data for process steps after they are executed.",
+    "tracing will help us to keep parameters values."
+  ],
+  "keywords": [
+    "process",
+    "processes",
+    "start",
+    "version",
+    "run",
+    "library",
+    "process library",
+    "able",
+    "really",
+    "started"
+  ],
+  "topics": [],
+  "summary_length": 49,
+  "original_length": 725,
+  "compression_ratio": 0.06758620689655172,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:52:52.432869",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

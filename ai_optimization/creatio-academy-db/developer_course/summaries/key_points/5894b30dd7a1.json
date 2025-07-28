@@ -1,0 +1,45 @@
+{
+  "summary_id": "5894b30dd7a1",
+  "content_id": "7ce29bfbf05e",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: we will fully switch to work \nwith server side.\nINSTRUCTION: you can create a handler as a function add methods section.\nINSTRUCTION: of all, I need to tell you about some important settings related to such view.\nCONCEPT: entity\nCONCEPT: database\nCONCEPT: server\nNOTE: that it will not it will be not necessary to forever forget about Quest ui.\nNOTE: settings related to such view.",
+  "key_points": [
+    "INSTRUCTION: we will fully switch to work \nwith server side.",
+    "INSTRUCTION: you can create a handler as a function add methods section.",
+    "INSTRUCTION: of all, I need to tell you about some important settings related to such view.",
+    "CONCEPT: entity",
+    "CONCEPT: database",
+    "CONCEPT: server",
+    "NOTE: that it will not it will be not necessary to forever forget about Quest ui.",
+    "NOTE: settings related to such view."
+  ],
+  "keywords": [
+    "ui",
+    "process",
+    "speaker",
+    "like",
+    "code",
+    "classic",
+    "data",
+    "freedom",
+    "page",
+    "freedom ui"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 66,
+  "original_length": 14990,
+  "compression_ratio": 0.004402935290193462,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:51:17.473074",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

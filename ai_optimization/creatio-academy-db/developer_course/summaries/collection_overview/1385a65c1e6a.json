@@ -1,0 +1,39 @@
+{
+  "summary_id": "1385a65c1e6a",
+  "content_id": "developer_course_collection",
+  "summary_type": "collection_overview",
+  "summary_text": "Collection Overview: Developer Course\nTotal content items: 27\nTotal content chunks: 6411\nTotal words: 613,047\n\nContent Types:\n• paragraph: 6411 chunks (100.0%)\n\nMain Topics: speaker",
+  "key_points": [
+    "speaker"
+  ],
+  "keywords": [
+    "speaker",
+    "data",
+    "let",
+    "page",
+    "like",
+    "okay",
+    "use",
+    "need",
+    "code",
+    "make",
+    "just",
+    "ui",
+    "process",
+    "package",
+    "object"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 25,
+  "original_length": 613047,
+  "compression_ratio": 4.0779907576417465e-05,
+  "confidence_score": 0.95,
+  "created_timestamp": "2025-07-23T16:58:41.947431",
+  "metadata": {
+    "collection_stats": {
+      "total_documents": 27,
+      "total_words": 613047,
+      "content_types": {
+        

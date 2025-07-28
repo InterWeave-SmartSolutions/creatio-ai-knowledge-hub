@@ -1,0 +1,32 @@
+{
+  "summary_id": "2fe046624754",
+  "content_id": "d25ef65c6448",
+  "summary_type": "abstractive",
+  "summary_text": "Session nine of our development on creation platform guided learning. Today we will continue to study server side and we will move on with integration tools. We will study how to use standard platform level tools to operate with data. And at the end of the session, I plan to tell you about Clio 2, Clio Commons.",
+  "key_points": [
+    "Session nine of our development on creation platform guided learning.",
+    "Today we will continue to study server side and we will move on with integration tools."
+  ],
+  "keywords": [
+    "data",
+    "service",
+    "creation",
+    "tools",
+    "web",
+    "need",
+    "web service",
+    "options",
+    "party",
+    "processes"
+  ],
+  "topics": [],
+  "summary_length": 57,
+  "original_length": 720,
+  "compression_ratio": 0.07916666666666666,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:55:04.996678",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

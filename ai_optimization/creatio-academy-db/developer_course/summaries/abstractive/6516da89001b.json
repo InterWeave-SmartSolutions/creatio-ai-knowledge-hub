@@ -1,0 +1,35 @@
+{
+  "summary_id": "6516da89001b",
+  "content_id": "699402ad4f39",
+  "summary_type": "abstractive",
+  "summary_text": "Session nine of our development on Creature platform guided learning. Today we will continue to study server side and we'll move on with integration tools. We will discuss and I will show you examples of how to work with standard tools.",
+  "key_points": [
+    "Session nine of our development on Creature platform guided learning.",
+    "Today we will continue to study server side and we'll move on with integration tools.",
+    "We will discuss and I will show you examples of how to work with standard tools."
+  ],
+  "keywords": [
+    "data",
+    "service",
+    "tools",
+    "web",
+    "need",
+    "creation",
+    "options",
+    "web service",
+    "odata",
+    "speaker"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 41,
+  "original_length": 637,
+  "compression_ratio": 0.06436420722135008,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:59:16.205054",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

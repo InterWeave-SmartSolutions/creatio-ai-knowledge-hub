@@ -1,0 +1,1874 @@
+[
+  {
+    "chunk_id": "e84d4ad0e351d8635662d73e45165dd1",
+    "document_id": "606ea808918e",
+    "content": "--- Page 1 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 0,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 4,
+    "token_count": 5,
+    "context": {
+      "heading": null,
+      "paragraph_count": 1,
+      "position_in_document": 0
+    }
+  },
+  {
+    "chunk_id": "d0d664ddb7680b91d7813391af30489a",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nForeign number seven and today we will continue study of our server side of creation and we will continue to do our \ndevelopment. And let me show you where we finished at during our last yesterday's example. So we worked with our \nFreedom UI package. We made business process to make some calculations and we tried to. So we used a \ncombination of no code items and coded stuff. So we used C code. We already compiled it successfully, we even \nstarted it. So today I will show you how we can debug such code. Generally you can manage processes not only \nfrom configuration section, you can also do the same from Application Hub or from process Library. Process Library \nat settings page is at the top position. So possibly it can tell you that it's something that Creatio thinks is really \nimportant.",
+    "chunk_type": "paragraph",
+    "chunk_index": 1,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 1
+    }
+  },
+  {
+    "chunk_id": "0a48a59c9522eb71e4183e4ed88322a5",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nProcess Library on the top position here. This is a special section also available in Studio Workplace. Process \nLibrary we have a lot of existing designed processes for base product and also we can create our own processes. \nProcess library has some advantages in comparison with just opening diagram from configuration section. So here I \ncan see in process library we can go to process properties and that's how we will enable additional features that will \nbe really helpful for us to run our processes and to get additional information. So let me show you what they are. \nFirst of all I wanted to tell you about tracing. By default this option is off and if you enable it shows so it collects \nadditional data related to process execution. And we will be able to look at this data for process steps after they are \nexecuted.",
+    "chunk_type": "paragraph",
+    "chunk_index": 2,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 2
+    }
+  },
+  {
+    "chunk_id": "e69eba78288a581df1eadbebbafffa17",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd this tracing will help us to keep parameters values. We will be able to check how parameters are changed \nthrough process steps. And in general this is really helpful in case if you investigate why your process is not working \nas expected. So you'll be able to see parameter values their changes and it will explain you process behavior much \nbetter. Also we have some options like display in run process button list this one, this is a run process button and \nwhen you start it you see some message that quick process run is not configured and we will not be able to get any \narguments if we start process from here. So that's why we usually design processes to be started from sections in \norder to get some input parameters input data. So if you want you can run process from here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 3,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 148,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 3
+    }
+  },
+  {
+    "chunk_id": "b5531253149622e5a06057e2b21c4e3a",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nOur process is active and it's also possible to deactivate it. So if you don't like some process, for example you have \nsome base product functionality that you really don't like, you want to stop it, you can deactivate any process you \nhave in your system. This process will not be able to start regardless of the way how you expect it to start with a \nstart signal or with the Start simple event. So for manual start and so on, deactivated processes cannot work at all. \nAnd also you will see versions of processes can be useful in case if you develop, test and run in production of your \nprocesses at the same environment. For example, you have version one which is actual and your customers end \nusers are working with it. Then you start to develop version two of your process.",
+    "chunk_type": "paragraph",
+    "chunk_index": 4,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 4
+    }
+  },
+  {
+    "chunk_id": "7f56a34bc7b9be8eede78fefb68751ec",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nBut while you are developing it will be not ready for end users and you still want to save some intermediate progress. \nOnce you start to develop version two, you still keep version one as actual. Version two, for example will be under \nconstruction. And once you realize that version two is okay, it's ready. Then when you save a process you can make, \nyou can run an action set. Here you will have an action set as actual and it means that any other process version \ncould be manually set as actual version. That's how you will switch your users from working with previous versions \nto new versions. And older started processes will still keep going with previous diagram and new starter processors \nwill go with a new diagram. But what I wanted to tell you about this.\n\n--- Page 2 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 5,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 5
+    }
+  },
+  {
+    "chunk_id": "ad6594077cae4c391cebadd752db3aec",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo managing of processes versions is good if you develop directly on production, but if you have a separate \ndeveloper environment, if you have separate test environment and so on, it probably will additional difficulties for \nyou. And that's why I prefer not to enable this versioning or processes. And each time when system asks me to save \na new version for process, I usually reject and overwrite existing version. Because when you have many versions of \nyour processes, you also will have many items in your configuration. You have more items like this for your business \nprocesses and eventually all the items will be expired, so they will be not necessary, but they will present in your \npackage. And if you attempt to delete them manually, you will finally delete the whole process including all of its \nversions. So it's risky.",
+    "chunk_type": "paragraph",
+    "chunk_index": 6,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 145,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 6
+    }
+  },
+  {
+    "chunk_id": "eb9279cf82633514e905fab2bf8f5201",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nYou should take care and save some items as exported metadata here, then recover it. So it's something that looks \nlike unnecessary difficulty. And it's better to avoid if you have a standard transition of your solution from developer to \ntest and to production. So I recommend you to keep your version only one single version. It will be easier for you to \nhave to control all your situations with your business processes, but it's up to you. So at least the platform offers you \npossibility to handle process versions. Okay, so what I want. Oh, sorry, this is setting which I planned to save also as \nyou can see there is a red warning message that tells us about performance impact. So if we enable trace process \nwill work a bit slower, but it's not so critical. Probably 5% slower. This is not a big deal.",
+    "chunk_type": "paragraph",
+    "chunk_index": 7,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 7
+    }
+  },
+  {
+    "chunk_id": "9a87ca3d47efc8e9ecd64b065f68a157",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd compared to what functions and what features it shows us. So usually we sacrifice a bit of performance here \nand enable this trace in case. So it really happens. Helps in case if we need to debug our process and to see how \neach step was executed. And to see process parameter values at each step. So this is significant in important \ninformation, especially when you develop and debug your process. Okay, so how we start our process? We went to \nreality section. We can select some data or we can use its page. But now let's say house for rental. Calculate \naverage price Calculation was successful, but we did not see anything. We only can see some history of execution. \nAnd now we will be able to see trace data. Trace data became available because we turned on this option.",
+    "chunk_type": "paragraph",
+    "chunk_index": 8,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 145,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 8
+    }
+  },
+  {
+    "chunk_id": "2e22b05e10ce59b88c81789cf8601660",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nTrace data can be extremely helpful because it helps us to see our input parameter data which we had at the \nbeginning of the process. Then we have parameter values of selected item. And finally, when we will move on. \nUnfortunately, not all of the items keep such trace and allow us to see it a bit later. I will show you how to see final \ntrace data. You will understand how we can display it. So we can use some items later in our process. Then select \non it and it will show us trace data with process parameters. And I want to. I wanted to show you one more \nadditional feature which is important for processes. It's performance counters. Let me show you. So we can try to \nmake a columns setup shrink a bit. And we can display execution time. Execution time is duration.",
+    "chunk_type": "paragraph",
+    "chunk_index": 9,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 9
+    }
+  },
+  {
+    "chunk_id": "df8f86fa735dd9139ecef88d203c05b9",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo let's display duration in milliseconds. This works good for system actions. And milliseconds are perfect for this. \nAnd also we can display the same duration, but in minutes. It will be useful in case of debugging, in case of some \nuser actions used and some display messages shown. So users are usually not so fast as system. So we will see \nthis performance. Now you see our process element performance for last response recent start. And you see that \nreading data took 21 millisecond. Then we have some more calculations. Also it takes some time. And in general \nyou see that in total, not so much. But we can also enable duration display in process log. Let me select fields to \ndisplay and close unnecessary columns in order to display duration in milliseconds for process in general.",
+    "chunk_type": "paragraph",
+    "chunk_index": 10,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 141,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 10
+    }
+  },
+  {
+    "chunk_id": "ecd9c8276ac5df3744546565b61ae533",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\n--- Page 3 ---\n\nAnd also we can set duration in minutes just to see some processes which were executed. Quite slow. So. So now \nyou can see that we have total 130 and we have some items and you should be ready that it will never match. So \ntotal duration of items will not be matching the total duration of the process. Because it looks like business process \nengine has additional spending of resources for process start, maintaining it and then correct finish and such \nprocess elements duration is only part of overall resource spending and time spending of process engine. But \nprocess elements duration will show you relative speed. So it will make it clear that read realty takes longer than \ncalculations in our C sharp code. And also you can see that formulas are almost lightning fast in comparison with \nany database related operations.",
+    "chunk_type": "paragraph",
+    "chunk_index": 11,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 11
+    }
+  },
+  {
+    "chunk_id": "591c4b1ddf0045a4911ec759f1370d94",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo you can see what items are fast and what items are slow in this list. Even in case of such numbers will be not \nreally representative. And our total process execution is a bit more than 130 milliseconds. So it looks like 100 \nmilliseconds were spent on process start and finish. But this is in general which will give you general understanding \nif the process is fast or not. For example, you see some other processes they take sometimes they take much more \ntime for calculator. And we have a lot of system processes here. Everything is shown in this log. And you can try to \nimprove your processes. You can try to implement some changes and then check its overall duration and the \nduration of items. Let me show you one more example. Let's go to houses for sale and run calculation. Then go to \nprocess logs.",
+    "chunk_type": "paragraph",
+    "chunk_index": 12,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 152,
+    "token_count": 179,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 12
+    }
+  },
+  {
+    "chunk_id": "b4906941ca2d9e3584571cda39f8baa7",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nNow you see second execution in even though it processed more records, but it was faster because of so called \nwarm up effect. First time when you start process system takes a lot of resources to deploy process engine service \nin memory to organize and allocate all necessary class instances. So prepare everything to work with processes \nnext time when you start a process system uses a lot of allocated classes and a lot of allocated objects in memory. \nSo it takes much less time. And obviously your next start of the same process, the same data may work much \nfaster. Next consequent starts will also be quite fast. And it will be I think not longer than the first one. And you can \nsee items inside, you can see that still read data is lower than calculation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 13,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 141,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 13
+    }
+  },
+  {
+    "chunk_id": "d6ee84840bf3767f5c4604015b0a4b13",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd you still see that formulas are quite fast and takes almost no time. So that's how you can analyze performance \nof your processes. And you may think that it looks like everything is very good. So like 10 milliseconds, 15 \nmilliseconds, even overall hundreds of milliseconds is very good time. Yes, I agree for this. But in real life processes \nand real Life environments, working in high load conditions, your situation will be different. You will work with much \nmore loaded entities. And currently I'm running on my single PC as a single user, so I have almost no simultaneous \naccess, no any concurrent activities. And that's why my website is working fast. And in real life conditions it may be \ndifferent. So analyzing such performance, analyzing duration of items will help you to find bottlenecks in your \nprocess automation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 14,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 144,
+    "token_count": 179,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 14
+    }
+  },
+  {
+    "chunk_id": "70e5fd8ec08dec80c7bb0d6aff802cfb",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nYou will exactly and easily and clearly see what items take the most of system resources and you may think of how \nto improve it. Okay, so that's how you can in general check your process execution and analyze its speed. But now \nwe will come back to our code. So we are interested in real debugging of this code. So we need to see how the C \nSharp code is executed line by line and happily so we will be able to do this. And fortunately system offers us \npossibilities to do this. And first of all I need to show you that this code finally turns into automatically generated \ncode that we discussed recently in our terrasoft web app. Terrasoft configuration pkg Then we go to our package \nfolder and then we go to auto generated sources. Here you see automatically generated class.\n\n--- Page 4 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 15,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 152,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 15
+    }
+  },
+  {
+    "chunk_id": "faee9374494f303abbfe27e2aa228f8e",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nIt is generated by creatio and then used by compilation. So this class is saved on disk. You probably think of oh, we \nhave C file. Possibly we can edit it. Unfortunately not here. And if this class is in so if you have a file in auto \ngenerated folder, you will not be able to modify this because each time you compile again it will be overwritten by \ncreation. But you can use this file for debugging. I will show you how we can do this. For debugging we need some \npowerful tool. I will use Visual Studio, I'm using Community Edition. I will have to do some trick with administrator \nprivilege. Just a second. Remember, in my administrator credentials I have to use a separate environment, separate \nWindows credentials for this. Okay, so I'm starting my Microsoft Visual Studio. Not now, sorry.",
+    "chunk_type": "paragraph",
+    "chunk_index": 16,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 147,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 16
+    }
+  },
+  {
+    "chunk_id": "9271739142e42ee78431304a0befaf11",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nHere, this is Microsoft Visual Studio. I installed it recently. It's a community edition and 2022. So this is community \n2022 version. You can install it almost for free from Microsoft website and download. So currently I use it for my \npersonal developer needs and it works well. So Community Edition I only installed C Sharp Tools here, not so much. \nAnd it works for simple development and for debugging I have to run Microsoft Visual Studio as administrator, \notherwise I will fail with the bargain. And debugging is important because we have code which we are not sure how \nit runs and we Want to run it line by line and check it out so to see if it works fully as expected. So I will show you the \neasiest possible way to debug our website and just please be very attentive here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 17,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 147,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 17
+    }
+  },
+  {
+    "chunk_id": "f69d44cd7b8bfa9eb3d44e06543fb93c",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAfter you install Microsoft Visual Studio Community Edition, you need to perform some settings into it. If you do not \nperform such settings, if you skip this step, you will not be able to debug. Your breakpoints will not work. Let me \nshow you Tools options here. Visual Studio usually hangs for some time. I have to click now it works more or less. \nOkay, so let's go to Debugging General. You see it's hanging. Okay, click back and forth. Now you see it shows more \nor less correct settings and we need to go tools Options Debugging General. And then we need to find the most \nimportant setting here, which is called Suppress Git Optimization on module board. This setting was off by default \nand we must turn it on. Otherwise our breakpoints will not work. So this is critically important setting. Don't forget \nabout this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 18,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 185,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 18
+    }
+  },
+  {
+    "chunk_id": "1c963b834e563016a404c1bd9a3f87d0",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nThis is important. Just my code was originally on. It's recommended to keep it on. But unfortunately Edit and \nContinue is not supported. So we can shut it off and so we can turn it off. It's not supported because compilation \nwill be not done by Visual Studio. We will use libraries created by Creation and it's not good idea. Ask Visual Studio, \ntry to recompile them. So Edit and Continue is not supported. Edit and Continue is a feature which helps us to \nmodify code, recompile on the fly and to see how it works after recompilation. But in case of creation, compilation is \ndone by Creation System, not Visual Studio. So this feature is not supported so far. Other items could be just out of \nthe box. It's hard to remember all such settings. So I will show you where you can find the technical details.",
+    "chunk_type": "paragraph",
+    "chunk_index": 19,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 151,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 19
+    }
+  },
+  {
+    "chunk_id": "2875abb0ceff5edb412e78d9330c9705",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nThis is about development tools external IDE basics. Scroll down till we find Visual Studio screenshots here and \ncopy links. So now you see Suppress Git Optimization module Wallet must be on the most critical setting that you \nmust do if you want to debug with Visual Studio. Okay, the corresponding link is in your chat. Okay, looks like we did \neverything that we need. We have to save our changes and then we have to perform our debugging steps. File Open \nand here you will be. You will see some surprise. File Open file so it's possible and it's enough for debugging to open. \nJust file that we plan to debug. Let me show you. No solution, no project. We just go to Terrasoft configuration pkg \nThen we go to our package folder. Then we go to auto generated and find corresponding C Sharp source.",
+    "chunk_type": "paragraph",
+    "chunk_index": 20,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 20
+    }
+  },
+  {
+    "chunk_id": "51af517f7e87c046a2789ccd20c5c887",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\n--- Page 5 ---\n\nOf course we will not modify it, we only open it. Visual Studio will create automatically generated solution for this. \nIt's okay, we can go to its inner code and put breakpoint in order to stop execution of our code at this point, at this \npart, when we will finally run to this line. But now it's very tricky ways because as you can see, we only made it \nbreakpoint. But we need to attach to our worker process. Let me show you how we can do this. Debug attach to \nprocess. And here it will be really important to run your Visual Studio as administrator as we did it. So we need to \nfind the worker process. It's named W3WP and you can see its title and you can see username in case if you have \nmany creation instances, you'll see the proper one.",
+    "chunk_type": "paragraph",
+    "chunk_index": 21,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 152,
+    "token_count": 185,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 21
+    }
+  },
+  {
+    "chunk_id": "806210cb6492f06aea5ae4be5c8ad30e",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo this is the way how you can select the proper worker process. W3WP . This is your worker process from IIS and of \ncourse we have to select it. And if you don't see it, you may try to show processes from all users. Here you will see \nmuch more processes. W3WP . Attach mode is automatic. And then we click just attach. Okay. System tells us that \nwe are probably doing something suspicious, but we will agree attach anyway. Now you see that our breakpoint is \nnot fully ready. Studio says us that it will be not currently hit some problem with symbols. So how to fix this? And I \nthink that the easiest possible way to get started normally is to restart our app. You already know that restarting of \nthe app is possible with the help of maintenance tools made by Neo Technologies from Switzerland.",
+    "chunk_type": "paragraph",
+    "chunk_index": 22,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 152,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 22
+    }
+  },
+  {
+    "chunk_id": "d12f06d55eda212191380b63fdef6305",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo let's go to restart application button. This button appears as a result of installation of maintenance tools from \nMarketplace. Okay, we'll be restarting. Great, let's continue. It takes just 10 seconds to restart. But now you'll see \nwhat happens inside of Visual Studio. Visual Studio starts to show us this big red debugging line and. And also we \nwill see some blinking messages. And finally our breakpoint became fully available. So this means that our restart \nmade Studio able to correctly load symbol files necessary for debugging. So now we are fully ready, we can do \ndebugging. And now Studio just waits for this line of code to be executed. So let's go. Let's try to. Now you see, \nrestart of the app is finishing. Go to Real T section. So now our studio is attached to our process and it will stop its \nexecution.",
+    "chunk_type": "paragraph",
+    "chunk_index": 23,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 188,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 23
+    }
+  },
+  {
+    "chunk_id": "ee56182fc5465a6daec88004142e533d",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nIf we will run corresponding business process. Okay, let's calculate average for apartments for sale. We have two \ndifferent departments here. Calculate price and what. Let me check process log. It looks like something is going not \nas expected, but it just took a bit longer time. And yes, we got our debugging. No exceptions. Everything looks good. \nWe have just breakpoint and execution stopped at the moment where we have script task in our business process. \nSo you remember the process structure. Now we are somewhere here and we can run this code line by line. I \nunderstand that this part is probably boring for those who do not plan to do a lot of development in creatio. But this \nis something that will let you understand how your code is actually started. And this is only possible if you run your \ncreation locally.",
+    "chunk_type": "paragraph",
+    "chunk_index": 24,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 148,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 24
+    }
+  },
+  {
+    "chunk_id": "003a4cddce20b6a075799755ffcbfa4f",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nBecause you need access to file system, you need Visual Studio to attach to your worker process. So this type of \ndebugging can only be performed in local environment conditions. Unfortunately when you work in cloud conditions, \nyou will not be able to do this kind of debugging. Okay, so let's start. We can run lines one after another with the \ncommand F10 step over. You probably remember some debugging sessions in Google Chrome development \nconsole. So here we have something similar and even hotkeys are very similar. So F10 is very popular. We will use it \nand pressing F10 several times. Now you see 1, 2. We can also handle locals or watch variables. Let's try to look \nlocals type. You see it was changed. Offer type was changed. Great. Filter was created and collection changed. \nAnother filter, another add in. Then SQL text.",
+    "chunk_type": "paragraph",
+    "chunk_index": 25,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 148,
+    "token_count": 189,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 25
+    }
+  },
+  {
+    "chunk_id": "ed1578123aa3a4430aafaf492fcd99a0",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\n--- Page 6 ---\n\nNow you see SQL text changed. We can view it. Here is our actual SQL text which will be running in the database. So \nthis is important possibility for you. If you make some more complicated scripts, more complex filters, maybe some \nparameters that you don't know how to work with. So this is something that will let you understand much better how \ndata selection is working in creation. Currently we got this SQL script out from entity schema query instance. We \nused get select query method. Then we used get sqltext method in certification questions. One of the questions will \nask you about entity schema query available methods. So this will be one of the answers how to get SQL text out \nfrom esq. The answer is get select query and then get SQL text. Okay, we can save obtained result into parameter.",
+    "chunk_type": "paragraph",
+    "chunk_index": 26,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 151,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 26
+    }
+  },
+  {
+    "chunk_id": "dbf2e2a384bf4ff9ca26b8d86a9e2e4f",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nThen we run the most important line in this code. This is for getting collection data. You can see that we have \ncollection number, collection records number two. We have two records there. So let's go to start our counters run \ncycle for our data records so we have only two apartments for sale. You see Austin and Florida apartments for sale. \nSo we process such data, but we only can get their prices. Here you see price area and then we update our total \ncounters, price and area and then go to the next line, another price, another area, update counters and finish the \ncycle. Finally total area, total result. Here you will see result was calculated like this. And we can save this result into \ndecimal parameter and then return true. I did not tell you importance of this return true or return false.",
+    "chunk_type": "paragraph",
+    "chunk_index": 27,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 27
+    }
+  },
+  {
+    "chunk_id": "6a9de380ddd94fad0e60769fdfffb546",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo let me spend a minute on this C Sharp script task has options to inform process engine about is it successful \nexecution or not? In case if your script task finishes with return true, it means that process engine is ready to \nexecute next step immediately and no errors detected. If you return false, it means you tell to the process engine \nthat your execution experience serious errors. So you have to stop process execution fully and process will be \nstopped with the error state. So if you return false, it means you perform unexpected, let's say like emergency stop of \nyour process. And that's how you can manage this. Also you may create one more action for this you can handle no, \nyou can raise exceptions inside of your C sharp code. This will be also treated as a emergency stop.",
+    "chunk_type": "paragraph",
+    "chunk_index": 28,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 28
+    }
+  },
+  {
+    "chunk_id": "da1861d467296c555049dbf14f3dd78b",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nBut also it will tell to the client side some exception text. And that's how you can provide some reason for stopping \nof your process. So you can throw exceptions with some error message text and user who started process step will \nsee this error message. In our case everything is okay. Process executed normally. We have to continue our \nexecution by pressing F5 means normal continue. In this case our process finishes its execution and now we can \nsee so we have no data changes here. We can only see that calculations was done. If you go to process log the \nrecent execution. You see, milliseconds have a huge value and we have more than six minutes of total execution \ntime of our process. This is important for us to check how fast all execution was done.",
+    "chunk_type": "paragraph",
+    "chunk_index": 29,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 141,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 29
+    }
+  },
+  {
+    "chunk_id": "82aa373f11288d3432ee20e8b4259236",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd as you can see, our read data executed more or less according to expectations. But our coded part took \nenormous time of six minutes because of our debugging session. So you can check what steps take too much and \nyou can think of how to improve it. In my case, you see, debugging definitely made it longer. But it's just our, let's say \ndesign and development attempts in real life it will be not so slow. Okay, I think that currently you understand how it \nworks. So let's try to run it once again in a bit different conditions. So let's open house for Sale as an argument, we \nwill only have this ID when we start a process. This ID is transferred as argument. We will get corresponding values \nand parameters. Now we already debug only our programmed code.",
+    "chunk_type": "paragraph",
+    "chunk_index": 30,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 144,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 30
+    }
+  },
+  {
+    "chunk_id": "e49e6a3b41395b9c579bdedf1264501d",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo you may ask about is it possible to debug no code items? Unfortunately no. And they will just execute it without \nany stops. But. But if you want to intentionally stop your process at some step in order to investigate status \nparameters, variables and so on, you can additional temporary items into your process that will display some data\n\n--- Page 7 ---\n\nusing any kind of show message, any kind of messaging like pre configured page or automatic auto generated page. \nSo you can use it for like artificial process stop. And that's how you can get additional information about the process \nexecution if you go to process log and see trace data. So in my case I plan just to run this process once again. Now I \nexpect debugging debugger to be activated again. As you can see it takes significantly longer than expected time.",
+    "chunk_type": "paragraph",
+    "chunk_index": 31,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 151,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 31
+    }
+  },
+  {
+    "chunk_id": "db131c3cc228bab69aaf206d44f0fcc9",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nOh yeah, it's already finished here. So just my fault. Okay, running in, running it again now you see all the decision, all \nexecution goes. We can see this SQL text conditions parameters are saved separately. Selecting data again we have \ntwo records but different records. Working with price and area, updating totals, another pricing area updating totals \nagain and calculating final result. Then we can just press F5 for normal execution. Oh, it looks like I accidentally \nstarted one more time. Okay, let's run the five again. Okay, so it was just my fault. I started this process twice. Let's \ngo to processor log. Now you see this was my debugging stuff. This was just maybe three or four seconds to debug \nin the next time.",
+    "chunk_type": "paragraph",
+    "chunk_index": 32,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 130,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 32
+    }
+  },
+  {
+    "chunk_id": "ce4cbea30592b95094af0b89a5c0a1b8",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo you can see that all of your execution or your processes is tracked and also you can handle and check process \nparameters. Unfortunately this trace data is not shown for any item. Personally I have a question why? But possibly \nit's somehow connected with the type of executed item. And we still have good enough options to look at parameter \ndata and to check it out during debugging. I mean during investigating how process executed and process was. But \nof course we cannot propose our customers to go here in order to check some result data. We need to have a fancy \ngood looking way to do some kind of output. When we start a process like this, we want to provide some kind of \ngood looking output for a user. And of course obviously we will do this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 33,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 143,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 33
+    }
+  },
+  {
+    "chunk_id": "74ac57d3e3fd183fbc0445ca42a23112",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo now we have process which only calculates data and saves its results into page into process parameters. We can \nuse some items to make a good looking display of such data and I plan to user actions for this. Meanwhile, we \nalready do not need to debug. So it's better to avoid unnecessary system resources spending. As you can see, 1.3 \ngigabyte of memory was allocated and for my app and visual studio can track it. So let's detach our visual Studio \ndetach all. It will save a bit of our RAM for our creation. And let's check now you see that 1 gigabyte of RAM was still \nalready eaten by creation process creature in general creature web worker process. Okay, so my plan is now to show \nuser some output I plan to use. Oh, it looks like I lost my title here. Yes. Calculate average price.",
+    "chunk_type": "paragraph",
+    "chunk_index": 34,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 152,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 34
+    }
+  },
+  {
+    "chunk_id": "01b2fe9e786b1dfbf8013e2cb4e7df2e",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nOkay. The most important is not to change the code in C sharp part. In this case, system will allow us to save our \nprocess without any questions and without asking to recompile only if you change code here. System will detect this \nand ask you to perform compilation again. So my plan is to use some kind of output window. I will user actions and \nthe most recommended option, I think the most popular, the most let's say useful is now pre configured page item. \nPre configured page offers you possibility of fully to show fully customized page for a user. It means you have no \nany, let's say connection with existing data as you may find in open edit page item.",
+    "chunk_type": "paragraph",
+    "chunk_index": 35,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 126,
+    "token_count": 148,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 35
+    }
+  },
+  {
+    "chunk_id": "48de710595ba015633c3b0b48a14e2f3",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo open edit page can only show you pages connected with existing objects and pre configured page can show you \nany random page designed in your system. So let's use this option reconfigure a page and carefully put it on the \ndiagram. Pre configured page is designed to show some pages for user according to process execution. Obviously \nthis page will appear at user side. But you need to remember that in general business process is a server side \nfunctionality. So when we have a process, when we start it server side process engine service starts to collect \nmetadata and process it step by step. It performs almost silently without showing any messages, without showing \nany UI changes. In general and only if you want to show some pages for user, we can use some special items for \nthis. Pre configured page is one of such items.\n\n--- Page 8 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 36,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 154,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 36
+    }
+  },
+  {
+    "chunk_id": "721b20034fc98e7f7b9dddaf60e5a2d6",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nI think one of the most recommended features for this task. Pre configured page will show some page for user at \nuser browser which page to open. We don't have any suitable. We have a lot of out of the box pages, but they are not \nsuitable for our task. And we want to display average price decimal value. And also we want to display SQL text only \nfor debugging purpose. So we can simply create new page, add the new page and then we can decide which type of \nthis page is a Freedom UI or Classic ui. Of course it makes sense to work with Freedom UI right now. So let's do this \nsystem will open new page editor dialog. We can use different types of pages. And let's use this one tabbed page \nwith area on top.",
+    "chunk_type": "paragraph",
+    "chunk_index": 37,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 143,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 37
+    }
+  },
+  {
+    "chunk_id": "0dc19a2f9bfe850a663355206a40bdd3",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nOf course this is too big page for our purpose. But this is a simple example. In real life you may need a process \nwhich will ask user about some parameters, about some arguments. And in general business scenario it may \nhappen that you will have quite a big list of some data for input. So in general you can create pages with unlimited \ncomplexity. As many parameters you want to input you can implement. So no limitations here. Great. And we can \nuse different page parameters. They are not connected to any existing entities. So you see just set of controls. And \nin my case I need to display number. So use number control. Of course I will rename it into average price US dollars. \nThe inner code will be maybe USRAVG price and format will be decimal two digits.",
+    "chunk_type": "paragraph",
+    "chunk_index": 38,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 144,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 38
+    }
+  },
+  {
+    "chunk_id": "ebf58517f0999db7302c8ed64edeec09",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd as this is an output value, I do not want user to modify this. So I'll make it read only. It's quite obvious. You see \nit's no code settings, so very easy to do. Next parameter that I want to use will be a text. Or maybe I can try rich text. \nBut first let's try text and make it a bit multiline like this and SQL text. It's just for demo purpose and for debugging \nreasons only SQL text parameter 500 probably multi line text will be a good option here. Okay, as you can see, I don't \neven care about element code because I do not plan to modify code of the page. But physically it's possible. This will \nbe a Freedom UI page where you can also make your own handlers, you can add your own buttons or other types of \ncontrols. So you.",
+    "chunk_type": "paragraph",
+    "chunk_index": 39,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 151,
+    "token_count": 185,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 39
+    }
+  },
+  {
+    "chunk_id": "afe4801e10e13a1c80f60827c724ec6e",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nYou see very rich possibilities to build your page. In my case, SQL text will be also read only because this is only for \ndata output. So my SQL text is for data output. That's. That's it. Only two parameters here. In real life, of course you \nmay use much more components and widgets and parameters. So this is just to make it simple and easy. You'll be \nable to reproduce it easily. My page will finish its work by clicking Save or close. Maybe we can hide cancel button. Is \nit possible to hide? No. Okay, we can save our page now. And also I need to check where is the page package. Let \nme check page settings. Okay, Reality, the same package as my main process is saved to the only disappointing \nFeature is a code automatically set for this page.",
+    "chunk_type": "paragraph",
+    "chunk_index": 40,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 179,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 40
+    }
+  },
+  {
+    "chunk_id": "57d2de14444829fe005215b1c02d056c",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo I will use something like average price output page and we can also use the same title just to make it good \nlooking at our configuration section. So it will be named and coded properly. Save it again. So now you see our page \nis ready well named, we can save it again, saved correctly, close it and then we can use this page. As you can see it \nstill shows us a bit old code, but we can probably select this one. Yes, now it's correct. So our editor remember it \ncreated page so it shows us its title and its code. So whatever you prefer the most. And also we can name it \nsomething like show results. Who will see this page? User who performs a task. It means who will see the page? \nUser.",
+    "chunk_type": "paragraph",
+    "chunk_index": 41,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 141,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 41
+    }
+  },
+  {
+    "chunk_id": "b4db8570b8354c996a5bd8384f64fd36",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\n--- Page 9 ---\n\nThere are other options like someone's manager or a role some member from a role. In my case, user is like simple \nand easy because server side will detect exact user session based on the contact value we provide here. So here we \nhave to provide a contact of a user who we plan to show this page for. And current user contact is very like frequent \ntypical value here. So we simply will show the page for current user. But it's possible to include several different \npersons into your business process logic. So it's possible to calculate another person or someone's manager or just \nread some specific place where you can handle another person's involved into some business activity. And you can \nprovide here not only current user contact, but you can simply provide any contact of existing user that you need for \nyour business logic.",
+    "chunk_type": "paragraph",
+    "chunk_index": 42,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 154,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 42
+    }
+  },
+  {
+    "chunk_id": "d70bd4083b60171bf1f801579ae7d7d1",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nOkay, show page automatically means that once this item will be executed page appears immediately you can hide \nit. So do not show page automatically. In this case, this item will be still pending, so it will still wait for user to start to \nshow it. And user will see this item in this notification panel in business tasks list. So user will be able to find the \npending item. And that's how it's possible to see such item in case if we do not use show page automatically. \nRecommendations and hints were used for classic UI examples of pre configured pages. Unfortunately it's not \nsupported for Freedom ui. Probably developers decided not to keep it in Freedom ui. So it's up to you. Okay, we can \nskip this part and what buttons complete the page.",
+    "chunk_type": "paragraph",
+    "chunk_index": 43,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 139,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 43
+    }
+  },
+  {
+    "chunk_id": "4ea169ecf872883e51380273f72d1a4c",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nIt's important to understand that when some page is shown for a user as a business process item, then this page \nwill wait for a time user decision. So page will decide when its work is done. And in our case we can do it by buttons. \nIf we do not press any button and we Just switch focus to another section and go on to work with another data. In \nthis case, process will still wait for our decision and will not move on. So simply speaking, we can even stop our \nprocess. We can like block it at some stage without moving forward until we will specify some condition and make \nsome condition in order to proceed with our process. In my case, let's make save and close buttons are enough to \nfinish work with our page and move on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 44,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 145,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 44
+    }
+  },
+  {
+    "chunk_id": "ee5e1c1966d16bff41e2cf93fbe15738",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd such options are important to specify how we plan to continue our execution. Okay, at the end this item has \nparameters page parameters. We need to load here data from our process. We will use parameters mapping here \nand it's very easy. We will just click on this lightning button, select process parameter, select corresponding \nparameter and click select. That's how we matched process parameter with page parameter. Let me explain how it \ngoes. So here somewhere we have a process parameters somewhere like a memory of business process engine and \nwe use it here, here we finally transmitted such parameters to our C Sharp code. Later on we expected to get such \ndata back to process parameters and then such process parameters are held at process level. We can move our \nparameters back to. Sorry, we can move our parameters back to page.",
+    "chunk_type": "paragraph",
+    "chunk_index": 45,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 148,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 45
+    }
+  },
+  {
+    "chunk_id": "f01e7b3e631739a919da8406546bba34",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo this is important for you to understand that data will go from process parameters to our page parameters. Now \nwe set SQL text parameter and then average price for the page. We'll take its value from corresponding average price \nof a process. So in process parameters we have this select and this is called parameters mapping. And when this \nprocess item start, according to this mapping, SQL text will load data from SQL text parameter and average price \nUSD will load data from corresponding average price process parameter. No need to run items next items in the \nbackground. No need to create a technical additional record in activities section for this. So we will not use this. We \njust set parameters and save. Each time we save, our process diagram saved in our package will be changed.",
+    "chunk_type": "paragraph",
+    "chunk_index": 46,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 141,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 46
+    }
+  },
+  {
+    "chunk_id": "7e6e26a79c3c30df5ee9fe813207b9b5",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo if you do not save, your progress is only in your browser and will not work until you save it. So it's obvious I think.\n\n--- Page 10 ---\n\nOkay, so now we made this item to display some results. If you work in classic UI usually so it's mandatory to reload \nthe page in Freedom UI sometimes it's not mandatory, but I just want to make sure that everything works well. That's \nwhy I just reload the page for sure. Okay, let's open some house in Seattle and start our calculation. Now you see \nthat our calculation was quick. We got average price calculated. We also have debugging SQL text just for developer \nneed for debugging purpose. And our process seems to stop here. But if you go to so let's imagine you went to \nanother section.",
+    "chunk_type": "paragraph",
+    "chunk_index": 47,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 142,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 47
+    }
+  },
+  {
+    "chunk_id": "106b565506d7f1c13c4c438d6aaf939f",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo you didn't finish this page, you went to another section, you started to work with different data. You almost forgot \nabout your process. But if you go here into notification panel and find business process tasks list here you will see \npending items. You will see items that are waiting for your response and they will be hanging here until you finally \nfinish them. So that's how system reminds you about items that current users should do. And this list will include all \npending items from all different processes started from our started for our user. So show results. We click here, we \nsee again this page. We remember save or close button will finish work of this page. Okay, click save and process \nfinishes. We can go to process log to see its execution.",
+    "chunk_type": "paragraph",
+    "chunk_index": 48,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 139,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 48
+    }
+  },
+  {
+    "chunk_id": "65f0984d88c136adc793505dbb17dfc5",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nIt took 1.4 minutes and now you see that most of the time system spent on showing page and waiting for user \nresponse. Such analyzing of duration may help you to understand how actually your process is used. Where there \nare some tricky steps which make users to work longer to spend more time. So it will be helpful for you to \nunderstand your business and your level of automation and you will finally see what can be improved here. So this \nshowing page also as you can see it enables trace data. For this step. If we enable show trace data you will see final \nvalues of our process parameters. This is our input value.",
+    "chunk_type": "paragraph",
+    "chunk_index": 49,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 119,
+    "token_count": 139,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 49
+    }
+  },
+  {
+    "chunk_id": "d6254078bb9de1267b500c0098d22771",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nHere we have calculated offer type and so we have type and offer type input data is here and as a result we have \naverage price and we have SQL text for debugging purpose. In case if you have any questions feel free to ask \nbecause we almost finished this step and now you see we made a process which is able to show us some data and \nalso I need to explain you some side effects and the side questions. So for example user started our process but \nthen okay, process can be quite long and the user had previous steps there. So it may happen that user just did not \nsee this page. Something happens like something is broken and user was too quick to switch to other parts. User \nthought that something was hanging, then switched to another section and so on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 50,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 148,
+    "token_count": 164,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 50
+    }
+  },
+  {
+    "chunk_id": "2a213d58fe752f665a5cae213632434d",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nUser can easily go back to the process by looking at notification panel business process tasks show corresponding \npage, save it and that's how the page will be fixed. I mean the process will be correctly finished. And you see now \nuser has no items to execute. It's possible to include many different users into one business process. And also you \nneed to understand that process is still executed at server side. So when we have some page Displayed for client \nuser. This is a mechanism which sends special messages from server side to the client side. I think it was done with \nthe help of websocket. Then client side page listens to such websocket and if it gets it then it shows you the page \nand also displays business process tasks data here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 51,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 137,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 51
+    }
+  },
+  {
+    "chunk_id": "f68abe7dc5729632695acefea6c17cf3",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo user can look at any time even if user accidentally closed the page at all. User can go anytime here and see what \nprocesses are waiting for the feedback. So this is quite efficient way of making your process interactive, making your \nprocess able to input some complex data to display some intermediate or finishing results of calculation. And all of \nthis is possible thanks to user actions. We only used pre configured page. We have a lot of other options here like \ndialogues, open any page of existing section. Auto generated page is a very old item, probably 10 years old item and \nit is designed to just display different columns, different fields in one column and it also can be used for input and\n\n--- Page 11 ---\n\noutput.",
+    "chunk_type": "paragraph",
+    "chunk_index": 52,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 135,
+    "token_count": 159,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 52
+    }
+  },
+  {
+    "chunk_id": "83179fff9946f98db729a4a43c5fd632",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nWe have send email item which will show you some email text before sending it and approval tool which can be \nhelpful in case if you need to automate some kind of approval logic. When one user creates something and needs \nconfirmation from another user or even set of users that everything is okay. And usually it's used for something \nwhich makes commercial importance like contracts, invoices or some other types of documents where some other \npeople must confirm that everything is okay in some documents or data. So approval is a base product mechanism \nwhich helps to organize such kind of confirmation by different people and make it well automated inside of creation. \nIf you want to know more about different process items, I recommend you to attend our customization course. \nThere are more examples there and they are fully no code.",
+    "chunk_type": "paragraph",
+    "chunk_index": 53,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 53
+    }
+  },
+  {
+    "chunk_id": "c9a4390f878d7108f54f9b41901e868d",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nBut our sessions are intended for developers. That's why we focus on coding. That's why we see how we can get \nparameter values, how we can save them and how finally we can merge this coded development approach with no \ncode stuff which can be designed with no programming. In case if you have any questions feel free to ask. This \nexample is over and probably it's time for us to have a 10 minutes break. So if you have any questions feel free or \ntype your question during the break. So next topic for our session will be about processing events. So processing \nobject events and I need to explain why you need to know about it. So this is a server side functionality and its \npossibility to handle some operations and possibility to react for system at some changes that we perform in our \ndata.",
+    "chunk_type": "paragraph",
+    "chunk_index": 54,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 54
+    }
+  },
+  {
+    "chunk_id": "f193cc2cb9092aae01086dae6de51fca",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nLet me show you three ways to handle object events. But before it makes sense to download everything to file \nsystem to commit it to version control. Because it's our next step that we successfully did. We will save everything \non disk in case if you have any questions, feel free to ask. So we save all of the changes we recently did at file \nsystem. You see, it takes a bit time, more than expected. Okay, we have real changes. We have migration settings. \nOkay, now we can commit our changes to version control. You see, I have two big topics here. Okay, we can commit. \nGreat. Sync, pull and push. Yes. Okay, so now we finished finalized our steps that we did in previous example. And I \nplan to show you and explain what is event handling and how we can handle it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 55,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 148,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 55
+    }
+  },
+  {
+    "chunk_id": "2eec2ffd4ba96b76ff9c909a9f4987e1",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nWe have three different ways to handle events at creation objects. Let me show you free handle handling object \nevents. First one is very easy. This is no code solution. And using business process start signals, I will quickly made \nan example. I will make an example for you. You'll understand how it works to be very easy and very quick. But it has \nalso disadvantages. It has only three supported events and relatively low speed. But it's really fast to develop. So I \nwill show it for you. And let me show you this easy way of handling data changes. So let me explain some business \nsense. Let's imagine we create new realty. Like we press new, we fill in some data. Okay, so this is an apartment for \nsale sound test comment. So let's imagine when we save data. So physically we do insert into new realty.",
+    "chunk_type": "paragraph",
+    "chunk_index": 56,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 152,
+    "token_count": 187,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 56
+    }
+  },
+  {
+    "chunk_id": "0c6270f77784babc72295fff3d253f5f",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo we insert a new reality record into our data model. And if we do the such insert, we want to create several realty \nvisits automatically. Let's imagine we want to do this task. So once insert happens, we want system to automatically \ncreate some visits for us. This is possible to do and even with the easiest way of doing this, with the help of start \nsignal, we can do this easily and make it using business process. Let me show you. Let's go to process library. And \nyou should be very careful when you create processes from process library. Because when you click new here, \nsystem will take into consideration current package system setting. So this is a classic UI stuff. But you should be \ncareful because you can create processes even for any kind of solution.\n\n--- Page 12 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 57,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 57
+    }
+  },
+  {
+    "chunk_id": "146c98649690e22bf45093d2875fd6e9",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo go to settings and you see target package is dev classic. So you should change it for usr realty. Yes, modify. Also \nthere is some side effect which I can't easily understand and explain here. Now you see some strange packages. Usr \ncom something and combination home another something. So it looks like system dreams about some packages \nbut we cannot find them in our packages structure. So we will not see it here in our packages. Also, even if you go \ndirectly to look at the database and we will search for packages, could choose information or maybe like this. No, it \nwill be not so good. Okay, we can just select everything from this package, show a new one first and you see that we \ndon't have any USR special packages here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 58,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 138,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 58
+    }
+  },
+  {
+    "chunk_id": "21b1e78bf76c72161d7e9f7976dfa5b3",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo it looks like here we have something artificially created, possibly used for future customizations of some apps, \nbut we don't have it now. Okay, so we will select only one package here and our code will be USR2 Add Reality Visits \nprocess. So now you see Auto add realty visits process and you see we have code and title. Great. So the main idea \nof handling object events the help of start signal. Of course it's simply to turn our start simple event clicking on this \nbutton, change type button enter start signal event. Why I say start signal? Because technically we have another \ntypes of signals. So we have wait for signal or now we have throw signal. So we also have intermediate signals, they \nhave a bit different functionality. So start signals are designed to start your processes and by default it's an object \nsignal.",
+    "chunk_type": "paragraph",
+    "chunk_index": 59,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 151,
+    "token_count": 184,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 59
+    }
+  },
+  {
+    "chunk_id": "351b88c4372a0122ac0b3d2627bbfe70",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nTechnically you can use custom programmed signal, but object signal is the most commonly used and we have to \nspecify object which we want to listen for our event handling. Of course, this is our reality hidden UI object, this one. \nAnd we have only three supported events so far. Developers have plans to improve this functionality to have three \nbefore events and three after events. Now we have only after events and we have after record added, after record \nmodified and after record deleted. With delete we have some additional functionality which looks like this is actually \nbefore event because when we will handle record deleted and try to select record that is about to delete, it's still \npresent in database. So for delete we use before delete event.",
+    "chunk_type": "paragraph",
+    "chunk_index": 60,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 133,
+    "token_count": 156,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 60
+    }
+  },
+  {
+    "chunk_id": "58f785b8f88a418199cc0ea877a6eb24",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nBut for added and modified it's definitely after add and after modification because when we do selection from the \ndatabase, it shows that data was already added or modified. So in my case I plan to handle insert event. So record \nedit and in. So in general you can use additional conditions here and such conditions could be helpful if you want to \nrun your process not for any reality insert, but for some certain data, for example only for houses or only for \napartments or some complex condition. So now I will just skip this part. But run following elements in the \nbackground is really useful feature.",
+    "chunk_type": "paragraph",
+    "chunk_index": 61,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 111,
+    "token_count": 130,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 61
+    }
+  },
+  {
+    "chunk_id": "84baa159df59c3881e619938b62be398",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nIf you run your process with no background option, it means that from user point of view, insert or update will take \nsome time plus time for running of your process because it will Be started at the same scope at the same thread. So \nwithout background perceived speed of your solution will be not so perfect. It's if you set run following elements in \nthe background physically system performs scheduling of your process according to insert event into one time \nexecution with the help of background process scheduler and it will finally start in a separate thread. And from user \npoint of view insert will be processed faster and corresponding event handling will be done in a separate thread \nwithout any visible delays for end user. So in general, running in the background is recommended to guarantee better \nuser experience, better perceived speed.",
+    "chunk_type": "paragraph",
+    "chunk_index": 62,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 147,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 62
+    }
+  },
+  {
+    "chunk_id": "d9bfc17a4c23c3372a6f19e83c5ac272",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\n--- Page 13 ---\n\nWe can name this signal realty added which means that once the signal is triggered, it means that some new record \nwas added. Okay, so we can start the process with the help of signal. But what we have at the moment of start, \nunfortunately we don't have so much. We can switch to advanced module advanced settings and we only have one \nsingle parameter unique identifier of record which triggered our signal. So this record triggered this signal. And the \nonly value we have is ID of the record. So no price, no name, no anything. And if you really need so you have to select \nthis data from the database. In our case, I should explain the business sense of it. My plan is to automatically add \nrealty visits after we add the new realty record.",
+    "chunk_type": "paragraph",
+    "chunk_index": 63,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 145,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 63
+    }
+  },
+  {
+    "chunk_id": "5a08bb1842c94dc21cd45f25f5f246e8",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nTo insert a visit we need parent realty and some additional columns. So let me use add data item which object to \nadd data of course to the visit. Be able to visit one record. Okay, and we can specify columns of added visits. Of \ncourse it will be parent realty. This is mandatory column, we have to specify it. We probably can try to calculate \npotential date and time. And possibly we can specify comment or some other columns as ID and historical columns \nwill be filled in automatically. Okay, parent reality, we can take it from start signal so we can take it from process \nparameters switching to process elements reality added and then double click on unique identifier. That's how we do \nthis. Setting comment will be something like auto added visit. Physically it turns into a C sharp string here with \ndouble quotes.",
+    "chunk_type": "paragraph",
+    "chunk_index": 64,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 179,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 64
+    }
+  },
+  {
+    "chunk_id": "ea320d375dbacb220e08f2f6ee59dc97",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nOkay, and visit date and time can be something like current date and time and then we can go to formula. So for \nexample, we can add some days, add days and let it be just one day forward. So one day into future from current \nmoment. This is just a simple example. We can name it add visit. This will be just one visit. You can use copy and \npaste approach if you need many. But of course it's better to organize some cycle to make it more efficient. So now \nlet's Test how it works with just one visits first so we can save this process. And you should remember once you \nsave the process with start signal and if your process is active so it's not disabled. Now you see it's active and this \nprocess will work each time you have new insert.",
+    "chunk_type": "paragraph",
+    "chunk_index": 65,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 65
+    }
+  },
+  {
+    "chunk_id": "e41f7173c37365281a4549cbeb57b588",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nLet me show you go to realty section, try to copy data, save it, look at it. Now you see new visit was automatically \nadded. Automatically added and visit date and time is somewhere in future. So you see that it works. We can make \nmany visits as one operation. I will quickly make a cycle for you. This cycle will include parameter. I will use integer n \nparameter just to make kind of a cycle variable for me. Initial value it will be for example 3 so it will be variable which \nI will decrease one by one and I will use formula to decrease my cycle parameter. So I will save value to n and \nformula value will be N minus 1. Especially use spaces here because so tiny formulas are hard to read and having \nspaces will make it better and like more visual.",
+    "chunk_type": "paragraph",
+    "chunk_index": 66,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 66
+    }
+  },
+  {
+    "chunk_id": "6dab1f71ec51fa45ae46a47d2d88da81",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nMonica and possibly Paddy, are you following me today? Should I make poses for you? Please confirm if everything \nis okay with speed of our solution. Thank you Monica. Okay Adrian. Okay? Yes, Adrian. Sorry, not Paddy. Adrian. \nOkay, just a formula which makes it easy and you see we can just decrease n by 1 and rahi thank you. Thank you. \nGreat. So we have something like n equals n minus 1 in this formula, this very easy expression. But then we have to \norganize a cycle and we can use conditional flow going back to this stage. Now this is a sequence flow, but we can \nconvert it with this change type button to conditional flow. Conditional flow will only work if a certain boolean \ncondition is true. So I have to compose this condition.",
+    "chunk_type": "paragraph",
+    "chunk_index": 67,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 140,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 67
+    }
+  },
+  {
+    "chunk_id": "139d1b86ab488733abe12cc2bb955501",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\n--- Page 14 ---\n\nThis condition will include double click on n parameter then comparison greater than zero. So if this boolean \nexpression is true, then my conditional flow will work and will be used here otherwise. So this is another sequence \nflow. I will turn it into default flow. Default flow has a difference, you see a small dash at the beginning. Default flow \nworks as a else statement for an if operator or default statement for a switch operator which probably is better \nalternative. So default flow will work in case of no one from conditional flows executed. By the way, I made here a \ncondition and also I can make a title for it and I encourage you to provide enough titles to make your process self \nexplanatory to make it easy to understand.",
+    "chunk_type": "paragraph",
+    "chunk_index": 68,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 140,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 68
+    }
+  },
+  {
+    "chunk_id": "f21172f077cb7afe0ba8ad3d20f7b0e2",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo while n is greater than zero, we go back, we do one more insert and then we go back to this formula and \ndecrease N Again here we have N equals to zero. This is just a title, but it will show us that it's the end. Here it will be \nlike finish item. Okay? And as you can see, it's very easy process. And also we can just make it a bit more useful for \nus. So for date and time calculation, we add some number here and we can add n days. Double click. And now you \nsee special macro for n parameter was added here. So first time we will add three days. Next time we will add two \ndays, then one day and then we will finish the process. As you can see, we can make simple cycles in business \nprocesses. Save it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 69,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 151,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 69
+    }
+  },
+  {
+    "chunk_id": "827546cca5d835a65fb669ae78da801b",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nOnce I save it, this process is already actual. So I do not need to start it with a special button. Then I will go and \ncheck it again. For example, we have an apartment in Florida. We have no details, okay. And we can copy it some \nnew save it. When saved, we can see its detailed data. And you see we have three days ahead, two days ahead. And \ntomorrow you see all three visits were added successfully and our process executed correctly. We can go to process \nlog to see our recent execution. And also it's interesting to look at the cushion execution diagram. This diagram \nshows number of items, how many times this step was actually started. So you see we had three cycles here, cycle \nbodies, then we finished our execution.",
+    "chunk_type": "paragraph",
+    "chunk_index": 70,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 139,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 70
+    }
+  },
+  {
+    "chunk_id": "ca22f9b11da22d897433161915428fb7",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo execution diagram sometimes may help you to understand how exactly your process started, how it worked. And \nthis can be helpful if you go to process work details. You see we add visits, add parameter and again if we enable \ntrace, then we will see all the values of the parameters at each step of our process. You can also see duration in \nmilliseconds. And you can analyze and understand what is the slowest part of your process, what is the fastest part, \nwhere you spend the most of resources. Such things as duration can be really helpful to analyze overall \nperformance. So it was very easy. Simple example of handling object event with the help of start signal. As you can \nsee, it doesn't so take too much time. It's very easy and fast to develop. But we have quite simple three events and \nrelatively low speed.",
+    "chunk_type": "paragraph",
+    "chunk_index": 71,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 152,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 71
+    }
+  },
+  {
+    "chunk_id": "30e71b7df4e0f42ec1390d01c71eca6e",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nWhen I say about low speed, you see point two second. It means 200 millisecond for execution. It's probably not so \nmuch, but if you work with multiple records. If your task is to process data with as fast as possible way. So having \nsuch time spent on it probably will be not the perfect, not the best idea. So we have two more options of handling \nobject events. Both of them require coding. And the second is object embedded process. Let me Explain what it is \nabout. We will focus on objects. Now let's open so any object. We can open any object and you can see its events \ntab. Events. Now you see 13 supported events. So it's a lot. We have 13 different options to handle events.",
+    "chunk_type": "paragraph",
+    "chunk_index": 72,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 133,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 72
+    }
+  },
+  {
+    "chunk_id": "6859ff716b9a2847109844e068cfed7d",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd once you start to use it, for example before insert you see system generated some code, we can copy it. Then \nwe can look at open process button. So it's important to mention that any creatio object has its own unique \nindividual embedded process. This embedded process is designed only for one process purpose only to handle\n\n--- Page 15 ---\n\nobject events. The way how you can handle it includes using of events sub process using its start message item and \nwe have to paste our code that we initially copied from this into this. Then you can use items like script tasks, \nformulas or user tasks. And the most commonly script tasks are used. And then you can connect your start \nmessage with this script task. In this script task you can also operate with embedded.",
+    "chunk_type": "paragraph",
+    "chunk_index": 73,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 142,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 73
+    }
+  },
+  {
+    "chunk_id": "59b1f45b6868252abac29bd94a3e3d9c",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo with your current entity with its data row, you can use entity methods for it. But there is a very strong \ndisadvantage of using this approach in general, and this disadvantage is quite serious. This type of event handling \ndoes not work in packages compiled as separate assembly, simply speaking for all. So for any modern package \nwhere this option is turned on in order to make fast compilation, your event handling with embedded process will not \nwork. And it only works in old styled packages where you have no compiling into separate assembly. For example \nCRT base this package, as far as I remember is not compiled as separate assembly and we can look at its objects. \nFor example, we can find the contact object. It's one of the best examples. Contact. It's not here. Okay, let me find \nwhere it is placed properly.",
+    "chunk_type": "paragraph",
+    "chunk_index": 74,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 74
+    }
+  },
+  {
+    "chunk_id": "a7fa222b1bde97b91fe28040d77fa0cd",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nCrtui let's check or maybe base something. CRT core base package. Yes, CRT core base this one Contact object if \nwe open it, as you remember Creature has open source for base product configuration. We can see events. We have \nsome events settings here for our object and before insert, after insert, before delete, after delete and then we can \ngo to open process to see examples of implementing it. So you see some examples of event sub process, start \nmessage then script task for execution of some useful logic and in many cases it's based on script tasks. Also you \ncan see examples where we have some methods running and methods can be implemented in embedded process \nproperties here and also as well as using of some additional usings. Where we have my usings it should be \nsomewhere here I believe Parameters. Oh, usings are here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 75,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 75
+    }
+  },
+  {
+    "chunk_id": "60b0fc2fbda69d68ca38e6dcce59b2a4",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSorry, quite obvious. So methods include Decoration of the class fully and including methods that you need here. \nAnd the using can be also typed manually if you want. But this stuff works only in this package because we have \nCRT core base package which is not compiled a separate assembly. But if you want to develop such code, if you \nwant to compile it, ULIPs experience quite big delays. So in general use of packages not compiled a separate \nassembly will make it hard for you because long compilation time. And you may ask me about. Okay, so if this \npowerful tool with 13 supported event does not work, so how we can use it? How we can handle object events \nefficiently and supporting all modern package features?",
+    "chunk_type": "paragraph",
+    "chunk_index": 76,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 132,
+    "token_count": 159,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 76
+    }
+  },
+  {
+    "chunk_id": "7d400991b2cba517fce70c5958b07346",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nThe answer is third answer is Object events layer the most, let's say the most modern and like the most \nrecommended way to handle object events. It also still needs coding. So it means we will have a compiled code and \nit has a bit less events. Only eight supported events, but it is the most flexible and I will explain why. So now you will \nsee this example. We need some documentation for this. This is about backend server side data operations and I \nneed to find object events. Yes, some here somewhere here. Great. This is our article that you need to study if you \nwant to understand better how this mechanism works. We have eight supported events and the definition is before \nand after insert, before and after update, date, before and after delete.",
+    "chunk_type": "paragraph",
+    "chunk_index": 77,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 140,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 77
+    }
+  },
+  {
+    "chunk_id": "5e0370c540f83af04ef48e04e4deff8d",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd also we have very interesting and unusual event called saving before and after save. But what is save? It's \ninteresting that save was used in order to make the same handler if you want to organize the same logic for adding \ndata and for updating data record. So saving is triggered in case of insert and in case of update. And here we can \nsee the exact order of execution. Saving, inserting, then actual add of data is performed in database, then inserted \nand saved. So that's how order of execution events is performed. Sara tells that has to leave and will be finished\n\n--- Page 16 ---\n\nlater. Thank you very much, Sara. Sorry for making my sessions a bit longer than expected. Possibly we had to plan it \nto run for 2.5 hours. Okay, Sara, thank you very much for your time. Have a good. Have a good Tuesday.",
+    "chunk_type": "paragraph",
+    "chunk_index": 78,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 155,
+    "token_count": 190,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 78
+    }
+  },
+  {
+    "chunk_id": "bfa04e93fe53d6a0dcd8edc3968a6e28",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nThank you. So here we have a set of events for creating record, set of events for updating and obviously for delete. \nThank you, thank you. So eight supported events and I told you that it's very flexible. So why it is flexible, I will try to \nexplain. In previous examples we had to create a process which starts by signals or we had to make changes in \nobject if you want to add some event handling. But in this case in this third way of event handling, I call it Object \nevent layer or Object events or entity events. So in this approach we can create our own class which will not require \nany changes of the object that we plan to listen. So we will just specify object code and that will be enough for our \nclass to operate normally.",
+    "chunk_type": "paragraph",
+    "chunk_index": 79,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 145,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 79
+    }
+  },
+  {
+    "chunk_id": "ef48c36bdb114c69c33d1eec7ef9a0fb",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo we can listen any existing system object, no matter how far it is developed inside of our package hierarchy. This \napproach does not care about package dependencies at all. The only condition for it to work is presence of \ncorresponding object at our environment. And this is a C code that can be designed with the help of special item \ncalled C source code. So we will use this tool, we will use professional integration with Visual Studio and I will show \nyou how we can make event handling with it. It will not take too much time. For those of you who do not really like to \nprogram in C Sharp, this will be a bit boring, but I will try to make it fast and you will see business results right now.",
+    "chunk_type": "paragraph",
+    "chunk_index": 80,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 138,
+    "token_count": 159,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 80
+    }
+  },
+  {
+    "chunk_id": "11d7ba1edc792458f5fda56cf425791a",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd it's important to mention that this kind of event handling will be performed as well at server side. So no matter \nhow technically this insert will happen. Like we add data from user interface page or we add data with the help of \nbusiness process, or we add data with the help of API calls, processing it at server side will trigger this event \nhandling. So this event handling is inevitable for server side and there is no way how you can suppress such event \nprocessing. So it's quite reliable and that's why it is suitable to perform server side validation. Let me explain some \nbusiness sense of it. Let's imagine our task is to make some limitation on data input. For example, we will have a \nvery big price for our realty and we will put some very immense number here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 81,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 81
+    }
+  },
+  {
+    "chunk_id": "a07e39061657943e888e46c71eeb6629",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo okay, it's not correct too much. Yeah, you see we have some limitation here. Okay, what about this? Okay, looks \ngood. So here you see our commission, our huge price with 9000 of three dawns. So okay, very big price and system \nstill allows us to save it. So we want to limit this value. We want to make some server side limitation and we don't \nwant to save such big prices in our system because it's obvious mistake. So I will show you how to make server side \nvalidation with the help of entity events. Let's go. So according to the manual, by the way, I did not share the link with \nyou object business process. Oh, already shared. Okay, so according to the manual we have to make a C Sharp \nsource code and implement the this kind of text there.",
+    "chunk_type": "paragraph",
+    "chunk_index": 82,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 147,
+    "token_count": 185,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 82
+    }
+  },
+  {
+    "chunk_id": "8a32dfec6c024e0b684b8c900900d902",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo let's do this, select our package add source code. This is a special type of item which is designed to provide a \npure source of a C Sharp which we can develop inside of creature. Or we can create it separately using powerful \nexternal editors. But creating of C source should be done from this editor. Adrian is asking when do we use the \nserver side validation instead of client side? This is a great question, Adrian. Server side validation is much more \nreliable because client side validation is only working when you operate with the page. You remember our client side \nvalidation does not allow us to put negative prices like this. So it will not allow us to save it. But it can be easily \nbypassed. So for example, you can make a business process which will do this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 83,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 145,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 83
+    }
+  },
+  {
+    "chunk_id": "251c554a31c0631e519e76b9a4684c21",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\n--- Page 17 ---\n\nOr we can make a hack now trying to edit data in our list utilizing our editable list features. And when you see that if \nwe have no any event handling and we did not care about the handle, by the way, we don't have any no code options \nso far to make a custom handling of list edit events. So now you see we easily bypassed this. So I just wanted to say \nthat client side validation is good, but it's not perfect. You can use bypass with list edit. You can use a bit more \ncomplicated approach with business process that you can run and it will not follow client validation. Or even more, \nyou can use API call to insert new data and it will also do not use client side validation. So client side is not reliable.",
+    "chunk_type": "paragraph",
+    "chunk_index": 84,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 148,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 84
+    }
+  },
+  {
+    "chunk_id": "a726d1890fa827ba73486ca82cc338c8",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nThis is only for page and it's limited on the page. So if data comes some other way not from your page. So your \nvalidation will not work if you do it in client side. Server side is much more reliable. It will work anytime when entity \ndata model is used. No matter if it's used from ui, from API call from a business process. So it will work anytime \nwhen you use data model. So let's go back to our C sources. We have to create it. I selected a package add C sharp \nsource code and that's how I get this tab. It makes sense to provide better friendly name here. Let's say it will be \nnamed USR realty events. So my code for this configurable item will be realty events.",
+    "chunk_type": "paragraph",
+    "chunk_index": 85,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 136,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 85
+    }
+  },
+  {
+    "chunk_id": "cfd1fbd45f788bf0e3fff3edd2491312",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nI'm too lazy to compose a different title, so I will make the same title because it's technical thing. No one will be \nselecting it from any list. So let it be my package no description because I'm lazy again. And we have this example \nnow you see all we have here is list. So just small set of properties and no localizable string and here we will have C \nSharp code here. Of course we can type it in this editor, but it's not so powerful, not so quick and it will not display \nhighlight some errors, syntax and other stuff. So I will show you powerful integration with Visual Studio if you work \non local on site environment. Of course, if you work in cloud conditions, you will have to type your code here. And \nRakhi is asking, oh, have to leave. Okay, thank you, Rakhi.",
+    "chunk_type": "paragraph",
+    "chunk_index": 86,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 151,
+    "token_count": 188,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 86
+    }
+  },
+  {
+    "chunk_id": "43f48745e66dce2df08c8c526622cf95",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nWe will finish probably in 10 minutes, so it's not so hard. Thank you for your time. You will watch videos. So I will \nshow you how to integrate it with Visual Studio because it's much more efficient than typing your code manually \nhere. So we can save our new created source code schema source code item into our package. Physically it saves it \non disk, so we can see it on disk. And of course we can also see it in our configuration in our package. This is our \nnew item. This is a fully server side view feature. So it includes C sharp code and it's necessary to compile if you \nwant to see how it works. Let's go to file system and check it out. So let's go to our package, then go to schemas and \nthen we have to find realty events.",
+    "chunk_type": "paragraph",
+    "chunk_index": 87,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 87
+    }
+  },
+  {
+    "chunk_id": "49b581a14231855c1f84d6a1c62890f8",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nThat's why having a friendly name is important because it will be good looking at our disk and also at our version \ncontrol. So here we see some bit of metadata. We do not care about it too much, but a real T events CS file. It's a \npure C Sharp code that we can develop into and we can develop with Visual Studio. So let me show you how to use \nVisual Studio for this. We still have to run it as administrator if you want to debug. We can close previously opened \nfiles. Probably we can close automatically generated solution, close solution. So no solutions at all. Then I will show \nyou how we can use Visual Studio for efficient development. I also need to show you some file system settings that \nwe have thanks to Creature.",
+    "chunk_type": "paragraph",
+    "chunk_index": 88,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 142,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 88
+    }
+  },
+  {
+    "chunk_id": "235461af20e5d17ece0a4b3f901ba25a",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo inside of a package folder we have files and we have csproj file. This project file was generated by creatio. It has \nseveral sections of libraries with references which makes it possible to add the custom libraries if you want to \ninclude them into this project. But the most important is that this csproj file is used to get your compiled library of\n\n--- Page 18 ---\n\nyour package. So what you need to know that all necessary for your Visual Studio to run and to work with your code \nis already created by creation by its own. So I will use Visual Studio file open project. Then I have to carefully select \ncorresponding folder. As you can see, my previously opened projects were in D5. I go to D1 Webep, there's of \nconfiguration pkg. Then I will find my realty folder for my package files.",
+    "chunk_type": "paragraph",
+    "chunk_index": 89,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 150,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 89
+    }
+  },
+  {
+    "chunk_id": "82ee566763ff335a3548c26885caacd8",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd then I have to open this C Sharp project file CSProj open it. Studio will think for a couple of seconds, but it will be \nstill very quick. And if you want to do the same with a package which is not compiled as separate assembly, you \nhave to look at special part in terms of configuration. SLN solution. This is a very big solution, includes more than \nseveral thousands of C files. So it will take couple of minutes for Visual Studio to digest all of its sources to \nunderstand everything all the references. And it will be possible for you to use it for development of C Sharp sources \nin case if you operate with the package that is not compiled a separate assembly. But in our case, luckily we use this \noption. And that's why opening this project is quite easy and quick thing.",
+    "chunk_type": "paragraph",
+    "chunk_index": 90,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 151,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 90
+    }
+  },
+  {
+    "chunk_id": "f7fa4239e447690c592e7561ec278b28",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo if we can find this C sharp file C sharp code of course, I already created an example, it will not take too much \ntime. Entity event listener so my code is ready. I only have to copy it for you into chat. You'll be able to download chat \nmessages along with video files. And I will use the same code into my own. I need to tell you that here we have full \nfeatures traditionally supported by visual studio like IntelliSense using for example, like this Terrasoft. Sorry, you see \nin Auto IntelliSense you see autocomplete, you see system highlights text and you see that when I type something \nwith mistakes, it will immediately show error messages. It will show that we have something wrong in our text. It will \nhighlight this text and tell us that we have something missing.",
+    "chunk_type": "paragraph",
+    "chunk_index": 91,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 146,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 91
+    }
+  },
+  {
+    "chunk_id": "89707d832e72b14b2f4854c2d5f97a15",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo this is quite powerful editor with intellisense and Autocomplete we have to perform a class with couple of usings \nand inside of some namespace. There is a tradition to keep your configuration code into terrasoft configuration \nnamespace. But in general you can decide yourself and you can create and support your own namespaces if you \nwant. So here we have terracelot configuration just because of tradition using some system namespaces. And what \nis the most important here is how we decode declare our class. This class for listening of object events must be \ninherited from base entity event listener and also this class must be decorated with entity event listener C sharp \nattribute special part of C sharp code which sets additional properties to our class. And this property includes \nschema name parameter. That's how system will understand what Exact object you plan to listen.",
+    "chunk_type": "paragraph",
+    "chunk_index": 92,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 92
+    }
+  },
+  {
+    "chunk_id": "c6537357f6528063ce8dd86c76bd30c8",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo this line number seven is very important because it shows what object we plan to listen. Very important. We can \neasily make a mistake here. If we do, then nothing will happen and we will have no listening at all. You have to \nspecify name of existing object here. Okay, then we have from one to eight supported methods that are virtual \noverridden methods over base class. So we have to make public override void and then provide corresponding \nmethod name. We have article explaining all supported methods here you can see and in my case I plan to make it a \nbit more interesting and useful. So I plan to use on saving event which will work in case of insert and in case of \nupdate. As this is an ing event, saving it will happen before insert and before update of record.",
+    "chunk_type": "paragraph",
+    "chunk_index": 93,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 148,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 93
+    }
+  },
+  {
+    "chunk_id": "66e7700bb9bdde02a934882699accebb",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAccording to our documentation we have some arguments here and for before events we have reference to our data \nrecord which is an instance of an entity class and also we have some before arguments. Such arguments are quite \ninteresting and important. We can check out what are the values there and you will see that inside of traditional \nproperties we have is validation enabled boolean property key value which is ID of selected record which is currently \nbeing processed and also we have is cancelled property we which helps to organize graceful reject of execution of \nour event. And if you want to make it gracefully without any notes for end user you can just enable is cancel true and\n\n--- Page 19 ---\n\nyour event will not happen. But this approach has a disadvantage and this silence which user will notice probably is \nnot self explanatory for the caller side.",
+    "chunk_type": "paragraph",
+    "chunk_index": 94,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 155,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 94
+    }
+  },
+  {
+    "chunk_id": "87d9e0dcfa373af67846bb436d53f535",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo for example, if user tries to add new data and provides too big price then system says okay, no error messages. \nBut when user will start to check it will turn out that corresponding record was not inserted or updated. So this \nsilence sometimes is not so desired and we can make our operation like with some noise and it will be quite rude \nloud noise with throwing exception. So we can compose message text and put some data there and then throw an \nexception to make our message code dependent from language. We can use localizable strings. So let's save our \ncode and we need to use localizable strings here. This will be also example for you and then we can go back to C \nsharp source code.",
+    "chunk_type": "paragraph",
+    "chunk_index": 95,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 133,
+    "token_count": 154,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 95
+    }
+  },
+  {
+    "chunk_id": "d20e2846a61833fa5bf1b16815c7f584",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nWe already saved our code, open it from embedded editor and we can create localizable strings and our code is \nvalues too big. We use this localizable code and our localizable text message is here. Prices more than certain limit \nare not allowed. This text helps us to get localizable string from properties of this schema. Then we use String \nformat to replace some pattern with a certain number with a certain string and then we show this message for user. \nAs result, this throwing exception will finally make an error 500 at server side. So it will be internal server error. That's \nwhy I say it's quite loud and rude behavior. But it works. So it's very practical for our case. User tries to do something, \ngets error message, gets error text and everything is quite clear.",
+    "chunk_type": "paragraph",
+    "chunk_index": 96,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 141,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 96
+    }
+  },
+  {
+    "chunk_id": "8ea5ac441040419ccdbbe3d7df503bec",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nAnd user will see that operation was not done and there is a reason why it failed. So we will see this error message. \nOkay, sorry, not ready. Just a second. It okay, so we can save our C sharp source code. We did not change any line \nhere with embedded editor and as you can see it works well. So we can use the same item with internal editor or you \ncan use the same item with external editor. It asks us to reload. Okay, no problem. So we can reload it, we can save \nit, no problem. As you can see, it's up to you how you can, how you prefer to work with it. So finally we must make \nsure that everything was saved and then we go back to our application and start to compile code.",
+    "chunk_type": "paragraph",
+    "chunk_index": 97,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 143,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 97
+    }
+  },
+  {
+    "chunk_id": "f7f22e33d716401d6c3054292fab3455",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nWe can compile our package the first time we have to manually to do this our package and compile action \ncompilation takes some time and first time probably it will take maybe 30 or 40 seconds. Next time for the same \npackage it may take just 10 or 20 seconds. So it's quite good performance and it will be way faster than compile all \nof your system. So now you can see it probably took 30 or 40 seconds to compile and it finished with no mistakes, \nno errors. And you see that this compilation finished with no errors and we can check how it works. Once we created \nand successfully compiled such C Sharp source code, it automatically becomes active and will work with any kind of \ninsert. Let's try to copy this big price as one more time data. Let's say two.",
+    "chunk_type": "paragraph",
+    "chunk_index": 98,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 147,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 98
+    }
+  },
+  {
+    "chunk_id": "74d6fc11ae82451c29993db8687762c6",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo we have definitely greater than 1 billion. So our logic, our comparison condition here checks. I did not explain how \nit works actually. So sender is an argument object. We can run some parent implementation of the same handler if \nnecessary. If present, then we can turn our sender into entity. This is important to make possible running of entity \nmethods for our data argument. Then we try to get price value. Our column is named USR price USD. Let me check \nto make sure that it's correct. Realty columns price USD yes, it's correct, no problem. So it's correct operation to read \nprice. Then if price is greater than 1 billion we do throw in messages. If not greater, then it's okay, we do nothing. So \nit works like server side validation for us. And now I expect that system will not show me.",
+    "chunk_type": "paragraph",
+    "chunk_index": 99,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 149,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 99
+    }
+  },
+  {
+    "chunk_id": "a80ce0e31e2ee3b53bb7a3ce0a6ebb69",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\n--- Page 20 ---\n\nSo it will show me some error message now because can also enable browser developer console control shift I in \norder to make so and go to network tab in order to see all text or requests that will happen here. So this value is \ndefinitely greater than 1 billion. So let's try to create new record. Now you see that insert failed prices more than 1 \nbillion are not allowed. And you see that insert query finally finished with error 500 internal server error. Quite rude \nmistake from a server side when you perform your business logic. So it's like a crash, but it's okay, it's effective crash \nfor us. We see some response, we see error message. It's quite obvious. And client side also was capable to handle \nsuch error. And when we try to do this, as you can see, we see error message.",
+    "chunk_type": "paragraph",
+    "chunk_index": 100,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 154,
+    "token_count": 191,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 100
+    }
+  },
+  {
+    "chunk_id": "80548ef410683a9ea654c24715589e93",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nEverything is quite obvious that something is wrong. So we can fix our data. Let's make it not so big like this. When \nwe save it's okay. And you see that insert query now executed successfully. We have no troubles. We have data at \nour database and everything looks quite well for us. Existing data will be not. Will be not. So we can try to update it. \nOkay, let's try to update it with an edit page. So like slightly less clear save. We still have troubles. Prices cannot be \nallowed. Okay, cancel close. Now let's make trick make an update using list like this Clear. Try to save. As you can \nsee, still favor because it's server side. Server side is efficient. And you see we still have error message. We have \nerror description, prices are not allowed.",
+    "chunk_type": "paragraph",
+    "chunk_index": 101,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 143,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 101
+    }
+  },
+  {
+    "chunk_id": "10c0551a022add0320f18062df07bd60",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSo you see we cancel such attempt only if we will edit it in a value that is below our limit. Then we can save it and \nupdate will work normally. Data is processed normally and it works efficiently. The same business logic will work in \ncase if insert is performed from business process or if insert is performed with the help of API calls. We will study \nAPI calls and integration techniques. A bit later you will see possibilities for it and we will check again that this \nvalidation is quite reliable and works for any kind of insert or update attempts. Okay, that was the third option for our \nevent handling. So we already finished with the creating examples of handling events. And if you have any questions \nfor today, please ask me. I will finalize my today's session.",
+    "chunk_type": "paragraph",
+    "chunk_index": 102,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 144,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 102
+    }
+  },
+  {
+    "chunk_id": "1f17f7e538635219de3d163f10014a09",
+    "document_id": "606ea808918e",
+    "content": "# Speaker 1\n\nSave everything to file system because we had changes at our localizable strings business processes. So save \neverything and then committed to version control. Thank you very much for your time. Our session is over. In case if \nyou have any questions, feel free to ask. You will receive video recording as usual. So our session is over. Thank you \nvery much. See you tomorrow and goodbye.",
+    "chunk_type": "paragraph",
+    "chunk_index": 103,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-7.pdf"
+    },
+    "word_count": 70,
+    "token_count": 86,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 103
+    }
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "summary_id": "d9d24efd18ee",
+  "content_id": "c7028f12cf1e",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: page, schema, field, customization, integration",
+  "key_points": [
+    "page",
+    "schema",
+    "field",
+    "customization",
+    "integration"
+  ],
+  "keywords": [
+    "data",
+    "git",
+    "need",
+    "package",
+    "object",
+    "like",
+    "repository",
+    "file",
+    "changes",
+    "make"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 17806,
+  "compression_ratio": 0.0003931259126137257,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:58:00.587747",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "page",
+        "schema",
+        "field",
+        "customization",
+        "integration"
+      ],
+      "keywords": [
+        "data",
+        "git",
+        "need",
+        "package",
+        "object",
+        "like",
+        "repository",
+        "file",
+        "changes",
+        "make"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

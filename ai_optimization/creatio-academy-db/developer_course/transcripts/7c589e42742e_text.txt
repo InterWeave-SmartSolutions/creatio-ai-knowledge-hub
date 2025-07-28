@@ -1,0 +1,1574 @@
+--- Page 1 ---
+
+ 
+  
+  
+Speaker 1
+ 
+ So today session number three of our development on creation platform guided learning. So we started 
+development questions. We already set up our environment. We did some simple changes there. We practiced with 
+objects and with data items. I just forgot to note that you need some additional permissions and when you place 
+your environment, your app into some protected folders like Cub or C program files or somewhere in users. So it 
+means that such folders are protected. In this case you may need some special permissions. I already did it 
+somewhere here, so let me show you what special permissions you may need. No, not here. Let me find probably 
+this one. Yes. So this is important.  
+  
+  
+Speaker 1
+ 
+ If you experience some problems with your app and if you start to get error messages about some files are not 
+cannot be written or you have some file system access issues, especially you can face it during calculation, you can 
+create separate setting and you can find your app folder Terrasoft web folder and add special role IIs underscore I 
+users and you should provide modified permission for this role for all of your application folder Javasoft web folder 
+this will grant unlimited file system access to create your application. So you will not have troubles with saving files. 
+You will not have troubles with application errors about some file system issues. In case if you will find errors like we 
+had with Bazel, that system tries to save some data somewhere and fails. You can also make sure that such 
+permission is granted.  
+  
+  
+Speaker 1
+ 
+ So iis I users it's a local role which includes set of automatically created users made by creature. Sorry, made by IIS. 
+When you create your application pool system makes automatic creation of application pool identity and such 
+identity. Actually it's medically generated user. I can show you something in my c users. You see I have a lot of site 
+automatically generated users created previously, so I probably should remove most of them. But this is something 
+that you need to know. That system runs under such privilege. If you have local administrator privilege, you can also 
+look at your task manager and you can see who exactly runs w three WP process. In my case this is some user 
+which I can't see unless I will start something with my local administrative privilege.  
+  
+  
+Speaker 1
+ 
+ But currently my regular user has no such privilege because of corporate restrictions which I have with my 
+environment. So let's move on. So this is something that may help you with troubleshooting of your access issues of 
+your application. Now let's move on with next topic. So I just wanted to show you some interesting thing with virtual 
+objects and with connecting objects to a database view because previously we worked only with regular normal 
+objects when you created it makes the same database table in your real database. So we added some data. Now 
+you see the same data records physically, but you can create very interesting situation when object can be 
+connected with something in database not created by creation application.  
+  
+  
+Speaker 1
+ 
+ For example we can make our own view in database, so we can use some SQL scripting and then we can make an 
+object named the same as this view and we will have the same columns in our object the same as available in view. 
+And finally it will show you some interesting trick, how you can use creation objects to read data from sources not 
+created by creation system. For example, such sources may be created by developer or can be used for integration 
+purpose to connect with other systems. So let me show you some simple example which implements this idea. And 
+first of all I need to tell you something about business. So here we have a contacts section. Contacts were installed 
+here because we recently, yesterday we installed customer 360 app and we used application hub for this.  
+   
+
+--- Page 2 ---
+
+ Speaker 1
+ 
+ Here we used application hub and we installed it from marketplace. So this customer 360 was installed from 
+creation marketplace. Customer 360 encodes contacts and accounts. So now we have contacts section and what I 
+want to show you is that contact by default already has birth date column and also contact entity has integer age 
+column representing current age which is recalculated every day automatically according to birth date and current 
+date. Let's make a bit more examples with age calculation so we can click on supervisor. We can provide some birth 
+date somewhere in like this where it be save close. So now you can see we have provided some birth date and we 
+have automatically recalculated age. So this is age in years and everything looks good. But let's imagine we have 
+some unusual task to calculate age of a contact but not in years.  
+  
+  
+Speaker 1
+ 
+ We want to calculate it in days. So just to see how many days certain person lived and what is its current age in 
+days. We can do it easily at the database level. So let me show you, I already have some examples how we can do 
+this. So I will do it quick and I will provide you necessary scripts for this SQL view. So let me show you how we can 
+do this example. So first of all I will show you an example which makes corresponding calculation like this. And this 
+is Microsoft SQL server query which selects id name, birth date. And we use some SQL functions like date default 
+function to make some kind of calculation here. Now we do a calculation of a difference between birth date and get 
+date.  
+  
+  
+Speaker 1
+ 
+ So actually it's better to say difference between get date which represents current date and birth date. And it makes 
+a difference in days and shows us some integer value. So if we run such query we will see list of our contacts and 
+we will see age in days. This is a very simple example. It is made specialist, so simple so you easily understand it in 
+real life. Such approach like making your own selections from the database can be much more complicated. Using 
+some aggregations, using joins, using subqueries, using having operators, using group by and a lot of other things. 
+So you can do it unlimited complex if necessary. My example shows you that you can do some queries, you can use 
+some functions from SQL, you can do the same in postgres.  
+  
+  
+Speaker 1
+ 
+ And this is example of how we can do some special selection from the database which is not normally available if 
+you want to use just only creation tools. So creation supports three types of databases. It doesn't support some 
+specific database dependent features like date, d function. And also we have not so much of flexibility building 
+queries in our creation. So as we have flexibility to build queries directly from SQL. So now you can see we have an 
+example of such query. So what else we do? Now I will show you how we can make a database view based on this 
+query. We can use SQL script and of course I could run this SQL script directly at my SQL Server management 
+studio. But my plan is to make it transportable to other solutions, to other environments.  
+  
+  
+Speaker 1
+ 
+ So I will share example of a script for creating Vue for SQL version and some of you are running postgres. For 
+example you may run postgres at cloud instances like demo websites or maybe trial websites. They are usually 
+based on cloud, on postgres. So this is example of postgres for the same stuff. Okay, so these such scripts of 
+course obviously are database dependent. Now I plan to use my SQL version but I will not run it directly in this editor. 
+I know it will work for me, but I can show you how we can make a SQL script in our package. So let's go to 
+configuration our system, then settings, then advanced settings. That's how we go to advanced settings part. Or we 
+can also go here by typing the URL of our website zero dev.  
+   
+Speaker 1
+
+--- Page 3 ---
+
+  
+ That's how we go to configuration section, find our package that we decided to use. Add SQL script I can name my 
+SQL script whatever I want. For example USR, create contact age, days view, something like this. It could be 
+anything. When we create this script, when we start the script in a process of package load, it could before package 
+because at the very beginning of the package load procedure, no backward compatibility just apply and I have my 
+script here in the clipboard. So this script creates or modifies database view with a certain name. This name should 
+start with USR. Then you can do whatever you want and you can name it. But there are some conventions agreed 
+with developers and if you make a view it makes sense to name it vw.  
+  
+  
+Speaker 1
+ 
+ Just to make clear that your object is not a simple table, you plan to make a view. So this view name should be the 
+same as our future object that we will create. That's why this view has such a strange name. This view will work as 
+select statement, selecting set of columns and as you can see I have to use aliases for columns with USR prefix 
+because of requirements. When we design our object in creation configuration it asks us, not forces us to use USR 
+for column prefixes. Yes here so you can see we select id name, birth date which includes day, month and year and 
+date diff as an integer value which will represent age in days. So this simple view will return four columns for us and 
+we can register so we can set it up as a SQL script.  
+  
+  
+Speaker 1
+ 
+ You can save this SQL script. Obviously if you work with postgres database you should use postgres version for this. 
+When you create SQL script you can decide what type of database you are focusing. So close it and we can also run 
+this script. So of course I could run it in my SQL server management studio. But here this is example of how we can 
+run SQL script from your configuration section. Okay I'm trying to install it means run this script. Now if it has some 
+errors we can go to properties find last error message text so we can see what went wrong here. In my case 
+everything looks good so nothing special. I already have my view and I can check this view presence running 
+something like this. Select something so select everything from and here is my name of the view.  
+  
+  
+Speaker 1
+ 
+ So if I select successfully. Yes, now it looks like my view is present. It has four columns and my database level part 
+is ready. So I have database item as a view which returns some data if I select it. If something is not clear, if 
+something you do not fully understand why I'm doing this. Please don't be shy, ask questions, I will be happy to 
+answer you. And now this database part is ready but now we have to join it with creation. In creation we can create 
+an object and we can provide the same code for the object as our database view name. Here I will also paste it for 
+you. Don't forget we can also make some title, something like contact age and dates, something like this and the 
+most important property here.  
+  
+  
+Speaker 1
+ 
+ So now I will show you and explain some of behavior settings we must set up. Represents structure of database 
+view this is very important property which tells creature that system should not try to create corresponding table or 
+find existing table. If we create an object with represent structure of database on it means developer took care about 
+database part themselves. So everything is already okay at the database. So creature will just not interfere with the 
+database to not try to create a table or modify existing table. So creature simply doesn't know what is in database 
+for you already corresponding object. But when you will try to use this object, for example, ask creation to select 
+data from it.  
+  
+  
+Speaker 1
+ 
+ It will try to do it and treat it as a table with a set of columns and columns information will be provided in this object, 
+so it will try to use it as a regular object, but it will not try to modify its structure the database. This helps us to make 
+anything at the database level, including views or self handmade tables. Or in some cases we can use like 
+
+--- Page 4 ---
+
+materialized views in oracle or indexed views in Microsoft SQL. So you can use anything that can be used for 
+selection from the database and turning on this option represents structure of database view makes this trick 
+possible. So when we design our object we will not use parent object because we do not need any kind of 
+inheritance here.  
+  
+  
+Speaker 1
+ 
+ All we have to do is set of columns which matches with set of columns of a real database view. First column is 
+USRiD and the type is unique identifier. So we have to represent it. Type is unique identifier, column code is Usrid and 
+title could be just id. Okay, this column is done. Next one is uSR name text 250 you can name name and it's okay. 
+Third one is USR birth date which is a date only birth date. And the way the last one is integer USR age days the most 
+interesting column for us, integer USR age days age in days okay, so we got it. The last change that we have to do is 
+the only required property for an object is the Id. I don't like this title. I would like to see here key column or key field.  
+  
+  
+Speaker 1
+ 
+ So our key column is id column we created especially it has Usrid code and it has id title. So this is the most 
+important part and that's all we can save and publish our object. As you remember, we can just click publish 
+because it performs save anyway. And luckily for us, publishing such object which is represented as a database view 
+does not make any changes in the database. So it will be really quick. Such publishing will be faster than creating 
+new table and saving publishing. Regular object so we made an object with a special property, special behavior and 
+our object is ready now so we can start to use it. We can go to the lookups and as you already remember, lookups is 
+the easiest way to see what is inside your object. So we can register our object age in days.  
+  
+  
+Speaker 1
+ 
+ We can register this object as a lookup. By the way, you probably noticed we have a new button here. Sorry for this 
+alignment, but it's not a big deal. This button appeared as a result of data binding tool and it helps us to automate 
+creating of data items and for many different scenarios. In our case, we need data item for register object as a 
+lookup. If I click bind lookup here, I ask system to automatically create data item for me. I need only to select target 
+package and system will do automatic creation of data item without my manual action. So I can see what happened 
+here, what actually was done. You see that this data item was created automatically contact agent days so we can 
+close it. It is saved into our package now and it's okay, let's open created object now.  
+  
+  
+Speaker 1
+ 
+ You can see we have name column, we have birthday and we have age in date. So you can see this calculation 
+works. There are some side effects because of this is editable list and our object is not inherited from base entity. 
+We have some side effects caused by it like this. So you see it's not working fully as expected. But when we reload 
+data, at least reading data is working right, working correctly. So you see that calculation of contact in days, age of 
+contact in days is performed well. And you see this calculation works well in real life. You may use this approach to 
+perform some long lasting calculations like turnover finance calculations, like some debt calculations, or other 
+things that usually take time. So you may do such calculations at the database level with kind of views and the 
+subqueries.  
+  
+  
+Speaker 1
+ 
+ Then you can create an object representing your data structure and with the same name and same columns set. And 
+if you mark this object as represent structure database view system will not modify data tables. It will trust you and 
+it will try to read data from sources that you specify. So it will try to read data from the table or view with the same 
+name as your code. So this trick can be also useful. And I would like you to see how we can connect such object to 
+existing contacts section. In order to make connections between objects, we must use lookup columns. In our case, 
+it's harder to make a lookup column from contacts to our new entity. So it's better to use our new entity and then use 
+reverse joins to connect with contacts.  
+
+--- Page 5 ---
+
+  
+  
+Speaker 1
+ 
+ Now I will show you how we can do this. But first of all we need to modify our SQL script. Let's go to our SQL script 
+and add one more column. We can add one more column. It will be id as contact id. So I will use new not to contact 
+USR contact id. Yeah, so this will be one more column and I plan to use this column as a basis for my future lookup 
+column. Of course I need to run this query. This will be very quick. We can check out the database that our new 
+column appeared. Great. It's important to name it exactly as is USR contact id. Okay then we will modify our object. 
+So our script is okay, let's go to modify our object we can add lookup column named contact not contact id.  
+  
+  
+Speaker 1
+ 
+ We will name it USR contact title can be contact and there are some architectural peculiarities. When we have a 
+code something then on database system works with code plus id suffix. So I named my column in the object level 
+USR contact and system will work with USR contact id when it reads data from the physical database. This happens 
+not only for this object, it happens for all objects with lookups. So let me show you like account. For example 
+account column account entity has an industry lookup column and at the database level we have industry id. It has 
+type at the object and at the database we have type id, city id, region id and other lookups saved in the database. So 
+when we have a USR contact column, system will work and search for USR contact id at the database.  
+  
+  
+Speaker 1
+ 
+ We have to specify lookup property. It will be a contact obviously it looks like that's it. We do not need anything else. 
+Let's save and publish. Click publish, make saving and publishing. Now you will see how we can use this object so 
+we can add connected. Probably we need to reload the page because of some client side issues. Caching issues 
+maybe prevent us from working normally. So our main entity is contact. Now I plan to join my contact age object as 
+a joint entity using reverse joins. Let me show you how we can do this. Add columns related objects. Now I have to 
+find contact age in days object and then I will use a age in days. For example, it will be maximum value no matter 
+which one I will use. I can even use first record value.  
+  
+  
+Speaker 1
+ 
+ So let it be just maximum value for one contact. We always have just one data row in our connected entity. So 
+maximum will work for us. And I can just name this column age in days. No need to use any additional filters, save it. 
+So now you can see that age in days was successfully joined to existing contacts section. We did not customize 
+anything with contacts at all. We used our own artificial objects. We made an artificial lookup column and that's how 
+we are able to connect to different entities and display corresponding data. I hope this is interesting example for 
+you. You probably have your own experience with use of column settings, related column settings. Some of you 
+probably visited our customization course provided by my colleagues.  
+  
+  
+Speaker 1
+ 
+ So possibly this is not very difficult for you, and if you have more questions about it, just tell me. So it was an 
+example of how you can use additional tricks with objects and to connect it using database view. There are some 
+other properties here like virtual connected to the portal, wave update and so on. So I only have to tell you a couple 
+of words about virtual. So virtual means that object will be not connected to database at all. Virtual objects are 
+usually created for the purpose of providing some template structure and then to be inherited or for the purpose of 
+managing data without actual read from the database operations inside of object model.  
+  
+  
+Speaker 1
+ 
+ If we will search in our configuration for objects, search for something with the name base, we'll find a lot of objects 
+
+--- Page 6 ---
+
+like base address, base entity, base folder and so on. I will open base lookup as example. You will see this object is 
+virtual, so it has no its own table. So you see object based lookup. But if you go to the database, you will not find the 
+database table named base lookup. So you see we have some base value lookup, something very suspicious and 
+interesting and okay, I will look at it later. But base lookup is not found here because this is a base object which is 
+virtual. And mainly it exists only to provide inheritance. We have set of columns, business columns, we have 
+inherited system columns.  
+  
+  
+Speaker 1
+ 
+ And when we create new object inherited from base lookup, it will be a true new real object. But you will inherit a lot 
+of properties and events, settings and behavior from base lookup. And that's how this object can be really useful 
+because you can. So base architects can program lookups behavior. Once in base lookup object, then you create 
+your own lookups inherited from it. We did it actually. And that's how you can use one template for many parts of 
+functionality. And it's quite efficient. So we have a lot of base objects, most of them are virtual. I only interested with 
+this strange example, base value lookup. So let's search base value lookup. Base lookup this value, it's very strange 
+why we have table for it? Oh, because it's not virtual. Someone needs this object and someone keeps some data into 
+it. Probably. It's interesting.  
+  
+  
+Speaker 1
+ 
+ Let's check. I never faced it previously. Base value lookup let's see what. So it's empty. Translations are also empty. 
+Okay, no problems. Everything is okay. So that's it about lookups, about objects. And I only wanted to show you one 
+more thing, final thing about objects. And let's look at our reality type classic object as example. So I wanted to tell 
+you about support of translations. So for you already know that creation supports translation of user interface. You 
+already found we have a languages section, we have set of active languages, so you can easily switch your 
+environment into other languages. In your profile you can switch languages if necessary. But what you probably do 
+not know so far is that creation does not only support your UI language change, it also supports translation of some 
+data records.  
+  
+  
+Speaker 1
+ 
+ And inside of the objects you can specify what columns will support this translation and what columns will not 
+support translation. By default, name and description text columns are turned on with this option, localizable text. It 
+means that if you want, you can save translations of name and description column into other languages. And this 
+translation was already done at base product lookups. So if we read some data from some standard lookup like 
+account type, you will see six standard records in English. But if you will look further and find out that we have a 
+translation tables for it, they usually have cis prefix, then main entity name, and then LC suffix, you will see 
+translations for such data into other languages. So you can order by cis culture, you will see translations into other 
+languages. Here is russian translation.  
+  
+  
+Speaker 1
+ 
+ Here is probably what else, I don't know what is the language here? This seems to be italian, maybe Portugal and so 
+on. Probably, I don't know, it's hard for me to guess. I can join and so decode such cultures. Okay, let's do this. Not so 
+difficult, syscall type. So this is our localizable, we can join sysculture and we will read data link from cis culture and 
+then culture name as language. Okay, so now you will see corresponding language. So this one was Russian, this 
+one is Dutch language. So Netherland language, this is Portuguese, this is Spanish, Vietnam language, French, Italian 
+and others recently added Hungarian language, Czech Republic, arabian right to left by the way, there is a right to left 
+support. This is what Sweden probably Hebrew, Romanian, Japanese.  
+  
+  
+Speaker 1
+ 
+ So you can see translations of the same records that you get from your main table are saved into different 
+languages and out of the box lookups. That is because name and description are supported with localizable text. 
+
+--- Page 7 ---
+
+You can turn this option off if you don't like it or you can keep it on by default because it was inherited from base 
+lookup. It was inherited and that's why we did not change it. So we also have possibility to save translations of name 
+and description into this separate table. This separate table automatically is automatically created for our lookup 
+and so if you enable at least one column it will be this separate table will be named CIs, then your object code, then 
+LCZ. So in my case this information is empty. Sys usr realtor type lcz my table is empty, we have to type classic.  
+  
+  
+Speaker 1
+ 
+ Yes, you see my table is empty because I did not provide any translation. But once you will support several 
+languages and if you want to keep your lookups translated into other languages so you can start to use it. And the 
+best way to transport and make such translation is to register one more user with another language and then log in 
+at this user, go to lookups and when you will go to corresponding lookup then you will start to edit data. If you edit it 
+with other language, so you will provide translations and this translation will be saved properly into corresponding 
+tables. I hope this is interesting enough so if you're interested and really need such translation support, creatio is 
+ready for this so you will not face any troubles. Okay, so finally we finished playing games with contacts with our 
+age.  
+  
+  
+Speaker 1
+ 
+ Everything should be saved on disk. Of course we will remember now about our visual studio code and git client to 
+share our settings with our imagined team members. Now you see some items created so we can commit 
+something like contact age view example added. This will be our comment for the commit that we do with these 
+recent changes. Okay, as you can see we did not forget about registering of this lookup as of this object as lookup in 
+lookup section and made a data item with the help of data binding tool. Okay, we can submit everything to our local 
+git repository, then pull and push to global git repository. That's how we can share our settings with our other team 
+members. Okay great.  
+  
+  
+Speaker 1
+ 
+ What else I wanted to show you before we proceed is example of delivery because it will be important I think that 
+you are interested how we can transport our solution for test and production. You remember version control. 
+Working with git with bunch of files is not so efficient when you want to transport your solution for test and 
+production. This type of sharing with many files is good for developers and between developer environments in 
+order to make delivery to your test and production. You can simply export your package into a file and then I will 
+show you some magic. Now you can see our file was saved here. This one is our file saved seconds ago. And this is 
+a zip file.  
+  
+  
+Speaker 1
+ 
+ Inside of it we can find Gz archive and inside of it we can find a single file with metadata saved here and it's not so 
+readable. And this is a transportable format for creation packages. Okay, so this is metadata of your package fully 
+including all the package items, including all scripts, including processes, whatever we have and even more including 
+file system package contents from the files folder. Let me show you telescope configuration ekg dev classic. We 
+have some file content as a result of our configurations, so such files also will be saved inside of this zip archive. 
+Then we can go. Recently I installed one more environment so it will be test environment d two test hello node test 
+so we can run this test environment. Currently I am running my second creation environment on the same PC.  
+  
+  
+Speaker 1
+ 
+ It will take some ram, some cpu. You see my ram consumption is more than 11gb now, so I can start my second 
+environment. I will use it as a test environment to check how delivery works and to also make sure that I have no any 
+troubles with changes with transition of my settings between environments. Sometimes it happens. Now I started to 
+receive this attempt when I attempt to login. Then it drops me again to the login page and on the second attempt I 
+successfully log in. So it happens quite often. But now I don't know how we can fix it. So okay we logged into our test 
+
+--- Page 8 ---
+
+environment. I can show you how we can load our changes from zip archive file. This is very easy. We go to settings. 
+It doesn't require any special skills. We only have to be administrators.  
+  
+  
+Speaker 1
+ 
+ So we have to be a member of a sysadmin. Let me show you system users. My supervisor user is a member of 
+system administrators role. The only condition necessary for us to load packages and here is my application hub on 
+test environment and I can just install the application from file, select file from disk, go to downloads. This is my dev 
+classic package saved several minutes ago. Open it. Normally this loading procedure will finish successfully, but in 
+some cases you may face troubles here. You may face missing data items, you may face foreign key constraints and 
+exceptions, some database exceptions. So in some cases you may face errors here. Anyway, you should look at 
+installation log because it will give you enough technical details about how well our loading was performed. So we 
+will invest several seconds into looking at it.  
+  
+  
+Speaker 1
+ 
+ Let's see what happened. So 13 seconds we started no visible errors and 31 finished. It looks like maybe 18 seconds 
+to install. Very good, very good. Okay, so you see some text, comments and details about installation of the package, 
+but now it's okay. So our package is already loaded. We can find it in configuration section of our test environment. 
+But this package will be not editable. So our package after loading we can find it here. Dev classic as you can see 
+this package is not editable because we loaded it from file. We intend to use it for test or production. So system 
+does not expect that we will modify it. So when you load package from file it will be read only if you really need to 
+modify it.  
+  
+  
+Speaker 1
+ 
+ For some reasons you can do this by unlock for hotfix temporary thing that helps you to make temporary make your 
+package temporary editable. If you forget to lock it again, system will do it according to the special timeout which 
+can be found in system settings. Now you can see my package was loaded. You see status, no errors. It means all 
+SQL scripts or objects were applied successfully. Now let's go to the lookups section of my test environment. As you 
+can see this lookup section doesn't have any column setup which I prefer to do. Okay, we can go back to list view 
+and we can start to adjust it to easily find the corresponding new lookup records. Now you can see my realty types. I 
+expect to see four records here, so they were normally loaded. Everything is okay.  
+  
+  
+Speaker 1
+ 
+ Contact age in days as you can see according to my current data on test environment is calculated. Great. So it 
+looks like everything I did was normally loaded and we can use this environment for future checks. Now we can 
+temporarily disable it, but then later we will check our new environments. We will check our new application which 
+we plan to do right now. So you see that delivery is very easy. You can just export your solution to the file. If you have 
+many packages, you can export many packages. You can also do some tricks at the database. For example you can 
+put several GZ files into one zip file if you want to make it faster to load.  
+  
+  
+Speaker 1
+ 
+ And today I plan to show you how to make a UI settings how to make new sections not with section wizard because 
+it's classic UI, outdated stuff. I will show you how to make new sections, new bake applications made with 
+automations provided by application hub and Freedom UI. So we will focus mainly on Freedom UI. But before doing 
+this I need to explain you what is application hub and how it's intended to be used. So we go to settings, then we go 
+to application hub section and open it. Special tab opens for you. And this is a place which is designed to manage 
+your freedom UI customization. And now we need to talk about new functional item of creation that is called 
+application. So I will try to explain you what application is and how you should understand it.  
+   
+
+--- Page 9 ---
+
+ Speaker 1
+ 
+ Application appeared not so far ago, maybe just a couple of years, and packages were present for more than ten 
+years. So you see that application is generally relatively new to creation and previously we had only packages. So 
+application is a new logical type of items and usually one application means one or several packages. So application 
+is a higher level logical setting and it may include so it must include at least one package. But sometimes it can 
+include more than one package. As example, customer 360 app includes three packages. Only one of them will be 
+like current default package for saving of customizations. But now let's focus on the idea. So customer statistics is 
+an app and it has three packages behind it. Application has its own properties like name, version, default page 
+description, date of creation and so on.  
+  
+  
+Speaker 1
+ 
+ Also it has information about its developer. Terrasoft here means that it is a creation company. Terrasoft, as you 
+remember from previous sessions is previous name of creature company and creature brand. So application has its 
+own properties. Also application has color settings and application has icon. You can find data binding tool, but it's a 
+bit artificial. Application just made for compatibility. Previously data binding tool. It was just a package and when we 
+loaded it we have this GLB data binding package, we can see its contents and originally data binding tool was not 
+designed as a freedom UI app. So all customizations we have here are based on classic UI tools. That's why we will 
+not see any pages, any special section data. We have just data items related to different parts of creation 
+application. But it's not actually sections.  
+  
+  
+Speaker 1
+ 
+ Such items are data items created for some purpose. Data models means objects. Business processes are like 
+automated business procedures implemented as diagrams. So code in creation. They are called business 
+processes. No integrations and advanced settings show us all packages for this app or filtered by selected package. 
+So application is a higher level setting or entity which includes one or many packages. The reason why creatio 
+needed applications was caused by shift to so called composable apps approach. I will try to explain what it is. So 
+originally we had no any customizations at our studio environment, so it was just constructor only. Then we installed 
+several apps like customers 360 like data binding. Also we installed maintenance tools and so on. If necessary we 
+can remove some of installed apps.  
+  
+  
+Speaker 1
+ 
+ The system will revert and go back into its original state which was before installation of such tools. So finally, end 
+user system may include only solutions, only applications that user decides to run. And that's why we can call this 
+logic composable app. It's very close. Composable apps, it's very close how you manage your software at your 
+smartphone. So you have platform, let's say Android or iOS, and then you install necessary apps that you use for 
+some certain purpose. If you don't like some app or if it starts to work, not normally, you can remove it easily. And 
+previously, maybe three or five years ago, it was not so easy to do in creature, because creature had out of the box 
+functionality which cannot be removed from system. So old Kriacia systems included functionality that could not be 
+removed from it.  
+  
+  
+Speaker 1
+ 
+ So it was not fully composable approach. And we had just simply hard coded part of the system which also was 
+customizable, but it was not removable from the system. Now developers decided to make constructor only and 
+then to install everything that you need on top of it. And that's why they needed applications, because sometimes 
+functionality that you want to add includes more than one package. So developers needed applications because 
+some functions were designed as set of packages, not just one package. So application means set of packages 
+which includes some certain business functionality. And applications can also be imported or exported. So when 
+you export an application, it physically saves set of packages on disk into one zip archive file. So here is a single zip 
+file. If you look inside, you will see set of packages Gz files.  
+
+--- Page 10 ---
+
+  
+  
+Speaker 1
+ 
+ And this is pretty standard for creation. So you can use one zip file for many packages inside. It was possible even 
+before applications appeared. So now developers just improved this idea and made a separate logical level code 
+application. Okay, how safe is creatio? Kind of after you install a package? Like is there a lot of artifacts that are kind 
+of left behind or is everything cleaned up except for maybe database entries and stuff like that? You're asking a very 
+interesting question. For example, when you install it and then you decide to remove it, of course we have some 
+items in configuration like SQL scripts, which may do irrevertible change. So some changes in the database can 
+happen that you physically cannot revert.  
+  
+  
+Speaker 1
+ 
+ So ideally if you develop a very good app and then you remove it, you can take care for full recovery of your database 
+original structure after your application was removed. And if really needed, you can create SQL scripts which will do 
+this. Recovery and installation type will be uninstall app. So uninstall app installation type is a special scenario when 
+the script will be started only in case when your package is deleted. So this is kind of recovery steps that you plan to 
+do at the database in order to make everything clean as it was before installation of your app. But in real life, not all 
+developers do this.  
+  
+  
+Speaker 1
+ 
+ So in real life when you remove your app, some traces may remain in the database and usually this is not critical for 
+application because logically such columns or some data leftovers will not be available to see easily unless you go 
+to the SQL level, unless you start to make some special queries in order to find them. So in general, when you 
+remove some app, it will be logically cleared so it will fully disappear from the system. You will not see anything but 
+some tiny minor database leftovers can be found the same as you have a smartphone. When you install some app, 
+then you remove this app, some application log files, some application technical things may still remain in your 
+smartphone. If you go into smartphone file system with the proper tools, you will probably find it.  
+  
+  
+Speaker 1
+ 
+ So in general, it was designed to make it easy to install some app and to remove some app. And ideally when app 
+was removed, no visible traces should remain. Beddy is it clear? Brilliant. Thanks million. Okay, great. Thank you for 
+your questions and I encourage all of you to ask any questions if something is not clear. So having such a dialogue 
+in our sessions is much better than just a lecture. And I think lectures are boring. So speaking is better. Thank you 
+for asking questions. So let's move on. We need to do some practice, so to do some practical steps to understand it 
+better. Of course our practice will include creating your app. Now I need to tell you about some, let's say business 
+value.  
+  
+  
+Speaker 1
+ 
+ Our plan is to automate realty estate agency and we want to keep list of realty records in freedom UI application. We 
+will have a section for such list of realty records and we can use existing platform customization tools to make it as 
+fast as possible, to make it quick and easy. So click new application. We have several different templates here. In my 
+case, probably the best option is records and business processes. For very unique scenarios. You can use custom 
+app which will create an app and it will be empty. So you will have to create your own section inside. But if you create 
+an app based on records and business processes template, it will start to create a section for you. Section is a data 
+entity. So a big data entity which you can use inside your system.  
+  
+  
+Speaker 1
+ 
+
+--- Page 11 ---
+
+ In our examples of sections are accounts or contacts and also we have set of system sections like lookups or users 
+or system settings. So section in creature, it's like main big entity which usually has a lot of columns and usually has 
+some subordinate items called details. We will study it, you will see. And also if you're just more risky and you're 
+interested in AI tools, it's possible to make a section with the help of AI. And you need to explain in words what 
+section you plan to create, what colors should be there, what details you expect to see. But personally I do not like 
+this approach because if it makes it incorrectly, then you will spend more time to fix than to create from scratch. So 
+that's why I prefer to create from scratch. Okay, let's create new app.  
+  
+  
+Speaker 1
+ 
+ Let's change its color to something more like significant. And we can see, oh, we have some new icons here. So I 
+plan to create a real tea section. So possibly I could find some icon representing a house or apartment. Okay, let it be 
+like this. So it will be icon for my new section. Name of the application, it's very important will be caption of our 
+section. It will be title of new created object. So it's important whether it be real t and advanced parameters. You can 
+see we can provide some application code. Code is also very important because this code will be used to create a 
+package, to create a main object, to create some corresponding settings related to object like page or list and page 
+for edits. So forum page we call it. And so this code is really important.  
+  
+  
+Speaker 1
+ 
+ You will not be able to easily change it later. So it's important to provide it correctly from the first time. Also it's 
+possible to link so simply to create rhythm UI section based on existing object. But this option is really useful only in 
+case if you already have some created objects in your system. And usually it happens when you already have classic 
+UI solution and you want to migrate into freedom UI. In my case I will create everything from scratch. I will not even 
+use my previously created lookup because I planned to use it for Quest SQL. So we have a separate package, 
+separate application and let's create it. Creating will take just several seconds because it will only add some 
+template stuff like main entity, page list and that's all. So my app now is called Realty.  
+  
+  
+Speaker 1
+ 
+ It has its main name, version, default page, some description, date of creation developer. This is a string named 
+customer. If we change our system setting, named publisher to be possible to change developer of this package and 
+this app. Okay, no changes in app properties. We have pages part, we have list and form page, we have navigation 
+and section. So it's registering of a realt section. We have main object realty, we have no business processes, no 
+integration so far and we have structure of our packages. Now I need to explain what is shown here. So our app now 
+has only one package. This package has certain properties and the most important is that this package has a 
+almost black colored folder icon which means this package is editable. Let's compare with other customer 360 now 
+you see gray colored icons.  
+  
+  
+Speaker 1
+ 
+ It means such packages are read only. If you want to customize something in customer 360 app system will not be 
+able to save anything into such read only packages. So this will automatically create new package for you. And 
+unfortunately automatically created package will certainly have an ugly name. I will show you this a bit later and I will 
+show you how you can manage efficiently packages for different apps and how you can connect it. In my case I try 
+to keep it simple because I understand you are beginners, you want to make it work first and you do not want to go 
+into unnecessary complex things. So now we have one single app, we have one package for it and system helped us 
+creating main object, creating set of client modules representing page settings and some technical things for pages.  
+  
+  
+Speaker 1
+ 
+ And as you can see it created seven data items representing inserts into some system tables that are necessary to 
+make our application work normally as a section. Let me show you where we can see it. We can also run this app 
+but I prefer to work with main application window and in order to fight with any potential browser cache issues I 
+
+--- Page 12 ---
+
+reloaded it. Now we can go to studio and switch to my applications workplace or we can find all apps in all apps. We 
+will see all available sections including our reality section recently created this reality section now has no data. It is 
+based on main entity named realty and we can use edit page to add some data. In this edit page we only have name 
+column so no customization so far. Apartment in okay, let it be New Orleans.  
+  
+  
+Speaker 1
+ 
+ So this is just an example of a reality object that we plan to reality data that we plan to save. Such list and edit page 
+will be used to manually input data, to modify this data and to work with this data. Then of course we need to 
+customize it to make more columns to make it more useful to work with. But let's make a break and then we will 
+continue because it looks like I just forgot to have a five minutes break. So let's make a quick refresh and then we 
+will continue with customization of our new section. Now we continue to customize our section. So what we can do 
+here, there are several ways how we can make changes. I will show you which way I prefer the most. So when you go 
+to a certain section, for example here is list page.  
+  
+  
+Speaker 1
+ 
+ Then you open edit page. You can also open edit page by clicking on this action, but it takes two clicks quite hard 
+and we can just click on this hyperlink. Okay, now we have a so called form page or edit page. We can do 
+customizations right from here with a small edit page button. It will open corresponding page editor if you have. So if 
+you already passed our customization course, you already know how to use this page editor. I will only show you 
+some quick settings here. So we will not go and reproduce the same customization course because I need this 
+section only as a on the as a basement for our next programming examples. So customization here and no, code 
+settings are not the top priority for us. We will do it just because we need it for future samples.  
+  
+  
+Speaker 1
+ 
+ So I will do it quite fast. Please confirm. Do any of you reproduce the same steps just during the session or you just 
+watch and plan to do your own practical steps separately? Watching videos so please type plus in our chat if you 
+follow me just during this section right now and do the same examples at your environment. In this case I will do 
+something not so fast and please type minus in our chat which will mean for me that you are only watching and I 
+can do it quite quick. So not waiting for your response, some of you responded that you do practicing along with me. 
+Thank you Monica and Rakhi. But most of you just watch. Okay, I will not go too fast and I will show you and wait for 
+you to do the same.  
+  
+  
+Speaker 1
+ 
+ So my plan is to extend a bit our settings and make it more useful. When I select any column we can look at its 
+properties settings. We have some kind of object inspector for settings of a certain selected item. In my case here is 
+title code, data format, some settings and here I would like to make it copyable. For some unknown reasons, 
+developers who made a template made name not copyable. But I think it's very good idea to easily create copies of 
+existing records and copy names as well. Okay, we can change any properties here, not so many. Okay, so what else 
+our reality will have? Of course it will have price. So we can use number columns. As you can see we have set of 
+columns from this list. Add new field set so we can add different data columns to our page.  
+  
+  
+Speaker 1
+ 
+ Simply drag and drop. You see several potential places to land our page. Our column I prefer to put it here nearby 
+name. I can name it price. I can also specify the amount so maybe the currency of our price to make it more clear. 
+So let it be price USD if you want to translate it into other languages, you can also put translations here. Code is very 
+important property and I also need to warn you, a lot of beginners have mistakes at their pages just because of 
+messing with codes. So please take it seriously. I recommend you to set up codes initially just when you design your 
+columns and do not change it later. So let's set it responsibly. And as you can see, code is one of not so many 
+columns where we have to confirm our change or reject the change.  
+
+--- Page 13 ---
+
+  
+  
+Speaker 1
+ 
+ In our case, code will be something like USR because we need prefix for our new columns and technical things, so it 
+requires prefix. USR price USD will be our code and we confirm. Save this change. Okay, the data format will be 
+decimal, two digits, no description, maybe not required and okay, if you want you can make it required. So system 
+will not allow you to save zeros here. No need to make it read only, no need to hide, no need to make custom 
+settings for titles. But what we need here is element code. This is also technical part, but element code may be 
+important if you plan to search for this column in its settings, like in technical parts in JavaScript and client module. 
+So if you plan to do any kind of programming, then having a good looking friendly code is important.  
+  
+  
+Speaker 1
+ 
+ It should be unique so we can name it the same as our own USR price USD and confirm. As you can see, 
+confirmation is provided for the most important properties and columns of our items. So element code seems to be 
+important because we have this confirmation stuff. Okay, did it. So this is how we can make one more column. 
+Quick, let's say another one. Any reality has area. I will do it a bit faster now. I think you already got main idea how to 
+do this. Decimal 200 and also at the end element code will be USR area and confirm. When we click save, our 
+changes will be applied to the object, to the page settings. So we will have our settings saved in our system. Let's do 
+a bit more drop down type. We need a lookup.  
+  
+  
+Speaker 1
+ 
+ We need type what is real t and I will use it based on drop down or lookup. Column drop down and lookup are very 
+close synonyms so it's almost the same. The title for our new lookup column will be type. Inner code will be USR, 
+type and confirm. But lookup is not present here. We do not want to use similar lookup reality type made for query 
+CQI purpose. So I plan to make a fully separate solution and that's why we can make new lookup from scratch as 
+you can see system helps us with automation. We can create. We can ask system to create new lookup. It will be 
+realty type and code will be USR reality type.  
+  
+  
+Speaker 1
+ 
+ No classic UI words here so it will be our freedom usage reality type, title and code are necessary because system 
+will use it to create new lookup object inherited from base lookup. It will also register it as lookup in lookups section. 
+It will provide data items for this registering and the only missing part will be lookup contents. We will do it later. 
+Okay, type is clear. One more thing that we will need in our section is offer type because some reality objects will be 
+offered as for sale, others for rental. So we will have an offer type lookup to specify exact offer type. Is it sale or 
+rental? I will call it offer type. This is a title code will be something like USR offer type and we confirm it.  
+  
+  
+Speaker 1
+ 
+ No lookup for this so we can create one from scratch realty offer type I will do some poses for some of you like 
+Monica or macho or rakhi who confirmed that you do it just along with me. Okay, save it. And I also just was quite 
+quick. Normally by default lookups will be shown as simple drop down list. But in case if you select something 
+complex like big entity like contacts or accounts, it may be useful to use full scale selection window for the offer 
+type. We will have only two possible values like rental or sale. So that's why drop down will be perfect. We need to 
+scroll down and set up element code here. Maybe we will not use USR. So you can just use any unique string here. 
+So offer type will be also quite unique.  
+  
+  
+Speaker 1
+ 
+ This is just to make it more, let's say friendly when we will work with code part. Okay, so what else? Maybe we can 
+
+--- Page 14 ---
+
+just practice with a single text column and it will be just a comment 250. Maybe it's enough for us. Okay, checked 
+everything. Comment. Okay. And maybe one more example of a more complicated lookup with the selection from 
+big object. So let me show you one more drop down column. I will name this column manager. So it will be some 
+manager person who is responsible for managing data of this realty. Usrmanager will be our code lookup will be 
+selecting from contact. And as a contact is a big entity, we may need some additional columns to be displayed, 
+some filters, sort order and so on. So big scale selection window will be good enough for this.  
+  
+  
+Speaker 1
+ 
+ Good, good option for this type of selection. And I can also make unique name here manager as a code. Okay, so I 
+only usually set four parameters, title code, we specify lookup and element code. Okay, for the very beginning this is 
+enough. We have some required columns, some not required columns. Unfortunately we cannot use default value 
+setting here. So if you want to extend and make your solution more, let's say well customized, you will need to go to 
+objects anyway. So let's save our changes. Now. You will see what has been changed here. We can track what is 
+happening at application hub part, or we can go to our configuration section, reward it. Maybe we already see here. 
+Okay, let's still reward. So you will see your changes in configuration section. Now this page editor will finish its work 
+soon.  
+  
+  
+Speaker 1
+ 
+ It takes time because system saves client module. It saves changes to object, it publishes objects, so it takes some 
+significant time and that's why it takes a while. Okay, everything was saved. We can close this editor. You can check 
+what's happening with our new package. You can see it here, or if you prefer to manage from application hub you 
+can find your reality application. You can see two pages here and you can see one object. So main object realty offer 
+type and type are created as a supporting lookup. Objects and advanced settings will show us all packages. Here we 
+have only one package and usually I prefer to look at it sorting by descending order of date of modification because 
+usually you need to look at the most recent changes first.  
+  
+  
+Speaker 1
+ 
+ So you see that just from 20 minutes of our work we have a lot of items already created and including main entity, 
+including some objects that are used for lookups. You can also check if you go to lookups section, you will see 
+recently registered lookups automatically. So system also made this registering as data items. So it's quite smart. 
+And when you create lookups with the help of page editor, it will automatically create object for you. It will 
+automatically register this object as lookup and create corresponding data item. The only missing thing is contents 
+for this object. Any questions please? You're welcome. If you so if you have any questions, any notes, I'll be happy to 
+hear. Now it's time for us to think about some lookups. Okay, offer type probably is not so difficult. We have only two 
+potential offer types.  
+  
+  
+Speaker 1
+ 
+ The most commonly will be using sale offer type and another one will be rental. So we have only two offer types in 
+our system and when we have data binding tool it will be extremely easy for us to save all data into our target 
+package. And that's IT system creates thanks to data binding tool it creates corresponding data item automatically, 
+helping us to save our time and do not perform some boring work. So here you can see all the records of our lookup 
+were saved as data item. This is very efficient. One more thing which I wanted to show you is how you can use some 
+tools like export and import. Here you can see a lookup made for classic UI. I want to steal its data. Moreover I will 
+steal their ids. Let me show you what I'm planning to do.  
+  
+  
+Speaker 1
+ 
+ So let's do one more column display id. Column. I want to display it. I don't need description at all. Okay, save such 
+column settings. So we have four records here for our classic UI, just for the demo purpose. So you should not do 
+this constantly. But. Oh Andrea, no problem. You told me you had some issues with this performance. So if your 
+
+--- Page 15 ---
+
+colleague is still here, we can try to find out the reason why it is slow. Thank you. Thank you Andrea. Ok, so I want to 
+show you a simple quick example how we can use standard tools for export and import of data. Export is very easy. 
+We can do export to excel, any creature list. It will create a file as xls six format and save it to your disk. Great.  
+  
+  
+Speaker 1
+ 
+ Then we go to another lookup realty tape for Freedom UI section. And just for demo purpose I will show you how we 
+can import this data from file. Data import target object is already selected. We need to select file for our import. We 
+need to match columns and provide such column settings. As you can see, we have very similar columns names in 
+file and in our creature data model. That's why it was already automatically matched. Now I need to look. I need to 
+show you what this file looks like. And here you can see this Excel file. So it has first row with column titles. All other 
+rows are representing some data. Such files can be easily loaded into creature matching first column titles with 
+creation columns of objects and it will be one to one import.  
+  
+  
+Speaker 1
+ 
+ And if we import, we have to specify duplicate search rule. So what column will be used to check presence of data. 
+Okay, we can do it very technical way and check by id. In real life, when you import data from excel, you may not have 
+this id. You will need to select some, let's say reliable enough columns which should be quite unique. In my case, id 
+will be the best option for making such checks. And now you can see import was fully done. We can reload this data. 
+So we imported four data rows from file into our rhythm Ui reality type object. We can also use data item data 
+binding, automatic creating of it and data was added successfully. Now you see bound data. All four records were 
+created correctly and saved it to our target package. Great.  
+  
+  
+Speaker 1
+ 
+ Now we can do more steps with main object setting because I want to use some additional features available at 
+object model. Let's go to objects and I want to show you default values for our section. Unfortunately we cannot set 
+it from page editor, so we can go to object editor. For example, for the manager we can set default value as a special 
+system variable, current user contact. So if a person creates some reality record, it will be considered, this person 
+will be considered as the manager. Current user contact. Okay then by default. Oh no, it's okay. Everything is okay. 
+No errors. I just thought I have a mistake here. Okay, when we create new record, for example, we think that the most 
+common, the most frequent scenario will be working with houses.  
+  
+  
+Speaker 1
+ 
+ So we can make default value for created reality records as a constant. And we can take constant from lookup to be 
+house. So this will be our house. And when we create new record, this default setting will be done. If we had some 
+numbering we can also use auto number feature, but for reality I just did not use it so far. Offer type we can also set 
+as constant. And let's imagine that the most frequent scenario will be sale. So houses for sale is our primary 
+business. That's why when we create new record we will have such default settings. And when we finished we can 
+click publish which will make save and publish. Now you may ask me why we do so many of customizations here. 
+We need it for our future examples. And now it's over.  
+  
+  
+Speaker 1
+ 
+ So we made our section and we can check how it works. Going to our realty section or going to my applications 
+realty and opening its page, you see previous data. We have some price for department, some area, maybe it's in 
+square feet. So that's why we have such data. It will be an apartment for sale and some default contact. Okay, so 
+what happens when we create new record new, you see, default value is set for type for offer, type for manager, 
+some settings, test, comment and we can save it. So having default values really helps us to work with it. Oh, takes 
+time. Probably something happened. Let's check. As you can see, browser console is full of some debug messages. 
+But I think in our case it's not so very critical. So let's try to reload data and check. Yeah, it was saved normally.  
+ 
+
+--- Page 16 ---
+
+ 
+  
+Speaker 1
+ 
+ House in Seattle was saved normally. Okay, we have some kind of basement for our future study. And now I need to 
+tell you something that you will consider as boring. So we need to go deeper. Okay, a couple of words for list part 
+before we go deeper. List pages also can be customized so we can go to edit it. I just found this edit page button 
+and list page also can be customized. We can hide unnecessary columns, we can display columns that we need. For 
+example, we need, okay, we already have name, we need price, type, offer type, maybe date of creation here and area 
+in the same order such columns will be displayed. And that's it. If necessary, can also use some coloring stuff. You 
+can try to make some customization with setup, lining colors, spacing and so on.  
+  
+  
+Speaker 1
+ 
+ But now I try to keep it simple, everything as is by default. So I only have some set of columns set by default. Reload 
+this page so you will see default column settings for me. Okay, great. Looks very good. If we copy some data, you 
+will see that almost all columns are copied and that's it. So we can easily manage this. So what we have to do now, 
+this is customization level, doesn't require any programming. And of course you probably would like to make much 
+more significant and more, let's say technical things on this client side and the page level. I plan to explain how 
+creation made this user interface and how we can make changes in it using programming. And first of all I need to 
+explain you how client modules are designed and in order to check it out.  
+  
+  
+Speaker 1
+ 
+ So let's select our package, select only client modules and for example, let's try to open form page. If you click on the 
+form page directly on its title, you will see page editor, not a program code. You can find program code part of it. If 
+you click on this source code, don't save source code will be opened. Then we have to close form page because 
+having separate editors for the same item opened simultaneously, it's not a good idea. You can accidentally save in 
+one of the editors and you will lose changes made in another. So it's better to keep only one part at a time, only page 
+editor part or on the code part. Now you see quite strange JavaScript code which is really hard to understand what it 
+is. And also I can show you how you can open the same code quickly.  
+  
+  
+Speaker 1
+ 
+ You can go to write part. This is three dots button called actions. And then you can open source code directly 
+without opening page editor. So this is some kind of code. And now I need to explain you what we are looking at and 
+to explain you some concepts used at creature platform. So the language for this code is JavaScript. But as you may 
+guess, this code represents more like settings than executable stuff necessary to build this page. And before we go 
+in deeper, I need to explain that creation client side is fully dynamic and generated in runtime. So if you will inspect 
+any part of the client side page, it will show you some pieces of HTML.  
+  
+  
+Speaker 1
+ 
+ You see a lot of divs, a lot of some layout settings, a lot of classes, and also you will see plenty of Ng names here 
+standing for angular. So in Freedom UI, its undercover framework which helps us to build and display components is 
+angular. So if you have some angular knowledge and experience, you will find it easy to make your own new 
+components if you need it for your solution. I prefer to use as much as possible for base product standard 
+components because creating new components usually take significantly longer without clear, let's say profitability 
+for end customer. So now you see big complex structure of HTML. It's really hard to make it from scratch and luckily 
+creation is capable to build such pages itself using some settings about how page should be built.  
+  
+  
+Speaker 1
+ 
+ So this is result of work of big number of JavaScript files and such. JavaScript files consume information about 
+
+--- Page 17 ---
+
+controls, about settings, about what they have to build. And thanks to base product architects, we do not need to 
+type or develop such code ourselves. So creature pages are made dynamically, in this case with the help of angular 
+framework and using some page settings. Okay then I need to explain you one more thing about structures and 
+about JavaScript code inside of creation. So as you can see, creatio user site user pages client module client part is 
+built by big number of JavaScript files, so we can try to find how many files are used there. So opening any page, go 
+to sources, start to investigate structure of sources.  
+  
+  
+Speaker 1
+ 
+ Here you will see plenty of files and what is really frightening, then you will see a lot of configuration items here. So 
+probably several hundreds, maybe up to 1000. And it's important for you to understand that client side of creature 
+consists of big number of relatively small pieces of code. So quite big number of JavaScript sources. And if anyone 
+from you has any experience with JavaScript sources and JavaScript apps, of course obviously you understand how 
+complex to keep this structure to manage it. And of course developers of creation also felt this difficulty and they 
+decided to use some world class standards to manage JavaScript application. In order to make it efficient, 
+developers decided to use special concept AMD concept let me try to find you some articles at academy for this. 
+Let's search for AMD.  
+  
+  
+Speaker 1
+ 
+ We'll find some articles Academy AMD modules module overview yes probably this one is good article explaining 
+this, but also this concept can be found at some common sources like Wikipedia. So AMD stands for asynchronous 
+module definition. So this is an idea of splitting of all your JavaScript application into parts code modules and make 
+such modules capable to be loaded separately from other modules and asynchronously. And let's that's how we can 
+use modern browsers, multitasking tools and finally a synchronous load of modules will give you much better 
+received performance of your JavaScript app. So main ideas of AMD is split of your JavaScript app into parts. Such 
+parts are called modules and organize asynchronous load of such modules only when they are necessary. We have 
+special framework which keeps an eye on this and this framework is require G's.  
+  
+  
+Speaker 1
+ 
+ Quite simple and very old framework require G's. You can read more about require G's, probably you can find it, 
+requiregs.org probably can find its original page, explain explanations and so on. And this is quite old framework still 
+working and its main task is to keep in memory such modules, organize loading of modules, organize module 
+dependencies and creature users require G's so we can try to find it like this require G's version. Now you can see 
+version 235. So required G's is used in creature and its main purpose is to keep and handle all such client side 
+module structure in browser memory, providing possibility to load only necessary modules when they are requested 
+for certain page and which makes quite good performance because in total our client side now has probably 1000 of 
+modules, 1000 of small JavaScript files.  
+  
+  
+Speaker 1
+ 
+ But when you open any page, system needs only some part from it. For example, it needs only 100 or maybe 200 
+modules. Required G's helps to load only necessary modules by the help of by the analyzing of definitions of such 
+modules and so generally required J's is main under cover framework for organizing of executable JavaScript code 
+in creation client side and required J's has its own requirements for how such JavaScript code should look like and 
+that's why we are coming to answer of why our client module code looks like this. This is a result of use of required 
+G's framework and the first command that you see here, it's a function define. This function is calling required 
+gsmethod and it transfers some arguments. First argument is very important. This is unique module name 
+represented just as string by the way.  
+  
+  
+Speaker 1
+ 
+ Also client module has its own schema properties, so properties of changeable item saved in creation configuration. 
+
+--- Page 18 ---
+
+It has its own code localizable title information about parent client module so it could be used for inheritance and 
+package where this client module is saved. So code of your client module must be matched with the name of the 
+client module in your code. If name will be not the same as code, this will not work. So first argument here is our 
+module name. This is just a text. Second argument is optional and usually it's empty. But this is an array of other 
+module names that are necessary to load before starting our module. So that's how we can set up that for this 
+module we need some else and system will load them 1st 3rd argument here is the most important. This is so called 
+factory function.  
+  
+  
+Speaker 1
+ 
+ This function has a main purpose to return you some data object. As you can see it returns JavaScript object, 
+including in our case six properties. This JavaScript object represents necessary information which system needs to 
+know about how to build our page. And this information in general was created with the help of automation tools of 
+page editor and that's why we did not program this code ourselves. So most of this was done by page editor. But you 
+still need to know and let's say navigate here properly. I will quickly explain what are these properties? And now you 
+probably will not remember this, but it's just for you to like for your reference. So this JavaScript object in general 
+represents information about page view.  
+  
+  
+Speaker 1
+ 
+ Config diff represents visual part of the page and physically this is an array in JavaScript and this array includes set 
+of items. In each item represents one control on the page. Let me show you a simple example. This is control for 
+name column. So here when we look at this name we have some title and we have input field. So in total it's called 
+control. So some tool on the page which we can use for data input and output. And this control has its own settings 
+which we can provide inside of view config diff array. So this item represents name column. You can see values, 
+settings, some different properties and layout. Config represents position and size, type represents the way the type 
+of the component used for input and output.  
+  
+  
+Speaker 1
+ 
+ We have a label, we have some other properties, parent container, name and that's all. It's interesting to mention that 
+here we have some settings which represent connection between our control and physical data field connected and 
+saved in memory. I will explain this a bit later. Now you should remember that view config represents set of 
+information set. So it's just array of JavaScript objects. And each JavaScript object represents information about 
+control that you want to see on the page. So for price, for name we have one control, for price, another control and 
+so on. You can edit it if you want, but you should be very careful keeping syntax, keeping breakage, keeping 
+everything correct and if you do something incorrectly it will not work and we have no any intellisense or 
+autocomplete tools which will clearly show you where you did some wrong settings.  
+  
+  
+Speaker 1
+ 
+ For example, if I accidentally do something like this, system will notice it and it will not show me where I have a 
+mistake. So you should be very careful working with this part and 100% of such settings are now performed with the 
+page editor so it's not so hard. Not so difficult to do this customization with page editor and then looking at this 
+code. Okay, in general, view config diff represents UI structure set of user interface items that you plan to see. Okay 
+great. Let's move on to other items. After view config we have view model configuration. This is a bit more difficult to 
+understand because viewmodel config is information about so called attributes. Attributes are variables at the page 
+level. So like storage items, like memory cells.  
+  
+  
+Speaker 1
+ 
+ For page level they have special names generated by application automatically and once I tried to change them, it 
+turned out to be hard coded each time you create them. So it's not a good idea to make them better. If it looks a bit 
+ugly like this, you should not try to change it because it looks like page has also some metadata saved separately 
+
+--- Page 19 ---
+
+which has corresponding names inside of it. And if you start to beautify with no any part. So if you start to edit your 
+attributes, probably your page will not work anymore. So I recommend you not to remain attributes. Each attribute 
+represents some variable on the page and usually attributes are connected with corresponding data columns. Data 
+columns are parts of our object and object has its own invisible client side representation in memory.  
+  
+  
+Speaker 1
+ 
+ So attributes are used to keep some data and connect with controls. Then finally we have model config which 
+represents set of data objects used with our page. In our case, only one data object is used. Reality reality entity is 
+used to work with our page. But why we have so complex settings here is that freedom UI pages can operate with 
+many data objects and many data lists at the same page. Unlikely to classic UI freedom UI page can be quite more 
+complicated and may include many data objects at it. That's why this model config will be a bit more complex than 
+you expect. Handlers, converters and validators areas where we can do some programming. We can handle some 
+existing events, so we can make own custom handlers for some certain events and make some additional work for 
+it.  
+  
+  
+Speaker 1
+ 
+ We can do conversion between columns like recalculations, but personally I prefer to do it inside of handlers and 
+validators are used to perform some checks at client side to ensure that values provided in the columns are correct 
+and in case if they are not correct, it's possible to display error messages and prohibit saving of data. We will also do 
+such examples later. So if you ask me about where we will program here, the most common answer will be we do 
+our own handlers. But also please note, you probably noticed special text comments here in this code before and 
+after different settings here and even here. So you can see that we have some special comments. Such comments 
+are very important.  
+  
+  
+Speaker 1
+ 
+ Please do not modify do not remove them because they are necessary for page editor it's unusual, but page editor 
+doesn't search for the name of the object here or name of the array. Page editor searches for such system 
+comments and then takes code between and analyzes it and representing page design for you. When finished and 
+data changes are saved, page editor creates new set of items like Div array for example and saves it into this code. 
+So such text comments are used as text markers. They are necessary and they are vital for page editors. So please 
+do not corrupt them, do not change, do not remove. They should be as is okay and possibly you have some 
+questions about strange names view model and model.  
+  
+  
+Speaker 1
+ 
+ Some of you who studied somewhere at university or who studied yourself with the way how UI can be programmed 
+probably know about architectural patterns and maybe you know a pattern named MVC and here we have a pattern 
+named Mvvm. Let me explain what it is we can study and we can find some simple articles at Wikipedia about it. So 
+Mvvm this is an architectural pattern. So like some standard way of implementing things in programming which 
+helps us to make and to solve some typical tasks with the typical way. So we have typical solution for this. We have 
+a task to manage our client side application in our browser and mainly programmed in JavaScript. And there is a 
+good practice to separate visual part from logical part and from data storage part.  
+  
+  
+Speaker 1
+ 
+ And in MVVM pattern it's recommended to separate visual part and code view separately, store data values and call 
+it model and also make a separate controller unit which is called view model. And Viewmodel has a lot of 
+information about view. Viewmodel knows view structure and Viewmodel manages our view. It manages controls 
+and also Viewmodel is responsible for handling events that happens with view controls. For example, user clicks on 
+a button or user inputs some data. The reason why developers used this architectural pattern is to make application 
+more manageable, to make it easy to develop or replace view, to make it easy to extend our model and to make more 
+
+--- Page 20 ---
+
+or less structural way to handle all events and make business logic inside of viewmodel some traces of it can be 
+found in this text.  
+  
+  
+Speaker 1
+ 
+ View config diff represents view structure and that's why it's called view config diff, not just diff. By the way, the word 
+diff here is probably shortage from a difference and means that it's information about only some changes. And it 
+makes sense because our module is not made from scratch. Our module was made as inherited item from some 
+tabbed pages left area base platform client module. So client modules as objects, they also can be inherited from 
+each other. And diff array represents changes in comparison to previous parent item. That's why possibly such items 
+called diffusion and not just kind of list which represents full set of items. This diff includes only changes and some 
+base template items like buttons, menu items and so on will be not listed here because they are supposed to be 
+used by the inheritance.  
+  
+  
+Speaker 1
+ 
+ So when client side modules will finally form final page structure, they will take base parent one, they will apply child 
+item like this setting, and finally they will analyze base diff child diff and they will make all of the components 
+according to parent and child items. Okay, so view config div represents visual part represents view in mvvm pattern 
+model, config represents information about data entities used for our page and also view model config. I think partly 
+also works about the same because this is registering of available variables that we can use on the page and 
+implementation of handlers. Implementation of events can be done inside of handlers and also is already performed 
+in parent modules. In parent template pages like tab, the page with left area and such pages can be nested. It means 
+inheritance can be done many times.  
+  
+  
+Speaker 1
+ 
+ It looks like quite boring thing. So let's do some practical step for today and I will show you very simple hello world 
+complexity level example. So let's do some simple example. But first as we want to make a button, it's better to start 
+making button with the help of editor. So let me show you how we can make a button to show something simple but 
+working and programmed and go to settings. Edit page edit page I can add a button to my page, scroll down here, 
+you can see a list of existing columns, we can add new columns and we have a lot of components. Button probably 
+was the first component supported in Freedom UI page. So we can put our button somewhere here, change its size, 
+change its color or maybe this.  
+  
+  
+Speaker 1
+ 
+ You can make some kind of funny caption like push me and if you want you can translate this title into other 
+supported languages and by default, as you can see we have a lot of supported actions like open records, like saved 
+data, close page run business process and so on. Once I started to count I found 24 supported actions here. So I will 
+just randomly select some action and then I will replace it with something else. By the way, what's happening here? 
+My title looks a bit strange. Okay, I want to use icon. Something is wrong with my title here. No, it's okay. Okay, some 
+bug period. Okay, push me and let's select some icon that will represent this idea. Okay, would it be like this?  
+  
+  
+Speaker 1
+ 
+ So we have more than 60 supported icons here and okay, so and I also set some dummy action. I plan to change it 
+later. I don't have any support. Net menu. No any special conditions. We will study it later. Element code okay, let's 
+call it push me button. Okay that's all. We can save it now. After doing this we can go to the code in order to find our 
+button. Let's go to the code source code, then we find our button. Let's call search for push me and we'll do control f 
+oh you see new editor search function here. It was different in previous versions. Okay, would it be like this? Thanks 
+to our element code we can easily find push me button by code and this diffuser array item for view config 
+represents button settings.  
+ 
+
+--- Page 21 ---
+
+ 
+  
+Speaker 1
+ 
+ We have caption, we have type and also we have clicked setting. Let's remember line number 52 and this is setting 
+for some tenders tender which is already programmed somewhere in parent templates, parent components and 
+system knows how to implement this. Now we can go to handlers part and make our own handler. I already have 
+some example because making it from scratch is a bit difficult. So I will show you examples for freedom Ui button 
+and this is example of a button. I will share it with you in our zoom and also I will put it into my handlers collection 
+manually. So what I do is providing setting here in my handlers collection handlers array. Technically this is an array.  
+  
+  
+Speaker 1
+ 
+ By the way, it looks like this editor was seriously changed because previously we had some unnecessary warnings 
+related to new JavaScript comments and features and now it looks like in this editor there are significant 
+improvements related to the way how code is managed. So thanks developers. Version 813 now had a new type of 
+editor here. Okay, this is my handler physically is also JavaScript object with three. Now we have two properties 
+request and handler. Property. Request property represents the name of my handler so it's kind of identifier which I 
+can use to assign inside of view config items. So it's kind of inner technical name of my procedure and handler itself 
+is asynchronous function which can do something useful. For example, we can do console output here we can use 
+embedded classic UI front end core JavaScript framework made by creation called Terrasoft.  
+  
+  
+Speaker 1
+ 
+ So when you see Terasoft here, you should understand this is a JavaScript core framework, quite old but still 
+supported. You can use true information from it to show some pop up messages. And also I plan to show you how 
+you can manage data, read data and write data. We have a special procedure to get attribute values. Now let's 
+collapse view model con collapse diff part. We already remember line number 52, so let's look at view model 
+configuration. We have set of attributes and for the price we have this name of the attribute. So copy it, go here and 
+paste it. That's how we can correctly get price value inside of our JavaScript code. We can do console output to 
+display this price, and we can also work with this price and show how we can set value into it.  
+  
+  
+Speaker 1
+ 
+ Request dollar context attribute name equals and then we will just take 20% of this price and save it again. We have 
+to normally analyze our code inside of a synchronous function, allowing other potential handlers to be started. So 
+this is also very typical end of handler code. In your case, you will have to change this line to find corresponding 
+price attribute and also to do it with setting value. So this example will show us message in the console, it will show 
+us pop up message, it will take price value and show proof of it in the console. Then it will take some part of it and 
+set to the price column again. And that's all we can save this code. Please note, saving is important from this 
+moment. It's better to close this page and then we go to check how it works.  
+  
+  
+Speaker 1
+ 
+ In most of cases probably it makes sense to reward the page, but in most of cases browser cache doesn't really 
+prevent us from working, so it will probably work normally even without revolting the page. So open it again. Now we 
+see our button enable browser developer console f twelve or control shift I. There are plenty of warnings, as you can 
+see here, they are minor warnings, and it's because freedom UI page is not ideal now, so system probably will be 
+fixed later. Now it's not a serious issue, so let's try to click on the button, nothing happens or I just do something 
+incorrectly. Oh yeah, it was my mistake, sure, because this is my handler, but my button by number 53 still performs 
+previous action for it. Here is push me button. Here is clicked setting. So I just forgot to set it properly.  
+   
+Speaker 1
+
+--- Page 22 ---
+
+  
+ Okay, here in my button I have clicked property and I have to specify my own custom handler name here. That was 
+my mistake, I just missed it. So I have to save and fix and save it. I will also call copy this piece for you. You config 
+probably I should not copy big part of it, so I only should do something like this. So you will focus only on the most 
+important thing. Okay? And we can close open probably now it will work. Yes. You see, I did not reload the page, but 
+it works well. So buttonworks shows us pop up message, takes original price, takes 20% of it and saves as new price 
+here. And we have no error messages, no errors in network tab, no errors at the console. So everything looks very 
+very good, smooth and no mistakes. Let's check again.  
+  
+  
+Speaker 1
+ 
+ Sorry for safe I should use push me this one. Yes, you can see now price changed. We have all the proofs here and 
+no errors. So it looks like everything works according to the plan. This is example of hello world application. So we 
+can do some own programming inside of creature client side page. And of course later we will do a bit more useful, 
+more meaningful steps. But now this is an example of how you can do your own code, how you can do some display, 
+how you can access data from your page, do something and how you can save data. Please note that access data is 
+used with await operator because some code behind this method. It looks like this is something like a method. And 
+finally it runs some asynchronous functions behind it and we need to use a weight operator here.  
+  
+  
+Speaker 1
+ 
+ If you do not use await, you will have a bit different structure at the end and you will still have to dig into object that 
+you will get from it. So recommended option is like this, await request, doer context and then your attribute name. 
+Okay, that's all for today. We sat a bit longer than usual so our session is over. Tomorrow we will do more 
+programming examples, you will see more useful things with recalculation, with validation, and you will see how 
+more different settings you can program on the page level. Thank you very much for your time and documentation 
+about the frameworks of client side. Yes Adrian, I can show you where you can find this documentation in creature 
+academy guides for developers. You can find front end development in classic UI and then you will see G's classes 
+reference.  
+  
+  
+Speaker 1
+ 
+ This is exactly this API for this telescope framework. So you can use some search here for example, we used the 
+method to show information. So method show information. We can search here, show information and you can see 
+examples of it, you can see source and you can see all the arguments. Show information and probably it's not the 
+best example, but. So finally you can try to get some use of it and you can see some help, stuff that can let you 
+understand how it works. So Adrian, thank you for your question. And also I heard some more questions, Carlos. Yes, 
+yes, about performance. Sorry, no, please, please ask questions, please.  
+  
+ 
+  
+Speaker 2
+ 
+ Maybe it's about my problem of performance of the application in my laptop.  
+  
+  
+Speaker 1
+ 
+ Oh, yes, we can do this. Would you like to record this part also as part of our training or you prefer to keep it more 
+personal and private so we can start recording if you want.  
+   
+Speaker 2
+
+--- Page 23 ---
+
+ 
+  
+ You can. I have no problem to me, no problem.  
+  
+  
+Speaker 1
+ 
+ Okay, so I will stop sharing. Our main part of the session is over. Thanks all for your attention. Today we will have 
+some small session, Carlos, to detect potential performance issue problems on their environments. So thanks all for 
+today's session. I will stop sharing. Recording is still on. So Carlos, please. You're welcome. Show me please your 
+environment. I will try to help if you have a full zoom client better because you can manage your screen.  
+  
+ 
+  
+Speaker 2
+ 
+ I share my screen with you?  
+  
+  
+Speaker 1
+ 
+ Yes, yes, please. Thanks all of you, thanks for all information and your questions. Yes, please show me your screen, 
+please.  
+  
+ 
+  
+Speaker 2
+ 
+ Yeah, sorry, I have two.  
+  
+  
+Speaker 1
+ 
+ You can show only one, but I. Okay, green share screen button.  
+  
+ 
+  
+Speaker 2
+ 
+ If I have two screens, so I disconnect one.  
+  
+  
+Speaker 1
+ 
+ Yes, please select one. Okay, I can see a screen. Thank you. Nice. So please show me how your creature works and 
+maybe you can agree for request of remote control, so I can manage your screen more efficiently. So yes, you are 
+using the latest version? Yes, yes. We can start to investigate it with the help. By the way, what type of browser you 
+are using? It's chrome.  
+   
+Speaker 2
+
+--- Page 24 ---
+
+ 
+  
+ Yes, it's chrome. Yes.  
+  
+  
+Speaker 1
+ 
+ Okay, you try to run it once again.  
+  
+ 
+  
+Speaker 2
+ 
+ Yes, I restart in many occasions and don't work. Good. So let me show you a little problem. For example, I go in 
+advanced settings, okay. And I create a business process, for example. And that is all. That's it.  
+  
+  
+Speaker 1
+ 
+ Okay, so are you using Windows Pro or Windows home?  
+  
+ 
+  
+Speaker 2
+ 
+ I have windows.  
+  
+  
+Speaker 1
+ 
+ You can find system information?  
+  
+ 
+  
+Speaker 2
+ 
+ Yes, Windows homes.  
+  
+  
+Speaker 1
+ 
+ You will have significant issues. Let me show you how you can fix this. But it will be not full fix, it will be just a 
+workaround which is not fully. Okay, let me show you. So in case, if you work on home, you should close your main 
+shell page and sometimes you will need to now you will see, sometimes you need to even close the configuration 
+page, but now it looks like you can work with it. So sorry.  
+  
+  
+Speaker 2
+ 
+
+--- Page 25 ---
+
+ 
+ I can see how you do that. You can repeat that, please just close.  
+  
+  
+Speaker 1
+ 
+ Other pages, that's the solution. So when you go to configuration section, you should close other main page. 
+Creation will work normally. So it cannot work normally on home actually, because we still will face some problems. 
+Even if you work with single page, but with for example setting business rules, you will face trouble. So I recommend 
+you to upgrade to Windows Pro. But once you work with Windows home, now I can show you what you can do. You 
+should close all other tabs of creation. In this case, your single tab will work normally. As you can see, you can do 
+something. You can provide some settings like this, like USR my process, then you can save it. So this will work and 
+it works more or less good.  
+  
+  
+Speaker 1
+ 
+ But when you need to go back to your main configuration section, you will have to use tabs and you will have to 
+close other tabs. This is not comfortable. Okay, I understand this saving will work for you. This works, but not so 
+fast. And as far as I know, the problem is number of available websockets. Okay. Yes. In Windows home, I think all of 
+issues you have are caused by Windows home. And as you can see, saving is performed. But okay, let's wait till 
+successful operation. Also some memory. So we need to look at your memory availability. Could you please click on 
+the performance tab second one after we have processes. Second one is performance. So you have 16gb of ram 
+and SSD. So your PC is very good. Your PC is fast, but Windows is not good.  
+  
+  
+Speaker 1
+ 
+ So I recommend you to upgrade your windows to pro. In this case it will be. In this case it will better.  
+  
+ 
+  
+Speaker 2
+ 
+ Andrea is my colleague, he takes the code the course too. So he asked me, okay, so I save, socially save, I cancel 
+and I.  
+  
+  
+Speaker 1
+ 
+ You can, you can just open another tab with your, you can recover previous page. Yes. Now you can see your process 
+is saved and you can export, you can do everything.  
+  
+ 
+  
+Speaker 2
+ 
+ So it's work. Oh, it is so simple. Yeah.  
+  
+  
+Speaker 1
+ 
+ Yes. And it's. Unfortunately this is caused by limited number of Websocket connections allowed for IIs web server 
+running in Windows home. So Windows Home is like very mini, little limited version of windows and it's not designed 
+
+--- Page 26 ---
+
+to be used for serious development. So you probably should think of upgrading it to Windows Pro.  
+  
+ 
+  
+Speaker 2
+ 
+ Okay, thank you. Thank you very much, Dmitry.  
+  
+  
+Speaker 1
+ 
+ Thank you Karim.  
+  
+ 
+  
+Speaker 2
+ 
+ You saved me. My boss is over me all day and it's difficult forwarding to the course. Thank you very much.  
+  
+  
+Speaker 1
+ 
+ No problem. Thank you, thank you.  
+  
+ 
+  
+Speaker 2
+ 
+ See you tomorrow.  
+  
+  
+Speaker 1
+ 
+ Yes, so our session is over. If any other questions? Hi, Vikrat Alpha is sorry. Hi Dmitry. Yes please. Yes, the compiler 
+is successful, but give me a message, can I share that with you? Okay, I will stop sharing, so please Basil, start 
+sharing. You see. Yes, it's a warning message. This warning message does not prevent you from next steps. So 
+when you do some server side coding, possibly previously you. So in your previous experience, maybe you also 
+faced some warning messages and unfortunately for me, it's not clear how to get rid of it easily. It looks like some 
+leftovers made by base product developers. Maybe we can also see it at my own environment. Surprisingly, I 
+probably so maybe which version currently you're running.  
+  
+  
+Speaker 1
+ 
+ So maybe you have just a bit older version than I do because I recently switched to the latest one and your version 
+maybe not the same latest, but this is not critical. So you can just see this compilation result. But I can complete. 
+Yeah, in general it's not ideal, but it's something that is satisfactory. So you can continue your work. Okay, I can go to 
+the system mode next, right? So you can do next examples, next steps of our videos so you can work normally? Yes. 
+Okay. Okay, thank you. But last question, if I download the window eleven Pro, do I have to repeat the old step in the 
+first lecture or it's installed by default? Unfortunately I have no experience of upgrading windows from home to pro.  
+   
+Speaker 1
+
+--- Page 27 ---
+
+  
+ I believe it should only change some files on your windows and it will not be like clean environment. So you should 
+have the same IIs website, you should have the same stuff. And I did not check it by my own, so I have no 
+information, no practical experience with it. So my company gave me a laptop with Windows Pro and I never tried to 
+run on Windows home and upgrade it. Yeah. Thank you. Thank you very much dmitry. Thank you too. Pes. So our 
+session is over. Thanks all of you who watched this video till the end, see you tomorrow. Goodbye. Goodbye.

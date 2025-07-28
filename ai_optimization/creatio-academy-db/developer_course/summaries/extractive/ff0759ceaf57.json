@@ -1,0 +1,38 @@
+{
+  "summary_id": "ff0759ceaf57",
+  "content_id": "7c589e42742e",
+  "summary_type": "extractive",
+  "summary_text": "# Speaker 1\n\nIf you experience some problems with your app and if you start to get error messages about some files are not \ncannot be written or you have some file system access issues, especially you can face it during calculation, you can \ncreate separate setting and you can find your app folder Terrasoft web folder and add special role IIs underscore I \nusers and you should provide modified permission for this role for all of your application folder Javasoft web folder \nthis will grant unlimited file system access to create your application. Okay, as you can see we did not forget about registering of this lookup as of this object as lookup in \nlookup section and made a data item with the help of data binding tool. # Speaker 1\n\nSo in real life when you remove your app, some traces may remain in the database and usually this is not critical for \napplication because logically such columns or some data leftovers will not be available to see easily unless you go \nto the SQL level, unless you start to make some special queries in order to find them. # Speaker 1\n\nNo classic UI words here so it will be our freedom usage reality type, title and code are necessary because system \nwill use it to create new lookup object inherited from base lookup. So required G's is used in creature and its main purpose is to keep and handle all such client side \nmodule structure in browser memory, providing possibility to load only necessary modules when they are requested \nfor certain page and which makes quite good performance because in total our client side now has probably 1000 of \nmodules, 1000 of small JavaScript files. Required G's helps to load only necessary modules by the help of by the analyzing of definitions of such \nmodules and so generally required J's is main under cover framework for organizing of executable JavaScript code \nin creation client side and required J's has its own requirements for how such JavaScript code should look like and \nthat's why we are coming to answer of why our client module code looks like this. # Speaker 1\n\nWe can do conversion between columns like recalculations, but personally I prefer to do it inside of handlers and \nvalidators are used to perform some checks at client side to ensure that values provided in the columns are correct \nand in case if they are not correct, it's possible to display error messages and prohibit saving of data. The reason why developers used this architectural pattern is to make application \nmore manageable, to make it easy to develop or replace view, to make it easy to extend our model and to make more\n\n--- Page 20 ---\n\nor less structural way to handle all events and make business logic inside of viewmodel some traces of it can be \nfound in this text. # Speaker 1\n\nYou can make some kind of funny caption like push me and if you want you can translate this title into other \nsupported languages and by default, as you can see we have a lot of supported actions like open records, like saved \ndata, close page run business process and so on. # Speaker 1\n\nIn most of cases probably it makes sense to reward the page, but in most of cases browser cache doesn't really \nprevent us from working, so it will probably work normally even without revolting the page.",
+  "key_points": [
+    "# Speaker 1\n\nIf you experience some problems with your app and if you start to get error messages about some files are not \ncannot be written or you have some file system access issues, especially you can face it during calculation, you can \ncreate separate setting and you can find your app folder Terrasoft web folder and add special role IIs underscore I \nusers and you should provide modified permission for this role for all of your application folder Javasoft web folder \nthis will grant unlimited file system access to create your application.",
+    "Okay, as you can see we did not forget about registering of this lookup as of this object as lookup in \nlookup section and made a data item with the help of data binding tool.",
+    "# Speaker 1\n\nSo in real life when you remove your app, some traces may remain in the database and usually this is not critical for \napplication because logically such columns or some data leftovers will not be available to see easily unless you go \nto the SQL level, unless you start to make some special queries in order to find them.",
+    "# Speaker 1\n\nNo classic UI words here so it will be our freedom usage reality type, title and code are necessary because system \nwill use it to create new lookup object inherited from base lookup.",
+    "So required G's is used in creature and its main purpose is to keep and handle all such client side \nmodule structure in browser memory, providing possibility to load only necessary modules when they are requested \nfor certain page and which makes quite good performance because in total our client side now has probably 1000 of \nmodules, 1000 of small JavaScript files."
+  ],
+  "keywords": [
+    "speaker",
+    "page",
+    "data",
+    "like",
+    "okay",
+    "object",
+    "let",
+    "code",
+    "make",
+    "use"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 580,
+  "original_length": 17746,
+  "compression_ratio": 0.032683421616138846,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:51:19.055383",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1275,
+    "method": "tfidf_position_ranking"
+  }
+}

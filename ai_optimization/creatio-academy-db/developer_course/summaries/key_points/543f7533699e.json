@@ -1,0 +1,43 @@
+{
+  "summary_id": "543f7533699e",
+  "content_id": "f74604cafd68",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: we will fully switch to work with server side.\nINSTRUCTION: you can create a handler as a function at methods section.\nINSTRUCTION: of all, I need to tell you about some important settings related to such view.\nCONCEPT: page\nCONCEPT: schema\nCONCEPT: customization\nNOTE: that it will not necessary to forever forget about the city lights, still possible.\nNOTE: settings related to such view.",
+  "key_points": [
+    "INSTRUCTION: we will fully switch to work with server side.",
+    "INSTRUCTION: you can create a handler as a function at methods section.",
+    "INSTRUCTION: of all, I need to tell you about some important settings related to such view.",
+    "CONCEPT: page",
+    "CONCEPT: schema",
+    "CONCEPT: customization",
+    "NOTE: that it will not necessary to forever forget about the city lights, still possible.",
+    "NOTE: settings related to such view."
+  ],
+  "keywords": [
+    "ui",
+    "process",
+    "code",
+    "like",
+    "classic",
+    "data",
+    "freedom",
+    "use",
+    "freedom ui",
+    "classic ui"
+  ],
+  "topics": [],
+  "summary_length": 65,
+  "original_length": 14614,
+  "compression_ratio": 0.0044477897906117425,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:58:10.940664",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

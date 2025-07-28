@@ -1,0 +1,60 @@
+{
+  "summary_id": "409086d51944",
+  "content_id": "4080e9e2e7d9",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: page, schema, customization, business process, package",
+  "key_points": [
+    "page",
+    "schema",
+    "customization",
+    "business process",
+    "package"
+  ],
+  "keywords": [
+    "ui",
+    "process",
+    "code",
+    "like",
+    "classic",
+    "data",
+    "freedom",
+    "use",
+    "freedom ui",
+    "classic ui"
+  ],
+  "topics": [],
+  "summary_length": 8,
+  "original_length": 14615,
+  "compression_ratio": 0.0005473828258638385,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:56:22.669302",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "page",
+        "schema",
+        "customization",
+        "business process",
+        "package"
+      ],
+      "keywords": [
+        "ui",
+        "process",
+        "code",
+        "like",
+        "classic",
+        "data",
+        "freedom",
+        "use",
+        "freedom ui",
+        "classic ui"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

@@ -1,0 +1,938 @@
+{
+  "summary_id": "3bef6587a1a8",
+  "content_id": "81ddf5a48985",
+  "summary_type": "hierarchical",
+  "summary_text": "Document: Speaker 1\n\nMain Sections:\n• Speaker 1\n  - # Speaker 1\n\nForeign session number 10 of our development on creation platform Guided Learning.\n  - Today we will prepare with \nthe to prepare for the certification for the development exam.\n• Speaker 1\n  - # Speaker 1\n\nSo you see that we check some major creation development skills related to some C sharp programming, JavaScript \nprogramming, understanding of general architecture, understanding of packages, some little SQL experience and \nintegrations questions.\n  - So certification is like part of your path.\n• Speaker 1\n  - # Speaker 1\n\nIn this case you'll be able to ask questions about development and improvements and support team will help will \nhave to help you.\n  - So now you are somewhere here.\n• Speaker 1\n  - # Speaker 1\n\nSo if you are a customer and attended our guided learning session, obviously it makes sense to apply for a free fast \ntrack certification.\n  - RAK is telling that going to do the same step.\n• Speaker 1\n  - # Speaker 1\n\nI will show you, Rakhi, how you get such data.\n  - Here you see handlers.\n• Speaker 1\n  - # Speaker 1\n\nYes, thank you Rakhi for telling this telling me about this trouble.\n  - So let's move on with the certification.\n• Speaker 1\n  - # Speaker 1\n\nSo today I will send you the homework and if you respond me on this proposal to pass the exam.\n  - And we will \norganize individual sessions with those of you who would like to run this exam.\n• Speaker 1\n  - # Speaker 1\n\nSo please send me a message about it, I will process it properly and we can run Fast Track certification with you or \nwith someone with your team.\n  - Thanks.\n• Speaker 1\n  - # Speaker 1\n\nSo all of you will receive your homework today with the final email with all the video recording sessions list and so \non.\n  - So you will receive your homework and you will have some time.\n• Speaker 1\n  - # Speaker 1\n\nSo if you spend your time, if you already spent your time on making all our training session examples, it will be very \neasy for you to make your homework because it's also very similar and that's how you can get benefits from your \neveryday activity during the session.\n  - So let me explain what will include, what will be included into your homework.\n• Speaker 1\n  - # Speaker 1\n\nAnd also it includes some examples which will require coding and validate coding samples for you in JavaScript and\n\n--- Page 3 ---\n\nin C. So validation should include coding at client side.\n  - We already discussed how to do this.\n• Speaker 1\n  - # Speaker 1\n\nSo validation we already discussed you may watch our previous videos if you skipped it and you will know how to do \nthis calculation is about edit page online let's say runtime calculation that we did also in JavaScript and we made the \ncalculation of commission depending on price and offer type.\n  - Let me show you we did it.\n• Speaker 1\n  - # Speaker 1\n\nPlease note we have a bit different percentage of prices and for center for rentals and for sales, so take care to \nprovide correct values here.\n  - So this is important and we will check it the next task is about C Sharp programming \nmake your own back service club.\n• Speaker 1\n  - # Speaker 1\n\nIn your homework exam it will be minimum price calculation so they're easy to change but you have to perform this \nstuff in and that's why your homework sorry that's why your everyday work and your results of work at our sessions \nwill be important and it's so it will be useful for your exam and we already discussed how you can write such code.\n  - We used Visual Studio to facilitate our development and make it really easy with the help of background syntax \ncheck, intellisense, autocomplete coloring and also if you're interested, you can study the structure of this project \nand understand a bit more how it was done and generally project files and all the preparations made by creation.\n• Speaker 1\n  - # Speaker 1\n\nOf course you may use so it's expected that you will use your local instance if you have no any conditions to run \nlocal instance.\n  - You can use cloud one trial environment or dedicated demo environment if you have so you can do \nthis in any kind of environments and it will work for you.\n• Speaker 1\n  - # Speaker 1\n\nAlso we have a task number six which is a bit additional one.\n  - It's about business processes.\n• Speaker 1\n  - # Speaker 1\n\nAnd also I didn't tell you important thing that if you are a member of a partner company it makes big sense to get \nmany certified professionals at your partner company because it impacts on your partnership level.\n  - And partnership \nlevel is something about margins, about deals and money sharing between partner company and creation company.\n• Speaker 1\n  - # Speaker 1\n\nSo if partner has not so many experts and certified professionals then such partner will have less partnership level.\n  - And probably this is more risky for creature when any kind of agreement will be signed with a real customer \nincluding partner part of work.\n• Speaker 1\n  - # Speaker 1\n\nAfter you add this data, let me show you and remind you how we can do this.\n  - So it will be very quick and easy.\n• Speaker 1\n  - # Speaker 1\n\nWe already used this process to add data.\n  - When new record was added, we used start signal item for it.\n• Speaker 1\n  - # Speaker 1\n\nSo we can register such parameter as you remember, parameters are like variables at our process.\n  - And in case if we \nstart our process manually so we can call it manual start, if we do it manually, then we expect that this parameter \nwill be filled in and then we can just move on to our step where we add data and then we can replace here parent \nrealty not from signal but from this parameter.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 5 ---\n\nYou can see it's not so hard and it's very important for you to become familiar and to feel some confidence when you \nwork with processes because this is like a brick game, like a Lego, which you can use for much more complicated \nProcesses and business logic.\n  - If you understand well how such tools work, if you make your own simple examples \nand understand it clearly, then you can use it for much more complicated things and you can use it quite efficiently.\n• Speaker 1\n  - # Speaker 1\n\nSo we can look at its title or at icon type that will help us to get it.\n  - And the only suitable parameter from a signal is \nunique identifier of record double click and that's how we will get this data and save it as formula value.\n• Speaker 1\n  - # Speaker 1\n\nBut we can start this process manually.\n  - So of course we have to save it.\n• Speaker 1\n  - # Speaker 1\n\nOkay, little bit plus will be a good example and add visits menu item will be our unique element code.\n  - This will help \nus to easily find this item in view config diff part of the JavaScript code for our client module.\n• Speaker 1\n  - # Speaker 1\n\nAs you can see it works, so let's try to run it.\n  - Process successfully started.\n• Speaker 1\n  - # Speaker 1\n\nI will explain how you can do this so we can close unnecessary tabs.\n  - Let's go to search for objects and find reality \nVisit object.\n• Speaker 1\n  - # Speaker 1\n\nSo it was generally intended to be used for updates.\n  - Situation when you have a record it was already opened at client \nside and you change the data columns of the record at server side.\n• Speaker 1\n  - # Speaker 1\n\nWe need to use some good examples.\n  - So let's delete all the data records.\n• Speaker 1\n  - # Speaker 1\n\nSo if you do something like this and your end user will see the detailed data changed, so it will be quite good enough \nto display that data was modified and you see how it works.\n  - So also it's interesting to mention that it works for \ninsert, it works for updates, but unfortunately for some unknown reason it doesn't work for delete.\n• Speaker 1\n  - # Speaker 1\n\nIf you want to display and demonstrate more skills, you can also try to use a bit more complicated approach with the \nweb sockets with messaging from server side to the client side.\n  - I can quickly explain you how you can do this.\n• Speaker 1\n  - # Speaker 1\n\nSo we can use it for free.\n  - And the main idea is that we can.\n• Speaker 1\n  - # Speaker 1\n\nLet me show you when page of creature is opened.\n  - You can also see we have some WebSocket hard beat and it's \nused to check that WebSocket connection is alive or not.\n• Speaker 1\n  - # Speaker 1\n\nAnd one of the specific message tells client side that we have to show some specific process driven page.\n  - So \nsystem should show another page instead of current one.\n• Speaker 1\n  - # Speaker 1\n\nOkay, this one probably will better.\n  - So let me explain how it can be useful.\n• Speaker 1\n  - # Speaker 1\n\nIt has some corresponding data parameters which will be enough for client side to understand what it talks about.\n  - And as you can see, we have some values here that are enough.\n• Speaker 1\n  - # Speaker 1\n\nOh, you don't see it here easily because we opened browser developer to wait.\n  - Okay, let's open it again.\n• Speaker 1\n  - # Speaker 1\n\nBut when you start to design business rules, I faced situation when managing business rules requires additional \nwebsocket connections and it also failed in Windows Home version.\n  - So that's how you can track WebSocket \nmessages.\n• Speaker 1\n  - # Speaker 1\n\nBut this is like a technical possibility for you to listen for this websocket at client side.\n  - You also need to know how to \nsend messages at server side to the client side.\n• Speaker 1\n  - # Speaker 1\n\nSo I think it's more efficient, it's more correct and like more fair to send messages only for current user because \nusually you need to do in like connection exactly to current user, not to anyone.\n  - And if you imagine working with \nthousands of end users, so it will be really noisy for them to see such messages that are not intended.\n• Speaker 1\n  - # Speaker 1\n\nSender is a text MSG body as a text and such command will It's a C sharp and it will send the websocket message \nfrom server side to the client side.\n  - In the client side you can subscribe for it and this is classic UI example.\n• Speaker 1\n  - # Speaker 1\n\nThis type of messaging can be important in case if you don't really need live update or if you want to make some \nsignificant changes to server side and then run your necessary comments to update client side only once, which \nmeans to be a bit more correct to do.\n  - For example, if you add 100 records at server side, then you ask client side to \nupdate once, which will be definitely better than asking client side to update hundred of times because of live update \noption.\n• Speaker 1\n  - # Speaker 1\n\nOkay, let's go back to our general certification.\n  - So it was just about this advanced part of the homework.\n• Speaker 1\n  - # Speaker 1\n\nAnd before we continue, possibly let's make it five or up to 10 minutes break today.\n  - Today's Friday, all of you are a bit \ntired.\n• Speaker 1\n  - # Speaker 1\n\nSo 50 for the homework and also 50 for your test.\n  - Depending on the type of the test, there are different number of \nquestions.\n• Speaker 1\n  - # Speaker 1\n\nSo I'm trying to explain that in your self assessment test you will have slightly different so different results from the \nsame answers if you do it on the exam.\n  - And self assessment test is harder and real exam is easier.\n• Speaker 1\n  - # Speaker 1\n\nAnd also you will face questions with single choice like radio button with circles on the letters not squares.\n  - And we \nhave to answer this test properly and correctly.\n• Speaker 1\n  - # Speaker 1\n\nSo this is about this setting and what are the purpose?\n  - So this purpose is a redis database number.\n• Speaker 1\n  - # Speaker 1\n\nThis is about very old times when you can use such system setting.\n  - And I can show you examples.\n• Speaker 1\n  - # Speaker 1\n\nNow we use the sum default values for real t classic types.\n  - So we used it here columns code autonumber and we \nuse the auto number prefix number of digits and that's how this numbering can be implemented now in current \nenvironment version.\n• Speaker 1\n  - # Speaker 1\n\nThank you to.\n  - Okay, so proper transfer of changes target database.\n• Speaker 1\n  - # Speaker 1\n\nI have a quick question about the multiple choice questions, if that's okay.\n  - Yes, yes, please.\n• Speaker 1\n  - # Speaker 1\n\nIn general, it's not so good and it's not recommended because they can temporarily do some violation like you made \nstart to compile and another developer will see hanging of the website.\n  - So this is something that it's better to avoid \nand interfere with other developers.\n• Speaker 1\n  - # Speaker 1\n\nBut for this test you will always get random 28 questions from different categories.\n  - It means that if you want to \nprepare better, you need to run this test more than once.\n• Speaker 1\n  - # Speaker 1\n\nNo, it's not true.\n  - When truncate is called table is completely cleared and deletes every record separately row by row.\n• Speaker 1\n  - # Speaker 1\n\nThe reason is that packages cannot be embedded into each other.\n  - So packages cannot be included into another \npackage and embedded packages are not allowed.\n• Speaker 1\n  - # Speaker 1\n\nOne more package architecture question.\n  - If you do not specify dependency in the package, what will happen?\n• Speaker 1\n  - # Speaker 1\n\nThis question is about Marketplace applications and this category is on the for advanced level.\n  - So we already \nstudied almost all of proposed marketplace applications.\n• Speaker 1\n  - # Speaker 1\n\nAnd we can search functionality for all data access to all data.\n  - By default it's provided for all administrators.\n• Speaker 1\n  - # Speaker 1\n\nHow do you use custom types?\n  - This is about data contract and data member.\n• Speaker 1\n  - # Speaker 1\n\nNow you cannot see it, but usually it's randomized.\n  - So in order to make it hard to remember, you see that when you \nopen same question next time it shows you randomized options randomized positions of options.\n• Speaker 1\n  - # Speaker 1\n\nPlease be careful Disable file design False Enable file design True you should not mix it this one is correct Entity \nschema query you remember this class?\n  - We used it for server side calculations and operating with data Also similar \napproach with client side Entity schema query can be used at JavaScript part with the client side code it can also \nwork if you're interested, you can find other examples.\n• Speaker 1\n  - # Speaker 1\n\nSo how to properly use it?\n  - This is about protection from memory leakage, you remember?\n• Speaker 1\n  - # Speaker 1\n\nWe did not actually study the entity class and you can study it yourself.\n  - You can find a lot of examples like this.\n• Speaker 1\n  - # Speaker 1\n\nSo when you use entity is an instance of an object so in memory and you can use it for data management.\n  - But one \nentity may operate only with one data row at a moment.\n• Speaker 1\n  - # Speaker 1\n\nSo here we have a question about how to apply changes.\n  - Working with entity Obviously this is running of the save \nnetwork.\n• Speaker 1\n  - # Speaker 1\n\nSo rules and details are supported in Classic UI edit pages only and not supported in list pages or they are called \nsection pages.\n  - In section pages, rules and details are not present.\n• Speaker 1\n  - # Speaker 1\n\nSo when we save yes, validation will be triggered when opening page for insert no, but currently we have to review \nthis because when Freedom UI page opens, it also triggers for validation delete no switching focus from field to \nfield.\n  - Yes, we are almost at the end and schema must be used as parent for a section schema.\n• Speaker 1\n  - # Speaker 1\n\nBut for those who work with Classic UI this knowledge I think it's quite actual.\n  - So this section V2 is correct here.\n• Speaker 1\n  - # Speaker 1\n\nWe did not study this.\n  - In Classic UI it makes more sense.\n• Speaker 1\n  - # Speaker 1\n\nSo don't be so upset because each mistakes, each mistake takes 4% from your score.\n  - And when you run self \nassessment test you need to only to see different questions, potential possible answers and practice with it.\n• Speaker 1\n  - # Speaker 1\n\nIf you do seven mistakes in this self assessment test, you will lose 28 marks and your final score will be 72.\n  - But don't \nworry because your score in self assessment is not so important as your knowledge of answers of and your \nknowledge of existing questions.\n• Speaker 1\n  - # Speaker 1\n\nAnd here is what this is a question from Rakhi and this is about client side programming and we did not study this \npart.\n  - It's about send box Messaging.\n• Speaker 1\n  - # Speaker 1\n\nAnd for such purpose, messaging mechanism was designed and this is sandbox messaging mechanism which is \nonly working at client side between modules.\n  - Between client side modules.\n• Speaker 1\n  - # Speaker 1\n\nSo messages, they have different types and correct answers.\n  - Here are point to point message returns an object \nbroadcast messages does not.\n• Speaker 1\n  - # Speaker 1\n\nI can quickly show you examples of how it can look like and example of sandbox messaging.\n  - So in such messaging \nwe have an initializer.\n• Speaker 1\n  - # Speaker 1\n\nSubscriber is a party, so it's a module which declares that it can process certain messages and it also should \nregister them and then this module must subscribe.\n  - Message has its own identifier.\n• Speaker 1\n  - # Speaker 1\n\nI think we have to remove this question from the test because it was from very early version 7 settings and it's about \nbind config for properties events for events.\n  - So A is correct here, but we will remove this question soon.\n• Speaker 1\n  - # Speaker 1\n\nSo just make sure your homework looks good, run tests several times and then for example, some of you may apply \nfor the exam and run it next week.\n  - But in general, usually participants need from two till three weeks and this is time \nquite fair which will be totally comfortable for you to prepare for your exam and then run it today you will receive your \nhomework file and please respond at Please respond on my email with your confirmation that you are ready to or \nyou plan to pass FastTrack certification and I will provide you individual date and time of course, taken into \nconsideration your time zone.\n• Speaker 1\n  - # Speaker 1\n\nSo you will receive everything necessary in email.\n  - And when the proper date will come, I will wait for you in Zoom \nsession when you will finally proceed with your test.\n• Speaker 1\n  - # Speaker 1\n\nAt the end of this period, while your certificate is still valid, you will be able to run recertification, which means \ngetting new certificate by running test only with no homework.\n  - So if you want, when you have current certificate, \nyou'll be able to get new one with a simplified procedure.\n• Speaker 1\n  - # Speaker 1\n\nYeah, and advanced has 28 theoretical questions, while basic has only 25 theoretical questions.\n  - So Advanced is a \nbit.\n• Speaker 1\n  - # Speaker 1\n\nAnd unfortunately such links work only once and that's why we have to generate it each time when participants \nwants to pass an exam.\n  - Oh yes, sorry.\n• Speaker 1\n  - # Speaker 1\n\nWhen we will have online session, you will show your homework.\n  - We will see if it's working.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 17 ---\n\nOh, so you are worried about the business sense of this time, of this type of cultivation.\n  - Or you have some errors in \nexecution?\n• Speaker 1\n  - # Speaker 1\n\nSo in general, it looks like we have 300 bucks.\n  - 311 bucks per square foot.\n• Speaker 1\n  - # Speaker 1\n\nSo it looks like this data was the result of our calculation and it looks like more or less close to reality $300 per \nsquare foot according to our current prices and areas.\n  - So area is used here in this calculation.\n• Speaker 1\n  - # Speaker 1\n\nYeah, yeah.\n  - Thank you.\n• Speaker 1\n  - # Speaker 1\n\nThen at next step it will go to page parameter here if you do something so if you lost your data something on the \nway so you will see zero and you should debug your process, you should debug your script task.\n  - And we already \ndiscussed how to do this.\n• Speaker 1\n  - # Speaker 1\n\nBut I think that regular Certification is a bit more harder and it has different variants.\n  - There are different subjects, not \njust one realty, there are different subjects.\n• Speaker 1\n  - # Speaker 1\n\nBut now you have automation with Zoom and with already prepared links for download.\n  - So probably it makes sense \nto use existing links without waiting for me to host the same video somewhere else.\n• Speaker 1\n  - # Speaker 1\n\nSo your homework, if you do it well, no need to do it again for the next exam, yes you can take it again.\n  - Thank you \nBasic for your question.\n• Speaker 1\n  - # Speaker 1\n\nOur session is over.\n  - Thank you and goodbye.\n\nKey Concepts: server, database, sql, data, package",
+  "key_points": [
+    "server",
+    "database",
+    "sql",
+    "data",
+    "package",
+    "field",
+    "schema",
+    "detail",
+    "configuration",
+    "section"
+  ],
+  "keywords": [
+    "speaker",
+    "let",
+    "data",
+    "like",
+    "page",
+    "test",
+    "exam",
+    "client",
+    "use",
+    "yes"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 3964,
+  "original_length": 13179,
+  "compression_ratio": 0.3007815463995751,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:59:26.886470",
+  "metadata": {
+    "structure": {
+      "title": "Speaker 1",
+      "sections": [
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nForeign session number 10 of our development on creation platform Guided Learning.",
+            "Today we will prepare with \nthe to prepare for the certification for the development exam.",
+            "And this is an optional thing.",
+            "So if you want, if you feel \nyourself ready for this, you can apply for this type of check certification.",
+            "And as you are members of our guided \nlearning, so you can run fast track certification for free."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you see that we check some major creation development skills related to some C sharp programming, JavaScript \nprogramming, understanding of general architecture, understanding of packages, some little SQL experience and \nintegrations questions.",
+            "So certification is like part of your path.",
+            "And if you pass certification, you will get your \ncertification certificate which issued for two years."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn this case you'll be able to ask questions about development and improvements and support team will help will \nhave to help you.",
+            "So now you are somewhere here.",
+            "You now started our customization and development already \nfinished development course.",
+            "And then the next step is to prepare for the exam and then pass this exam.",
+            "This is \noptional so it's not mandatory."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you are a customer and attended our guided learning session, obviously it makes sense to apply for a free fast \ntrack certification.",
+            "RAK is telling that going to do the same step.",
+            "So same step.",
+            "Yep.",
+            "Next price web service working \nparameters are not showing not passing."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI will show you, Rakhi, how you get such data.",
+            "Here you see handlers.",
+            "Here you see your button handler and you take \ntype object.",
+            "You should check that this is your attribute displayed in view, model, config and this attribute.",
+            "So for \noffer type."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYes, thank you Rakhi for telling this telling me about this trouble.",
+            "So let's move on with the certification.",
+            "So this is \nkind of Excel and this exam is free if you are participant of our guided learning session.",
+            "But it has some timeout so it \nwill be not forever free for you.",
+            "And Fast Track certification is available for three weeks after the end of our training."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo today I will send you the homework and if you respond me on this proposal to pass the exam.",
+            "And we will \norganize individual sessions with those of you who would like to run this exam.",
+            "And in order to apply for Fast Track \ncertification, I will ask you to respond on my email.",
+            "So don't forget if you want to register, please respond on email.",
+            "I \nhave a question."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo please send me a message about it, I will process it properly and we can run Fast Track certification with you or \nwith someone with your team.",
+            "Thanks.",
+            "Okay.",
+            "Thank you.",
+            "Okay, and let's move on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo all of you will receive your homework today with the final email with all the video recording sessions list and so \non.",
+            "So you will receive your homework and you will have some time."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you spend your time, if you already spent your time on making all our training session examples, it will be very \neasy for you to make your homework because it's also very similar and that's how you can get benefits from your \neveryday activity during the session.",
+            "So let me explain what will include, what will be included into your homework.",
+            "I \nwill show you an example right now.",
+            "Just a moment here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd also it includes some examples which will require coding and validate coding samples for you in JavaScript and\n\n--- Page 3 ---\n\nin C. So validation should include coding at client side.",
+            "We already discussed how to do this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo validation we already discussed you may watch our previous videos if you skipped it and you will know how to do \nthis calculation is about edit page online let's say runtime calculation that we did also in JavaScript and we made the \ncalculation of commission depending on price and offer type.",
+            "Let me show you we did it.",
+            "So if price changed, you \nsee for each typing and each change of the price we have called commission recalculated and offer type."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nPlease note we have a bit different percentage of prices and for center for rentals and for sales, so take care to \nprovide correct values here.",
+            "So this is important and we will check it the next task is about C Sharp programming \nmake your own back service club.",
+            "It will do some calculation of price minimum price.",
+            "In our example we made a \nmaximum price so it's very easy to change but it will require your own programming."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn your homework exam it will be minimum price calculation so they're easy to change but you have to perform this \nstuff in and that's why your homework sorry that's why your everyday work and your results of work at our sessions \nwill be important and it's so it will be useful for your exam and we already discussed how you can write such code.",
+            "We used Visual Studio to facilitate our development and make it really easy with the help of background syntax \ncheck, intellisense, autocomplete coloring and also if you're interested, you can study the structure of this project \nand understand a bit more how it was done and generally project files and all the preparations made by creation.",
+            "We \nonly make our own part of it as a C Sharp source code."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOf course you may use so it's expected that you will use your local instance if you have no any conditions to run \nlocal instance.",
+            "You can use cloud one trial environment or dedicated demo environment if you have so you can do \nthis in any kind of environments and it will work for you.",
+            "Of course your system must be compilable so you should \nnot get such compilation errors as I do here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAlso we have a task number six which is a bit additional one.",
+            "It's about business processes.",
+            "So generally it's \nexpected to make you using business process, but you can make it with another tools if you want.",
+            "For example, you \ncan create your own web service.",
+            "You can run your web service from client side using your code like we did running \nof a client side web service method that we made in task number five."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd also I didn't tell you important thing that if you are a member of a partner company it makes big sense to get \nmany certified professionals at your partner company because it impacts on your partnership level.",
+            "And partnership \nlevel is something about margins, about deals and money sharing between partner company and creation company."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if partner has not so many experts and certified professionals then such partner will have less partnership level.",
+            "And probably this is more risky for creature when any kind of agreement will be signed with a real customer \nincluding partner part of work.",
+            "And that's why any partner is interested in having as many as possible of certified \nexperts, certified analysts or developers at Valer stuff."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAfter you add this data, let me show you and remind you how we can do this.",
+            "So it will be very quick and easy.",
+            "And \ncurrently when we add.",
+            "Okay, let's see.",
+            "So when we add new data to our reality section, you remember we already \nmade some automatic insert of data house for sale."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe already used this process to add data.",
+            "When new record was added, we used start signal item for it.",
+            "And it was \nalso an example of entity event handling with the easiest possible way using start signals at server side.",
+            "So it was \none of the examples of entity events for objects."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we can register such parameter as you remember, parameters are like variables at our process.",
+            "And in case if we \nstart our process manually so we can call it manual start, if we do it manually, then we expect that this parameter \nwill be filled in and then we can just move on to our step where we add data and then we can replace here parent \nrealty not from signal but from this parameter.",
+            "So we can replace process parameter and put realty ID parameter \nhere."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 5 ---\n\nYou can see it's not so hard and it's very important for you to become familiar and to feel some confidence when you \nwork with processes because this is like a brick game, like a Lego, which you can use for much more complicated \nProcesses and business logic.",
+            "If you understand well how such tools work, if you make your own simple examples \nand understand it clearly, then you can use it for much more complicated things and you can use it quite efficiently.",
+            "So in my case I'm using formula to assign parameter value."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we can look at its title or at icon type that will help us to get it.",
+            "And the only suitable parameter from a signal is \nunique identifier of record double click and that's how we will get this data and save it as formula value.",
+            "So if our \nprocess started as is driven by signal so if our process started as event handling or insert, then our formula will set \nreality ID ROM signal and then we will run our insert operation based on reality ID parameter."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut we can start this process manually.",
+            "So of course we have to save it.",
+            "Okay, and then we can register this process \nsomewhere, for example as action to our page.",
+            "Let's go to the edit page button, find corresponding action.",
+            "Here we \nhave one more action and we can call it add visits action which will run business process."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, little bit plus will be a good example and add visits menu item will be our unique element code.",
+            "This will help \nus to easily find this item in view config diff part of the JavaScript code for our client module.",
+            "Okay, looks good.",
+            "We \nmade it.",
+            "We have to save as you can see, I'm very stick to no code approach and no code tools if it's possible \nbecause it helps it to get your results very quickly and efficiently."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAs you can see it works, so let's try to run it.",
+            "Process successfully started.",
+            "And also you may find that our task our \npart of our task.",
+            "As a result of running the action, the list of the reality visit detail must be updated automatically to \ndisplay new records.",
+            "And also you can use Enable Live Update."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI will explain how you can do this so we can close unnecessary tabs.",
+            "Let's go to search for objects and find reality \nVisit object.",
+            "We did not use this feature so far, but I will explain.",
+            "So in Behavior settings there is a very important and \nquite new feature which appeared only in version 8.",
+            "This version, this feature is called Enable Live Update."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it was generally intended to be used for updates.",
+            "Situation when you have a record it was already opened at client \nside and you change the data columns of the record at server side.",
+            "So I believe it was initially designed for updates, \nbut it also turned out that it works well for inserts and if we have a detail with a list, so we have a list of some detail \nand data was added at server side.",
+            "This detail list is updated at client side in case if Enable Live Update option is on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe need to use some good examples.",
+            "So let's delete all the data records.",
+            "Also, possibly we can face some cache \nissues.",
+            "Let's reward the page just to avoid any potential threat of browser caching.",
+            "Okay, open it, look at detail."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you do something like this and your end user will see the detailed data changed, so it will be quite good enough \nto display that data was modified and you see how it works.",
+            "So also it's interesting to mention that it works for \ninsert, it works for updates, but unfortunately for some unknown reason it doesn't work for delete."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you want to display and demonstrate more skills, you can also try to use a bit more complicated approach with the \nweb sockets with messaging from server side to the client side.",
+            "I can quickly explain you how you can do this.",
+            "If \nyou're really interested, we can try to make working sample of it.",
+            "And let me show you how we can find it.",
+            "Creation \nwebsocket socket freedom UI and why Russian?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we can use it for free.",
+            "And the main idea is that we can.",
+            "By the way, it looks like this is a classic UI stuff.",
+            "No, in \ncreation.",
+            "No, it's okay."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet me show you when page of creature is opened.",
+            "You can also see we have some WebSocket hard beat and it's \nused to check that WebSocket connection is alive or not.",
+            "WebSocket is the dual directional channel between client \nside and server side."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd one of the specific message tells client side that we have to show some specific process driven page.",
+            "So \nsystem should show another page instead of current one.",
+            "Let me show you how we can track this.",
+            "We can go to.",
+            "Okay, let me show you can open again and our page we can check network filters ws, which stands for websocket."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, this one probably will better.",
+            "So let me explain how it can be useful.",
+            "Generally, creation uses such a socket for \nsending messages from creation server side to the client side.",
+            "For example, when we run a process calculate \naverage price.",
+            "But it looks like possibly I did not see what I need here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt has some corresponding data parameters which will be enough for client side to understand what it talks about.",
+            "And as you can see, we have some values here that are enough.",
+            "And client side understand that if sender is \nprocessed dashboard, if it has some id, then client side should search and find corresponding task to be executed.",
+            "You can see it here.",
+            "Notification panel, business process task."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOh, you don't see it here easily because we opened browser developer to wait.",
+            "Okay, let's open it again.",
+            "Revote.",
+            "Yes, \nnow you will see that we have some websocket messaging processed here.",
+            "When we do designing of our page and \nespecially when we do designing of business rules, it's also used."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut when you start to design business rules, I faced situation when managing business rules requires additional \nwebsocket connections and it also failed in Windows Home version.",
+            "So that's how you can track WebSocket \nmessages.",
+            "You can use some filters here.",
+            "You can type some messages in order to filter because you may have \nplenty of different WebSocket messages and you may need to filter only necessary ones.",
+            "And can we get the link?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut this is like a technical possibility for you to listen for this websocket at client side.",
+            "You also need to know how to \nsend messages at server side to the client side.",
+            "Here is the link that shows how you can do this, because first you \nwill do server side sending message."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I think it's more efficient, it's more correct and like more fair to send messages only for current user because \nusually you need to do in like connection exactly to current user, not to anyone.",
+            "And if you imagine working with \nthousands of end users, so it will be really noisy for them to see such messages that are not intended."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSender is a text MSG body as a text and such command will It's a C sharp and it will send the websocket message \nfrom server side to the client side.",
+            "In the client side you can subscribe for it and this is classic UI example."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis type of messaging can be important in case if you don't really need live update or if you want to make some \nsignificant changes to server side and then run your necessary comments to update client side only once, which \nmeans to be a bit more correct to do.",
+            "For example, if you add 100 records at server side, then you ask client side to \nupdate once, which will be definitely better than asking client side to update hundred of times because of live update \noption.",
+            "But it's up to you so you can go through it if necessary, if interested and make it work."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, let's go back to our general certification.",
+            "So it was just about this advanced part of the homework.",
+            "But if you \ndo just basic part of the homework, it will be also good enough.",
+            "When you finish this, please keep your environment \non.",
+            "It means that when you will start your exam, we have to look at your environment and we have to check that your\n\n--- Page 9 ---\n\nsystem, your setting is working, your settings are working correctly."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd before we continue, possibly let's make it five or up to 10 minutes break today.",
+            "Today's Friday, all of you are a bit \ntired.",
+            "So let's make a short break and then I will explain how to prepare for the exam.",
+            "Test.",
+            "So we'll work with self \nassessment tests."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo 50 for the homework and also 50 for your test.",
+            "Depending on the type of the test, there are different number of \nquestions.",
+            "So let's talk about basic exam.",
+            "And you will have 25 test questions.",
+            "So it means each question gives you \napproximately 2 marks."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I'm trying to explain that in your self assessment test you will have slightly different so different results from the \nsame answers if you do it on the exam.",
+            "And self assessment test is harder and real exam is easier.",
+            "So in real exam \nyou may do up to seven mistakes from 25 or 28 questions.",
+            "Let me show you how you can prepare for the exam.",
+            "So \nexam for developer includes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd also you will face questions with single choice like radio button with circles on the letters not squares.",
+            "And we \nhave to answer this test properly and correctly.",
+            "And please note test self assessment test questions will be similar \nto the same questions that you will get during real exam, but they will be not identical.",
+            "So you should expect.",
+            "You \nshould see that such tests are not identical and you should be very careful."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo this is about this setting and what are the purpose?",
+            "So this purpose is a redis database number.",
+            "Yes, this is \ncorrect.",
+            "But this is multiple choice.",
+            "So we must select at least one more item."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is about very old times when you can use such system setting.",
+            "And I can show you examples.",
+            "We will see what \nit is about.",
+            "Let's go to system settings.",
+            "Let's search system setting which is the last number."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow we use the sum default values for real t classic types.",
+            "So we used it here columns code autonumber and we \nuse the auto number prefix number of digits and that's how this numbering can be implemented now in current \nenvironment version.",
+            "But for previous versions it was a bit different and we had to use couple of system settings \nand special code that should be used to generate number.",
+            "So we have to answer this.",
+            "Okay, which tools could be \nused for proper transfer of configuration modifications between environments?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThank you to.",
+            "Okay, so proper transfer of changes target database.",
+            "No, no, we can't replace the database.",
+            "Replace \nexecutable files.",
+            "No, we can't do this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI have a quick question about the multiple choice questions, if that's okay.",
+            "Yes, yes, please.",
+            "So is it basically all or \nnothing?",
+            "So say if it's a Multiple choice of 5.",
+            "Say for."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn general, it's not so good and it's not recommended because they can temporarily do some violation like you made \nstart to compile and another developer will see hanging of the website.",
+            "So this is something that it's better to avoid \nand interfere with other developers.",
+            "So this is correct Option is not recommended.",
+            "So not recommended Other \noptions like submitting changes of svn, it's also not true.",
+            "And to publish and develop an environment Interfere can \nwork when publishing users will not interfere."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut for this test you will always get random 28 questions from different categories.",
+            "It means that if you want to \nprepare better, you need to run this test more than once.",
+            "I recommend you to start it five or 10 times.",
+            "So you will feel \nmuch more confident when you will see all different questions and when you will know for sure and you will practice \nwith answers.",
+            "So it will take some time, but this is how you can prepare better for the test for the exam."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNo, it's not true.",
+            "When truncate is called table is completely cleared and deletes every record separately row by row.",
+            "Yes, this is true.",
+            "This is difference here.",
+            "Let's move on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThe reason is that packages cannot be embedded into each other.",
+            "So packages cannot be included into another \npackage and embedded packages are not allowed.",
+            "Not a package component.",
+            "Schemas means objects, client \nmodules, processes they are package components.",
+            "So not correct."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOne more package architecture question.",
+            "If you do not specify dependency in the package, what will happen?",
+            "Package cannot be fixed in version control.",
+            "No, it's not true.",
+            "Functionality will be available."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis question is about Marketplace applications and this category is on the for advanced level.",
+            "So we already \nstudied almost all of proposed marketplace applications.",
+            "So maintenance tools for creation.",
+            "We installed it on our \nenvironment.",
+            "Remember here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd we can search functionality for all data access to all data.",
+            "By default it's provided for all administrators.",
+            "So \nsystem administrators, yes, you can see single users by default cannot operate without data, so you should provide \naccess for them.",
+            "And of course we need to use can use our data service operation.",
+            "And this is not correct."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nHow do you use custom types?",
+            "This is about data contract and data member.",
+            "We discussed it when we build our \nweb service and when you need to transfer additional data so large big data arguments."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow you cannot see it, but usually it's randomized.",
+            "So in order to make it hard to remember, you see that when you \nopen same question next time it shows you randomized options randomized positions of options.",
+            "So now post is on \nthe third place and previously it was on fourth place.",
+            "But it remembers your answers."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nPlease be careful Disable file design False Enable file design True you should not mix it this one is correct Entity \nschema query you remember this class?",
+            "We used it for server side calculations and operating with data Also similar \napproach with client side Entity schema query can be used at JavaScript part with the client side code it can also \nwork if you're interested, you can find other examples.",
+            "So entity schema query has some features Access rights \nrestriction yes Additional setup of queries like hierarchical queries and paging yes and caching yes so everything is \ntrue here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo how to properly use it?",
+            "This is about protection from memory leakage, you remember?",
+            "So we have to use dispose \nif you do not use using yes or you can use using operator yes in single thread, yes, but now the documentation tells \nthat you already can use multiple threads, but I would not recommend you to apply it widely.",
+            "So I'm still thinking that \nusing multiple threads here may cause some memory leakage.",
+            "So single thread is still correct."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe did not actually study the entity class and you can study it yourself.",
+            "You can find a lot of examples like this.",
+            "I will \nshow you.",
+            "Go to terrasoftware Web Teresa configuration, Search through all C sharp files for a sample where we \nhave save method.",
+            "You will find many different examples of working with entity."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo when you use entity is an instance of an object so in memory and you can use it for data management.",
+            "But one \nentity may operate only with one data row at a moment.",
+            "Then you can construct some filters and search for a \ncorresponding record.",
+            "If you did not find it, then you can do insert."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo here we have a question about how to apply changes.",
+            "Working with entity Obviously this is running of the save \nnetwork.",
+            "Okay, let's move on features.",
+            "Working with data using entity of course it offers all possibilities to read, add, \nedit and delete.",
+            "So Entity class can be used for creating records or updating records for selection and for delete."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo rules and details are supported in Classic UI edit pages only and not supported in list pages or they are called \nsection pages.",
+            "In section pages, rules and details are not present.",
+            "Oh, details are here.",
+            "Funny stuff."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo when we save yes, validation will be triggered when opening page for insert no, but currently we have to review \nthis because when Freedom UI page opens, it also triggers for validation delete no switching focus from field to \nfield.",
+            "Yes, we are almost at the end and schema must be used as parent for a section schema.",
+            "So how we can know \nthis?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut for those who work with Classic UI this knowledge I think it's quite actual.",
+            "So this section V2 is correct here.",
+            "One\n\n--- Page 14 ---\n\nmore question.",
+            "Schema must be used as a parent.",
+            "So this is a client side question Parent for section page which \nmeans edit page."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe did not study this.",
+            "In Classic UI it makes more sense.",
+            "And in Freedom UI it's also possible but not so practical.",
+            "So \nlet's imagine if you create new module, it's possible to set styles in less tab.",
+            "So you can see we have a Special less \ntab, JavaScript tab and less tab."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo don't be so upset because each mistakes, each mistake takes 4% from your score.",
+            "And when you run self \nassessment test you need to only to see different questions, potential possible answers and practice with it.",
+            "So don't \nbe so focused on final results.",
+            "And when you're running self assessment tests, you need to see all variety of existing \ntest questions."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you do seven mistakes in this self assessment test, you will lose 28 marks and your final score will be 72.",
+            "But don't \nworry because your score in self assessment is not so important as your knowledge of answers of and your \nknowledge of existing questions.",
+            "So that's how you can prepare.",
+            "Of course you will need to run this test not that one \nor two times.",
+            "I recommend you to run it maybe five or ten times."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd here is what this is a question from Rakhi and this is about client side programming and we did not study this \npart.",
+            "It's about send box Messaging.",
+            "I can show you where you can find answers about this.",
+            "I'm sure you'll find it \nquite boring because such messaging made sense in Classic UI and not so practical in Freedom ui."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd for such purpose, messaging mechanism was designed and this is sandbox messaging mechanism which is \nonly working at client side between modules.",
+            "Between client side modules.",
+            "There are some technical details about \nit.",
+            "So just for your reference I will answer.",
+            "I will provide you the link."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo messages, they have different types and correct answers.",
+            "Here are point to point message returns an object \nbroadcast messages does not.",
+            "Yes, this is true.",
+            "Probably I have to show it as a green color.",
+            "Yeah, so this is true."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI can quickly show you examples of how it can look like and example of sandbox messaging.",
+            "So in such messaging \nwe have an initializer.",
+            "So kind of a person who can initiate this message.",
+            "It's called publisher.",
+            "So a person."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSubscriber is a party, so it's a module which declares that it can process certain messages and it also should \nregister them and then this module must subscribe.",
+            "Message has its own identifier.",
+            "This is a text code and message \nwhen subscribed may have a method which will be actually used for getting message data and do something useful."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI think we have to remove this question from the test because it was from very early version 7 settings and it's about \nbind config for properties events for events.",
+            "So A is correct here, but we will remove this question soon.",
+            "So this \nquestion does not teach you anything because now it's totally not practical, neither in classic UI nor in Freedom UI.",
+            "So old, very old question for 7.2 or something like this and A is correct, you can guess by events for events you can \nguess the answer."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo just make sure your homework looks good, run tests several times and then for example, some of you may apply \nfor the exam and run it next week.",
+            "But in general, usually participants need from two till three weeks and this is time \nquite fair which will be totally comfortable for you to prepare for your exam and then run it today you will receive your \nhomework file and please respond at Please respond on my email with your confirmation that you are ready to or \nyou plan to pass FastTrack certification and I will provide you individual date and time of course, taken into \nconsideration your time zone."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you will receive everything necessary in email.",
+            "And when the proper date will come, I will wait for you in Zoom \nsession when you will finally proceed with your test.",
+            "With your exam test, you will receive your certificate which will \nbe available for you always at the Academy.",
+            "Okay, here is my academy, here is my profile."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAt the end of this period, while your certificate is still valid, you will be able to run recertification, which means \ngetting new certificate by running test only with no homework.",
+            "So if you want, when you have current certificate, \nyou'll be able to get new one with a simplified procedure.",
+            "So that's all for today.",
+            "I thank you for your time.",
+            "If you have \nany questions, any more questions, please tell me."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYeah, and advanced has 28 theoretical questions, while basic has only 25 theoretical questions.",
+            "So Advanced is a \nbit.",
+            "Is a bit harder to prepare because of more question categories.",
+            "But in general they are like similar.",
+            "So if you \nspend enough time, you will be able to pass Basic or Advanced with the same level of errors, I think."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd unfortunately such links work only once and that's why we have to generate it each time when participants \nwants to pass an exam.",
+            "Oh yes, sorry.",
+            "So the.",
+            "The exam and the going over the homework, there are two separate \noccasions, are they?",
+            "So one time we'll have a meeting to go over the assignment."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWhen we will have online session, you will show your homework.",
+            "We will see if it's working.",
+            "Actually, do we have \nsome serious errors there.",
+            "And at the same time, after checking the homework, which will take just 10 minutes, then \nyou will run your test, which will take all rest time.",
+            "But usually time is not a problem."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 17 ---\n\nOh, so you are worried about the business sense of this time, of this type of cultivation.",
+            "Or you have some errors in \nexecution?",
+            "No, no, the execution is right.",
+            "But the result, the number, it's not like when I calculate it in phone.",
+            "You can \ncheck."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in general, it looks like we have 300 bucks.",
+            "311 bucks per square foot.",
+            "So it means we divide it and this number \nrepresents value per square foot, but not per realty item.",
+            "So not per a house.",
+            "And you if you see something totally \ndifferent here, or if you see nothing, you can check how your calculation went on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it looks like this data was the result of our calculation and it looks like more or less close to reality $300 per \nsquare foot according to our current prices and areas.",
+            "So area is used here in this calculation.",
+            "And also if you're not \nhappy with this number, you can try to do debugging of server side code like we did with Visual Studio Opening \ncorrespondent average price calculation script here methods wrapper so you remember we did it.",
+            "And you also can \nput breakpoint and restart your app.",
+            "Attach your visual Studio to your worker process."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYeah, yeah.",
+            "Thank you.",
+            "So if you have zero it's very oh so it's quite often happens that you have just small mistake in \nyour process.",
+            "So if you find that you have just zero there you can go to your average price calculation.",
+            "And I also \nsometimes do this mistake."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen at next step it will go to page parameter here if you do something so if you lost your data something on the \nway so you will see zero and you should debug your process, you should debug your script task.",
+            "And we already \ndiscussed how to do this.",
+            "Rakhi is asking Rakhi yes, you can reply on Monday or whenever it will be suitable."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut I think that regular Certification is a bit more harder and it has different variants.",
+            "There are different subjects, not \njust one realty, there are different subjects.",
+            "So you will probably take more time to do regular certification.",
+            "So that's\n\n--- Page 18 ---\n\nall for today.",
+            "I thank you for your time."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut now you have automation with Zoom and with already prepared links for download.",
+            "So probably it makes sense \nto use existing links without waiting for me to host the same video somewhere else.",
+            "And that's why it makes sense \nto download it today.",
+            "And Basil, if you fail the exam, yes you can take it again."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo your homework, if you do it well, no need to do it again for the next exam, yes you can take it again.",
+            "Thank you \nBasic for your question.",
+            "So if any other questions please tell me.",
+            "I will do my some final preparation step to \ndownload everything to file system to submit to version control.",
+            "And thank you very much for your time."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOur session is over.",
+            "Thank you and goodbye.",
+            "It."
+          ]
+        }
+      ],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "server",
+        "database",
+        "sql",
+        "data",
+        "package",
+        "field",
+        "schema",
+        "detail",
+        "configuration",
+        "section"
+      ],
+      "keywords": [
+        "speaker",
+        "let",
+        "data",
+        "like",
+        "page",
+        "test",
+        "exam",
+        "client",
+        "use",
+        "yes"
+      ],
+      "topics": [
+        "speaker"
+      ]
+    },
+    "method": "hierarchical_structural"
+  }
+}

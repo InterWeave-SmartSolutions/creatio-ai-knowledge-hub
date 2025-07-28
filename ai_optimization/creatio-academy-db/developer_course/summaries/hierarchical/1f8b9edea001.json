@@ -1,0 +1,60 @@
+{
+  "summary_id": "1f8b9edea001",
+  "content_id": "4080e9e2e7d9",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: module, entity, json, web service, schema",
+  "key_points": [
+    "module",
+    "entity",
+    "json",
+    "web service",
+    "schema"
+  ],
+  "keywords": [
+    "ui",
+    "process",
+    "code",
+    "like",
+    "classic",
+    "data",
+    "freedom",
+    "use",
+    "freedom ui",
+    "classic ui"
+  ],
+  "topics": [],
+  "summary_length": 8,
+  "original_length": 14615,
+  "compression_ratio": 0.0005473828258638385,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:52:46.712671",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "module",
+        "entity",
+        "json",
+        "web service",
+        "schema"
+      ],
+      "keywords": [
+        "ui",
+        "process",
+        "code",
+        "like",
+        "classic",
+        "data",
+        "freedom",
+        "use",
+        "freedom ui",
+        "classic ui"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

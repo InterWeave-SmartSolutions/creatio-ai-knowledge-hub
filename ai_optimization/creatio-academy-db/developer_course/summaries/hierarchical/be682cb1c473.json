@@ -1,0 +1,60 @@
+{
+  "summary_id": "be682cb1c473",
+  "content_id": "c326b609b172",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: record, entity, section, database, server",
+  "key_points": [
+    "record",
+    "entity",
+    "section",
+    "database",
+    "server"
+  ],
+  "keywords": [
+    "data",
+    "let",
+    "test",
+    "like",
+    "exam",
+    "use",
+    "client",
+    "process",
+    "yes",
+    "homework"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 12853,
+  "compression_ratio": 0.000544619933089551,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:51:21.851248",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "record",
+        "entity",
+        "section",
+        "database",
+        "server"
+      ],
+      "keywords": [
+        "data",
+        "let",
+        "test",
+        "like",
+        "exam",
+        "use",
+        "client",
+        "process",
+        "yes",
+        "homework"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "summary_id": "0e26706bca0e",
+  "content_id": "3c30ea1c92f0",
+  "summary_type": "extractive",
+  "summary_text": "So probably we can add new column to offer type lookup in \norder to save one value in percent for sales. # Speaker 1\n\nIt looks like we still did not need to do any additional steps related to adding new column into existing object. # Speaker 1\n\nColumns in our realty object and then we will find offer type extended and system will show us only suitable on the \ncompatible field which will be you can be used within decimal number control. # Speaker 1\n\nYou click Install or Add new application and you can select something from this list or you can select Marketplace \nPowered. Okay, we need price, we need commission so we can collapse all other new config div items till we will face \nview model config. # Speaker 1\n\nSo simply speaking, this handler will be called each time when any column value changes at our user at our client \nside page in our browser. By default this folder is somewhere in temp Catalog Windows temp I decided to make it different so we \ncan find logs and as you can see we have zero, which means main application logs. # Speaker 1\n\nLet's go to our configuration section, find our form page again, open its source code again. # Speaker 1\n\nDifferent contexts, different types and let's go back to our realty, try to select manager system only shows us only \ncontext with a certain type. # Speaker 1\n\nIn total and you can't break the way how pages code and what handlers are called there until you will write your own \ncontrol I think so in Freedom UI we have different conditions for programming.",
+  "key_points": [
+    "So probably we can add new column to offer type lookup in \norder to save one value in percent for sales.",
+    "# Speaker 1\n\nIt looks like we still did not need to do any additional steps related to adding new column into existing object.",
+    "# Speaker 1\n\nColumns in our realty object and then we will find offer type extended and system will show us only suitable on the \ncompatible field which will be you can be used within decimal number control.",
+    "# Speaker 1\n\nYou click Install or Add new application and you can select something from this list or you can select Marketplace \nPowered.",
+    "Okay, we need price, we need commission so we can collapse all other new config div items till we will face \nview model config."
+  ],
+  "keywords": [
+    "speaker",
+    "page",
+    "let",
+    "okay",
+    "data",
+    "save",
+    "speaker page",
+    "like",
+    "commission",
+    "type"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 281,
+  "original_length": 18727,
+  "compression_ratio": 0.015005072889411011,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T17:00:49.719617",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1700,
+    "method": "tfidf_position_ranking"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "summary_id": "eeddcc0fb8fb",
+  "content_id": "ac0721a4f286",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: page, schema, field, customization, package",
+  "key_points": [
+    "page",
+    "schema",
+    "field",
+    "customization",
+    "package"
+  ],
+  "keywords": [
+    "let",
+    "okay",
+    "data",
+    "save",
+    "like",
+    "page",
+    "commission",
+    "type",
+    "code",
+    "column"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 15100,
+  "compression_ratio": 0.00046357615894039735,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:56:44.699622",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "page",
+        "schema",
+        "field",
+        "customization",
+        "package"
+      ],
+      "keywords": [
+        "let",
+        "okay",
+        "data",
+        "save",
+        "like",
+        "page",
+        "commission",
+        "type",
+        "code",
+        "column"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

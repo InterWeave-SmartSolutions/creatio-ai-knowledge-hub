@@ -1,0 +1,45 @@
+{
+  "summary_id": "ee187255066d",
+  "content_id": "05031a09507b",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: some \nof you will become certified Creation developers.\nINSTRUCTION: steps of our development career, so we'll discuss how general development is \nrecommended to be performed in Croatia, what are the environments, how to set up our own environment and also \nwe will probably switch our own environment in a special mode which will enable full available set of tools for \ndeveloper or creation.\nINSTRUCTION: we will work with packages with version control and enable git integration.\nCONCEPT: page\nCONCEPT: schema\nCONCEPT: field\nNOTE: them or maybe just prepare at the beginning of each session.\nNOTE: to take care and just check that your power of your PC is good enough.",
+  "key_points": [
+    "INSTRUCTION: some \nof you will become certified Creation developers.",
+    "INSTRUCTION: steps of our development career, so we'll discuss how general development is \nrecommended to be performed in Croatia, what are the environments, how to set up our own environment and also \nwe will probably switch our own environment in a special mode which will enable full available set of tools for \ndeveloper or creation.",
+    "INSTRUCTION: we will work with packages with version control and enable git integration.",
+    "CONCEPT: page",
+    "CONCEPT: schema",
+    "CONCEPT: field",
+    "NOTE: them or maybe just prepare at the beginning of each session.",
+    "NOTE: to take care and just check that your power of your PC is good enough."
+  ],
+  "keywords": [
+    "speaker",
+    "data",
+    "page",
+    "let",
+    "like",
+    "okay",
+    "use",
+    "need",
+    "code",
+    "make"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 111,
+  "original_length": 207848,
+  "compression_ratio": 0.0005340441091566914,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:58:17.366249",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

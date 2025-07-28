@@ -1,0 +1,43 @@
+{
+  "summary_id": "d8c0d47c051b",
+  "content_id": "623e1ee007a4",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: of all, I wanted to tell you about tracing.\nINSTRUCTION: you start to develop version two of your process, but while you are developing it, it will be not ready for end users and you still want to save some intermediate progress.\nINSTRUCTION: when you save a process, you can make you can run an action set here.\nCONCEPT: page\nCONCEPT: schema\nCONCEPT: field\nNOTE: message that tells us about the process.\nNOTE: information, especially when you would develop and debug your process.",
+  "key_points": [
+    "INSTRUCTION: of all, I wanted to tell you about tracing.",
+    "INSTRUCTION: you start to develop version two of your process, but while you are developing it, it will be not ready for end users and you still want to save some intermediate progress.",
+    "INSTRUCTION: when you save a process, you can make you can run an action set here.",
+    "CONCEPT: page",
+    "CONCEPT: schema",
+    "CONCEPT: field",
+    "NOTE: message that tells us about the process.",
+    "NOTE: information, especially when you would develop and debug your process."
+  ],
+  "keywords": [
+    "process",
+    "data",
+    "page",
+    "let",
+    "code",
+    "use",
+    "user",
+    "make",
+    "okay",
+    "time"
+  ],
+  "topics": [],
+  "summary_length": 84,
+  "original_length": 14513,
+  "compression_ratio": 0.005787914283745608,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:56:28.331472",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

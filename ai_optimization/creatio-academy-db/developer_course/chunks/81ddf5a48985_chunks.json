@@ -1,0 +1,1694 @@
+[
+  {
+    "chunk_id": "e6ae0f34c4ba37c1a803a493b62fd941",
+    "document_id": "81ddf5a48985",
+    "content": "--- Page 1 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 0,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 4,
+    "token_count": 5,
+    "context": {
+      "heading": null,
+      "paragraph_count": 1,
+      "position_in_document": 0
+    }
+  },
+  {
+    "chunk_id": "5bf46a02e3dd4412bef1f1cb580defcb",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nForeign session number 10 of our development on creation platform Guided Learning. Today we will prepare with \nthe to prepare for the certification for the development exam. And this is an optional thing. So if you want, if you feel \nyourself ready for this, you can apply for this type of check certification. And as you are members of our guided \nlearning, so you can run fast track certification for free. And I will explain what certification is, how it's held and what \nyou should do for it, how to prepare. So all the certification steps we will discuss today and I hope it will be clear. So \nin general, the main purpose what is certification? This is a test. It's a check of your knowledge and skills. And we \nhave some certification basics displayed at academy.academy.creation.com Go to certification if you're interested in \ndevelopment certification.",
+    "chunk_type": "paragraph",
+    "chunk_index": 1,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 149,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 1
+    }
+  },
+  {
+    "chunk_id": "710fa2a0318976d601e700871e6f7f42",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo you see that we check some major creation development skills related to some C sharp programming, JavaScript \nprogramming, understanding of general architecture, understanding of packages, some little SQL experience and \nintegrations questions. So certification is like part of your path. And if you pass certification, you will get your \ncertification certificate which issued for two years. And being a certified creation developer gives you some \nadvantages. One of the obvious advantage is that you can ask for help at support team at creation support team \nwith the questions related to development like how can I do something like this if you have no your own certificate \nDeveloper certificate support team will reject you on such questions. But if you are certified developer and you \nrepresent company with a paid support plan, so your company should pay some money to support for support.",
+    "chunk_type": "paragraph",
+    "chunk_index": 2,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 146,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 2
+    }
+  },
+  {
+    "chunk_id": "04ca6b3eef04978f9e0548c6993f04d9",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nIn this case you'll be able to ask questions about development and improvements and support team will help will \nhave to help you. So now you are somewhere here. You now started our customization and development already \nfinished development course. And then the next step is to prepare for the exam and then pass this exam. This is \noptional so it's not mandatory. And if you do not feel yourself ready for this, you may do it later. You can also apply \nfor certification at Academy website. But in this case there are a bit different rules and a bit different complexity. So \nat Academy you can register for an exam and if you are a partner, such exam is free. But if you are a customer, so \nmember of a customer company, in this case certification is paid.",
+    "chunk_type": "paragraph",
+    "chunk_index": 3,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 142,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 3
+    }
+  },
+  {
+    "chunk_id": "fffafa4559e346c5829fd0eba4c4e335",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo if you are a customer and attended our guided learning session, obviously it makes sense to apply for a free fast \ntrack certification. RAK is telling that going to do the same step. So same step. Yep. Next price web service working \nparameters are not showing not passing. So it looks like Raki you need some help in your Environment and \ndevelopment and maybe debugging. Yes. So it's about the question how something is not working well and you need \nsome assistance. Yes, am I. He's showing a screenshot. Let me show it for you. So it looks like your code is not \nworking properly and possibly you should just check. Let me show you. I believe as you use the name of the \nFreedom UI section. So we should go to Freedom UI package. We should go to find form page source.",
+    "chunk_type": "paragraph",
+    "chunk_index": 4,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 147,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 4
+    }
+  },
+  {
+    "chunk_id": "903cdfa05dae8dce9fa2f14ac2f24aa0",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nI will show you, Rakhi, how you get such data. Here you see handlers. Here you see your button handler and you take \ntype object. You should check that this is your attribute displayed in view, model, config and this attribute. So for \noffer type. Sorry, type. Here you should copy this attribute. For author type, you should copy this attribute and use it \nin your code. If you do it incorrectly, of course it will not work for you. So such value here should represent type \ncolumn and here should represent offer type. It looks like your code is not failing, but probably you just do not \noperate with these names correctly. So you should get it. If it's not empty, you will get value. Value here means id. \nYou also may find display value, which is a display text you can see in lookup columns.\n\n--- Page 2 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 5,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 154,
+    "token_count": 190,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 5
+    }
+  },
+  {
+    "chunk_id": "e049417f6e62cc8b2f7d0c8293f262b1",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nYes, thank you Rakhi for telling this telling me about this trouble. So let's move on with the certification. So this is \nkind of Excel and this exam is free if you are participant of our guided learning session. But it has some timeout so it \nwill be not forever free for you. And Fast Track certification is available for three weeks after the end of our training. \nSo three weeks from today. I think it's quite fair. And you can easily make your homework and prepare for the test. If \nyou would like to run your certification for example, two months later, somewhere in August 2024, then you can \napply for this exam just from Academy website and register for the exam at Academy. But currently the best way for \nyou is to apply for an exam as a member of our guided learning.",
+    "chunk_type": "paragraph",
+    "chunk_index": 6,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 6
+    }
+  },
+  {
+    "chunk_id": "51ff70122aa6813c943be61cddd1990c",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo today I will send you the homework and if you respond me on this proposal to pass the exam. And we will \norganize individual sessions with those of you who would like to run this exam. And in order to apply for Fast Track \ncertification, I will ask you to respond on my email. So don't forget if you want to register, please respond on email. I \nhave a question. Yes, please. And we have already applied for the certification later this June, like becoming June. \nSo can we cancel that slot and apply for the Fast Track certification which you have just discussed? Yes, yes. You \ncan. So please write me an email because today's Friday and it's a bit hard for me to remember everything in my \nmind. So it will be much easier for me to have this task for rescheduling noted somewhere.",
+    "chunk_type": "paragraph",
+    "chunk_index": 7,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 150,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 7
+    }
+  },
+  {
+    "chunk_id": "490c808c207cfc0be840c776cd8cd846",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo please send me a message about it, I will process it properly and we can run Fast Track certification with you or \nwith someone with your team. Thanks. Okay. Thank you. Okay, and let's move on. So what certification includes? We \nhave some kind of general policy explaining here. So this is a link at our certification tab about the general policy. It's \na PDF file. You can also read it, but I will explain you in several words. So certification includes homework. It's also \nknown as practical assignment and online test, which is our online session with the trainer. This online session will \nbe up to one hour and your homework may take a lot of time or not so many, not so much time depending on your \nskills.",
+    "chunk_type": "paragraph",
+    "chunk_index": 8,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 134,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 8
+    }
+  },
+  {
+    "chunk_id": "037ad8a8da41a630a7c5f0cbd26b3387",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo all of you will receive your homework today with the final email with all the video recording sessions list and so \non. So you will receive your homework and you will have some time. I think that one week will be probably fully \nenough for you to make your homework or adjust your current environment according to the homework assignment. \nAnd the homework is designed so you can use your current Freedom UI section that we designed to implement your \nhomework. Because the same section, the same page, the same business logic, just slight changes in calculations \nand so on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 9,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 104,
+    "token_count": 121,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 9
+    }
+  },
+  {
+    "chunk_id": "77222620f24fd1290aa222c21c8883da",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo if you spend your time, if you already spent your time on making all our training session examples, it will be very \neasy for you to make your homework because it's also very similar and that's how you can get benefits from your \neveryday activity during the session. So let me explain what will include, what will be included into your homework. I \nwill show you an example right now. Just a moment here. Fast Track certification and you will see the document. \nYes, here. Okay, so this is fast Track certification. I will provide a better, more modern link or download the very late \nthe latest version of creation for you. So the Latest one is 813 and the homework includes very simple tasks like \ncreate new section, provide its columns new detail.",
+    "chunk_type": "paragraph",
+    "chunk_index": 10,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 138,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 10
+    }
+  },
+  {
+    "chunk_id": "e0e3c3bc08720109cd958ceba9b35ec9",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd also it includes some examples which will require coding and validate coding samples for you in JavaScript and\n\n--- Page 3 ---\n\nin C. So validation should include coding at client side. We already discussed how to do this. Just to remind you, this \nis about checks of your data and in our case we checked that negative prices cannot be edited, cannot be added. So \nyou see, price can't be less than 50 bucks, so we cannot save such data and area also is checked there so validation \nalso checks. So you should do the same at your environment where you present your homework.",
+    "chunk_type": "paragraph",
+    "chunk_index": 11,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 109,
+    "token_count": 129,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 11
+    }
+  },
+  {
+    "chunk_id": "f79f515b3bd522e384080ca68ea0f34b",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo validation we already discussed you may watch our previous videos if you skipped it and you will know how to do \nthis calculation is about edit page online let's say runtime calculation that we did also in JavaScript and we made the \ncalculation of commission depending on price and offer type. Let me show you we did it. So if price changed, you \nsee for each typing and each change of the price we have called commission recalculated and offer type. If it \nchanges, you see commission is recalculated. We also covered such example fully during our session, including \neven potential issues that you may face when you add new columns to your lookups. So you can just follow the \nsame approach and make it work just as we did.",
+    "chunk_type": "paragraph",
+    "chunk_index": 12,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 134,
+    "token_count": 156,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 12
+    }
+  },
+  {
+    "chunk_id": "795d3537afd729c27c8ffe9c67ca189b",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nPlease note we have a bit different percentage of prices and for center for rentals and for sales, so take care to \nprovide correct values here. So this is important and we will check it the next task is about C Sharp programming \nmake your own back service club. It will do some calculation of price minimum price. In our example we made a \nmaximum price so it's very easy to change but it will require your own programming. It will require your \nunderstanding of a C sharp script tasks or sorry C sharp source codes. So here's your package. Here is our web \nservice so you should present something like this during your exam. Of course it must be compilable and it must \nwork normally. In my example we use max price calculation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 13,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 137,
+    "token_count": 159,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 13
+    }
+  },
+  {
+    "chunk_id": "3d0ccccfd70b06c9fdbe5f3384f70314",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nIn your homework exam it will be minimum price calculation so they're easy to change but you have to perform this \nstuff in and that's why your homework sorry that's why your everyday work and your results of work at our sessions \nwill be important and it's so it will be useful for your exam and we already discussed how you can write such code. \nWe used Visual Studio to facilitate our development and make it really easy with the help of background syntax \ncheck, intellisense, autocomplete coloring and also if you're interested, you can study the structure of this project \nand understand a bit more how it was done and generally project files and all the preparations made by creation. We \nonly make our own part of it as a C Sharp source code.",
+    "chunk_type": "paragraph",
+    "chunk_index": 14,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 138,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 14
+    }
+  },
+  {
+    "chunk_id": "43f66833a77734f7078bdf7fb5dd02de",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nOf course you may use so it's expected that you will use your local instance if you have no any conditions to run \nlocal instance. You can use cloud one trial environment or dedicated demo environment if you have so you can do \nthis in any kind of environments and it will work for you. Of course your system must be compilable so you should \nnot get such compilation errors as I do here. In my case it looks like I had an issue compiling my environment \nbecause of the same process did not allow system to replace some libraries. We will try to compile today just to get \nrid of this error message. Previously we had no troubles with it. So your homework includes also some server side \nchecks and if you do five tasks of your homework you can apply for a basic action.",
+    "chunk_type": "paragraph",
+    "chunk_index": 15,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 149,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 15
+    }
+  },
+  {
+    "chunk_id": "cb3e9e7920ae2b873d0786a9b91fd594",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAlso we have a task number six which is a bit additional one. It's about business processes. So generally it's \nexpected to make you using business process, but you can make it with another tools if you want. For example, you \ncan create your own web service. You can run your web service from client side using your code like we did running \nof a client side web service method that we made in task number five. So if you want to apply for advanced level, you \ncan make task number six and prepare for the advanced test. We have two levels of certification, Basic and \nadvanced. They have the same legal like power. So if you apply for help at support team, any type of certificate will \nbe working for you. So basic or advanced works the same.\n\n--- Page 4 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 16,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 146,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 16
+    }
+  },
+  {
+    "chunk_id": "24b145c3ad6ee791454e6ec4c1140e86",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd also I didn't tell you important thing that if you are a member of a partner company it makes big sense to get \nmany certified professionals at your partner company because it impacts on your partnership level. And partnership \nlevel is something about margins, about deals and money sharing between partner company and creation company. \nThe reason is quite clear. If a partner has a lot of professional experts then there is a lower chance that creature will \nhave to support and like uphold the partner in case of some complex situations with real customers. So if partner is \nreally expert and professional then it's possible to provide better margin and simply speaking to share more money \nwith partner and less money to creature when signing some deals with real customers.",
+    "chunk_type": "paragraph",
+    "chunk_index": 17,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 135,
+    "token_count": 151,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 17
+    }
+  },
+  {
+    "chunk_id": "6fe8207495f645532262abcce66d4b95",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo if partner has not so many experts and certified professionals then such partner will have less partnership level. \nAnd probably this is more risky for creature when any kind of agreement will be signed with a real customer \nincluding partner part of work. And that's why any partner is interested in having as many as possible of certified \nexperts, certified analysts or developers at Valer stuff. So it makes sense for partnership level. Okay, so task number \nsix is about some automation of adding data to the detail. The easiest way to implement is use of business process \nand then we can add so you can easily make a button or action that will do some insert some data and also there is \na task to Refresh list. So update number so list of records.",
+    "chunk_type": "paragraph",
+    "chunk_index": 18,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 139,
+    "token_count": 159,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 18
+    }
+  },
+  {
+    "chunk_id": "0f29fc7831e6dc9361c5291c06266561",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAfter you add this data, let me show you and remind you how we can do this. So it will be very quick and easy. And \ncurrently when we add. Okay, let's see. So when we add new data to our reality section, you remember we already \nmade some automatic insert of data house for sale. So we made automatic insert of data into realty visits detail. \nYes, this one. But we can make the same process or make a similar process, but it's better to make the same \nprocess operational. And also that can be called from some action. I will show it how we can do this for you. I can \nfind the corresponding process. I prefer to work with processes from configuration section because it makes it \neasier for me and harder to miss and auto add reality visits process.",
+    "chunk_type": "paragraph",
+    "chunk_index": 19,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 146,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 19
+    }
+  },
+  {
+    "chunk_id": "ee4182dd9bfc0b63ba31ddc72a9fd543",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nWe already used this process to add data. When new record was added, we used start signal item for it. And it was \nalso an example of entity event handling with the easiest possible way using start signals at server side. So it was \none of the examples of entity events for objects. I will show you how we can do it in a bit different way. And for this \nlet's imagine we can start this process not only by adding new reality data, but also let's imagine we can start this \nprocess manually. We will need parent realty ID in order to transfer this data as an argument to this process. So let's \ngo to parameters add new GUID or unique identifier parameter and we can call it realty. This doesn't require any \nprogramming for us to be okay bidirectional.",
+    "chunk_type": "paragraph",
+    "chunk_index": 20,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 144,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 20
+    }
+  },
+  {
+    "chunk_id": "972e18e08e561fad255e185cc4e08947",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo we can register such parameter as you remember, parameters are like variables at our process. And in case if we \nstart our process manually so we can call it manual start, if we do it manually, then we expect that this parameter \nwill be filled in and then we can just move on to our step where we add data and then we can replace here parent \nrealty not from signal but from this parameter. So we can replace process parameter and put realty ID parameter \nhere. So now if manual start is performed, we do not use background here, then we will use this reality ID and \neverything will work. Of course, in case of started by signal, we need to prepare this reality ID and we will easily take \nit from the signal. I will use formula for this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 21,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 145,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 21
+    }
+  },
+  {
+    "chunk_id": "5ba7026266548f34369362db96e641e3",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\n--- Page 5 ---\n\nYou can see it's not so hard and it's very important for you to become familiar and to feel some confidence when you \nwork with processes because this is like a brick game, like a Lego, which you can use for much more complicated \nProcesses and business logic. If you understand well how such tools work, if you make your own simple examples \nand understand it clearly, then you can use it for much more complicated things and you can use it quite efficiently. \nSo in my case I'm using formula to assign parameter value. Formula is assigning operator in creature. So we set the \nvalue to target parameter realty ID and formula value is our expression that we save here as expression we will just \nsimply take our signal. You see corresponding icon representing this signal.",
+    "chunk_type": "paragraph",
+    "chunk_index": 22,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 144,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 22
+    }
+  },
+  {
+    "chunk_id": "eadd1a4a81fb0e5bdd928a8400c9bce5",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo we can look at its title or at icon type that will help us to get it. And the only suitable parameter from a signal is \nunique identifier of record double click and that's how we will get this data and save it as formula value. So if our \nprocess started as is driven by signal so if our process started as event handling or insert, then our formula will set \nreality ID ROM signal and then we will run our insert operation based on reality ID parameter. In case of manual start, \nwe are expecting to get this reality ID as input data and then we will do our inserts and everything will work. So this \nis a single process that serves for us into two different situations. In a case when we add data, when we add new \nreality or in case if reality already exists.",
+    "chunk_type": "paragraph",
+    "chunk_index": 23,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 152,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 23
+    }
+  },
+  {
+    "chunk_id": "026c4d536f125a8468a1ab49c95ff3f4",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nBut we can start this process manually. So of course we have to save it. Okay, and then we can register this process \nsomewhere, for example as action to our page. Let's go to the edit page button, find corresponding action. Here we \nhave one more action and we can call it add visits action which will run business process. What process to run Add \nrealty visits and we will select it for the select page process parameter where the record is passed realty id finally in \nthis version you see that this list of parameters is filtered. In some previous version like 8.1.1 we had a big list of \nparameters here even not suitable not guids. Now developers finally improved this part. So thanks developers to \nmake it correctly and we also can use some icon would be fun. Nice to see how we can add some data.",
+    "chunk_type": "paragraph",
+    "chunk_index": 24,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 152,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 24
+    }
+  },
+  {
+    "chunk_id": "f67f69857734ebaadf01e68cc6c6bf85",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nOkay, little bit plus will be a good example and add visits menu item will be our unique element code. This will help \nus to easily find this item in view config diff part of the JavaScript code for our client module. Okay, looks good. We \nmade it. We have to save as you can see, I'm very stick to no code approach and no code tools if it's possible \nbecause it helps it to get your results very quickly and efficiently. So you spend just a little time and you get \nsomething that works quite well even in case if I really like to develop something to write some code. But if you can \navoid this and use no code. So in general it's an advantage for you. Let's try to test how it works. Open any existing \ndata, find our action, add visits and icon.",
+    "chunk_type": "paragraph",
+    "chunk_index": 25,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 150,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 25
+    }
+  },
+  {
+    "chunk_id": "72c67b3cc441798daa7f10842b04f58d",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAs you can see it works, so let's try to run it. Process successfully started. And also you may find that our task our \npart of our task. As a result of running the action, the list of the reality visit detail must be updated automatically to \ndisplay new records. And also you can use Enable Live Update. This is a no code option to make this update quite \neasily and with no need to program in and send in messages using WebSocket. So let's try this simple approach \nfirst. This simple approach. So now you see we have no automatic update. Let's try to reward refresh date. Now you \nsee we have some data here. So it looks like data was added correctly, but automatic update was not done because \nwe did not care about this option. Okay, let's make this live update.",
+    "chunk_type": "paragraph",
+    "chunk_index": 26,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 147,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 26
+    }
+  },
+  {
+    "chunk_id": "5e08f9f0d225240b242ea4c87f391f72",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nI will explain how you can do this so we can close unnecessary tabs. Let's go to search for objects and find reality \nVisit object. We did not use this feature so far, but I will explain. So in Behavior settings there is a very important and \nquite new feature which appeared only in version 8. This version, this feature is called Enable Live Update. Live Data\n\n--- Page 6 ---\n\nUpdate. What does it mean in case if your page is shown for a user? So we have a currently alive user session. This \nuser opened some page where this object was used. So in case user opened it and the same data is changed at \nserver side. For example, you changed and recalculated some column like you recalculated some amount or status \nor whatever. Then system is capable to automatically refresh corresponding column at client side for you.",
+    "chunk_type": "paragraph",
+    "chunk_index": 27,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 153,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 27
+    }
+  },
+  {
+    "chunk_id": "65b69b3912e228ea7ef31bab442e9241",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo it was generally intended to be used for updates. Situation when you have a record it was already opened at client \nside and you change the data columns of the record at server side. So I believe it was initially designed for updates, \nbut it also turned out that it works well for inserts and if we have a detail with a list, so we have a list of some detail \nand data was added at server side. This detail list is updated at client side in case if Enable Live Update option is on. \nSo let's test and check how it works. Enable this option, publish our object and now you will see the difference. So \nyou will see that system will automatically so it will automatically update corresponding data if it was added at the \ndetail. Okay, so we can close it. Go to the page.",
+    "chunk_type": "paragraph",
+    "chunk_index": 28,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 152,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 28
+    }
+  },
+  {
+    "chunk_id": "2ebfa549e0542421ea29aea50f47b862",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nWe need to use some good examples. So let's delete all the data records. Also, possibly we can face some cache \nissues. Let's reward the page just to avoid any potential threat of browser caching. Okay, open it, look at detail. Now \nadd visits. And our reality visit object is now enabled its Live update feature. Now you see that it looks like data was \nadded. Sometimes it has a glitch and sometimes you see not all of the data records, but actually you see something \nchanged here. If you reload, you can see all three data records. Okay, let's remove them and try to run it once again. \nNow you see it works well, sometimes it works, sometimes not so good. But in general data is updated.",
+    "chunk_type": "paragraph",
+    "chunk_index": 29,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 131,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 29
+    }
+  },
+  {
+    "chunk_id": "d7cf6dac3e7f451e2602f60ab64de569",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo if you do something like this and your end user will see the detailed data changed, so it will be quite good enough \nto display that data was modified and you see how it works. So also it's interesting to mention that it works for \ninsert, it works for updates, but unfortunately for some unknown reason it doesn't work for delete. If we make a \ndelete at somewhere at server side, this will be not represented, not automatically updated in the list shown in client \nside. But the lead situation is not so common, so possibly we can live with it. So if you do something like this at your \nexam, it will be enough and you can do it as is.",
+    "chunk_type": "paragraph",
+    "chunk_index": 30,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 126,
+    "token_count": 147,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 30
+    }
+  },
+  {
+    "chunk_id": "d9e7d459807c81190bddf3ff1ed4c7ec",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nIf you want to display and demonstrate more skills, you can also try to use a bit more complicated approach with the \nweb sockets with messaging from server side to the client side. I can quickly explain you how you can do this. If \nyou're really interested, we can try to make working sample of it. And let me show you how we can find it. Creation \nwebsocket socket freedom UI and why Russian? I don't know. Okay, customer ethics. So we have a partner \ncustomerethics.com and this partner. So this guy is Ryan Farley. It's a creation expert and a partner for many years. \nHe likes to write such articles explaining for beginners some interesting aspects of creation. So they have their own \nlike set of articles kind of knowledge base about different aspects of creation. And sometimes such articles are \neven better than in academy.",
+    "chunk_type": "paragraph",
+    "chunk_index": 31,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 150,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 31
+    }
+  },
+  {
+    "chunk_id": "c04190276d6586d3ad47a0a8550a1fe7",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo we can use it for free. And the main idea is that we can. By the way, it looks like this is a classic UI stuff. No, in \ncreation. No, it's okay. Your model config and in each request we can subscribe for websocket messages and we \nhave to unsubscribe when page is destroyed. Okay, great. And here we can do something to refresh our list and so \non. Okay, so if interested, you can implement something like this if you have enough time today. If you're very \ninterested, we can also try this example and to make it work at our environment. But this is not so mandatory for \nyour homework. I need to explain you some words about WebSockets messaging. So in general, WebSocket in \ncreation is used as one so as alternative channel of communication between server side and client side.\n\n--- Page 7 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 32,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 152,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 32
+    }
+  },
+  {
+    "chunk_id": "2f370d4468437c531ba357bcbf4d603f",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nLet me show you when page of creature is opened. You can also see we have some WebSocket hard beat and it's \nused to check that WebSocket connection is alive or not. WebSocket is the dual directional channel between client \nside and server side. We can use this channel to send the messages from client side to the server side and from \nserver side to the client side. This option to send messages from server to client is extremely helpful because this is \nthe only way how server side of creation can tell to the client side that something is not good or something should \nbe changed or something should be displayed. For example, when we do running of some business processes like \ncalculating average price business process, you probably remember. Then server side sends messages to the client \nside.",
+    "chunk_type": "paragraph",
+    "chunk_index": 33,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 143,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 33
+    }
+  },
+  {
+    "chunk_id": "99a3e8cebee43b2195f10c354d4d5b2f",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd one of the specific message tells client side that we have to show some specific process driven page. So \nsystem should show another page instead of current one. Let me show you how we can track this. We can go to. \nOkay, let me show you can open again and our page we can check network filters ws, which stands for websocket. \nSo we will filter only websocket messages. But it looks like I have to reward this list. Okay, let's clear the root. So I \nwill show you how we can track websocket messages at our browser client side. Let's imagine we open some edit \npage probably this one first one and let's check messages. Yes, we already got some websocket message sent from \nserver side to the client side. And also I expect let's check do we have something here? No.",
+    "chunk_type": "paragraph",
+    "chunk_index": 34,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 147,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 34
+    }
+  },
+  {
+    "chunk_id": "2412dab42536726a2fb4759af1600f24",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nOkay, this one probably will better. So let me explain how it can be useful. Generally, creation uses such a socket for \nsending messages from creation server side to the client side. For example, when we run a process calculate \naverage price. But it looks like possibly I did not see what I need here. You see. Oh, there are many. I just can't see \nanything of everything. So yes, unavailable list license common service body. Okay, let's clear this information save \nyou see some websocket Messaging was done and it was related to process engine and let's try to run it again. Yes. \nSo now you see that one server side tells client side to show some page physically this information is sent with the \nhelp of WebSocket message and it is being sent from server side to the client side.",
+    "chunk_type": "paragraph",
+    "chunk_index": 35,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 145,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 35
+    }
+  },
+  {
+    "chunk_id": "c3f74411ca672888e27d3f6d07a749ba",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nIt has some corresponding data parameters which will be enough for client side to understand what it talks about. \nAnd as you can see, we have some values here that are enough. And client side understand that if sender is \nprocessed dashboard, if it has some id, then client side should search and find corresponding task to be executed. \nYou can see it here. Notification panel, business process task. This one. So client side knows that this one should be \nshown and if we close it system returns back to previous page and so on. So this is example of how WebSockets is \nused at creation. But also it has more different examples of implementation. So I know for sure it's used when we \nstart. For example, when we start page editor. Let me show you what happens if we start page editor we can go to \nsee.",
+    "chunk_type": "paragraph",
+    "chunk_index": 36,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 151,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 36
+    }
+  },
+  {
+    "chunk_id": "1c978f80d8c4c4726108af8689212e6e",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nOh, you don't see it here easily because we opened browser developer to wait. Okay, let's open it again. Revote. Yes, \nnow you will see that we have some websocket messaging processed here. When we do designing of our page and \nespecially when we do designing of business rules, it's also used. And now you see one more connection for \nWebSocket was issued was initialized. So it's interesting that in Windows 10 Home Edition and Windows 11 Home \nEdition there are some limitations in IIS on number of WebSocket channels that can be opened. And that's why you \nhave some significant limitations in working with creatio. So it only works when one page is open of creature. So it's \nconnected with WebSocket connections and also even when you work with single page.\n\n--- Page 8 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 37,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 139,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 37
+    }
+  },
+  {
+    "chunk_id": "089e5642258640126cd63e049ca04c6b",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nBut when you start to design business rules, I faced situation when managing business rules requires additional \nwebsocket connections and it also failed in Windows Home version. So that's how you can track WebSocket \nmessages. You can use some filters here. You can type some messages in order to filter because you may have \nplenty of different WebSocket messages and you may need to filter only necessary ones. And can we get the link? \nOh yeah, sorry. This is the link. Yes, thank you, Patty. Here is the link. And probably I I have to implement this \nexample, but maybe a bit later, because in this example we need some additional code to run Reloading of a list. I \nhave this example, but I need to check it to make sure that everything works well to provide good looking and good \nworking code.",
+    "chunk_type": "paragraph",
+    "chunk_index": 38,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 146,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 38
+    }
+  },
+  {
+    "chunk_id": "dac45aa368a7d52401f2e2dc1de2c92c",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nBut this is like a technical possibility for you to listen for this websocket at client side. You also need to know how to \nsend messages at server side to the client side. Here is the link that shows how you can do this, because first you \nwill do server side sending message. By the way, this example is not perfect because here Ryan sends message to \nall users and this is not perfect. Post message to all means it will search for all active user sessions and will try to \nsend to their user session to the browser such messages. So I recommend to use post message. It will send only to \ncurrent user.",
+    "chunk_type": "paragraph",
+    "chunk_index": 39,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 118,
+    "token_count": 134,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 39
+    }
+  },
+  {
+    "chunk_id": "09bb5234cc470a00c68c48e3c773cb35",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo I think it's more efficient, it's more correct and like more fair to send messages only for current user because \nusually you need to do in like connection exactly to current user, not to anyone. And if you imagine working with \nthousands of end users, so it will be really noisy for them to see such messages that are not intended. So server \nside in C sharp we will use MSG channel utilities special class and run its post message method and there are some \narguments. I already have some example for this websocket messaging, but this example is for classic UI so we can \nsee post message. Let me show you MSG 10 utilities and you should remember that this is inside of configuration \nnamespace so you have to provide user connection as argument.",
+    "chunk_type": "paragraph",
+    "chunk_index": 40,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 139,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 40
+    }
+  },
+  {
+    "chunk_id": "8be4057733122f57e785e0ee80944d79",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSender is a text MSG body as a text and such command will It's a C sharp and it will send the websocket message \nfrom server side to the client side. In the client side you can subscribe for it and this is classic UI example. Here is \nFreedom UI example and subscribing for it means that you may run some certain code in case if such message will \nbe catched at client side. This is more complicated scenario than you probably would want to do. So if you need just \nto make it work, I think that using live update will be enough for the exam.",
+    "chunk_type": "paragraph",
+    "chunk_index": 41,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 110,
+    "token_count": 124,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 41
+    }
+  },
+  {
+    "chunk_id": "722b77122a2870982a1ed0cd4fdd422c",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nThis type of messaging can be important in case if you don't really need live update or if you want to make some \nsignificant changes to server side and then run your necessary comments to update client side only once, which \nmeans to be a bit more correct to do. For example, if you add 100 records at server side, then you ask client side to \nupdate once, which will be definitely better than asking client side to update hundred of times because of live update \noption. But it's up to you so you can go through it if necessary, if interested and make it work. You need also to find \nexample of code to refresh, to run certain handler to refresh data. If you will be really interested in it, just send me a \nmessage. I will try to find good examples and prepare for you.",
+    "chunk_type": "paragraph",
+    "chunk_index": 42,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 150,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 42
+    }
+  },
+  {
+    "chunk_id": "55daa1743d79c3db6ae117081424c3ce",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nOkay, let's go back to our general certification. So it was just about this advanced part of the homework. But if you \ndo just basic part of the homework, it will be also good enough. When you finish this, please keep your environment \non. It means that when you will start your exam, we have to look at your environment and we have to check that your\n\n--- Page 9 ---\n\nsystem, your setting is working, your settings are working correctly. So at the exam session, I expect to see your \nworking environment and then we go to the test part of the session. Test part of the exam. So homework should be \nperformed before your exam starts. And the test will start at online session with the trainer. And of course you have \nto prepare for this test.",
+    "chunk_type": "paragraph",
+    "chunk_index": 43,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 142,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 43
+    }
+  },
+  {
+    "chunk_id": "5fe9f035a02950214290ffe9ed87ffe7",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd before we continue, possibly let's make it five or up to 10 minutes break today. Today's Friday, all of you are a bit \ntired. So let's make a short break and then I will explain how to prepare for the exam. Test. So we'll work with self \nassessment tests. And it's not so easy as it may seem. So. So I will explain how to find answers, we will go through \ntest examples and I will explain how you can prepare for it. Okay, let's make a break. Quick short break. Let's move \non. So now we talk about how to prepare for the exam. Test. So I need to explain that our real exam includes \nhomework and test. And your own total score will be based on your homework. So you will have up to 50 marks from \n100 for your homework. Just try to draw something.",
+    "chunk_type": "paragraph",
+    "chunk_index": 44,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 152,
+    "token_count": 192,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 44
+    }
+  },
+  {
+    "chunk_id": "35d179c93acb54e2fd6ad923a0e71e55",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo 50 for the homework and also 50 for your test. Depending on the type of the test, there are different number of \nquestions. So let's talk about basic exam. And you will have 25 test questions. So it means each question gives you \napproximately 2 marks. And in total you may have up to 100 marks. When you run the self assessment test, you will \nhave no homework part. And if you run the same self assessment test for basic exam, it includes 25 questions. But \nthis calculation logic will finally treat your results from 100 to. So from 0 to 100, it means that 25 questions will give \nyou up to 100 in this test. And it means one mistake will cost you four marks in self assessment test.",
+    "chunk_type": "paragraph",
+    "chunk_index": 45,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 134,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 45
+    }
+  },
+  {
+    "chunk_id": "acebe2e6c6bc089148695e2813a23a7d",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo I'm trying to explain that in your self assessment test you will have slightly different so different results from the \nsame answers if you do it on the exam. And self assessment test is harder and real exam is easier. So in real exam \nyou may do up to seven mistakes from 25 or 28 questions. Let me show you how you can prepare for the exam. So \nexam for developer includes. So we have two levels, basic or advanced. Let's look at advanced part because it will \nshow you some additional categories which are not shown in basic excel. So advanced level includes 28 theoretical \nquestions. We can start this test and let's click Begin test. You will see questions with multiple choice. They are \nshown with square options.",
+    "chunk_type": "paragraph",
+    "chunk_index": 46,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 134,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 46
+    }
+  },
+  {
+    "chunk_id": "7b0007d729863ff9ec14bfc5dce3c725",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd also you will face questions with single choice like radio button with circles on the letters not squares. And we \nhave to answer this test properly and correctly. And please note test self assessment test questions will be similar \nto the same questions that you will get during real exam, but they will be not identical. So you should expect. You \nshould see that such tests are not identical and you should be very careful. Okay, let's try to follow this test so you \nwill see how you can do it. Purpose of the DB attribute for the redis section of connection strings. Let me show you \nwhere we are about it. So here when we set up our local system, we had redis section and DB section. Now the \nquestion is about redis section and DB parameter. So redis section DB parameter.",
+    "chunk_type": "paragraph",
+    "chunk_index": 47,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 147,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 47
+    }
+  },
+  {
+    "chunk_id": "f3d2bad46cd776380e90486e0e1e7300",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo this is about this setting and what are the purpose? So this purpose is a redis database number. Yes, this is \ncorrect. But this is multiple choice. So we must select at least one more item. Must be unique to each application \nenvironment connected to the same redis server. Yes, and indicates SQL database. No, it's not true. Optional. No, it's \nnot true. It's mandatory. So now you see we have all answers. Let's go next. How users with system administrative \nprivileges are different from regular users. Data access restrictions do not apply. Yes, no difference. No, it's not \ncorrect. And if this is multiple choice, so we have to select at least one, this is also correct. Can view all data and no \nrestrictions. Yes. Let's move on what system settings should be created to implement standard odd numbering.\n\n--- Page 10 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 48,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 194,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 48
+    }
+  },
+  {
+    "chunk_id": "7c38aec84717acc90e37af7248287fa2",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nThis is about very old times when you can use such system setting. And I can show you examples. We will see what \nit is about. Let's go to system settings. Let's search system setting which is the last number. Oh, we probably don't \nhave system settings related to business sections code. Okay, let's try last number. Oh, accountless number, \nKnowledge base Last number. So we still have some examples of numbering but with very old approach where we \nhave something like entity last number and entity code mask. Code mask. Yeah, we have for account coding mask \nand count last number. So the correct answer here for this test is something called mask something last number \nthis one. And this set of system settings was used years before. We had auto numbering feature as a default value \nat object properties.",
+    "chunk_type": "paragraph",
+    "chunk_index": 49,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 144,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 49
+    }
+  },
+  {
+    "chunk_id": "a41edc30aff3433ab2b9b40b4ba98cd1",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nNow we use the sum default values for real t classic types. So we used it here columns code autonumber and we \nuse the auto number prefix number of digits and that's how this numbering can be implemented now in current \nenvironment version. But for previous versions it was a bit different and we had to use couple of system settings \nand special code that should be used to generate number. So we have to answer this. Okay, which tools could be \nused for proper transfer of configuration modifications between environments? So in order to test and to run at \nproduction. Tushar, thank you. Thank you. You will receive all video recording homework and all necessary \nreferences and messages. No worries Tushar, thank you. And also you will receive proposal to pass our feedback. \nSo to provide some feedback from your side, it will be really important.",
+    "chunk_type": "paragraph",
+    "chunk_index": 50,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 150,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 50
+    }
+  },
+  {
+    "chunk_id": "8829c0c003bbc623debfecf8311253be",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nThank you to. Okay, so proper transfer of changes target database. No, no, we can't replace the database. Replace \nexecutable files. No, we can't do this. Export in configuration section. Let me show you what it is about. Here is \nconfiguration section. Here is export action. Okay, this is a valid way to export your package, especially for classic ui. \nIt's totally correct. Workspace console quite old utility but still working. So. Yes. And in real exam you will also face \nclio utility option here. So this is also correct. Clio is correct way to export and import section settings between \npackages. So we practiced with it yesterday. Install from file in application hub. Yes, it is also correct. We used it to \ndemonstrate how you can manually load your packages to some test environment. So this is correct.",
+    "chunk_type": "paragraph",
+    "chunk_index": 51,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 142,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 51
+    }
+  },
+  {
+    "chunk_id": "ea865d99d898d5f7b0475135899b44fe",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nI have a quick question about the multiple choice questions, if that's okay. Yes, yes, please. So is it basically all or \nnothing? So say if it's a Multiple choice of 5. Say for. For this example here, say if we only pick two, does that just \ncount as being incorrect or is it somehow weighted? Do you need all three? If that makes sense. If in this question \nyou pick only two, it will be treated as incorrect, unfortunately. Okay, perfect. You have to select all correct options, \notherwise question will be treated as answered with mistake. Yes, I agree it's a bit tricky, but there are not so many \nquestions where you will face so big amount of options. So let's move on. Two developers Work with the same \ncreation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 52,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 135,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 52
+    }
+  },
+  {
+    "chunk_id": "d25664f0e079aecfb764002e588f4473",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nIn general, it's not so good and it's not recommended because they can temporarily do some violation like you made \nstart to compile and another developer will see hanging of the website. So this is something that it's better to avoid \nand interfere with other developers. So this is correct Option is not recommended. So not recommended Other \noptions like submitting changes of svn, it's also not true. And to publish and develop an environment Interfere can \nwork when publishing users will not interfere. No, this is not true. So let's move on. I need to tell you that in total now \nwe have the test which includes different categories. Here you can see name of the category and different \ncategories have different number of questions. So in total our test has more than 120 different questions.\n\n--- Page 11 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 53,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 144,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 53
+    }
+  },
+  {
+    "chunk_id": "43760959177b5fbc111f757cb2f2a965",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nBut for this test you will always get random 28 questions from different categories. It means that if you want to \nprepare better, you need to run this test more than once. I recommend you to start it five or 10 times. So you will feel \nmuch more confident when you will see all different questions and when you will know for sure and you will practice \nwith answers. So it will take some time, but this is how you can prepare better for the test for the exam. So this is a \nquestion about SQL and in our certification we think that SQL knowledge is also important to be a good creation \nexpert. That's why we ask something like this. So what are the difference between truncate, table and delete from? \nSo truncate is used for triggering delete ignores. No, it's not true. There is no difference.",
+    "chunk_type": "paragraph",
+    "chunk_index": 54,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 151,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 54
+    }
+  },
+  {
+    "chunk_id": "1a4b1188ec5b07e9baaad855c4d73912",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nNo, it's not true. When truncate is called table is completely cleared and deletes every record separately row by row. \nYes, this is true. This is difference here. Let's move on. Object should be used as parent object. So any virtual it's not \ntrue. Not recommended to specify parent not true Base object and some of its child items. Yes, this is true. So main \nidea why we use inheritance is to get parent object structure and event handling so behavior. And that's why we \nalmost always use inheritance from base object because of getting standard columns and standard behavior. So \nlet's go on. This question is about package architecture, not a package component. This is about knowledge of what \nis part of a package and what is not part of package. So definitely not a package component is embedded package.",
+    "chunk_type": "paragraph",
+    "chunk_index": 55,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 144,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 55
+    }
+  },
+  {
+    "chunk_id": "1e103d4194621ea56db0b922b9022ec7",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nThe reason is that packages cannot be embedded into each other. So packages cannot be included into another \npackage and embedded packages are not allowed. Not a package component. Schemas means objects, client \nmodules, processes they are package components. So not correct. Data not correct. Scripts not correct. External \nlibraries not correct. Change log files correct. It's not a package component. In real exam, your question will be \nopposite, so you should be careful with opposite questions. So you should read it. Answer exactly of the question. \nPurpose of SQL scripts from package architecture we discussed it. We made a couple of scripts ourselves and you \nsee we have a delete script for example create a view script, for example. So we already have some experience. \nLookup records. No basic configurable items, no arbitrary scripts for some changes in the database. Yes. Let's move \non.",
+    "chunk_type": "paragraph",
+    "chunk_index": 56,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 188,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 56
+    }
+  },
+  {
+    "chunk_id": "ae4eb6213f69aae122105c8bd4a16c58",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nOne more package architecture question. If you do not specify dependency in the package, what will happen? \nPackage cannot be fixed in version control. No, it's not true. Functionality will be available. Parent first version of the \nproduct will not be available in this package. Yes. Configuration items cannot be created. No, it's not true. If your \npackage has no dependencies, you can create some items inside, but you will not be able to use parent base product \nfunctionality. So dependencies are about this base product functionality. Okay, let's move on. Next, what is the \npurpose of data binding tool? We studied it, we installed this data binding tool so we already know how to use it. And \nof course it's not complete queries in the cloud. It's not updating data uploading, no. Data binding elements in the \npackages. Yes. Printables? No. Let's move on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 57,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 196,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 57
+    }
+  },
+  {
+    "chunk_id": "c1f4252998190659242222f6c5576737",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nThis question is about Marketplace applications and this category is on the for advanced level. So we already \nstudied almost all of proposed marketplace applications. So maintenance tools for creation. We installed it on our \nenvironment. Remember here. Here we have for clearing Redis for a start app. So this is example of Marketplace \nmaintenance tools and of course it's restart web application and clear redis this one. Not data items, not deleting, \nnot reading logs standard web services quite hard category because we did not study it so deep and you need to \nmaybe dig a bit deeper into creation documentation. So what permissions to work with odata? Oh, I should tell it for \nyou. So in order to enable odata we should go to special setting of system called operation permissions. We have \ndifferent set of operation permissions enabling functionality for different logic for different users.\n\n--- Page 12 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 58,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 155,
+    "token_count": 184,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 58
+    }
+  },
+  {
+    "chunk_id": "539468f6210c88b8e5e08f76900f968e",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd we can search functionality for all data access to all data. By default it's provided for all administrators. So \nsystem administrators, yes, you can see single users by default cannot operate without data, so you should provide \naccess for them. And of course we need to use can use our data service operation. And this is not correct. Another \nis not correct. Additional question about standard web services which web service you can use to launch \nprocesses? You already remember we used it when we started our sections and when we started calculations \ncalculate average price. I can show it for you. Let's select some data clear filter all. Now you see here is process \nengine service. As we see this is business process which starts this web service starts business processes. So \nprocess engine service not only from third party application but also from inside of creation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 59,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 152,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 59
+    }
+  },
+  {
+    "chunk_id": "ec0e8da194d0354226dc1a16d14a9e04",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nHow do you use custom types? This is about data contract and data member. We discussed it when we build our \nweb service and when you need to transfer additional data so large big data arguments. You should use special data \ncontract class for this. This is correct answer other is incorrect can't use types this is not true Implement custom \ntype class connect namespace no any word about data contract so this is not true A is True Moving one more \nstandard Web Services question HTTP for OData to create new record we used it in our postman Here is my \npostman and here is example of a post query to create new data record. So the answer is post Obviously this one \nwhen you will run the same query I would say let me show you back and forth. Next you will see that list of answers.",
+    "chunk_type": "paragraph",
+    "chunk_index": 60,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 152,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 60
+    }
+  },
+  {
+    "chunk_id": "de043b1bc47160df1b1d09d343c2751e",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nNow you cannot see it, but usually it's randomized. So in order to make it hard to remember, you see that when you \nopen same question next time it shows you randomized options randomized positions of options. So now post is on \nthe third place and previously it was on fourth place. But it remembers your answers. So if you want to go back, you \ncan see your answers that you provided. If you want to go further, you can switch to any question you worked on. \nYes okay, let's click next. Server side development this category is about some server side settings and \nprogramming and disable file system development mode we need to make filesys file design mode False we need to \nset this one.",
+    "chunk_type": "paragraph",
+    "chunk_index": 61,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 129,
+    "token_count": 153,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 61
+    }
+  },
+  {
+    "chunk_id": "4aebe204f38329bc5e134d3abb612257",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nPlease be careful Disable file design False Enable file design True you should not mix it this one is correct Entity \nschema query you remember this class? We used it for server side calculations and operating with data Also similar \napproach with client side Entity schema query can be used at JavaScript part with the client side code it can also \nwork if you're interested, you can find other examples. So entity schema query has some features Access rights \nrestriction yes Additional setup of queries like hierarchical queries and paging yes and caching yes so everything is \ntrue here. One more server side question a DB executor so DBexecutor is a Class that is very close for data \noperations and data selection. We used some example of it when I showed you how to use class. Select class to \nread data from the database directly.",
+    "chunk_type": "paragraph",
+    "chunk_index": 62,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 62
+    }
+  },
+  {
+    "chunk_id": "1d6ae3aa0f0e549c4d74973411229d65",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo how to properly use it? This is about protection from memory leakage, you remember? So we have to use dispose \nif you do not use using yes or you can use using operator yes in single thread, yes, but now the documentation tells \nthat you already can use multiple threads, but I would not recommend you to apply it widely. So I'm still thinking that \nusing multiple threads here may cause some memory leakage. So single thread is still correct. Answer in this test \nDocumentation says that you can use multiple threads, but it's up to you. So up to your consideration in this test, C is \ncorrect. Single class Single thread instance usage how to add data to cache storage Multiple choice question this \nand this are correct answers. First two options are incorrect. More server side questions. Method must be called to \napply changes.\n\n--- Page 13 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 63,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 154,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 63
+    }
+  },
+  {
+    "chunk_id": "ffe4d91fd579e418fb72e1c93c337d47",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nWe did not actually study the entity class and you can study it yourself. You can find a lot of examples like this. I will \nshow you. Go to terrasoftware Web Teresa configuration, Search through all C sharp files for a sample where we \nhave save method. You will find many different examples of working with entity. So I will show you how. In general it \nlooks like you create an entity instance here. Then you do some of its settings like setting column values, setting \ndefault values, maybe saving some parameters. And then finally you do save. In this case, system will perform \ninsert. If you use class entity to select some existing data and then provide its columns, then you may run an update. \nLet me show you some examples for each. No. Yeah, this is example.",
+    "chunk_type": "paragraph",
+    "chunk_index": 64,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 142,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 64
+    }
+  },
+  {
+    "chunk_id": "f7e095c34430b6b3ee6a95680df9f30a",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo when you use entity is an instance of an object so in memory and you can use it for data management. But one \nentity may operate only with one data row at a moment. Then you can construct some filters and search for a \ncorresponding record. If you did not find it, then you can do insert. If you find it, you can just provide column values \nand save will mean update. So depending on the status of your class, I mean depending on the state of your class, \nit's possible to run the same method to make insert or update and save. An entity is quite useful class because it \nsupports events, it supports entity events. And if you have something like listening class or you have a start signal, \nworking with entity means that it will be triggered properly.",
+    "chunk_type": "paragraph",
+    "chunk_index": 65,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 145,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 65
+    }
+  },
+  {
+    "chunk_id": "cae068454f81c571c44c2b919a11fb53",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo here we have a question about how to apply changes. Working with entity Obviously this is running of the save \nnetwork. Okay, let's move on features. Working with data using entity of course it offers all possibilities to read, add, \nedit and delete. So Entity class can be used for creating records or updating records for selection and for delete. You \nmay find all four examples in Base product configuration using search and File system. What properties can be used \nfor only in edit page? This is for Classic UI and the correct answer is Rules and details. This is about Classic UI so \nwe can go to some Classic UI sample this one client module Classic Page and rules and details. So we have \nmethods now it's called business rules. Rules are outdated.",
+    "chunk_type": "paragraph",
+    "chunk_index": 66,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 138,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 66
+    }
+  },
+  {
+    "chunk_id": "857ff0a8a919410c79bc6658777aeb4d",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo rules and details are supported in Classic UI edit pages only and not supported in list pages or they are called \nsection pages. In section pages, rules and details are not present. Oh, details are here. Funny stuff. Oh my question \nhas to be updated. Yes, it looks like system change from this moment, but this question still thinks that details and \nrules so this is correct answer for this question is outdated. We have to fix this entity schema name Also for Classic \nUI stuff. This one is about object name that is used for current page. So of course the name of the object entity \nschema used for this module trigger field validation in edit pages Multiple choice at least two answers.",
+    "chunk_type": "paragraph",
+    "chunk_index": 67,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 128,
+    "token_count": 148,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 67
+    }
+  },
+  {
+    "chunk_id": "1026dd25bc1efd918394affe2ed8a8a2",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo when we save yes, validation will be triggered when opening page for insert no, but currently we have to review \nthis because when Freedom UI page opens, it also triggers for validation delete no switching focus from field to \nfield. Yes, we are almost at the end and schema must be used as parent for a section schema. So how we can know \nthis? You can go to Classic ui, look at the properties of client module and find Parent object base section V2 this is \ncorrect answer why you need to know this. In some complex cases for Classic UI it makes sense to manually \nprovide parent item and that's why so previously it was important to know such items. Now in Freedom UI it's not so \nnecessary and the question is a bit outdated.",
+    "chunk_type": "paragraph",
+    "chunk_index": 68,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 140,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 68
+    }
+  },
+  {
+    "chunk_id": "24ca4b7689114c7671f071a80c873794",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nBut for those who work with Classic UI this knowledge I think it's quite actual. So this section V2 is correct here. One\n\n--- Page 14 ---\n\nmore question. Schema must be used as a parent. So this is a client side question Parent for section page which \nmeans edit page. Let's go to our example of Classic UI section page open it. Let's look at its parent base module \npage v2 is used as a template for all edit pages for sections in classic UI. So we have to find here base module page \nV2. This is a parent page for all creation base for all creature Classic UI section edit pages and it was very important \nin Classic UI programming Especially when you manually do some changes in your client modules for Classic ui. \nOkay, one of the last questions here for client side, how to add styles.",
+    "chunk_type": "paragraph",
+    "chunk_index": 69,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 153,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 69
+    }
+  },
+  {
+    "chunk_id": "a6776a4ba01662a6ae986446365f6619",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nWe did not study this. In Classic UI it makes more sense. And in Freedom UI it's also possible but not so practical. So \nlet's imagine if you create new module, it's possible to set styles in less tab. So you can see we have a Special less \ntab, JavaScript tab and less tab. And the answer is that in the client schema, set module styles and less tab. This \none we don't have a CSS tab, we don't have less property, so we have less step over module. This is correct answer. \nNow we can finish. Let's see how good we are. Yes, excellent result. It means no mistakes. But when you will prepare \nfor the test, you will have many mistakes. Maybe half of the questions will be mistakes and you will have 50% only \nfrom 100.",
+    "chunk_type": "paragraph",
+    "chunk_index": 70,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 142,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 70
+    }
+  },
+  {
+    "chunk_id": "13d611cdf7353e332d7358d227617fd5",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo don't be so upset because each mistakes, each mistake takes 4% from your score. And when you run self \nassessment test you need to only to see different questions, potential possible answers and practice with it. So don't \nbe so focused on final results. And when you're running self assessment tests, you need to see all variety of existing \ntest questions. Finally, you will get better and better with this test. And in real exam you need to earn at least 85 and \neach mistake costs you just 2%. So if you do seven mistakes you will lose 14% and you will finally get 86 which is \nstill enough to get certified. So in real exam you may do up to seven mistakes. So it's quite fair.",
+    "chunk_type": "paragraph",
+    "chunk_index": 71,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 131,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 71
+    }
+  },
+  {
+    "chunk_id": "4a15db7ba2669feb13ba02cec946ce3e",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nIf you do seven mistakes in this self assessment test, you will lose 28 marks and your final score will be 72. But don't \nworry because your score in self assessment is not so important as your knowledge of answers of and your \nknowledge of existing questions. So that's how you can prepare. Of course you will need to run this test not that one \nor two times. I recommend you to run it maybe five or ten times. So you will become better at this test. And finally \nyou will feel more confident and you'll be ready for the exam. So now our session comes to an end. If you have any \nquestions, please ask me and your Rakhi asked questions. Yes please. We have time today so let's. Let's look at the \nquestions from our participant.",
+    "chunk_type": "paragraph",
+    "chunk_index": 72,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 141,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 72
+    }
+  },
+  {
+    "chunk_id": "a205caaab36e19fc89dd23b5c52f7bce",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd here is what this is a question from Rakhi and this is about client side programming and we did not study this \npart. It's about send box Messaging. I can show you where you can find answers about this. I'm sure you'll find it \nquite boring because such messaging made sense in Classic UI and not so practical in Freedom ui. Let me explain \ndevelopment Front end Classic UI send box messaging so we have two types of client side messaging. Websocket \nmessaging, mainly used from server to client, and sandbox messaging which is used only between client side \nmodules. In Classic UI there are a lot of separate modules that know almost nothing about each other and they have \nno reference to each other. There are many situations where such modules need to exchange data between them.",
+    "chunk_type": "paragraph",
+    "chunk_index": 73,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 142,
+    "token_count": 166,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 73
+    }
+  },
+  {
+    "chunk_id": "0e71531939d11fbb53d5221f3d20eb95",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd for such purpose, messaging mechanism was designed and this is sandbox messaging mechanism which is \nonly working at client side between modules. Between client side modules. There are some technical details about \nit. So just for your reference I will answer. I will provide you the link. But let's go closer to the question. So there are \ndifferent types of client side sandbox messages. Point to point messages which are designed to be triggered and \nthen processed and broadcast messages which can be triggered and then processed in many places. In general, \nmessage means some piece of information that is submitted from one module and then possibly can be like\n\n--- Page 15 ---\n\nprocessed or taken by other modules. Modules have no information between each other about each other. And there \nis a central dispatcher called Sandbox which is capable to handle such messages and properly dispatch them.",
+    "chunk_type": "paragraph",
+    "chunk_index": 74,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 153,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 74
+    }
+  },
+  {
+    "chunk_id": "149a515d719474c7ea47a10a8a8e9124",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo messages, they have different types and correct answers. Here are point to point message returns an object \nbroadcast messages does not. Yes, this is true. Probably I have to show it as a green color. Yeah, so this is true. And \nsubscribing broadcast message without channel only once. If no, no, no. Find point to point message without a \nchannel and subscriber will get replaced. So this is about point to point messages. This is also true. Broadcast \nreturns an object point to point. No, this is not true. So this is definitely not true. And this is also not true. So we have \nonly two correct answers here, A and C. So Raki, I hope it's clear A C are correct. You can read more about such \nmessages at Academy. This is about Classic UI programming.",
+    "chunk_type": "paragraph",
+    "chunk_index": 75,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 141,
+    "token_count": 179,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 75
+    }
+  },
+  {
+    "chunk_id": "36c05ebdfcb97ec96bc3eeb64112c511",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nI can quickly show you examples of how it can look like and example of sandbox messaging. So in such messaging \nwe have an initializer. So kind of a person who can initiate this message. It's called publisher. So a person. So in our \ncase it's a module which like Start asks system to run some particular functionality and it means publishing a \nmessage. Message can be correctly described in the body of client module. And we have methods to register and \nthen to publish it. So it's like initialize initiated and ask system to run it. We ask Sandbox. Here you can see Sandbox \nis a central dispatcher who is in charge for processing of such messages. The party who will be responsible for \nprocessing this message is called Subscriber.",
+    "chunk_type": "paragraph",
+    "chunk_index": 76,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 134,
+    "token_count": 157,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 76
+    }
+  },
+  {
+    "chunk_id": "15c1a4c4e8d35cace477d918d001a488",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSubscriber is a party, so it's a module which declares that it can process certain messages and it also should \nregister them and then this module must subscribe. Message has its own identifier. This is a text code and message \nwhen subscribed may have a method which will be actually used for getting message data and do something useful. \nSo publisher initiates a message thanks to Sandbox, Subscriber knows about it and gets corresponding arguments \nand performs useful logic. The main reason of such messaging mechanism is that modules are independent from \neach other. They do not know any reference from each other and that's why such mechanism was necessary to keep \nand maintain independence, but make possible interaction between modules Another image from Rakhi how to \ndefine which properties events? It's very old question and you can easily guess it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 77,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 144,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 77
+    }
+  },
+  {
+    "chunk_id": "141136a6cda055dcc6f8b219f42c5913",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nI think we have to remove this question from the test because it was from very early version 7 settings and it's about \nbind config for properties events for events. So A is correct here, but we will remove this question soon. So this \nquestion does not teach you anything because now it's totally not practical, neither in classic UI nor in Freedom UI. \nSo old, very old question for 7.2 or something like this and A is correct, you can guess by events for events you can \nguess the answer. Thank you Rakhi for your interest, for your efforts for preparing for the exam. So you will have \nthree weeks in total. You may run your exam earlier if you want. So for example, if you're really ready with the \nhomework, maybe you can run your exam even at the end of next week.",
+    "chunk_type": "paragraph",
+    "chunk_index": 78,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 78
+    }
+  },
+  {
+    "chunk_id": "7d297936be277cb516c1d9013641f8a0",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo just make sure your homework looks good, run tests several times and then for example, some of you may apply \nfor the exam and run it next week. But in general, usually participants need from two till three weeks and this is time \nquite fair which will be totally comfortable for you to prepare for your exam and then run it today you will receive your \nhomework file and please respond at Please respond on my email with your confirmation that you are ready to or \nyou plan to pass FastTrack certification and I will provide you individual date and time of course, taken into \nconsideration your time zone. So you will get something suitable to your time zone, of course, and each of you who \napply for this will get your homework and individual date and time for the exam session and Zoom link.\n\n--- Page 16 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 79,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 153,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 79
+    }
+  },
+  {
+    "chunk_id": "4900f19e0468df6027fc4c90c4f8124d",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo you will receive everything necessary in email. And when the proper date will come, I will wait for you in Zoom \nsession when you will finally proceed with your test. With your exam test, you will receive your certificate which will \nbe available for you always at the Academy. Okay, here is my academy, here is my profile. So you will find your \ncertificate when finished. Of course you will find your certificate in your certificates and badges section. You'll be \nable to download results of your test and get the PDF version of your certificate as downloaded file if you want. And \nthat's how our session, that's how your certification will be finished. So, and then this certificate is valid for two \nyears.",
+    "chunk_type": "paragraph",
+    "chunk_index": 80,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 128,
+    "token_count": 154,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 80
+    }
+  },
+  {
+    "chunk_id": "84d5996da8c1f198f51f7d4de913b79d",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAt the end of this period, while your certificate is still valid, you will be able to run recertification, which means \ngetting new certificate by running test only with no homework. So if you want, when you have current certificate, \nyou'll be able to get new one with a simplified procedure. So that's all for today. I thank you for your time. If you have \nany questions, any more questions, please tell me. Yeah, I have another one, if that's okay. Yes, please. It's about the. \nSo it's about the exam. I just. If you wouldn't mind clarifying the difference between Basic and the Advanced. I think \nyou said there's more questions and the weighting of answering incorrectly is different. Yes, the main difference \nbetween Basic and Advanced is that advanced has one more homework task.",
+    "chunk_type": "paragraph",
+    "chunk_index": 81,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 139,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 81
+    }
+  },
+  {
+    "chunk_id": "83a2636a57f288a082efda924c2fcbbb",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nYeah, and advanced has 28 theoretical questions, while basic has only 25 theoretical questions. So Advanced is a \nbit. Is a bit harder to prepare because of more question categories. But in general they are like similar. So if you \nspend enough time, you will be able to pass Basic or Advanced with the same level of errors, I think. So maybe it's \nbetter to apply for Advanced. Yeah, you can apply for Advanced just from the beginning with so like skipping base \npart. So you can apply for. For Advanced just. Just with the first attempt. Okay. What? There was something else? \nSorry. Now, so how to start an exam, you will get the link and this is a one time link which you will be provided during \nthe online session. So when you will connect to Zoom, we generate one time link for you.",
+    "chunk_type": "paragraph",
+    "chunk_index": 82,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 149,
+    "token_count": 185,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 82
+    }
+  },
+  {
+    "chunk_id": "958d6b9e531e9bbf31fdb852fc36578d",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nAnd unfortunately such links work only once and that's why we have to generate it each time when participants \nwants to pass an exam. Oh yes, sorry. So the. The exam and the going over the homework, there are two separate \noccasions, are they? So one time we'll have a meeting to go over the assignment. Or the homework. And then \nsometime a different time. Then will be when we set for the actual exam. Is that correct? You will receive email with \nthe homework. If you agree to pass FastTrack certification. You just have to respond that okay, I'm planning to pass \nan exam. Please provide me exam date. And from this moment you can start doing your homework. And you can do \nit fully offline. So no any connection with the team trainer. At the real exam, you will have to show your results.",
+    "chunk_type": "paragraph",
+    "chunk_index": 83,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 149,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 83
+    }
+  },
+  {
+    "chunk_id": "839f4d71905ec095156c33c5b137fd8b",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nWhen we will have online session, you will show your homework. We will see if it's working. Actually, do we have \nsome serious errors there. And at the same time, after checking the homework, which will take just 10 minutes, then \nyou will run your test, which will take all rest time. But usually time is not a problem. And one hour will be totally \nenough to check your homework and run your test. Okay, that's brilliant. Thanks. Thank you. Paddy. I saw one more \nquestion here from. From chat. Maybe microphones. Any. Any questions? Hi, Dimitri. Yes, Tezo, please. My question \nabout the previous lecture. It about the action. We made it to calculate average price. The average is calculate price \ndivided by area, right? Oh yes, exactly. Okay, but when I do the action, the result is not. Not exactly true. All right.",
+    "chunk_type": "paragraph",
+    "chunk_index": 84,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 204,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 84
+    }
+  },
+  {
+    "chunk_id": "a2ef00e042f3405a6888d183e1c9cb00",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\n--- Page 17 ---\n\nOh, so you are worried about the business sense of this time, of this type of cultivation. Or you have some errors in \nexecution? No, no, the execution is right. But the result, the number, it's not like when I calculate it in phone. You can \ncheck. You can debug and check. Let me show you. So normally, let's imagine we have some houses for sale. They \nall have different prices, all have different areas. So we select any house for sale. Maybe let's fix this some stuff so it \nshould not corrupt our results. Okay, so we have a lot of houses for sale. We can run process for calculation average \nprice. Then we have average price value. But this price is result of summarizing all prices for corresponding type of \nreality. And the same offer type divided by all area of all the objects.",
+    "chunk_type": "paragraph",
+    "chunk_index": 85,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 153,
+    "token_count": 193,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 85
+    }
+  },
+  {
+    "chunk_id": "98dcb0fbc4dfcc3628f1ee2f89ac72ea",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo in general, it looks like we have 300 bucks. 311 bucks per square foot. So it means we divide it and this number \nrepresents value per square foot, but not per realty item. So not per a house. And you if you see something totally \ndifferent here, or if you see nothing, you can check how your calculation went on. And you can go to process log if \nyou have. Okay, let me show you. Process library. Calculate average price process. You can enable trace. We already \nenabled it Trace. Then you can go to process log. So if you Started your process with enabled trace you can open it, \nyou can see how your calculation finished and you can show trace data after your script task part here. Show show \ntrace data will show you all your parameters including your results of calculation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 86,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 86
+    }
+  },
+  {
+    "chunk_id": "54e7a73b830e76972b11b55e78381e0d",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo it looks like this data was the result of our calculation and it looks like more or less close to reality $300 per \nsquare foot according to our current prices and areas. So area is used here in this calculation. And also if you're not \nhappy with this number, you can try to do debugging of server side code like we did with Visual Studio Opening \ncorrespondent average price calculation script here methods wrapper so you remember we did it. And you also can \nput breakpoint and restart your app. Attach your visual Studio to your worker process. We did it during our sessions \nso you can handle and run your code line by line. You can see what actual values are used into this calculation, what \nactual result was obtained. So you can find explanations for everything related to this calculation procedure. Is it \nclear? Basil?",
+    "chunk_type": "paragraph",
+    "chunk_index": 87,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 151,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 87
+    }
+  },
+  {
+    "chunk_id": "1471f149b03d5666be2b25ed70b74a94",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nYeah, yeah. Thank you. So if you have zero it's very oh so it's quite often happens that you have just small mistake in \nyour process. So if you find that you have just zero there you can go to your average price calculation. And I also \nsometimes do this mistake. So it's quite common I think when you have final show results pre configured page you \nmay just forget to set corresponding parameter here. This average price is a page parameter and AVG price is our \nprocess parameter. So we transfer our process parameter to the page. If you forget to do this you will constantly get \nzero because no data is coming to your page parameter. Such process parameter AVG calculation was generated \nhere and this is our line of code where we saved it. Then it is kept in process memory here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 88,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 148,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 88
+    }
+  },
+  {
+    "chunk_id": "be0f5f637941c9be6a5ecc41fb054e62",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nThen at next step it will go to page parameter here if you do something so if you lost your data something on the \nway so you will see zero and you should debug your process, you should debug your script task. And we already \ndiscussed how to do this. Rakhi is asking Rakhi yes, you can reply on Monday or whenever it will be suitable. But of \ncourse it makes sense to not take too much time because in total we have up to three weeks of a deadline for fast \ntrack certification. If you are not ready for such a quick start and you need much more time then you can apply for a \nregular certification at Academy website. Regular certification has a bit different homework. It also includes creating \nsections, details, business logic and some server side web service.",
+    "chunk_type": "paragraph",
+    "chunk_index": 89,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 145,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 89
+    }
+  },
+  {
+    "chunk_id": "193df44ed49b05039ee66e09f881be60",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nBut I think that regular Certification is a bit more harder and it has different variants. There are different subjects, not \njust one realty, there are different subjects. So you will probably take more time to do regular certification. So that's\n\n--- Page 18 ---\n\nall for today. I thank you for your time. If you will find some more questions that you forgot to ask now, please use \nyour my email. I will be happy to answer Today I will send you final email with all fast track certification with all video \nrecordings. And please remember video recordings at Zoom will stay only for 20 days. So if you want to download \nthem, please hurry up because Zoom videos for our first session will expire very soon and each video will expire in \n20 days after the moment of creating. So of course I will save them separately in another location.",
+    "chunk_type": "paragraph",
+    "chunk_index": 90,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 155,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 90
+    }
+  },
+  {
+    "chunk_id": "97871948b88b895b1d5651ba97498870",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nBut now you have automation with Zoom and with already prepared links for download. So probably it makes sense \nto use existing links without waiting for me to host the same video somewhere else. And that's why it makes sense \nto download it today. And Basil, if you fail the exam, yes you can take it again. So we can support some like rational \nnumber of attempts, like maybe up to three attempts to run your fast track exam and it's not really hard thing. So if \nyou fail it once, no problem. Usually participants do quite well with their homework and test becomes a bit more \nsurprisingly complex for them. So if you do your homework well and then fail with your test, then you can apply next \ntime maybe in several days running test only.",
+    "chunk_type": "paragraph",
+    "chunk_index": 91,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 140,
+    "token_count": 164,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 91
+    }
+  },
+  {
+    "chunk_id": "bc6f919750fa52d828c1e2f5e7a48ba9",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nSo your homework, if you do it well, no need to do it again for the next exam, yes you can take it again. Thank you \nBasic for your question. So if any other questions please tell me. I will do my some final preparation step to \ndownload everything to file system to submit to version control. And thank you very much for your time. Yes thank \nyou Andres for your feedback and also so I will wait for your answers for your response on proposal to start fast \ntrack certification. Thanks a lot for your time for your dedication and efforts with studying the platform. It was my \npleasure to provide such training sessions for you. Hope to see someone from you at our exams. Have a great \nweekend. It was hard two weeks for you to study abroad. So thank you very much for your time.",
+    "chunk_type": "paragraph",
+    "chunk_index": 92,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 151,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 92
+    }
+  },
+  {
+    "chunk_id": "8ae920e17e8c480c4f3928a85a771050",
+    "document_id": "81ddf5a48985",
+    "content": "# Speaker 1\n\nOur session is over. Thank you and goodbye. It.",
+    "chunk_type": "paragraph",
+    "chunk_index": 93,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-13.pdf"
+    },
+    "word_count": 12,
+    "token_count": 17,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 93
+    }
+  }
+]

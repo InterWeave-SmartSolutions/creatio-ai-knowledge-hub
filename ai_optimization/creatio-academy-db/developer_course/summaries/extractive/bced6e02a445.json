@@ -1,0 +1,36 @@
+{
+  "summary_id": "bced6e02a445",
+  "content_id": "c326b609b172",
+  "summary_type": "extractive",
+  "summary_text": "So if you are a customer and attend our guided learning session, obviously it makes sense to apply for a free fast track certification. And the homework is designed so you can use your current, freedom UI section that we designed to implement your homework because the same section, the same page, the same business logic, just slight changes in calculations and so on. And the homework includes very simple tasks like create new section, provide these columns, new detail and also include some examples which will require coding and coding samples for your JavaScript and in C-Shark. And currently when we add, let's say, so when we add new data to our real dissection, you remember we already made some automatic insert of data. So how you can know this, you can go to classic UI, look at the properties of client module and find parent object base section B2. Let's look at its parent base module page B2 is used as a template for all edit pages for sections in classic UI. So just make sure your homework looks good, run tests several times, and then for example, some of you may apply for the exam and run it next week. But in general, usually participants need from two, till three weeks, and this is time quite fair, which will be totally comfortable for you to prepare for your exam and then run it. Today, you will receive your homework, homework file, and please respond at please respond on my email with your confirmation that you are ready to, or you plan to pass fast to the certification, and I will provide you individual date and time, of course, taking into consideration your time zone, till you will get something suitable to your time zone, of course. And also if you're not happy with this number, you can try to do debugging of server side code like we did with Visual Studio, opening corresponding average price calculations script here, that's wrapper.",
+  "key_points": [
+    "So if you are a customer and attend our guided learning session, obviously it makes sense to apply for a free fast track certification.",
+    "And the homework is designed so you can use your current, freedom UI section that we designed to implement your homework because the same section, the same page, the same business logic, just slight changes in calculations and so on.",
+    "And the homework includes very simple tasks like create new section, provide these columns, new detail and also include some examples which will require coding and coding samples for your JavaScript and in C-Shark.",
+    "And currently when we add, let's say, so when we add new data to our real dissection, you remember we already made some automatic insert of data.",
+    "So how you can know this, you can go to classic UI, look at the properties of client module and find parent object base section B2."
+  ],
+  "keywords": [
+    "data",
+    "let",
+    "test",
+    "like",
+    "exam",
+    "use",
+    "client",
+    "process",
+    "yes",
+    "homework"
+  ],
+  "topics": [],
+  "summary_length": 333,
+  "original_length": 12853,
+  "compression_ratio": 0.025908348245545786,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:55:05.069283",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1209,
+    "method": "tfidf_position_ranking"
+  }
+}

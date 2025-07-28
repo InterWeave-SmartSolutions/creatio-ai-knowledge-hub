@@ -1,0 +1,1028 @@
+{
+  "summary_id": "cb3e45ab2854",
+  "content_id": "797e8d613a2f",
+  "summary_type": "hierarchical",
+  "summary_text": "Document: Speaker 1\n\nMain Sections:\n• Speaker 1\n  - # Speaker 1\n\nToday is session number eight of our development on Creature Platform Guided Learning and we will continue to \nwork with server side features and functionality.\n  - So today we will focus on the web services, making our own \nclasses at creation server side and make it work at the web service, write C Sharp code and practice with calling of \nweb services from Creature client side and from third party applications.\n• Speaker 1\n  - # Speaker 1\n\nSo when you look at your network tab, for example, when you open any record page, you see plenty of different web \nservice requests, different HTTP calls that were executed from server side.\n  - So from client side to the server side \nwith different request body with different responses and in general all our website operation is set of different \nqueries, different HTTP requests and then getting some responses at client side.\n• Speaker 1\n  - # Speaker 1\n\nSo client side definitely is not the place where you would like to perform some sensitive data operations or \ncalculations.\n  - So server side is a very natural place to do some complicated business logic like doing some \ncalculations, data processing, file processing and so on.\n• Speaker 1\n  - # Speaker 1\n\nUsually it's written in C Sharp and today I plan to explain how you can create your own web service, how you can \nmake it run and how it can be useful for you.\n  - So we have a lot of existing examples, but the most important you need \nto remember that web service is a special piece of functionality that was specially designed to be called from client \nside.\n• Speaker 1\n  - # Speaker 1\n\nSo in general web service is something that we can call from client side which works at server side, usually gets \nsome argument data, usually returns some result data and also makes some useful work etc.\n  - Side and that's why we \nneed it.\n• Speaker 1\n  - # Speaker 1\n\nIs it a freedom user interface or if it's a classic UI so you can use web services?\n  - Absolutely the same because server \nside is on the single item and requests and payload and response data will be parsed and will be processed \nabsolutely the same way.\n• Speaker 1\n  - # Speaker 1\n\nIf you randomly select then you probably will face unnecessary complex examples which will be hard to use it for \ntraining purpose for your study.\n  - So that's why I recommend you to use couple of very useful and simple examples.\n• Speaker 1\n  - # Speaker 1\n\nSo it means that contents of this package will be compiled in all terasoft configuration sln and you will have terse of \nconfiguration DLL as A result.\n  - Okay, so this is a simple C Sharp code as I told you at the beginning, just expected but \nthat creation developer has some experience in C, in JavaScript and also in SQL scripting.\n• Speaker 1\n  - # Speaker 1\n\nWe use set of standard base platform and system namespaces that are necessary to declare our class to use some \nof functions that we need inside of it.\n  - And mainly all these stuff is made possible thanks to system service model \nnamespace and I need to say that creatio uses.\n• Speaker 1\n  - # Speaker 1\n\nAnd then inside of this class you should make at least one method to turn it into endpoint something that we can \ncall and this endpoint must be decorated method.\n  - This method must be decorated with operation contract attribute \nand some additional web invoke attribute.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 3 ---\n\nSo after compilation this web service will be fully operational and it will be ready for calls that will be done from \nclient side.\n  - It could be done from creation client side or even from third party applications client side.\n• Speaker 1\n  - # Speaker 1\n\nAlso we will have some business logic functionality that also can include access to database, operating with some \nfiles, running other web services and so on.\n  - So we can use some useful method body.\n• Speaker 1\n  - # Speaker 1\n\nBut it can happen that you will need more complicated arguments like structures like instance of classes, objects \nand so on, and you may need to return some complex responses and complex result data.\n  - As example, you can see \nwhen we run some query at our creation list page, you see some request and response which usually includes a lot \nof properties, a lot of different values.\n• Speaker 1\n  - # Speaker 1\n\nWhy I'm saying about serializing because server side will be a dll, a library with a runtime code which will be capable \nto operate with some data with a certain data type.\n  - When client side calls a web service, it usually packs so parses, \nmaybe encodes your arguments into a string.\n• Speaker 1\n  - # Speaker 1\n\nThe same task will happen when server side already finished execution of a method and needs to return some data.\n  - So server side returned data also represents some class with some properties, and then it's necessary to serialize it \nback into a string because originally HTTP query will transport some string for you as result.\n• Speaker 1\n  - # Speaker 1\n\nVisa data service web service is a good example of a web service which is designed to get some arguments and\n\n--- Page 4 ---\n\nreturn some results using complex data type.\n  - In this example, Request options is a complex argument that is \nprovided as an argument for your method.\n• Speaker 1\n  - # Speaker 1\n\nAnd if you need it, so you have a lot of examples how to do this.\n  - You have samples in Creature, you can easily open it \nand find it.\n• Speaker 1\n  - # Speaker 1\n\nNow I will show you how to make our own web service.\n  - How to use Visual Studio for its development, to make it \nmore efficient and to make possible development of complicated functionality with a powerful editor.\n• Speaker 1\n  - # Speaker 1\n\nSo having this name well spelled is a good idea in general.\n  - So let's call it realty service and we can make the same \ntitle for this source code item saving our package no description and just apply.\n• Speaker 1\n  - # Speaker 1\n\nSo my plan is to create a web service that will work at server side and will be capable to calculate maximum price of \nreality objects filtering them by type and offering type.\n  - This is important because it's not good idea to mix \napartments, houses, parkings and so on.\n• Speaker 1\n  - # Speaker 1\n\nWe can as you can see we have a star here which means not all the items were fully saved on disk.\n  - So let's do this.\n• Speaker 1\n  - # Speaker 1\n\nI strongly recommend you not to modify Anything manually here and C sharp file which we will fill in now with the \nright good looking code.\n  - As usual I prefer to use local environment advantage and one of them is use of file system \nand use of external editors.\n• Speaker 1\n  - # Speaker 1\n\nI already have an example which implements all this logic and that's why probably it makes sense to do it faster.\n  - So \nlet me show you.\n• Speaker 1\n  - # Speaker 1\n\nThere is a tradition of creature developers to name classes which represent web services with the help of service \nsuffix.\n  - So if you do something when you develop C sharp class for the service of it will be do something service.\n• Speaker 1\n  - # Speaker 1\n\nBut thanks to decompilation features of Visual Studio we can see some code from it at least interface part of it.\n  - And \nit has a lot of useful things.\n• Speaker 1\n  - # Speaker 1\n\nLet me show you here you can see examples.\n  - So we have HTTP context usually like this, and this works only for.\n• Speaker 1\n  - # Speaker 1\n\nBut now you should remember that inheriting from base service helps to get user connection and helps to get it \ninitialized properly.\n  - When your method started, your user connection property of your class will be already initialized.\n• Speaker 1\n  - # Speaker 1\n\nSo in general, declaring of support of this interface costs you nothing because you have no methods to implement \nfor it.\n  - But it tells IIS that it can process your web service calls with the fastest possible way.\n• Speaker 1\n  - # Speaker 1\n\nSo now I'm searching through C files which include service contract attribute and I will find approximately 200 web \nservices created out of the box in creatio based studio product.\n  - Okay, 157 files and possibly a bit more web services \ninside because one file may include more than one web service, but in general.\n• Speaker 1\n  - # Speaker 1\n\nOkay, so this is only for better performance.\n  - What we have inside we have some method, but probably I have to start \nwith this.\n• Speaker 1\n  - # Speaker 1\n\nYou can create a lot of other methods in your class and some of them maybe will be decorated with operation \ncontract.\n  - If method is decorated with operation contract it will turn into endpoint.\n• Speaker 1\n  - # Speaker 1\n\nOne of them is very easy get example so this is just an example of a method which will return us okay string and if it, \nif we get it means that our web service is present Normally compiled and fully operational, this method get max \nprice by type id.\n  - So I decided to name this method like this will go to the database and search for realty records with \ncorresponding type offer type and also I plan to make it more universal and to call my service from different \nsections.\n• Speaker 1\n  - # Speaker 1\n\nAnd that's why I will use the same selection statement to work with different tables inside of my code.\n  - At the \nbeginning it makes sense to make a very simple check of our arguments and if any of them is empty then we will \nreturn minus one.\n• Speaker 1\n  - # Speaker 1\n\nOkay, we have several arguments, we check it out if they are empty or not and then I will show you another approach \nto get data.\n  - Previously you probably remember we used entity schema query approach to get data.\n• Speaker 1\n  - # Speaker 1\n\nNow I will show you another approach to operate with data which will not use data model at all.\n  - So this is alternative \napproach to operate with data, but of course we need to know source table name.\n• Speaker 1\n  - # Speaker 1\n\nAnd as you can see, no ID suffix at column code.\n  - But when you go to the database.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 8 ---\n\nAnd you should expect exactly the same data columns of your tables.\n  - And in general, when you operate with \ndatabase like this, you must go to the database physically to see corresponding table, corresponding columns, just \nto make sure that all your columns that you work with are present and so they represent what you expect from them.\n• Speaker 1\n  - # Speaker 1\n\nYou can use Visual Studio or Total Commander.\n  - Or in my case I'm using far manager tool inside of JSoft Web folder, \nmaybe even inside of JSOP configuration.\n• Speaker 1\n  - # Speaker 1\n\nAnd sometimes you will notice that use of direct database approach gives you More flexibility and more powerful \ntools than using just entity support and using entity schema clearer method.\n  - So depending on your task you can \nchoose proper tool.\n• Speaker 1\n  - # Speaker 1\n\nAnd also it's important to mention you create class instance and then in order to set it up you use different methods \nlike top method, column method, maybe many times from method makes to run it one time where method is equal \nmethod and a lot of others.\n  - So finally running such methods will configure your class to read corresponding columns \nfrom corresponding tables.\n• Speaker 1\n  - # Speaker 1\n\nIt means get one of the three database connection threads from thread pool from connection pool because \nconnection to database is pooled and you have like set of available threads for it.\n  - Then you take it and this is DB \nexecutor reference and then you run your select statement with the chosen DB executor and finally you will get data \nreader.\n• Speaker 1\n  - # Speaker 1\n\nSo while read returns you true, you can try to get some data and you can put it somewhere in order to analyze in \nfuture.\n  - So this tool is helpful to get data selection with many columns, as many data rows.\n• Speaker 1\n  - # Speaker 1\n\nAnd that's how that's why you need to handle memory yourself.\n  - So when this method was executed, some memory \nwas allocated and in order to properly release it you need to dispose created class instance, you need to dispose the \nSTB executor or you need to use special using operator which will do this dispose automatically when this code \nfinishes its work.\n• Speaker 1\n  - # Speaker 1\n\nSo now you see 1 gigabyte, so 900 megabyte it's more or less okay, but you may see much more memory up to all of \nyour available virtual memory and one it will come to a certain limit.\n  - IIS will suddenly restart your website and you \nwill not know why this happens.\n• Speaker 1\n  - # Speaker 1\n\nBut in my example you may notice that we don't have using protection, we just use execute scalar method which is a \ngeneric method and it accepts expected data type of our result.\n  - And execute scalar is useful in case if you plan to \nread only one data row and you expect to read only one column value there.\n• Speaker 1\n  - # Speaker 1\n\nYou can try to see it would possible to decode scalar async probably no, but let's see, you see decompiled stuff DB \nexecutor you see using yes so first using is already used here ensure special DB executor then internal execute \nscanner sync probably here failover execute and somewhere so you probably may find another using here in this \ndecompiled code.\n  - But you can just trust me that execute scalar performs all code correct operation with memory so \nyou do not need to handle and to care here with additional protection.\n• Speaker 1\n  - # Speaker 1\n\nSo my example here is not only how to organize your web service, but it's also how to operate with the database and \nhow to use alternative data selection approach with some data that we expect to get and return.\n  - I try to make it \nsimple without need to collect many data records with many data columns inside of it.\n• Speaker 1\n  - # Speaker 1\n\nWe get this user connection as a property and this property is ready for use when at the moment when our method \nis called so WCF and our base service class makes all that is necessary to initialize user connection at the moment \nwhen our customer runs this HTTP post method.\n  - By the way, we used post because it's very common for creation.\n• Speaker 1\n  - # Speaker 1\n\nBecause this is very traditional, very typical, difficult to create for creation to use post.\n  - It offers us quite comfortable \nway to handle data.\n• Speaker 1\n  - # Speaker 1\n\nWe can also see our recent reality service item.\n  - It has all this code already, so it was loaded from the file system and \nwe can compile it.\n• Speaker 1\n  - # Speaker 1\n\nSo in my case compilation was successful.\n  - And in case if you have compilation error, you will see a big error page \nwith information about lines of code, type of the error and you will be able to look at it.\n• Speaker 1\n  - # Speaker 1\n\nWe need to get our browser URL copy go to separate tab paste.\n  - So this is my web server address including zero \napplication alias.\n• Speaker 1\n  - # Speaker 1\n\nIn net core we have all the stuff placed in one root folder.\n  - So it's a bit different, but all creature configuration will work \nabsolutely the same.\n• Speaker 1\n  - # Speaker 1\n\nIf you use URI template your method name may be different.\n  - I mean your code URI will be different.\n• Speaker 1\n  - # Speaker 1\n\nSo this is a very easy and quite practical way to check availability of your web service.\n  - For example, if you have \ncompilation issue your web service will not be hosted at creation web server and your query like this will return you \n404not found.\n• Speaker 1\n  - # Speaker 1\n\nSo let's make a 7 minutes coffee break and then we will move on with calls of our web service.\n  - We will make call of \nweb service from creature page and also I will show you to make how to make it from Freedom UI page, from classic \nUI page and from third party applications.\n• Speaker 1\n  - # Speaker 1\n\nAnd now we have to write some code at our creature client side in our browser JavaScript in our browser page \nJavaScript part.\n  - So let me show you.\n• Speaker 1\n  - # Speaker 1\n\nBut okay, I will recover closed page.\n  - This one go to front page.\n• Speaker 1\n  - # Speaker 1\n\nSo and then we have to save this.\n  - Our menu item will appear in actions menu and then we go to its code part.\n• Speaker 1\n  - # Speaker 1\n\nSo this code will be quite big.\n  - I will copy it into parts for you.\n• Speaker 1\n  - # Speaker 1\n\nAnd if you forget about line number one here, your next code samples will not work because you have no these utility \nmodules.\n  - Okay, we have this SDK now and it's time to implement our handler for our menu item.\n• Speaker 1\n  - # Speaker 1\n\nAnd this handler has its own request property.\n  - So it's like handler name.\n• Speaker 1\n  - # Speaker 1\n\nSo we plan to get type from our page, but when we operate with it, we will get an object in JavaScript.\n  - This object \nwill include several properties and if we need ID of selected data record we will look at value property.\n• Speaker 1\n  - # Speaker 1\n\nType represents this attribute name so I have to copy it, find my handler and paste it this one so PDS usr type and \nthere is a unique name for this attribute.\n  - So that's how we will get with await operator we will get our type lookup \nvalue which represents an object and if this object is not empty so it includes something then we will try to get value \nproperty in case if it's empty we will keep it clear so we will not use it.\n• Speaker 1\n  - # Speaker 1\n\nNow we will use our dev kit library in order to get HTTP client service out of it so we can ask SDK to create one and \nthat's how we get this JavaScript class instance in our code.\n  - We have to combine and collect correct viewers URL \nfor our web service.\n• Speaker 1\n  - # Speaker 1\n\nI have to fix it in my code here get max price by type id so it was mistake because I renamed this method recently \nand finally my endpoint URL will be combination of the base URL/method name slash this rest like template part \nthen class name then method name.\n  - Okay great, my endpoint is ready and here you can see some example of brick \nof my endpoint.\n• Speaker 1\n  - # Speaker 1\n\nAnd also I have to fix my code because this one already changed its name so my object is named usr reality.\n  - Okay, \nthis is important part and parameters will be passed as a part of our request HTTP request body.\n• Speaker 1\n  - # Speaker 1\n\nSo you should understand that even if it looks like easy thing and line by line execution, physically it is asynchronous \ncall which means we send request, then browser waits, then we get some response.\n  - Okay, we got response object \nwhich is a JavaScript object instance.\n• Speaker 1\n  - # Speaker 1\n\nIf you plan to perform your own examples of the same then we have to save this carefully because if you have \nmistakes of course you will see it doesn't work.\n  - And also let's remember about our your request name and return\n\n--- Page 14 ---\n\nback to line number 115 or something like this.\n• Speaker 1\n  - # Speaker 1\n\nAnd then we can save it.\n  - Great.\n• Speaker 1\n  - # Speaker 1\n\nThen we have response with some number correctly calculated by our server side and returned and some timing \ninformation.\n  - Now you see it's quite fast execution.\n• Speaker 1\n  - # Speaker 1\n\nSo our Freedom UI page calculation worked well.\n  - In case if you have any questions, please ask.\n• Speaker 1\n  - # Speaker 1\n\nSo now I will show you how to program some buttons in Classic ui.\n  - Go to view and open section wizard.\n• Speaker 1\n  - # Speaker 1\n\nSo in case if you want to call third party application from Creature.\n  - So Creature will initialize this call and do it.\n• Speaker 1\n  - # Speaker 1\n\nYou see this is area and somewhere here just nearby I plan to put some code for a button I need to steal some \nbutton definition from Academy.\n  - So so I will show you how you can find it.\n• Speaker 1\n  - # Speaker 1\n\nOf course I will have to fix it.\n  - I will have to make it look correct.\n• Speaker 1\n  - # Speaker 1\n\nThen I will have row three because I want to put it a bit below Parent name is the same button.\n  - We can call it Run \nweb service button.\n• Speaker 1\n  - # Speaker 1\n\nProbably it was not the best idea because I need to implement method for the button.\n  - I also need to make my in my \nclassic package.\n• Speaker 1\n  - # Speaker 1\n\nSo here is my own run web service button click.\n  - Okay, and also I need to have a callback function here.\n• Speaker 1\n  - # Speaker 1\n\nAnd we need to provide callback method to accept our result because in Classic UI we don't have so fancy stuff like\n\n--- Page 16 ---\n\nawait.\n  - And so it's because of the tools used here.\n• Speaker 1\n  - # Speaker 1\n\nSo it's a value of that enumeration item that we found in our article.\n  - So item type.\n• Speaker 1\n  - # Speaker 1\n\nThat's how we will do some console output and show us returned data.\n  - Okay, finally we can save it.\n• Speaker 1\n  - # Speaker 1\n\nSo perfect time.\n  - Very good speed.\n• Speaker 1\n  - # Speaker 1\n\nPostman is on first position but we have Thunder client.\n  - You may use Advanced Rest client, Rest, Wet Insomnia and \na lot of other names.\n• Speaker 1\n  - # Speaker 1\n\nTry to run this button here.\n  - We can steal all necessary parameters.\n• Speaker 1\n  - # Speaker 1\n\nNow you need to know that if you want to call Creature Services from third party apps, you have to pass \nauthentication.\n  - Creature has different ways of authentication.\n• Speaker 1\n  - # Speaker 1\n\nNo, no, no.\n  - I need to reference for our service.\n• Speaker 1\n  - # Speaker 1\n\nSo what we have here, this is our web server address.\n  - This is our root folder pass to our web service.\n• Speaker 1\n  - # Speaker 1\n\nAnd obviously we will not get full set of cookies.\n  - So we are getting only just one temporary cookie, which is not \nenough, of course.\n• Speaker 1\n  - # Speaker 1\n\nIn this query we already have set of cookies thanks to postman sharing cookies with the same sites.\n  - And then we \ncan run our query.\n• Speaker 1\n  - # Speaker 1\n\nAnd in order to run post queries you have to make a header in post query named BPM CSRF and the value for this \nheader must match the same cookie BPM csrf.\n  - So I take cookie value carefully put it to value of our BPM CSRF \nheader and in this case my calculation is correct.\n• Speaker 1\n  - # Speaker 1\n\nAnd you see original value was 60, which means 60 minutes 1 hour.\n  - I've already changed this timeout to 600 which \nmeans 10 hours.\n• Speaker 1\n  - # Speaker 1\n\nSo in case if you plan to do some integration, of course first you will do authentication, then you Will do some \nintegration steps and also you can check how it goes and you can check current user sessions.\n  - If you go to system \nusers, find your user, go to access rules detail, then sort by start of the session.\n• Speaker 1\n  - # Speaker 1\n\nSo if you do something like this in your database, you will see all user sessions created initialized by any user in your \nsystem.\n  - And you will see session end date, session start date.\n• Speaker 1\n  - # Speaker 1\n\nBecause anonymous web service is simply a back door or kind of place which could be utilized by anyone without \nany credentials.\n  - So potentially making it possible to do some kind of DDoS attack on your website.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 19 ---\n\nBy default it's supervisor, but you can change and this user will be used for this Background Started and created user \nsession used only for system purpose and running anonymous services is also based on this approach.\n  - So if \ninterested in running anonymous web services, here is the article.\n• Speaker 1\n  - # Speaker 1\n\nBut in order to implement anonymous web service, you have to perform a lot of changes in file system, which is not \na problem if you deploy your anonymous service at on site environment, where you have access to file system, but \nwhich will be a trouble if you deploy it in cloud conditions, because you simply cannot modify such files in cloud.\n  - You \nonly can provide manual for support team and ask them, hey guys, please, I need to deploy anonymous web service \nat cloud environment.\n• Speaker 1\n  - # Speaker 1\n\nAnd you may know that we have already a lot of base product anonymous services.\n  - You can find it inner web config \nfile.\n• Speaker 1\n  - # Speaker 1\n\nAnd I will just show you a quick example of a web service which may work anonymously.\n  - The biggest difference is \nthis.\n• Speaker 1\n  - # Speaker 1\n\nDimitri, I have one question, if that's possible.\n  - Yes, yes, please.\n• Speaker 1\n  - # Speaker 1\n\nIt's possible, but I would not recommend you to make such strict restrictions because your end users usually work \nas a team.\n  - And if one created a customer, someone else may need to look at it.\n• Speaker 1\n  - # Speaker 1\n\nSo they will see all the data.\n  - Okay, that's clear.\n• Speaker 1\n  - # Speaker 1\n\nAnd in my practice we had successful examples where two different creation systems were communicating with \neach other using no code call web service tool.\n  - So it's possible.\n• Speaker 1\n  - # Speaker 1\n\nSo let's look at our call again.\n  - Now you see this query, but if you look at headers part you will see that we have \ncookies.\n• Speaker 1\n  - # Speaker 1\n\nIf we will steal all this data and try to make it from another browser without cookies, of course it will fail.\n  - And it was \nshown by postman, we will have 401.\n• Speaker 1\n  - # Speaker 1\n\nAt the end of tomorrow session I'm going to show you Clio tool, explain why you need it, how you can do some \nsystem maintenance with it and how you can organize delivery with help of Clio.\n  - So thank you for your time today \nand see you tomorrow.\n\nKey Concepts: entity, database, server, record, section",
+  "key_points": [
+    "entity",
+    "database",
+    "server",
+    "record",
+    "section",
+    "lookup",
+    "schema",
+    "page",
+    "module",
+    "json"
+  ],
+  "keywords": [
+    "service",
+    "web",
+    "speaker",
+    "data",
+    "let",
+    "code",
+    "web service",
+    "use",
+    "need",
+    "okay"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 4972,
+  "original_length": 15057,
+  "compression_ratio": 0.33021186159261473,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:51:19.242496",
+  "metadata": {
+    "structure": {
+      "title": "Speaker 1",
+      "sections": [
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nToday is session number eight of our development on Creature Platform Guided Learning and we will continue to \nwork with server side features and functionality.",
+            "So today we will focus on the web services, making our own \nclasses at creation server side and make it work at the web service, write C Sharp code and practice with calling of \nweb services from Creature client side and from third party applications.",
+            "So today is quite big plan.",
+            "I hope we will \nhave enough time for this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo when you look at your network tab, for example, when you open any record page, you see plenty of different web \nservice requests, different HTTP calls that were executed from server side.",
+            "So from client side to the server side \nwith different request body with different responses and in general all our website operation is set of different \nqueries, different HTTP requests and then getting some responses at client side.",
+            "Creature has a lot of embedded out \nof the box web services.",
+            "Some of them are system web services, some of them are developed at configuration."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo client side definitely is not the place where you would like to perform some sensitive data operations or \ncalculations.",
+            "So server side is a very natural place to do some complicated business logic like doing some \ncalculations, data processing, file processing and so on.",
+            "So web services can be created in configuration and if \nyou're interested you can look at existing examples."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nUsually it's written in C Sharp and today I plan to explain how you can create your own web service, how you can \nmake it run and how it can be useful for you.",
+            "So we have a lot of existing examples, but the most important you need \nto remember that web service is a special piece of functionality that was specially designed to be called from client \nside."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in general web service is something that we can call from client side which works at server side, usually gets \nsome argument data, usually returns some result data and also makes some useful work etc.",
+            "Side and that's why we \nneed it.",
+            "So it's a very common functionality to use to run different business logic.",
+            "We have a lot of standard based \nplatform web services like web services to get data like this one.",
+            "This web service is called data service."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIs it a freedom user interface or if it's a classic UI so you can use web services?",
+            "Absolutely the same because server \nside is on the single item and requests and payload and response data will be parsed and will be processed \nabsolutely the same way.",
+            "So we will study how to make our own web services."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you randomly select then you probably will face unnecessary complex examples which will be hard to use it for \ntraining purpose for your study.",
+            "So that's why I recommend you to use couple of very useful and simple examples.",
+            "First one is a cryptographic service located in CRT base package.",
+            "So it's a base platform item and it will be found in \nany creatio system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it means that contents of this package will be compiled in all terasoft configuration sln and you will have terse of \nconfiguration DLL as A result.",
+            "Okay, so this is a simple C Sharp code as I told you at the beginning, just expected but \nthat creation developer has some experience in C, in JavaScript and also in SQL scripting.",
+            "So here your C Sharp \nknowledge will be requested to be important."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe use set of standard base platform and system namespaces that are necessary to declare our class to use some \nof functions that we need inside of it.",
+            "And mainly all these stuff is made possible thanks to system service model \nnamespace and I need to say that creatio uses.",
+            "NET framework backed tools to create web services based on WCF \nWindows Communication foundation web services.",
+            "So there are several conditions how we can make such a WCF \nweb service."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd then inside of this class you should make at least one method to turn it into endpoint something that we can \ncall and this endpoint must be decorated method.",
+            "This method must be decorated with operation contract attribute \nand some additional web invoke attribute."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 3 ---\n\nSo after compilation this web service will be fully operational and it will be ready for calls that will be done from \nclient side.",
+            "It could be done from creation client side or even from third party applications client side.",
+            "We will \ndemonstrate how you can use it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAlso we will have some business logic functionality that also can include access to database, operating with some \nfiles, running other web services and so on.",
+            "So we can use some useful method body."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut it can happen that you will need more complicated arguments like structures like instance of classes, objects \nand so on, and you may need to return some complex responses and complex result data.",
+            "As example, you can see \nwhen we run some query at our creation list page, you see some request and response which usually includes a lot \nof properties, a lot of different values.",
+            "Definitely for such complicated request body, we need some classes and we \nneed to organize it in more or less structured way."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWhy I'm saying about serializing because server side will be a dll, a library with a runtime code which will be capable \nto operate with some data with a certain data type.",
+            "When client side calls a web service, it usually packs so parses, \nmaybe encodes your arguments into a string.",
+            "Here you can see an example of a big JSON string."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThe same task will happen when server side already finished execution of a method and needs to return some data.",
+            "So server side returned data also represents some class with some properties, and then it's necessary to serialize it \nback into a string because originally HTTP query will transport some string for you as result.",
+            "So serializing and \ndeserializing is important part of any web service call.",
+            "And in case if your data is complex so system will fail to \ndeserialize it without additional information, you should use special classes such as data classes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nVisa data service web service is a good example of a web service which is designed to get some arguments and\n\n--- Page 4 ---\n\nreturn some results using complex data type.",
+            "In this example, Request options is a complex argument that is \nprovided as an argument for your method."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd if you need it, so you have a lot of examples how to do this.",
+            "You have samples in Creature, you can easily open it \nand find it.",
+            "So don't forget about this Visa data service a bit more complicated example, so it will really work well for \nyou.",
+            "Why you need such examples?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow I will show you how to make our own web service.",
+            "How to use Visual Studio for its development, to make it \nmore efficient and to make possible development of complicated functionality with a powerful editor.",
+            "So let's do our \nown example and also later I will show you how to run it from Creature side, from Freedom ui, from Classic UI and \nalso from third party application like post one."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo having this name well spelled is a good idea in general.",
+            "So let's call it realty service and we can make the same \ntitle for this source code item saving our package no description and just apply.",
+            "So as you already remember from \nyesterday example with handling object events, C source code item is just a big set."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo my plan is to create a web service that will work at server side and will be capable to calculate maximum price of \nreality objects filtering them by type and offering type.",
+            "This is important because it's not good idea to mix \napartments, houses, parkings and so on.",
+            "And also it's a good idea to filter by offer type because it's definitely not \ncorrect to mix rentals and sales.",
+            "So the business sense of my web service will be to do some database calculations \nto do some operation with database.",
+            "And also it will work as a good example for you how you can use alternative \nways to operate with data without use of object model."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe can as you can see we have a star here which means not all the items were fully saved on disk.",
+            "So let's do this.",
+            "Download packages to file system.",
+            "This usually is a safe action.",
+            "It helps us to get all things right at the database."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI strongly recommend you not to modify Anything manually here and C sharp file which we will fill in now with the \nright good looking code.",
+            "As usual I prefer to use local environment advantage and one of them is use of file system \nand use of external editors.",
+            "So we can use Microsoft Visual Studio.",
+            "I'm using Community Edition to operate with this \ncode using external powerful editor."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI already have an example which implements all this logic and that's why probably it makes sense to do it faster.",
+            "So \nlet me show you.",
+            "Here is my example of code.",
+            "It's too big to fit into one zoom message in chat.",
+            "So we try to fix it in \ntwo messages."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThere is a tradition of creature developers to name classes which represent web services with the help of service \nsuffix.",
+            "So if you do something when you develop C sharp class for the service of it will be do something service.",
+            "And \nit's quite common tradition.",
+            "You may find a lot of examples in base product logic."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut thanks to decompilation features of Visual Studio we can see some code from it at least interface part of it.",
+            "And \nit has a lot of useful things.",
+            "And the most important I think is property that is named user connection.",
+            "Let me show \nYou a lot of libraries abstract class service."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet me show you here you can see examples.",
+            "So we have HTTP context usually like this, and this works only for.",
+            "NET framework version.",
+            "But also this code and this application may run in.",
+            "NET core conditions in for example Linux \noperating system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut now you should remember that inheriting from base service helps to get user connection and helps to get it \ninitialized properly.",
+            "When your method started, your user connection property of your class will be already initialized.",
+            "This is important also."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in general, declaring of support of this interface costs you nothing because you have no methods to implement \nfor it.",
+            "But it tells IIS that it can process your web service calls with the fastest possible way.",
+            "So in general it is a good \nresult for high load conditions and for situations when you have performance issues at IIS because of multiple calls \nor the same service and not so fast processing inside of these calls and just for better performance."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now I'm searching through C files which include service contract attribute and I will find approximately 200 web \nservices created out of the box in creatio based studio product.",
+            "Okay, 157 files and possibly a bit more web services \ninside because one file may include more than one web service, but in general.",
+            "Okay, so 157."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, so this is only for better performance.",
+            "What we have inside we have some method, but probably I have to start \nwith this.",
+            "This is a simple method which is just gets no argument, returns some string and is organized as a web \nservice method because of operation contract attribute.",
+            "So it tells to WCF that we have to turn this method into \nendpoint and register it at our website."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can create a lot of other methods in your class and some of them maybe will be decorated with operation \ncontract.",
+            "If method is decorated with operation contract it will turn into endpoint.",
+            "If it's if you have just a single \nmethod which has no decoration, it means that it will be just a regular method that can be called by other methods, \nbut not by HTTP query, not an endpoint which is registered at our web server."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOne of them is very easy get example so this is just an example of a method which will return us okay string and if it, \nif we get it means that our web service is present Normally compiled and fully operational, this method get max \nprice by type id.",
+            "So I decided to name this method like this will go to the database and search for realty records with \ncorresponding type offer type and also I plan to make it more universal and to call my service from different \nsections."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd that's why I will use the same selection statement to work with different tables inside of my code.",
+            "At the \nbeginning it makes sense to make a very simple check of our arguments and if any of them is empty then we will \nreturn minus one."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, we have several arguments, we check it out if they are empty or not and then I will show you another approach \nto get data.",
+            "Previously you probably remember we used entity schema query approach to get data."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow I will show you another approach to operate with data which will not use data model at all.",
+            "So this is alternative \napproach to operate with data, but of course we need to know source table name.",
+            "Here entity name is used as table \nname at the database.",
+            "Of course we need to know exact column names and also for lookups you need to remember \nthat at database Corresponding columns have id suffix, but @ your object level such columns have no ID suffix."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd as you can see, no ID suffix at column code.",
+            "But when you go to the database.",
+            "Let's go and check our database \nD1 you can make filter for tables contains USR.",
+            "Now we'll have just a little set of tables USR realty columns.",
+            "Now you \nwill see the type column as suffix id and you may also notice such suffix ID for offer type, for city, for country and \neven for created by ID and modified by id."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 8 ---\n\nAnd you should expect exactly the same data columns of your tables.",
+            "And in general, when you operate with \ndatabase like this, you must go to the database physically to see corresponding table, corresponding columns, just \nto make sure that all your columns that you work with are present and so they represent what you expect from them.",
+            "Okay, my case I'm using direct database operation with select statement.",
+            "It's also possible to use insert, update, \ndelete and even stored procedure classes which will operate with the database directly without use of object model."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can use Visual Studio or Total Commander.",
+            "Or in my case I'm using far manager tool inside of JSoft Web folder, \nmaybe even inside of JSOP configuration.",
+            "We can use search for all C files where we have for example new select \nclass usage.",
+            "We will find more than 200 of examples, maybe even 300 examples, almost 300 examples."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd sometimes you will notice that use of direct database approach gives you More flexibility and more powerful \ntools than using just entity support and using entity schema clearer method.",
+            "So depending on your task you can \nchoose proper tool.",
+            "And this select class works a bit faster because it doesn't include entity data model, it doesn't \ncreate corresponding instances for working with entities, and in general it consumes less memory.",
+            "And I think it will \nwork a bit faster than entity schema query."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd also it's important to mention you create class instance and then in order to set it up you use different methods \nlike top method, column method, maybe many times from method makes to run it one time where method is equal \nmethod and a lot of others.",
+            "So finally running such methods will configure your class to read corresponding columns \nfrom corresponding tables.",
+            "You can use joins, you can use different conditions and types of filters."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt means get one of the three database connection threads from thread pool from connection pool because \nconnection to database is pooled and you have like set of available threads for it.",
+            "Then you take it and this is DB \nexecutor reference and then you run your select statement with the chosen DB executor and finally you will get data \nreader.",
+            "This data reader holds your data and offers you possibility to process it row by row."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo while read returns you true, you can try to get some data and you can put it somewhere in order to analyze in \nfuture.",
+            "So this tool is helpful to get data selection with many columns, as many data rows.",
+            "And also you may notice \nsome strange things here and here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd that's how that's why you need to handle memory yourself.",
+            "So when this method was executed, some memory \nwas allocated and in order to properly release it you need to dispose created class instance, you need to dispose the \nSTB executor or you need to use special using operator which will do this dispose automatically when this code \nfinishes its work.",
+            "So you need to correctly dispose memory from ensuredb connection and also connect dispose \nmemory after executing reader."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now you see 1 gigabyte, so 900 megabyte it's more or less okay, but you may see much more memory up to all of \nyour available virtual memory and one it will come to a certain limit.",
+            "IIS will suddenly restart your website and you \nwill not know why this happens.",
+            "So it will be very unusual for you.",
+            "And the reason is that non allocated so not \ndisposed memory will be leaked and so you have no way how to fix it until you will make this using operator \nprotection."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut in my example you may notice that we don't have using protection, we just use execute scalar method which is a \ngeneric method and it accepts expected data type of our result.",
+            "And execute scalar is useful in case if you plan to \nread only one data row and you expect to read only one column value there.",
+            "So execute scalar returns you first row \nand first value of the first column that you select."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can try to see it would possible to decode scalar async probably no, but let's see, you see decompiled stuff DB \nexecutor you see using yes so first using is already used here ensure special DB executor then internal execute \nscanner sync probably here failover execute and somewhere so you probably may find another using here in this \ndecompiled code.",
+            "But you can just trust me that execute scalar performs all code correct operation with memory so \nyou do not need to handle and to care here with additional protection."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo my example here is not only how to organize your web service, but it's also how to operate with the database and \nhow to use alternative data selection approach with some data that we expect to get and return.",
+            "I try to make it \nsimple without need to collect many data records with many data columns inside of it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe get this user connection as a property and this property is ready for use when at the moment when our method \nis called so WCF and our base service class makes all that is necessary to initialize user connection at the moment \nwhen our customer runs this HTTP post method.",
+            "By the way, we used post because it's very common for creation.",
+            "You may find that for example we can search for all sources where we have just get method information."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBecause this is very traditional, very typical, difficult to create for creation to use post.",
+            "It offers us quite comfortable \nway to handle data.",
+            "You can serialize almost anything as a post request body.",
+            "So post request data, that's why it is \nso comfortable and also it's well protected.",
+            "It's better protected with security settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe can also see our recent reality service item.",
+            "It has all this code already, so it was loaded from the file system and \nwe can compile it.",
+            "Compiling package makes collection of all of its sources including automatically generated items \nand like process code.",
+            "If process includes C sharp tasks and then it performs compilation of our CS proj C sharp \nproject."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in my case compilation was successful.",
+            "And in case if you have compilation error, you will see a big error page \nwith information about lines of code, type of the error and you will be able to look at it.",
+            "Even after you close this \npage, you will have a special button in this list compilation error.",
+            "So developers tried their best to support you."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe need to get our browser URL copy go to separate tab paste.",
+            "So this is my web server address including zero \napplication alias.",
+            "This zero is very important.",
+            "Let me remind when we registered our application our website at \ncreation at iis.",
+            "So I have a structure of default website which uses port number 80."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn net core we have all the stuff placed in one root folder.",
+            "So it's a bit different, but all creature configuration will work \nabsolutely the same.",
+            "So we have functions that Return main application URL and for Linux it also returns everything \ncorrectly.",
+            "So don't worry if you write something and run it on Windows there is a very high chance but it will also \nnormally work on Linux.",
+            "Okay, so let's move on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you use URI template your method name may be different.",
+            "I mean your code URI will be different.",
+            "But in my case \nit's very simple.",
+            "I will just use this get example method name.",
+            "I'm lucky to have no arguments here so my query will \nbe not so hard to do."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo this is a very easy and quite practical way to check availability of your web service.",
+            "For example, if you have \ncompilation issue your web service will not be hosted at creation web server and your query like this will return you \n404not found.",
+            "So it will show you that there is no registered web service with this address.",
+            "So in my case it looks \ngood and it was get query which is very easy to get from your browser."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let's make a 7 minutes coffee break and then we will move on with calls of our web service.",
+            "We will make call of \nweb service from creature page and also I will show you to make how to make it from Freedom UI page, from classic \nUI page and from third party applications.",
+            "In case if you have questions please type in your chat and we'll answer so \nlet's make a quick break right now.",
+            "So today, now our task will be to call creature service from our client side page."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd now we have to write some code at our creature client side in our browser JavaScript in our browser page \nJavaScript part.",
+            "So let me show you.",
+            "I already had all of the examples.",
+            "It will not take too much time today.",
+            "So I will \nshow you how we can call the web service from creation client side."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut okay, I will recover closed page.",
+            "This one go to front page.",
+            "Okay, this one.",
+            "Let me show you what we need first.",
+            "So we need first some button that will start our code and then we will implement it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo and then we have to save this.",
+            "Our menu item will appear in actions menu and then we go to its code part.",
+            "So \nlet's go to open source code.",
+            "You can close this editor so not to accidentally resave anything.",
+            "Let's search for our \nmax price item."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo this code will be quite big.",
+            "I will copy it into parts for you.",
+            "But first of all let's pay attention on the definition of our \nmodule.",
+            "I copied it for you, so you'll be able to reproduce the same in this line where we define our module, we \nstarted to request one more additional module named Creature Dev Kit command."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd if you forget about line number one here, your next code samples will not work because you have no these utility \nmodules.",
+            "Okay, we have this SDK now and it's time to implement our handler for our menu item.",
+            "I will copy and paste \nit in parts for you because Zoom has limitations on size of code that is possible.",
+            "So size of chat messages.",
+            "Okay, \nthree parts."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd this handler has its own request property.",
+            "So it's like handler name.",
+            "And you see, there is a tradition to name \nyour own custom handlers with usr Prefix and base product handlers are usually provided with crt.",
+            "Okay, we can \nname it as we wish.",
+            "Then we have a handler implementation asynchronous function."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we plan to get type from our page, but when we operate with it, we will get an object in JavaScript.",
+            "This object \nwill include several properties and if we need ID of selected data record we will look at value property.",
+            "If you need to \nlook at display text of a lookup value like this apartment, you have to operate with display value property of this \nobject obtained from a lookup column.",
+            "I also need to make sure that I'm using correct names here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nType represents this attribute name so I have to copy it, find my handler and paste it this one so PDS usr type and \nthere is a unique name for this attribute.",
+            "So that's how we will get with await operator we will get our type lookup \nvalue which represents an object and if this object is not empty so it includes something then we will try to get value \nproperty in case if it's empty we will keep it clear so we will not use it.",
+            "The same with offer type."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow we will use our dev kit library in order to get HTTP client service out of it so we can ask SDK to create one and \nthat's how we get this JavaScript class instance in our code.",
+            "We have to combine and collect correct viewers URL \nfor our web service.",
+            "I'm using Terasoft base product client side JavaScript framework."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI have to fix it in my code here get max price by type id so it was mistake because I renamed this method recently \nand finally my endpoint URL will be combination of the base URL/method name slash this rest like template part \nthen class name then method name.",
+            "Okay great, my endpoint is ready and here you can see some example of brick \nof my endpoint.",
+            "I will name it better here something like this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd also I have to fix my code because this one already changed its name so my object is named usr reality.",
+            "Okay, \nthis is important part and parameters will be passed as a part of our request HTTP request body.",
+            "So parameters will \nbe encoded into a stream and thanks to this SDK library it will be done by this method post method, not by us.",
+            "So we \njust wait for getresponse running post method.",
+            "If you need to run get method you will have a get instead of post \nhere."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you should understand that even if it looks like easy thing and line by line execution, physically it is asynchronous \ncall which means we send request, then browser waits, then we get some response.",
+            "Okay, we got response object \nwhich is a JavaScript object instance.",
+            "We can look at its properties."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you plan to perform your own examples of the same then we have to save this carefully because if you have \nmistakes of course you will see it doesn't work.",
+            "And also let's remember about our your request name and return\n\n--- Page 14 ---\n\nback to line number 115 or something like this.",
+            "Let's go.",
+            "Here we have our menu item, our action item and we have \nclicked event with the request name.",
+            "Originally we set it to some random save request, but of course we will replace \nit with our own code."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd then we can save it.",
+            "Great.",
+            "Everything saved correctly.",
+            "We can close this editor.",
+            "Probably can just close and \nopen the page."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen we have response with some number correctly calculated by our server side and returned and some timing \ninformation.",
+            "Now you see it's quite fast execution.",
+            "So it took only 31 milliseconds to run.",
+            "It's very good speed.",
+            "Okay, \nlet's look at another example."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo our Freedom UI page calculation worked well.",
+            "In case if you have any questions, please ask.",
+            "I'll be happy to \nanswer.",
+            "Now I want you to see the same call how it can be done in Classic ui.",
+            "Some of you probably will do some \nClassic UI customizations."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now I will show you how to program some buttons in Classic ui.",
+            "Go to view and open section wizard.",
+            "So this is an \nalternative of what you get used to work with edit page in Freedom ui.",
+            "So open Section wizard from this edit page \nwill open as an editor for a button.",
+            "Unfortunately you can't easily add a button using this page."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in case if you want to call third party application from Creature.",
+            "So Creature will initialize this call and do it.",
+            "It's \neven possible to make it no code solution for this.",
+            "We will study it a bit later.",
+            "Probably tomorrow I will show you how \nto make integration with third party apps and how to call third party web services."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou see this is area and somewhere here just nearby I plan to put some code for a button I need to steal some \nbutton definition from Academy.",
+            "So so I will show you how you can find it.",
+            "Go to guides.",
+            "By the way, our training \nladies will write next.",
+            "So current 813 release highlights with a video that will be released in a week."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOf course I will have to fix it.",
+            "I will have to make it look correct.",
+            "So comma is missing here.",
+            "Here's my button \ndefinition and I. Oh, I have to exclude unnecessary stuff here.",
+            "And yeah it looks like I have a lot of extra things \ncopied."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen I will have row three because I want to put it a bit below Parent name is the same button.",
+            "We can call it Run \nweb service button.",
+            "It will be our button name button title button caption should be localizable string.",
+            "This editor \ndoes not allow me to do this.",
+            "Okay, red color always enabled so I will do it always enable it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nProbably it was not the best idea because I need to implement method for the button.",
+            "I also need to make my in my \nclassic package.",
+            "I also need to make localizable string for the page.",
+            "So let's make localizable string.",
+            "I called my \nbutton action could be run service okay and try to save."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo here is my own run web service button click.",
+            "Okay, and also I need to have a callback function here.",
+            "So we have \ntwo methods and that will fix it.",
+            "Okay, so when I need to do this is my method name.",
+            "I use it for a button and method \nis in classic UI it's easier way to call some functionality because it just implements some function in your JavaScript \nobject."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd we need to provide callback method to accept our result because in Classic UI we don't have so fancy stuff like\n\n--- Page 16 ---\n\nawait.",
+            "And so it's because of the tools used here.",
+            "So your JavaScript of course will run Await normally.",
+            "But the tool \nthat we use to call service expects to get this callback function and parameters should be executed."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it's a value of that enumeration item that we found in our article.",
+            "So item type.",
+            "This one turned to be a constant, \nwhich means five by the way, you can also study your client side framework.",
+            "So you can just do terasoft.",
+            "Then you \nsee a lot of properties like item."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThat's how we will do some console output and show us returned data.",
+            "Okay, finally we can save it.",
+            "In Classic UI we \nhave to constantly think of browser cache.",
+            "So we have to reload the page in order to fight with cache.",
+            "Now we have \nhouses for sale."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo perfect time.",
+            "Very good speed.",
+            "Okay, great.",
+            "We're almost done.",
+            "And now we already practiced with Sending of \nqueries from client side."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nPostman is on first position but we have Thunder client.",
+            "You may use Advanced Rest client, Rest, Wet Insomnia and \na lot of other names.",
+            "The recent one was Mako Kuhn and Talent API Tester.",
+            "Or you can use hard code old tools like \nFiddler Swap UI or Wireshark.",
+            "So it's up to you what to use."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nTry to run this button here.",
+            "We can steal all necessary parameters.",
+            "So this is our request URL.",
+            "Okay, copy it, go to \nPostman, paste it here carefully.",
+            "So this is our request URL."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow you need to know that if you want to call Creature Services from third party apps, you have to pass \nauthentication.",
+            "Creature has different ways of authentication.",
+            "Now let's go to our documentation about integration \ntopics.",
+            "We have authentication articles, basics and overview.",
+            "So we have different authentication types."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNo, no, no.",
+            "I need to reference for our service.",
+            "So we need to run special web service providing request body with our \nname and password.",
+            "As a result, we will have set of authentication cookies.",
+            "And such cookies will include necessary \ndata that will work like a temporary ticket."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo what we have here, this is our web server address.",
+            "This is our root folder pass to our web service.",
+            "Let me show \nyou this.",
+            "My is my web server folder service model O service.",
+            "You see some definition of this web service class and \nsome technical information from it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd obviously we will not get full set of cookies.",
+            "So we are getting only just one temporary cookie, which is not \nenough, of course.",
+            "Okay, let's provide correct value.",
+            "Now you see 200, which is okay.",
+            "No error messages in response."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn this query we already have set of cookies thanks to postman sharing cookies with the same sites.",
+            "And then we \ncan run our query.",
+            "And it looks like we have one more error 403.",
+            "But this time this error is not because of \nauthentication.",
+            "This is because of additional protection from CSRF attacks."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd in order to run post queries you have to make a header in post query named BPM CSRF and the value for this \nheader must match the same cookie BPM csrf.",
+            "So I take cookie value carefully put it to value of our BPM CSRF \nheader and in this case my calculation is correct.",
+            "Response is 200 and I have some response data.",
+            "So now I \nsuccessfully called creation method from third party app from my Postman application.",
+            "That's how you can do this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd you see original value was 60, which means 60 minutes 1 hour.",
+            "I've already changed this timeout to 600 which \nmeans 10 hours.",
+            "The maximum value here is 720 which means 12 hours and minimum value is 10, which means 10 \nminutes.",
+            "So this is user session timeout."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in case if you plan to do some integration, of course first you will do authentication, then you Will do some \nintegration steps and also you can check how it goes and you can check current user sessions.",
+            "If you go to system \nusers, find your user, go to access rules detail, then sort by start of the session.",
+            "Now you see two different sessions \ninitialized by our supervisor user.",
+            "And one is browser based by our Chrome, another is made by Postman."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if you do something like this in your database, you will see all user sessions created initialized by any user in your \nsystem.",
+            "And you will see session end date, session start date.",
+            "You can calculate how long your users were working, \nwho worked and who did not work in your system.",
+            "So this may be really helpful for you.",
+            "And you see we have \ndifferent session end methods."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBecause anonymous web service is simply a back door or kind of place which could be utilized by anyone without \nany credentials.",
+            "So potentially making it possible to do some kind of DDoS attack on your website.",
+            "So generally it's \nnot safe.",
+            "You can read more data about anonymous web services at our documentation."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 19 ---\n\nBy default it's supervisor, but you can change and this user will be used for this Background Started and created user \nsession used only for system purpose and running anonymous services is also based on this approach.",
+            "So if \ninterested in running anonymous web services, here is the article."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut in order to implement anonymous web service, you have to perform a lot of changes in file system, which is not \na problem if you deploy your anonymous service at on site environment, where you have access to file system, but \nwhich will be a trouble if you deploy it in cloud conditions, because you simply cannot modify such files in cloud.",
+            "You \nonly can provide manual for support team and ask them, hey guys, please, I need to deploy anonymous web service \nat cloud environment."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd you may know that we have already a lot of base product anonymous services.",
+            "You can find it inner web config \nfile.",
+            "Let me show you Inner it means inside of terrasoftware web config search for allowed locations.",
+            "And you'll be \nsurprised how many anonymous web services we already have on board."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd I will just show you a quick example of a web service which may work anonymously.",
+            "The biggest difference is \nthis.",
+            "If you have user connection, you can just get it.",
+            "If not, you can get it from app connection, system, user \nconnection.",
+            "That's how you use this user connection obtained with this code and can just copy it for you."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nDimitri, I have one question, if that's possible.",
+            "Yes, yes, please.",
+            "It is a bit off topic, but we have an opportunity where \nwe can also leverage the business to business portal users.",
+            "And we would actually like to apply row level security.",
+            "Is \nthat possible?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt's possible, but I would not recommend you to make such strict restrictions because your end users usually work \nas a team.",
+            "And if one created a customer, someone else may need to look at it.",
+            "But in general it's possible if you plan \nto implement couple of competitive teams or competitive users, so they should not see data from each other.",
+            "It's\n\n--- Page 20 ---\n\npossible to implement with the help of default record level permissions."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo they will see all the data.",
+            "Okay, that's clear.",
+            "Let's try that.",
+            "Thank you.",
+            "Yes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd in my practice we had successful examples where two different creation systems were communicating with \neach other using no code call web service tool.",
+            "So it's possible.",
+            "And what's the difference between implementing a \nbutton handler and launching web service from business process?",
+            "There is a big difference."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let's look at our call again.",
+            "Now you see this query, but if you look at headers part you will see that we have \ncookies.",
+            "So this is our cookies parameter and such cookies were provided by our browser because we are running \nour creation page in a browser that was authenticated to work with this website.",
+            "Browser supports all queries made \nfrom client side with cookies."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf we will steal all this data and try to make it from another browser without cookies, of course it will fail.",
+            "And it was \nshown by postman, we will have 401.",
+            "So Adrian, is it clear what we're talking?",
+            "Okay Adrian, thank you very much.",
+            "Thanks all of you for today."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAt the end of tomorrow session I'm going to show you Clio tool, explain why you need it, how you can do some \nsystem maintenance with it and how you can organize delivery with help of Clio.",
+            "So thank you for your time today \nand see you tomorrow.",
+            "Please prepare questions because we will have Thursday and Friday sessions.",
+            "You have \nchance to ask your questions related to development organizing or architecture of Croatia."
+          ]
+        }
+      ],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "entity",
+        "database",
+        "server",
+        "record",
+        "section",
+        "lookup",
+        "schema",
+        "page",
+        "module",
+        "json"
+      ],
+      "keywords": [
+        "service",
+        "web",
+        "speaker",
+        "data",
+        "let",
+        "code",
+        "web service",
+        "use",
+        "need",
+        "okay"
+      ],
+      "topics": [
+        "speaker"
+      ]
+    },
+    "method": "hierarchical_structural"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "summary_id": "53b6f3a788a7",
+  "content_id": "f74604cafd68",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: server, database, data, package, schema",
+  "key_points": [
+    "server",
+    "database",
+    "data",
+    "package",
+    "schema"
+  ],
+  "keywords": [
+    "ui",
+    "process",
+    "code",
+    "like",
+    "classic",
+    "data",
+    "freedom",
+    "use",
+    "freedom ui",
+    "classic ui"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 14614,
+  "compression_ratio": 0.00047899274668126453,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T17:01:11.613076",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "server",
+        "database",
+        "data",
+        "package",
+        "schema"
+      ],
+      "keywords": [
+        "ui",
+        "process",
+        "code",
+        "like",
+        "classic",
+        "data",
+        "freedom",
+        "use",
+        "freedom ui",
+        "classic ui"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

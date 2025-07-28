@@ -1,0 +1,997 @@
+{
+  "content_type": "developer_course",
+  "total_summaries": 110,
+  "created_timestamp": "2025-07-23T17:01:39.658935",
+  "summaries": [
+    {
+      "summary_id": "2a84ea085853",
+      "content_id": "606ea808918e",
+      "summary_type": "extractive",
+      "summary_length": 349,
+      "compression_ratio": 0.023470073974445192,
+      "confidence_score": 1.0,
+      "file_path": "extractive/2a84ea085853.json"
+    },
+    {
+      "summary_id": "985e84dce8b5",
+      "content_id": "606ea808918e",
+      "summary_type": "abstractive",
+      "summary_length": 33,
+      "compression_ratio": 0.05061349693251534,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/985e84dce8b5.json"
+    },
+    {
+      "summary_id": "464673750f83",
+      "content_id": "606ea808918e",
+      "summary_type": "hierarchical",
+      "summary_length": 3858,
+      "compression_ratio": 0.259448554135844,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/464673750f83.json"
+    },
+    {
+      "summary_id": "0dd4dbee1318",
+      "content_id": "606ea808918e",
+      "summary_type": "key_points",
+      "summary_length": 59,
+      "compression_ratio": 0.0039677202420981845,
+      "confidence_score": 0.85,
+      "file_path": "key_points/0dd4dbee1318.json"
+    },
+    {
+      "summary_id": "8fd6d3ad6de0",
+      "content_id": "699402ad4f39",
+      "summary_type": "extractive",
+      "summary_length": 541,
+      "compression_ratio": 0.03187227524449158,
+      "confidence_score": 1.0,
+      "file_path": "extractive/8fd6d3ad6de0.json"
+    },
+    {
+      "summary_id": "6516da89001b",
+      "content_id": "699402ad4f39",
+      "summary_type": "abstractive",
+      "summary_length": 41,
+      "compression_ratio": 0.06436420722135008,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/6516da89001b.json"
+    },
+    {
+      "summary_id": "88659fa3440c",
+      "content_id": "699402ad4f39",
+      "summary_type": "hierarchical",
+      "summary_length": 5422,
+      "compression_ratio": 0.3194297160362908,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/88659fa3440c.json"
+    },
+    {
+      "summary_id": "a9e00a5b619b",
+      "content_id": "699402ad4f39",
+      "summary_type": "key_points",
+      "summary_length": 114,
+      "compression_ratio": 0.00671615411806292,
+      "confidence_score": 0.85,
+      "file_path": "key_points/a9e00a5b619b.json"
+    },
+    {
+      "summary_id": "5e407de29f95",
+      "content_id": "7ce29bfbf05e",
+      "summary_type": "extractive",
+      "summary_length": 458,
+      "compression_ratio": 0.030553702468312207,
+      "confidence_score": 1.0,
+      "file_path": "extractive/5e407de29f95.json"
+    },
+    {
+      "summary_id": "1139a0a61804",
+      "content_id": "7ce29bfbf05e",
+      "summary_type": "abstractive",
+      "summary_length": 47,
+      "compression_ratio": 0.07378335949764521,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/1139a0a61804.json"
+    },
+    {
+      "summary_id": "3061cbefcbed",
+      "content_id": "7ce29bfbf05e",
+      "summary_type": "hierarchical",
+      "summary_length": 4679,
+      "compression_ratio": 0.3121414276184123,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/3061cbefcbed.json"
+    },
+    {
+      "summary_id": "6b0f2915bf8a",
+      "content_id": "7ce29bfbf05e",
+      "summary_type": "key_points",
+      "summary_length": 66,
+      "compression_ratio": 0.004402935290193462,
+      "confidence_score": 0.85,
+      "file_path": "key_points/6b0f2915bf8a.json"
+    },
+    {
+      "summary_id": "4c99fdf14a67",
+      "content_id": "81ddf5a48985",
+      "summary_type": "extractive",
+      "summary_length": 465,
+      "compression_ratio": 0.035283405417709995,
+      "confidence_score": 1.0,
+      "file_path": "extractive/4c99fdf14a67.json"
+    },
+    {
+      "summary_id": "1b81a1aac3f4",
+      "content_id": "81ddf5a48985",
+      "summary_type": "abstractive",
+      "summary_length": 41,
+      "compression_ratio": 0.06497622820919176,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/1b81a1aac3f4.json"
+    },
+    {
+      "summary_id": "3bef6587a1a8",
+      "content_id": "81ddf5a48985",
+      "summary_type": "hierarchical",
+      "summary_length": 3964,
+      "compression_ratio": 0.3007815463995751,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/3bef6587a1a8.json"
+    },
+    {
+      "summary_id": "8f5da3108a5f",
+      "content_id": "81ddf5a48985",
+      "summary_type": "key_points",
+      "summary_length": 95,
+      "compression_ratio": 0.007208437665983762,
+      "confidence_score": 0.85,
+      "file_path": "key_points/8f5da3108a5f.json"
+    },
+    {
+      "summary_id": "c6c1308fe4a8",
+      "content_id": "4080e9e2e7d9",
+      "summary_type": "extractive",
+      "summary_length": 894,
+      "compression_ratio": 0.06117003079028396,
+      "confidence_score": 1.0,
+      "file_path": "extractive/c6c1308fe4a8.json"
+    },
+    {
+      "summary_id": "66c1051c3b8a",
+      "content_id": "4080e9e2e7d9",
+      "summary_type": "abstractive",
+      "summary_length": 42,
+      "compression_ratio": 0.059490084985835696,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/66c1051c3b8a.json"
+    },
+    {
+      "summary_id": "d7b578012a2b",
+      "content_id": "4080e9e2e7d9",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.0004789599726308587,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/d7b578012a2b.json"
+    },
+    {
+      "summary_id": "1a101329571a",
+      "content_id": "4080e9e2e7d9",
+      "summary_type": "key_points",
+      "summary_length": 65,
+      "compression_ratio": 0.004447485460143688,
+      "confidence_score": 0.85,
+      "file_path": "key_points/1a101329571a.json"
+    },
+    {
+      "summary_id": "6543ad49cc48",
+      "content_id": "623e1ee007a4",
+      "summary_type": "extractive",
+      "summary_length": 5107,
+      "compression_ratio": 0.3518914077034383,
+      "confidence_score": -8.010089007353479,
+      "file_path": "extractive/6543ad49cc48.json"
+    },
+    {
+      "summary_id": "95e1a3ddbc22",
+      "content_id": "623e1ee007a4",
+      "summary_type": "abstractive",
+      "summary_length": 49,
+      "compression_ratio": 0.06758620689655172,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/95e1a3ddbc22.json"
+    },
+    {
+      "summary_id": "3d2f3ad58f77",
+      "content_id": "623e1ee007a4",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.00048232619031213393,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/3d2f3ad58f77.json"
+    },
+    {
+      "summary_id": "8ee8b7d69077",
+      "content_id": "623e1ee007a4",
+      "summary_type": "key_points",
+      "summary_length": 84,
+      "compression_ratio": 0.005787914283745608,
+      "confidence_score": 0.85,
+      "file_path": "key_points/8ee8b7d69077.json"
+    },
+    {
+      "summary_id": "94cc9aaa626c",
+      "content_id": "751f211990f5",
+      "summary_type": "extractive",
+      "summary_length": 463,
+      "compression_ratio": 0.03089344098218456,
+      "confidence_score": 1.0,
+      "file_path": "extractive/94cc9aaa626c.json"
+    },
+    {
+      "summary_id": "ab55a892c311",
+      "content_id": "751f211990f5",
+      "summary_type": "abstractive",
+      "summary_length": 47,
+      "compression_ratio": 0.07378335949764521,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/ab55a892c311.json"
+    },
+    {
+      "summary_id": "167ec58ce24c",
+      "content_id": "751f211990f5",
+      "summary_type": "hierarchical",
+      "summary_length": 4684,
+      "compression_ratio": 0.3125375325281911,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/167ec58ce24c.json"
+    },
+    {
+      "summary_id": "caa0e972ecb8",
+      "content_id": "751f211990f5",
+      "summary_type": "key_points",
+      "summary_length": 66,
+      "compression_ratio": 0.004403816641088944,
+      "confidence_score": 0.85,
+      "file_path": "key_points/caa0e972ecb8.json"
+    },
+    {
+      "summary_id": "f56d7d0319d2",
+      "content_id": "ac0721a4f286",
+      "summary_type": "extractive",
+      "summary_length": 13951,
+      "compression_ratio": 0.9239072847682119,
+      "confidence_score": -10.458065927198312,
+      "file_path": "extractive/f56d7d0319d2.json"
+    },
+    {
+      "summary_id": "c22b53e0fa01",
+      "content_id": "ac0721a4f286",
+      "summary_type": "abstractive",
+      "summary_length": 84,
+      "compression_ratio": 0.11731843575418995,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/c22b53e0fa01.json"
+    },
+    {
+      "summary_id": "f0651b6f5b76",
+      "content_id": "ac0721a4f286",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.00046357615894039735,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/f0651b6f5b76.json"
+    },
+    {
+      "summary_id": "c6337bd079bf",
+      "content_id": "ac0721a4f286",
+      "summary_type": "key_points",
+      "summary_length": 70,
+      "compression_ratio": 0.004635761589403974,
+      "confidence_score": 0.85,
+      "file_path": "key_points/c6337bd079bf.json"
+    },
+    {
+      "summary_id": "f5c0d095b133",
+      "content_id": "c73636779bcc",
+      "summary_type": "extractive",
+      "summary_length": 349,
+      "compression_ratio": 0.023741496598639455,
+      "confidence_score": 1.0,
+      "file_path": "extractive/f5c0d095b133.json"
+    },
+    {
+      "summary_id": "c880ae1ec0d4",
+      "content_id": "c73636779bcc",
+      "summary_type": "abstractive",
+      "summary_length": 48,
+      "compression_ratio": 0.06876790830945559,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/c880ae1ec0d4.json"
+    },
+    {
+      "summary_id": "05ce0d49a67b",
+      "content_id": "c73636779bcc",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.0004761904761904762,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/05ce0d49a67b.json"
+    },
+    {
+      "summary_id": "64215499681d",
+      "content_id": "c73636779bcc",
+      "summary_type": "key_points",
+      "summary_length": 57,
+      "compression_ratio": 0.0038775510204081634,
+      "confidence_score": 0.85,
+      "file_path": "key_points/64215499681d.json"
+    },
+    {
+      "summary_id": "05a5f9823391",
+      "content_id": "e936e7320501",
+      "summary_type": "extractive",
+      "summary_length": 398,
+      "compression_ratio": 0.021884966457714726,
+      "confidence_score": 1.0,
+      "file_path": "extractive/05a5f9823391.json"
+    },
+    {
+      "summary_id": "c7bf509705a0",
+      "content_id": "e936e7320501",
+      "summary_type": "abstractive",
+      "summary_length": 44,
+      "compression_ratio": 0.07017543859649122,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/c7bf509705a0.json"
+    },
+    {
+      "summary_id": "7560fc4286e7",
+      "content_id": "e936e7320501",
+      "summary_type": "hierarchical",
+      "summary_length": 5423,
+      "compression_ratio": 0.29819641482459036,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/7560fc4286e7.json"
+    },
+    {
+      "summary_id": "b550b213253a",
+      "content_id": "e936e7320501",
+      "summary_type": "key_points",
+      "summary_length": 69,
+      "compression_ratio": 0.003794127350709337,
+      "confidence_score": 0.85,
+      "file_path": "key_points/b550b213253a.json"
+    },
+    {
+      "summary_id": "2abcd81b1773",
+      "content_id": "37206dabe436",
+      "summary_type": "extractive",
+      "summary_length": 479,
+      "compression_ratio": 0.03348479552603985,
+      "confidence_score": 1.0,
+      "file_path": "extractive/2abcd81b1773.json"
+    },
+    {
+      "summary_id": "ea44353ae96f",
+      "content_id": "37206dabe436",
+      "summary_type": "abstractive",
+      "summary_length": 39,
+      "compression_ratio": 0.0609375,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/ea44353ae96f.json"
+    },
+    {
+      "summary_id": "be9994a97078",
+      "content_id": "37206dabe436",
+      "summary_type": "hierarchical",
+      "summary_length": 4495,
+      "compression_ratio": 0.3142257951765117,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/be9994a97078.json"
+    },
+    {
+      "summary_id": "e3125eff5719",
+      "content_id": "37206dabe436",
+      "summary_type": "key_points",
+      "summary_length": 57,
+      "compression_ratio": 0.003984620761971339,
+      "confidence_score": 0.85,
+      "file_path": "key_points/e3125eff5719.json"
+    },
+    {
+      "summary_id": "337695312a37",
+      "content_id": "f80956f90642",
+      "summary_type": "extractive",
+      "summary_length": 13951,
+      "compression_ratio": 0.9239072847682119,
+      "confidence_score": -10.458065927198312,
+      "file_path": "extractive/337695312a37.json"
+    },
+    {
+      "summary_id": "ea37e67883dd",
+      "content_id": "f80956f90642",
+      "summary_type": "abstractive",
+      "summary_length": 84,
+      "compression_ratio": 0.11731843575418995,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/ea37e67883dd.json"
+    },
+    {
+      "summary_id": "1f7ad84bc2a8",
+      "content_id": "f80956f90642",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.00046357615894039735,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/1f7ad84bc2a8.json"
+    },
+    {
+      "summary_id": "ed46c5c3b72b",
+      "content_id": "f80956f90642",
+      "summary_type": "key_points",
+      "summary_length": 70,
+      "compression_ratio": 0.004635761589403974,
+      "confidence_score": 0.85,
+      "file_path": "key_points/ed46c5c3b72b.json"
+    },
+    {
+      "summary_id": "931b79e1ce79",
+      "content_id": "d57347054e45",
+      "summary_type": "extractive",
+      "summary_length": 745,
+      "compression_ratio": 0.0430635838150289,
+      "confidence_score": 1.0,
+      "file_path": "extractive/931b79e1ce79.json"
+    },
+    {
+      "summary_id": "6261cd5fa0eb",
+      "content_id": "d57347054e45",
+      "summary_type": "abstractive",
+      "summary_length": 44,
+      "compression_ratio": 0.062146892655367235,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/6261cd5fa0eb.json"
+    },
+    {
+      "summary_id": "6cf87a0f543a",
+      "content_id": "d57347054e45",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.0004046242774566474,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/6cf87a0f543a.json"
+    },
+    {
+      "summary_id": "9ed667446cca",
+      "content_id": "d57347054e45",
+      "summary_type": "key_points",
+      "summary_length": 70,
+      "compression_ratio": 0.004046242774566474,
+      "confidence_score": 0.85,
+      "file_path": "key_points/9ed667446cca.json"
+    },
+    {
+      "summary_id": "10f85d43948f",
+      "content_id": "64b48b00fe9b",
+      "summary_type": "extractive",
+      "summary_length": 520,
+      "compression_ratio": 0.0363433044450657,
+      "confidence_score": 1.0,
+      "file_path": "extractive/10f85d43948f.json"
+    },
+    {
+      "summary_id": "c603fb23a8af",
+      "content_id": "64b48b00fe9b",
+      "summary_type": "abstractive",
+      "summary_length": 39,
+      "compression_ratio": 0.0609375,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/c603fb23a8af.json"
+    },
+    {
+      "summary_id": "9075f896a993",
+      "content_id": "64b48b00fe9b",
+      "summary_type": "hierarchical",
+      "summary_length": 4518,
+      "compression_ratio": 0.3157674028515516,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/9075f896a993.json"
+    },
+    {
+      "summary_id": "9697b85e12aa",
+      "content_id": "64b48b00fe9b",
+      "summary_type": "key_points",
+      "summary_length": 57,
+      "compression_ratio": 0.003983785294939894,
+      "confidence_score": 0.85,
+      "file_path": "key_points/9697b85e12aa.json"
+    },
+    {
+      "summary_id": "268790dd63ab",
+      "content_id": "3ae506ca01ce",
+      "summary_type": "extractive",
+      "summary_length": 12072,
+      "compression_ratio": 0.8614857632198673,
+      "confidence_score": -9.601106835071848,
+      "file_path": "extractive/268790dd63ab.json"
+    },
+    {
+      "summary_id": "35a8328dd7c8",
+      "content_id": "3ae506ca01ce",
+      "summary_type": "abstractive",
+      "summary_length": 58,
+      "compression_ratio": 0.08226950354609928,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/35a8328dd7c8.json"
+    },
+    {
+      "summary_id": "f262c194f3ec",
+      "content_id": "3ae506ca01ce",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.0004995361450082067,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/f262c194f3ec.json"
+    },
+    {
+      "summary_id": "9208ee4d3f07",
+      "content_id": "3ae506ca01ce",
+      "summary_type": "key_points",
+      "summary_length": 85,
+      "compression_ratio": 0.006065796046528224,
+      "confidence_score": 0.85,
+      "file_path": "key_points/9208ee4d3f07.json"
+    },
+    {
+      "summary_id": "19a1617513cb",
+      "content_id": "7c589e42742e",
+      "summary_type": "extractive",
+      "summary_length": 580,
+      "compression_ratio": 0.032683421616138846,
+      "confidence_score": 1.0,
+      "file_path": "extractive/19a1617513cb.json"
+    },
+    {
+      "summary_id": "17e29c2872ce",
+      "content_id": "7c589e42742e",
+      "summary_type": "abstractive",
+      "summary_length": 72,
+      "compression_ratio": 0.11145510835913312,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/17e29c2872ce.json"
+    },
+    {
+      "summary_id": "d48b11862f6c",
+      "content_id": "7c589e42742e",
+      "summary_type": "hierarchical",
+      "summary_length": 5494,
+      "compression_ratio": 0.309590893722529,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/d48b11862f6c.json"
+    },
+    {
+      "summary_id": "392319d0d5bb",
+      "content_id": "7c589e42742e",
+      "summary_type": "key_points",
+      "summary_length": 92,
+      "compression_ratio": 0.0051842668770427135,
+      "confidence_score": 0.85,
+      "file_path": "key_points/392319d0d5bb.json"
+    },
+    {
+      "summary_id": "f1ba7c4dae4e",
+      "content_id": "797e8d613a2f",
+      "summary_type": "extractive",
+      "summary_length": 532,
+      "compression_ratio": 0.03533240353324035,
+      "confidence_score": 1.0,
+      "file_path": "extractive/f1ba7c4dae4e.json"
+    },
+    {
+      "summary_id": "b53b7f42bfad",
+      "content_id": "797e8d613a2f",
+      "summary_type": "abstractive",
+      "summary_length": 41,
+      "compression_ratio": 0.06269113149847094,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/b53b7f42bfad.json"
+    },
+    {
+      "summary_id": "9a038ab47d45",
+      "content_id": "797e8d613a2f",
+      "summary_type": "hierarchical",
+      "summary_length": 4972,
+      "compression_ratio": 0.33021186159261473,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/9a038ab47d45.json"
+    },
+    {
+      "summary_id": "3cb8f69c36fc",
+      "content_id": "797e8d613a2f",
+      "summary_type": "key_points",
+      "summary_length": 50,
+      "compression_ratio": 0.0033207146177857477,
+      "confidence_score": 0.85,
+      "file_path": "key_points/3cb8f69c36fc.json"
+    },
+    {
+      "summary_id": "4eedaf87b227",
+      "content_id": "ce77ce58529f",
+      "summary_type": "extractive",
+      "summary_length": 394,
+      "compression_ratio": 0.02448269433915367,
+      "confidence_score": 1.0,
+      "file_path": "extractive/4eedaf87b227.json"
+    },
+    {
+      "summary_id": "041f417fb111",
+      "content_id": "ce77ce58529f",
+      "summary_type": "abstractive",
+      "summary_length": 49,
+      "compression_ratio": 0.07216494845360824,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/041f417fb111.json"
+    },
+    {
+      "summary_id": "3ea110d6f349",
+      "content_id": "ce77ce58529f",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.00043497172683775554,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/3ea110d6f349.json"
+    },
+    {
+      "summary_id": "bfd46d011562",
+      "content_id": "ce77ce58529f",
+      "summary_type": "key_points",
+      "summary_length": 126,
+      "compression_ratio": 0.0078294910830796,
+      "confidence_score": 0.85,
+      "file_path": "key_points/bfd46d011562.json"
+    },
+    {
+      "summary_id": "0e26706bca0e",
+      "content_id": "3c30ea1c92f0",
+      "summary_type": "extractive",
+      "summary_length": 281,
+      "compression_ratio": 0.015005072889411011,
+      "confidence_score": 1.0,
+      "file_path": "extractive/0e26706bca0e.json"
+    },
+    {
+      "summary_id": "36374ffcd765",
+      "content_id": "3c30ea1c92f0",
+      "summary_type": "abstractive",
+      "summary_length": 43,
+      "compression_ratio": 0.07491289198606271,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/36374ffcd765.json"
+    },
+    {
+      "summary_id": "0c5b35788619",
+      "content_id": "3c30ea1c92f0",
+      "summary_type": "hierarchical",
+      "summary_length": 20955,
+      "compression_ratio": 1.1189726063971805,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/0c5b35788619.json"
+    },
+    {
+      "summary_id": "45fce8ddcfff",
+      "content_id": "3c30ea1c92f0",
+      "summary_type": "key_points",
+      "summary_length": 40,
+      "compression_ratio": 0.0021359534362150904,
+      "confidence_score": 0.85,
+      "file_path": "key_points/45fce8ddcfff.json"
+    },
+    {
+      "summary_id": "52426382d6f8",
+      "content_id": "c7028f12cf1e",
+      "summary_type": "extractive",
+      "summary_length": 7935,
+      "compression_ratio": 0.44563630236998764,
+      "confidence_score": -10.683142901518677,
+      "file_path": "extractive/52426382d6f8.json"
+    },
+    {
+      "summary_id": "6189ac4ebb43",
+      "content_id": "c7028f12cf1e",
+      "summary_type": "abstractive",
+      "summary_length": 49,
+      "compression_ratio": 0.0708092485549133,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/6189ac4ebb43.json"
+    },
+    {
+      "summary_id": "0fd309f75fee",
+      "content_id": "c7028f12cf1e",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.0003931259126137257,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/0fd309f75fee.json"
+    },
+    {
+      "summary_id": "8679b78a6682",
+      "content_id": "c7028f12cf1e",
+      "summary_type": "key_points",
+      "summary_length": 71,
+      "compression_ratio": 0.003987419970796361,
+      "confidence_score": 0.85,
+      "file_path": "key_points/8679b78a6682.json"
+    },
+    {
+      "summary_id": "7d300e2d7792",
+      "content_id": "bbecd2297326",
+      "summary_type": "extractive",
+      "summary_length": 415,
+      "compression_ratio": 0.023144275277452456,
+      "confidence_score": 1.0,
+      "file_path": "extractive/7d300e2d7792.json"
+    },
+    {
+      "summary_id": "06684ebd66eb",
+      "content_id": "bbecd2297326",
+      "summary_type": "abstractive",
+      "summary_length": 44,
+      "compression_ratio": 0.07547169811320754,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/06684ebd66eb.json"
+    },
+    {
+      "summary_id": "a50adbca31cf",
+      "content_id": "bbecd2297326",
+      "summary_type": "hierarchical",
+      "summary_length": 16968,
+      "compression_ratio": 0.9462941274887067,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/a50adbca31cf.json"
+    },
+    {
+      "summary_id": "274881a4d838",
+      "content_id": "bbecd2297326",
+      "summary_type": "key_points",
+      "summary_length": 54,
+      "compression_ratio": 0.0030115442529697173,
+      "confidence_score": 0.85,
+      "file_path": "key_points/274881a4d838.json"
+    },
+    {
+      "summary_id": "ae9a6dea63f9",
+      "content_id": "f74604cafd68",
+      "summary_type": "extractive",
+      "summary_length": 894,
+      "compression_ratio": 0.0611742165047215,
+      "confidence_score": 1.0,
+      "file_path": "extractive/ae9a6dea63f9.json"
+    },
+    {
+      "summary_id": "0d991264ef51",
+      "content_id": "f74604cafd68",
+      "summary_type": "abstractive",
+      "summary_length": 42,
+      "compression_ratio": 0.059490084985835696,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/0d991264ef51.json"
+    },
+    {
+      "summary_id": "53b6f3a788a7",
+      "content_id": "f74604cafd68",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.00047899274668126453,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/53b6f3a788a7.json"
+    },
+    {
+      "summary_id": "867c35076186",
+      "content_id": "f74604cafd68",
+      "summary_type": "key_points",
+      "summary_length": 65,
+      "compression_ratio": 0.0044477897906117425,
+      "confidence_score": 0.85,
+      "file_path": "key_points/867c35076186.json"
+    },
+    {
+      "summary_id": "542f77ac696e",
+      "content_id": "05031a09507b",
+      "summary_type": "extractive",
+      "summary_length": 701,
+      "compression_ratio": 0.0033726569416111774,
+      "confidence_score": 1.0,
+      "file_path": "extractive/542f77ac696e.json"
+    },
+    {
+      "summary_id": "d5ee376e45be",
+      "content_id": "05031a09507b",
+      "summary_type": "abstractive",
+      "summary_length": 37,
+      "compression_ratio": 0.05701078582434515,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/d5ee376e45be.json"
+    },
+    {
+      "summary_id": "819bc035e3f7",
+      "content_id": "05031a09507b",
+      "summary_type": "hierarchical",
+      "summary_length": 90642,
+      "compression_ratio": 0.43609753281243985,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/819bc035e3f7.json"
+    },
+    {
+      "summary_id": "87422b83cf56",
+      "content_id": "05031a09507b",
+      "summary_type": "key_points",
+      "summary_length": 111,
+      "compression_ratio": 0.0005340441091566914,
+      "confidence_score": 0.85,
+      "file_path": "key_points/87422b83cf56.json"
+    },
+    {
+      "summary_id": "dfd18db63b89",
+      "content_id": "8248991c3929",
+      "summary_type": "extractive",
+      "summary_length": 526,
+      "compression_ratio": 0.031709669640704125,
+      "confidence_score": 1.0,
+      "file_path": "extractive/dfd18db63b89.json"
+    },
+    {
+      "summary_id": "73fad04e06f7",
+      "content_id": "8248991c3929",
+      "summary_type": "abstractive",
+      "summary_length": 37,
+      "compression_ratio": 0.05701078582434515,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/73fad04e06f7.json"
+    },
+    {
+      "summary_id": "5ba86d595ec0",
+      "content_id": "8248991c3929",
+      "summary_type": "hierarchical",
+      "summary_length": 5344,
+      "compression_ratio": 0.322160598022667,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/5ba86d595ec0.json"
+    },
+    {
+      "summary_id": "61ab3549e96f",
+      "content_id": "8248991c3929",
+      "summary_type": "key_points",
+      "summary_length": 111,
+      "compression_ratio": 0.006691584277791174,
+      "confidence_score": 0.85,
+      "file_path": "key_points/61ab3549e96f.json"
+    },
+    {
+      "summary_id": "905185b2c77a",
+      "content_id": "afa6bd273034",
+      "summary_type": "extractive",
+      "summary_length": 12072,
+      "compression_ratio": 0.8614857632198673,
+      "confidence_score": -9.601106835071848,
+      "file_path": "extractive/905185b2c77a.json"
+    },
+    {
+      "summary_id": "888a3fc18d2b",
+      "content_id": "afa6bd273034",
+      "summary_type": "abstractive",
+      "summary_length": 58,
+      "compression_ratio": 0.08226950354609928,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/888a3fc18d2b.json"
+    },
+    {
+      "summary_id": "53755ac6ec13",
+      "content_id": "afa6bd273034",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.0004995361450082067,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/53755ac6ec13.json"
+    },
+    {
+      "summary_id": "196328d76c3f",
+      "content_id": "afa6bd273034",
+      "summary_type": "key_points",
+      "summary_length": 85,
+      "compression_ratio": 0.006065796046528224,
+      "confidence_score": 0.85,
+      "file_path": "key_points/196328d76c3f.json"
+    },
+    {
+      "summary_id": "403f3db6fd33",
+      "content_id": "d25ef65c6448",
+      "summary_type": "extractive",
+      "summary_length": 4419,
+      "compression_ratio": 0.26570861643917987,
+      "confidence_score": -3.8088291768618445,
+      "file_path": "extractive/403f3db6fd33.json"
+    },
+    {
+      "summary_id": "41fe7fe9834a",
+      "content_id": "d25ef65c6448",
+      "summary_type": "abstractive",
+      "summary_length": 57,
+      "compression_ratio": 0.07916666666666666,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/41fe7fe9834a.json"
+    },
+    {
+      "summary_id": "923a4be9bd61",
+      "content_id": "d25ef65c6448",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.0004209007275569719,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/923a4be9bd61.json"
+    },
+    {
+      "summary_id": "60636f6c2352",
+      "content_id": "d25ef65c6448",
+      "summary_type": "key_points",
+      "summary_length": 80,
+      "compression_ratio": 0.004810294029222536,
+      "confidence_score": 0.85,
+      "file_path": "key_points/60636f6c2352.json"
+    },
+    {
+      "summary_id": "625d44b65988",
+      "content_id": "c326b609b172",
+      "summary_type": "extractive",
+      "summary_length": 333,
+      "compression_ratio": 0.025908348245545786,
+      "confidence_score": 1.0,
+      "file_path": "extractive/625d44b65988.json"
+    },
+    {
+      "summary_id": "3cbe9d1e47eb",
+      "content_id": "c326b609b172",
+      "summary_type": "abstractive",
+      "summary_length": 34,
+      "compression_ratio": 0.04985337243401759,
+      "confidence_score": 0.8,
+      "file_path": "abstractive/3cbe9d1e47eb.json"
+    },
+    {
+      "summary_id": "998fb3224e18",
+      "content_id": "c326b609b172",
+      "summary_type": "hierarchical",
+      "summary_length": 7,
+      "compression_ratio": 0.000544619933089551,
+      "confidence_score": 0.9,
+      "file_path": "hierarchical/998fb3224e18.json"
+    },
+    {
+      "summary_id": "02b6fda95cfd",
+      "content_id": "c326b609b172",
+      "summary_type": "key_points",
+      "summary_length": 72,
+      "compression_ratio": 0.005601805026063954,
+      "confidence_score": 0.85,
+      "file_path": "key_points/02b6fda95cfd.json"
+    },
+    {
+      "summary_id": "45cbed4e5ace",
+      "content_id": "developer_course_collection",
+      "summary_type": "collection_overview",
+      "summary_length": 25,
+      "compression_ratio": 4.0779907576417465e-05,
+      "confidence_score": 0.95,
+      "file_path": "collection_overview/45cbed4e5ace.json"
+    },
+    {
+      "summary_id": "54707449d60f",
+      "content_id": "developer_course_clusters",
+      "summary_type": "topic_clusters",
+      "summary_length": 32,
+      "compression_ratio": 5.219828169781436e-05,
+      "confidence_score": 0.8,
+      "file_path": "topic_clusters/54707449d60f.json"
+    }
+  ]
+}
