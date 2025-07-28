@@ -1,0 +1,7 @@
+scrapy==2.13.3
+beautifulsoup4==4.13.4
+requests==2.32.4
+yt-dlp==2025.7.21
+whisper==1.1.10
+html2text==2025.4.15
+python-dotenv==1.0.1

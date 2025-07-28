@@ -1,0 +1,2983 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+          <!-- Google Tag Manager -->
+      <script nonce="73477ad895f03ed047be1e06143ca6fd">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+          n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5C6KM9TP');</script>
+      <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+<meta name="description" content="A section is a UI element that represents a specific business entity and contains a set of records. For example, Accounts, Contacts, Activities, etc. Sections are available from the side panel. You can group sections into workplaces to improve usability for particular roles. Learn more about sections in the user documentation guide: Section." />
+<link rel="canonical" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/section/overview" />
+<meta property="og:url" content="https://academy.creatio.com/docs/7-18/developer/interface_elements/section/overview" />
+<meta property="og:title" content="Section" />
+<meta property="og:description" content="A section is a UI element that represents a specific business entity and contains a set of records. For example, Accounts, Contacts, Activities, etc. Sections are available from the side panel. You can group sections into workplaces to improve usability for particular roles. Learn more about sections in the user documentation guide: Section." />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/docs/sites/academy_en/themes/creatio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/section/overview" />
+
+    <title>Section | Creatio Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="https://libraries.creatio.com/drupal_fixed_tabs/tabs.css" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/align.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/fieldgroup.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/container-inline.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/clearfix.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/details.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/hidden.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/item-list.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/js.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/nowrap.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/position-container.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/reset-appearance.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/resize.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-counter.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-counters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-general-info.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/tablesort.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/modules/academy/ts_title_anchor/css/ts-title-anchor.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/core/modules/layout_discovery/layouts/onecol/onecol.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/assets/vendor/normalize-css/normalize.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/normalize-fixes.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/bootstrap4/css/bootstrap.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme-dark.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/slick/slick.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.nice-select/jquery.nice-select.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/base.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/elements.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/fonts.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.scrollbar/jquery.scrollbar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/select2/css/select2.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/layouts/layout.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/action-links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/breadcrumb.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/button.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/collapse-processed.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/container-inline.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/details.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/exposed-filters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/field.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/icons.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/inline-form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/item-list.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/menu.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/more-link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/pager.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabledrag.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tableselect.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tablesort.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabs.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/textarea.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/ui-dialog.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/node.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/fancybox/jquery.fancybox.min.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/fancybox.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/block.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/footer.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/header.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/sidebar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/notification.css?szsnyq" />
+<link rel="stylesheet" media="print" href="/docs/themes/custom/creatio_academy/css/theme/print.css?szsnyq" />
+
+    
+  </head>
+  <body class="path-node page-node-type-developer-documentation">
+          <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="creatio-page d-flex flex-column">
+        <div class="region region-informer">
+    <div id="block-notification-union" class="block block-simple-block block-simple-blocknotification-union">
+  
+    
+      <div id="union-notification">
+<div class="union-content notification-com">
+<p class="union-subtitle">This documentation is valid for Creatio version 7.17(7.18).</p>
+
+<p class="union-subtitle">We recommend using <a href="https://academy.creatio.com/docs/8.x/" target="_blank">the newest version of Creatio documentation</a>.</p>
+
+<!-- <div class="union-close">&nbsp;</div> -->
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+  <header role="banner">
+          <div class="creatio-region creatio-region_top">
+        <div class="creatio-container">
+            <div class="region region-top">
+    <div id="block-menutoggle" class="block block-simple-block block-simple-blockmenu-toggle">
+  
+    
+      <div class="menu-toggle"><span>&nbsp;</span></div>
+
+  </div>
+<div id="block-logowhite-2" class="block block-simple-block block-simple-blocklogo-white">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo-white.svg"></a></p>
+
+  </div>
+<div id="block-search" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-sites-menu" id="block-sites" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-usermenu" class="block block-ts-user block-ts-user-menu-block">
+  
+    
+      <ul class="user-menu">
+      <li class="user-menu__item">
+      <a class="user-menu__link" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/section/overview">Log in</a>
+    </li>
+  </ul>
+
+  </div>
+<div id="block-usermenumobile" class="block block-ts-user block-ts-user-menu-mobile-block">
+  
+    
+      <ul class="user-menu-mobile">
+      <li class="user-menu-mobile__item">
+      <div class="user-menu-mobile__user user-menu-mobile__user_icon"></div>
+      <ul class="user-menu-mobile__submenu">
+        <li class="user-menu-mobile__subitem">
+          <a class="user-menu-mobile__sublink" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/section/overview">Log in</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+              <div class="creatio-region creatio-region_header">
+        <div class="creatio-container">
+            <div class="region region-header">
+    <div id="block-logo" class="block block-simple-block block-simple-blocklogo">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo.svg"></a></p>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/docs/8.x">Guides</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/e-learning">E-learning</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/training">Training</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/certification">Certification</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-sites-2-menu" id="block-sites-2" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-2-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-search-2" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+      </header>
+
+      <div class="creatio-region creatio-region_breadcrumb">
+      <div class="creatio-container">
+          <div class="region region-breadcrumb">
+    <div id="block-breadcrumbnaviagtion" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  
+  <div class="creatio-region creatio-region_main">
+    <div class="creatio-container">
+                <div class="region region-breadcrumb-mobile">
+    <div id="block-breadcrumbnaviagtion-2" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      
+      <main class="creatio-main" role="main">
+                                                    
+        <div class="creatio-content creatio-content_small">
+          <div class="creatio-content__inner creatio-content__inner_bg">
+                            <div class="region region-messages">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            
+              <div class="region region-content">
+    <div id="block-creatio-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Section</span>
+</h1>
+
+
+  </div>
+<div id="block-creatio-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article data-history-node-id="1422" class="node node--type-developer-documentation node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-ts-nav block-ts-nav-sdk-navigation">
+  
+    
+      <div class="ts-nav-sdk">
+  <div class="ts-nav-sdk__container">
+    <div class="ts-nav-sdk__items">
+      <div class="ts-nav-sdk__item">
+        <a class="ts-nav-sdk__link ts-nav-sdk__link_active" href="#"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_guide"></span>Guide</a>
+      </div>
+    </div>
+  </div>
+      <div class="ts-nav-sdk__container">
+      <ul class="ts-nav-sdk__items">
+                                                            <li class="ts-nav-sdk__item ts-nav-sdk__item_expanded">
+          <a class="ts-nav-sdk__link ts-nav-sdk__link_expanded" data-id="1895" href="#case-1895"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_case"></span>Examples</a>
+                      <ul class="ts-nav-sdk__subitems">
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1895" href="#case-1895">Add an action for a single record to the section</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1896" href="#case-1896">Add an action for multiple records to the section</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="2305" href="#case-2305">Set up action handling for multiple section records</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1897" href="#case-1897">Set up action handling using a lookup for multiple section records</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1900" href="#case-1900">Set up the display conditions of the section list</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1891" href="#case-1891">Set up the quick filters section block</a>
+                </li>
+                          </ul>
+                  </li>
+      </ul>
+    </div>
+        <div class="ts-nav-sdk__container">
+      <ul class="ts-nav-sdk__items">
+                                <li class="ts-nav-sdk__item">
+          <a class="ts-nav-sdk__link" data-id="2307" href="#reference-2307"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_reference" data-type="JS"></span>References</a>
+                  </li>
+      </ul>
+    </div>
+  </div>
+<div class="ts-nav-sdk-mobile">
+  <select class="ts-nav-sdk-mobile__select">
+    <option value="0">Guide</option>
+          <optgroup label="Cases">
+                  <option value="1895">Add an action for a single record to the section</option>
+                  <option value="1896">Add an action for multiple records to the section</option>
+                  <option value="2305">Set up action handling for multiple section records</option>
+                  <option value="1897">Set up action handling using a lookup for multiple section records</option>
+                  <option value="1900">Set up the display conditions of the section list</option>
+                  <option value="1891">Set up the quick filters section block</option>
+              </optgroup>
+              <optgroup label="References">
+                  <option value="2307">BaseSectionV2 schema</option>
+              </optgroup>
+      </select>
+</div>
+
+  </div>
+<div class="block block-ts-doc block-ts-doc-versions">
+  
+    
+        <div class="ts-doc-versions">
+    <select class="ts-doc-versions__select">
+                                                <option value="/docs/7-18/developer/interface_elements/section/overview" selected>Version 7.18</option>
+                              <option value="/docs/7-17/developer/interface_elements/section/overview">Version 7.17</option>
+                              <option value="/docs/7-16/developer/interface_elements/section/overview">Version 7.16</option>
+          </select>
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-121" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/beginner.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Beginner</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationbody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>A <strong>section</strong> is a UI element that represents a specific business entity and contains a set of records. For example, <span class="key">Accounts</span>, <span class="key">Contacts</span>, <span class="key">Activities</span>, etc. Sections are available from the side panel. You can group sections into workplaces to improve usability for particular roles. Learn more about sections in the user documentation guide: <a href="https://academy.creatio.com/docs/user/no-code_customization/ui_and_business_logic_customization/section_setup">Section</a>.</p>
+
+<h2>Section containers<a class="title-anchor" href="#title-2330-1" id="title-2330-1">&nbsp;</a></h2>
+
+<p>Creatio stores section UI elements in the corresponding containers. Containers are configured in the base schema of the section or replacing view model schema of the section. Containers depend on the section view.</p>
+
+<p>Sections have the following <strong>views</strong>:</p>
+
+<ul>
+	<li>Section list</li>
+	<li>Section analytics</li>
+</ul>
+
+<div class="message">
+<p><span class="message__bold">Note.</span> Creatio uses HTML container meta names. It generates actual IDs that match the HTML elements of the section based on the meta names.</p>
+</div>
+
+<p>View the main section <strong>list containers</strong> in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_section_01.png"></div>
+</div>
+
+<p>View the main section <strong>analytics containers</strong> in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_section_02.png"></div>
+</div>
+
+<ul>
+	<li>The action button container (<span class="filled">ActionButtonsContainer</span>) contains the section action button and the drop-down action list button.</li>
+	<li>The filter container (<span class="filled">QuickFilterViewContainer</span>) contains filters and tags.</li>
+	<li>The container of the section list view (<span class="filled">GridDataViewContainer</span>) contains section records. Record edit, copy, and delete action buttons reside in the active list record. Displayed in the section list.</li>
+	<li>The section analytics view container (<span class="filled">AnalyticsDataViewContainer</span>) contains the section dashboards. Displayed in the section analytics.</li>
+</ul>
+
+<h2>Section structure<a class="title-anchor" href="#title-2330-2" id="title-2330-2">&nbsp;</a></h2>
+
+<p>Sections have the following <strong>components</strong>:</p>
+
+<ul>
+	<li><strong>List</strong>. A component that displays the section record index in tile or list view. Displayed in the <span class="filled">GridDataViewContainer</span> container.</li>
+	<li><strong>Analytics</strong>. A component that visualizes statistical data using charts, singular metrics, or lists. Dashboard blocks and custom dashboards are displayed in the <span class="filled">AnalyticsDataViewContainer</span> container.</li>
+	<li><strong>Actions</strong>. A functional element that represents a set of operations with the active section list record. Call actions using buttons located in the <span class="filled">ActionButtonsContainer</span> container and active section list record.</li>
+	<li><strong>Filter</strong>. A tool for condition-based data search and segmentation. Displayed in the <span class="filled">QuickFilterViewContainer</span> container.</li>
+	<li><strong>Tag</strong>. A label for manual record segmentation. Displayed in the <span class="filled">QuickFilterViewContainer</span>, similar to the filter.</li>
+</ul>
+
+<h3>List<a class="title-anchor" href="#title-2330-3" id="title-2330-3">&nbsp;</a></h3>
+
+<p>A <strong>list</strong> is a UI element that displays the index of records added to the section or detail. For example, a contact index in the <span class="key">Contacts</span> section.</p>
+
+<p>Section lists come in the following <strong>types</strong>:</p>
+
+<ul>
+	<li><strong>Vertical list</strong>. Enables users to switch between records without closing the page.</li>
+	<li><strong>Editable list</strong>. Enables users to edit records directly in the list without opening the pages.</li>
+</ul>
+
+<p>A section list has the following <strong>views</strong>:</p>
+
+<ul>
+	<li><strong>Tile view</strong>. Displays list record fields over multiple rows. Default view.</li>
+	<li><strong>List view</strong>. Displays records as a simple table. Each record corresponds to a single row. The display order of fields can differ between the list and tile views.</li>
+</ul>
+
+<p>View the tile view of the <span class="key">Contacts</span> section list in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_sectiongrid_01_en.png"></div>
+</div>
+
+<p>View the list view of the <span class="key">Contacts</span> section list in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_sectiongrid_02_en.png"></div>
+</div>
+
+<p>Each section corresponds to a configuration schema. The schema describes the structure of the corresponding database table with record data and contains specific instructions on processing the data. For example, the <span class="filled">ContactSectionV2</span> schema configures the <span class="key">Contacts</span> section. All section schemas inherit from the <span class="filled">BaseSectionV2</span> base section schema. Each table row loosely corresponds to a section list record. For example, the <span class="key">Contacts</span> section corresponds to the <span class="filled">Contact</span> business object schema that contains the index and properties of the <span class="filled">[Contact]</span> table rows. By default, the section list does not display every column of the corresponding database table. This is done to keep the displayed data easily digestible. You can view every column on the section <a href="https://academy.creatio.com/documents?id=15521">record page</a>.</p>
+
+<p>Edit the appearance of the list, the index of displayed fields, and the sorting of data in the drop-down menu of the section toolbar’s <span class="key">View</span> button. Learn more in the user documentation: <a href="https://academy.creatio.com/documents?id=1016">Work with record lists</a>.</p>
+
+<h3>Analytics<a class="title-anchor" href="#title-2330-4" id="title-2330-4">&nbsp;</a></h3>
+
+<p>The <strong>purpose</strong> of section analytics is to analyze the statistical data of the section. By default, Creatio displays the list section view. To <strong>switch to the analytics section view</strong>, click the <span class="key">Dashboards</span> button next to the section name. To <strong>open the analytics view of all sections</strong>, open the <span class="key">Dashboards</span> section.</p>
+
+<p>View an example of <span class="key">Activities</span> section analytics in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_section_analitycs.png"></div>
+</div>
+
+<p><strong>Dashboards</strong> display analytical data. Learn more about dashboards in a separate article and the user documentation guide: <a href="https://academy.creatio.com/documents?id=15602">Dashboard widgets</a>, <a href="https://academy.creatio.com/docs/user/no_code_customization/analytics">Analytics</a>. Dashboards are located on <strong>dashboard tabs</strong>. Learn more about dashboard tabs in the user documentation: <a href="https://academy.creatio.com/documents?id=1405">Add analytics in section</a>.</p>
+
+<h3>Actions<a class="title-anchor" href="#title-2330-5" id="title-2330-5">&nbsp;</a></h3>
+
+<p><strong>Section actions</strong> are functional elements that represent an index of operations with one or more list records. You can run actions using buttons of different types. The buttons are located both in the action container of the current section and the container of the active record.</p>
+
+<p>View the <span class="key">Contacts</span> section actions in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_basic_elements.png"></div>
+</div>
+
+<p>Section actions have the following <strong>types</strong>:</p>
+
+<ul>
+	<li>standard</li>
+	<li>additional</li>
+</ul>
+
+<p>The <strong>standard</strong> <span class="key">Contacts</span> section actions are as follows:</p>
+
+<ul>
+	<li><span class="key">New contact</span>. Opens a pop-up box that lets you add and save a new section record.</li>
+	<li><span class="key">Open</span>. Opens the page of the active section record.</li>
+	<li><span class="key">Copy</span>. Opens a section record page, copies the active record data into the page, and creates a new record when you click <span class="key">Save</span>.</li>
+	<li><span class="key">Delete</span>. Deletes the active record.</li>
+	<li><span class="key">Select multiple records</span>. Selects multiple list records.</li>
+	<li><span class="key">Select all</span>. Selects all list records.</li>
+	<li><span class="key">Export to Excel</span>. Exports all list records of the current section to an *.xlsx file. Learn more about data export in the user documentation: <a href="https://academy.creatio.com/documents?id=1864">Excel data export</a>.</li>
+	<li><span class="key">Data import</span>. Imports data from an *xlsx file into Creatio. Learn more about data import in the user documentation: <a href="https://academy.creatio.com/documents?id=1252">Excel data import</a>.</li>
+	<li><span class="key">Change log setup</span>. Opens the logging management page that also lets you select the section columns to log when a record is edited.</li>
+</ul>
+
+<p><strong>Additional</strong> actions implement the functionality that depends on the section business logic. Additional <span class="key">Contacts</span> section actions are as follows:</p>
+
+<ul>
+	<li><span class="key">Synchronize now</span>. Synchronizes Creatio with Google contacts. Creatio synchronizes only records tagged as per the synchronization settings. Learn more about contact synchronization in the user documentation: <a href="https://academy.creatio.com/documents?id=1424">Synchronize contacts and activities with Google</a>.</li>
+	<li><span class="key">Add new account for synchronization</span>. Synchronizes Creatio Cloud with Google. Learn more about synchronization in the user documentation: <a href="https://academy.creatio.com/documents?id=1424">Synchronize contacts and activities with Google</a>.</li>
+	<li><span class="key">Add to folder</span>. Opens a pop-up box that lets you select a folder where to place the active record.</li>
+	<li><span class="key">Exclude from folder</span>. Excludes the active record from all of its current folders.</li>
+	<li><span class="key">Show duplicate 'Contacts'</span>. Opens an additional page that contains all likely duplicates of the contacts. Creatio adds records to this page automatically after performing the duplicate search.</li>
+	<li><span class="key">Show on map</span>. Lets you display the location of selected contacts on the map. The action opens a box with a map that marks the contacts selected in the list. If the address fields of the selected contacts are empty, Creatio does not perform the action. If the address fields of some contacts are empty or filled out incorrectly, the box displays the corresponding information.</li>
+	<li><span class="key">Update the values in the 'Age' column</span>. Updates the <span class="key">Age</span> column on the active contact page.</li>
+	<li><span class="key">Schedule daily update of the 'Age' column</span>. Opens a pop-up box that lets you set up the time of the daily contact age update.</li>
+	<li><span class="key">Mark all email addresses as valid</span>. Selects the <span class="key">Valid</span> checkbox for the email address of the active contact record.</li>
+</ul>
+
+<h3>Filters<a class="title-anchor" href="#title-2330-6" id="title-2330-6">&nbsp;</a></h3>
+
+<p>A <strong>filter</strong> is a tool for condition-based data search and segmentation. You can use filters as an individual tool in Creatio sections. Filters are also available as part of other tools, for example, when you set up dynamic folders, dashboards, or business processes. Creatio displays filter controls above the section list. Learn more about filters in the user documentation: <a href="https://academy.creatio.com/documents?id=1017">Filters</a>.</p>
+
+<p>Filters have the following <strong>types</strong>:</p>
+
+<ul>
+	<li>quick filter</li>
+	<li>advanced filter</li>
+	<li>standard filter</li>
+</ul>
+
+<p>Configure the quick filter on the toolbar. Configure the standard and advanced filters in the <span class="key">Filters/folders</span> menu.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_section_filters01_en.png"></div>
+</div>
+
+<p><strong>Quick filter</strong> is available in certain Creatio sections. Use quick filters to filter data by the most frequently used parameters (typically, by the date and owner). For example, the <span class="key">Activities</span> section includes a quick filter since you most often need to view the activity of a single employee during the specified period. Learn more about the quick filter in the user documentation: <a href="https://academy.creatio.com/documents?id=1232&amp;anchor=title-1755-1">Filters</a>.</p>
+
+<p>To <strong>set the quick filter</strong>, select the period to filter the section list records in the <span class="key">Select period</span> drop-down menu.</p>
+
+<p>View an example of a quick filter that filters activities by current month (the <span class="key">Select period</span> drop-down menu is set to <span class="key">Current month</span>) in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_quick_filters.png"></div>
+</div>
+
+<p><strong>Standard filter</strong> lets you search for records by the values of one or more current section columns quickly. Available in most section lists. Learn more about the standard filter in the user documentation: <a href="https://academy.creatio.com/documents?id=1233&amp;anchor=title-1755-4">Filters</a>.</p>
+
+<p>To <strong>set the standard filter</strong>:</p>
+
+<ul>
+	<li>Select <span class="key">Add filter</span> in the <span class="key">Filters/folders</span> drop-down menu.</li>
+	<li>Select the field and field value to filter the section list records.</li>
+</ul>
+
+<p>View an example of a standard filter that filters activities by account (the <span class="key">Account</span> field is set to <span class="key">Estron</span>) in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_section_filters02.png"></div>
+</div>
+
+<p><strong>Advanced filter</strong> consists of several parameters and complex search conditions. For example, you can use the advanced filter to display meetings with new customers in the <span class="key">Activities</span> section. You can also save the parameters and conditions of an advanced filter as a dynamic folder to reuse them later. Learn more about the advanced filter in the user documentation: <a href="https://academy.creatio.com/documents?id=1234&amp;anchor=title-1755-10">Filters</a>.</p>
+
+<p>To <strong>set the advanced filter</strong>:</p>
+
+<ul>
+	<li>Select <span class="key">Switch to advanced mode</span> in the <span class="key">Filters/folders</span> drop-down menu.</li>
+	<li>Select the object, object column, and column value to filter the section list records.</li>
+</ul>
+
+<p>View an example of an advanced filter that filters activities by account (the <span class="key">Name</span> field of the <span class="key">Account</span> object is set to <span class="key">Novelty</span>) and job title (the <span class="key">Job title</span> field of the <span class="key">Contact</span> object is set to <span class="key">Specialist</span>) in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_section_filters03.png"></div>
+</div>
+
+<p>A <strong>folder</strong> is a filtering tool that groups records by specific conditions. Folders can have hierarchical structure. Learn more about folders in the user documentation: <a href="https://academy.creatio.com/documents?id=1018">Folders</a>.</p>
+
+<p>Folders have the following <strong>types</strong>:</p>
+
+<ul>
+	<li><strong>Dynamic folders</strong>. Contain only the section records that match the specified filter conditions. For example, you can filter records by creation date to create a <span class="key">New customers</span> dynamic folder. Creatio generates and updates the content of such folders automatically.</li>
+	<li><strong>Static folders</strong>. Contain only the section records added by users, manually or as part of the conversion from a dynamic folder. For example, you can create a <span class="key">VIP customers</span> static folder to ensure sales associates or their managers make personal decisions to add customers to the folder.</li>
+</ul>
+
+<p>You can only add records to or remove them from static folders. Creatio adds a record to a folder automatically if the record meets the filter conditions of the folder. If a record no longer meets the filter conditions of the folder, Creatio removes the record from the folder automatically.</p>
+
+<p>To <strong>set up a folder</strong>:</p>
+
+<ul>
+	<li>Select <span class="key">Show folders</span> in the <span class="key">Filters/folders</span> drop-down menu.</li>
+	<li>Select the folder to filter the section list records.</li>
+</ul>
+
+<p>View an example folder that includes contacts not connected to accounts (the <span class="key">Contacts not connected to accounts</span> folder) in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_section_filters04.png"></div>
+</div>
+
+<h3>Tags<a class="title-anchor" href="#title-2330-7" id="title-2330-7">&nbsp;</a></h3>
+
+<p>A <strong>tag</strong> is a special label you can use to segment records manually. For example, you can tag records in the <span class="key">Contacts</span> section to mark VIP customers or ban customers. Tag records manually. To <strong>select a tag</strong>, click <span class="key">Tag</span> and select a tag to filter the section list records. Learn more about tags in the user documentation: <a href="https://academy.creatio.com/documents?id=1881">Tags</a>.</p>
+
+<p>Creatio provides the following tag <strong>types</strong>:</p>
+
+<ul>
+	<li><strong>Private</strong> tags. Only visible and accessible to the user who created them. Any user can create any number of private tags. Private tags are not visible to managers and system administrators. Creatio marks private tags green.</li>
+	<li><strong>Corporate</strong> tags. Visible to the company employees. Any employee can add or remove a corporate tag. Any employee/role that has permissions for the <span class="key">Corporate tags management</span> (<span class="filled">CanManageCorporateTags</span> code) operation can create corporate tags. Creatio marks corporate tags blue.</li>
+	<li><strong>Public</strong> tags. Visible to the company employees, as well as self-service portal users. Any employee can add or remove a public tag. Any employee/role that has permissions for the <span class="key">Public tags management</span> (<span class="filled">CanManagePublicTags</span> code) operation can create public tags. Creatio marks public tags red.</li>
+</ul>
+
+<p>View an example of contacts that are VIP customers (<span class="key">VIP customer</span> tag selected) in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Section/7.18/scr_intro_ui_section_tag.png"></div>
+</div>
+
+<h2>Create a section<a class="title-anchor" href="#title-2330-8" id="title-2330-8">&nbsp;</a></h2>
+
+<p>You can create a section in the Section Wizard. To create a section, follow the instructions in the user documentation: <a href="https://academy.creatio.com/documents?id=1245">Create a new section</a>.</p>
+
+<p>View object schemas and client schemas that the Section Wizard creates in the custom package when you add a section in the table below.</p>
+
+<div class="table">
+<div class="table__caption">Schemas that the Section Wizard creates</div>
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Purpose</th>
+			<th>Parent object</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th colspan="3">
+			<center>Object schemas</center>
+			</th>
+		</tr>
+		<tr>
+			<td><span class="filled">[Section object name]</span></td>
+			<td>The primary section object</td>
+			<td><span class="filled">BaseEntity</span> base object.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[Section object name]Folder</span></td>
+			<td>
+			<p>The object folder.</p>
+
+			<p>A utility object that ensures the correct grouping of section records. Structures the section folder tree.</p>
+			</td>
+			<td><span class="filled">BaseFolder</span> base folder.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[Section object name]InFolder</span></td>
+			<td>
+			<p>The object in the folder.</p>
+
+			<p>A utility object that ensures grouping section records operates as intended. Defines links between section records and their folders.</p>
+			</td>
+			<td><span class="filled">BaseItemInFolder</span> base element in the folder.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[Section object name]File</span></td>
+			<td>The object for the <span class="key">Attachments</span> detail.</td>
+			<td><span class="filled">File</span> file.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[Section object name]Tag</span></td>
+			<td>The section tag.</td>
+			<td><span class="filled">BaseTag</span> base tag.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[Section object name]InTag</span></td>
+			<td>The tag in the section object.</td>
+			<td><span class="filled">BaseEntityInTag</span> base tag in the base object.</td>
+		</tr>
+		<tr>
+			<th colspan="3">
+			<center>Client schemas</center>
+			</th>
+		</tr>
+		<tr>
+			<td><span class="filled">[Section object name]Section</span></td>
+			<td>The section schema.</td>
+			<td>
+			<p><span class="filled">BaseSectionV2</span> base section schema.</p>
+			</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[Section object name]Page</span></td>
+			<td>The schema of the section record page.</td>
+			<td><span class="filled">BaseModulePageV2</span> base schema of the section record page.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h2>Add a custom column to the section list<a class="title-anchor" href="#title-2330-9" id="title-2330-9">&nbsp;</a></h2>
+
+<p>To add a custom column to the section list, add a column to the schema of the section business object. When you add a custom column, Creatio adds a replacing view model schema to the current package. The schema inherits the base object columns. The custom column is added to the schema.</p>
+
+<p>You can use the following <strong>tools</strong> to add a custom column to the schema of the section business object:</p>
+
+<ul>
+	<li>Section Wizard</li>
+	<li>Creatio IDE</li>
+</ul>
+
+<p>To add a custom column to the section list in the <strong>Section Wizard</strong>, follow the instructions in the user documentation: <a href="https://academy.creatio.com/documents?id=1016&amp;anchor=title-756-9">Work with record lists</a>.</p>
+
+<p>To add a custom column to the section page in <strong>Creatio IDE</strong>:</p>
+
+<ol>
+	<li>Create a replacing view model schema of the section page to place the custom column. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15102&amp;anchor=title-3028-4">Client module</a>.</li>
+	<li>Select the view model schema to replace as the parent object.</li>
+	<li>Add a custom column of the corresponding type to the replacing view model schema of the section page.</li>
+	<li>Set up the appearance of the custom column in the section list.</li>
+</ol>
+
+<h2>Set up the appearance conditions of the section list<a class="title-anchor" href="#title-2330-10" id="title-2330-10">&nbsp;</a></h2>
+
+<p>Creatio lets you set up the appearance conditions of the section list. Record lists that match the specified conditions are displayed in line with the configured visual styles.</p>
+
+<p>To <strong>set up the appearance conditions of the section list</strong>:</p>
+
+<ol>
+	<li>Create a replacing view model schema of the section page. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15102&amp;anchor=title-3028-4">Client module</a>.</li>
+	<li>Select the view model schema to replace as the parent object.</li>
+	<li>
+	<p>Set up the <strong>appearance conditions of the section list</strong>. To do this, implement the <span class="filled">prepareResponseCollectionItem()</span> method in the <span class="filled">methods</span> property. The method overloads the base method and modifies the data row before uploading the row to the list. Implement the assignment of a specific value to the <span class="filled">customStyle</span> property in the method. The property controls the list row appearance. The property is an object that has child properties that are similar to CSS properties and generate the visual style of the relevant list records.</p>
+
+	<p>View an example of the <span class="filled">customStyle</span> property setup below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title">Example of the <span class="filled">customStyle</span> property setup</div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+item.customStyle = {
+	/* Set the text color to white. */
+	"color": "white",
+	/* Set the background color to orange. */
+	"background": "orange"
+};
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+</ol>
+
+<h2>Add a section record action<a class="title-anchor" href="#title-2330-11" id="title-2330-11">&nbsp;</a></h2>
+
+<p>Creatio lets you add custom actions for either a single record or multiple records. The <span class="filled">BaseSectionV2</span> schema of the <span class="filled">NUI</span> package implements the base content of the <span class="key">Actions</span> drop-down menu on the section page.</p>
+
+<p>To <strong>add an action for a single section record</strong>:</p>
+
+<ol>
+	<li>Create a replacing view model schema of the section page. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15102&amp;anchor=title-3028-4">Client module</a>.</li>
+	<li>Select the view model schema to replace as the parent object.</li>
+	<li>
+	<p>The section action index is an instance of the <span class="filled">Terrasoft.BaseViewModelCollection</span> class. Each item of the action index is a view model. Set up the action in the configuration object that lets you both set the properties of the action view model explicitly and use the base binding mechanism.</p>
+
+	<p>Implement the <strong>menu item behavior</strong>. To do this, implement the <span class="filled">getSectionActions()</span> overloaded parent schema method in the <span class="filled">methods</span> property. The method returns the collection of section actions. When you replace base sections in the <span class="filled">getSectionActions()</span> method of the replacing module, call the parent implementation of the method to initialize the actions of the parent section. To do this, execute the <span class="filled">this.callParent(arguments)</span> method that returns the action collection of the base section.</p>
+
+	<p>To add an action to the collection, call the <span class="filled">addItem()</span> method. The <span class="filled">getButtonMenuItem()</span> callback method is passed to the method as a parameter. The method creates an instance of the action view model by the configuration object passed to the method as the parameter.</p>
+
+	<p>Reference the selected record via the <span class="filled">ActiveRow</span> attribute of the section view model. The attribute returns the primary column value of the selected record. In turn, you can use the primary column value of the selected record to get the values uploaded to the field list of the selected object.</p>
+
+	<p>The <span class="filled">SelectedRows</span> property of the section view model stores the primary column values of the selected records. You can use these values to get the values uploaded to the field list of selected objects. For example, from a regular list’s data collection stored in the <span class="filled">GridData</span> view model property of the list.</p>
+
+	<p>View the base implementation of action addition below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">BaseSectionV2</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+/**
+* Returns the collection of section actions in the list view mode.
+* @protected
+* @virtual
+* @return {Terrasoft.BaseViewModelCollection} The section action collection.
+*/
+getSectionActions: function() {
+	/* The action collection. An instance of Terrasoft.BaseViewModelCollection. */
+	var actionMenuItems = this.Ext.create("Terrasoft.BaseViewModelCollection"); 
+	/* Add an action to the collection. Pass the method that instantiates the action model instance to the passed configuration object as callback. */
+	actionMenuItems.addItem(
+		this.getButtonMenuItem({
+		/* The configuration object that sets up the action. */
+		...
+		})
+	);
+	return actionMenuItems;
+}
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+</ol>
+
+<p>View the properties of the section action’s configuration object that is passed as a parameter to the <span class="filled">getButtonMenuItem()</span> method in the table below.</p>
+
+<div class="table">
+<div class="table__caption">Configuration object properties</div>
+
+<table>
+	<thead>
+		<tr>
+			<th>
+			<center>Property</center>
+			</th>
+			<th>
+			<center>Description</center>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="filled">Type</span></td>
+			<td>The type of the <span class="key">Actions</span> drop-down menu item. The property lets you add a horizontal line that separates menu blocks to the action menu. To do this, specify <span class="filled">Terrasoft.MenuSeparator</span> as the property value. If you do not specify the property value, Creatio adds a menu item by default.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Caption</span></td>
+			<td>The title of the <span class="key">Actions</span> menu item. We recommend using <a href="https://academy.creatio.com/documents?id=15272&amp;anchor=title-2174-3">localizable strings</a> for titles.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Click</span></td>
+			<td>Binds an action handler method by the method name.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Enabled</span></td>
+			<td>The boolean property that controls the menu item availability.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Visible</span></td>
+			<td>The boolean property that controls the menu item visibility.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h2>Set up the quick filters block of the section<a class="title-anchor" href="#title-2330-12" id="title-2330-12">&nbsp;</a></h2>
+
+<p>Creatio lets you implement a custom quick filters block for section list records.</p>
+
+<p>To <strong>set up the quick filters block of the section</strong>:</p>
+
+<ol>
+	<li>Create a replacing view model schema of the section page. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15102&amp;anchor=title-3028-4">Client module</a>.</li>
+	<li>Select the view model schema to replace as the parent object.</li>
+	<li>Implement the <strong>filtering behavior</strong>. To do this, implement the <span class="filled">initFixedFiltersConfig()</span> method in the <span class="filled">methods</span> property. The method initializes the fixed filters. In the method, create a configuration object that has an array of filters. Assign the object link to the <span class="filled">fixedFiltersConfig</span> attribute of the view model.</li>
+</ol>
+
+<h2>Delete a section<a class="title-anchor" href="#title-2330-13" id="title-2330-13">&nbsp;</a></h2>
+
+<ol>
+	<li>Make sure you have access to Creatio configuration and database.</li>
+	<li>Unlock the file that corresponds to the relevant section in the SVN repository.</li>
+	<li>
+	<p>Delete the section that is based on the relevant object. To do this, execute an SQL query.</p>
+    
+    <div class="code">
+<div class="code__top">
+<div class="code__title">SQL query</div>
+
+<div class="code__langs">
+<div class="code__lang code__lang_active">MSSQL</div>
+
+<div class="code__lang">PostgreSQL</div>
+</div>
+</div>
+
+<div class="code__widgets">
+<div class="code__source code__source_active" data-insert="false" data-type="MSSQL">
+<pre class="prettyprint">
+DECLARE @UId UNIQUEIDENTIFIER
+DECLARE @ModuleEntityUID UNIQUEIDENTIFIER;
+DECLARE @ModuleID UNIQUEIDENTIFIER;
+DECLARE @Name NVARCHAR(max) = 'ToDelete';
+select @UId = UId from SysSchema where Name Like @Name
+select @ModuleEntityUID = Id from SysModuleEntity where
+SysEntitySchemaUId = @UId
+select @ModuleID = Id from SysModule where SysModuleEntityId = @ModuleEntityUID;
+delete from SysModuleInWorkplace where SysModuleId = @ModuleID;
+delete from SysModule where Id = @ModuleID;
+delete from SysModuleEdit where SysModuleEntityId = @ModuleEntityUID;
+delete from SysModuleEntity where Id = @ModuleEntityUID;
+delete from SysDetail where EntitySchemaUId = @UId;
+delete from SysLookup where SysEntitySchemaUId = @UId;
+delete from [Lookup] where SysEntitySchemaUId = @UId;
+</pre>
+</div>
+
+<div class="code__source" data-insert="false" data-type="PostgreSQL">
+<pre class="prettyprint">
+do $$
+DECLARE
+name varchar(100) = 'UsrProperty';
+moduleID UUID;
+moduleEntityUID UUID;
+uId UUID;
+BEGIN
+uId = (select "UId" from "SysSchema" where "Name" Like name);
+moduleEntityUID = (select "Id" from "SysModuleEntity" where
+"SysEntitySchemaUId" = uId);
+moduleID = (select "Id" from "SysModule" where "SysModuleEntityId" = moduleEntityUID);
+update "SysModule" set "Image32Id"=Null where "Id" = moduleID;
+delete from "SysModuleInWorkplace" where "SysModuleId" = moduleID;
+delete from "SysModule" where "Id" = moduleID;
+delete from "SysModuleEdit" where "SysModuleEntityId" = moduleEntityUID;
+delete from "SysModuleEntity" where "Id" = moduleEntityUID;
+delete from "SysDetail" where "EntitySchemaUId" = uId;
+delete from "SysLookup" where "SysEntitySchemaUId" = uId;
+delete from "Lookup" where "SysEntitySchemaUId" = uId;
+end $$;
+</pre>
+</div>
+</div>
+</div>
+
+	<p>Replace <span class="filled">ToDelete</span> with the name of the custom section schema.</p>
+	</li>
+	<li>
+	<p>After you clear the database, delete the custom schemas from the <span class="key">Configuration</span> section.</p>
+
+	<p>Delete the configuration schemas in this <strong>order</strong>:</p>
+
+	<ol>
+		<li><span class="filled">ToDeleteFile</span>.</li>
+		<li><span class="filled">ToDeleteInFolder</span>.</li>
+		<li><span class="filled">ToDeleteInTag</span>.</li>
+		<li><span class="filled">ToDeleteTag</span>.</li>
+		<li><span class="filled">ToDeleteFolder</span>.</li>
+		<li><span class="filled">ToDelete</span>.</li>
+	</ol>
+	</li>
+</ol>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-linked">
+  
+    
+      
+  <div class="field field--name-field-linked field--type-entity-reference field--label-above">
+    <div class="field__label">See also</div>
+          <div class="field__items">
+              <div class="field__item"><a href="/docs/7-18/developer/interface_elements/record_page/overview/overview" hreflang="en">Record page</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/platform_basics/user_interface/record_list/record_lists" hreflang="en">Work with record lists</a></div>
+          <div class="field__item"><a href="/docs/7-18/developer/interface_elements/dashboard_widgets/overview" hreflang="en">Dashboard widgets</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/platform_basics/business_data/excel_export/exporting_list_data_to_excel" hreflang="en">Excel data export</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/platform_basics/business_data/excel_import/excel_data_import" hreflang="en">Excel data import</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/setup_and_administration/base_integrations/google_mail_contacts_and_calendar/synchronize_contacts_and_activities/synchronize_contacts_and_activities_with_google" hreflang="en">Synchronize contacts and activities with Google</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/platform_basics/business_data/filters_shortcut/filters" hreflang="en">Filters</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/platform_basics/business_data/folders_shortcut/folders" hreflang="en">Folders</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/platform_basics/business_data/tags_shortcut/tags" hreflang="en">Tags</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/customization_tools/ui_and_business_logic_customization/section_setup/create_a_section/add_a_new_section" hreflang="en">Create a new section</a></div>
+          <div class="field__item"><a href="/docs/7-18/developer/development_tools/creatio_ide/develop_configuration_elements/overview" hreflang="en">Develop configuration elements</a></div>
+              </div>
+      </div>
+
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://www.youtube.com/watch?v=a5zefAhN3fk">Tech Hour - How to use buttons and actions to empower Creatio pages</a></div>
+          <div class="field__item"><a href="https://academy.creatio.com/docs/user/no-code_customization/ui_and_business_logic_customization/section_setup">Creatio section documentation</a></div>
+          <div class="field__item"><a href="https://academy.creatio.com/docs/user/no_code_customization/analytics">Creatio section analytics documentation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-cases">
+  
+    
+      
+      <div class="field field--name-field-cases field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="1895" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Add an action for a single record to the section</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_warning">
+<p>The example is relevant to Sales Creatio products.</p>
+</div>
+
+<div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Add an action for the record of the <span class="key">Orders</span> section list. The action must display the order creation date in a message box. The action must be active for orders at the <span class="key">In progress</span> stage.</p>
+</div>
+
+<h2>Create a schema of the replacing section view model<a class="title-anchor" href="#title-3235-1" id="title-3235-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">OrderSectionV2</span>".</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Order section</span>".</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">OrderSectionV2</span>".</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForSingleRow/7.18/scr_OrderSectionV2_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Add a <strong>localizable string</strong> that contains the menu item caption.</p>
+
+	<ol>
+		<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the context menu of the <span class="key">Localizable strings</span> node.</li>
+		<li>
+		<p>Fill out the <strong>localizable string properties</strong>.</p>
+
+		<ul>
+			<li>Set <span class="key">Code</span> to "<span class="consolas">CreationDateActionCaption</span>".</li>
+			<li>Set <span class="key">Value</span> to "<span class="consolas">Show creation date</span>".</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForSingleRow/7.18/scr_localizable_string.png"></div>
+		</div>
+		</li>
+		<li>Click <span class="key">Add</span> to add a localizable string.</li>
+	</ol>
+	</li>
+	<li>
+	<p>Implement the <strong>menu item behavior</strong>. To do this, implement the following <strong>methods</strong> in the <span class="filled">methods</span> property:</p>
+
+	<ul>
+		<li><span class="filled">isRunning()</span>. Checks whether the order selected in the list is at the <span class="key">In progress</span> stage.</li>
+		<li><span class="filled">isCustomActionEnabled()</span>. Determines whether the menu item is available.</li>
+		<li><span class="filled">showOrderInfo()</span>. The action handler method that displays the order creation date in a message box.</li>
+		<li><span class="filled">getSectionActions()</span>. The overloaded parent schema method that retrieves the section action collection.</li>
+	</ul>
+
+	<p>Reference the selected record via the <span class="filled">ActiveRow</span> attribute of the section view model. The attribute returns the primary column value of the selected record. In turn, you can use the primary column value of the selected record to get the values uploaded to the field list of the selected object.</p>
+
+	<p>View the source code of the replacing view model schema of the section below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">OrderSectionV2</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("OrderSectionV2", ["OrderConfigurationConstants"], function(OrderConfigurationConstants) {
+    return {
+        /* The name of the section object schema. */
+        entitySchemaName: "Order",
+        /* The methods of the section view model. */
+        methods: {
+            /* Check the order stage. activeRowId is the primary column value of the selected list record. */
+            isRunning: function(activeRowId) {
+                /* Retrieve the data collection of the section list's regular list view. */
+                var gridData = this.get("GridData");
+                /* Retrieve the order model by the specified primary column value. */
+                var selectedOrder = gridData.get(activeRowId);
+                /* Retrieve the properties of the order status model. */
+                var selectedOrderStatus = selectedOrder.get("Status");
+                /* Return true if the order status is [In progress], return false otherwise. */
+                return selectedOrderStatus.value === OrderConfigurationConstants.Order.OrderStatus.Running;
+            },
+            /* Determine whether the menu item is available. */
+            isCustomActionEnabled: function() {
+                /* Attempt to retrieve the ID of the active record. */
+                var activeRowId = this.get("ActiveRow");
+                /* Return true if the ID is defined and the order status is [In progress], return false otherwise. */
+                return activeRowId ? this.isRunning(activeRowId) : false;
+            },
+            /* The action handler method. Displays the order creation date in the message box. */
+            showOrderInfo: function() {
+                var activeRowId = this.get("ActiveRow");
+                var gridData = this.get("GridData");
+                /* Retrieve the order creation date. The column must be added to the list. */
+                var dueDate = gridData.get(activeRowId).get("Date");
+                /* Display the message box. */
+                this.showInformationDialog(dueDate);
+            },
+            /* Overload the base virtual method that returns the section action collection. */
+            getSectionActions: function() {
+                /* Call the parent method implementation that retrieves the collection of the initialized section actions. */
+                var actionMenuItems = this.callParent(arguments);
+                /* Add a separator line. */
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    Type: "Terrasoft.MenuSeparator",
+                    Caption: ""
+                }));
+                /* Add a menu item to the section action index. */
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    /* Bind the menu item caption to the localizable schema string. */
+                    "Caption": {bindTo: "Resources.Strings.CreationDateActionCaption"},
+                    /* Bind the action handler method. */
+                    "Click": {bindTo: "showOrderInfo"},
+                    /* Bind the property of the menu item availability to the value returned by the isCustomActionEnabled method. */
+                    "Enabled": {bindTo: "isCustomActionEnabled"}
+                }));
+                /* Return the expanded section action collection. */
+                return actionMenuItems;
+            }
+        }
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h2>The outcome of the example<a class="title-anchor" href="#title-3235-2" id="title-3235-2">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>:</p>
+
+<ol>
+	<li>Clear the browser cache.</li>
+	<li>Refresh the <span class="key">Orders</span> section page.</li>
+</ol>
+
+<p>As a result, Creation will add the <span class="key">Show creation date</span> action to the order page.</p>
+
+<p>If the order is at the <span class="key">In progress</span> stage, the <span class="key">Show creation date</span> action will be active.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForSingleRow/7.18/scr_result.png"></div>
+</div>
+
+<p>Run the <span class="key">Show creation date</span> action to bring up the message box that displays the order creation date.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForSingleRow/7.18/scr_modal_window.png"></div>
+</div>
+
+<p>If the order's current stage is not <span class="key">In progress</span>, the <span class="key">Show creation date</span> action will be inactive.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForSingleRow/7.18/scr_result_another.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.terrasoft.ua/sites/default/files/documents/downloads/SDK/Packages/sdkAddSectionActionForSingleRowPackage_2021-12-20_14.46.07.zip" target="_blank">The package that contains the implemented example</a></div>
+          <div class="field__item"><a href="https://www.youtube.com/watch?v=a5zefAhN3fk" target="_blank">Tech Hour - How to use buttons and actions to empower Creatio pages</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1896" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Add an action for multiple records to the section</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_warning">
+<p>The example is relevant to Sales Creatio products.</p>
+</div>
+
+<div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Add an action for records of the <span class="key">Orders</span> section list. The action must display the index of accounts for the selected orders in the message box.</p>
+</div>
+
+<h2>Create a schema of the replacing section view model<a class="title-anchor" href="#title-3236-1" id="title-3236-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">OrderSectionV2</span>".</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Order section</span>".</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">OrderSectionV2</span>".</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForMultipleRows/7.18/scr_OrderSectionV2_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Add a <strong>localizable string</strong> that contains the menu item caption.</p>
+
+	<ol>
+		<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the context menu of the <span class="key">Localizable strings</span> node.</li>
+		<li>
+		<p>Fill out the <strong>localizable string properties</strong>.</p>
+
+		<ul>
+			<li>Set <span class="key">Code</span> to "<span class="consolas">AccountsSectionAction</span>".</li>
+			<li>Set <span class="key">Value</span> to "<span class="consolas">Accounts for the selected orders</span>".</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForMultipleRows/7.18/scr_localizable_string.png"></div>
+		</div>
+		</li>
+		<li>Click <span class="key">Add</span> to add a localizable string.</li>
+	</ol>
+	</li>
+	<li>
+	<p>Implement the <strong>menu item behavior</strong>. To do this, implement the following <strong>methods</strong> in the <span class="filled">methods</span> property:</p>
+
+	<ul>
+		<li><span class="filled">isCustomActionEnabled()</span>. Determines whether the menu item is available.</li>
+		<li><span class="filled">showOrderInfo()</span>. The action handler method that displays the index of accounts for the selected orders in the message box.</li>
+		<li><span class="filled">getSectionActions()</span>. The overloaded parent schema method that retrieves the section's action collection.</li>
+	</ul>
+
+	<p>The primary column values of the selected records are stored in the <span class="filled">SelectedRows</span> property of the section view model. You can use these values to get the values uploaded to the field list of the selected objects. For example, from a regular list's data collection stored in the <span class="filled">GridData</span> view model property of the list.</p>
+
+	<p>View the source code of the replacing view model schema of the section below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">OrderSectionV2</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("OrderSectionV2", ["OrderConfigurationConstants"], function(OrderConfigurationConstants) {
+    return {
+        /* The name of the section object schema. */
+        entitySchemaName: "Order",
+        /* The methods of the section view model. */
+        methods: {
+            /* Determine whether the menu item is available. */ 
+            isCustomActionEnabled: function() {
+                /* Attempt to retrieve the array of the selected record IDs. */
+                var selectedRows = this.get("SelectedRows");
+                /* Return true if the array contains items (at least one list record is selected), return false otherwise. */
+                return selectedRows ? (selectedRows.length &gt; 0) : false;
+            },
+            /* The action handler method. Displays the index of accounts in the message box. */
+            showOrdersInfo: function() {
+                /* Retrieve the array of the selected record IDs. */
+                var selectedRows = this.get("SelectedRows");
+                /* Retrieve the data collection of the list records. */
+                var gridData = this.get("GridData");
+                /* The variable that stores the object model of the selected order. */ 
+                var selectedOrder = null;
+                /* The variable that stores the account name for the selected order. */
+                var selectedOrderAccount = "";
+                /* The variable that generates the message box text. */
+                var infoText = "";
+                /* Process the array of the selected record IDs. */
+                selectedRows.forEach(function(selectedRowId) {
+                    /* Retrieve the object model of the selected order. */
+                    selectedOrder = gridData.get(selectedRowId);
+                    /* Retrieve the account name for the selected order. The column must be added to the list. */
+                    selectedOrderAccount = selectedOrder.get("Account").displayValue;
+                    /* Add the account name to the message box text. */
+                    infoText += "\n" + selectedOrderAccount;
+                });
+                /* Display the message box. */
+                this.showInformationDialog(infoText);
+            },
+            /* Overload the base virtual method that returns the section action collection. */
+            getSectionActions: function() {
+                /* Call the parent method implementation that retrieves the collection of the initialized section actions. */ 
+                var actionMenuItems = this.callParent(arguments);
+                /* Add a separator line. */
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    Type: "Terrasoft.MenuSeparator",
+                    Caption: ""
+                }));
+                /* Add a menu item to the section action index. */
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    /* Bind the menu item caption to the localizable schema string. */
+                    "Caption": {bindTo: "Resources.Strings.AccountsSectionAction"},
+                    /* Bind the action handler method. */
+                    "Click": {bindTo: "showOrdersInfo"},
+                    /* Bind the property of the menu item availability to the value returned by the isCustomActionEnabled method. */
+                    "Enabled": {bindTo: "isCustomActionEnabled"},
+                    /* Support the multiple selection mode. */
+                    "IsEnabledForSelectedAll": true 
+                }));
+                /* Return the expanded section action collection. */
+                return actionMenuItems;
+            }
+        }
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h2>The outcome of the example<a class="title-anchor" href="#title-3236-2" id="title-3236-2">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>:</p>
+
+<ol>
+	<li>Clear the browser cache.</li>
+	<li>Refresh the <span class="key">Orders</span> section page.</li>
+</ol>
+
+<p>The section single record mode is used by default. To select multiple list records, click <span class="key">Select multiple records</span> in the menu of the <span class="key">Actions</span> button. This changes the visual view of the list. You will see record selection elements appear.</p>
+
+<p>As a result, Creatio will add the <span class="key">Accounts for the selected orders</span> action to the order page.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForMultipleRows/7.18/scr_result.png"></div>
+</div>
+
+<p>Run the <span class="key">Accounts for the selected orders</span> action to bring up the message box that displays the account list for the selected orders.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForMultipleRows/7.18/scr_modal_window.png"></div>
+</div>
+
+<p>To cancel the multiple selection mode, click <span class="key">Cancel multiple selection</span> in the menu of the <span class="key">Actions</span> button.</p>
+
+<p>If you do not select any records in the <span class="key">Orders</span> section list, the <span class="key">Accounts for the selected orders</span> action will be inactive.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionForMultipleRows/7.18/scr_result_another.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.terrasoft.ua/sites/default/files/documents/downloads/SDK/Packages/sdkAddSectionActionForMultipleRowsPackage_2021-12-21_08.52.57.zip" target="_blank">The package that contains the implemented example</a></div>
+          <div class="field__item"><a href="https://www.youtube.com/watch?v=a5zefAhN3fk" target="_blank">Tech Hour - How to use buttons and actions to empower Creatio pages</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="2305" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Set up action handling for multiple section records</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Set up action handling in the <span class="key">Activities</span> section list. The action sets the <span class="key">Completed</span> status for selected activities.</p>
+</div>
+
+<h2>Create a schema of the replacing section view model<a class="title-anchor" href="#title-3237-1" id="title-3237-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">ActivitySectionV2</span>".</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Activities section</span>".</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">ActivitySectionV2</span>".</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerForMultipleRows/7.18/scr_ActivitySectionV2_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Add a <strong>localizable string</strong> that contains the menu item caption.</p>
+
+	<ol>
+		<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the context menu of the <span class="key">Localizable strings</span> node.</li>
+		<li>
+		<p>Fill out the <strong>localizable string properties</strong>.</p>
+
+		<ul>
+			<li>Set <span class="key">Code</span> to "<span class="consolas">AllDoneCaption</span>".</li>
+			<li>Set <span class="key">Value</span> to "<span class="consolas">Mark as Completed</span>".</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerForMultipleRows/7.18/scr_localizable_string.png"></div>
+		</div>
+		</li>
+		<li>Click <span class="key">Add</span> to add a localizable string.</li>
+	</ol>
+	</li>
+	<li>
+	<p>Implement the <strong>menu item behavior</strong>. To do this, implement the following <strong>methods</strong> in the <span class="filled">methods</span> property:</p>
+
+	<ul>
+		<li><span class="filled">isCustomActionEnabled()</span>. Determines whether the menu item is available.</li>
+		<li><span class="filled">setAllDone()</span>. The action handler method that sets the <span class="key">Completed</span> status for selected activities.</li>
+		<li><span class="filled">getSectionActions()</span>. The overloaded parent schema method that retrieves the section action collection.</li>
+	</ul>
+
+	<p>View the source code of the replacing view model schema of the section below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">ActivitySectionV2</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("ActivitySectionV2", ["ConfigurationConstants"], function(ConfigurationConstants) {
+    return {
+        /* The name of the section object schema. */
+        entitySchemaName: "Activity",
+        /* The methods of the section view model. */
+        methods: {
+            /* Determine whether the menu item is available. */ 
+            isCustomActionEnabled: function() {
+                /* Attempt to retrieve the array of the selected record IDs. */
+                var selectedRows = this.get("SelectedRows");
+                /* Return true if the array contains items (at least one list record is selected), return false otherwise. */
+                return selectedRows ? (selectedRows.length &gt; 0) : false;
+            },
+            /* The action handler method. Sets the [Completed] status for selected records. */
+            setAllDone: function() {
+                /* Retrieve the array of the selected record IDs. */
+                var selectedRows = this.get("SelectedRows");
+                /* Run handling if at least one record was selected. */
+                if (selectedRows.length &gt; 0) {
+                    /* Create an instance of the batch query class. */
+                    var batchQuery = this.Ext.create("Terrasoft.BatchQuery");
+                    /* Update each of the selected records. */
+                    selectedRows.forEach(function(selectedRowId) {
+                        /* Create an UpdateQuery class instance with the Activity root schema. */
+                        var update = this.Ext.create("Terrasoft.UpdateQuery", {
+                            rootSchemaName: "Activity"
+                        });
+                        /* Apply the filter to determine the record to update. */
+                        update.enablePrimaryColumnFilter(selectedRowId);
+                        /* Set the [Status] column to "Completed" using the ConfigurationConstants.Activity.Status.Done configuration constant. */
+                        update.setParameterValue("Status", ConfigurationConstants.Activity.Status.Done, this.Terrasoft.DataValueType.GUID);
+                        /* Add a record update query to the batch query. */
+                        batchQuery.add(update);
+                    }, this);
+                    /* Execute the batch server query. */
+                    batchQuery.execute(function() {
+                        /* Update the list. */
+                        this.reloadGridData();
+                    }, this);
+                }
+            },
+            /* Overload the base virtual method that returns the section action collection. */
+            getSectionActions: function() {
+                /* Call the parent method implementation that retrieves the collection of the initialized section actions. */
+                var actionMenuItems = this.callParent(arguments);
+                /* Add a separator line. */
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    Type: "Terrasoft.MenuSeparator",
+                    Caption: ""
+                }));
+                /* Add a menu item to the section action index. */
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    /* Bind the menu item caption to the localizable schema string. */
+                    "Caption": { bindTo: "Resources.Strings.AllDoneCaption" },
+                    /* Bind the action handler method. */
+                    "Click": { bindTo: "setAllDone" },
+                    /* Bind the property of the menu item availability to the value returned by the isCustomActionEnabled method. */
+                    "Enabled": { bindTo: "isCustomActionEnabled" },
+                    /* Support the multiple selection mode. */
+                    "IsEnabledForSelectedAll": true
+                }));
+                /* Return the expanded section action collection. */
+                return actionMenuItems;
+            }
+        }
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h2>The outcome of the example<a class="title-anchor" href="#title-3237-2" id="title-3237-2">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>:</p>
+
+<ol>
+	<li>Clear the browser cache.</li>
+	<li>Refresh the <span class="key">Activities</span> section page.</li>
+</ol>
+
+<p>The section single record mode is used by default. To select multiple list records, click <span class="key">Select multiple records</span> in the menu of the <span class="key">Actions</span> button. This changes the visual view of the list. You will see record selection elements appear.</p>
+
+<p>As a result, Creatio will add the <span class="key">Mark as Completed</span> action to the activity page.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerForMultipleRows/7.18/scr_result.png"></div>
+</div>
+
+<p>Run the <span class="key">Mark as Completed</span> action to set the <span class="key">Status</span> column of the selected activities to <span class="key">Completed</span>.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerForMultipleRows/7.18/scr_modal_window.png"></div>
+</div>
+
+<p>To cancel the multiple selection mode, click <span class="key">Cancel multiple selection</span> in the menu of the <span class="key">Actions</span> button.</p>
+
+<p>If you do not select any records in the <span class="key">Activities</span> section list, the <span class="key">Mark as Completed</span> action will be inactive.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerForMultipleRows/7.18/scr_result_another.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.terrasoft.ua/sites/default/files/documents/downloads/SDK/Packages/sdkAddSectionActionHandlerForMultipleRowsPackage_2021-12-21_10.52.40.zip" target="_blank">The package that contains the implemented example</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1897" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Set up action handling using a lookup for multiple section records</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Set up action handling in the <span class="key">Activities</span> section list. The action must open the <span class="key">Contacts</span> lookup box. Set the selected contact as the owner of the selected activities.</p>
+</div>
+
+<h2>Create a schema of the replacing section view model<a class="title-anchor" href="#title-3728-1" id="title-3728-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">ActivitySectionV2</span>".</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Activities section</span>".</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">ActivitySectionV2</span>".</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerWithLookup/7.18/scr_ActivitySectionV2_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Add a <strong>localizable string</strong> that contains the menu item caption.</p>
+
+	<ol>
+		<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the context menu of the <span class="key">Localizable strings</span> node.</li>
+		<li>
+		<p>Fill out the <strong>localizable string properties</strong>.</p>
+
+		<ul>
+			<li>Set <span class="key">Code</span> to "<span class="consolas">SetOwnerCaption</span>".</li>
+			<li>Set <span class="key">Value</span> to "<span class="consolas">Assign Owner</span>".</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerWithLookup/7.18/scr_localizable_string.png"></div>
+		</div>
+		</li>
+		<li>Click <span class="key">Add</span> to add a localizable string.</li>
+	</ol>
+	</li>
+	<li>
+	<p>Implement the <strong>menu item behavior</strong>. To do this, implement the following <strong>methods</strong> in the <span class="filled">methods</span> property:</p>
+
+	<ul>
+		<li><span class="filled">isCustomActionEnabled()</span>. Determines whether the menu item is available.</li>
+		<li><span class="filled">setOwner()</span>. The action handler method that opens the <span class="key">Contacts</span> lookup.</li>
+		<li><span class="filled">lookupCallback()</span>. The callback method that sets the contact selected from the lookup as the owner of the selected activities.</li>
+		<li><span class="filled">getSectionActions()</span>. The overloaded parent schema method that retrieves the section action collection.</li>
+	</ul>
+
+	<p>View the source code of the replacing view model schema of the section below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">ActivitySectionV2</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("ActivitySectionV2", ["ConfigurationConstants"], function(ConfigurationConstants) {
+    return {
+        /* The name of the section object schema. */
+        entitySchemaName: "Activity",
+        /* The methods of the section view model. */
+        methods: {
+            /* Determine whether the menu item is available. */
+            isCustomActionEnabled: function() {
+                /* Attempt to retrieve the array of the selected record IDs. */
+                var selectedRows = this.get("SelectedRows");
+                /* Return true if the array contains items (at least one list record is selected), return false otherwise. */
+                return selectedRows ? (selectedRows.length &gt; 0) : false;
+            },
+            /* The action handler method. Opens the [Contacts] lookup. */
+            setOwner: function() {
+                /* Define the lookup configuration. */
+                var config = {
+                    /* The [Contact] schema. */
+                    entitySchemaName: "Contact",
+                    /* Disable multiple selection. */
+                    multiSelect: false,
+                    /* Display the [Name] column. */
+                    columns: ["Name"]
+                };
+                /* Open the lookup with a particular configuration and the callback function that triggers when a user clicks the [Select] button. */
+                this.openLookup(config, this.lookupCallback, this);
+            },
+            /* Set the contact selected from the lookup as the owner of the selected activities. */
+            lookupCallback: function(args) {
+                /* The ID of the selected lookup record. */
+                var activeRowId;
+                /* Retrieve the selected lookup records. */
+                var lookupSelectedRows = args.selectedRows.getItems();
+                if (lookupSelectedRows &amp;&amp; lookupSelectedRows.length &gt; 0) {
+                    /* Retrieve the ID of the first selected lookup record. */
+                    activeRowId = lookupSelectedRows[0].Id;
+                }
+                /* Retrieve the array of the selected record IDs. */
+                var selectedRows = this.get("SelectedRows");
+                /* Run handling if at least one record was selected and the owner was selected in the lookup. */
+                if ((selectedRows.length &gt; 0) &amp;&amp; activeRowId) {
+                    /* Create an instance of the batch query class. */
+                    var batchQuery = this.Ext.create("Terrasoft.BatchQuery");
+                    /* Update each of the selected records. */
+                    selectedRows.forEach(function(selectedRowId) {
+                        /* Create an UpdateQuery class instance with the Activity root schema. */
+                        var update = this.Ext.create("Terrasoft.UpdateQuery", {
+                            rootSchemaName: "Activity"
+                        });
+                        /* Apply the filter to determine the record to update. */
+                        update.enablePrimaryColumnFilter(selectedRowId);
+                        /* Set the [Owner] column to the ID of the contact selected from the lookup. */
+                        update.setParameterValue("Owner", activeRowId, this.Terrasoft.DataValueType.GUID);
+                        /* Add a record update query to the batch query. */
+                        batchQuery.add(update);
+                    }, this);
+                    /* Execute the batch server query. */
+                    batchQuery.execute(function() {
+                        /* Update the list. */
+                        this.reloadGridData();
+                    }, this);
+                }
+            },
+            /* Overload the base virtual method that returns the section action collection. */
+            getSectionActions: function() {
+                /* Call the parent method implementation that retrieves the collection of the initialized section actions. */
+                var actionMenuItems = this.callParent(arguments);
+                /* Add a separator line. */
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    Type: "Terrasoft.MenuSeparator",
+                    Caption: ""
+                }));
+                /* Add a menu item to the section action index. */
+                actionMenuItems.addItem(this.getButtonMenuItem({
+                    /* Bind the menu item caption to the localizable schema string. */
+                    "Caption": { bindTo: "Resources.Strings.SetOwnerCaption" },
+                    /* Bind the action handler method. */
+                    "Click": { bindTo: "setOwner" },
+                    /* Bind the property of the menu item availability to the value returned by the isCustomActionEnabled method. */
+                    "Enabled": { bindTo: "isCustomActionEnabled" },
+                    /* Support the multiple selection mode. */
+                    "IsEnabledForSelectedAll": true
+                }));
+                /* Return the expanded section action collection. */
+                return actionMenuItems;
+            }
+        }
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer&amp;'s toolbar.</li>
+</ol>
+
+<h2>The outcome of the example<a class="title-anchor" href="#title-3728-2" id="title-3728-2">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>:</p>
+
+<ol>
+	<li>Clear the browser cache.</li>
+	<li>Refresh the <span class="key">Activities</span> section page.</li>
+</ol>
+
+<p>The section single record mode is used by default. To select multiple list records, click <span class="key">Select multiple records</span> in the menu of the <span class="key">Actions</span> button. This changes the visual view of the list. You will see record selection elements appear.</p>
+
+<p>As a result, Creatio will add the <span class="key">Assign Owner</span> action to the order page.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerWithLookup/7.18/scr_result.png"></div>
+</div>
+
+<p>Run the <span class="key">Assign Owner</span> action to open the <span class="key">Contacts</span> lookup box. Creatio sets the selected contact as the owner of the selected activities in the <span class="key">Assignee</span> column.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerWithLookup/7.18/scr_modal_window.png"></div>
+</div>
+
+<p>To cancel the multiple selection mode, click <span class="key">Cancel multiple selection</span> in the menu of the <span class="key">Actions</span> button.</p>
+
+<p>If you do not select any records in the <span class="key">Activities</span> section list, the <span class="key">Assign Owner</span> action will be inactive.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddSectionActionHandlerWithLookup/7.18/scr_result_another.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.terrasoft.ua/sites/default/files/documents/downloads/SDK/Packages/sdkAddSectionActionHandlerWithLookupPackage_2021-12-21_12.10.30.zip" target="_blank">The package that contains the implemented example</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1900" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Set up the display conditions of the section list</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_warning">
+<p>The example is relevant to Sales Creatio products.</p>
+</div>
+
+<div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> In the <span class="key">Orders</span> section list, highlight orders at the <span class="key">In progress</span> stage green.</p>
+</div>
+
+<h2>Create a schema of the replacing section view model<a class="title-anchor" href="#title-3239-1" id="title-3239-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">OrderSectionV2</span>".</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Order section</span>".</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">OrderSectionV2</span>".</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/RecolorSectionRecords/7.18/scr_OrderSectionV2_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Set up the <strong>appearance conditions of the section list</strong>. To do this, implement the <span class="filled">prepareResponseCollectionItem()</span> method in the <span class="filled">methods</span> property. The method overloads the base method, modifies the data row before uploading the row to the list, as well as injects custom styles into specific list rows.</p>
+
+	<p>View the source code of the replacing view model schema of the section below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">OrderSectionV2</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("OrderSectionV2", ["OrderConfigurationConstants"], function(OrderConfigurationConstants) {
+    return {
+        /* The name of the section object schema. */
+        entitySchemaName: "Order",
+        /* The methods of the section view model. */
+        methods: {
+            /* Overload the base method that modifies the data row before uploading the row to the list. */
+            prepareResponseCollectionItem: function(item) {
+                /* Call the base method. */
+                this.callParent(arguments);
+                item.customStyle = null;
+                /* Determine the order status. */
+                var running = item.get("Status");
+                /* If the order status is "In progress", change the record style. */
+                if (running.value === OrderConfigurationConstants.Order.OrderStatus.Running) {
+                    item.customStyle = {
+                        /* Set the text color to white. */
+                        "color": "white",
+                        /* Set the background color to green. */
+                        "background": "#8ecb60"
+                    };
+                }
+            }
+        }
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h2>The outcome of the example<a class="title-anchor" href="#title-3239-2" id="title-3239-2">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>:</p>
+
+<ol>
+	<li>Clear the browser cache.</li>
+	<li>Refresh the <span class="key">Orders</span> section page.</li>
+</ol>
+
+<p>As a result, Creatio will highlight the orders at the <span class="key">In progress</span> stage in green.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/RecolorSectionRecords/7.18/scr_result.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.terrasoft.ua/sites/default/files/documents/downloads/SDK/Packages/sdkRecolorSectionRecordsPackage_2021-12-21_15.07.07.zip" target="_blank">The package that contains the implemented example</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1891" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Set up the quick filters section block</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Add a quick filters block to the <span class="key">Contracts</span> section. Filter contracts by contract start date and owner.</p>
+</div>
+
+<h2>Create a schema of the replacing section view model<a class="title-anchor" href="#title-3240-1" id="title-3240-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">ContractSectionV2</span>".</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Page schema - "Contracts" section</span>".</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">ContractSectionV2</span>".</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddFixedFilters/7.18/scr_ContractSectionV2_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Add <strong>localizable strings</strong> that contain filter names.</p>
+
+	<ol>
+		<li>
+		<p>Add a localizable string that contains the <strong>name of the filter by owner</strong>.</p>
+
+		<ol>
+			<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the context menu of the <span class="key">Localizable strings</span> node.</li>
+			<li>
+			<p>Fill out the <strong>localizable string properties</strong>.</p>
+
+			<ul>
+				<li>Set <span class="key">Code</span> to "<span class="consolas">OwnerFilterCaption</span>".</li>
+				<li>Set <span class="key">Value</span> to "<span class="consolas">Owner</span>".</li>
+			</ul>
+
+			<div class="media">
+			<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddFixedFilters/7.18/scr_OwnerFilterCaption_props.png"></div>
+			</div>
+			</li>
+			<li>Click <span class="key">Add</span> to add a localizable string.</li>
+		</ol>
+		</li>
+		<li>
+		<p>Add a localizable string that contains the <strong>name of the filter by period</strong>.</p>
+
+		<ol>
+			<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the context menu of the <span class="key">Localizable strings</span> node.</li>
+			<li>
+			<p>Fill out the <strong>localizable string properties</strong>.</p>
+
+			<ul>
+				<li>Set <span class="key">Code</span> to "<span class="consolas">PeriodFilterCaption</span>".</li>
+				<li>Set <span class="key">Value</span> to "<span class="consolas">Period</span>".</li>
+			</ul>
+
+			<div class="media">
+			<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddFixedFilters/7.18/scr_PeriodFilterCaption_props.png"></div>
+			</div>
+			</li>
+			<li>Click <span class="key">Add</span> to add a localizable string.</li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li>
+	<p>Implement the <strong>filtering behavior</strong>. To do this, implement the <span class="filled">initFixedFiltersConfig()</span> method in the <span class="filled">methods</span> property. In the method, create a configuration object with the array of <span class="filled">PeriodFilter</span> and <span class="filled">OwnerFilter</span> filters, assign the object link to the <span class="filled">fixedFiltersConfig</span> attribute of the view model.</p>
+
+	<p>View the source code of the replacing view model schema of the section below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">ContractSectionV2</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("ContractSectionV2", ["BaseFiltersGenerateModule"], function(BaseFiltersGenerateModule) {
+    return {
+        /* The name of the section object schema. */
+        entitySchemaName: "Contract",
+        /* The methods of the section view model. */
+        methods: {
+            /* Initialize the fixed filters. */
+            initFixedFiltersConfig: function() {
+                /* Create a configuration object. */
+                var fixedFilterConfig = {
+                    /* Specify the section object schema as the object schema for the fixed filters. */
+                    entitySchema: this.entitySchema,
+                    /* The array of filters. */
+                    filters: [
+                        /* The period filter. */
+                        {
+                            /* The filter name. */
+                            name: "PeriodFilter",
+                            /* The filter caption. */
+                            caption: this.get("Resources.Strings.PeriodFilterCaption"),
+                            /* Set the data type to data. */
+                            dataValueType: this.Terrasoft.DataValueType.DATE,
+                            /* The start date of the filtering period. */
+                            startDate: {
+                                /* Filter data from the [Date] column. */
+                                columnName: "StartDate",
+                                /* Set the default value to the start of the current week. */
+                                defValue: this.Terrasoft.startOfWeek(new Date())
+                            },
+                            /* Set the end date of the filtering period to the end of the current week. */
+                            dueDate: {
+                                columnName: "StartDate",
+                                defValue: this.Terrasoft.endOfWeek(new Date())
+                            }
+                        },
+                        /* The owner filter. */
+                        {
+                            /* The filter name. */
+                            name: "Owner",
+                            /* The filter caption. */
+                            caption: this.get("Resources.Strings.OwnerFilterCaption"),
+                            /* Filter data from the [Owner] column. */
+                            columnName: "Owner",
+                            /* Set the default value to the current user contact specified in the system setting. */
+                            defValue: this.Terrasoft.SysValue.CURRENT_USER_CONTACT,
+                            /* Set the data type to lookup. */
+                            dataValueType: this.Terrasoft.DataValueType.LOOKUP,
+                            /* The filter. */
+                            filter: BaseFiltersGenerateModule.OwnerFilter
+                        }
+                    ]
+                };
+                /* Assign the link to the created configuration object to the [FixedFilterConfig] attribute. */
+                this.set("FixedFilterConfig", fixedFilterConfig);
+            }
+        }
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h2>The outcome of the example<a class="title-anchor" href="#title-3240-2" id="title-3240-2">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>, refresh the <span class="key">Contracts</span> section page.</p>
+
+<p>As a result, Creatio will display the fixed filters block in the <span class="key">Contracts</span> section. The block will let you filter contracts both by start date and owner.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddFixedFilters/7.18/scr_result.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.terrasoft.ua/sites/default/files/documents/downloads/SDK/Packages/sdkAddFixedFiltersPackage_2021-12-22_08.53.53.zip" target="_blank">The package that contains the implemented example</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+          </div>
+  
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-references">
+  
+    
+      
+      <div class="field field--name-field-references field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="2307" class="node node--type-reference node--view-mode-tab">
+
+  
+                        <div class="title-h1" data-type="JS"><span class="field field--name-title field--type-string field--label-hidden">BaseSectionV2 schema</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodereferencefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-121" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/beginner.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Beginner</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodereferencebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><span class="filled">BaseSectionV2</span> is the base section schema. Provides the base section logic. Implemented in the <span class="filled">NUI</span> package. This is a view model schema. Learn more about the schema properties in a separate article: <a href="https://academy.creatio.com/documents?id=15311">Client schema</a>. All section schemas must inherit from the <span class="filled">BaseSectionV2</span> schema.</p>
+
+<div class="block-collapse">
+<h2 class="block-collapse__title">Messages<a class="title-anchor" href="#title-3732-1" id="title-3732-1">&nbsp;</a></h2>
+
+<div class="block-collapse__content">
+<div class="table">
+<div class="table__caption">Base section messages</div>
+
+<table>
+	<tbody>
+		<tr>
+			<th>Name</th>
+			<th>Mode</th>
+			<th>Direction</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><span class="filled">Rerender<wbr>Module</span></td>
+			<td>Address</td>
+			<td>Publish</td>
+			<td>Rerender the message of the dashboard module.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Reload<wbr>Data<wbr>On<wbr>Restore</span></td>
+			<td>Broadcasting</td>
+			<td>Subscription</td>
+			<td>Whether to reload data on the following launch.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Selected<wbr>Package<wbr>Result</span></td>
+			<td>Address</td>
+			<td>Subscription</td>
+			<td>The selected result.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p>The <span class="filled">Terrasoft.core.enums.MessageMode</span> enumeration represents the message modes, and the <span class="filled">Terrasoft.core.enums.MessageDirectionType</span> enumeration represents the message directions. Learn more about the <span class="filled">MessageMode</span> enumeration in the <a href="https://academy.creatio.com/api/jscoreapi/7.15.0/#!/api/Terrasoft.core.enums.MessageMode">JS class library</a>. Learn more about the <span class="filled">MessageDirectionType</span> enumeration in the <a href="https://academy.creatio.com/api/jscoreapi/7.15.0/#!/api/Terrasoft.core.enums.MessageDirectionType">JS class library</a>.</p>
+</div>
+</div>
+
+<div class="block-collapse">
+<h2 class="block-collapse__title">Attributes<a class="title-anchor" href="#title-3732-2" id="title-3732-2">&nbsp;</a></h2>
+
+<div class="block-collapse__content">
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+ChartEditSchemaName <span class="gray">TEXT</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>The <span class="filled">SchemaName</span> editing schema.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+IsEmptyChart <span class="gray">BOOLEAN</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>The flag that marks the schema as empty.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+AnalyticsChartActiveRow <span class="gray">GUID</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>The active row of the analytics schema</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+AnalyticsGridData <span class="gray">COLLECTION</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>The view collection of the list analytics.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+IsAnalyticsPrintButtonVisible <span class="gray">BOOLEAN</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>The visibility flag of the button to print out analytical forms.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+AnalyticsData <span class="gray">COLLECTION</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>The analytics data collection.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+IsAnalyticsActionButtonsContainerVisible <span class="gray">BOOLEAN</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>The visibility flag of the analytics action buttons.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+AnalyticsDataViewName <span class="gray">TEXT</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>View the name of the analytics section.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+IsBindDataActionVisible <span class="gray">BOOLEAN</span>
+</pre>
+</div>
+</div>
+</div>
+
+<p>The data binding flag.</p>
+
+<p>The <span class="filled">Terrasoft.core.enums.DataValueType</span> enumeration represents the attribute data types. Learn more about the <span class="filled">DataValueType</span> enumeration in the <a href="https://academy.creatio.com/api/jscoreapi/7.15.0/#!/api/Terrasoft.core.enums.DataValueType">JS class library</a>.</p>
+</div>
+</div>
+
+<div class="block-collapse">
+<h2 class="block-collapse__title">Methods<a class="title-anchor" href="#title-3732-3" id="title-3732-3">&nbsp;</a></h2>
+
+<div class="block-collapse__content">
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+checkCanManageAnalytics()
+</pre>
+</div>
+</div>
+</div>
+
+<p>Whether the user has permission to execute CRUD operations with the schedule. The <span class="key">Analytics setup</span> (<span class="filled">CanManageAnalytics</span> code) system operation manages the access permissions.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+onCanManageAnalytics(result)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Specifies the <span class="filled">CanManageAnalytics</span> attribute depending on the queried <span class="key">Display demo links</span> (<span class="filled">ShowDemoLinks</span> code) system setting and <span class="key">Analytics setup</span> (<span class="filled">CanManageAnalytics</span> code) system operation.</p>
+</div>
+</div>
+</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+          </div>
+  
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+          </div>
+          
+        </div>
+
+                  <aside class="creatio-sidebar creatio-sidebar_first" role="complementary">
+              <div class="region region-sidebar-first">
+    <div id="block-documentationnaviagtion" class="block block-ts-nav block-ts-nav-doc-nav">
+  
+    
+      <div class="ts-nav-block"><a href="/docs/" class="ts-nav-block__link">Documentation</a><div class="ts-nav-block__title">Developer documentation</div>
+</div>
+<div class="ts-nav-container"><ul class="ts-nav-menu"><li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/getting_started" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Getting started&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Architecture&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/development_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Development tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/back_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Back-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/front_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Front-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/integrations_and_api" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Integrations & API&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements" class="ts-nav-menu__link ts-nav-menu__link_expanded ts-nav-menu__link_open" hreflang="en">Interface elements&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+      <ul class="ts-nav-menu__children">
+      <li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/main_menu" class="ts-nav-menu__link" hreflang="en">Main menu</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/section" class="ts-nav-menu__link ts-nav-menu__link_open" hreflang="en">Section</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/record_page" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Record page&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/detail" class="ts-nav-menu__link" hreflang="en">Detail</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/mini_page" class="ts-nav-menu__link" hreflang="en">Mini page</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/modal_window" class="ts-nav-menu__link" hreflang="en">Modal window</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/communication_panel" class="ts-nav-menu__link" hreflang="en">Communication panel</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/command_line" class="ts-nav-menu__link" hreflang="en">Command line</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/dashboard_widgets" class="ts-nav-menu__link" hreflang="en">Dashboard widgets</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/chats" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Chats&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/interface_control_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Interface control tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+
+    </ul>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/application_components" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Application components&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/mobile_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Mobile development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/marketplace_app_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Marketplace app development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+</ul>
+</div>
+
+  </div>
+
+  </div>
+
+            <div class="creatio-sidebar__toggle"></div>
+          </aside>
+        
+                  <aside class="creatio-sidebar creatio-sidebar_second" role="complementary">
+              <div class="region region-sidebar-second">
+    <div id="block-example" class="block block-ts-nav block-ts-nav-page-nav">
+  
+    
+      <div class="ts-nav-page">
+  </div>
+
+  </div>
+
+  </div>
+
+          </aside>
+              </main>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="creatio-region creatio-region_footer">
+      <div class="creatio-container">
+          <div class="region region-footer">
+    <div id="block-footer" class="block block-simple-block block-simple-blockfooter">
+  
+    
+      <div class="footer">
+<div class="footer-left">
+<ul class="footer-socials">
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_fb" href="https://www.facebook.com/CreatioCompany" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_in" href="https://www.linkedin.com/company/creatioglobal" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_yt" href="https://www.youtube.com/c/creatio" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_tw" href="https://www.twitter.com/Creatio_Global" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_ow" href="https://www.owler.com/company/Creatio" target="_blank">&nbsp;</a></li>
+</ul>
+</div>
+
+<div class="footer-contact">
+<div class="footer-title">Connect with us</div>
+
+<div class="footer-content">
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+16177657997">USA: +1 617 765 7997</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+442033840040">UK: +44 20 3384 0040</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+61261452888">Australia: +61 261 452 888</a></div>
+</div>
+
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:info@creatio.com">info@creatio.com</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:support@creatio.com">support@creatio.com</a></div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+    <div class="creatio-region creatio-region_bottom">
+      <div class="creatio-container">
+          <div class="region region-bottom">
+    <div id="block-allrightsreserved" class="block block-simple-block block-simple-blockfooter-bottom">
+  
+    
+      <p>© 2025 Creatio. All rights reserved.&nbsp; |&nbsp; <a href="https://www.creatio.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="creatio-bg"></div>
+
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/docs\/","pathPrefix":"","currentPath":"node\/1422","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"94c0ca72342e8e43fd5c70378d64533b2b6422845e0b3fd749b2ff1b4bd0b914"}}</script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery_3.7.1_jquery.min.js?v=3.7.1"></script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery-once-2.2.3/jquery.once.min.js?v=2.2.3"></script>
+<script src="/docs/core/misc/drupalSettingsLoader.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.init.js?v=10.4.1"></script>
+<script src="/docs/libraries/fancybox/jquery.fancybox.min.js?v=1"></script>
+<script src="/docs/themes/custom/creatio_academy/js/fancybox.js?v=1"></script>
+<script src="/docs/libraries/prettify/prettify.js?v=1"></script>
+<script src="/docs/libraries/slick/slick.js?v=1"></script>
+<script src="/docs/libraries/jquery.nice-select/jquery.nice-select.js?v=1"></script>
+<script src="https://libraries.creatio.com/drupal_fixed_tabs/tabs.js"></script>
+<script src="/docs/themes/custom/creatio_academy/js/creatio.js?v=1"></script>
+<script src="/docs/libraries/jquery.cookie/jquery.cookie.js?szsnyq"></script>
+<script src="/docs/themes/custom/creatio_academy/js/notification.js?szsnyq"></script>
+<script src="/docs/modules/marketplace/ts_datalayer/js/ts-datalayer.js?szsnyq"></script>
+<script src="/docs/libraries/select2/js/select2.js?v=1"></script>
+<script src="/docs/libraries/select2/js/select2.position.js?v=1"></script>
+<script src="/docs/libraries/jquery.scrollbar/jquery.scrollbar.js?v=1"></script>
+<script src="/docs/modules/academy/ts_doc/js/ts-doc-version.js?szsnyq"></script>
+<script src="https://libraries.creatio.com/ts_country/index.js"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-breadcrumb.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-doc-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-page-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-sdk-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_title_anchor/js/ts-title-anchor.js?szsnyq"></script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <g id="svg-copy" class="svg-icon svg-icon_copy">
+        <path d="M15.111,18H1.889A1.848,1.848,0,0,1,0,16.2V3.6A1.848,1.848,0,0,1,1.889,1.8H5.837a2.87,2.87,0,0,1,5.326,0h3.948A1.848,1.848,0,0,1,17,3.6V16.2A1.848,1.848,0,0,1,15.111,18ZM3.777,12.6v1.8h6.611V12.6Zm0-3.6v1.8h9.445V9Zm0-3.6V7.2h9.445V5.4ZM8.5,1.8a.924.924,0,0,0-.944.9.945.945,0,0,0,1.889,0A.924.924,0,0,0,8.5,1.8Z"/>
+      </g>
+
+      <g id="svg-prev" class="svg-icon svg-icon_arrow">
+        <path d="M5.488,12.779,0,6.39,5.488,0" transform="translate(1 0.652)"/>
+      </g>
+
+      <g id="svg-next" class="svg-icon svg-icon_arrow">
+        <path d="M0,12.779,5.488,6.39,0,0" transform="translate(0.759 0.652)"/>
+      </g>
+    </svg>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "completed": {
+    "55O25NwAPas": {
+      "title": "creatio Live Stream",
+      "download_date": "2025-07-22T10:47:13.473776",
+      "file_path": "/home/andrewwork/academy.creatio.com/downloads/creatio - Live/55O25NwAPas_creatio Live Stream.%(ext)s",
+      "verified": true
+    },
+    "N8PSk0GBhC8": {
+      "title": "prueba",
+      "download_date": "2025-07-22T10:47:25.628483",
+      "file_path": "/home/andrewwork/academy.creatio.com/downloads/creatio - Live/N8PSk0GBhC8_prueba.%(ext)s",
+      "verified": true
+    },
+    "7GvZ6ZvHJjM": {
+      "title": "prueba 2",
+      "download_date": "2025-07-22T10:47:50.229392",
+      "file_path": "/home/andrewwork/academy.creatio.com/downloads/creatio - Live/7GvZ6ZvHJjM_prueba 2.%(ext)s",
+      "verified": true
+    }
+  },
+  "failed": {},
+  "total_videos": 4,
+  "downloaded_count": 3,
+  "failed_count": 0,
+  "last_updated": "2025-07-22T10:49:34.722560"
+}

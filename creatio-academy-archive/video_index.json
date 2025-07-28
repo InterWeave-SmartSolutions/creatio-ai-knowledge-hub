@@ -1,0 +1,401 @@
+{
+  "7513435512ea7f3f683e2dbb85bccb82": {
+    "source_file": "7513435512ea7f3f683e2dbb85bccb82.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=qyqnRbUHnjQ",
+      "https://www.youtube.com/watch?v=BdoiOu9ncmw"
+    ],
+    "metadata": {
+      "title": "Set up List components",
+      "description": "Use List components to display list of any object's records and filter the records if needed.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205665.4200623
+  },
+  "19013e69a6d98522043d2a67cdb60425": {
+    "source_file": "19013e69a6d98522043d2a67cdb60425.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Bulk duplicate search service",
+      "description": "Bulk duplicate search is a third-party service for bulk deduplication of Creatio section records.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205665.709012
+  },
+  "84ef2e0db89c233d8119a2e211cf81bb": {
+    "source_file": "84ef2e0db89c233d8119a2e211cf81bb.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Email Listener synchronization service",
+      "description": "The former Exchange Listener synchronization service is named \"Email Listener synchronization service\" since Creatio 8 Atlas to capture its essence better.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205665.9496977
+  },
+  "d24aa2424371efe9230f6d591d164f07": {
+    "source_file": "d24aa2424371efe9230f6d591d164f07.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=mHaGY1DxETw&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=2"
+    ],
+    "metadata": {
+      "title": "Integration tools overview",
+      "description": "Integration is data exchange between systems with or without subsequent data processing. The purpose of integration is to transfer custom data automatically between apps.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205668.9385033
+  },
+  "2b43d572d115877a942e41f6e39df66b": {
+    "source_file": "2b43d572d115877a942e41f6e39df66b.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Machine learning service",
+      "description": "The machine learning (lookup value prediction) service uses statistical analysis methods to make predictions based on historical data.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205669.5186765
+  },
+  "cadf64eca9c6e32426997d155f74c2b8": {
+    "source_file": "cadf64eca9c6e32426997d155f74c2b8.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Machine learning service",
+      "description": "The machine learning (lookup value prediction) service uses statistical analysis methods to make predictions based on historical data.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205669.8481185
+  },
+  "9b3fce0d6790d645c4c1f07c682bc25d": {
+    "source_file": "9b3fce0d6790d645c4c1f07c682bc25d.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=mHaGY1DxETw&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=2"
+    ],
+    "metadata": {
+      "title": "Integration tools overview",
+      "description": "Integration is data exchange between systems with or without subsequent data processing. The purpose of integration is to transfer custom data automatically between apps.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205672.7369318
+  },
+  "eaeea11a830ea4e299146df4243e9e38": {
+    "source_file": "eaeea11a830ea4e299146df4243e9e38.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Machine learning service",
+      "description": "The machine learning (lookup value prediction) service uses statistical analysis methods to make predictions based on historical data.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205675.6141741
+  },
+  "9273292f70e22b4cd5f389ec53fe3abb": {
+    "source_file": "9273292f70e22b4cd5f389ec53fe3abb.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=qyqnRbUHnjQ",
+      "https://www.youtube.com/watch?v=BdoiOu9ncmw"
+    ],
+    "metadata": {
+      "title": "Set up Button components",
+      "description": "Use Button components to enable users to take a wide variety of actions, from opening record pages to setting up access permissions.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205678.82353
+  },
+  "b0fbdbfd528faf7447f8f5e48da4fe8d": {
+    "source_file": "b0fbdbfd528faf7447f8f5e48da4fe8d.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=qyqnRbUHnjQ",
+      "https://www.youtube.com/watch?v=BdoiOu9ncmw"
+    ],
+    "metadata": {
+      "title": "Overview of Freedom UI Designer and its elements",
+      "description": "Freedom UI Designer is a visual drag-and-drop editor that lets you create and set up a fully responsive app layout (including mobile). You can create UIs from ready layout templates, such as pages with tabs and dashboards. You can also create a custom UI of any structure from scratch. Set up the pages in the new Freedom UI framework, which lets you modify the appearance of elements, manage data sources, and place page components arbitrarily.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205679.2365232
+  },
+  "a964386842c74c14efb4b21ab7b449ca": {
+    "source_file": "a964386842c74c14efb4b21ab7b449ca.html",
+    "videos": [
+      "https://youtu.be/lf-yWsJ4p0Q"
+    ],
+    "metadata": {
+      "title": "General Creatio deployment procedure",
+      "description": "This guide covers all steps needed to deploy and set up Creatio on-site on Windows or Linux, as well as links to detailed descriptions of each step.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205679.670821
+  },
+  "a2a41414ba61b04e98c8b76260c82407": {
+    "source_file": "a2a41414ba61b04e98c8b76260c82407.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Global search",
+      "description": "The global search integrates ElasticSearch with Creatio. Learn more: Wikipedia.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205681.6503847
+  },
+  "78490b0079748ec87c220952c4a8f655": {
+    "source_file": "78490b0079748ec87c220952c4a8f655.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Bulk duplicate search service",
+      "description": "Bulk duplicate search is a third-party service for bulk deduplication of Creatio section records.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205682.4382892
+  },
+  "bdfca867791158d2995a90123f7eb3e4": {
+    "source_file": "bdfca867791158d2995a90123f7eb3e4.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=DGz8SFw0fjs"
+    ],
+    "metadata": {
+      "title": "Portal basics",
+      "description": "Creatio portal is a no-code component that provides secure and managed access to Creatio data and functionality for internal and external users, customers, and partners. The interface and tools of the portal are the same as those of the main Creatio application. The portal development process has the same principles as development for the main application. Learn more about setting up the Creatio portal in the \"Getting started with Creatio portal\" article.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205682.7139676
+  },
+  "555bbad6b5dabdd66a2c246a366dc703": {
+    "source_file": "555bbad6b5dabdd66a2c246a366dc703.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=8AmvgePAPAE"
+    ],
+    "metadata": {
+      "title": "Set up the Microsoft Exchange and Microsoft 365 services",
+      "description": "To set up connection parameters for email providers, you must have the permission to run the \"Access to \"Access rights\" workspace\" (\"CanManageAdministration\" code) system operation. Learn more about using system operations: System operation permissions.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205687.023963
+  },
+  "ffd0e62922a7f7931f6a1d17771544ee": {
+    "source_file": "ffd0e62922a7f7931f6a1d17771544ee.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=ehjfcBxpLsQ&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=9"
+    ],
+    "metadata": {
+      "title": "OData basics",
+      "description": "The $count and $value OData 3 parameters will be retired in Creatio version 8.0.10.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205689.511507
+  },
+  "fdd7c37bbbc95727ff2af2be187b802b": {
+    "source_file": "fdd7c37bbbc95727ff2af2be187b802b.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=a5zefAhN3fk"
+    ],
+    "metadata": {
+      "title": "Customize sections",
+      "description": "A section is a UI element that represents a specific business entity and contains a set of records. For example, Accounts, Contacts, Activities, etc. Sections are available from the side panel. You can group sections into workplaces to improve usability for particular roles. Learn more about sections in the user documentation guide: Section.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205690.7194748
+  },
+  "4ae255ca5d75b37ae1f71df1673a13a6": {
+    "source_file": "4ae255ca5d75b37ae1f71df1673a13a6.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=a5zefAhN3fk"
+    ],
+    "metadata": {
+      "title": "Section",
+      "description": "A section is a UI element that represents a specific business entity and contains a set of records. For example, Accounts, Contacts, Activities, etc. Sections are available from the side panel. You can group sections into workplaces to improve usability for particular roles. Learn more about sections in the user documentation guide: Section.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205694.080977
+  },
+  "97565a9eba306f6c381c80ffc4b50a33": {
+    "source_file": "97565a9eba306f6c381c80ffc4b50a33.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=Qy7BsGrxbB0&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=5"
+    ],
+    "metadata": {
+      "title": "Version control using Git",
+      "description": "This article covers how to get started with Git in Creatio. The article starts with explaining the basics of Git, then moves on to the specifics of Git use in Creatio and Git setup. After you read the article, you will know what Git is, and have your Creatio instance set up and ready to go.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205694.2053528
+  },
+  "2f0a7d8bced61937de1e39254de0e8fe": {
+    "source_file": "2f0a7d8bced61937de1e39254de0e8fe.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Email Listener synchronization service",
+      "description": "The purpose of the Email Listener synchronization service is to synchronize Creatio with MS Exchange and IMAP/SMTP mail services using a subscription mechanism. This is the only method of working with mail services. Working with mail services without the microservice is not supported.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205695.1650374
+  },
+  "13f34c07f9e55ab49966df5eb6ea1f19": {
+    "source_file": "13f34c07f9e55ab49966df5eb6ea1f19.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=mHaGY1DxETw&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=2"
+    ],
+    "metadata": {
+      "title": "Integration tools overview",
+      "description": "Integration is data exchange between systems with or without subsequent data processing. The purpose of integration is to transfer custom data automatically between apps.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205695.9125526
+  },
+  "cc28b951987bdb0660a8e02cbbccde45": {
+    "source_file": "cc28b951987bdb0660a8e02cbbccde45.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=Qy7BsGrxbB0&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=5"
+    ],
+    "metadata": {
+      "title": "Version control using Git",
+      "description": "This article covers how to get started with Git in Creatio. The article starts with explaining the basics of Git, then moves on to the specifics of Git use in Creatio and Git setup. After you read the article, you will know what Git is, and have your Creatio instance set up and ready to go.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205697.6255696
+  },
+  "95fa072a38a6496e8793d6a37f4f25d9": {
+    "source_file": "95fa072a38a6496e8793d6a37f4f25d9.html",
+    "videos": [
+      "https://youtu.be/lf-yWsJ4p0Q"
+    ],
+    "metadata": {
+      "title": "General Creatio deployment procedure",
+      "description": "This guide covers all steps needed to deploy and set up Creatio on-site on Windows or Linux, as well as links to detailed descriptions of each step.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205702.4405873
+  },
+  "ea95e68efe2bb78d572a541fd8361285": {
+    "source_file": "ea95e68efe2bb78d572a541fd8361285.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Email Listener synchronization service",
+      "description": "The purpose of the Email Listener synchronization service is to synchronize Creatio with MS Exchange and IMAP/SMTP mail services using a subscription mechanism. This is the only method of working with mail services. Working with mail services without the microservice is not supported.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205702.456855
+  },
+  "874db82a7f7061768b365c973632ddc0": {
+    "source_file": "874db82a7f7061768b365c973632ddc0.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Global search",
+      "description": "The global search integrates ElasticSearch with Creatio. Learn more: Wikipedia.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205704.8105922
+  },
+  "8a489ff2ffd2ccfc7378db744c0dcbaf": {
+    "source_file": "8a489ff2ffd2ccfc7378db744c0dcbaf.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=ehjfcBxpLsQ"
+    ],
+    "metadata": {
+      "title": "DataService basics",
+      "description": "The Creatio DataService web service is a RESTfull service. RESTful is a quite simple information management interface that doesn't use any additional internal layers, i.e., the data doesn't need to be converted to any third-party format, such as XML. In a simple RESTful service, each record is uniquely identified by a global identifier such as URL. Each URL, in turn, has a strictly specified format. However, this service is not always convenient for transferring large amounts of data.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205705.9904933
+  },
+  "0b04c944f0283315ff66ece2203db788": {
+    "source_file": "0b04c944f0283315ff66ece2203db788.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Email Listener synchronization service",
+      "description": "The former Exchange Listener synchronization service is named \"Email Listener synchronization service\" since Creatio 8 Atlas to capture its essence better.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205706.0644367
+  },
+  "53a30dd6ab9cb69caf355a2275c7c200": {
+    "source_file": "53a30dd6ab9cb69caf355a2275c7c200.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Global search",
+      "description": "The global search integrates ElasticSearch with Creatio. Learn more: Wikipedia.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205706.4310396
+  },
+  "91b1fb9710c20807d1f262feaf2eb783": {
+    "source_file": "91b1fb9710c20807d1f262feaf2eb783.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=kZJe7CwHUXk"
+    ],
+    "metadata": {
+      "title": "Steps to develop the Marketplace app",
+      "description": "Steps to develop the Marketplace app are as follows:",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205707.0628786
+  },
+  "da01351cde088cd5a3964a50739e2180": {
+    "source_file": "da01351cde088cd5a3964a50739e2180.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Machine learning service",
+      "description": "The machine learning (lookup value prediction) service uses statistical analysis methods to make predictions based on historical data.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205711.0205116
+  },
+  "0386510f88f29e79d5bb99f7fb1422a0": {
+    "source_file": "0386510f88f29e79d5bb99f7fb1422a0.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=mHaGY1DxETw&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=2"
+    ],
+    "metadata": {
+      "title": "Integration tools overview",
+      "description": "Integration is data exchange between systems with or without subsequent data processing. The purpose of integration is to transfer custom data automatically between apps.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205711.4307728
+  },
+  "a736ee2e952d86504dbeea5fbb138e46": {
+    "source_file": "a736ee2e952d86504dbeea5fbb138e46.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=cwTI8pIa_5g"
+    ],
+    "metadata": {
+      "title": "Bulk duplicate search service",
+      "description": "Bulk duplicate search is a third-party service for bulk deduplication of Creatio section records.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205712.1337032
+  },
+  "2f0efb7a5c5c5938926d3cf212ad01f8": {
+    "source_file": "2f0efb7a5c5c5938926d3cf212ad01f8.html",
+    "videos": [
+      "https://www.youtube.com/watch?v=ehjfcBxpLsQ&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=9"
+    ],
+    "metadata": {
+      "title": "OData basics",
+      "description": "OData (Open Data Protocol) is an ISO/IEC-approved OASIS standard. It defines a set of best practices for building and using REST API. Use OData to create REST-based services that let you publish and edit resources using simple HTTP requests. Such resources must be identified via a URL and defined in the data model.",
+      "type": "Tech Hour"
+    },
+    "extracted_at": 1753205712.5374177
+  }
+}

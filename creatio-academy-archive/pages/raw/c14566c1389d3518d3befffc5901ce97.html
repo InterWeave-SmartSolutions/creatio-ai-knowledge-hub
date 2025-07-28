@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LocalizableValueCollection
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LocalizableValueCollection
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.LocalizableValueCollection">
+  
+  
+  <h1 id="Terrasoft_Common_LocalizableValueCollection" data-uid="Terrasoft.Common.LocalizableValueCollection" class="text-break">Class LocalizableValueCollection
+  </h1>
+  <div class="markdown level0 summary"><p>Provides methods of working with the collection of localized values.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</div>
+    <div class="level2"><span class="xref">LocalizableValueCollection</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</div>
+    <div><span class="xref">System.Collections.IList</span></div>
+    <div><span class="xref">System.Collections.ICollection</span></div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.Add(Terrasoft.Common.LocalizableValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.Clear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.CopyTo(Terrasoft.Common.LocalizableValue[], System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.Contains(Terrasoft.Common.LocalizableValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.IndexOf(Terrasoft.Common.LocalizableValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.Insert(System.Int32, Terrasoft.Common.LocalizableValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.Remove(Terrasoft.Common.LocalizableValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.RemoveAt(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.ClearItems()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.InsertItem(System.Int32, Terrasoft.Common.LocalizableValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.RemoveItem(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.SetItem(System.Int32, Terrasoft.Common.LocalizableValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IEnumerable.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.ICollection.CopyTo(System.Array, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.get_Item(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.Add(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.Contains(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.IndexOf(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.Insert(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.Count</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.Items</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.Generic.ICollection&lt;Terrasoft.Common.LocalizableValue&gt;.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.ICollection.IsSynchronized</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.ICollection.SyncRoot</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;Terrasoft.Common.LocalizableValue&gt;.System.Collections.IList.IsFixedSize</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.html">Terrasoft.Common</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_LocalizableValueCollection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LocalizableValueCollection : Collection&lt;LocalizableValue&gt;, IList&lt;LocalizableValue&gt;, ICollection&lt;LocalizableValue&gt;, IList, ICollection, IReadOnlyList&lt;LocalizableValue&gt;, IReadOnlyCollection&lt;LocalizableValue&gt;, IEnumerable&lt;LocalizableValue&gt;, IEnumerable, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection__ctor_" data-uid="Terrasoft.Common.LocalizableValueCollection.#ctor*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection__ctor" data-uid="Terrasoft.Common.LocalizableValueCollection.#ctor">LocalizableValueCollection()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableValueCollection()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection__ctor_" data-uid="Terrasoft.Common.LocalizableValueCollection.#ctor*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection__ctor_Terrasoft_Common_LocalizableValueCollection_" data-uid="Terrasoft.Common.LocalizableValueCollection.#ctor(Terrasoft.Common.LocalizableValueCollection)">LocalizableValueCollection(LocalizableValueCollection)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a> class using the specified collection of localized values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableValueCollection(LocalizableValueCollection source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Collection of localized values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection_Clone_" data-uid="Terrasoft.Common.LocalizableValueCollection.Clone*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection_Clone" data-uid="Terrasoft.Common.LocalizableValueCollection.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current collection <a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>New instance <a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a>, which is a copy of the current collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection_FindByItemName_" data-uid="Terrasoft.Common.LocalizableValueCollection.FindByItemName*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection_FindByItemName_System_String_" data-uid="Terrasoft.Common.LocalizableValueCollection.FindByItemName(System.String)">FindByItemName(String)</h4>
+  <div class="markdown level1 summary"><p>Searches for the item by the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableValue FindByItemName(string itemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemName</span></td>
+        <td><p>Name of the item to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a></td>
+        <td><p>Found value of the property with the <code data-dev-comment-type="paramref" class="paramref">itemName</code> name of the <a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a> type. If the item with the name <code data-dev-comment-type="paramref" class="paramref">itemName</code> was not found in the current collection, then <code>null</code> is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>. When passing as a parameter <code data-dev-comment-type="paramref" class="paramref">itemName</code> of the <code>null</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection_GetByItemName_" data-uid="Terrasoft.Common.LocalizableValueCollection.GetByItemName*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection_GetByItemName_System_String_" data-uid="Terrasoft.Common.LocalizableValueCollection.GetByItemName(System.String)">GetByItemName(String)</h4>
+  <div class="markdown level1 summary"><p>Gets an element with the specified name or generates exception if the element was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableValue GetByItemName(string itemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemName</span></td>
+        <td><p>Name of the item to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a></td>
+        <td><p>Collection item with the <code data-dev-comment-type="paramref" class="paramref">itemName</code> name of the <a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ItemNotFoundException.html">ItemNotFoundException</a></td>
+        <td><p>If the item with the name <code data-dev-comment-type="paramref" class="paramref">itemName</code> is not found. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection_GetDifferenceByName_" data-uid="Terrasoft.Common.LocalizableValueCollection.GetDifferenceByName*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection_GetDifferenceByName_Terrasoft_Common_LocalizableValueCollection_" data-uid="Terrasoft.Common.LocalizableValueCollection.GetDifferenceByName(Terrasoft.Common.LocalizableValueCollection)">GetDifferenceByName(LocalizableValueCollection)</h4>
+  <div class="markdown level1 summary"><p>Compares the current and specified collections and gets a collection of items that have different names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableValueCollection GetDifferenceByName(LocalizableValueCollection subtrahend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a></td>
+        <td><span class="parametername">subtrahend</span></td>
+        <td><p>Collection of localized values that are compared with the items of the current collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a></td>
+        <td><p>Difference by item name between the current and specified collection <code data-dev-comment-type="paramref" class="paramref">subtrahend</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_LocalizableValueCollection_GetDifferenceByName_Terrasoft_Common_LocalizableValueCollection__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method creates a copy of the current collection and searches <code data-dev-comment-type="paramref" class="paramref">subtrahend</code> items by name in the current collection. If the item has been found, it is deleted from the created copy of the current collection.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentEmptyException.html">ArgumentEmptyException</a></td>
+        <td><p>When passing the <code data-dev-comment-type="paramref" class="paramref">subtrahend</code> as a parameter of the <code>null</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection_GetDifferenceByValues_" data-uid="Terrasoft.Common.LocalizableValueCollection.GetDifferenceByValues*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection_GetDifferenceByValues_Terrasoft_Common_LocalizableValueCollection_System_Globalization_CultureInfo_" data-uid="Terrasoft.Common.LocalizableValueCollection.GetDifferenceByValues(Terrasoft.Common.LocalizableValueCollection,System.Globalization.CultureInfo)">GetDifferenceByValues(LocalizableValueCollection, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Returns the collection of elements that contains the difference by value between the current collection
+and the specified collection, given the specified culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableValueCollection GetDifferenceByValues(LocalizableValueCollection subtrahend, CultureInfo culture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a></td>
+        <td><span class="parametername">subtrahend</span></td>
+        <td><p>A collection of localizable values that are compared to elements of the current collection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>Culture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a></td>
+        <td><p>The difference by value between the current collection and the specified collection 
+<code data-dev-comment-type="paramref" class="paramref">subtrahend</code>, given the specified <code data-dev-comment-type="paramref" class="paramref">culture</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentEmptyException.html">ArgumentEmptyException</a></td>
+        <td><p>Throws if <code data-dev-comment-type="paramref" class="paramref">subtrahend</code>
+or <code data-dev-comment-type="paramref" class="paramref">culture</code> is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection_GetDifferenceByValues_" data-uid="Terrasoft.Common.LocalizableValueCollection.GetDifferenceByValues*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection_GetDifferenceByValues_Terrasoft_Common_LocalizableValueCollection_System_Globalization_CultureInfo_System_Boolean_" data-uid="Terrasoft.Common.LocalizableValueCollection.GetDifferenceByValues(Terrasoft.Common.LocalizableValueCollection,System.Globalization.CultureInfo,System.Boolean)">GetDifferenceByValues(LocalizableValueCollection, CultureInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns the collection of elements that contains the difference by value between the current collection
+and the specified collection, given the specified culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableValueCollection GetDifferenceByValues(LocalizableValueCollection subtrahend, CultureInfo culture, bool useLoadedCultureValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a></td>
+        <td><span class="parametername">subtrahend</span></td>
+        <td><p>A collection of localizable values that are compared to elements of the current collection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>Culture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useLoadedCultureValues</span></td>
+        <td><p>Indicates whether to compare culture values that are already loaded
+or try loading from resource manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableValueCollection.html">LocalizableValueCollection</a></td>
+        <td><p>The difference by value between the current collection and the specified collection 
+<code data-dev-comment-type="paramref" class="paramref">subtrahend</code>, given the specified <code data-dev-comment-type="paramref" class="paramref">culture</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentEmptyException.html">ArgumentEmptyException</a></td>
+        <td><p>Throws if <code data-dev-comment-type="paramref" class="paramref">subtrahend</code>
+or <code data-dev-comment-type="paramref" class="paramref">culture</code> is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableValueCollection_RemoveByItemName_" data-uid="Terrasoft.Common.LocalizableValueCollection.RemoveByItemName*"></a>
+  <h4 id="Terrasoft_Common_LocalizableValueCollection_RemoveByItemName_System_String_" data-uid="Terrasoft.Common.LocalizableValueCollection.RemoveByItemName(System.String)">RemoveByItemName(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes the item with name <code data-dev-comment-type="paramref" class="paramref">itemName</code> from the current collection of localized values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveByItemName(string itemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemName</span></td>
+        <td><p>The name of the collection item to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if an element with name <code data-dev-comment-type="paramref" class="paramref">itemName</code> has been successfully deleted from the collection; else - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IList</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.ICollection</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_AddRange__1_System_Collections_Generic_ICollection___0__System_Collections_Generic_IEnumerable___0__">CollectionUtilities.AddRange&lt;T&gt;(ICollection&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_RemoveRange__1_System_Collections_Generic_ICollection___0__System_Collections_Generic_IEnumerable___0__">CollectionUtilities.RemoveRange&lt;T&gt;(ICollection&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_AddIfNotExists__1_System_Collections_Generic_ICollection___0____0_">CollectionUtilities.AddIfNotExists&lt;T&gt;(ICollection&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_AddRangeIfNotExists__1_System_Collections_Generic_ICollection___0__System_Collections_Generic_IEnumerable___0__">CollectionUtilities.AddRangeIfNotExists&lt;T&gt;(ICollection&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_Find__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__">CollectionUtilities.Find&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_Find__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0____0_">CollectionUtilities.Find&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">CollectionUtilities.ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Action___0__">CollectionUtilities.ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_ForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task__">CollectionUtilities.ForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_ParallelForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task__">CollectionUtilities.ParallelForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_ParallelForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task__System_Int32_">CollectionUtilities.ParallelForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Task&gt;, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_GetItemsString__1_System_Collections_Generic_IEnumerable___0__">CollectionUtilities.GetItemsString&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_GetItemsString__1_System_Collections_Generic_IEnumerable___0__System_String_">CollectionUtilities.GetItemsString&lt;T&gt;(IEnumerable&lt;T&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_SplitOnChunks__1_System_Collections_Generic_IEnumerable___0__System_Int32_">CollectionUtilities.SplitOnChunks&lt;T&gt;(IEnumerable&lt;T&gt;, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_SplitOnParts__1_System_Collections_Generic_IEnumerable___0__System_Int32_">CollectionUtilities.SplitOnParts&lt;T&gt;(IEnumerable&lt;T&gt;, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_IsNotEmpty_System_Collections_IEnumerable_">CollectionUtilities.IsNotEmpty(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_IsEmpty_System_Collections_IEnumerable_">CollectionUtilities.IsEmpty(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_IsNullOrEmpty_System_Collections_IEnumerable_">CollectionUtilities.IsNullOrEmpty(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_IsNotNullOrEmpty_System_Collections_IEnumerable_">CollectionUtilities.IsNotNullOrEmpty(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_CompareZip__2_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___1__System_Func___0___1_System_Boolean__">CollectionUtilities.CompareZip&lt;TFirst, TSecond&gt;(IEnumerable&lt;TFirst&gt;, IEnumerable&lt;TSecond&gt;, Func&lt;TFirst, TSecond, Boolean&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_Except__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Func___0___0_System_Boolean__">CollectionUtilities.Except&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;, Func&lt;T, T, Boolean&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_TryGetItemByIndex__1_System_Collections_ObjectModel_Collection___0__System_Int32___0__">CollectionUtilities.TryGetItemByIndex&lt;TItem&gt;(Collection&lt;TItem&gt;, Int32, out TItem)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_Compare__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__">CollectionUtilities.Compare&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__System_String_">ValidateUtilities.CheckArgumentNullOrEmpty&lt;T&gt;(IEnumerable&lt;T&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

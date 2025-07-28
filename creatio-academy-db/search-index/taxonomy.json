@@ -1,0 +1,104 @@
+{
+  "taxonomy_version": "1.0.0",
+  "last_updated": "2024-01-01",
+  "categories": {
+    "difficulty_levels": {
+      "beginner": {
+        "description": "Entry-level content for new users",
+        "prerequisites": "None",
+        "estimated_time": "< 1 hour per topic"
+      },
+      "intermediate": {
+        "description": "Content requiring basic platform knowledge",
+        "prerequisites": "Basic Creatio familiarity",
+        "estimated_time": "1-3 hours per topic"
+      },
+      "advanced": {
+        "description": "Complex topics for experienced users",
+        "prerequisites": "Intermediate knowledge + development experience", 
+        "estimated_time": "3+ hours per topic"
+      }
+    },
+    "content_types": {
+      "tutorial": "Step-by-step instructional content",
+      "guide": "Comprehensive topic coverage",
+      "reference": "Quick lookup information",
+      "example": "Sample implementations",
+      "troubleshooting": "Problem-solving content",
+      "best_practices": "Recommended approaches"
+    },
+    "platform_areas": {
+      "ui_ux": {
+        "name": "User Interface & Experience",
+        "subtopics": ["pages", "sections", "controls", "mobile", "freedom_ui"]
+      },
+      "data_model": {
+        "name": "Data Model & Entities",
+        "subtopics": ["objects", "fields", "relationships", "lookups", "validation"]
+      },
+      "business_processes": {
+        "name": "Business Processes",
+        "subtopics": ["bpmn", "dcm", "workflows", "automation", "approval"]
+      },
+      "development": {
+        "name": "Custom Development", 
+        "subtopics": ["csharp", "javascript", "packages", "extensions", "apis"]
+      },
+      "integration": {
+        "name": "Integration & APIs",
+        "subtopics": ["rest_api", "odata", "webhooks", "etl", "external_systems"]
+      },
+      "administration": {
+        "name": "System Administration",
+        "subtopics": ["configuration", "security", "permissions", "deployment", "monitoring"]
+      },
+      "analytics": {
+        "name": "Analytics & Reporting",
+        "subtopics": ["dashboards", "reports", "charts", "kpi", "business_intelligence"]
+      }
+    },
+    "technical_tags": {
+      "programming_languages": ["csharp", "javascript", "sql", "html", "css"],
+      "technologies": ["rest", "soap", "odata", "oauth", "jwt", "json", "xml"],
+      "databases": ["mssql", "oracle", "postgresql"],
+      "platforms": ["windows", "linux", "cloud", "onpremise"],
+      "integrations": ["salesforce", "microsoft365", "google", "sap", "custom"]
+    },
+    "user_roles": {
+      "end_user": "Business users working with the platform",
+      "administrator": "System administrators and configurators", 
+      "developer": "Custom development and advanced configuration",
+      "analyst": "Business analysts and process designers",
+      "architect": "Solution architects and technical leads"
+    },
+    "versions": {
+      "8.0": {
+        "status": "supported",
+        "release_date": "2021-01-01",
+        "end_of_support": "2025-01-01"
+      },
+      "8.1": {
+        "status": "current",
+        "release_date": "2022-01-01", 
+        "end_of_support": "2026-01-01"
+      },
+      "8.2": {
+        "status": "latest",
+        "release_date": "2023-01-01",
+        "end_of_support": "2027-01-01"
+      }
+    }
+  },
+  "tagging_rules": {
+    "required_tags": ["difficulty", "content_type", "platform_area"],
+    "optional_tags": ["technical_tags", "user_roles", "versions"],
+    "max_tags_per_content": 10,
+    "tag_format": "lowercase_with_underscores"
+  },
+  "relationships": {
+    "prerequisites": "Content that should be understood first",
+    "related": "Content covering similar or complementary topics", 
+    "follow_up": "Logical next steps in learning progression",
+    "references": "External or supporting materials"
+  }
+}

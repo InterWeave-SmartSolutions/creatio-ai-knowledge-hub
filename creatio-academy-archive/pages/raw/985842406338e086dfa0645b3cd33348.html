@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+          <!-- Google Tag Manager -->
+      <script nonce="dbb706841d88ead6b2a188c694a9b767">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+          n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5C6KM9TP');</script>
+      <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+<meta name="description" content="Feature toggle is a software development technique. The purpose of the feature toggle is to manage the additional feature status in a live application. Feature toggle lets you use continuous integration while preserving the working capacity of the application and hiding features you are still developing. The application source code contains the additional feature block and the conditional operator that checks the feature status." />
+<link rel="canonical" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/interface_control_tools/existing_feature/overview" />
+<meta property="og:url" content="https://academy.creatio.com/docs/7-18/developer/interface_elements/interface_control_tools/existing_feature/overview" />
+<meta property="og:title" content="Feature Toggle mechanism" />
+<meta property="og:description" content="Feature toggle is a software development technique. The purpose of the feature toggle is to manage the additional feature status in a live application. Feature toggle lets you use continuous integration while preserving the working capacity of the application and hiding features you are still developing. The application source code contains the additional feature block and the conditional operator that checks the feature status." />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/docs/sites/academy_en/themes/creatio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/interface_control_tools/existing_feature/overview" />
+
+    <title>Feature Toggle mechanism | Creatio Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="https://libraries.creatio.com/drupal_fixed_tabs/tabs.css" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/align.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/fieldgroup.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/container-inline.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/clearfix.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/details.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/hidden.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/item-list.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/js.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/nowrap.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/position-container.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/reset-appearance.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/resize.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-counter.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-counters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-general-info.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/tablesort.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/modules/academy/ts_title_anchor/css/ts-title-anchor.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/core/modules/layout_discovery/layouts/onecol/onecol.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/assets/vendor/normalize-css/normalize.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/normalize-fixes.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/bootstrap4/css/bootstrap.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme-dark.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/slick/slick.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.nice-select/jquery.nice-select.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/base.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/elements.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/fonts.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.scrollbar/jquery.scrollbar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/select2/css/select2.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/layouts/layout.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/action-links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/breadcrumb.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/button.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/collapse-processed.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/container-inline.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/details.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/exposed-filters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/field.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/icons.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/inline-form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/item-list.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/menu.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/more-link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/pager.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabledrag.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tableselect.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tablesort.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabs.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/textarea.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/ui-dialog.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/node.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/fancybox/jquery.fancybox.min.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/fancybox.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/block.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/footer.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/header.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/sidebar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/notification.css?szsnyq" />
+<link rel="stylesheet" media="print" href="/docs/themes/custom/creatio_academy/css/theme/print.css?szsnyq" />
+
+    
+  </head>
+  <body class="path-node page-node-type-developer-documentation">
+          <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="creatio-page d-flex flex-column">
+        <div class="region region-informer">
+    <div id="block-notification-union" class="block block-simple-block block-simple-blocknotification-union">
+  
+    
+      <div id="union-notification">
+<div class="union-content notification-com">
+<p class="union-subtitle">This documentation is valid for Creatio version 7.17(7.18).</p>
+
+<p class="union-subtitle">We recommend using <a href="https://academy.creatio.com/docs/8.x/" target="_blank">the newest version of Creatio documentation</a>.</p>
+
+<!-- <div class="union-close">&nbsp;</div> -->
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+  <header role="banner">
+          <div class="creatio-region creatio-region_top">
+        <div class="creatio-container">
+            <div class="region region-top">
+    <div id="block-menutoggle" class="block block-simple-block block-simple-blockmenu-toggle">
+  
+    
+      <div class="menu-toggle"><span>&nbsp;</span></div>
+
+  </div>
+<div id="block-logowhite-2" class="block block-simple-block block-simple-blocklogo-white">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo-white.svg"></a></p>
+
+  </div>
+<div id="block-search" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-sites-menu" id="block-sites" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-usermenu" class="block block-ts-user block-ts-user-menu-block">
+  
+    
+      <ul class="user-menu">
+      <li class="user-menu__item">
+      <a class="user-menu__link" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/interface_control_tools/existing_feature/overview">Log in</a>
+    </li>
+  </ul>
+
+  </div>
+<div id="block-usermenumobile" class="block block-ts-user block-ts-user-menu-mobile-block">
+  
+    
+      <ul class="user-menu-mobile">
+      <li class="user-menu-mobile__item">
+      <div class="user-menu-mobile__user user-menu-mobile__user_icon"></div>
+      <ul class="user-menu-mobile__submenu">
+        <li class="user-menu-mobile__subitem">
+          <a class="user-menu-mobile__sublink" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/interface_control_tools/existing_feature/overview">Log in</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+              <div class="creatio-region creatio-region_header">
+        <div class="creatio-container">
+            <div class="region region-header">
+    <div id="block-logo" class="block block-simple-block block-simple-blocklogo">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo.svg"></a></p>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/docs/8.x">Guides</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/e-learning">E-learning</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/training">Training</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/certification">Certification</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-sites-2-menu" id="block-sites-2" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-2-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-search-2" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+      </header>
+
+      <div class="creatio-region creatio-region_breadcrumb">
+      <div class="creatio-container">
+          <div class="region region-breadcrumb">
+    <div id="block-breadcrumbnaviagtion" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements/interface_control_tools" class="ts-nav-breadcrumb__link" title="Interface control tools" hreflang="en">Interface control tools</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  
+  <div class="creatio-region creatio-region_main">
+    <div class="creatio-container">
+                <div class="region region-breadcrumb-mobile">
+    <div id="block-breadcrumbnaviagtion-2" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements/interface_control_tools" class="ts-nav-breadcrumb__link" title="Interface control tools" hreflang="en">Interface control tools</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      
+      <main class="creatio-main" role="main">
+                                                    
+        <div class="creatio-content creatio-content_small">
+          <div class="creatio-content__inner creatio-content__inner_bg">
+                            <div class="region region-messages">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            
+              <div class="region region-content">
+    <div id="block-creatio-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Feature Toggle mechanism</span>
+</h1>
+
+
+  </div>
+<div id="block-creatio-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article data-history-node-id="1655" class="node node--type-developer-documentation node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-ts-nav block-ts-nav-sdk-navigation">
+  
+    
+      <div class="ts-nav-sdk">
+  <div class="ts-nav-sdk__container">
+    <div class="ts-nav-sdk__items">
+      <div class="ts-nav-sdk__item">
+        <a class="ts-nav-sdk__link ts-nav-sdk__link_active" href="#"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_guide"></span>Guide</a>
+      </div>
+    </div>
+  </div>
+        <div class="ts-nav-sdk__container">
+      <ul class="ts-nav-sdk__items">
+                                <li class="ts-nav-sdk__item">
+          <a class="ts-nav-sdk__link" data-id="2431" href="#reference-2431"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_reference" data-type="C#"></span>References</a>
+                  </li>
+      </ul>
+    </div>
+  </div>
+<div class="ts-nav-sdk-mobile">
+  <select class="ts-nav-sdk-mobile__select">
+    <option value="0">Guide</option>
+              <optgroup label="References">
+                  <option value="2431">FeatureUtilities class</option>
+              </optgroup>
+      </select>
+</div>
+
+  </div>
+<div class="block block-ts-doc block-ts-doc-versions">
+  
+    
+        <div class="ts-doc-versions">
+    <select class="ts-doc-versions__select">
+                                                <option value="/docs/7-18/developer/interface_elements/interface_control_tools/existing_feature/overview" selected>Version 7.18</option>
+                              <option value="/docs/7-17/developer/interface_elements/interface_control_tools/existing_feature/overview">Version 7.17</option>
+                              <option value="/docs/7-16/developer/interface_elements/interface_control_tools/existing_feature/overview">Version 7.16</option>
+          </select>
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationbody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><strong>Feature toggle</strong> is a software development technique. The <strong>purpose</strong> of the feature toggle is to manage the additional feature status in a live application.</p>
+
+<p>Feature toggle lets you use continuous integration while preserving the working capacity of the application and hiding features you are still developing. The application source code contains the additional feature block and the conditional operator that checks the feature status.</p>
+
+<p>Learn more about the Feature toggle mechanism in <a href="https://en.wikipedia.org/w/index.php?title=Feature_toggle&amp;oldid=1072248468" target="_blank">Wikipedia</a>.</p>
+
+<h2>Store the feature details<a class="title-anchor" href="#title-3459-4" id="title-3459-4">&nbsp;</a></h2>
+
+<p>Creatio stores the feature details in the following database <strong>tables</strong>:</p>
+
+<ul>
+	<li><span class="filled">[Feature]</span>. Stores the list of features you can toggle. Empty by default.</li>
+	<li><span class="filled">[AdminUnitFeatureState]</span> (the <span class="filled">[FeatureState]</span> column). Stores the is the additional feature status (turned on/off). The <span class="filled">[AdminUnitFeatureState]</span> table connects the <span class="filled">[Feature]</span> and the <span class="filled">[SysAdminUnit]</span> database tables. <span class="filled">[SysAdminUnit]</span> is the additional feature status for Creatio users and user groups.</li>
+</ul>
+
+<p>View the relationship chart between tables that store the additional feature details in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/FeatureToggle/7.18/scr_featuretoggle_diagram.png"></div>
+</div>
+
+<p>View the primary columns of the <span class="filled">[Feature]</span> database table below.</p>
+
+<div class="table">
+<div class="table__caption">Primary columns of the <span class="filled">[Feature]</span> table</div>
+
+<table>
+	<tbody>
+		<tr>
+			<th width="20%">Column</th>
+			<th width="20%">Type</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><span class="filled">[Id]</span></td>
+			<td><span class="filled">uniqueidentifier</span></td>
+			<td>The unique ID of the record.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[Name]</span></td>
+			<td><span class="filled">nvarchar(250)</span></td>
+			<td>The name of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[Code]</span></td>
+			<td><span class="filled">nvarchar( 50 )</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p>View the primary columns of the <span class="filled">[AdminUnitFeatureState]</span> database table below.</p>
+
+<div class="table">
+<div class="table__caption">Primary columns of the <span class="filled">[AdminUnitFeatureState]</span> table</div>
+
+<table>
+	<tbody>
+		<tr>
+			<th width="20%">Column</th>
+			<th width="20%">Type</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><span class="filled">[Id]</span></td>
+			<td><span class="filled">uniqueidentifier</span></td>
+			<td>The unique ID of the record.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[FeatureId]</span></td>
+			<td><span class="filled">uniqueidentifier</span></td>
+			<td>The unique ID of the record from the <span class="filled">[Feature]</span> table.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[SysAdminUnitId]</span></td>
+			<td><span class="filled">uniqueidentifier</span></td>
+			<td>The unique ID of the user record.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">[FeatureState]</span></td>
+			<td><span class="filled">int</span></td>
+			<td>The status of the feature (<span class="filled">1</span>: turned on, <span class="filled">0</span>: turned off).</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h2>Turn on the additional feature<a class="title-anchor" href="#title-3459-1" id="title-3459-1">&nbsp;</a></h2>
+
+<p>You can manage the additional feature status in several <strong>ways</strong>:</p>
+
+<ul>
+	<li>for current Creatio user</li>
+	<li>for all Creatio users</li>
+</ul>
+
+<h3>Turn on the feature for current Creatio user<a class="title-anchor" href="#title-3459-2" id="title-3459-2">&nbsp;</a></h3>
+
+<ol>
+	<li>
+	<p>Open the <span class="key">Features</span> page that lets you use to turn the feature on selectively.</p>
+
+	<div class="SimpleTabContainer" data-itemid="JSON" data-title="JSON" id="Syntax_JSON">
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__source" data-tab="Template of the feature page URL">
+	<pre class="prettyprint">
+[Creatio URL]/0/Nui/ViewModule.aspx#BaseSchemaModuleV2/FeaturesPage
+</pre>
+	</div>
+
+	<div class="code__source" data-tab="Example of the feature page's URL">
+	<pre class="prettyprint">
+http://mycreatio.com/0/Nui/ViewModule.aspx#BaseSchemaModuleV2/FeaturesPage
+</pre>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Turn on the corresponding switch for the needed feature.</li>
+	<li>Click <span class="key">Save changes</span>.</li>
+</ol>
+
+<p>The tooltip displays the status of the feature for the user group of the current user. Changing the feature status on the page does not change the feature status for the user group of the current user. In this case, Creatio adds an extra rule only for the current user. This rule has a higher priority than the rule for the user group.</p>
+
+<p>View the example of the <span class="key">Features</span> page in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/FeatureToggle/8.0/scr_FeatureToggle_page.png"></div>
+</div>
+
+<h3>Turn on the feature for all Creatio users<a class="title-anchor" href="#title-3459-3" id="title-3459-3">&nbsp;</a></h3>
+
+<p>To <strong>turn on the feature for all Creatio users</strong>, execute a database query. You can use one of example queries below.</p>
+
+<div class="code">
+<div class="code__top">
+<div class="code__title">Example of an SQL query</div>
+
+<div class="code__langs">
+<div class="code__lang code__lang_active">Microsoft SQL</div>
+
+<div class="code__lang">PostgreSQL</div>
+
+<div class="code__lang">Oracle</div>
+</div>
+</div>
+
+<div class="code__widgets">
+<div class="code__source code__source_active" data-insert="false" data-type="MSSQL">
+<pre class="prettyprint">
+DECLARE @featureCode varchar(max) = 'NewEmailSettingsWithoutAutoSynchronization', @featureId uniqueidentifier;
+set @featureId = (select top 1 Id from Feature where Code = @featureCode);
+IF @featureId is null
+    BEGIN
+        insert into Feature
+            (Name, Code)
+        values
+            (@featureCode, @featureCode);
+        set @featureId = (select top 1 Id from Feature where Code = @featureCode);
+    END;
+delete from AdminUnitFeatureState where FeatureId = @featureId;
+insert into AdminUnitFeatureState
+    (SysAdminUnitId, FeatureState, FeatureId)
+    values
+        ('A29A3BA5-4B0D-DE11-9A51-005056C00008', 1, @featureId),
+        ('720B771C-E7A7-4F31-9CFB-52CD21C3739F', 1, @featureId);
+</pre>
+</div>
+
+<div class="code__source" data-insert="false" data-type="PostgreSQL">
+<pre class="prettyprint">
+do $$
+    DECLARE
+        featureCode varchar(100) = 'EmailIntegrationV2';
+        featureId UUID;
+    BEGIN
+        featureId = (select "Id" from "Feature" where "Code" = featureCode limit 1);
+        IF featureId is null THEN
+            insert into "Feature"
+                ("Name", "Code")
+            values
+                (featureCode, featureCode);
+            featureId = (select "Id" from "Feature" where "Code" = featureCode limit 1);
+        end IF;
+    delete from "AdminUnitFeatureState" where "FeatureId" = featureId;
+    insert into "AdminUnitFeatureState"
+        ("SysAdminUnitId", "FeatureState", "FeatureId")
+        values
+            ('A29A3BA5-4B0D-DE11-9A51-005056C00008', 1, featureId),
+            ('720B771C-E7A7-4F31-9CFB-52CD21C3739F', 1, featureId);
+end $$;
+</pre>
+</div>
+
+<div class="code__source" data-insert="false" data-type="Oracle">
+<pre class="prettyprint">
+DECLARE
+    existObject NUMBER := 0;
+    v_featurecode VARCHAR2(50) := 'LoadAttachmentsInSameProcess';
+    v_featureid VARCHAR2(38);
+BEGIN
+    SELECT COUNT(1) INTO existObject FROM "Feature" WHERE "Code" = v_featurecode;
+    if existObject = 0 THEN 
+        INSERT INTO "Feature" ("Name", "Code") VALUES (:v_featurecode, :v_featurecode);
+    END IF; 
+SELECT "Id" INTO v_featureid FROM "Feature" WHERE "Code" = v_featurecode AND rownum &lt;= 1;
+DELETE FROM "AdminUnitFeatureState" WHERE "FeatureId" = v_featureid;
+INSERT INTO "AdminUnitFeatureState" ("SysAdminUnitId", "FeatureState", "FeatureId") 
+    VALUES ('{A29A3BA5-4B0D-DE11-9A51-005056C00008}', 1, v_featureid);
+END;
+/
+</pre>
+</div>
+</div>
+</div>
+
+<p><span class="filled">featureCode</span> specifies the name of the needed feature.</p>
+
+<p>You can use SQL queries to turn on the feature for the user group, turn off the feature for current user and vice versa.</p>
+
+<p>Run the SQL query that has <span class="consolas">0</span> in the <span class="filled">[FeatureState]</span> column of the <span class="filled">[AdminUnitFeatureState]</span> table to <strong>turn off the feature for all Creatio users</strong>.</p>
+
+<div class="message message_warning">
+<p><span class="message__bold message__bold_warning">Attention.</span> If you turn the feature on using a database query, turn it off using another query.</p>
+</div>
+
+<h2>Implement a custom feature<a class="title-anchor" href="#title-3459-3" id="title-3459-3">&nbsp;</a></h2>
+
+<ol>
+	<li>
+	<p>Add <strong>a custom feature</strong>.</p>
+
+	<ol>
+		<li>Open the <span class="key">Features</span> page that lets you turn the feature on selectively.</li>
+		<li>
+		<p>Fill out the <strong>properties of the feature to add</strong>:</p>
+
+		<ul>
+			<li>Enter the custom feature code in the <span class="key">Feature code</span> property. Required.</li>
+			<li>Enter the custom feature name in the <span class="key">Feature name</span> property.</li>
+			<li>Enter the custom feature description in the <span class="key">Feature description</span> property.</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/FeatureToggle/8.0/scr_feature_props.png"></div>
+		</div>
+		</li>
+		<li>Click <span class="key">Create feature</span>.</li>
+	</ol>
+
+	<p>As a result, Creatio will add the custom feature to the <span class="key">Features</span> page list.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/FeatureToggle/8.0/scr_feature_result.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Implement <strong>a custom feature in the source code</strong>. Implement the custom feature in the block of the conditional operator that checks the feature status (i.&nbsp;e. the <span class="filled">[FeatureState]</span> column value from the <span class="filled">[AdminUnitFeatureState]</span> database table).</p>
+
+	<p>You can implement a custom feature in several <strong>ways</strong>:</p>
+
+	<ul>
+		<li>In the front-end. To do this, follow the guide in a different section: <a href="https://academy.creatio.com/documents?id=15631&amp;anchor=title-3459-5">Implement a custom feature in the front-end</a>.</li>
+		<li>In the back-end. To do this, follow the guide in a a different section: <a href="https://academy.creatio.com/documents?id=15631&amp;anchor=title-3459-6">Implement a custom feature in the back-end</a>.</li>
+	</ul>
+	</li>
+</ol>
+
+<h3>Implement a custom feature in the front-end<a class="title-anchor" href="#title-3459-5" id="title-3459-5">&nbsp;</a></h3>
+
+<ol>
+	<li>Create a view model schema. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15106&amp;anchor=title-3028-15">Client module</a>.</li>
+	<li>
+	<p>Add the source code in the Module Designer. You can use the template below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title">Template to implement a custom feature</div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+/* Method that defines the additional feature. */
+someMethod: function() {
+    /* Check if the feature is connected. */
+    if (Terrasoft.Features.getIsEnabled("FeatureCode")) {
+        /* Implement the additional feature. */
+        ...
+    }
+    /* Implement the method. */
+    ...
+}
+</pre>
+	</div>
+	</div>
+	</div>
+
+	<p>The <span class="filled">getIsFeatureEnabled</span> method of the <span class="filled">BaseSchemaViewModel</span> base view model schema lets you streamline the workflow. As such, you can replace the <span class="filled">Terrasoft.Features.getIsEnabled</span> method with the <span class="filled">this.getIsFeatureEnabled("FeatureCode")</span> method.</p>
+	</li>
+	<li>Click <span class="key">Save</span>.</li>
+</ol>
+
+<p>Refresh the page to add the custom feature to the client code and display the feature on the browser page.</p>
+
+<h3>Implement a custom feature in the back-end<a class="title-anchor" href="#title-3459-6" id="title-3459-6">&nbsp;</a></h3>
+
+<ol>
+	<li>Create a <span class="key">Source code</span> schema. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15108&amp;anchor=title-3028-8">Source code (C#)</a>.</li>
+	<li>
+	<p>Add the source code in the Source Code Designer.</p>
+
+	<p>The <span class="filled">Terrasoft.Configuration.FeatureUtilities</span> class provides a set of extension methods to the <span class="filled">UserConnection</span> class. These methods let you use the <span class="filled">Feature toggle</span> functionality in the source code schemas of the Creatio back-end. You can use the template below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title">Template to implement a custom feature</div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+...
+/* The namespace that lets you toggle a feature. */
+using Terrasoft.Configuration;
+...
+/* The method that implements an additional feature. */
+public void AnyMethod() {
+    /* Check if the feature is connected. */
+    if (UserConnection.GetIsFeatureEnabled("FeatureCode")) {
+        /* Implement the additional feature. */
+    }
+    /* Implement the method. */
+    ...
+}
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>
+	<p>Set the feature status by calling the <span class="filled">SetFeatureState()</span> method. You can use the template below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title">Template to call the <span class="filled">SetFeatureState()</span> method</div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+UserConnection.SetFeatureState("FeatureCode", FeatureState);
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+</ol>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-linked">
+  
+    
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://en.wikipedia.org/w/index.php?title=Feature_toggle&amp;amp%3Boldid=1072248468">Feature toggle definition</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-references">
+  
+    
+      
+      <div class="field field--name-field-references field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="2431" class="node node--type-reference node--view-mode-tab">
+
+  
+                        <div class="title-h1" data-type="C#"><span class="field field--name-title field--type-string field--label-hidden">FeatureUtilities class</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodereferencefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodereferencebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>The <span class="filled">Terrasoft.Configuration</span> namespace.</p>
+
+<p>The <span class="filled">Terrasoft.Configuration.FeatureUtilities</span> class provides a set of extension methods to the <span class="filled">UserConnection</span>class. These methods let you use the <span class="filled">Feature Toggle</span> functionality in the source code schemas of Creatio back-end. The <span class="filled">FeatureUtilities</span> class also declares the enumeration of feature statuses (the <span class="filled">[FeatureState]</span> column of the <span class="filled">[AdminUnitFeatureState]</span> database table).</p>
+
+<div class="message">
+<p><span class="message__bold">Note.</span> Use the <a href="https://academy.creatio.com/api/netcoreapi/7.17.0/index.html#Terrasoft.Core~Terrasoft.Core.UserConnectionProperties_members.html">.NET class reference</a> to access the full list of the constructors, methods and properties, parent classes, and implemented interfaces of the <span class="filled">UserConnection</span> class.</p>
+</div>
+
+<div class="block-collapse">
+<h2 class="block-collapse__title">Methods<a class="title-anchor" href="#title-3801-1" id="title-3801-1">&nbsp;</a></h2>
+
+<div class="block-collapse__content">
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static int GetFeatureState(this UserConnection source, string code)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns the feature status.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The feature code.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static int GetFeatureState(this UserConnection source, string code, Guid sysAdminUnitId)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns the feature status.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">sysAdminUnitId</span></td>
+			<td>The unique record ID.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static bool GetIsFeatureEnabledForAnyUser(this UserConnection source, string code)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns the feature status for any user.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static bool GetIsFeatureEnabledForAllUsers(this UserConnection source, string code)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns the feature status for all users.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static Dictionary&lt;string, int&gt; GetFeatureStates(this UserConnection source)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns all feature statuses.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static List&lt;FeatureInfo&gt; GetFeaturesInfo(this UserConnection source)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns data about all features and their statuses.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static void SetFeatureState(this UserConnection source, string code, int state, bool forAllUsers = false)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Sets the feature status.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">state</span></td>
+			<td>The new status of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">forAllUsers</span></td>
+			<td>Sets the status of the feature for all users.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static void SafeSetFeatureState(this UserConnection source, string code, int state, bool forAllUsers = false)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Sets the feature status or creates the feature if it does not exist.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">state</span></td>
+			<td>The new status of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">forAllUsers</span></td>
+			<td>Sets the status of the feature for all users.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static void CreateFeature(this UserConnection source, string code, string name, string description)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Creates the feature.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">name</span></td>
+			<td>The name of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">description</span></td>
+			<td>The description of the feature.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static bool GetIsFeatureEnabled(this UserConnection source, string code)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Checks if the feature is turned on.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+static bool GetIsFeatureEnabled(this UserConnection source, string code, Guid sysAdminUnitId)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Checks if the feature is turned off.</p>
+
+<div class="block-collapse">
+<div class="block-collapse__title block-collapse__title_mb-16">Parameters</div>
+
+<div class="block-collapse__content">
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td width="35%"><span class="consolas">source</span></td>
+			<td>The user connection.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">code</span></td>
+			<td>The code of the feature.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">sysAdminUnitId</span></td>
+			<td>The unique record ID.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="block-collapse">
+<h2 class="block-collapse__title"><span class="filled">FeatureState</span> enumeration<a class="title-anchor" href="#title-3801-1" id="title-3801-1">&nbsp;</a></h2>
+
+<div class="block-collapse__content">
+<p>The <span class="filled">FeatureState</span> enumeration defines the feature statuses (the <span class="filled">[FeatureState]</span> column of the <span class="filled">[AdminUnitFeatureState]</span> database table).</p>
+
+<div class="table">
+<table>
+	<tbody>
+		<tr>
+			<td><span class="consolas">Disabled</span></td>
+			<td><span class="consolas">0</span></td>
+			<td>The feature is turned off.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">Enabled</span></td>
+			<td><span class="consolas">1</span></td>
+			<td>The feature is turned on.</td>
+		</tr>
+		<tr>
+			<td><span class="consolas">Established</span></td>
+			<td><span class="consolas">2</span></td>
+			<td>The feature is established.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div></div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+          </div>
+  
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+          </div>
+          
+        </div>
+
+                  <aside class="creatio-sidebar creatio-sidebar_first" role="complementary">
+              <div class="region region-sidebar-first">
+    <div id="block-documentationnaviagtion" class="block block-ts-nav block-ts-nav-doc-nav">
+  
+    
+      <div class="ts-nav-block"><a href="/docs/" class="ts-nav-block__link">Documentation</a><div class="ts-nav-block__title">Developer documentation</div>
+</div>
+<div class="ts-nav-container"><ul class="ts-nav-menu"><li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/getting_started" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Getting started&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Architecture&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/development_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Development tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/back_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Back-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/front_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Front-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/integrations_and_api" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Integrations & API&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements" class="ts-nav-menu__link ts-nav-menu__link_expanded ts-nav-menu__link_open" hreflang="en">Interface elements&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+      <ul class="ts-nav-menu__children">
+      <li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/main_menu" class="ts-nav-menu__link" hreflang="en">Main menu</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/section" class="ts-nav-menu__link" hreflang="en">Section</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/record_page" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Record page&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/detail" class="ts-nav-menu__link" hreflang="en">Detail</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/mini_page" class="ts-nav-menu__link" hreflang="en">Mini page</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/modal_window" class="ts-nav-menu__link" hreflang="en">Modal window</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/communication_panel" class="ts-nav-menu__link" hreflang="en">Communication panel</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/command_line" class="ts-nav-menu__link" hreflang="en">Command line</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/dashboard_widgets" class="ts-nav-menu__link" hreflang="en">Dashboard widgets</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/chats" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Chats&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/interface_control_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded ts-nav-menu__link_open" hreflang="en">Interface control tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+      <ul class="ts-nav-menu__children">
+      <li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/interface_control_tools/existing_feature" class="ts-nav-menu__link ts-nav-menu__link_open" hreflang="en">Existing feature</a>
+  </li>
+
+    </ul>
+  </li>
+
+    </ul>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/application_components" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Application components&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/mobile_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Mobile development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/marketplace_app_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Marketplace app development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+</ul>
+</div>
+
+  </div>
+
+  </div>
+
+            <div class="creatio-sidebar__toggle"></div>
+          </aside>
+        
+                  <aside class="creatio-sidebar creatio-sidebar_second" role="complementary">
+              <div class="region region-sidebar-second">
+    <div id="block-example" class="block block-ts-nav block-ts-nav-page-nav">
+  
+    
+      <div class="ts-nav-page">
+  </div>
+
+  </div>
+
+  </div>
+
+          </aside>
+              </main>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="creatio-region creatio-region_footer">
+      <div class="creatio-container">
+          <div class="region region-footer">
+    <div id="block-footer" class="block block-simple-block block-simple-blockfooter">
+  
+    
+      <div class="footer">
+<div class="footer-left">
+<ul class="footer-socials">
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_fb" href="https://www.facebook.com/CreatioCompany" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_in" href="https://www.linkedin.com/company/creatioglobal" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_yt" href="https://www.youtube.com/c/creatio" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_tw" href="https://www.twitter.com/Creatio_Global" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_ow" href="https://www.owler.com/company/Creatio" target="_blank">&nbsp;</a></li>
+</ul>
+</div>
+
+<div class="footer-contact">
+<div class="footer-title">Connect with us</div>
+
+<div class="footer-content">
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+16177657997">USA: +1 617 765 7997</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+442033840040">UK: +44 20 3384 0040</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+61261452888">Australia: +61 261 452 888</a></div>
+</div>
+
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:info@creatio.com">info@creatio.com</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:support@creatio.com">support@creatio.com</a></div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+    <div class="creatio-region creatio-region_bottom">
+      <div class="creatio-container">
+          <div class="region region-bottom">
+    <div id="block-allrightsreserved" class="block block-simple-block block-simple-blockfooter-bottom">
+  
+    
+      <p>© 2025 Creatio. All rights reserved.&nbsp; |&nbsp; <a href="https://www.creatio.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="creatio-bg"></div>
+
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/docs\/","pathPrefix":"","currentPath":"node\/1655","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"94c0ca72342e8e43fd5c70378d64533b2b6422845e0b3fd749b2ff1b4bd0b914"}}</script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery_3.7.1_jquery.min.js?v=3.7.1"></script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery-once-2.2.3/jquery.once.min.js?v=2.2.3"></script>
+<script src="/docs/core/misc/drupalSettingsLoader.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.init.js?v=10.4.1"></script>
+<script src="/docs/libraries/fancybox/jquery.fancybox.min.js?v=1"></script>
+<script src="/docs/themes/custom/creatio_academy/js/fancybox.js?v=1"></script>
+<script src="/docs/libraries/prettify/prettify.js?v=1"></script>
+<script src="/docs/libraries/slick/slick.js?v=1"></script>
+<script src="/docs/libraries/jquery.nice-select/jquery.nice-select.js?v=1"></script>
+<script src="https://libraries.creatio.com/drupal_fixed_tabs/tabs.js"></script>
+<script src="/docs/themes/custom/creatio_academy/js/creatio.js?v=1"></script>
+<script src="/docs/libraries/jquery.cookie/jquery.cookie.js?szsnyq"></script>
+<script src="/docs/themes/custom/creatio_academy/js/notification.js?szsnyq"></script>
+<script src="/docs/modules/marketplace/ts_datalayer/js/ts-datalayer.js?szsnyq"></script>
+<script src="/docs/libraries/select2/js/select2.js?v=1"></script>
+<script src="/docs/libraries/select2/js/select2.position.js?v=1"></script>
+<script src="/docs/libraries/jquery.scrollbar/jquery.scrollbar.js?v=1"></script>
+<script src="/docs/modules/academy/ts_doc/js/ts-doc-version.js?szsnyq"></script>
+<script src="https://libraries.creatio.com/ts_country/index.js"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-breadcrumb.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-doc-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-page-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-sdk-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_title_anchor/js/ts-title-anchor.js?szsnyq"></script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <g id="svg-copy" class="svg-icon svg-icon_copy">
+        <path d="M15.111,18H1.889A1.848,1.848,0,0,1,0,16.2V3.6A1.848,1.848,0,0,1,1.889,1.8H5.837a2.87,2.87,0,0,1,5.326,0h3.948A1.848,1.848,0,0,1,17,3.6V16.2A1.848,1.848,0,0,1,15.111,18ZM3.777,12.6v1.8h6.611V12.6Zm0-3.6v1.8h9.445V9Zm0-3.6V7.2h9.445V5.4ZM8.5,1.8a.924.924,0,0,0-.944.9.945.945,0,0,0,1.889,0A.924.924,0,0,0,8.5,1.8Z"/>
+      </g>
+
+      <g id="svg-prev" class="svg-icon svg-icon_arrow">
+        <path d="M5.488,12.779,0,6.39,5.488,0" transform="translate(1 0.652)"/>
+      </g>
+
+      <g id="svg-next" class="svg-icon svg-icon_arrow">
+        <path d="M0,12.779,5.488,6.39,0,0" transform="translate(0.759 0.652)"/>
+      </g>
+    </svg>
+  </body>
+</html>

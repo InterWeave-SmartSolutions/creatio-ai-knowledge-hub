@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SysWorkspace
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SysWorkspace
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Core.Configuration.SysWorkspace">
+  
+  
+  <h1 id="Terrasoft_Core_Configuration_SysWorkspace" data-uid="Terrasoft.Core.Configuration.SysWorkspace" class="text-break">Class SysWorkspace
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Terrasoft.Core.Entities.Entity.html">Entity</a></div>
+    <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.SystemEntity.html">SystemEntity</a></div>
+    <div class="level3"><a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html">SysBaseEntity</a></div>
+    <div class="level4"><a class="xref" href="Terrasoft.Core.Configuration.SysBaseLookup.html">SysBaseLookup</a></div>
+    <div class="level5"><span class="xref">SysWorkspace</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Terrasoft.Core.Entities.IEntity.html">IEntity</a></div>
+    <div><span class="xref">System.ICloneable</span></div>
+    <div><a class="xref" href="Terrasoft.Core.ILicObject.html">ILicObject</a></div>
+    <div><a class="xref" href="Terrasoft.Common.ICompositeObject.html">ICompositeObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseLookup.html#Terrasoft_Core_Configuration_SysBaseLookup_Name">SysBaseLookup.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseLookup.html#Terrasoft_Core_Configuration_SysBaseLookup_Description">SysBaseLookup.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_Id">SysBaseEntity.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_CreatedOn">SysBaseEntity.CreatedOn</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_CreatedById">SysBaseEntity.CreatedById</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_CreatedByName">SysBaseEntity.CreatedByName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_CreatedBy">SysBaseEntity.CreatedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_ModifiedOn">SysBaseEntity.ModifiedOn</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_ModifiedById">SysBaseEntity.ModifiedById</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_ModifiedByName">SysBaseEntity.ModifiedByName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Configuration.SysBaseEntity.html#Terrasoft_Core_Configuration_SysBaseEntity_ModifiedBy">SysBaseEntity.ModifiedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnValidating_Terrasoft_Core_Entities_EntityValidationEventArgs_">Entity.OnValidating(EntityValidationEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnInserting_Terrasoft_Core_Entities_EntityBeforeEventArgs_">Entity.OnInserting(EntityBeforeEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnInserted_Terrasoft_Core_Entities_EntityAfterEventArgs_">Entity.OnInserted(EntityAfterEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnInserted_Terrasoft_Core_Entities_EntityAfterEventArgs_System_Boolean_">Entity.OnInserted(EntityAfterEventArgs, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnUpdating_Terrasoft_Core_Entities_EntityBeforeEventArgs_">Entity.OnUpdating(EntityBeforeEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnUpdated_Terrasoft_Core_Entities_EntityAfterEventArgs_">Entity.OnUpdated(EntityAfterEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnUpdated_Terrasoft_Core_Entities_EntityAfterEventArgs_System_Boolean_">Entity.OnUpdated(EntityAfterEventArgs, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnDeleting_Terrasoft_Core_Entities_EntityBeforeEventArgs_">Entity.OnDeleting(EntityBeforeEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnDeleted_Terrasoft_Core_Entities_EntityAfterEventArgs_">Entity.OnDeleted(EntityAfterEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnDeleted_Terrasoft_Core_Entities_EntityAfterEventArgs_System_Boolean_">Entity.OnDeleted(EntityAfterEventArgs, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnSaving_Terrasoft_Core_Entities_EntityBeforeEventArgs_">Entity.OnSaving(EntityBeforeEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnSaveError_Terrasoft_Core_Entities_EntitySaveErrorEventArgs_">Entity.OnSaveError(EntitySaveErrorEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnSaved_Terrasoft_Core_Entities_EntityAfterEventArgs_">Entity.OnSaved(EntityAfterEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnLoading_Terrasoft_Core_Entities_EntityBeforeLoadEventArgs_">Entity.OnLoading(EntityBeforeLoadEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnLoaded_Terrasoft_Core_Entities_EntityAfterLoadEventArgs_">Entity.OnLoaded(EntityAfterLoadEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnColumnValueChanging_Terrasoft_Core_Entities_EntityColumnBeforeEventArgs_">Entity.OnColumnValueChanging(EntityColumnBeforeEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnColumnValueChanged_Terrasoft_Core_Entities_EntityColumnAfterEventArgs_">Entity.OnColumnValueChanged(EntityColumnAfterEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnDefColumnValuesSet_System_EventArgs_">Entity.OnDefColumnValuesSet(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_OnDeleteFailed_Terrasoft_Core_Entities_EntityErrorEventArgs_">Entity.OnDeleteFailed(EntityErrorEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ExecuteUpdate_Terrasoft_Core_DB_Update_">Entity.ExecuteUpdate(Update)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ExecuteUpdateAsync_Terrasoft_Core_DB_Update_">Entity.ExecuteUpdateAsync(Update)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ExecuteDelete_Terrasoft_Core_DB_Delete_System_Object_">Entity.ExecuteDelete(Delete, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ExecuteDeleteAsync_Terrasoft_Core_DB_Delete_System_Object_">Entity.ExecuteDeleteAsync(Delete, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Load_Terrasoft_Core_DB_Select_System_Collections_Generic_IDictionary_System_String_System_String__">Entity.Load(Select, IDictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_InitializeThrowEvents">Entity.InitializeThrowEvents()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_InitializeEmbeddedProcess">Entity.InitializeEmbeddedProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetColumnDefValue">Entity.SetColumnDefValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetSysCultures">Entity.GetSysCultures()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetColumnValue_Terrasoft_Core_Entities_EntityColumnValue_System_Object_">Entity.SetColumnValue(EntityColumnValue, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetBytesValue_Terrasoft_Core_Entities_EntityColumnValue_System_Byte___">Entity.SetBytesValue(EntityColumnValue, Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetStreamValue_Terrasoft_Core_Entities_EntityColumnValue_System_IO_Stream_">Entity.SetStreamValue(EntityColumnValue, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetColumnBothValues_Terrasoft_Core_Entities_EntityColumnValue_System_Object_Terrasoft_Core_Entities_EntityColumnValue_System_String_">Entity.SetColumnBothValues(EntityColumnValue, Object, EntityColumnValue, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_CreateLookupDisplayValuesSelect_System_Collections_Generic_IEnumerable_Terrasoft_Core_Entities_EntitySchemaColumn__">Entity.CreateLookupDisplayValuesSelect(IEnumerable&lt;EntitySchemaColumn&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadLookupDisplayValues_Terrasoft_Core_DB_Select_">Entity.LoadLookupDisplayValues(Select)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ThrowEvent_System_String_System_EventArgs_">Entity.ThrowEvent(String, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetLocalizationEntity_System_Guid_">Entity.GetLocalizationEntity(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Write_Terrasoft_Common_DataWriter_Terrasoft_Core_Entities_Entity_System_String_">Entity.Write(DataWriter, Entity, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Write_Terrasoft_Common_DataWriter_Terrasoft_Core_Entities_Entity_System_String_System_Boolean_">Entity.Write(DataWriter, Entity, String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Read_Terrasoft_Core_UserConnection_Terrasoft_Common_DataReader_">Entity.Read(UserConnection, DataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SerializeToJson_Terrasoft_Core_Entities_Entity_">Entity.SerializeToJson(Entity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_DeserializeFromJson_Terrasoft_Core_UserConnection_System_String_">Entity.DeserializeFromJson(UserConnection, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ToString">Entity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetHashCode">Entity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Equals_System_Object_">Entity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetIsColumnValueLoaded_System_String_">Entity.GetIsColumnValueLoaded(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetStreamValue_System_String_">Entity.GetStreamValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetTypedColumnValue__1_System_String_">Entity.GetTypedColumnValue&lt;TResult&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetIsColumnValueLoaded_Terrasoft_Core_Entities_EntitySchemaColumn_">Entity.GetIsColumnValueLoaded(EntitySchemaColumn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetColumnValueNames">Entity.GetColumnValueNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetChangedColumnValues">Entity.GetChangedColumnValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetColumnValue_System_String_">Entity.GetColumnValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetColumnValue_Terrasoft_Core_Entities_EntitySchemaColumn_">Entity.GetColumnValue(EntitySchemaColumn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetBytesValue_System_String_">Entity.GetBytesValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetColumnValue_System_String_System_Object_">Entity.SetColumnValue(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetColumnValue_Terrasoft_Core_Entities_EntitySchemaColumn_System_Object_">Entity.SetColumnValue(EntitySchemaColumn, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetStreamValue_System_String_System_IO_Stream_">Entity.SetStreamValue(String, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetBytesValue_System_String_System_Byte___">Entity.SetBytesValue(String, Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetColumnBothValues_Terrasoft_Core_Entities_EntitySchemaColumn_System_Object_System_String_">Entity.SetColumnBothValues(EntitySchemaColumn, Object, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetColumnBothValues_System_String_System_Object_System_String_System_String_">Entity.SetColumnBothValues(String, Object, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetTypedColumnValue__1_Terrasoft_Core_Entities_EntitySchemaColumn_">Entity.GetTypedColumnValue&lt;TResult&gt;(EntitySchemaColumn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetColumnOldValue_System_String_">Entity.GetColumnOldValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetColumnOldValue_Terrasoft_Core_Entities_EntitySchemaColumn_">Entity.GetColumnOldValue(EntitySchemaColumn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetTypedOldColumnValue__1_System_String_">Entity.GetTypedOldColumnValue&lt;TResult&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetTypedOldColumnValue__1_Terrasoft_Core_Entities_EntitySchemaColumn_">Entity.GetTypedOldColumnValue&lt;TResult&gt;(EntitySchemaColumn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetColumnDisplayValue_Terrasoft_Core_Entities_EntitySchemaColumn_">Entity.GetColumnDisplayValue(EntitySchemaColumn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ResetColumnValues">Entity.ResetColumnValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ResetOldColumnValues">Entity.ResetOldColumnValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsColumnValueLoaded_System_String_">Entity.IsColumnValueLoaded(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsColumnValueLoaded_Terrasoft_Core_Entities_EntitySchemaColumn_">Entity.IsColumnValueLoaded(EntitySchemaColumn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadShallowColumnValue_System_String_System_Object_">Entity.LoadShallowColumnValue(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadShallowColumnValue_Terrasoft_Core_Entities_EntitySchemaColumn_System_Object_">Entity.LoadShallowColumnValue(EntitySchemaColumn, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadColumnValue_System_String_System_Data_IDataReader_System_Int32_System_Int32_">Entity.LoadColumnValue(String, IDataReader, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadColumnValue_System_String_System_Data_IDataReader_System_Int32_">Entity.LoadColumnValue(String, IDataReader, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadColumnValue_System_String_System_Object_">Entity.LoadColumnValue(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadColumnValue_Terrasoft_Core_Entities_EntitySchemaColumn_System_Object_">Entity.LoadColumnValue(EntitySchemaColumn, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetDefColumnValue_System_String_System_Object_">Entity.SetDefColumnValue(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetDefColumnValue_System_String_">Entity.SetDefColumnValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SetDefColumnValues">Entity.SetDefColumnValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_AddDefRights">Entity.AddDefRights()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_AddDefRights_System_Guid_">Entity.AddDefRights(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_AddDefRights_System_Collections_Generic_IEnumerable_System_Guid__">Entity.AddDefRights(IEnumerable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchFromDB_Terrasoft_Core_Entities_EntitySchemaColumn_System_Object_System_Boolean_">Entity.FetchFromDB(EntitySchemaColumn, Object, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchFromDB_System_String_System_Object_System_Collections_Generic_IEnumerable_System_String__System_Boolean_">Entity.FetchFromDB(String, Object, IEnumerable&lt;String&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchFromDB_System_Collections_Generic_IEnumerable_System_String__System_Boolean_">Entity.FetchFromDB(IEnumerable&lt;String&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchFromDB_System_String_System_Object_System_Boolean_">Entity.FetchFromDB(String, Object, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchFromDB_System_Object_System_Boolean_">Entity.FetchFromDB(Object, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchFromDB_System_Collections_Generic_Dictionary_System_String_System_Object__System_Boolean_">Entity.FetchFromDB(Dictionary&lt;String, Object&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchFromDB_Terrasoft_Core_Entities_EntitySchemaColumn_System_Object_System_Collections_Generic_IEnumerable_Terrasoft_Core_Entities_EntitySchemaColumn__System_Boolean_">Entity.FetchFromDB(EntitySchemaColumn, Object, IEnumerable&lt;EntitySchemaColumn&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchPrimaryColumnFromDB_System_Object_">Entity.FetchPrimaryColumnFromDB(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchPrimaryInfoFromDB_Terrasoft_Core_Entities_EntitySchemaColumn_System_Object_">Entity.FetchPrimaryInfoFromDB(EntitySchemaColumn, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FetchPrimaryInfoFromDB_System_String_System_Object_">Entity.FetchPrimaryInfoFromDB(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ExistInDB_Terrasoft_Core_Entities_EntitySchemaColumn_System_Object_">Entity.ExistInDB(EntitySchemaColumn, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ExistInDB_System_String_System_Object_">Entity.ExistInDB(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ExistInDB_System_Object_">Entity.ExistInDB(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ExistInDB_System_Collections_Generic_Dictionary_System_String_System_Object__">Entity.ExistInDB(Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_TrackChangeInDB_Terrasoft_Core_Entities_EntitySchema_">Entity.TrackChangeInDB(EntitySchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_InsertToDB_System_Boolean_System_Boolean_System_Boolean_">Entity.InsertToDB(Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_InsertToDB_System_Boolean_System_Boolean_">Entity.InsertToDB(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_UpdateRecordRightsPosition_System_Guid_">Entity.UpdateRecordRightsPosition(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_UpdateInDB_System_Boolean_System_Boolean_">Entity.UpdateInDB(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_UpdateInDB_System_Boolean_">Entity.UpdateInDB(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Save_System_Boolean_System_Boolean_">Entity.Save(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Save_System_Boolean_System_Boolean_System_Boolean_">Entity.Save(Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Save_Terrasoft_Core_Entities_EntitySaveConfig_">Entity.Save(EntitySaveConfig)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Delete">Entity.Delete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Delete_System_Boolean_">Entity.Delete(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_DeleteWithCancelProcess">Entity.DeleteWithCancelProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Delete_System_Object_">Entity.Delete(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Delete_System_Object_System_Boolean_">Entity.Delete(Object, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Load_System_Data_DataRow_">Entity.Load(DataRow)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Load_System_Data_DataRow_System_Collections_Generic_Dictionary_System_String_System_String__">Entity.Load(DataRow, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Load_System_Data_IDataReader_">Entity.Load(IDataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Load_System_Data_IDataReader_System_Collections_Generic_IDictionary_System_String_System_String__">Entity.Load(IDataReader, IDictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Load_System_Object_">Entity.Load(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Load_System_Object_System_Collections_Generic_IDictionary_System_String_System_String__">Entity.Load(Object, IDictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadShallow_System_Data_DataRow_">Entity.LoadShallow(DataRow)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadShallow_System_Data_DataRow_System_Collections_Generic_Dictionary_System_String_System_String__">Entity.LoadShallow(DataRow, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadShallow_System_Data_IDataReader_">Entity.LoadShallow(IDataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadShallow_System_Data_IDataReader_System_Collections_Generic_Dictionary_System_String_System_String__">Entity.LoadShallow(IDataReader, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadShallow_System_Object_">Entity.LoadShallow(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadShallow_System_Object_System_Collections_Generic_Dictionary_System_String_System_String__">Entity.LoadShallow(Object, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadLookupDisplayValues">Entity.LoadLookupDisplayValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadLookupDisplayValues_System_Collections_Generic_IEnumerable_System_String__">Entity.LoadLookupDisplayValues(IEnumerable&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadLookupDisplayValues_System_String___">Entity.LoadLookupDisplayValues(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadLookupDisplayValues_System_Collections_Generic_IEnumerable_Terrasoft_Core_Entities_EntitySchemaColumn__">Entity.LoadLookupDisplayValues(IEnumerable&lt;EntitySchemaColumn&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Validate">Entity.Validate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ReadData_Terrasoft_Common_DataReader_">Entity.ReadData(DataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ReadData_Terrasoft_Common_DataReader_Terrasoft_Core_Entities_EntitySchema_">Entity.ReadData(DataReader, EntitySchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Write_Terrasoft_Common_DataWriter_System_String_">Entity.Write(DataWriter, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_WriteData_Terrasoft_Common_DataWriter_">Entity.WriteData(DataWriter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_WriteData_Terrasoft_Common_DataWriter_Terrasoft_Core_Entities_EntitySchema_">Entity.WriteData(DataWriter, EntitySchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_WriteData_Terrasoft_Common_DataWriter_Terrasoft_Core_Entities_EntitySchema_System_Boolean_">Entity.WriteData(DataWriter, EntitySchema, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_AddLicOperations_System_Collections_Generic_ICollection_System_String__">Entity.AddLicOperations(ICollection&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_CreateInsert_System_Boolean_">Entity.CreateInsert(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_CreateUpdate_System_Boolean_">Entity.CreateUpdate(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_FindEntityColumnValue_System_String_">Entity.FindEntityColumnValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ForceSetColumnValue_System_String_System_Object_">Entity.ForceSetColumnValue(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ForceGetEntityColumnValue_System_String_">Entity.ForceGetEntityColumnValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Terrasoft_Common_ICompositeObject_TryGetValue_System_String_System_Type_System_Object__">Entity.ICompositeObject.TryGetValue(String, Type, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Terrasoft_Common_ICompositeObject_TryGetValue__1_System_String___0__">Entity.ICompositeObject.TryGetValue&lt;TValueType&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetColumnNames">Entity.GetColumnNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_GetColumnValues">Entity.GetColumnValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_UseAdminRights">Entity.UseAdminRights</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_InstanceUId">Entity.InstanceUId</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Process">Entity.Process</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsDeletedFromDB">Entity.IsDeletedFromDB</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_EntitySchemaManagerName">Entity.EntitySchemaManagerName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ValueListSchemaManagerName">Entity.ValueListSchemaManagerName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_UserConnection">Entity.UserConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SchemaName">Entity.SchemaName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsSchemaInitialized">Entity.IsSchemaInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Schema">Entity.Schema</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_StoringState">Entity.StoringState</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ChangeType">Entity.ChangeType</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LoadState">Entity.LoadState</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_PrimaryColumnValue">Entity.PrimaryColumnValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_PrimaryDisplayColumnValue">Entity.PrimaryDisplayColumnValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_HierarchyColumnValue">Entity.HierarchyColumnValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LookupColumnEntities">Entity.LookupColumnEntities</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_EntitySchemaManager">Entity.EntitySchemaManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ValueListSchemaManager">Entity.ValueListSchemaManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ValidationMessages">Entity.ValidationMessages</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_LicOperationPrefix">Entity.LicOperationPrefix</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_HasColumnValues">Entity.HasColumnValues</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_UseDefRights">Entity.UseDefRights</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_UseLazyLoad">Entity.UseLazyLoad</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_RecordInactive">Entity.RecordInactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInValidating">Entity.IsInValidating</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInInserting">Entity.IsInInserting</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInInserted">Entity.IsInInserted</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInUpdating">Entity.IsInUpdating</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInUpdated">Entity.IsInUpdated</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInDeleting">Entity.IsInDeleting</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInDeleted">Entity.IsInDeleted</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInSaving">Entity.IsInSaving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInSaveError">Entity.IsInSaveError</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInSaved">Entity.IsInSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInLoading">Entity.IsInLoading</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInLoaded">Entity.IsInLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInColumnValueChanging">Entity.IsInColumnValueChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInColumnValueChanged">Entity.IsInColumnValueChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_IsInDefColumnValuesSet">Entity.IsInDefColumnValuesSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Validating">Entity.Validating</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Inserting">Entity.Inserting</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Inserted">Entity.Inserted</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Updating">Entity.Updating</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Updated">Entity.Updated</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Deleting">Entity.Deleting</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Deleted">Entity.Deleted</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Saving">Entity.Saving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_SaveError">Entity.SaveError</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Saved">Entity.Saved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Loading">Entity.Loading</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_Loaded">Entity.Loaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ColumnValueChanging">Entity.ColumnValueChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_ColumnValueChanged">Entity.ColumnValueChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Entity.html#Terrasoft_Core_Entities_Entity_DefColumnValuesSet">Entity.DefColumnValuesSet</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Core.Configuration.html">Terrasoft.Core.Configuration</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Core.dll</h6>
+  <h5 id="Terrasoft_Core_Configuration_SysWorkspace_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SysWorkspace : SysBaseLookup, IEntity, ICloneable, ILicObject, ICompositeObject, IRowModel</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace__ctor_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.#ctor*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace__ctor_Terrasoft_Core_Configuration_SysWorkspace_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.#ctor(Terrasoft.Core.Configuration.SysWorkspace)">SysWorkspace(SysWorkspace)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SysWorkspace(SysWorkspace source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Configuration.SysWorkspace.html">SysWorkspace</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace__ctor_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.#ctor*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace__ctor_Terrasoft_Core_UserConnection_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.#ctor(Terrasoft.Core.UserConnection)">SysWorkspace(UserConnection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SysWorkspace(UserConnection userConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace__ctor_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.#ctor*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace__ctor_Terrasoft_Core_UserConnection_System_Boolean_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.#ctor(Terrasoft.Core.UserConnection,System.Boolean)">SysWorkspace(UserConnection, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SysWorkspace(UserConnection userConnection, bool subsribeOnAssemblyChangedEvent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">subsribeOnAssemblyChangedEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_AppConnection_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.AppConnection*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_AppConnection" data-uid="Terrasoft.Core.Configuration.SysWorkspace.AppConnection">AppConnection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppConnection AppConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.AppConnection.html">AppConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_BuildODataStartedBy_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.BuildODataStartedBy*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_BuildODataStartedBy" data-uid="Terrasoft.Core.Configuration.SysWorkspace.BuildODataStartedBy">BuildODataStartedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Contact BuildODataStartedBy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Configuration.Contact.html">Contact</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_BuildODataStartedById_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.BuildODataStartedById*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_BuildODataStartedById" data-uid="Terrasoft.Core.Configuration.SysWorkspace.BuildODataStartedById">BuildODataStartedById</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid BuildODataStartedById { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_BuildODataStartedByName_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.BuildODataStartedByName*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_BuildODataStartedByName" data-uid="Terrasoft.Core.Configuration.SysWorkspace.BuildODataStartedByName">BuildODataStartedByName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BuildODataStartedByName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_IsDefault_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.IsDefault*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_IsDefault" data-uid="Terrasoft.Core.Configuration.SysWorkspace.IsDefault">IsDefault</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDefault { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_IsInWorkspaceAssemblyChanged_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.IsInWorkspaceAssemblyChanged*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_IsInWorkspaceAssemblyChanged" data-uid="Terrasoft.Core.Configuration.SysWorkspace.IsInWorkspaceAssemblyChanged">IsInWorkspaceAssemblyChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInWorkspaceAssemblyChanged { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_IsWorkspaceAssemblyInitialized_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.IsWorkspaceAssemblyInitialized*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_IsWorkspaceAssemblyInitialized" data-uid="Terrasoft.Core.Configuration.SysWorkspace.IsWorkspaceAssemblyInitialized">IsWorkspaceAssemblyInitialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWorkspaceAssemblyInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_Number_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.Number*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_Number" data-uid="Terrasoft.Core.Configuration.SysWorkspace.Number">Number</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Number { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_PackageCopyPath_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.PackageCopyPath*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_PackageCopyPath" data-uid="Terrasoft.Core.Configuration.SysWorkspace.PackageCopyPath">PackageCopyPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string PackageCopyPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_RepositoryRevisionNumber_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.RepositoryRevisionNumber*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_RepositoryRevisionNumber" data-uid="Terrasoft.Core.Configuration.SysWorkspace.RepositoryRevisionNumber">RepositoryRevisionNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RepositoryRevisionNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_RepositoryUri_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.RepositoryUri*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_RepositoryUri" data-uid="Terrasoft.Core.Configuration.SysWorkspace.RepositoryUri">RepositoryUri</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string RepositoryUri { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_ResourceStorage_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.ResourceStorage*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_ResourceStorage" data-uid="Terrasoft.Core.Configuration.SysWorkspace.ResourceStorage">ResourceStorage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResourceStorage ResourceStorage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.IResourceStorage.html">IResourceStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_SchemaManagerProvider_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.SchemaManagerProvider*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_SchemaManagerProvider" data-uid="Terrasoft.Core.Configuration.SysWorkspace.SchemaManagerProvider">SchemaManagerProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SchemaManagerProvider SchemaManagerProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.SchemaManagerProvider.html">SchemaManagerProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_SystemUserConnection_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.SystemUserConnection*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_SystemUserConnection" data-uid="Terrasoft.Core.Configuration.SysWorkspace.SystemUserConnection">SystemUserConnection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserConnection SystemUserConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_Version_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.Version*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_Version" data-uid="Terrasoft.Core.Configuration.SysWorkspace.Version">Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Version { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_WorkingCopyPath_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.WorkingCopyPath*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_WorkingCopyPath" data-uid="Terrasoft.Core.Configuration.SysWorkspace.WorkingCopyPath">WorkingCopyPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WorkingCopyPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_WorkspaceAssembly_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.WorkspaceAssembly*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_WorkspaceAssembly" data-uid="Terrasoft.Core.Configuration.SysWorkspace.WorkspaceAssembly">WorkspaceAssembly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Assembly WorkspaceAssembly { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_Clone_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.Clone*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_Clone" data-uid="Terrasoft.Core.Configuration.SysWorkspace.Clone">Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Core.Configuration.SysBaseLookup.html#Terrasoft_Core_Configuration_SysBaseLookup_Clone">SysBaseLookup.Clone()</a></div>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_FindSchemaItemByUId_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.FindSchemaItemByUId*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_FindSchemaItemByUId_System_Guid_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.FindSchemaItemByUId(System.Guid)">FindSchemaItemByUId(Guid)</h4>
+  <div class="markdown level1 summary"><p>Find manager item in some of existing schema managers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IManagerItem FindSchemaItemByUId(Guid schemaUId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">schemaUId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IManagerItem.html">IManagerItem</a></td>
+        <td><p>Manager item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_GetIsItemWithSameNameExistInPackage_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.GetIsItemWithSameNameExistInPackage*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_GetIsItemWithSameNameExistInPackage_System_String_System_Guid_System_Guid_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.GetIsItemWithSameNameExistInPackage(System.String,System.Guid,System.Guid)">GetIsItemWithSameNameExistInPackage(String, Guid, Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;8.0.4 | The property is not in use and will be removed in the upcoming releases.&quot;)]
+public bool GetIsItemWithSameNameExistInPackage(string schemaName, Guid schemaUId, Guid packageUid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">schemaUId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">packageUid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_GetSchemaItemByUId_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.GetSchemaItemByUId*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_GetSchemaItemByUId_System_Guid_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.GetSchemaItemByUId(System.Guid)">GetSchemaItemByUId(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets manager item in some of existing schema managers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IManagerItem GetSchemaItemByUId(Guid schemaUId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">schemaUId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IManagerItem.html">IManagerItem</a></td>
+        <td><p>Manager item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ItemNotFoundException.html">ItemNotFoundException</a></td>
+        <td><p>When cannot get schema<code data-dev-comment-type="paramref" class="paramref">schemaUId</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_OnWorkspaceAssemblyChanged_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.OnWorkspaceAssemblyChanged*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_OnWorkspaceAssemblyChanged_System_EventArgs_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.OnWorkspaceAssemblyChanged(System.EventArgs)">OnWorkspaceAssemblyChanged(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnWorkspaceAssemblyChanged(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Configuration_SysWorkspace_WorkspaceChanged_" data-uid="Terrasoft.Core.Configuration.SysWorkspace.WorkspaceChanged*"></a>
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_WorkspaceChanged" data-uid="Terrasoft.Core.Configuration.SysWorkspace.WorkspaceChanged">WorkspaceChanged()</h4>
+  <div class="markdown level1 summary"><p>Raise <a class="xref" href="Terrasoft.Core.Configuration.SysWorkspace.html#Terrasoft_Core_Configuration_SysWorkspace_WorkspaceAssemblyChanged">WorkspaceAssemblyChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WorkspaceChanged()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Terrasoft_Core_Configuration_SysWorkspace_WorkspaceAssemblyChanged" data-uid="Terrasoft.Core.Configuration.SysWorkspace.WorkspaceAssemblyChanged">WorkspaceAssemblyChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; WorkspaceAssemblyChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Core.Entities.IEntity.html">IEntity</a>
+  </div>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.ILicObject.html">ILicObject</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ICompositeObject.html">ICompositeObject</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.Factories.DefaultBinderUtilities.html#Terrasoft_Core_Factories_DefaultBinderUtilities_InitializeDefaultDIBindings_Terrasoft_Core_Configuration_SysWorkspace_">DefaultBinderUtilities.InitializeDefaultDIBindings(SysWorkspace)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.Entities.Extensions.EntityExtensions.html#Terrasoft_Core_Entities_Extensions_EntityExtensions_CopyEntityLookupProperties_Terrasoft_Core_Entities_Entity_Terrasoft_Core_Entities_Entity_">EntityExtensions.CopyEntityLookupProperties(Entity, Entity)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Nui.ServiceModel.Extensions.CoreEntityExtension.html#Terrasoft_Nui_ServiceModel_Extensions_CoreEntityExtension_FillColumnValues_Terrasoft_Core_Entities_Entity_Terrasoft_Core_UserConnection_Terrasoft_Nui_ServiceModel_DataContract_ColumnValues_">CoreEntityExtension.FillColumnValues(Entity, UserConnection, ColumnValues)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Sync.LookupResolver.html#Terrasoft_Sync_LookupResolver_SetLookupColumnValue_Terrasoft_Core_Entities_Entity_System_String_System_String_System_String_">LookupResolver.SetLookupColumnValue(Entity, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupResourceStorage_Terrasoft_Core_Configuration_SysWorkspace_System_String_System_String_">SubstituteUtilities.SetupResourceStorage(SysWorkspace, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

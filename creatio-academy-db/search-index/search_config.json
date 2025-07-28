@@ -1,0 +1,76 @@
+{
+  "search_engine": {
+    "name": "Hybrid Search Engine",
+    "version": "1.0.0",
+    "description": "Combined traditional and semantic search for optimal content discovery"
+  },
+  "indexes": {
+    "documents": {
+      "name": "documents.idx",
+      "type": "full_text",
+      "content_types": ["documentation", "guides", "tutorials", "developer_course_pdf"],
+      "fields": ["title", "content", "tags", "category", "content_type", "source_file"],
+      "analyzers": ["standard", "keyword", "stemmer"]
+    },
+    "videos": {
+      "name": "videos.idx", 
+      "type": "full_text",
+      "content_types": ["transcripts", "summaries", "developer_course_video"],
+      "fields": ["title", "transcript", "summary", "tags", "speaker", "content_type"],
+      "analyzers": ["standard", "technical_terms"]
+    },
+    "code": {
+      "name": "code.idx",
+      "type": "full_text", 
+      "content_types": ["code_examples", "api_docs"],
+      "fields": ["filename", "code", "comments", "language"],
+      "analyzers": ["code", "keyword"]
+    },
+    "developer_course": {
+      "name": "developer_course.idx",
+      "type": "full_text",
+      "content_types": ["pdf", "video"],
+      "fields": ["title", "content", "content_type", "source_file", "chunk_id"],
+      "analyzers": ["standard", "keyword", "stemmer", "technical_terms"]
+    },
+    "semantic": {
+      "name": "embeddings.bin",
+      "type": "vector",
+      "dimensions": 768,
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "similarity_metric": "cosine"
+    }
+  },
+  "search_features": {
+    "auto_complete": true,
+    "spell_correction": true,
+    "fuzzy_matching": true,
+    "phrase_search": true,
+    "boolean_queries": true,
+    "faceted_search": true,
+    "semantic_search": true,
+    "hybrid_scoring": true
+  },
+  "ranking_factors": {
+    "text_relevance": 0.4,
+    "semantic_similarity": 0.3,
+    "popularity": 0.1,
+    "recency": 0.1,
+    "difficulty_match": 0.1
+  },
+  "filters": {
+    "content_type": ["documentation", "videos", "code", "api", "developer_course", "pdf"],
+    "difficulty": ["beginner", "intermediate", "advanced"],
+    "topic": "dynamic_from_content",
+    "version": ["8.0", "8.1", "8.2"],
+    "language": ["csharp", "javascript", "sql"],
+    "course_type": ["pdf", "video", "all"]
+  },
+  "performance": {
+    "max_results": 100,
+    "result_caching": true,
+    "cache_duration": "1h",
+    "index_optimization": "daily",
+    "parallel_search": true
+  }
+}

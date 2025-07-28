@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JsonDataReader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JsonDataReader
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.JsonDataReader">
+  
+  
+  <h1 id="Terrasoft_Common_JsonDataReader" data-uid="Terrasoft.Common.JsonDataReader" class="text-break">Class JsonDataReader
+  </h1>
+  <div class="markdown level0 summary"><p>Provides methods for reading data in the Json format.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a></div>
+    <div class="level2"><span class="xref">JsonDataReader</span></div>
+      <div class="level3"><a class="xref" href="Terrasoft.Core.Process.ProcessJsonDataReader.html">ProcessJsonDataReader</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_HasValue">DataReader.HasValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_Dispose">DataReader.Dispose()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.html">Terrasoft.Common</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_JsonDataReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JsonDataReader : DataReader, IDataReader, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader__ctor_" data-uid="Terrasoft.Common.JsonDataReader.#ctor*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader__ctor" data-uid="Terrasoft.Common.JsonDataReader.#ctor">JsonDataReader()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JsonDataReader()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader__ctor_" data-uid="Terrasoft.Common.JsonDataReader.#ctor*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader__ctor_System_IO_Stream_" data-uid="Terrasoft.Common.JsonDataReader.#ctor(System.IO.Stream)">JsonDataReader(Stream)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.JsonDataReader.html">JsonDataReader</a> class using the specified stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonDataReader(Stream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The stream that contains data in Json format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader__ctor_" data-uid="Terrasoft.Common.JsonDataReader.#ctor*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader__ctor_System_IO_TextReader_" data-uid="Terrasoft.Common.JsonDataReader.#ctor(System.IO.TextReader)">JsonDataReader(TextReader)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.JsonDataReader.html">JsonDataReader</a> class using the specified <span class="xref">System.IO.TextReader</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonDataReader(TextReader input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.TextReader</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p><span class="xref">System.IO.TextReader</span>, from which the data in Json format should be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_CurrentName_" data-uid="Terrasoft.Common.JsonDataReader.CurrentName*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_CurrentName" data-uid="Terrasoft.Common.JsonDataReader.CurrentName">CurrentName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CurrentName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_CurrentName">DataReader.CurrentName</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_CurrentValue_" data-uid="Terrasoft.Common.JsonDataReader.CurrentValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_CurrentValue" data-uid="Terrasoft.Common.JsonDataReader.CurrentValue">CurrentValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object CurrentValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_CurrentValue">DataReader.CurrentValue</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_Close_" data-uid="Terrasoft.Common.JsonDataReader.Close*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_Close" data-uid="Terrasoft.Common.JsonDataReader.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Closes the current <a class="xref" href="Terrasoft.Common.JsonDataReader.html">JsonDataReader</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Close()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_Close">DataReader.Close()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_Dispose_" data-uid="Terrasoft.Common.JsonDataReader.Dispose*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_Dispose_System_Boolean_" data-uid="Terrasoft.Common.JsonDataReader.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Deletes, releases and resets managed and unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p><code>true</code>, if both managed and unmanaged resources must be released; <code>false</code>, if only unmanaged resources must be released.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_Dispose_System_Boolean_">DataReader.Dispose(Boolean)</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetBoolValue_" data-uid="Terrasoft.Common.JsonDataReader.GetBoolValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetBoolValue" data-uid="Terrasoft.Common.JsonDataReader.GetBoolValue">GetBoolValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current property of the <span class="xref">System.Boolean</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool GetBoolValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>The current value of the property of the <span class="xref">System.Boolean</span> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetBoolValue">DataReader.GetBoolValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetDateTimeValue_" data-uid="Terrasoft.Common.JsonDataReader.GetDateTimeValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetDateTimeValue" data-uid="Terrasoft.Common.JsonDataReader.GetDateTimeValue">GetDateTimeValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current property of the <span class="xref">System.DateTime</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DateTime GetDateTimeValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><p>The current value of the property of the <span class="xref">System.DateTime</span> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetDateTimeValue">DataReader.GetDateTimeValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetDeserializedObjectValue_" data-uid="Terrasoft.Common.JsonDataReader.GetDeserializedObjectValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetDeserializedObjectValue_System_Type_" data-uid="Terrasoft.Common.JsonDataReader.GetDeserializedObjectValue(System.Type)">GetDeserializedObjectValue(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetDeserializedObjectValue(Type objectType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">objectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetDeserializedObjectValue_System_Type_">DataReader.GetDeserializedObjectValue(Type)</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetDoubleValue_" data-uid="Terrasoft.Common.JsonDataReader.GetDoubleValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetDoubleValue" data-uid="Terrasoft.Common.JsonDataReader.GetDoubleValue">GetDoubleValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current property of the <span class="xref">System.Double</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double GetDoubleValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The current value of the property of the <span class="xref">System.Double</span> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetDoubleValue">DataReader.GetDoubleValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetEnumValue_" data-uid="Terrasoft.Common.JsonDataReader.GetEnumValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetEnumValue__1" data-uid="Terrasoft.Common.JsonDataReader.GetEnumValue``1">GetEnumValue&lt;TValue&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the enumeration element that corresponds to the value of the current property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TValue GetEnumValue&lt;TValue&gt;()
+
+    where TValue : struct</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>The enumeration element that corresponds to the value of the current property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>Any type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetEnumValue__1">DataReader.GetEnumValue&lt;TValue&gt;()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetGuidValue_" data-uid="Terrasoft.Common.JsonDataReader.GetGuidValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetGuidValue" data-uid="Terrasoft.Common.JsonDataReader.GetGuidValue">GetGuidValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current property of the <span class="xref">System.Guid</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Guid GetGuidValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>The current value of the property of the <span class="xref">System.Guid</span> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetGuidValue">DataReader.GetGuidValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetIntValue_" data-uid="Terrasoft.Common.JsonDataReader.GetIntValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetIntValue" data-uid="Terrasoft.Common.JsonDataReader.GetIntValue">GetIntValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current property of the <span class="xref">System.Int32</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetIntValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The current value of the property of the <span class="xref">System.Int32</span> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetIntValue">DataReader.GetIntValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetLocalizableStringValue_" data-uid="Terrasoft.Common.JsonDataReader.GetLocalizableStringValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetLocalizableStringValue" data-uid="Terrasoft.Common.JsonDataReader.GetLocalizableStringValue">GetLocalizableStringValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current property of the <a class="xref" href="Terrasoft.Common.LocalizableString.html">LocalizableString</a> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override LocalizableString GetLocalizableStringValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableString.html">LocalizableString</a></td>
+        <td><p>The current value of the property of the <a class="xref" href="Terrasoft.Common.LocalizableString.html">LocalizableString</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetLocalizableStringValue">DataReader.GetLocalizableStringValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetSerialazebleObjectValue_" data-uid="Terrasoft.Common.JsonDataReader.GetSerialazebleObjectValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetSerialazebleObjectValue_System_Type_" data-uid="Terrasoft.Common.JsonDataReader.GetSerialazebleObjectValue(System.Type)">GetSerialazebleObjectValue(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the current deserialized property converted to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetSerialazebleObjectValue(Type objectType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">objectType</span></td>
+        <td><p>The type of the deserializable property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value of the deserializable property of the <code data-dev-comment-type="paramref" class="paramref">objectType</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetSerialazebleObjectValue_System_Type_">DataReader.GetSerialazebleObjectValue(Type)</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetSerializableObjectValue_" data-uid="Terrasoft.Common.JsonDataReader.GetSerializableObjectValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetSerializableObjectValue" data-uid="Terrasoft.Common.JsonDataReader.GetSerializableObjectValue">GetSerializableObjectValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current deserialized property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetSerializableObjectValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value of the serializable property of the <span class="xref">System.Object</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetSerializableObjectValue">DataReader.GetSerializableObjectValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetSerializableObjectValue_" data-uid="Terrasoft.Common.JsonDataReader.GetSerializableObjectValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetSerializableObjectValue__1" data-uid="Terrasoft.Common.JsonDataReader.GetSerializableObjectValue``1">GetSerializableObjectValue&lt;TValue&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the current deserialized property of this type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TValue GetSerializableObjectValue&lt;TValue&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>The value of the current deserializable property of the <code data-dev-comment-type="typeparamref" class="typeparamref">TValue</code> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>The type of the deserialized property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetSerializableObjectValue__1">DataReader.GetSerializableObjectValue&lt;TValue&gt;()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetStreamValue_" data-uid="Terrasoft.Common.JsonDataReader.GetStreamValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetStreamValue" data-uid="Terrasoft.Common.JsonDataReader.GetStreamValue">GetStreamValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current property of the <span class="xref">System.IO.Stream</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Stream GetStreamValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><p>The current value of the property of the <span class="xref">System.IO.Stream</span> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetStreamValue">DataReader.GetStreamValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetStreamValue_" data-uid="Terrasoft.Common.JsonDataReader.GetStreamValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetStreamValue_System_IO_Stream_" data-uid="Terrasoft.Common.JsonDataReader.GetStreamValue(System.IO.Stream)">GetStreamValue(Stream)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of the current property to the specified stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetStreamValue(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to write to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetStreamValue_System_IO_Stream_">DataReader.GetStreamValue(Stream)</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetStringValue_" data-uid="Terrasoft.Common.JsonDataReader.GetStringValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetStringValue" data-uid="Terrasoft.Common.JsonDataReader.GetStringValue">GetStringValue()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the current property of the <span class="xref">System.String</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetStringValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The current value of the property of the <span class="xref">System.String</span> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetStringValue">DataReader.GetStringValue()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetValue_" data-uid="Terrasoft.Common.JsonDataReader.GetValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetValue_System_Type_" data-uid="Terrasoft.Common.JsonDataReader.GetValue(System.Type)">GetValue(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the current property converted to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetValue(Type valueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">valueType</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value of the current property, converted to the <code data-dev-comment-type="paramref" class="paramref">valueType</code> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetValue_System_Type_">DataReader.GetValue(Type)</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetValue_" data-uid="Terrasoft.Common.JsonDataReader.GetValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetValue_Terrasoft_Common_DataConverter_" data-uid="Terrasoft.Common.JsonDataReader.GetValue(Terrasoft.Common.DataConverter)">GetValue(DataConverter)</h4>
+  <div class="markdown level1 summary"><p>Gets object that represents the value of the current property, converted with the help of the passed instance <a class="xref" href="Terrasoft.Common.DataConverter.html">DataConverter</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetValue(DataConverter converter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataConverter.html">DataConverter</a></td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.DataConverter.html">DataConverter</a> instance, used for conversion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value of the current property/attribute of the <span class="xref">System.Object</span> type, converted according to the <code data-dev-comment-type="paramref" class="paramref">converter</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetValue_Terrasoft_Common_DataConverter_">DataReader.GetValue(DataConverter)</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_GetValue_" data-uid="Terrasoft.Common.JsonDataReader.GetValue*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_GetValue__1" data-uid="Terrasoft.Common.JsonDataReader.GetValue``1">GetValue&lt;TValue&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the value of this type of the current property, converting it to this type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TValue GetValue&lt;TValue&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>The value of the property converted to the specified type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>Any type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_GetValue__1">DataReader.GetValue&lt;TValue&gt;()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_Read_" data-uid="Terrasoft.Common.JsonDataReader.Read*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_Read" data-uid="Terrasoft.Common.JsonDataReader.Read">Read()</h4>
+  <div class="markdown level1 summary"><p>Moves the current position in the data set to the next property of the current nesting level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Read()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string with the current property name or empty string if the end of the data set has been reached.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_Read">DataReader.Read()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_ReadInto_" data-uid="Terrasoft.Common.JsonDataReader.ReadInto*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_ReadInto" data-uid="Terrasoft.Common.JsonDataReader.ReadInto">ReadInto()</h4>
+  <div class="markdown level1 summary"><p>Moves the current position in the data set to one nesting level down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ReadInto()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string with the current property name or empty string if the current level has no attached properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_ReadInto">DataReader.ReadInto()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_ReadNextCollectionItem_" data-uid="Terrasoft.Common.JsonDataReader.ReadNextCollectionItem*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_ReadNextCollectionItem" data-uid="Terrasoft.Common.JsonDataReader.ReadNextCollectionItem">ReadNextCollectionItem()</h4>
+  <div class="markdown level1 summary"><p>Moves to the next element in the collection of elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ReadNextCollectionItem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the transition to the next element in collection has been successful; otherwise - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_ReadNextCollectionItem">DataReader.ReadNextCollectionItem()</a></div>
+  
+  
+  <a id="Terrasoft_Common_JsonDataReader_ReadOut_" data-uid="Terrasoft.Common.JsonDataReader.ReadOut*"></a>
+  <h4 id="Terrasoft_Common_JsonDataReader_ReadOut" data-uid="Terrasoft.Common.JsonDataReader.ReadOut">ReadOut()</h4>
+  <div class="markdown level1 summary"><p>Moves the current position in the data set to one nesting level up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ReadOut()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The empty string. Call <a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_Read">Read()</a> to receive the name of the next property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.DataReader.html#Terrasoft_Common_DataReader_ReadOut">DataReader.ReadOut()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.BaseSerializableObjectUtilities.html#Terrasoft_Common_BaseSerializableObjectUtilities_ReadSerializableObjectValue_Terrasoft_Common_DataReader_">BaseSerializableObjectUtilities.ReadSerializableObjectValue(DataReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

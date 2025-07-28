@@ -1,0 +1,167 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-mobile docs-version-current docs-doc-page docs-doc-id-undefined" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.7.0"><title data-rh=true>Debug Mobile Creatio | Creatio Academy</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://academy.creatio.com/docs/8.x/img/OG-Creatio-Docs.jpg><meta data-rh=true name=twitter:image content=https://academy.creatio.com/docs/8.x/img/OG-Creatio-Docs.jpg><meta data-rh=true property=og:url content=https://academy.creatio.com/docs/8.x/mobile/mobile-development/debugging-mobile-app/general-procedure><meta data-rh=true property=og:locale content=en><meta data-rh=true name=docusaurus_locale content=en><meta data-rh=true name=docsearch:language content=en><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-mobile-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-mobile-current><meta data-rh=true property=og:title content="Debug Mobile Creatio | Creatio Academy"><meta data-rh=true name=description content="The general procedure to debug Mobile Creatio differs in Freedom UI and Classic UI."><meta data-rh=true property=og:description content="The general procedure to debug Mobile Creatio differs in Freedom UI and Classic UI."><link data-rh=true rel=icon href=/docs/8.x/img/favicon.ico><link data-rh=true rel=canonical href=https://academy.creatio.com/docs/8.x/mobile/mobile-development/debugging-mobile-app/general-procedure><link data-rh=true rel=alternate href=https://academy.creatio.com/docs/8.x/mobile/mobile-development/debugging-mobile-app/general-procedure hreflang=en><link data-rh=true rel=alternate href=https://academy.creatio.com/docs/8.x/mobile/mobile-development/debugging-mobile-app/general-procedure hreflang=x-default><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-5C6KM9TP")</script><link rel=stylesheet href=/docs/8.x/assets/css/styles.1cb72ea6.css><script src=/docs/8.x/assets/js/runtime~main.46e08d89.js defer></script><script src=/docs/8.x/assets/js/main.c9889561.js defer></script><body class=navigation-with-keyboard><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
+
+
+<script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:"light",document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/docs/8.x/img/logo-white.svg><link rel=preload as=image href=/docs/8.x/img/logo.svg><link rel=preload as=image href=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/SetUpTheEmulator/8.2/scr_devices_tab.png><link rel=preload as=image href=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/SetUpTheEmulator/8.2/scr_sources_tab_freedom.png><link rel=preload as=image href=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/SetUpTheEmulator/8.2/scr_dev_module.png><link rel=preload as=image href=https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/DebugMobileApp/8.0/scr_ConnectedDevices.png><link rel=preload as=image href=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/SetUpTheEmulator/scr_sources_tab.png><link rel=preload as=image href=/docs/8.x/img/accelerate.svg><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><div class=navtop><div class=container-fluid><div class=navtop__content><div class=search><form method=get><input class=search__input type=text placeholder=Search name=search><input class=search__button type=submit value=Search></form><div class=search__toggle></div></div><ul class=sites><li class=sites__item><a href=https://www.creatio.com/ rel=nofollow target=_blank>Creatio</a><li class=sites__item><a href=https://community.creatio.com/ rel=nofollow target=_blank>Community</a><li class=sites__item><a href=https://marketplace.creatio.com/ rel=nofollow target=_blank>Marketplace</a><li class=sites__item><a href=https://knowledge-hub.creatio.com/ rel=nofollow target=_blank>Knowledge Hub</a></ul></div></div></div><nav aria-label=Main class="navbar navbar--fixed-top"><div class="navbar__inner container-fluid"><div class=navbar__items><div class=navbar__toggle><span></span></div><a class="navbar__brand navbar__brand_mobile" href=/><img src=/docs/8.x/img/logo-white.svg alt="Creatio Academy"></a><a class=navbar__brand href=/><img src=/docs/8.x/img/logo.svg alt="Creatio Academy"></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/8.x/>Guides</a><a href=https://academy.creatio.com/e-learning target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">E-learning</a><a href=https://academy.creatio.com/training target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Training</a><a href=https://academy.creatio.com/certification target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Certification</a></div><div class="navbar__items navbar__items--right"><div class=search><form method=get><input class=search__input type=text placeholder=Search name=search><input class=search__button type=submit value=Search></form><div class=search__toggle></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=container-fluid><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class="doc-menu sidebar_mhZE"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/mobile/category/mobile-basics>Mobile basics</a><button aria-label="Expand sidebar category 'Mobile basics'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/mobile/category/mobile-app-setup>Mobile app setup</a><button aria-label="Expand sidebar category 'Mobile app setup'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--active" href=/docs/8.x/mobile/category/mobile-app-development>Mobile app development</a><button aria-label="Collapse sidebar category 'Mobile app development'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/mobile/category/work-with-mobile-app>Work with mobile app</a><button aria-label="Expand sidebar category 'Work with mobile app'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/mobile/category/customization>Customization</a><button aria-label="Expand sidebar category 'Customization'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--active" tabindex=0 href=/docs/8.x/mobile/category/debugging>Debugging</a><button aria-label="Collapse sidebar category 'Debugging'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/8.x/mobile/mobile-development/debugging-mobile-app/overview>Set up the emulator</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/8.x/mobile/mobile-development/debugging-mobile-app/general-procedure>General procedure</a></ul></ul></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs itemscope itemtype=https://schema.org/BreadcrumbList><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/docs/8.x/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/docs/8.x/mobile/category/mobile-app-development><span itemprop=name>Mobile app development</span></a><meta itemprop=position content=1><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/docs/8.x/mobile/category/debugging><span itemprop=name>Debugging</span></a><meta itemprop=position content=2><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link itemprop=name>General procedure</span><meta itemprop=position content=3></ul></nav><div class=creatio-tags><div class=creatio-tags__content></div></div><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_bxCs"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Debug Mobile Creatio</h1></header><div class=difficulty-level><span class=difficulty-level-intermediate>Level: <!-- -->intermediate</span></div>
+<p>The general procedure to debug Mobile Creatio differs in Freedom UI and Classic UI.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=title-15904-1>Debug Mobile Creatio in Freedom UI<a href=#title-15904-1 class=hash-link aria-label="Direct link to Debug Mobile Creatio in Freedom UI" title="Direct link to Debug Mobile Creatio in Freedom UI">​</a></h2>
+<p>Mobile Creatio lets you customize Freedom UI pages by adding components and implement the business logic of the Freedom UI page using request handlers. You can implement a custom request handler in Mobile Creatio using remote module and debug the implemented business logic if needed.</p>
+<p>To debug Mobile Creatio in Freedom UI:</p>
+<ol>
+<li>
+<p><strong>Perform preliminary setup</strong> if needed.</p>
+<ol>
+<li>
+<p>Receive an <code>app-debug.apk</code> file of the Mobile Creatio app to debug. To do this, contact Creatio support (<code>support@creatio.com</code>).</p>
+</li>
+<li>
+<p>Install Google Chrome on your PC.</p>
+</li>
+<li>
+<p>Install and set up Android Studio. Learn more: <a href=https://developer.android.com/studio target=_blank rel="noopener noreferrer">Android Studio</a> (official Android Studio website), <a href="https://academy.creatio.com/documents?id=15029" target=_blank rel="noopener noreferrer">Set up the mobile app emulator</a>.</p>
+</li>
+<li>
+<p>Install and set up Android command-line tool. Learn more: <a href=https://developer.android.com/tools target=_blank rel="noopener noreferrer">Command-line tools</a> (official Android Studio documentation).</p>
+</li>
+<li>
+<p>Configure the behavior of Android Studio and the Android command-line tools. To do this, set the following environment variables.</p>
+<table><tr><th><p>Variable name<th><p>Variable description<th><p>Variable value<tr><td><p>PATH<td><p>The path to the <code>adb.exe</code> installation file.<td><p><code>C:\Users\SomeUserName\AppData\Local\Android\Sdk\platform-tools</code>, where <code>SomeUserName</code> is the username of your Windows user account.</table>
+<p>Learn more: <a href=https://developer.android.com/tools/variables target=_blank rel="noopener noreferrer">Environment variables</a> (official Android Studio documentation).</p>
+</li>
+<li>
+<p>Ensure the business logic of the remote module is implemented in the TypeScript project created via the *.zip archive. Otherwise, copy your customizations to a new TypeScript project created via a *.zip archive.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Specify the class</strong> that implements the <code>DoBootstrap</code> interface.</p>
+<ol>
+<li>Open the project in Microsoft Visual Studio Code.</li>
+<li>Open the <code>creatio-mobile-config.json</code> file.</li>
+<li>Set the class name to the <code>moduleName</code> property.</li>
+<li>Save the file.</li>
+</ol>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockTitle_P25_>creatio-mobile-config.json file</div><div class=codeBlockContent_m3Ux><pre tabindex=0 class="prism-code language-js codeBlock_qGQc thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_p187><span class=token-line style=color:#393A34><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token string-property property" style=color:#36acaa>"moduleName"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"SdkRemoteModuleInMobileApp"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token spread operator" style=color:#393A34>...</span><span class="token plain"></span><br></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br></span></code></pre><div class=buttonGroup_6DOT><button type=button aria-label="Copy code to clipboard" title=Copy class=clean-btn><span class=copyButtonIcons_eSgA aria-hidden=true><svg viewBox="0 0 24 24" class=copyButtonIcon_y97N><path fill=currentColor d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg><svg viewBox="0 0 24 24" class=copyButtonSuccessIcon_LjdS><path fill=currentColor d=M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z /></svg></span></button></div></div></div>
+</li>
+<li>
+<p><strong>Run Mobile Creatio</strong> to debug using Android Studio in one of the following ways:</p>
+<ul>
+<li>Android mobile device that has debug mode enabled. Enabling debug mode depends on the model of your mobile device.</li>
+<li>Mobile app emulator. Instructions: <a href="https://academy.creatio.com/documents?id=15029" target=_blank rel="noopener noreferrer">Set up the mobile app emulator</a>.</li>
+</ul>
+<p>We recommend simultaneously running only a single emulator or mobile device using Android Studio.</p>
+</li>
+<li>
+<p><strong>Upload your customization</strong> to the Mobile Creatio to debug. Repeat the step once you create a new emulator or delete data, even if you do not modify the code.</p>
+<ol>
+<li>
+<p>Open the project in Microsoft Visual Studio Code.</p>
+</li>
+<li>
+<p>Open the <code>package.json</code> file.</p>
+</li>
+<li>
+<p>Click <img decoding=async loading=lazy src=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/RequestHandlerMobileCreatio/8.2/scr_Debug_button.png alt="" class=img_ev3q> → <code>build:inject-on-device</code> command. This builds the project and automatically replaces the remote module's code with the remote module's code implemented in the project on the Mobile Creatio launched using Android Studio. Out of the box, the command replaces the code of the <code>main.js</code> and <code>main.release.js</code> files, but you can <strong>modify the list of replaced files</strong>:</p>
+<ol>
+<li>Open the project in Microsoft Visual Studio Code.</li>
+<li>Open the <code>tools</code> directory → <code>common.js</code> file.</li>
+<li>Specify the list of replaced files using the <code>updateExcludedModules()</code> method.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Apply the changes</strong>. To do this, restart the Mobile Creatio using Android Studio.</p>
+</li>
+<li>
+<p><strong>Open Google Chrome</strong> on the PC.</p>
+</li>
+<li>
+<p><strong>Open the Inspect with Chrome Developer Tools tab</strong>. To do this, enter the <code>chrome://inspect/#devices</code> URL in the browser address bar. This opens the <strong>Devices</strong> tab that includes the list of connected devices. The link to Mobile Creatio is <code>com.creatio.mobileapp</code>.</p>
+<figure><figcaption> <a id="" name=""></a></figcaption><div class=img-cotainer><img src=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/SetUpTheEmulator/8.2/scr_devices_tab.png alt=""></div></figure>
+<p>If the browser displays several devices that have the <code>com.creatio.mobileapp</code> link, select the first device.</p>
+</li>
+<li>
+<p><strong>Click the</strong> <code>inspect</code> <strong>link</strong> under the link to Mobile Creatio. This opens the <strong>Sources</strong> tab of an app debugging window.</p>
+<figure><figcaption> <a id="" name=""></a></figcaption><div class=img-cotainer><img src=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/SetUpTheEmulator/8.2/scr_sources_tab_freedom.png alt=""></div></figure>
+</li>
+<li>
+<p><strong>Find remote module</strong> to debug. Most of the classes are in the <code>dev_module</code> directory.</p>
+<figure><figcaption> <a id="" name=""></a></figcaption><div class=img-cotainer><img src=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/SetUpTheEmulator/8.2/scr_dev_module.png alt=""></div></figure>
+</li>
+<li>
+<p><strong>Debug Mobile Creatio</strong>.</p>
+</li>
+<li>
+<p><strong>Repeat steps 4-10</strong> to apply the changes.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=title-15904-2>Debug Mobile Creatio in Classic UI<a href=#title-15904-2 class=hash-link aria-label="Direct link to Debug Mobile Creatio in Classic UI" title="Direct link to Debug Mobile Creatio in Classic UI">​</a></h2>
+<ol>
+<li>
+<p><strong>Run Mobile Creatio</strong> to debug using one of the following ways:</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed=true><summary>Mobile device</summary><div><div class=collapsibleContent_i85q><div><ol>
+<li>Receive an <code>app-debug.apk</code> file of the Mobile Creatio app to debug. To do this, contact Creatio support (<code>support@creatio.com</code>).</li>
+<li>Install the Mobile Creatio on your mobile device.</li>
+<li>Run the app on the mobile device.</li>
+<li>Connect the mobile device to your PC via USB.</li>
+</ol></div></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed=true><summary>Mobile app emulator</summary><div><div class=collapsibleContent_i85q><div><p>Set up the mobile app emulator. Instructions: <a href="https://academy.creatio.com/documents?id=15029" target=_blank rel="noopener noreferrer">Set up the mobile app emulator</a>.</div></div></div></details>
+</li>
+<li>
+<p><strong>Open Google Chrome</strong> on the PC.</p>
+</li>
+<li>
+<p><strong>Open the Inspect with Chrome Developer Tools tab</strong>. To do this, enter the <code>chrome://inspect/#devices</code> URL in the browser address bar. This opens the <strong>Devices</strong> tab that includes the list of connected devices. The link to Mobile Creatio is <code>com.creatio.mobileapp</code>.</p>
+<figure><figcaption> <a id="" name=""></a></figcaption><div class=img-cotainer><img src=https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/DebugMobileApp/8.0/scr_ConnectedDevices.png alt=""></div></figure>
+</li>
+<li>
+<p><strong>Display the connected device</strong> (optional).</p>
+<p>If the connected device is missing from the <strong>Devices</strong> tab, check the device authorization. To do this:</p>
+<ol>
+<li>
+<p>Download Android Debug Bridge (adb). <a href=https://developer.android.com/studio/releases/platform-tools target=_blank rel="noopener noreferrer">Download</a>.</p>
+</li>
+<li>
+<p>Open the command line.</p>
+</li>
+<li>
+<p>Go to the directory that contains the <code>adb.exe</code> file. To do this, run the command below.</p>
+<div class="language-cli codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_m3Ux><pre tabindex=0 class="prism-code language-cli codeBlock_qGQc thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_p187><span class=token-line style=color:#393A34><span class="token plain">cd [Path to the directory that contains the adb.exe file]</span><br></span></code></pre><div class=buttonGroup_6DOT><button type=button aria-label="Copy code to clipboard" title=Copy class=clean-btn><span class=copyButtonIcons_eSgA aria-hidden=true><svg viewBox="0 0 24 24" class=copyButtonIcon_y97N><path fill=currentColor d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg><svg viewBox="0 0 24 24" class=copyButtonSuccessIcon_LjdS><path fill=currentColor d=M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z /></svg></span></button></div></div></div>
+</li>
+<li>
+<p>Open the list of connected devices. To do this, run the command below.</p>
+<div class="language-cli codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_m3Ux><pre tabindex=0 class="prism-code language-cli codeBlock_qGQc thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_p187><span class=token-line style=color:#393A34><span class="token plain">adb.exe devices</span><br></span></code></pre><div class=buttonGroup_6DOT><button type=button aria-label="Copy code to clipboard" title=Copy class=clean-btn><span class=copyButtonIcons_eSgA aria-hidden=true><svg viewBox="0 0 24 24" class=copyButtonIcon_y97N><path fill=currentColor d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg><svg viewBox="0 0 24 24" class=copyButtonSuccessIcon_LjdS><path fill=currentColor d=M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z /></svg></span></button></div></div></div>
+</li>
+<li>
+<p>If you see <code>unauthorized</code> status for the mobile device, authorize the device.</p>
+<ol>
+<li>Disconnect the USB cable.</li>
+<li>Revoke USB debugging permissions on your device.</li>
+<li>Reconnect the USB cable.</li>
+<li>Set <strong>Trust this computer?</strong> to "Yes."</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Click the inspect link</strong> under the link to Mobile Creatio. This opens an app debugging window.</p>
+</li>
+<li>
+<p><strong>Open the Sources tab</strong>.</p>
+</li>
+<li>
+<p><strong>Find functionality</strong> to debug. Most of the classes are in the <code>android_asset/www/js/terrasoft-all-combined.js</code> file.</p>
+<figure><figcaption> <a id="" name=""></a></figcaption><div class=img-cotainer><img src=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/SetUpTheEmulator/scr_sources_tab.png alt=""></div></figure>
+</li>
+<li>
+<p><strong>Debug Mobile Creatio</strong>.</p>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=see-also>See also<a href=#see-also class=hash-link aria-label="Direct link to See also" title="Direct link to See also">​</a></h2>
+<p><a href="https://academy.creatio.com/documents?id=15029" target=_blank rel="noopener noreferrer">Set up the mobile app emulator</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=resources>Resources<a href=#resources class=hash-link aria-label="Direct link to Resources" title="Direct link to Resources">​</a></h2>
+<p><a href=https://developer.android.com/studio target=_blank rel="noopener noreferrer">Official Android Studio website</a></p>
+<p><a href=https://developer.android.com/tools target=_blank rel="noopener noreferrer">Command-line tools</a> (official Android Studio documentation)</p>
+<p><a href=https://developer.android.com/tools/variables target=_blank rel="noopener noreferrer">Environment variables</a> (official Android Studio documentation)</div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/8.x/mobile/mobile-development/debugging-mobile-app/overview><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Set up the emulator</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#title-15904-1 class="table-of-contents__link toc-highlight">Debug Mobile Creatio in Freedom UI</a><li><a href=#title-15904-2 class="table-of-contents__link toc-highlight">Debug Mobile Creatio in Classic UI</a><li><a href=#see-also class="table-of-contents__link toc-highlight">See also</a><li><a href=#resources class="table-of-contents__link toc-highlight">Resources</a></ul></div></div></div></div></main></div></div></div></div><footer class=footer><div class=footer__top><div class="container container-fluid"><div class=footer__cont><div class=footer__logo><img src=/docs/8.x/img/accelerate.svg alt="" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" width=271.4 height=38><img src=/docs/8.x/img/accelerate.svg alt="" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" width=271.4 height=38></div><div class="row footer__links"><div class="col footer__col"><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.facebook.com/CreatioCompany target=_blank rel="noopener noreferrer" class=footer__link-item>Facebook<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://www.linkedin.com/company/creatioglobal target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://www.youtube.com/c/creatio target=_blank rel="noopener noreferrer" class=footer__link-item>YouTube<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://www.twitter.com/Creatio_Global target=_blank rel="noopener noreferrer" class=footer__link-item>Twitter<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://www.owler.com/company/Creatio target=_blank rel="noopener noreferrer" class=footer__link-item>Owler<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div><div class="col footer__col"><div class=footer__title>Connect with us</div><ul class="footer__items clean-list"><li class=footer__item><a href="tel:+1 617 765 7997" target=_blank rel="noopener noreferrer" class=footer__link-item>US: +1 617 765 7997</a><li class=footer__item><a href="tel:+44 20 3384 0040" target=_blank rel="noopener noreferrer" class=footer__link-item>UK: +44 20 3384 0040</a><li class=footer__item><a href="tel:+61 261 452 888" target=_blank rel="noopener noreferrer" class=footer__link-item>AU: +61 261 452 888</a></ul></div><div class="col footer__col"><div class=footer__title> </div><ul class="footer__items clean-list"><li class=footer__item><a href=mailto:info@creatio.com target=_blank rel="noopener noreferrer" class=footer__link-item>info@creatio.com</a><li class=footer__item><a href=mailto:info@creatio.com target=_blank rel="noopener noreferrer" class=footer__link-item>support@creatio.com</a></ul></div></div></div></div></div><div class=footer__bottom><div class="container container-fluid"><div class=footer__copyright>© 2025 Creatio. All rights reserved.  |  <a href=https://www.creatio.com/privacy-policy target=_blank>Privacy Policy</a></div></div></div></footer></div>

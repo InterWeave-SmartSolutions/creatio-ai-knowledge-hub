@@ -1,0 +1,3504 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UserConnection
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UserConnection
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Core.UserConnection">
+  
+  
+  <h1 id="Terrasoft_Core_UserConnection" data-uid="Terrasoft.Core.UserConnection" class="text-break">Class UserConnection
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UserConnection</span></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.SSPUserConnection.html">SSPUserConnection</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.SystemUserConnection.html">SystemUserConnection</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.TestFramework.TestCoreUserConnection.html">TestCoreUserConnection</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Core.html">Terrasoft.Core</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Core.dll</h6>
+  <h5 id="Terrasoft_Core_UserConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserConnection : IUserConnection, IDisposable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_UserConnection__ctor_" data-uid="Terrasoft.Core.UserConnection.#ctor*"></a>
+  <h4 id="Terrasoft_Core_UserConnection__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Terrasoft.Core.UserConnection.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">UserConnection(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UserConnection(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection__ctor_" data-uid="Terrasoft.Core.UserConnection.#ctor*"></a>
+  <h4 id="Terrasoft_Core_UserConnection__ctor_Terrasoft_Core_AppConnection_" data-uid="Terrasoft.Core.UserConnection.#ctor(Terrasoft.Core.AppConnection)">UserConnection(AppConnection)</h4>
+  <div class="markdown level1 summary"><p>Create a new instance of the <a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserConnection(AppConnection appConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.AppConnection.html">AppConnection</a></td>
+        <td><span class="parametername">appConnection</span></td>
+        <td><p>Application connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysAdminUnitIdColumnName" data-uid="Terrasoft.Core.UserConnection.SysAdminUnitIdColumnName">SysAdminUnitIdColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysAdminUnitIdColumnName = &quot;Id&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysAdminUnitInRoleSysAdminUnitIdColumnName" data-uid="Terrasoft.Core.UserConnection.SysAdminUnitInRoleSysAdminUnitIdColumnName">SysAdminUnitInRoleSysAdminUnitIdColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysAdminUnitInRoleSysAdminUnitIdColumnName = &quot;SysAdminUnitId&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysAdminUnitInRoleSysAdminUnitRoleIdColumnName" data-uid="Terrasoft.Core.UserConnection.SysAdminUnitInRoleSysAdminUnitRoleIdColumnName">SysAdminUnitInRoleSysAdminUnitRoleIdColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysAdminUnitInRoleSysAdminUnitRoleIdColumnName = &quot;SysAdminUnitRoleId&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysAdminUnitInRoleTableName" data-uid="Terrasoft.Core.UserConnection.SysAdminUnitInRoleTableName">SysAdminUnitInRoleTableName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysAdminUnitInRoleTableName = &quot;SysAdminUnitInRole&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysAdminUnitSysAdminUnitTypeValueColumnName" data-uid="Terrasoft.Core.UserConnection.SysAdminUnitSysAdminUnitTypeValueColumnName">SysAdminUnitSysAdminUnitTypeValueColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysAdminUnitSysAdminUnitTypeValueColumnName = &quot;SysAdminUnitTypeValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysAdminUnitTableName" data-uid="Terrasoft.Core.UserConnection.SysAdminUnitTableName">SysAdminUnitTableName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysAdminUnitTableName = &quot;SysAdminUnit&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsCodeColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsCodeColumnName">SysSettingsCodeColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsCodeColumnName = &quot;Code&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsIdColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsIdColumnName">SysSettingsIdColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsIdColumnName = &quot;Id&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsIsCacheableColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsIsCacheableColumnName">SysSettingsIsCacheableColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsIsCacheableColumnName = &quot;IsCacheable&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsTableName" data-uid="Terrasoft.Core.UserConnection.SysSettingsTableName">SysSettingsTableName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsTableName = &quot;SysSettings&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueBinaryValueColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueBinaryValueColumnName">SysSettingsValueBinaryValueColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueBinaryValueColumnName = &quot;BinaryValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueBooleanValueColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueBooleanValueColumnName">SysSettingsValueBooleanValueColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueBooleanValueColumnName = &quot;BooleanValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueDateTimeValueColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueDateTimeValueColumnName">SysSettingsValueDateTimeValueColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueDateTimeValueColumnName = &quot;DateTimeValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueFloatValueColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueFloatValueColumnName">SysSettingsValueFloatValueColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueFloatValueColumnName = &quot;FloatValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueGuidValueColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueGuidValueColumnName">SysSettingsValueGuidValueColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueGuidValueColumnName = &quot;GuidValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueIntegerValueColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueIntegerValueColumnName">SysSettingsValueIntegerValueColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueIntegerValueColumnName = &quot;IntegerValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValuePositionColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValuePositionColumnName">SysSettingsValuePositionColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValuePositionColumnName = &quot;Position&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueSysAdminUnitIdColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueSysAdminUnitIdColumnName">SysSettingsValueSysAdminUnitIdColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueSysAdminUnitIdColumnName = &quot;SysAdminUnitId&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueSysSettingsIdColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueSysSettingsIdColumnName">SysSettingsValueSysSettingsIdColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueSysSettingsIdColumnName = &quot;SysSettingsId&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueTableName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueTableName">SysSettingsValueTableName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueTableName = &quot;SysSettingsValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueTextValueColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueTextValueColumnName">SysSettingsValueTextValueColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueTextValueColumnName = &quot;TextValue&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Terrasoft_Core_UserConnection_SysSettingsValueTypeNameColumnName" data-uid="Terrasoft.Core.UserConnection.SysSettingsValueTypeNameColumnName">SysSettingsValueTypeNameColumnName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SysSettingsValueTypeNameColumnName = &quot;ValueTypeName&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_AppConnection_" data-uid="Terrasoft.Core.UserConnection.AppConnection*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_AppConnection" data-uid="Terrasoft.Core.UserConnection.AppConnection">AppConnection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppConnection AppConnection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.AppConnection.html">AppConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ApplicationCache_" data-uid="Terrasoft.Core.UserConnection.ApplicationCache*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ApplicationCache" data-uid="Terrasoft.Core.UserConnection.ApplicationCache">ApplicationCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICacheStore ApplicationCache { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Store.ICacheStore.html">ICacheStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ApplicationData_" data-uid="Terrasoft.Core.UserConnection.ApplicationData*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ApplicationData" data-uid="Terrasoft.Core.UserConnection.ApplicationData">ApplicationData</h4>
+  <div class="markdown level1 summary"><p>Application-level data storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDataStore ApplicationData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Store.IDataStore.html">IDataStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_AppManagerProvider_" data-uid="Terrasoft.Core.UserConnection.AppManagerProvider*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_AppManagerProvider" data-uid="Terrasoft.Core.UserConnection.AppManagerProvider">AppManagerProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ManagerProvider AppManagerProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ManagerProvider.html">ManagerProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ClientUnitSchemaManager_" data-uid="Terrasoft.Core.UserConnection.ClientUnitSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ClientUnitSchemaManager" data-uid="Terrasoft.Core.UserConnection.ClientUnitSchemaManager">ClientUnitSchemaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientUnitSchemaManager ClientUnitSchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ClientUnitSchemaManager.html">ClientUnitSchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Current_" data-uid="Terrasoft.Core.UserConnection.Current*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Current" data-uid="Terrasoft.Core.UserConnection.Current">Current</h4>
+  <div class="markdown level1 summary"><p>Current instance of the <a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UserConnection Current { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_CurrentUser_" data-uid="Terrasoft.Core.UserConnection.CurrentUser*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_CurrentUser" data-uid="Terrasoft.Core.UserConnection.CurrentUser">CurrentUser</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SysUserInfo CurrentUser { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Configuration.SysUserInfo.html">SysUserInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DataValueTypeManager_" data-uid="Terrasoft.Core.UserConnection.DataValueTypeManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DataValueTypeManager" data-uid="Terrasoft.Core.UserConnection.DataValueTypeManager">DataValueTypeManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataValueTypeManager DataValueTypeManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueTypeManager.html">DataValueTypeManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DBEngine_" data-uid="Terrasoft.Core.UserConnection.DBEngine*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DBEngine" data-uid="Terrasoft.Core.UserConnection.DBEngine">DBEngine</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DBEngine DBEngine { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.DBEngine.html">DBEngine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DBExecutorType_" data-uid="Terrasoft.Core.UserConnection.DBExecutorType*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DBExecutorType" data-uid="Terrasoft.Core.UserConnection.DBExecutorType">DBExecutorType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Type DBExecutorType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DBMetaEngine_" data-uid="Terrasoft.Core.UserConnection.DBMetaEngine*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DBMetaEngine" data-uid="Terrasoft.Core.UserConnection.DBMetaEngine">DBMetaEngine</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBMetaEngine DBMetaEngine { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.DBMetaEngine.html">DBMetaEngine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DBMetaScript_" data-uid="Terrasoft.Core.UserConnection.DBMetaScript*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DBMetaScript" data-uid="Terrasoft.Core.UserConnection.DBMetaScript">DBMetaScript</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DBMetaScript DBMetaScript { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.DBMetaScript.html">DBMetaScript</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DBSecurityEngine_" data-uid="Terrasoft.Core.UserConnection.DBSecurityEngine*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DBSecurityEngine" data-uid="Terrasoft.Core.UserConnection.DBSecurityEngine">DBSecurityEngine</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DBSecurityEngine DBSecurityEngine { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.DBSecurityEngine.html">DBSecurityEngine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DBSettings_" data-uid="Terrasoft.Core.UserConnection.DBSettings*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DBSettings" data-uid="Terrasoft.Core.UserConnection.DBSettings">DBSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DBConfigurationSectionGroup DBSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.DBConfigurationSectionGroup.html">DBConfigurationSectionGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DBTypeConverter_" data-uid="Terrasoft.Core.UserConnection.DBTypeConverter*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DBTypeConverter" data-uid="Terrasoft.Core.UserConnection.DBTypeConverter">DBTypeConverter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DBTypeConverter DBTypeConverter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.DBTypeConverter.html">DBTypeConverter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DcmSchemaManager_" data-uid="Terrasoft.Core.UserConnection.DcmSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DcmSchemaManager" data-uid="Terrasoft.Core.UserConnection.DcmSchemaManager">DcmSchemaManager</h4>
+  <div class="markdown level1 summary"><p>Gets DCM schema manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DcmSchemaManager DcmSchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchemaManager.html">DcmSchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_EntitySchemaManager_" data-uid="Terrasoft.Core.UserConnection.EntitySchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_EntitySchemaManager" data-uid="Terrasoft.Core.UserConnection.EntitySchemaManager">EntitySchemaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual EntitySchemaManager EntitySchemaManager { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaManager.html">EntitySchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ExternalAccessId_" data-uid="Terrasoft.Core.UserConnection.ExternalAccessId*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ExternalAccessId" data-uid="Terrasoft.Core.UserConnection.ExternalAccessId">ExternalAccessId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the external access identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid ExternalAccessId { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>The external access identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ImageListSchemaManager_" data-uid="Terrasoft.Core.UserConnection.ImageListSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ImageListSchemaManager" data-uid="Terrasoft.Core.UserConnection.ImageListSchemaManager">ImageListSchemaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageListSchemaManager ImageListSchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ImageListSchemaManager.html">ImageListSchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_IProcessEngine_" data-uid="Terrasoft.Core.UserConnection.IProcessEngine*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_IProcessEngine" data-uid="Terrasoft.Core.UserConnection.IProcessEngine">IProcessEngine</h4>
+  <div class="markdown level1 summary"><p>Gets Process engine interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProcessEngine IProcessEngine { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IProcessEngine.html">IProcessEngine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_IsMobileClient_" data-uid="Terrasoft.Core.UserConnection.IsMobileClient*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_IsMobileClient" data-uid="Terrasoft.Core.UserConnection.IsMobileClient">IsMobileClient</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether connection from mobile client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMobileClient { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if connection from mobile client; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_IsSessionStateModeInProc_" data-uid="Terrasoft.Core.UserConnection.IsSessionStateModeInProc*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_IsSessionStateModeInProc" data-uid="Terrasoft.Core.UserConnection.IsSessionStateModeInProc">IsSessionStateModeInProc</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSessionStateModeInProc { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_IsSystemOperationsRestricted_" data-uid="Terrasoft.Core.UserConnection.IsSystemOperationsRestricted*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_IsSystemOperationsRestricted" data-uid="Terrasoft.Core.UserConnection.IsSystemOperationsRestricted">IsSystemOperationsRestricted</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether system operations are restricted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSystemOperationsRestricted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if system operations are not allowed; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_LicHelper_" data-uid="Terrasoft.Core.UserConnection.LicHelper*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_LicHelper" data-uid="Terrasoft.Core.UserConnection.LicHelper">LicHelper</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual LicHelper LicHelper { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.LicHelper.html">LicHelper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Maintainer_" data-uid="Terrasoft.Core.UserConnection.Maintainer*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Maintainer" data-uid="Terrasoft.Core.UserConnection.Maintainer">Maintainer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Maintainer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_MaxEntitySchemaNameLength_" data-uid="Terrasoft.Core.UserConnection.MaxEntitySchemaNameLength*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_MaxEntitySchemaNameLength" data-uid="Terrasoft.Core.UserConnection.MaxEntitySchemaNameLength">MaxEntitySchemaNameLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxEntitySchemaNameLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ProcessEngine_" data-uid="Terrasoft.Core.UserConnection.ProcessEngine*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ProcessEngine" data-uid="Terrasoft.Core.UserConnection.ProcessEngine">ProcessEngine</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProcessEngine ProcessEngine { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IProcessEngine.html">IProcessEngine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ProcessSchemaManager_" data-uid="Terrasoft.Core.UserConnection.ProcessSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ProcessSchemaManager" data-uid="Terrasoft.Core.UserConnection.ProcessSchemaManager">ProcessSchemaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProcessSchemaManager ProcessSchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Process.ProcessSchemaManager.html">ProcessSchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ProcessUserTaskSchemaManager_" data-uid="Terrasoft.Core.UserConnection.ProcessUserTaskSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ProcessUserTaskSchemaManager" data-uid="Terrasoft.Core.UserConnection.ProcessUserTaskSchemaManager">ProcessUserTaskSchemaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProcessUserTaskSchemaManager ProcessUserTaskSchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Process.ProcessUserTaskSchemaManager.html">ProcessUserTaskSchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ProfileManager_" data-uid="Terrasoft.Core.UserConnection.ProfileManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ProfileManager" data-uid="Terrasoft.Core.UserConnection.ProfileManager">ProfileManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProfileManager ProfileManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Profiles.ProfileManager.html">ProfileManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_RequestData_" data-uid="Terrasoft.Core.UserConnection.RequestData*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_RequestData" data-uid="Terrasoft.Core.UserConnection.RequestData">RequestData</h4>
+  <div class="markdown level1 summary"><p>Request-level data storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDataStore RequestData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Store.IDataStore.html">IDataStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ResourceStorage_" data-uid="Terrasoft.Core.UserConnection.ResourceStorage*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ResourceStorage" data-uid="Terrasoft.Core.UserConnection.ResourceStorage">ResourceStorage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResourceStorage ResourceStorage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.IResourceStorage.html">IResourceStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_RootAdminUnitGroupId_" data-uid="Terrasoft.Core.UserConnection.RootAdminUnitGroupId*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_RootAdminUnitGroupId" data-uid="Terrasoft.Core.UserConnection.RootAdminUnitGroupId">RootAdminUnitGroupId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Guid RootAdminUnitGroupId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_RootSSPAdminUnitGroupId_" data-uid="Terrasoft.Core.UserConnection.RootSSPAdminUnitGroupId*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_RootSSPAdminUnitGroupId" data-uid="Terrasoft.Core.UserConnection.RootSSPAdminUnitGroupId">RootSSPAdminUnitGroupId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Guid RootSSPAdminUnitGroupId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_SchemaNamePrefix_" data-uid="Terrasoft.Core.UserConnection.SchemaNamePrefix*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_SchemaNamePrefix" data-uid="Terrasoft.Core.UserConnection.SchemaNamePrefix">SchemaNamePrefix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SchemaNamePrefix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_SessionCache_" data-uid="Terrasoft.Core.UserConnection.SessionCache*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_SessionCache" data-uid="Terrasoft.Core.UserConnection.SessionCache">SessionCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICacheStore SessionCache { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Store.ICacheStore.html">ICacheStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_SessionData_" data-uid="Terrasoft.Core.UserConnection.SessionData*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_SessionData" data-uid="Terrasoft.Core.UserConnection.SessionData">SessionData</h4>
+  <div class="markdown level1 summary"><p>Session-level data storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDataStore SessionData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Store.IDataStore.html">IDataStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_SessionId_" data-uid="Terrasoft.Core.UserConnection.SessionId*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_SessionId" data-uid="Terrasoft.Core.UserConnection.SessionId">SessionId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SessionId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_SourceCodeSchemaManager_" data-uid="Terrasoft.Core.UserConnection.SourceCodeSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_SourceCodeSchemaManager" data-uid="Terrasoft.Core.UserConnection.SourceCodeSchemaManager">SourceCodeSchemaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SourceCodeSchemaManager SourceCodeSchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.SourceCodeSchemaManager.html">SourceCodeSchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_SystemEntitySchemaManager_" data-uid="Terrasoft.Core.UserConnection.SystemEntitySchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_SystemEntitySchemaManager" data-uid="Terrasoft.Core.UserConnection.SystemEntitySchemaManager">SystemEntitySchemaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemEntitySchemaManager SystemEntitySchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Entities.SystemEntitySchemaManager.html">SystemEntitySchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_SystemValueManager_" data-uid="Terrasoft.Core.UserConnection.SystemValueManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_SystemValueManager" data-uid="Terrasoft.Core.UserConnection.SystemValueManager">SystemValueManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemValueManager SystemValueManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.SystemValueManager.html">SystemValueManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_UserManagerProvider_" data-uid="Terrasoft.Core.UserConnection.UserManagerProvider*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_UserManagerProvider" data-uid="Terrasoft.Core.UserConnection.UserManagerProvider">UserManagerProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagerProvider UserManagerProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ManagerProvider.html">ManagerProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ValueListSchemaManager_" data-uid="Terrasoft.Core.UserConnection.ValueListSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ValueListSchemaManager" data-uid="Terrasoft.Core.UserConnection.ValueListSchemaManager">ValueListSchemaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueListSchemaManager ValueListSchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ValueListSchemaManager.html">ValueListSchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Workspace_" data-uid="Terrasoft.Core.UserConnection.Workspace*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Workspace" data-uid="Terrasoft.Core.UserConnection.Workspace">Workspace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SysWorkspace Workspace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Configuration.SysWorkspace.html">SysWorkspace</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_WorkspaceCache_" data-uid="Terrasoft.Core.UserConnection.WorkspaceCache*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_WorkspaceCache" data-uid="Terrasoft.Core.UserConnection.WorkspaceCache">WorkspaceCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICacheStore WorkspaceCache { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Store.ICacheStore.html">ICacheStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_AddSettingsAdditionalColumns_" data-uid="Terrasoft.Core.UserConnection.AddSettingsAdditionalColumns*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_AddSettingsAdditionalColumns_Terrasoft_Core_DB_Select_" data-uid="Terrasoft.Core.UserConnection.AddSettingsAdditionalColumns(Terrasoft.Core.DB.Select)">AddSettingsAdditionalColumns(Select)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddSettingsAdditionalColumns(Select select)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.Select.html">Select</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_AuthenticatedInitialize_" data-uid="Terrasoft.Core.UserConnection.AuthenticatedInitialize*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_AuthenticatedInitialize" data-uid="Terrasoft.Core.UserConnection.AuthenticatedInitialize">AuthenticatedInitialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AuthenticatedInitialize()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_CheckIsSettingValueAvailable_" data-uid="Terrasoft.Core.UserConnection.CheckIsSettingValueAvailable*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_CheckIsSettingValueAvailable_System_Data_IDataReader_" data-uid="Terrasoft.Core.UserConnection.CheckIsSettingValueAvailable(System.Data.IDataReader)">CheckIsSettingValueAvailable(IDataReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CheckIsSettingValueAvailable(IDataReader dataReader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.IDataReader</span></td>
+        <td><span class="parametername">dataReader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ClearUserLicenseCache_" data-uid="Terrasoft.Core.UserConnection.ClearUserLicenseCache*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ClearUserLicenseCache" data-uid="Terrasoft.Core.UserConnection.ClearUserLicenseCache">ClearUserLicenseCache()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ClearUserLicenseCache()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Close_" data-uid="Terrasoft.Core.UserConnection.Close*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Close_Terrasoft_Common_SessionEndMethod_System_Boolean_" data-uid="Terrasoft.Core.UserConnection.Close(Terrasoft.Common.SessionEndMethod,System.Boolean)">Close(SessionEndMethod, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close(SessionEndMethod sessionEndMethod, bool needRegisterSessionEnd = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.SessionEndMethod.html">SessionEndMethod</a></td>
+        <td><span class="parametername">sessionEndMethod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">needRegisterSessionEnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Dispose_" data-uid="Terrasoft.Core.UserConnection.Dispose*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Dispose" data-uid="Terrasoft.Core.UserConnection.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs operations associated with freeing, releasing resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Dispose_" data-uid="Terrasoft.Core.UserConnection.Dispose*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Dispose_System_Boolean_" data-uid="Terrasoft.Core.UserConnection.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Disposes managed and unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>Value indicates whether it is needed to dispose all managed and unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_DisposeExecutors_" data-uid="Terrasoft.Core.UserConnection.DisposeExecutors*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_DisposeExecutors" data-uid="Terrasoft.Core.UserConnection.DisposeExecutors">DisposeExecutors()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DisposeExecutors()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_EnsureDBConnection_" data-uid="Terrasoft.Core.UserConnection.EnsureDBConnection*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_EnsureDBConnection" data-uid="Terrasoft.Core.UserConnection.EnsureDBConnection">EnsureDBConnection()</h4>
+  <div class="markdown level1 summary"><p>Returns a default instance of <a class="xref" href="Terrasoft.Core.DB.DBExecutor.html">DBExecutor</a> and ensures that the connection to database
+will be available until DBExecutor is disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DBExecutor EnsureDBConnection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.DBExecutor.html">DBExecutor</a></td>
+        <td><p>Default <a class="xref" href="Terrasoft.Core.DB.DBExecutor.html">DBExecutor</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_EnsureDBConnection_" data-uid="Terrasoft.Core.UserConnection.EnsureDBConnection*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_EnsureDBConnection_Terrasoft_Common_QueryKind_" data-uid="Terrasoft.Core.UserConnection.EnsureDBConnection(Terrasoft.Common.QueryKind)">EnsureDBConnection(QueryKind)</h4>
+  <div class="markdown level1 summary"><p>Returns an instance of <a class="xref" href="Terrasoft.Core.DB.DBExecutor.html">DBExecutor</a> associated with this <a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a>
+for the given <a class="xref" href="Terrasoft.Common.QueryKind.html">QueryKind</a>, and ensures that the connection to database will remain open
+until dbExecutor is disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DBExecutor EnsureDBConnection(QueryKind queryKind)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.QueryKind.html">QueryKind</a></td>
+        <td><span class="parametername">queryKind</span></td>
+        <td><p>Query kind for which a DBExecutor is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.DBExecutor.html">DBExecutor</a></td>
+        <td><p>DbExecutor for a given QueryKind.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_FindSchemaManager_" data-uid="Terrasoft.Core.UserConnection.FindSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_FindSchemaManager_System_String_" data-uid="Terrasoft.Core.UserConnection.FindSchemaManager(System.String)">FindSchemaManager(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISchemaManager FindSchemaManager(string schemaManagerName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">schemaManagerName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManager.html">ISchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetCodeSettingsQueryFilter_" data-uid="Terrasoft.Core.UserConnection.GetCodeSettingsQueryFilter*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetCodeSettingsQueryFilter_Terrasoft_Core_DB_QueryCondition_System_String_" data-uid="Terrasoft.Core.UserConnection.GetCodeSettingsQueryFilter(Terrasoft.Core.DB.QueryCondition,System.String)">GetCodeSettingsQueryFilter(QueryCondition, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Select GetCodeSettingsQueryFilter(QueryCondition condition, string settingsCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.QueryCondition.html">QueryCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settingsCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.Select.html">Select</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetDefaultTimeZone_" data-uid="Terrasoft.Core.UserConnection.GetDefaultTimeZone*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetDefaultTimeZone_System_TimeZoneInfo_" data-uid="Terrasoft.Core.UserConnection.GetDefaultTimeZone(System.TimeZoneInfo)">GetDefaultTimeZone(TimeZoneInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetDefaultTimeZone(TimeZoneInfo timeZone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeZoneInfo</span></td>
+        <td><span class="parametername">timeZone</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetDefSettingsValueWithoutCaching_" data-uid="Terrasoft.Core.UserConnection.GetDefSettingsValueWithoutCaching*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetDefSettingsValueWithoutCaching_System_String_" data-uid="Terrasoft.Core.UserConnection.GetDefSettingsValueWithoutCaching(System.String)">GetDefSettingsValueWithoutCaching(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object GetDefSettingsValueWithoutCaching(string settingsCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settingsCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetIsCacheableSettingsQueryFilter_" data-uid="Terrasoft.Core.UserConnection.GetIsCacheableSettingsQueryFilter*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetIsCacheableSettingsQueryFilter_Terrasoft_Core_DB_QueryCondition_" data-uid="Terrasoft.Core.UserConnection.GetIsCacheableSettingsQueryFilter(Terrasoft.Core.DB.QueryCondition)">GetIsCacheableSettingsQueryFilter(QueryCondition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Select GetIsCacheableSettingsQueryFilter(QueryCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.QueryCondition.html">QueryCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.Select.html">Select</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetIsTimeZoneValid_" data-uid="Terrasoft.Core.UserConnection.GetIsTimeZoneValid*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetIsTimeZoneValid_System_String_" data-uid="Terrasoft.Core.UserConnection.GetIsTimeZoneValid(System.String)">GetIsTimeZoneValid(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool GetIsTimeZoneValid(string userTimeZoneId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userTimeZoneId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetObjectData_" data-uid="Terrasoft.Core.UserConnection.GetObjectData*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Terrasoft.Core.UserConnection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetRootAdminUnitGroupId_" data-uid="Terrasoft.Core.UserConnection.GetRootAdminUnitGroupId*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetRootAdminUnitGroupId_Terrasoft_Core_UserType_" data-uid="Terrasoft.Core.UserConnection.GetRootAdminUnitGroupId(Terrasoft.Core.UserType)">GetRootAdminUnitGroupId(UserType)</h4>
+  <div class="markdown level1 summary"><p>Returns root <a class="xref" href="Terrasoft.Core.Configuration.SysAdminUnit.html">SysAdminUnit</a> group identifier for <code data-dev-comment-type="paramref" class="paramref">userType</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid GetRootAdminUnitGroupId(UserType userType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserType.html">UserType</a></td>
+        <td><span class="parametername">userType</span></td>
+        <td><p>User type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>Root <a class="xref" href="Terrasoft.Core.Configuration.SysAdminUnit.html">SysAdminUnit</a> group identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetRootAdminUnitGroupName_" data-uid="Terrasoft.Core.UserConnection.GetRootAdminUnitGroupName*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetRootAdminUnitGroupName_Terrasoft_Core_UserType_" data-uid="Terrasoft.Core.UserConnection.GetRootAdminUnitGroupName(Terrasoft.Core.UserType)">GetRootAdminUnitGroupName(UserType)</h4>
+  <div class="markdown level1 summary"><p>Returns root <a class="xref" href="Terrasoft.Core.Configuration.SysAdminUnit.html">SysAdminUnit</a> group name for <code data-dev-comment-type="paramref" class="paramref">userType</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetRootAdminUnitGroupName(UserType userType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserType.html">UserType</a></td>
+        <td><span class="parametername">userType</span></td>
+        <td><p>User type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Root <a class="xref" href="Terrasoft.Core.Configuration.SysAdminUnit.html">SysAdminUnit</a> group name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetRootAdminUnitGroupSelect_" data-uid="Terrasoft.Core.UserConnection.GetRootAdminUnitGroupSelect*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetRootAdminUnitGroupSelect_Terrasoft_Core_UserType_" data-uid="Terrasoft.Core.UserConnection.GetRootAdminUnitGroupSelect(Terrasoft.Core.UserType)">GetRootAdminUnitGroupSelect(UserType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Select GetRootAdminUnitGroupSelect(UserType userType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserType.html">UserType</a></td>
+        <td><span class="parametername">userType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.Select.html">Select</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetSchemaManager_" data-uid="Terrasoft.Core.UserConnection.GetSchemaManager*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetSchemaManager_System_String_" data-uid="Terrasoft.Core.UserConnection.GetSchemaManager(System.String)">GetSchemaManager(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISchemaManager GetSchemaManager(string schemaManagerName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">schemaManagerName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManager.html">ISchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetSettingsQueryColumns_" data-uid="Terrasoft.Core.UserConnection.GetSettingsQueryColumns*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetSettingsQueryColumns_Terrasoft_Core_DB_Select_" data-uid="Terrasoft.Core.UserConnection.GetSettingsQueryColumns(Terrasoft.Core.DB.Select)">GetSettingsQueryColumns(Select)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Select GetSettingsQueryColumns(Select select)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.Select.html">Select</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.Select.html">Select</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetSettingsQueryJoin_" data-uid="Terrasoft.Core.UserConnection.GetSettingsQueryJoin*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetSettingsQueryJoin_Terrasoft_Core_DB_Select_" data-uid="Terrasoft.Core.UserConnection.GetSettingsQueryJoin(Terrasoft.Core.DB.Select)">GetSettingsQueryJoin(Select)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Select GetSettingsQueryJoin(Select select)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.Select.html">Select</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DB.Select.html">Select</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_GetUserAdminUnitCollection_" data-uid="Terrasoft.Core.UserConnection.GetUserAdminUnitCollection*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_GetUserAdminUnitCollection" data-uid="Terrasoft.Core.UserConnection.GetUserAdminUnitCollection">GetUserAdminUnitCollection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;7.15.4&quot;)]
+protected virtual Collection&lt;Guid&gt; GetUserAdminUnitCollection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Initialize_" data-uid="Terrasoft.Core.UserConnection.Initialize*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Initialize" data-uid="Terrasoft.Core.UserConnection.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Initialize_" data-uid="Terrasoft.Core.UserConnection.Initialize*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Initialize_Terrasoft_Core_AppConfigurationSectionGroup_" data-uid="Terrasoft.Core.UserConnection.Initialize(Terrasoft.Core.AppConfigurationSectionGroup)">Initialize(AppConfigurationSectionGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(AppConfigurationSectionGroup appSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.AppConfigurationSectionGroup.html">AppConfigurationSectionGroup</a></td>
+        <td><span class="parametername">appSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_InitializeCurrentUser_" data-uid="Terrasoft.Core.UserConnection.InitializeCurrentUser*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_InitializeCurrentUser_System_String_System_TimeZoneInfo_System_String_System_String_System_Boolean_" data-uid="Terrasoft.Core.UserConnection.InitializeCurrentUser(System.String,System.TimeZoneInfo,System.String,System.String,System.Boolean)">InitializeCurrentUser(String, TimeZoneInfo, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeCurrentUser(string userName, TimeZoneInfo timeZone, string clientIP = null, string agent = null, bool needRegisterSessionStart = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeZoneInfo</span></td>
+        <td><span class="parametername">timeZone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientIP</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">needRegisterSessionStart</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_InitializeDBSecurityEngine_" data-uid="Terrasoft.Core.UserConnection.InitializeDBSecurityEngine*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_InitializeDBSecurityEngine" data-uid="Terrasoft.Core.UserConnection.InitializeDBSecurityEngine">InitializeDBSecurityEngine()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeDBSecurityEngine()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_InternalInitializeDBSecurityEngine_" data-uid="Terrasoft.Core.UserConnection.InternalInitializeDBSecurityEngine*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_InternalInitializeDBSecurityEngine" data-uid="Terrasoft.Core.UserConnection.InternalInitializeDBSecurityEngine">InternalInitializeDBSecurityEngine()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InternalInitializeDBSecurityEngine()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_IsSettingsAvailable_" data-uid="Terrasoft.Core.UserConnection.IsSettingsAvailable*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_IsSettingsAvailable_System_String_" data-uid="Terrasoft.Core.UserConnection.IsSettingsAvailable(System.String)">IsSettingsAvailable(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsSettingsAvailable(string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Login_" data-uid="Terrasoft.Core.UserConnection.Login*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Login_System_String_System_String_System_String_System_TimeZoneInfo_System_Boolean_" data-uid="Terrasoft.Core.UserConnection.Login(System.String,System.String,System.String,System.TimeZoneInfo,System.Boolean)">Login(String, String, String, TimeZoneInfo, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Login(string userName, string userPassword, string solutionName, TimeZoneInfo timeZone, bool needRegisterSessionStart = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userPassword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">solutionName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeZoneInfo</span></td>
+        <td><span class="parametername">timeZone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">needRegisterSessionStart</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Login_" data-uid="Terrasoft.Core.UserConnection.Login*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Login_System_String_System_TimeZoneInfo_System_Boolean_" data-uid="Terrasoft.Core.UserConnection.Login(System.String,System.TimeZoneInfo,System.Boolean)">Login(String, TimeZoneInfo, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Login(string userName, TimeZoneInfo timeZone = null, bool needRegisterSessionStart = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeZoneInfo</span></td>
+        <td><span class="parametername">timeZone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">needRegisterSessionStart</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_Login_" data-uid="Terrasoft.Core.UserConnection.Login*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_Login_System_String_System_TimeZoneInfo_System_String_System_String_System_Boolean_" data-uid="Terrasoft.Core.UserConnection.Login(System.String,System.TimeZoneInfo,System.String,System.String,System.Boolean)">Login(String, TimeZoneInfo, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Login(string userName, TimeZoneInfo timeZone, string clientIP, string agent, bool needRegisterSessionStart = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeZoneInfo</span></td>
+        <td><span class="parametername">timeZone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientIP</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">needRegisterSessionStart</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_LoginToDB_" data-uid="Terrasoft.Core.UserConnection.LoginToDB*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_LoginToDB_System_String_System_String_" data-uid="Terrasoft.Core.UserConnection.LoginToDB(System.String,System.String)">LoginToDB(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoginToDB(string userName, string userPassword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userPassword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_RefreshCurrentUserInfo_" data-uid="Terrasoft.Core.UserConnection.RefreshCurrentUserInfo*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_RefreshCurrentUserInfo" data-uid="Terrasoft.Core.UserConnection.RefreshCurrentUserInfo">RefreshCurrentUserInfo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshCurrentUserInfo()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ResetCurrent_" data-uid="Terrasoft.Core.UserConnection.ResetCurrent*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ResetCurrent" data-uid="Terrasoft.Core.UserConnection.ResetCurrent">ResetCurrent()</h4>
+  <div class="markdown level1 summary"><p>Resets the <a class="xref" href="Terrasoft.Core.UserConnection.html#Terrasoft_Core_UserConnection_Current">Current</a> property value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ResetCurrent()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ResetSettingsCache_" data-uid="Terrasoft.Core.UserConnection.ResetSettingsCache*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ResetSettingsCache" data-uid="Terrasoft.Core.UserConnection.ResetSettingsCache">ResetSettingsCache()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetSettingsCache()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_ResetSettingsCache_" data-uid="Terrasoft.Core.UserConnection.ResetSettingsCache*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_ResetSettingsCache_System_String_" data-uid="Terrasoft.Core.UserConnection.ResetSettingsCache(System.String)">ResetSettingsCache(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetSettingsCache(string settingsCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settingsCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_RestoreCurrentUserInfo_" data-uid="Terrasoft.Core.UserConnection.RestoreCurrentUserInfo*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_RestoreCurrentUserInfo" data-uid="Terrasoft.Core.UserConnection.RestoreCurrentUserInfo">RestoreCurrentUserInfo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RestoreCurrentUserInfo()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_SetCurrentUserCulture_" data-uid="Terrasoft.Core.UserConnection.SetCurrentUserCulture*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_SetCurrentUserCulture" data-uid="Terrasoft.Core.UserConnection.SetCurrentUserCulture">SetCurrentUserCulture()</h4>
+  <div class="markdown level1 summary"><p>Sets date/time format using user settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCurrentUserCulture()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_TerminateUserSession_" data-uid="Terrasoft.Core.UserConnection.TerminateUserSession*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_TerminateUserSession_System_String_" data-uid="Terrasoft.Core.UserConnection.TerminateUserSession(System.String)">TerminateUserSession(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TerminateUserSession(string sessionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_TerminateUserSession_" data-uid="Terrasoft.Core.UserConnection.TerminateUserSession*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_TerminateUserSession_System_String_System_Guid_" data-uid="Terrasoft.Core.UserConnection.TerminateUserSession(System.String,System.Guid)">TerminateUserSession(String, Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TerminateUserSession(string sessionId, Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_TerminateUserSessions_" data-uid="Terrasoft.Core.UserConnection.TerminateUserSessions*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_TerminateUserSessions_System_Guid_" data-uid="Terrasoft.Core.UserConnection.TerminateUserSessions(System.Guid)">TerminateUserSessions(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TerminateUserSessions(Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_TryGetSettingsValue_" data-uid="Terrasoft.Core.UserConnection.TryGetSettingsValue*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_TryGetSettingsValue_System_String_System_Object__" data-uid="Terrasoft.Core.UserConnection.TryGetSettingsValue(System.String,System.Object@)">TryGetSettingsValue(String, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TryGetSettingsValue(string settingsCode, out object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settingsCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_UserConnection_TryGetSettingsValueFromCache_" data-uid="Terrasoft.Core.UserConnection.TryGetSettingsValueFromCache*"></a>
+  <h4 id="Terrasoft_Core_UserConnection_TryGetSettingsValueFromCache_System_String_System_Object__" data-uid="Terrasoft.Core.UserConnection.TryGetSettingsValueFromCache(System.String,System.Object@)">TryGetSettingsValueFromCache(String, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TryGetSettingsValueFromCache(string settingsCode, out object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settingsCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.PasswordUtilities.html#Terrasoft_Core_PasswordUtilities_GetIsPasswordExpired_Terrasoft_Core_UserConnection_">PasswordUtilities.GetIsPasswordExpired(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.PasswordUtilities.html#Terrasoft_Core_PasswordUtilities_CheckIsPasswordExpired_Terrasoft_Core_UserConnection_">PasswordUtilities.CheckIsPasswordExpired(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.PasswordUtilities.html#Terrasoft_Core_PasswordUtilities_CheckIsPasswordNeedChange_Terrasoft_Core_UserConnection_">PasswordUtilities.CheckIsPasswordNeedChange(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.ServiceBus.BusUtils.html#Terrasoft_Core_ServiceBus_BusUtils_GetMessageBus_Terrasoft_Core_UserConnection_">BusUtils.GetMessageBus(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.File.FileFactoryUtils.html#Terrasoft_File_FileFactoryUtils_GetFileFactory_Terrasoft_Core_UserConnection_">FileFactoryUtils.GetFileFactory(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.File.FileFactoryUtils.html#Terrasoft_File_FileFactoryUtils_GetFile_Terrasoft_Core_UserConnection_Terrasoft_File_Abstractions_IFileLocator_">FileFactoryUtils.GetFile(UserConnection, IFileLocator)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.File.FileFactoryUtils.html#Terrasoft_File_FileFactoryUtils_CreateFile_Terrasoft_Core_UserConnection_Terrasoft_File_Abstractions_IFileLocator_">FileFactoryUtils.CreateFile(UserConnection, IFileLocator)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Reports.ReportUtilities.html#Terrasoft_Reports_ReportUtilities_GetReportSchemaManager_Terrasoft_Core_UserConnection_">ReportUtilities.GetReportSchemaManager(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Reports.ReportUtilities.html#Terrasoft_Reports_ReportUtilities_GetReportSchemaManagerName_Terrasoft_Core_UserConnection_">ReportUtilities.GetReportSchemaManagerName(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Services.ServiceSchemaManagerExtensions.html#Terrasoft_Services_ServiceSchemaManagerExtensions_GetServiceSchemaManager_Terrasoft_Core_UserConnection_">ServiceSchemaManagerExtensions.GetServiceSchemaManager(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_SetupDataValueTypeManager_Terrasoft_Core_UserConnection_Terrasoft_Core_DataValueTypeManager_System_Boolean_">NSubstituteExtension.SetupDataValueTypeManager(UserConnection, DataValueTypeManager, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_SetupSysUserInfo_Terrasoft_Core_UserConnection_Terrasoft_Core_IDateTimeProvider_">NSubstituteExtension.SetupSysUserInfo(UserConnection, IDateTimeProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.ProcessSubstituteExtension.html#Terrasoft_TestFramework_ProcessSubstituteExtension_SetupIProcessEngine_Terrasoft_Core_UserConnection_Terrasoft_Core_IProcessEngine_">ProcessSubstituteExtension.SetupIProcessEngine(UserConnection, IProcessEngine)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.ProcessSubstituteExtension.html#Terrasoft_TestFramework_ProcessSubstituteExtension_SetProcessEngineDBExecutor_Terrasoft_Core_UserConnection_System_Func_Terrasoft_Core_DB_DBExecutor__">ProcessSubstituteExtension.SetProcessEngineDBExecutor(UserConnection, Func&lt;DBExecutor&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupMessageBus_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupMessageBus(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSysWorkspace_Terrasoft_Core_UserConnection_System_Guid_">SubstituteUtilities.SetupSysWorkspace(UserConnection, Guid)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSysWorkspace_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupSysWorkspace(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSchemaManagerProvider_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupSchemaManagerProvider(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSysCultures_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupSysCultures(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupConnectionProvider_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupConnectionProvider(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupDBExecutor_Terrasoft_Core_UserConnection_Terrasoft_Core_DB_DBExecutor_">SubstituteUtilities.SetupDBExecutor(UserConnection, DBExecutor)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupProcessEngineDBExecutor_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupProcessEngineDBExecutor(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupDBEngine_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupDBEngine(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupMSSqlDBEngine_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupMSSqlDBEngine(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupEntitySchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Core_Entities_EntitySchemaManager_">SubstituteUtilities.SetupEntitySchemaManager(UserConnection, EntitySchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupEntitySchemaManager_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupEntitySchemaManager(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSystemEntitySchemaManager_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupSystemEntitySchemaManager(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSystemEntitySchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Core_Entities_SystemEntitySchemaManager_">SubstituteUtilities.SetupSystemEntitySchemaManager(UserConnection, SystemEntitySchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSystemValueManager_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupSystemValueManager(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupCurrentUser_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupCurrentUser(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSysDBSecurityEngine_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupSysDBSecurityEngine(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupDBSecurityEngine_Terrasoft_Core_UserConnection_Terrasoft_Core_DB_DBSecurityEngine_">SubstituteUtilities.SetupDBSecurityEngine(UserConnection, DBSecurityEngine)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupResourceManager_Terrasoft_Core_UserConnection_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_Dictionary_System_String_System_String___">SubstituteUtilities.SetupResourceManager(UserConnection, Dictionary&lt;String, Dictionary&lt;String, String&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupResourceManager_Terrasoft_Core_UserConnection_Terrasoft_Core_Schema_">SubstituteUtilities.SetupResourceManager(UserConnection, Schema)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupProcessSchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Core_Process_ProcessSchemaManager_">SubstituteUtilities.SetupProcessSchemaManager(UserConnection, ProcessSchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupServiceSchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Services_ServiceSchemaManager_">SubstituteUtilities.SetupServiceSchemaManager(UserConnection, ServiceSchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupProcessUserTaskSchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Core_Process_ProcessUserTaskSchemaManager_">SubstituteUtilities.SetupProcessUserTaskSchemaManager(UserConnection, ProcessUserTaskSchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSourceCodeSchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Core_SourceCodeSchemaManager_">SubstituteUtilities.SetupSourceCodeSchemaManager(UserConnection, SourceCodeSchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupDcmSchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Core_DcmProcess_DcmSchemaManager_">SubstituteUtilities.SetupDcmSchemaManager(UserConnection, DcmSchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_PrepareDBExecutorForEntitySchemaQueryRun_Terrasoft_Core_UserConnection_">SubstituteUtilities.PrepareDBExecutorForEntitySchemaQueryRun(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupClientUnitSchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Core_ClientUnitSchemaManager_">SubstituteUtilities.SetupClientUnitSchemaManager(UserConnection, ClientUnitSchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupAddonSchemaManager_Terrasoft_Core_UserConnection_Terrasoft_Core_Addons_AddonSchemaManager_">SubstituteUtilities.SetupAddonSchemaManager(UserConnection, AddonSchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSettingValue_Terrasoft_Core_UserConnection_System_String_System_Object_">SubstituteUtilities.SetupSettingValue(UserConnection, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupForeignMaintainerPackages_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupForeignMaintainerPackages(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupDBMetaScript_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupDBMetaScript(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupTypeConverter_Terrasoft_Core_UserConnection_">SubstituteUtilities.SetupTypeConverter(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupFileFactory_Terrasoft_Core_UserConnection_Terrasoft_File_Abstractions_IFileFactory_">SubstituteUtilities.SetupFileFactory(UserConnection, IFileFactory)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupProcessSecurityEngine_Terrasoft_Core_UserConnection_Terrasoft_Core_Process_IProcessSecurityEngine_">SubstituteUtilities.SetupProcessSecurityEngine(UserConnection, IProcessSecurityEngine)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.Process.ProcessExecutionTestUtilities.html#Terrasoft_TestFramework_Process_ProcessExecutionTestUtilities_SetupProcessEngineDI_Terrasoft_Core_UserConnection_">ProcessExecutionTestUtilities.SetupProcessEngineDI(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.Process.ProcessExecutionTestUtilities.html#Terrasoft_TestFramework_Process_ProcessExecutionTestUtilities_SetupInternalProcessEngine_Terrasoft_Core_UserConnection_">ProcessExecutionTestUtilities.SetupInternalProcessEngine(UserConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.Process.ProcessExecutionTestUtils.html#Terrasoft_TestFramework_Process_ProcessExecutionTestUtils_SetupTestProcessSchemaManager_Terrasoft_Core_UserConnection_Terrasoft_TestFramework_Process_TestProcessSchemaManager_">ProcessExecutionTestUtils.SetupTestProcessSchemaManager(UserConnection, TestProcessSchemaManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Web.Security.Csp.Extensions.UserConnectionExtensions.html#Terrasoft_Web_Security_Csp_Extensions_UserConnectionExtensions_GetCspHeaderActualizer_Terrasoft_Core_UserConnection_">UserConnectionExtensions.GetCspHeaderActualizer(UserConnection)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

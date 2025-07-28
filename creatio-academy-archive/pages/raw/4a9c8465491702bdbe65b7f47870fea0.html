@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DcmSchemaManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DcmSchemaManager
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager">
+  
+  
+  <h1 id="Terrasoft_Core_DcmProcess_DcmSchemaManager" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager" class="text-break">Class DcmSchemaManager
+  </h1>
+  <div class="markdown level0 summary"><p>Represents class for the DCM schema manager.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Terrasoft.Core.Manager-2.html">Manager</a>&lt;<a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;, <a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Terrasoft.Core.SchemaManager-1.html">SchemaManager</a>&lt;<a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html">FileSystemEnabledSchemaManager</a>&lt;<a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html">BaseProcessSchemaManager</a>&lt;<a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;</div>
+    <div class="level5"><span class="xref">DcmSchemaManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Terrasoft.Core.IManager-2.html">IManager</a>&lt;<a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;, <a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;</div>
+    <div><a class="xref" href="Terrasoft.Core.ISourceCodeSchemaManager.html">ISourceCodeSchemaManager</a></div>
+    <div><a class="xref" href="Terrasoft.Core.Process.IBaseProcessSchemaManager.html">IBaseProcessSchemaManager</a></div>
+    <div><a class="xref" href="Terrasoft.Core.ISchemaManager.html">ISchemaManager</a></div>
+    <div><a class="xref" href="Terrasoft.Core.IManager.html">IManager</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_VersionPropertyName">BaseProcessSchemaManager&lt;DcmSchema&gt;.VersionPropertyName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_OnProcessEnabled_Terrasoft_Core_Process_BaseProcessItemModificationEventArgs__0__">BaseProcessSchemaManager&lt;DcmSchema&gt;.OnProcessEnabled(BaseProcessItemModificationEventArgs&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_OnProcessDisabled_Terrasoft_Core_Process_BaseProcessItemModificationEventArgs__0__">BaseProcessSchemaManager&lt;DcmSchema&gt;.OnProcessDisabled(BaseProcessItemModificationEventArgs&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_OnProcessVersionChanged_Terrasoft_Core_Process_BaseProcessItemModificationEventArgs__0__">BaseProcessSchemaManager&lt;DcmSchema&gt;.OnProcessVersionChanged(BaseProcessItemModificationEventArgs&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_OnProcessInfoActualized_Terrasoft_Core_Process_BaseProcessSchemaModificationEventArgs__0__">BaseProcessSchemaManager&lt;DcmSchema&gt;.OnProcessInfoActualized(BaseProcessSchemaModificationEventArgs&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_InitializeItems">BaseProcessSchemaManager&lt;DcmSchema&gt;.InitializeItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_InitializeItems_System_Collections_Generic_IEnumerable_System_Guid__">BaseProcessSchemaManager&lt;DcmSchema&gt;.InitializeItems(IEnumerable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_SaveMetaDataDifferencePackage__0_Terrasoft_Core_Configuration_SysSchema_System_String_Terrasoft_Core_UserConnection_System_Boolean_">BaseProcessSchemaManager&lt;DcmSchema&gt;.SaveMetaDataDifferencePackage(DcmSchema, SysSchema, String, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_SaveMetaDataDifferencePackage__0_Terrasoft_Core_Configuration_SysSchema_System_String_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">BaseProcessSchemaManager&lt;DcmSchema&gt;.SaveMetaDataDifferencePackage(DcmSchema, SysSchema, String, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetParentSchemaLocalizableValues__0_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetParentSchemaLocalizableValues(DcmSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_CreateSchemaInstance_Terrasoft_Core_ISchemaManagerItem_System_Reflection_Assembly_">BaseProcessSchemaManager&lt;DcmSchema&gt;.CreateSchemaInstance(ISchemaManagerItem, Assembly)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_DeriveSchemaManagerItem_Terrasoft_Core_UserConnection_Terrasoft_Core_Entities_EntityCollection_">BaseProcessSchemaManager&lt;DcmSchema&gt;.DeriveSchemaManagerItem(UserConnection, EntityCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_ActualizeSchemaInfo__0_System_Guid_Terrasoft_Core_UserConnection_">BaseProcessSchemaManager&lt;DcmSchema&gt;.ActualizeSchemaInfo(DcmSchema, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_SaveFlowSchema__0_Terrasoft_Core_UserConnection_">BaseProcessSchemaManager&lt;DcmSchema&gt;.SaveFlowSchema(DcmSchema, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetProcessStatisticInfoQuery_System_Guid_Terrasoft_Core_UserConnection_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetProcessStatisticInfoQuery(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_RemoveProcessRights_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.RemoveProcessRights(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetSchemaMetaData_Terrasoft_Core_UserConnection__0_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetSchemaMetaData(UserConnection, DcmSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_AssignSysSchemaProperties_Terrasoft_Core_Configuration_SysSchema_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.AssignSysSchemaProperties(SysSchema, ISchemaManagerItem&lt;DcmSchema&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_SaveSysSchemaResources_Terrasoft_Core_UserConnection__0_Terrasoft_Core_ISchemaManagerItem__0__">BaseProcessSchemaManager&lt;DcmSchema&gt;.SaveSysSchemaResources(UserConnection, DcmSchema, ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_SaveClonedSchema_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem__0__Terrasoft_Core_ISchemaManagerItem__0__">BaseProcessSchemaManager&lt;DcmSchema&gt;.SaveClonedSchema(UserConnection, ISchemaManagerItem&lt;DcmSchema&gt;, ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_CreateSchemaCopy_Terrasoft_Core_UserConnection_System_Guid_System_String_System_String_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.CreateSchemaCopy(UserConnection, Guid, String, String, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_FindDesignItem_Terrasoft_Core_UserConnection_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.FindDesignItem(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_Initialize_Terrasoft_Core_SchemaManagerProvider_Terrasoft_Core_SchemaManagerProviderConfigurationElement_">BaseProcessSchemaManager&lt;DcmSchema&gt;.Initialize(SchemaManagerProvider, SchemaManagerProviderConfigurationElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetMetaDataSerializer_Terrasoft_Core_UserConnection_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetMetaDataSerializer(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetProcessValidationResult__0_Terrasoft_Core_UserConnection_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetProcessValidationResult(DcmSchema, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetItemFromMetaData_System_Guid_Terrasoft_Core_UserConnection_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetItemFromMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_RemoveRunningProcessDataByUId_Terrasoft_Core_UserConnection_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.RemoveRunningProcessDataByUId(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_RemoveRunningProcessData_Terrasoft_Core_UserConnection_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.RemoveRunningProcessData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_EnableProcess_Terrasoft_Core_UserConnection_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.EnableProcess(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_DisableProcess_Terrasoft_Core_UserConnection_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.DisableProcess(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetIsProcessEnabled_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetIsProcessEnabled(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetIsActiveVersion_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetIsActiveVersion(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetMaxProcessVersionInPackage_Terrasoft_Core_UserConnection_System_Guid_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetMaxProcessVersionInPackage(UserConnection, Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetProcessStatisticInfo_System_Guid_Terrasoft_Core_UserConnection_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetProcessStatisticInfo(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_SetActiveVersionItem_Terrasoft_Core_ISchemaManagerItem__0__">BaseProcessSchemaManager&lt;DcmSchema&gt;.SetActiveVersionItem(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetActiveVersionItemByUId_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetActiveVersionItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetActiveVersionItem_Terrasoft_Core_ISchemaManagerItem__0__">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetActiveVersionItem(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_SetIsDeliveredPropertyValue_System_Guid_System_Boolean_">BaseProcessSchemaManager&lt;DcmSchema&gt;.SetIsDeliveredPropertyValue(Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_GetAllVersionItems_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.GetAllVersionItems(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_Terrasoft_Core_Process_IBaseProcessSchemaManager_GetItemById_System_Guid_">BaseProcessSchemaManager&lt;DcmSchema&gt;.IBaseProcessSchemaManager.GetItemById(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_Terrasoft_Core_Process_IBaseProcessSchemaManager_FindParentSchema_Terrasoft_Core_Process_BaseProcessSchema_">BaseProcessSchemaManager&lt;DcmSchema&gt;.IBaseProcessSchemaManager.FindParentSchema(BaseProcessSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_Terrasoft_Core_Process_IBaseProcessSchemaManager_FindParentItem_Terrasoft_Core_Process_BaseProcessSchema_">BaseProcessSchemaManager&lt;DcmSchema&gt;.IBaseProcessSchemaManager.FindParentItem(BaseProcessSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_IsResolveAssemblyFromStandalonePackage">BaseProcessSchemaManager&lt;DcmSchema&gt;.IsResolveAssemblyFromStandalonePackage</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_Log">BaseProcessSchemaManager&lt;DcmSchema&gt;.Log</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_ProcessEnabled">BaseProcessSchemaManager&lt;DcmSchema&gt;.ProcessEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_ProcessDisabled">BaseProcessSchemaManager&lt;DcmSchema&gt;.ProcessDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_ProcessVersionChanged">BaseProcessSchemaManager&lt;DcmSchema&gt;.ProcessVersionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaManager-1.html#Terrasoft_Core_Process_BaseProcessSchemaManager_1_ProcessInfoActualized">BaseProcessSchemaManager&lt;DcmSchema&gt;.ProcessInfoActualized</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_SaveMetaData_System_IO_MemoryStream_Terrasoft_Core_Configuration_SysSchema_Terrasoft_Core_ISchemaManagerItem_">FileSystemEnabledSchemaManager&lt;DcmSchema&gt;.SaveMetaData(MemoryStream, SysSchema, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_SaveExtraProperties_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_">FileSystemEnabledSchemaManager&lt;DcmSchema&gt;.SaveExtraProperties(ISchemaManagerItem&lt;DcmSchema&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_SaveItem_Terrasoft_Core_Configuration_SysSchema_Terrasoft_Core_ISchemaManagerItem__0__">FileSystemEnabledSchemaManager&lt;DcmSchema&gt;.SaveItem(SysSchema, ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DifferencePackagePrefix">SchemaManager&lt;DcmSchema&gt;.DifferencePackagePrefix</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemAdding_Terrasoft_Core_SchemaManagerItemBeforeAddEventArgs_">SchemaManager&lt;DcmSchema&gt;.OnItemAdding(SchemaManagerItemBeforeAddEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemAdded_Terrasoft_Core_SchemaManagerItemAfterAddEventArgs_">SchemaManager&lt;DcmSchema&gt;.OnItemAdded(SchemaManagerItemAfterAddEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemRemoving_Terrasoft_Core_SchemaManagerItemBeforeRemoveEventArgs_">SchemaManager&lt;DcmSchema&gt;.OnItemRemoving(SchemaManagerItemBeforeRemoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemRemoved_Terrasoft_Core_SchemaManagerItemAfterRemoveEventArgs_">SchemaManager&lt;DcmSchema&gt;.OnItemRemoved(SchemaManagerItemAfterRemoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemSaving_Terrasoft_Core_SchemaManagerItemBeforeSaveEventArgs_">SchemaManager&lt;DcmSchema&gt;.OnItemSaving(SchemaManagerItemBeforeSaveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemSaved_Terrasoft_Core_SchemaManagerItemAfterSaveEventArgs_">SchemaManager&lt;DcmSchema&gt;.OnItemSaved(SchemaManagerItemAfterSaveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDataReaderAsGuid_System_Data_IDataReader_System_Int32_">SchemaManager&lt;DcmSchema&gt;.GetDataReaderAsGuid(IDataReader, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateItemCollection">SchemaManager&lt;DcmSchema&gt;.CreateItemCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ClearItems_System_Object_System_EventArgs_">SchemaManager&lt;DcmSchema&gt;.ClearItems(Object, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeInstance_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;DcmSchema&gt;.InitializeInstance(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSafeInstance_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;DcmSchema&gt;.InitializeSafeInstance(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateReferenceSchemaSources_System_Collections_Generic_IEnumerable_System_Guid__Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GenerateReferenceSchemaSources(IEnumerable&lt;Guid&gt;, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetItemReferenceSchemaUIds_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetItemReferenceSchemaUIds(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SetCustomProperties_Terrasoft_Core_Configuration_SysSchema__0_">SchemaManager&lt;DcmSchema&gt;.SetCustomProperties(SysSchema, DcmSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SelectCustomProperties_Terrasoft_Core_DB_Select_">SchemaManager&lt;DcmSchema&gt;.SelectCustomProperties(Select)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SetCustomProperties_Terrasoft_Core_ISchemaManagerItem__0__System_Data_IDataReader_">SchemaManager&lt;DcmSchema&gt;.SetCustomProperties(ISchemaManagerItem&lt;DcmSchema&gt;, IDataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SetCustomProperties_Terrasoft_Core_ISchemaManagerItem__0___0_">SchemaManager&lt;DcmSchema&gt;.SetCustomProperties(ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveMetaData__0_Terrasoft_Core_Configuration_SysSchema_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.SaveMetaData(DcmSchema, SysSchema, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaItem_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaItem(ISchemaManagerItem&lt;DcmSchema&gt;, Guid, Boolean, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaContent_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;DcmSchema&gt;.SaveSchemaContent(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchemaInDB_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalSaveSchemaInDB(ISchemaManagerItem&lt;DcmSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchemaInDB_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalSaveSchemaInDB(ISchemaManagerItem&lt;DcmSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchema_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalSaveSchema(ISchemaManagerItem&lt;DcmSchema&gt;, Guid, Boolean, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchema_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalSaveSchema(ISchemaManagerItem&lt;DcmSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchema_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalSaveSchema(ISchemaManagerItem&lt;DcmSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchema_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalSaveSchema(ISchemaManagerItem&lt;DcmSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetGeneratedItemPrefix_System_String_">SchemaManager&lt;DcmSchema&gt;.GetGeneratedItemPrefix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeUserPropertiesForAllItems_System_Guid_">SchemaManager&lt;DcmSchema&gt;.InitializeUserPropertiesForAllItems(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeUserPropertiesForItem_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;DcmSchema&gt;.InitializeUserPropertiesForItem(ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeItemsCaption_System_Guid_">SchemaManager&lt;DcmSchema&gt;.InitializeItemsCaption(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeItemsCaption_System_Collections_Generic_IEnumerable_System_Guid__">SchemaManager&lt;DcmSchema&gt;.InitializeItemsCaption(IEnumerable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeItems_System_Guid_">SchemaManager&lt;DcmSchema&gt;.InitializeItems(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalCreateSchema_System_String__0_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalCreateSchema(String, DcmSchema, UserConnection, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_LoadLocalizableValues__0_">SchemaManager&lt;DcmSchema&gt;.LoadLocalizableValues(DcmSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ModifyMetaDataProperty_Terrasoft_Common_JsonDataDifferencePackage__0_">SchemaManager&lt;DcmSchema&gt;.ModifyMetaDataProperty(JsonDataDifferencePackage, DcmSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ModifyMetaDataProperty_Terrasoft_Common_JsonDataDifferencePackage__0_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.ModifyMetaDataProperty(JsonDataDifferencePackage, DcmSchema, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddSchemaParentUIdItem_Terrasoft_Common_JsonDataDifferencePackage_System_Guid_">SchemaManager&lt;DcmSchema&gt;.AddSchemaParentUIdItem(JsonDataDifferencePackage, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ForceGetCustomPackageUId_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.ForceGetCustomPackageUId(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemAdditionalData_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem_System_Guid_">SchemaManager&lt;DcmSchema&gt;.SaveDesignedItemAdditionalData(UserConnection, ISchemaManagerItem, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ReInitializeSchemaLocalizableValues_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem__0__Terrasoft_Core_HierarchySchemaInfo_">SchemaManager&lt;DcmSchema&gt;.ReInitializeSchemaLocalizableValues(UserConnection, ISchemaManagerItem&lt;DcmSchema&gt;, HierarchySchemaInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaIdBySchemaUId_System_Guid_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetSchemaIdBySchemaUId(Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalCreateSchema_System_Guid_System_Guid_System_Guid_System_String__0_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalCreateSchema(Guid, Guid, Guid, String, DcmSchema, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalCreateSchema_System_String_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalCreateSchema(String, ISchemaManagerItem, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalCreateSchema_System_String__0_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.InternalCreateSchema(String, DcmSchema, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalDesignSchema_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.InternalDesignSchema(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaResourcesInDB_Terrasoft_Core_ISchemaManagerItem__0__System_Collections_Generic_Dictionary_System_String_Terrasoft_Common_LocalizableValueCollection__System_Guid_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaResourcesInDB(ISchemaManagerItem&lt;DcmSchema&gt;, Dictionary&lt;String, LocalizableValueCollection&gt;, Guid, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ReleaseResourcesManagers_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.ReleaseResourcesManagers(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateSchemaSources__0_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GenerateSchemaSources(DcmSchema, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_LoadManagerResources_Terrasoft_Core_SchemaResourceManager_System_Collections_Generic_Dictionary_System_String_System_String__">SchemaManager&lt;DcmSchema&gt;.LoadManagerResources(SchemaResourceManager, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetResourcesFromData_System_String_">SchemaManager&lt;DcmSchema&gt;.GetResourcesFromData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_UpdateResourceManager_Terrasoft_Core_UserConnection_System_String_System_String_">SchemaManager&lt;DcmSchema&gt;.UpdateResourceManager(UserConnection, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSchemaProperties__0_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;DcmSchema&gt;.InitializeSchemaProperties(DcmSchema, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaResourcesForSave_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;DcmSchema&gt;.GetSchemaResourcesForSave(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemasMetaData_System_Collections_Generic_IEnumerable_System_Guid__Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetSchemasMetaData(IEnumerable&lt;Guid&gt;, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaResources__0_">SchemaManager&lt;DcmSchema&gt;.GetSchemaResources(DcmSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DeserializeSchemaManagerItem_System_IO_Stream_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.DeserializeSchemaManagerItem(Stream, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSchemaExtraProperties__0_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;DcmSchema&gt;.InitializeSchemaExtraProperties(DcmSchema, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSchemaUserProperties__0_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;DcmSchema&gt;.InitializeSchemaUserProperties(DcmSchema, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DoItemAdding_System_Object_Terrasoft_Core_SchemaManagerItemBeforeAddEventArgs_">SchemaManager&lt;DcmSchema&gt;.DoItemAdding(Object, SchemaManagerItemBeforeAddEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DoItemAdded_System_Object_Terrasoft_Core_SchemaManagerItemAfterAddEventArgs_">SchemaManager&lt;DcmSchema&gt;.DoItemAdded(Object, SchemaManagerItemAfterAddEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DoItemRemoving_System_Object_Terrasoft_Core_SchemaManagerItemBeforeRemoveEventArgs_">SchemaManager&lt;DcmSchema&gt;.DoItemRemoving(Object, SchemaManagerItemBeforeRemoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DoItemRemoved_System_Object_Terrasoft_Core_SchemaManagerItemAfterRemoveEventArgs_">SchemaManager&lt;DcmSchema&gt;.DoItemRemoved(Object, SchemaManagerItemAfterRemoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SetMetaItemsCreatedInPackage__0_System_Guid_">SchemaManager&lt;DcmSchema&gt;.SetMetaItemsCreatedInPackage(DcmSchema, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetFullItemHierarchy_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetFullItemHierarchy(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateRuntimeSchemaFromMetaData_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.CreateRuntimeSchemaFromMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateRuntimeSchemaFromMetaData_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.CreateRuntimeSchemaFromMetaData(Guid, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_TryGetMetaDataInstanceFromCache_System_Guid_System_Guid__0__System_Nullable_System_Guid__">SchemaManager&lt;DcmSchema&gt;.TryGetMetaDataInstanceFromCache(Guid, Guid, DcmSchema, Nullable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddMetaDataInstanceToCache_System_Guid_System_Guid_System_Nullable_System_Guid___0_">SchemaManager&lt;DcmSchema&gt;.AddMetaDataInstanceToCache(Guid, Guid, Nullable&lt;Guid&gt;, DcmSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchemaItem_System_Guid_System_String__0_System_Boolean_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.CreateSchemaItem(Guid, String, DcmSchema, Boolean, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedDataToSession_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_">SchemaManager&lt;DcmSchema&gt;.SaveDesignedDataToSession(UserConnection, ISchemaManagerItem&lt;DcmSchema&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddEmptyDefaultEventsProcess_Terrasoft_Core_Process_ProcessBasedSchema_">SchemaManager&lt;DcmSchema&gt;.AddEmptyDefaultEventsProcess(ProcessBasedSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ReInitializeRuntimeSchemaResourceManager_System_String_System_String_">SchemaManager&lt;DcmSchema&gt;.ReInitializeRuntimeSchemaResourceManager(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetTextFromStream_System_IO_Stream_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.GetTextFromStream(Stream, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveItem_Terrasoft_Core_ISchemaManagerItem__0__Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.RemoveItem(ISchemaManagerItem&lt;DcmSchema&gt;, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ActualizeSchemaDifferencePackage_Terrasoft_Common_JsonDataDifferencePackage_">SchemaManager&lt;DcmSchema&gt;.ActualizeSchemaDifferencePackage(JsonDataDifferencePackage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ActualizeSchemaMetaData_Terrasoft_Core_Entities_EntityCollection_">SchemaManager&lt;DcmSchema&gt;.ActualizeSchemaMetaData(EntityCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveSchemaFromMetaDataCache_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;DcmSchema&gt;.RemoveSchemaFromMetaDataCache(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaMetaData__0_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaMetaData(DcmSchema, Guid, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaMetaData__0_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaMetaData(DcmSchema, Guid, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetItems">SchemaManager&lt;DcmSchema&gt;.GetItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Clear">SchemaManager&lt;DcmSchema&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveItemByUId_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.RemoveItemByUId(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveItemByName_System_Guid_System_String_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.RemoveItemByName(Guid, String, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindInstanceFromMetaDataByPackageUId_System_Guid_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.FindInstanceFromMetaDataByPackageUId(Guid, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetAllParents_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;DcmSchema&gt;.GetAllParents(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetProcessSchemaGenerator_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetProcessSchemaGenerator(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ActualizeItemDescriptor_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;DcmSchema&gt;.ActualizeItemDescriptor(ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DesignItem_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.DesignItem(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetItemFromMetaData_System_Guid_Terrasoft_Core_UserConnection_System_Nullable_System_Guid__">SchemaManager&lt;DcmSchema&gt;.GetItemFromMetaData(Guid, UserConnection, Nullable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RefreshItems">SchemaManager&lt;DcmSchema&gt;.RefreshItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RefreshItems_System_Collections_Generic_IEnumerable_System_Guid__">SchemaManager&lt;DcmSchema&gt;.RefreshItems(IEnumerable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_SetProvider_Terrasoft_Core_SchemaManagerProvider_">SchemaManager&lt;DcmSchema&gt;.ISchemaManager.SetProvider(SchemaManagerProvider)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DesignItemInCustomPackage_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.DesignItemInCustomPackage(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetItemIdByUId_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetItemIdByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeItem_System_Guid_">SchemaManager&lt;DcmSchema&gt;.InitializeItem(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSchema_Terrasoft_Core_ISchemaManagerItem_System_Reflection_Assembly_">SchemaManager&lt;DcmSchema&gt;.InitializeSchema(ISchemaManagerItem, Assembly)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSafeSchema_Terrasoft_Core_ISchemaManagerItem_System_Reflection_Assembly_">SchemaManager&lt;DcmSchema&gt;.InitializeSafeSchema(ISchemaManagerItem, Assembly)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FillSourceCollection_System_Collections_ObjectModel_Collection_Terrasoft_Core_ISchemaManagerItem__Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;DcmSchema&gt;.FillSourceCollection(Collection&lt;ISchemaManagerItem&gt;, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FillSourceCollection_System_Collections_ObjectModel_Collection_Terrasoft_Core_ISchemaManagerItem__System_Guid_">SchemaManager&lt;DcmSchema&gt;.FillSourceCollection(Collection&lt;ISchemaManagerItem&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddCoreSchema_System_Guid_System_String_">SchemaManager&lt;DcmSchema&gt;.AddCoreSchema(Guid, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddCoreSchema_System_Guid_System_String_System_Guid_System_Guid___">SchemaManager&lt;DcmSchema&gt;.AddCoreSchema(Guid, String, Guid, Guid[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddSchema_System_Guid_System_String_Terrasoft_Common_LocalizableString_Terrasoft_Common_LocalizableString_System_Guid_">SchemaManager&lt;DcmSchema&gt;.AddSchema(Guid, String, LocalizableString, LocalizableString, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveSchema_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.RemoveSchema(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_CreateSchema_System_String_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.ISchemaManager.CreateSchema(String, ISchemaManagerItem, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_CreateSchema_System_String_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.ISchemaManager.CreateSchema(String, ISchemaManagerItem, UserConnection, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchema_System_String__0_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.CreateSchema(String, DcmSchema, UserConnection, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchema_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.CreateSchema(UserConnection, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchema_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.CreateSchema(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_CreateDesignSchema_Terrasoft_Core_UserConnection_System_Guid_System_Guid_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.ISchemaManager.CreateDesignSchema(UserConnection, Guid, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateDesignSchema_Terrasoft_Core_UserConnection_System_Guid_System_Guid_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.CreateDesignSchema(UserConnection, Guid, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DesignSchema_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.DesignSchema(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchema_System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.SaveSchema(Guid, Boolean, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchema_Terrasoft_Core_ISchemaManagerItem__0__Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.SaveSchema(ISchemaManagerItem&lt;DcmSchema&gt;, UserConnection, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchema_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.SaveSchema(Guid, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaInCustomPackage_System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaInCustomPackage(Guid, Boolean, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaInCustomPackage_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaInCustomPackage(Guid, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaSource_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetSchemaSource(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaMetaDataDifferencePackage_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetSchemaMetaDataDifferencePackage(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaMetaData_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetSchemaMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaMetaDataText_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetSchemaMetaDataText(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDefSchemaUId">SchemaManager&lt;DcmSchema&gt;.GetDefSchemaUId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateItemUniqueName_System_String_">SchemaManager&lt;DcmSchema&gt;.GenerateItemUniqueName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateItemUniqueCaption_System_String_">SchemaManager&lt;DcmSchema&gt;.GenerateItemUniqueCaption(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaData_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetReadableSchemaMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaData_Terrasoft_Core_MetaSchema_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.GetReadableSchemaMetaData(MetaSchema, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaDataText_Terrasoft_Core_MetaSchema_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.GetReadableSchemaMetaDataText(MetaSchema, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaDataText_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetReadableSchemaMetaDataText(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaData_Terrasoft_Core_MetaSchema_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GetReadableSchemaMetaData(MetaSchema, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaSources_Terrasoft_Core_Entities_EntityCollection_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaSources(EntityCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaSources_System_Guid_System_Guid_Terrasoft_Core_UserConnection_System_String__">SchemaManager&lt;DcmSchema&gt;.GetSchemaSources(Guid, Guid, UserConnection, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DropInstances">SchemaManager&lt;DcmSchema&gt;.DropInstances()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaHierarchy_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetSchemaHierarchy(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaHierarchyByName_System_String_">SchemaManager&lt;DcmSchema&gt;.GetSchemaHierarchyByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignItem_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetDesignItem(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindDesignInstance_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.FindDesignInstance(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignInstance_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetDesignInstance(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindRuntimeInstanceByUId_System_Guid_">SchemaManager&lt;DcmSchema&gt;.FindRuntimeInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindRuntimeInstanceByName_System_String_">SchemaManager&lt;DcmSchema&gt;.FindRuntimeInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaDesignItem_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetSchemaDesignItem(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemInSessionData_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;DcmSchema&gt;.SaveDesignedItemInSessionData(ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemInSessionData_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;DcmSchema&gt;.SaveDesignedItemInSessionData(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemInSessionData_Terrasoft_Core_UserConnection_Terrasoft_Core_MetaSchema_System_Guid_">SchemaManager&lt;DcmSchema&gt;.SaveDesignedItemInSessionData(UserConnection, MetaSchema, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemFolderIdInSessionData_Terrasoft_Core_UserConnection_System_Guid_System_Guid_">SchemaManager&lt;DcmSchema&gt;.SaveDesignedItemFolderIdInSessionData(UserConnection, Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemIdInSessionData_Terrasoft_Core_UserConnection_System_Guid_System_Guid_">SchemaManager&lt;DcmSchema&gt;.SaveDesignedItemIdInSessionData(UserConnection, Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemPackageUIdInSessionData_Terrasoft_Core_UserConnection_System_Guid_System_Guid_">SchemaManager&lt;DcmSchema&gt;.SaveDesignedItemPackageUIdInSessionData(UserConnection, Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignedItemFolderIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetDesignedItemFolderIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignedItemIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetDesignedItemIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignedItemPackageUIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetDesignedItemPackageUIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveDesignedItemFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.RemoveDesignedItemFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveDesignedItemFromSessionData_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;DcmSchema&gt;.RemoveDesignedItemFromSessionData(ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveDesignedItemIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.RemoveDesignedItemIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveDesignedItemPackageUIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.RemoveDesignedItemPackageUIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateSchemaSources_System_Guid_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.GenerateSchemaSources(Guid, ISchemaManagerItem, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_TryGenerateSchemaSources_System_Guid_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.TryGenerateSchemaSources(Guid, ISchemaManagerItem, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_GetItemFromMetaData_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.ISchemaManager.GetItemFromMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_GetItemFromMetaData_System_Guid_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.ISchemaManager.GetItemFromMetaData(Guid, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaMetaData_Terrasoft_Core_ISchemaManagerItem_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaMetaData(ISchemaManagerItem, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CanEditSchema_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;DcmSchema&gt;.CanEditSchema(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetHash">SchemaManager&lt;DcmSchema&gt;.GetHash()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInheritedFrom_System_Guid_System_Guid_">SchemaManager&lt;DcmSchema&gt;.IsInheritedFrom(Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CheckUserPropertyRights_Terrasoft_Core_UserConnection_">SchemaManager&lt;DcmSchema&gt;.CheckUserPropertyRights(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_MoveSchemas_System_Collections_Generic_IEnumerable_System_Guid__System_Guid_">SchemaManager&lt;DcmSchema&gt;.MoveSchemas(IEnumerable&lt;Guid&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_MoveSchema_System_Guid_System_Guid_">SchemaManager&lt;DcmSchema&gt;.MoveSchema(Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaPackageDifference_Terrasoft_Core_UserConnection_Terrasoft_Core_Packages_PackageElementInfo_System_String_">SchemaManager&lt;DcmSchema&gt;.SaveSchemaPackageDifference(UserConnection, PackageElementInfo, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetPackageItems_System_Collections_Generic_IEnumerable_System_Guid__">SchemaManager&lt;DcmSchema&gt;.GetPackageItems(IEnumerable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_UpdatePackagePosition_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem_System_Guid_">SchemaManager&lt;DcmSchema&gt;.UpdatePackagePosition(UserConnection, ISchemaManagerItem, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetParentSchemaUIds_Terrasoft_Core_UserConnection_System_Guid_System_String_System_Guid_System_Boolean_">SchemaManager&lt;DcmSchema&gt;.GetParentSchemaUIds(UserConnection, Guid, String, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindRuntimeInstanceFromMetadata_System_Guid_">SchemaManager&lt;DcmSchema&gt;.FindRuntimeInstanceFromMetadata(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetRuntimeInstanceFromMetadata_System_Guid_">SchemaManager&lt;DcmSchema&gt;.GetRuntimeInstanceFromMetadata(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DeleteSchemaSource_System_Guid_">SchemaManager&lt;DcmSchema&gt;.DeleteSchemaSource(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsItemsInitialized">SchemaManager&lt;DcmSchema&gt;.IsItemsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Items">SchemaManager&lt;DcmSchema&gt;.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_MetaDataInstances">SchemaManager&lt;DcmSchema&gt;.MetaDataInstances</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Workspace">SchemaManager&lt;DcmSchema&gt;.Workspace</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SchemaManagerItems">SchemaManager&lt;DcmSchema&gt;.SchemaManagerItems</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_MetaItems">SchemaManager&lt;DcmSchema&gt;.MetaItems</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SystemUserConnection">SchemaManager&lt;DcmSchema&gt;.SystemUserConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemName">SchemaManager&lt;DcmSchema&gt;.ItemName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SchemaManagerProvider">SchemaManager&lt;DcmSchema&gt;.SchemaManagerProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CompileDependencies">SchemaManager&lt;DcmSchema&gt;.CompileDependencies</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AppConnection">SchemaManager&lt;DcmSchema&gt;.AppConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Namespace">SchemaManager&lt;DcmSchema&gt;.Namespace</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ProcessSchemaManager">SchemaManager&lt;DcmSchema&gt;.ProcessSchemaManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DefSchema">SchemaManager&lt;DcmSchema&gt;.DefSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SupportsProfiles">SchemaManager&lt;DcmSchema&gt;.SupportsProfiles</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemAdding">SchemaManager&lt;DcmSchema&gt;.IsInItemAdding</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemAdded">SchemaManager&lt;DcmSchema&gt;.IsInItemAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemRemoving">SchemaManager&lt;DcmSchema&gt;.IsInItemRemoving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemRemoved">SchemaManager&lt;DcmSchema&gt;.IsInItemRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemSaving">SchemaManager&lt;DcmSchema&gt;.IsInItemSaving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemSaved">SchemaManager&lt;DcmSchema&gt;.IsInItemSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemAdding">SchemaManager&lt;DcmSchema&gt;.ItemAdding</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemAdded">SchemaManager&lt;DcmSchema&gt;.ItemAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemRemoving">SchemaManager&lt;DcmSchema&gt;.ItemRemoving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Changed">SchemaManager&lt;DcmSchema&gt;.Changed</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemRemoved">SchemaManager&lt;DcmSchema&gt;.ItemRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemSaving">SchemaManager&lt;DcmSchema&gt;.ItemSaving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemSaved">SchemaManager&lt;DcmSchema&gt;.ItemSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_CreateItemCollection">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.CreateItemCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeInstance__0_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.InitializeInstance(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeSafeInstance__0_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.InitializeSafeInstance(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeAllItemCollection_Terrasoft_Core_IManagerItemCollection_Terrasoft_Core_IManagerItem__">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.InitializeAllItemCollection(IManagerItemCollection&lt;IManagerItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_ClearItems_System_Object_System_EventArgs_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.ClearItems(Object, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Initialize_Terrasoft_Core_ManagerProvider_Terrasoft_Core_ManagerProviderConfigurationElement_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.Initialize(ManagerProvider, ManagerProviderConfigurationElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItem_System_Predicate__0__">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.FindItem(Predicate&lt;ISchemaManagerItem&lt;DcmSchema&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.FindItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.FindItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.GetItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItemByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.GetItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByRealUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.FindItemByRealUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByRealUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.GetItemByRealUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByName_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.FindItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByName_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.FindItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByName_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.GetItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItemByName_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.GetItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindInstanceByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.FindInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindInstanceByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.FindInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetInstanceByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.GetInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetInstanceByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.GetInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindInstanceByName_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.FindInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindInstanceByName_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.FindInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetInstanceByName_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.GetInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetInstanceByName_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.GetInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByCaption_System_String_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.FindItemByCaption(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItems">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.IManager.GetItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItems_System_Predicate_Terrasoft_Core_IManagerItem__">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.GetItems(Predicate&lt;IManagerItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItems">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.GetItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Add__0_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.Add(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Remove__0_">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.Remove(ISchemaManagerItem&lt;DcmSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Clear">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Items">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Name">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Provider">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.Provider</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_ItemCount">Manager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;.ItemCount</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Core.DcmProcess.html">Terrasoft.Core.DcmProcess</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Core.dll</h6>
+  <h5 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DcmSchemaManager : BaseProcessSchemaManager&lt;DcmSchema&gt;, IManager&lt;ISchemaManagerItem&lt;DcmSchema&gt;, DcmSchema&gt;, IInternalSchemaManager, ISourceCodeSchemaManager, IBaseProcessSchemaManager, ISchemaManager, IManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager__ctor_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.#ctor*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager__ctor" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.#ctor">DcmSchemaManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DcmSchemaManager()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_CanUseUserProperties_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.CanUseUserProperties*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_CanUseUserProperties" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.CanUseUserProperties">CanUseUserProperties</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance can use user properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool CanUseUserProperties { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.CanUseUserProperties</span></div>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_ItemCaption_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.ItemCaption*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_ItemCaption" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.ItemCaption">ItemCaption</h4>
+  <div class="markdown level1 summary"><p>Gets item caption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ItemCaption { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.ItemCaption</span></div>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_ItemTypeName_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.ItemTypeName*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_ItemTypeName" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.ItemTypeName">ItemTypeName</h4>
+  <div class="markdown level1 summary"><p>Gets item name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string ItemTypeName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.ItemTypeName</span></div>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_ResourceManagerName_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.ResourceManagerName*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_ResourceManagerName" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.ResourceManagerName">ResourceManagerName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the resource manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ResourceManagerName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.FileSystemEnabledSchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.ResourceManagerName</span></div>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_SysSchemaUserPropertyRightsOperations_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.SysSchemaUserPropertyRightsOperations*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_SysSchemaUserPropertyRightsOperations" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.SysSchemaUserPropertyRightsOperations">SysSchemaUserPropertyRightsOperations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string[] SysSchemaUserPropertyRightsOperations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.SysSchemaUserPropertyRightsOperations</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_CheckOperationUserRights_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.CheckOperationUserRights*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_CheckOperationUserRights_Terrasoft_Core_UserConnection_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.CheckOperationUserRights(Terrasoft.Core.UserConnection)">CheckOperationUserRights(UserConnection)</h4>
+  <div class="markdown level1 summary"><p>Checks user rights for manage schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool CheckOperationUserRights(UserConnection userConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td><p>The user connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Flag that indicates if user have rights</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.CheckOperationUserRights(Terrasoft.Core.UserConnection)</span></div>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_CreateInterpretationValidator_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.CreateInterpretationValidator*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_CreateInterpretationValidator_Terrasoft_Core_UserConnection_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.CreateInterpretationValidator(Terrasoft.Core.UserConnection)">CreateInterpretationValidator(UserConnection)</h4>
+  <div class="markdown level1 summary"><p>Gets the interpretation validator for process schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IInterpretationValidator&lt;DcmSchema&gt; CreateInterpretationValidator(UserConnection userConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td><p>The user connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Process.IInterpretationValidator-1.html">IInterpretationValidator</a>&lt;<a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;</td>
+        <td><p>Interpretation validator instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Process.BaseProcessSchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.CreateInterpretationValidator(Terrasoft.Core.UserConnection)</span></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotImplementedException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_CreateItem_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.CreateItem*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_CreateItem" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.CreateItem">CreateItem()</h4>
+  <div class="markdown level1 summary"><p>Creates the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ISchemaManagerItem&lt;DcmSchema&gt; CreateItem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;</td>
+        <td><p>Item instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Process.BaseProcessSchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.CreateItem()</span></div>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_GetGenerator_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.GetGenerator*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_GetGenerator_Terrasoft_Core_UserConnection_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.GetGenerator(Terrasoft.Core.UserConnection)">GetGenerator(UserConnection)</h4>
+  <div class="markdown level1 summary"><p>The method is not implemented.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SchemaCodeGenerator&lt;DcmSchema&gt; GetGenerator(UserConnection userConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.CodeGeneration.SchemaCodeGenerator-1.html">SchemaCodeGenerator</a>&lt;<a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.GetGenerator(Terrasoft.Core.UserConnection)</span></div>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_GetSchemaSources_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.GetSchemaSources*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_GetSchemaSources_Terrasoft_Core_DcmProcess_DcmSchema_System_Guid_Terrasoft_Core_UserConnection_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.GetSchemaSources(Terrasoft.Core.DcmProcess.DcmSchema,System.Guid,Terrasoft.Core.UserConnection)">GetSchemaSources(DcmSchema, Guid, UserConnection)</h4>
+  <div class="markdown level1 summary"><p>Returns entity collection, which contains schema sources. Since the dcm schema has no sources it will
+return an empty collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override EntityCollection GetSchemaSources(DcmSchema schema, Guid schemaId, UserConnection userConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>The schema.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">schemaId</span></td>
+        <td><p>The schema Id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td><p>The user connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Entities.EntityCollection.html">EntityCollection</a></td>
+        <td><p>Schema sources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Process.BaseProcessSchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.GetSchemaSources(Terrasoft.Core.DcmProcess.DcmSchema, System.Guid, Terrasoft.Core.UserConnection)</span></div>
+  
+  
+  <a id="Terrasoft_Core_DcmProcess_DcmSchemaManager_InitializeDefSchema_" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.InitializeDefSchema*"></a>
+  <h4 id="Terrasoft_Core_DcmProcess_DcmSchemaManager_InitializeDefSchema" data-uid="Terrasoft.Core.DcmProcess.DcmSchemaManager.InitializeDefSchema">InitializeDefSchema()</h4>
+  <div class="markdown level1 summary"><p>Initializes the schema which is used as default parent schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override DcmSchema InitializeDefSchema()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchema.html">DcmSchema</a></td>
+        <td><p>Default Dcm schema</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.DcmProcess.DcmSchema&gt;.InitializeDefSchema()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IManager-2.html">IManager&lt;TItem, TInstance&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.ISourceCodeSchemaManager.html">ISourceCodeSchemaManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.Process.IBaseProcessSchemaManager.html">IBaseProcessSchemaManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.ISchemaManager.html">ISchemaManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IManager.html">IManager</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSchemaManagerProvider__1_Terrasoft_Core_SchemaManager___0__Terrasoft_Core_AppConnection_">SubstituteUtilities.SetupSchemaManagerProvider&lt;T&gt;(SchemaManager&lt;T&gt;, AppConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

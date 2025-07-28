@@ -150,6 +150,11 @@ web.config.user
 *.7z
 *.tar.gz
 
+# Large media files
+*.wav
+*.mp4
+*.gif
+
 # Virtual environments
 venv/
 env/
@@ -159,7 +164,6 @@ env/
 # Large data directories
 ai_optimization/
 videos/
-creatio-academy-archive/
 
 # Database files
 *.db
