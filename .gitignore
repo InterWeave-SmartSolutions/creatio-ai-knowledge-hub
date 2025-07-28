@@ -116,7 +116,7 @@ jspm_packages/
 .tern-port
 
 # Creatio specific
-packages/
+# packages/ - now tracking this
 App_Data/
 Logs/
 WorkspaceConsole/

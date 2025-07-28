@@ -1,0 +1,63 @@
+{
+  "name": "creatio-ai-knowledge-hub-registry",
+  "version": "1.0.0",
+  "description": "Local package registry for Creatio AI Knowledge Hub",
+  "registries": {
+    "local": {
+      "type": "local",
+      "path": "./local",
+      "enabled": true,
+      "priority": 1
+    },
+    "npm": {
+      "type": "remote",
+      "url": "https://registry.npmjs.org/",
+      "enabled": true,
+      "priority": 2,
+      "cache": true,
+      "cache_ttl": 3600
+    },
+    "pypi": {
+      "type": "remote", 
+      "url": "https://pypi.org/simple/",
+      "enabled": true,
+      "priority": 2,
+      "cache": true,
+      "cache_ttl": 3600
+    },
+    "creatio": {
+      "type": "remote",
+      "url": "https://marketplace.creatio.com/",
+      "enabled": true,
+      "priority": 3,
+      "cache": true,
+      "cache_ttl": 7200
+    }
+  },
+  "environments": {
+    "development": {
+      "auto_update": true,
+      "use_cache": true,
+      "install_dev_dependencies": true
+    },
+    "staging": {
+      "auto_update": false,
+      "use_cache": true,
+      "install_dev_dependencies": false
+    },
+    "production": {
+      "auto_update": false,
+      "use_cache": true,
+      "install_dev_dependencies": false,
+      "verify_signatures": true
+    }
+  },
+  "dependency_tracking": {
+    "enabled": true,
+    "track_usage": true,
+    "security_scanning": true,
+    "license_compliance": true
+  },
+  "created": "2024-01-01T00:00:00Z",
+  "last_updated": "2024-01-01T00:00:00Z"
+}
