@@ -164,8 +164,9 @@ env/
 .venv/
 .env/
 
-# Large data directories
-ai_optimization/
+# Large data directories - exclude video content but keep scripts
+ai_optimization/creatio-academy-db/developer_course/videos/
+ai_optimization/__pycache__/
 # videos/ - now tracking this
 
 # Database files
