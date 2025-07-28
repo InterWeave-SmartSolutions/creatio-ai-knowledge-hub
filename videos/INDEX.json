@@ -1,0 +1,53 @@
+{
+  "directory": "videos",
+  "created": "2025-07-22T13:15:52.898295",
+  "structure": {
+    "root": {
+      "subdirectories": ["live_sessions", "metadata", "summaries", "transcripts", "tutorials"],
+      "files": [],
+      "file_count": 0
+    },
+    "live_sessions": {
+      "subdirectories": [],
+      "files": ["creatio Live Stream [55O25NwAPas].mkv", "55O25NwAPas_creatio Live Stream.mp4"],
+      "file_count": 2
+    },
+    "metadata": {
+      "subdirectories": [],
+      "files": ["N8PSk0GBhC8_prueba_metadata.yaml", "N8PSk0GBhC8_prueba_metadata.json"],
+      "file_count": 2
+    },
+    "summaries": {
+      "subdirectories": [],
+      "files": ["N8PSk0GBhC8_prueba_summary.json", "N8PSk0GBhC8_prueba_enhanced_summary.json"],
+      "file_count": 2
+    },
+    "transcripts": {
+      "subdirectories": [],
+      "files": [
+        "N8PSk0GBhC8_prueba_transcript.txt",
+        "N8PSk0GBhC8_prueba_subtitles.srt",
+        "N8PSk0GBhC8_prueba_transcription.json"
+      ],
+      "file_count": 3
+    },
+    "tutorials": {
+      "subdirectories": [],
+      "files": [
+        "video_9_Tech Hour - Marketplace Apps\uff1a Editor Picks.mp4",
+        "video_5_Set up integration with Google services, MS Exchange and MS Office..mp4",
+        "video_4_Tech Hour - Docker for Creatio.mp4",
+        "N8PSk0GBhC8_prueba.mp4",
+        "video_14_UI\u29f8 UX Best practices in Creatio.mp4",
+        "video_13_Tech Hour - HOW TO USE BUTTONS AND ACTIONS TO EMPOWER CREATIO PAGES.mp4",
+        "video_10_Tech Hour - Integrate like a boss.mp4",
+        "video_12_Tech Hour - Integrate like a boss with Creatio, part 2 (Odata).mp4",
+        "7GvZ6ZvHJjM_prueba 2.mp4",
+        "video_1_Tech Hour - Request management using Creatio Portal.mp4",
+        "video_11_Tech Hour - W5H of teamwork - Git and Creatio.mp4",
+        "video_2_UI\u29f8 UX Building pages in Freedom UI designer.mp4"
+      ],
+      "file_count": 12
+    }
+  }
+}

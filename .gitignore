@@ -155,6 +155,9 @@ web.config.user
 *.mp4
 *.gif
 
+# Video files in videos directory (too large for GitHub)
+videos/**/*.mp4
+
 # Virtual environments
 venv/
 env/
@@ -163,7 +166,7 @@ env/
 
 # Large data directories
 ai_optimization/
-videos/
+# videos/ - now tracking this
 
 # Database files
 *.db

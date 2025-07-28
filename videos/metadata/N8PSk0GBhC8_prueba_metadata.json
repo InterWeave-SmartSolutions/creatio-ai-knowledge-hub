@@ -1,0 +1,42 @@
+{
+  "video_info": {
+    "file_path": "/home/andrewwork/academy.creatio.com/downloads/creatio - Live/N8PSk0GBhC8_prueba.mp4",
+    "filename": "N8PSk0GBhC8_prueba.mp4",
+    "file_size_bytes": 1727175,
+    "file_size_mb": 1.65,
+    "duration_seconds": 60,
+    "created_date": "2025-07-22T10:47:25.590108",
+    "modified_date": "2025-07-22T10:47:24.940178"
+  },
+  "content_metadata": {
+    "title": "prueba",
+    "description": "",
+    "language": "nn",
+    "categories": [
+      "Entertainment"
+    ],
+    "tags": [],
+    "topics": [],
+    "key_concepts": []
+  },
+  "source_info": {
+    "channel_name": "creatio",
+    "uploader": "creatio",
+    "upload_date": "2024-09-20T00:00:00",
+    "original_url": "https://www.youtube.com/watch?v=N8PSk0GBhC8",
+    "video_id": "N8PSk0GBhC8"
+  },
+  "processing_info": {
+    "transcription_model": "base",
+    "processed_at": "2025-07-22T11:04:22.946494",
+    "word_count": 0,
+    "estimated_duration_minutes": 1.0,
+    "transcription_quality": "poor"
+  },
+  "ai_analysis": {
+    "summary": "",
+    "key_topics": [],
+    "top_keywords": {},
+    "estimated_reading_time_minutes": 1
+  }
+}
