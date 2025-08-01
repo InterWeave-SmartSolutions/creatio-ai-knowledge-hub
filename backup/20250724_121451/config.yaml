@@ -1,0 +1,120 @@
+# Video Transcription and Metadata Generation Configuration
+
+# Whisper Settings
+whisper:
+  default_model: 'base' # tiny, base, small, medium, large
+  word_timestamps: true
+  verbose: true
+  language: null # null for auto-detection, or specify language code
+
+# Output Settings
+output:
+  base_directory: 'transcriptions'
+  organize_by_date: false
+  create_subfolders: true
+  file_formats:
+    - json # Full transcription data
+    - txt # Plain text transcript
+    - srt # Subtitle format
+    - yaml # Metadata format
+
+# Processing Settings
+processing:
+  max_concurrent: 1 # Number of videos to process simultaneously
+  skip_existing: true # Skip files that already have transcriptions
+  min_video_duration: 10 # Minimum duration in seconds to process
+  max_video_duration: 7200 # Maximum duration in seconds (2 hours)
+
+# Metadata Extraction
+metadata:
+  extract_from_filename: true
+  extract_from_youtube_info: true
+  extract_video_properties: true
+  generate_thumbnails: false
+
+# Content Analysis
+analysis:
+  generate_summaries: true
+  extract_keywords: true
+  identify_topics: true
+  assess_complexity: true
+  detect_language: true
+  extract_action_items: true
+
+# Topic Detection Keywords
+topic_keywords:
+  crm:
+    - 'customer relationship management'
+    - 'sales pipeline'
+    - 'lead management'
+    - 'opportunity'
+    - 'contact management'
+
+  bpm:
+    - 'business process management'
+    - 'workflow'
+    - 'automation'
+    - 'process optimization'
+    - 'business rules'
+
+  creatio:
+    - 'creatio'
+    - 'platform'
+    - 'no-code'
+    - 'low-code'
+    - 'business application'
+
+  integration:
+    - 'api'
+    - 'integration'
+    - 'connector'
+    - 'webhook'
+    - 'data sync'
+
+  configuration:
+    - 'configuration'
+    - 'setup'
+    - 'customization'
+    - 'settings'
+    - 'personalization'
+
+# Enhanced Summary Settings
+enhanced_summary:
+  enabled: false # Set to true to generate enhanced summaries
+  provider: 'mock' # mock, openai, anthropic, etc.
+  max_summary_length: 500
+  include_technical_terms: true
+  include_action_items: true
+  assess_audience_level: true
+
+# File Naming Patterns
+file_naming:
+  transcript_suffix: '_transcript'
+  metadata_suffix: '_metadata'
+  summary_suffix: '_summary'
+  enhanced_summary_suffix: '_enhanced_summary'
+  subtitle_suffix: '_subtitles'
+
+# Logging
+logging:
+  level: 'INFO' # DEBUG, INFO, WARNING, ERROR
+  log_to_file: true
+  log_file: 'transcription_processor.log'
+  log_to_console: true
+
+# Video File Extensions
+supported_formats:
+  - '.mp4'
+  - '.mkv'
+  - '.avi'
+  - '.mov'
+  - '.webm'
+  - '.flv'
+  - '.m4v'
+  - '.wmv'
+
+# Quality Assessment
+quality:
+  min_confidence_score: 0.8
+  flag_low_quality: true
+  transcription_quality_threshold: 100 # Minimum characters for good quality

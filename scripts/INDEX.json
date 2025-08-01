@@ -1,0 +1,44 @@
+{
+  "directory": "scripts",
+  "created": "2025-07-22T13:15:52.898832",
+  "structure": {
+    "root": {
+      "subdirectories": [
+        "utilities",
+        "deprecated",
+        "core"
+      ],
+      "files": [],
+      "file_count": 0
+    },
+    "utilities": {
+      "subdirectories": [],
+      "files": [
+        "filename_normalizer.py",
+        "check_status.py",
+        "llm_summarizer.py",
+        "website_tester.py",
+        "batch_transcribe.py",
+        "docs_8x_scraper.py",
+        "process_all_videos.py",
+        "youtube_downloader.py",
+        "transcription_processor.py"
+      ],
+      "file_count": 9
+    },
+    "deprecated": {
+      "subdirectories": [],
+      "files": [],
+      "file_count": 0
+    },
+    "core": {
+      "subdirectories": [],
+      "files": [
+        "mcp_server.py",
+        "main.py",
+        "content_processor.py"
+      ],
+      "file_count": 3
+    }
+  }
+}

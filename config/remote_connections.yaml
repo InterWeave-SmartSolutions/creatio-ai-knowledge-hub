@@ -1,0 +1,132 @@
+# Remote Connection Configuration for Creatio Environments
+# Secure connection settings for mkpdev-interweave.creatio.com and other environments
+
+environments:
+  production:
+    name: 'Creatio Production - MKP Dev Interweave'
+    host: 'mkpdev-interweave.creatio.com'
+    port: 443
+    protocol: 'https'
+    base_url: 'https://mkpdev-interweave.creatio.com'
+
+    # Authentication settings
+    auth:
+      type: 'oauth2' # or "basic", "api_key", "certificate"
+      token_endpoint: '/oauth/token'
+      scope: 'package_management'
+      client_id_env: 'CREATIO_CLIENT_ID'
+      client_secret_env: 'CREATIO_CLIENT_SECRET'
+
+    # Package management endpoints
+    package_endpoints:
+      list: '/api/packages'
+      download: '/api/packages/{package_id}/download'
+      upload: '/api/packages/upload'
+      metadata: '/api/packages/{package_id}/metadata'
+      search: '/api/packages/search'
+
+    # Connection settings
+    connection:
+      timeout: 30
+      retry_attempts: 3
+      retry_delay: 5
+      verify_ssl: true
+      keep_alive: true
+      pool_connections: 10
+      pool_maxsize: 20
+
+    # Security settings
+    security:
+      certificate_path: '${CREATIO_CERT_PATH}'
+      ca_bundle_path: '${CREATIO_CA_BUNDLE}'
+      client_cert_path: '${CREATIO_CLIENT_CERT}'
+      client_key_path: '${CREATIO_CLIENT_KEY}'
+
+  staging:
+    name: 'Creatio Staging Environment'
+    host: 'staging-mkpdev-interweave.creatio.com'
+    port: 443
+    protocol: 'https'
+    base_url: 'https://staging-mkpdev-interweave.creatio.com'
+
+    auth:
+      type: 'oauth2'
+      token_endpoint: '/oauth/token'
+      scope: 'package_management'
+      client_id_env: 'CREATIO_STAGING_CLIENT_ID'
+      client_secret_env: 'CREATIO_STAGING_CLIENT_SECRET'
+
+    package_endpoints:
+      list: '/api/packages'
+      download: '/api/packages/{package_id}/download'
+      upload: '/api/packages/upload'
+      metadata: '/api/packages/{package_id}/metadata'
+      search: '/api/packages/search'
+
+    connection:
+      timeout: 30
+      retry_attempts: 3
+      retry_delay: 5
+      verify_ssl: true
+      keep_alive: true
+
+  development:
+    name: 'Local Development Environment'
+    host: 'localhost'
+    port: 8080
+    protocol: 'http'
+    base_url: 'http://localhost:8080'
+
+    auth:
+      type: 'basic'
+      username_env: 'CREATIO_DEV_USERNAME'
+      password_env: 'CREATIO_DEV_PASSWORD'
+
+    package_endpoints:
+      list: '/api/packages'
+      download: '/api/packages/{package_id}/download'
+      upload: '/api/packages/upload'
+      metadata: '/api/packages/{package_id}/metadata'
+      search: '/api/packages/search'
+
+    connection:
+      timeout: 15
+      retry_attempts: 2
+      retry_delay: 2
+      verify_ssl: false
+      keep_alive: false
+
+# Default environment to use
+default_environment: 'production'
+
+# Global settings
+global_settings:
+  user_agent: 'CreatioAI-KnowledgeHub/1.0'
+  max_download_size: '100MB'
+  download_chunk_size: 8192
+  temp_directory: '/tmp/creatio_packages'
+  log_level: 'INFO'
+  log_file: 'logs/remote_connections.log'
+
+# Credential storage settings
+credentials:
+  storage_type: 'keyring' # "keyring", "env_file", "vault"
+  keyring_service: 'creatio-ai-hub'
+  env_file_path: '.env.credentials'
+  vault_url: '${VAULT_URL}'
+  vault_token_env: 'VAULT_TOKEN'
+
+# Network proxy settings (if needed)
+proxy:
+  enabled: false
+  http_proxy: '${HTTP_PROXY}'
+  https_proxy: '${HTTPS_PROXY}'
+  no_proxy: '${NO_PROXY}'
+
+# Health check settings
+health_check:
+  enabled: true
+  endpoint: '/health'
+  interval: 300 # seconds
+  timeout: 10
+  retries: 3

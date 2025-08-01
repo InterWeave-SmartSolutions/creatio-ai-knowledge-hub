@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "created_at": "2025-07-24T14:23:46.145706",
+    "total_commands": 1,
+    "categories": {
+      "general": [
+        "$300 per",
+        "$300 per"
+      ]
+    },
+    "version": "1.0.0"
+  },
+  "commands": {
+    "$300 per": {
+      "command": "$300 per",
+      "description": "Command: $300 per",
+      "category": "general",
+      "parameters": [],
+      "examples": [
+        "$300 per"
+      ],
+      "sources": [
+        {
+          "type": "pdf",
+          "id": "38bec6aacd2b",
+          "title": "Creatiodeveloperbinder",
+          "context": "l show you all your parameters including your results of calculation.  \n  \n  \nSpeaker 1\n \n So it looks like this data was the result of our calculation and it looks like more or less close to reality $300 per \nsquare foot according to our current prices and areas. So area is used here in this calculation. And also if you're not \nhappy with this number, you can try to do debugging of server side co"
+        },
+        {
+          "type": "pdf",
+          "id": "ccbbced9d46e",
+          "title": "Creatio Developer 13",
+          "context": "l show you all your parameters including your results of calculation.  \n  \n  \nSpeaker 1\n \n So it looks like this data was the result of our calculation and it looks like more or less close to reality $300 per \nsquare foot according to our current prices and areas. So area is used here in this calculation. And also if you're not \nhappy with this number, you can try to do debugging of server side co"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "general": [
+      "$300 per",
+      "$300 per"
+    ]
+  }
+}
