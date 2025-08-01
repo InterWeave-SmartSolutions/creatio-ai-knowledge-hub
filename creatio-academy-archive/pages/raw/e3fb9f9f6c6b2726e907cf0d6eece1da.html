@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ObjectList&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ObjectList&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.ObjectList`1">
+  
+  
+  <h1 id="Terrasoft_Common_ObjectList_1" data-uid="Terrasoft.Common.ObjectList`1" class="text-break">Class ObjectList&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Generic collection that implements <a class="xref" href="Terrasoft.Common.IObjectList.html">IObjectList</a> interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</div>
+    <div class="level2"><span class="xref">ObjectList&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IList</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.IList</span></div>
+    <div><span class="xref">System.Collections.ICollection</span></div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</div>
+    <div><a class="xref" href="Terrasoft.Common.IObjectList.html">IObjectList</a></div>
+    <div><a class="xref" href="Terrasoft.Common.ISerializableObject.html">ISerializableObject</a></div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.Object</span>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.get_Item(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Add(T)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.Add(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.AddRange(System.Collections.Generic.IEnumerable&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.AsReadOnly()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.BinarySearch(System.Int32, System.Int32, T, System.Collections.Generic.IComparer&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.BinarySearch(T)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.BinarySearch(T, System.Collections.Generic.IComparer&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Clear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Contains(T)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.Contains(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.ConvertAll&lt;TOutput&gt;(System.Converter&lt;T, TOutput&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.CopyTo(T[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.ICollection.CopyTo(System.Array, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.CopyTo(System.Int32, T[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.CopyTo(T[], System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Exists(System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Find(System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.FindAll(System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.FindIndex(System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.FindIndex(System.Int32, System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.FindIndex(System.Int32, System.Int32, System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.FindLast(System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.FindLastIndex(System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.FindLastIndex(System.Int32, System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.FindLastIndex(System.Int32, System.Int32, System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.ForEach(System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IEnumerable.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.GetRange(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.IndexOf(T)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.IndexOf(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.IndexOf(T, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.IndexOf(T, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Insert(System.Int32, T)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.Insert(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.InsertRange(System.Int32, System.Collections.Generic.IEnumerable&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.LastIndexOf(T)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.LastIndexOf(T, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.LastIndexOf(T, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Remove(T)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.RemoveAll(System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.RemoveAt(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.RemoveRange(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Reverse()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Reverse(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Sort()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Sort(System.Collections.Generic.IComparer&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Sort(System.Int32, System.Int32, System.Collections.Generic.IComparer&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Sort(System.Comparison&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.ToArray()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.TrimExcess()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.TrueForAll(System.Predicate&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Capacity</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Count</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.IsFixedSize</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.ICollection.IsSynchronized</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.ICollection.SyncRoot</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;T&gt;.System.Collections.IList.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.html">Terrasoft.Common</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_ObjectList_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ObjectList&lt;T&gt; : List&lt;T&gt;, IList&lt;T&gt;, ICollection&lt;T&gt;, IList, ICollection, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IObjectList, ISerializableObject, IReadOnlyCollection&lt;object&gt;, IEnumerable&lt;object&gt;, IEnumerable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Item type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_ObjectList_1_System_Collections_Generic_IEnumerable_System_Object__GetEnumerator_" data-uid="Terrasoft.Common.ObjectList`1.System#Collections#Generic#IEnumerable{System#Object}#GetEnumerator*"></a>
+  <h4 id="Terrasoft_Common_ObjectList_1_System_Collections_Generic_IEnumerable_System_Object__GetEnumerator" data-uid="Terrasoft.Common.ObjectList`1.System#Collections#Generic#IEnumerable{System#Object}#GetEnumerator">IEnumerable&lt;Object&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;object&gt; IEnumerable&lt;object&gt;.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ObjectList_1_Terrasoft_Common_ISerializableObject_Deserialize_" data-uid="Terrasoft.Common.ObjectList`1.Terrasoft#Common#ISerializableObject#Deserialize*"></a>
+  <h4 id="Terrasoft_Common_ObjectList_1_Terrasoft_Common_ISerializableObject_Deserialize_Terrasoft_Common_DataReader_" data-uid="Terrasoft.Common.ObjectList`1.Terrasoft#Common#ISerializableObject#Deserialize(Terrasoft.Common.DataReader)">ISerializableObject.Deserialize(DataReader)</h4>
+  <div class="markdown level1 summary"><p>Deserializes own state using specified data reader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ISerializableObject.Deserialize(DataReader dataReader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">dataReader</span></td>
+        <td><p>The data reader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ObjectList_1_Terrasoft_Common_ISerializableObject_Serialize_" data-uid="Terrasoft.Common.ObjectList`1.Terrasoft#Common#ISerializableObject#Serialize*"></a>
+  <h4 id="Terrasoft_Common_ObjectList_1_Terrasoft_Common_ISerializableObject_Serialize_Terrasoft_Common_DataWriter_" data-uid="Terrasoft.Common.ObjectList`1.Terrasoft#Common#ISerializableObject#Serialize(Terrasoft.Common.DataWriter)">ISerializableObject.Serialize(DataWriter)</h4>
+  <div class="markdown level1 summary"><p>Serializes own state using specified data writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ISerializableObject.Serialize(DataWriter dataWriter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a></td>
+        <td><span class="parametername">dataWriter</span></td>
+        <td><p>The data writer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IList</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.ICollection</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.IObjectList.html">IObjectList</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ISerializableObject.html">ISerializableObject</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.BaseSerializableObjectUtilities.html#Terrasoft_Common_BaseSerializableObjectUtilities_SerializeToJson_Terrasoft_Common_ISerializableObject_System_IO_Stream_">BaseSerializableObjectUtilities.SerializeToJson(ISerializableObject, Stream)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_AddRange__1_System_Collections_Generic_ICollection___0__System_Collections_Generic_IEnumerable___0__">CollectionUtilities.AddRange&lt;T&gt;(ICollection&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_RemoveRange__1_System_Collections_Generic_ICollection___0__System_Collections_Generic_IEnumerable___0__">CollectionUtilities.RemoveRange&lt;T&gt;(ICollection&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_AddIfNotExists__1_System_Collections_Generic_ICollection___0____0_">CollectionUtilities.AddIfNotExists&lt;T&gt;(ICollection&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_AddRangeIfNotExists__1_System_Collections_Generic_ICollection___0__System_Collections_Generic_IEnumerable___0__">CollectionUtilities.AddRangeIfNotExists&lt;T&gt;(ICollection&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_IsNotEmpty_System_Collections_IEnumerable_">CollectionUtilities.IsNotEmpty(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_IsEmpty_System_Collections_IEnumerable_">CollectionUtilities.IsEmpty(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_IsNullOrEmpty_System_Collections_IEnumerable_">CollectionUtilities.IsNullOrEmpty(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.CollectionUtilities.html#Terrasoft_Common_CollectionUtilities_IsNotNullOrEmpty_System_Collections_IEnumerable_">CollectionUtilities.IsNotNullOrEmpty(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

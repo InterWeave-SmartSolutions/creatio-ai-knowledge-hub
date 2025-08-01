@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ResourcePackage
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ResourcePackage
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.ResourcePackage">
+  
+  
+  <h1 id="Terrasoft_Common_ResourcePackage" data-uid="Terrasoft.Common.ResourcePackage" class="text-break">Class ResourcePackage
+  </h1>
+  <div class="markdown level0 summary"><p>Provides methods for working with resource package.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ResourcePackage</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Xml.Serialization.IXmlSerializable</span></div>
+    <div><a class="xref" href="Terrasoft.Common.IMetaDataSerializable.html">IMetaDataSerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.html">Terrasoft.Common</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_ResourcePackage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ResourcePackage : IXmlSerializable, IMetaDataSerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage__ctor_" data-uid="Terrasoft.Common.ResourcePackage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage__ctor" data-uid="Terrasoft.Common.ResourcePackage.#ctor">ResourcePackage()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.ResourcePackage.html">ResourcePackage</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourcePackage()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage__ctor_" data-uid="Terrasoft.Common.ResourcePackage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage__ctor_System_Collections_Generic_ICollection_Terrasoft_Common_LocalizableValue__System_Globalization_CultureInfo_System_Boolean_" data-uid="Terrasoft.Common.ResourcePackage.#ctor(System.Collections.Generic.ICollection{Terrasoft.Common.LocalizableValue},System.Globalization.CultureInfo,System.Boolean)">ResourcePackage(ICollection&lt;LocalizableValue&gt;, CultureInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="Terrasoft.Common.ResourcePackage.html">ResourcePackage</a> class instance using specified collection of localized values, culture object and collection optimization flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourcePackage(ICollection&lt;LocalizableValue&gt; localizableValues, CultureInfo culture, bool optimize = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</td>
+        <td><span class="parametername">localizableValues</span></td>
+        <td><p>Collection of localized values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>Culture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">optimize</span></td>
+        <td><p>Indicates if the collection of localized values is optimized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage__ctor_" data-uid="Terrasoft.Common.ResourcePackage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage__ctor_System_Globalization_CultureInfo_" data-uid="Terrasoft.Common.ResourcePackage.#ctor(System.Globalization.CultureInfo)">ResourcePackage(CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="Terrasoft.Common.ResourcePackage.html">ResourcePackage</a> class for the specified culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourcePackage(CultureInfo culture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>Culture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>When passing as a parameter <code data-dev-comment-type="paramref" class="paramref">culture</code> of an empty value or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage__ctor_" data-uid="Terrasoft.Common.ResourcePackage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage__ctor_System_String_" data-uid="Terrasoft.Common.ResourcePackage.#ctor(System.String)">ResourcePackage(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="Terrasoft.Common.ResourcePackage.html">ResourcePackage</a> class for the culture with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourcePackage(string cultureName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">cultureName</span></td>
+        <td><p>Culture name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.NullOrEmptyException.html">NullOrEmptyException</a></td>
+        <td><p>When passing as a parameter <code data-dev-comment-type="paramref" class="paramref">cultureName</code> of an empty value or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_Culture_" data-uid="Terrasoft.Common.ResourcePackage.Culture*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_Culture" data-uid="Terrasoft.Common.ResourcePackage.Culture">Culture</h4>
+  <div class="markdown level1 summary"><p>Culture of the current resource package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CultureInfo Culture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_RootGroup_" data-uid="Terrasoft.Common.ResourcePackage.RootGroup*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_RootGroup" data-uid="Terrasoft.Common.ResourcePackage.RootGroup">RootGroup</h4>
+  <div class="markdown level1 summary"><p>Root resource group for the current resource package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceGroup RootGroup { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ResourceGroup.html">ResourceGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_CreateFromFile_" data-uid="Terrasoft.Common.ResourcePackage.CreateFromFile*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_CreateFromFile_System_String_" data-uid="Terrasoft.Common.ResourcePackage.CreateFromFile(System.String)">CreateFromFile(String)</h4>
+  <div class="markdown level1 summary"><p>Generates resource package from the file located at the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourcePackage CreateFromFile(string filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ResourcePackage.html">ResourcePackage</a></td>
+        <td><p>Generated resource package.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_CreateFromStream_" data-uid="Terrasoft.Common.ResourcePackage.CreateFromStream*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_CreateFromStream_System_IO_Stream_" data-uid="Terrasoft.Common.ResourcePackage.CreateFromStream(System.IO.Stream)">CreateFromStream(Stream)</h4>
+  <div class="markdown level1 summary"><p>Creates resource package from stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourcePackage CreateFromStream(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream to create resource package from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ResourcePackage.html">ResourcePackage</a></td>
+        <td><p>Resource package.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_DeleteResource_" data-uid="Terrasoft.Common.ResourcePackage.DeleteResource*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_DeleteResource_System_String_" data-uid="Terrasoft.Common.ResourcePackage.DeleteResource(System.String)">DeleteResource(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes the resource with the specified name from the current resource package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteResource(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the resource to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if a resource with name <code data-dev-comment-type="paramref" class="paramref">name</code> has been successfully deleted from the resource package; else - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_FindItemByName_" data-uid="Terrasoft.Common.ResourcePackage.FindItemByName*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_FindItemByName_System_String_" data-uid="Terrasoft.Common.ResourcePackage.FindItemByName(System.String)">FindItemByName(String)</h4>
+  <div class="markdown level1 summary"><p>Searches for the resource with the specified name in the current resource package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceItem FindItemByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the resource to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ResourceItem.html">ResourceItem</a></td>
+        <td><p>First found resource with name <code data-dev-comment-type="paramref" class="paramref">name</code> in the current resource package  or <code>null</code> if the item was not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_GetItemByName_" data-uid="Terrasoft.Common.ResourcePackage.GetItemByName*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_GetItemByName_System_String_" data-uid="Terrasoft.Common.ResourcePackage.GetItemByName(System.String)">GetItemByName(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a resource item with the specified name from the current resource package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceItem GetItemByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the resource to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ResourceItem.html">ResourceItem</a></td>
+        <td><p>The found resource with name <code data-dev-comment-type="paramref" class="paramref">name</code> in the current resource package.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_GetSchema_" data-uid="Terrasoft.Common.ResourcePackage.GetSchema*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_GetSchema" data-uid="Terrasoft.Common.ResourcePackage.GetSchema">GetSchema()</h4>
+  <div class="markdown level1 summary"><p>Gets XML view schema of the current resource package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlSchema GetSchema()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.Schema.XmlSchema</span></td>
+        <td><p>XML view schema of the resource package.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_ReadMetaData_" data-uid="Terrasoft.Common.ResourcePackage.ReadMetaData*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_ReadMetaData_Terrasoft_Common_DataReader_" data-uid="Terrasoft.Common.ResourcePackage.ReadMetaData(Terrasoft.Common.DataReader)">ReadMetaData(DataReader)</h4>
+  <div class="markdown level1 summary"><p>Deserializes current resource package using specified <a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadMetaData(DataReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a> instance that deserializes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_ReadXml_" data-uid="Terrasoft.Common.ResourcePackage.ReadXml*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_ReadXml_System_Xml_XmlReader_" data-uid="Terrasoft.Common.ResourcePackage.ReadXml(System.Xml.XmlReader)">ReadXml(XmlReader)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a resource package using specified <span class="xref">System.Xml.XmlReader</span> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadXml(XmlReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <span class="xref">System.Xml.XmlReader</span> instance that deserializes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_RenameResource_" data-uid="Terrasoft.Common.ResourcePackage.RenameResource*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_RenameResource_System_String_System_String_" data-uid="Terrasoft.Common.ResourcePackage.RenameResource(System.String,System.String)">RenameResource(String, String)</h4>
+  <div class="markdown level1 summary"><p>Renames a resource with the specified name in the current resource package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RenameResource(string oldName, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>Name of the resource to rename.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>New name for the resource “<code data-dev-comment-type="paramref" class="paramref">oldName</code>”.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if a resource with name <code data-dev-comment-type="paramref" class="paramref">oldName</code> has been successfully renamed to <code data-dev-comment-type="paramref" class="paramref">name</code>; else - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_SaveToFile_" data-uid="Terrasoft.Common.ResourcePackage.SaveToFile*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_SaveToFile_System_String_" data-uid="Terrasoft.Common.ResourcePackage.SaveToFile(System.String)">SaveToFile(String)</h4>
+  <div class="markdown level1 summary"><p>Serializes current resource package to a file located at the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;7.15.0 | Method is not in use and will be removed in upcoming releases&quot;)]
+public void SaveToFile(string filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_SaveToStream_" data-uid="Terrasoft.Common.ResourcePackage.SaveToStream*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_SaveToStream_Terrasoft_Common_XmlResourceWriter_" data-uid="Terrasoft.Common.ResourcePackage.SaveToStream(Terrasoft.Common.XmlResourceWriter)">SaveToStream(XmlResourceWriter)</h4>
+  <div class="markdown level1 summary"><p>Serializes current resource package using specified <a class="xref" href="Terrasoft.Common.XmlResourceWriter.html">XmlResourceWriter</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToStream(XmlResourceWriter xmlResourceWriter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.XmlResourceWriter.html">XmlResourceWriter</a></td>
+        <td><span class="parametername">xmlResourceWriter</span></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.XmlResourceWriter.html">XmlResourceWriter</a> instance that writes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.InvalidObjectStateException.html">InvalidObjectStateException</a></td>
+        <td><p>If culture value is not set for the current resource package.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_SetResourceValue_" data-uid="Terrasoft.Common.ResourcePackage.SetResourceValue*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_SetResourceValue_System_String_System_String_" data-uid="Terrasoft.Common.ResourcePackage.SetResourceValue(System.String,System.String)">SetResourceValue(String, String)</h4>
+  <div class="markdown level1 summary"><p>Sets a value for the resource with the specified name in the current resource package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResourceValue(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Resource name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Resource value to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_WriteMetaData_" data-uid="Terrasoft.Common.ResourcePackage.WriteMetaData*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_WriteMetaData_Terrasoft_Common_DataWriter_" data-uid="Terrasoft.Common.ResourcePackage.WriteMetaData(Terrasoft.Common.DataWriter)">WriteMetaData(DataWriter)</h4>
+  <div class="markdown level1 summary"><p>Serializes a resource package using specified <a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteMetaData(DataWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a> instance that serializes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ResourcePackage_WriteXml_" data-uid="Terrasoft.Common.ResourcePackage.WriteXml*"></a>
+  <h4 id="Terrasoft_Common_ResourcePackage_WriteXml_System_Xml_XmlWriter_" data-uid="Terrasoft.Common.ResourcePackage.WriteXml(System.Xml.XmlWriter)">WriteXml(XmlWriter)</h4>
+  <div class="markdown level1 summary"><p>Serializes a resource package using specified <span class="xref">System.Xml.XmlWriter</span> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The <span class="xref">System.Xml.XmlWriter</span> instance that serializes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Xml.Serialization.IXmlSerializable</span>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.IMetaDataSerializable.html">IMetaDataSerializable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

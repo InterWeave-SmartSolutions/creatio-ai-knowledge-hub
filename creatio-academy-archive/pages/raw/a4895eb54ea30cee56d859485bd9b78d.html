@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+          <!-- Google Tag Manager -->
+      <script nonce="cf9bdd64e6aa500d439472e790576522">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+          n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5C6KM9TP');</script>
+      <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+<link rel="canonical" href="https://academy.creatio.com/docs/7-18/developer/architecture" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/docs/sites/academy_en/themes/creatio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://academy.creatio.com/docs/7-18/developer/architecture" />
+
+    <title>Architecture | Creatio Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="https://libraries.creatio.com/drupal_fixed_tabs/tabs.css" />
+<link rel="stylesheet" media="all" href="/docs/modules/academy/ts_version/css/taxonomy_pdf.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/align.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/fieldgroup.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/container-inline.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/clearfix.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/details.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/hidden.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/item-list.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/js.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/nowrap.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/position-container.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/reset-appearance.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/resize.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-counter.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-counters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-general-info.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/tablesort.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/views/views.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/core/modules/layout_discovery/layouts/onecol/onecol.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/assets/vendor/normalize-css/normalize.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/normalize-fixes.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/bootstrap4/css/bootstrap.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme-dark.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/slick/slick.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.nice-select/jquery.nice-select.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/base.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/elements.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/fonts.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/select2/css/select2.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.scrollbar/jquery.scrollbar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/layouts/layout.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/action-links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/breadcrumb.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/button.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/collapse-processed.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/container-inline.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/details.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/exposed-filters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/field.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/icons.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/inline-form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/item-list.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/menu.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/more-link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/pager.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabledrag.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tableselect.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tablesort.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabs.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/textarea.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/ui-dialog.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/block.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/footer.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/header.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/sidebar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/notification.css?szsnyq" />
+<link rel="stylesheet" media="print" href="/docs/themes/custom/creatio_academy/css/theme/print.css?szsnyq" />
+
+    
+  </head>
+  <body class="path-taxonomy">
+          <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="creatio-page d-flex flex-column">
+        <div class="region region-informer">
+    <div id="block-notification-union" class="block block-simple-block block-simple-blocknotification-union">
+  
+    
+      <div id="union-notification">
+<div class="union-content notification-com">
+<p class="union-subtitle">This documentation is valid for Creatio version 7.17(7.18).</p>
+
+<p class="union-subtitle">We recommend using <a href="https://academy.creatio.com/docs/8.x/" target="_blank">the newest version of Creatio documentation</a>.</p>
+
+<!-- <div class="union-close">&nbsp;</div> -->
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+  <header role="banner">
+          <div class="creatio-region creatio-region_top">
+        <div class="creatio-container">
+            <div class="region region-top">
+    <div id="block-menutoggle" class="block block-simple-block block-simple-blockmenu-toggle">
+  
+    
+      <div class="menu-toggle"><span>&nbsp;</span></div>
+
+  </div>
+<div id="block-logowhite-2" class="block block-simple-block block-simple-blocklogo-white">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo-white.svg"></a></p>
+
+  </div>
+<div id="block-search" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-sites-menu" id="block-sites" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-usermenu" class="block block-ts-user block-ts-user-menu-block">
+  
+    
+      <ul class="user-menu">
+      <li class="user-menu__item">
+      <a class="user-menu__link" href="/docs/user/login?destination=/docs/7-18/developer/architecture">Log in</a>
+    </li>
+  </ul>
+
+  </div>
+<div id="block-usermenumobile" class="block block-ts-user block-ts-user-menu-mobile-block">
+  
+    
+      <ul class="user-menu-mobile">
+      <li class="user-menu-mobile__item">
+      <div class="user-menu-mobile__user user-menu-mobile__user_icon"></div>
+      <ul class="user-menu-mobile__submenu">
+        <li class="user-menu-mobile__subitem">
+          <a class="user-menu-mobile__sublink" href="/docs/user/login?destination=/docs/7-18/developer/architecture">Log in</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+              <div class="creatio-region creatio-region_header">
+        <div class="creatio-container">
+            <div class="region region-header">
+    <div id="block-logo" class="block block-simple-block block-simple-blocklogo">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo.svg"></a></p>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/docs/8.x">Guides</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/e-learning">E-learning</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/training">Training</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/certification">Certification</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-sites-2-menu" id="block-sites-2" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-2-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-search-2" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+      </header>
+
+      <div class="creatio-region creatio-region_breadcrumb">
+      <div class="creatio-container">
+          <div class="region region-breadcrumb">
+    <div id="block-breadcrumbnaviagtion" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Architecture">Architecture</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  
+  <div class="creatio-region creatio-region_main">
+    <div class="creatio-container">
+                <div class="region region-breadcrumb-mobile">
+    <div id="block-breadcrumbnaviagtion-2" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Architecture">Architecture</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      
+      <main class="creatio-main" role="main">
+                                                    
+        <div class="creatio-content creatio-content_small">
+          <div class="creatio-content__inner creatio-content__inner_bg">
+                            <div class="region region-messages">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            
+              <div class="region region-content">
+    <div id="block-creatio-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title">
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Architecture</div>
+      </h1>
+
+
+  </div>
+<div id="block-creatio-content" class="block block-system block-system-main-block">
+  
+    
+      <div id="taxonomy-term-144" class="taxonomy-term vocabulary-developer-documentation">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-ts-version block-ts-version-term-block">
+  
+    
+        <div class="ts-doc-versions">
+    <select class="ts-doc-versions__select">
+                                                                <option value="/docs/7-18/developer/architecture" selected >Version 7.18</option>
+                                              <option value="/docs/7-17/developer/architecture" >Version 7.17</option>
+                                              <option value="/docs/7-16/developer/architecture" >Version 7.16</option>
+          </select>
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="views-element-container block block-views block-views-blockdocumentation-second-level-developer">
+  
+    
+      <div><div class="view view-documentation-second-level view-id-documentation_second_level view-display-id-developer js-view-dom-id-e22421d5d9bb20da2b5dbd8633b61cdaa02925d78192207a6e4bbf9319f6ce9c">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><a href="/docs/7-18/developer/architecture/main_application" class="subcategory" hreflang="en"><span class="subcategory__name">Main application</span>
+</a></div>
+    <div class="views-row"><a href="/docs/7-18/developer/architecture/microservices" class="subcategory" hreflang="en"><span class="subcategory__name">Microservices</span>
+</a></div>
+    <div class="views-row"><a href="/docs/7-18/developer/architecture/development_in_creatio" class="subcategory" hreflang="en"><span class="subcategory__name">Development in Creatio</span>
+</a></div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockdocumentation-term-nodes-list-block-1">
+  
+    
+      <div><div class="view view-documentation-term-nodes-list view-id-documentation_term_nodes_list view-display-id-block_1 js-view-dom-id-970ec3dc40d40e504e286805e8b6fa110b25b8a5db4f5aeb0fa95c366fc2dcf8">
+  
+    
+      
+  
+          </div>
+</div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+          </div>
+          
+        </div>
+
+                  <aside class="creatio-sidebar creatio-sidebar_first" role="complementary">
+              <div class="region region-sidebar-first">
+    <div id="block-documentationnaviagtion" class="block block-ts-nav block-ts-nav-doc-nav">
+  
+    
+      <div class="ts-nav-block"><a href="/docs/" class="ts-nav-block__link">Documentation</a><div class="ts-nav-block__title">Developer documentation</div>
+</div>
+<div class="ts-nav-container"><ul class="ts-nav-menu"><li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/getting_started" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Getting started&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture" class="ts-nav-menu__link ts-nav-menu__link_expanded ts-nav-menu__link_active ts-nav-menu__link_open" hreflang="en">Architecture&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+      <ul class="ts-nav-menu__children">
+      <li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture/main_application" class="ts-nav-menu__link" hreflang="en">Main application</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture/microservices" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Microservices&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture/development_in_creatio" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Development in Creatio&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+
+    </ul>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/development_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Development tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/back_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Back-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/front_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Front-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/integrations_and_api" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Integrations & API&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Interface elements&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/application_components" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Application components&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/mobile_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Mobile development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/marketplace_app_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Marketplace app development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+</ul>
+</div>
+
+  </div>
+
+  </div>
+
+            <div class="creatio-sidebar__toggle"></div>
+          </aside>
+        
+              </main>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="creatio-region creatio-region_footer">
+      <div class="creatio-container">
+          <div class="region region-footer">
+    <div id="block-footer" class="block block-simple-block block-simple-blockfooter">
+  
+    
+      <div class="footer">
+<div class="footer-left">
+<ul class="footer-socials">
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_fb" href="https://www.facebook.com/CreatioCompany" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_in" href="https://www.linkedin.com/company/creatioglobal" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_yt" href="https://www.youtube.com/c/creatio" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_tw" href="https://www.twitter.com/Creatio_Global" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_ow" href="https://www.owler.com/company/Creatio" target="_blank">&nbsp;</a></li>
+</ul>
+</div>
+
+<div class="footer-contact">
+<div class="footer-title">Connect with us</div>
+
+<div class="footer-content">
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+16177657997">USA: +1 617 765 7997</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+442033840040">UK: +44 20 3384 0040</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+61261452888">Australia: +61 261 452 888</a></div>
+</div>
+
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:info@creatio.com">info@creatio.com</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:support@creatio.com">support@creatio.com</a></div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+    <div class="creatio-region creatio-region_bottom">
+      <div class="creatio-container">
+          <div class="region region-bottom">
+    <div id="block-allrightsreserved" class="block block-simple-block block-simple-blockfooter-bottom">
+  
+    
+      <p>© 2025 Creatio. All rights reserved.&nbsp; |&nbsp; <a href="https://www.creatio.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="creatio-bg"></div>
+
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/docs\/","pathPrefix":"","currentPath":"taxonomy\/term\/144","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"94c0ca72342e8e43fd5c70378d64533b2b6422845e0b3fd749b2ff1b4bd0b914"}}</script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery_3.7.1_jquery.min.js?v=3.7.1"></script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery-once-2.2.3/jquery.once.min.js?v=2.2.3"></script>
+<script src="/docs/core/misc/drupalSettingsLoader.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.init.js?v=10.4.1"></script>
+<script src="/docs/libraries/prettify/prettify.js?v=1"></script>
+<script src="/docs/libraries/slick/slick.js?v=1"></script>
+<script src="/docs/libraries/jquery.nice-select/jquery.nice-select.js?v=1"></script>
+<script src="https://libraries.creatio.com/drupal_fixed_tabs/tabs.js"></script>
+<script src="/docs/themes/custom/creatio_academy/js/creatio.js?v=1"></script>
+<script src="/docs/libraries/jquery.cookie/jquery.cookie.js?szsnyq"></script>
+<script src="/docs/themes/custom/creatio_academy/js/notification.js?szsnyq"></script>
+<script src="/docs/modules/marketplace/ts_datalayer/js/ts-datalayer.js?szsnyq"></script>
+<script src="/docs/libraries/select2/js/select2.js?v=1"></script>
+<script src="/docs/libraries/select2/js/select2.position.js?v=1"></script>
+<script src="/docs/libraries/jquery.scrollbar/jquery.scrollbar.js?v=1"></script>
+<script src="/docs/modules/academy/ts_doc/js/ts-doc-version.js?szsnyq"></script>
+<script src="https://libraries.creatio.com/ts_country/index.js"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-breadcrumb.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-doc-nav.js?szsnyq"></script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <g id="svg-copy" class="svg-icon svg-icon_copy">
+        <path d="M15.111,18H1.889A1.848,1.848,0,0,1,0,16.2V3.6A1.848,1.848,0,0,1,1.889,1.8H5.837a2.87,2.87,0,0,1,5.326,0h3.948A1.848,1.848,0,0,1,17,3.6V16.2A1.848,1.848,0,0,1,15.111,18ZM3.777,12.6v1.8h6.611V12.6Zm0-3.6v1.8h9.445V9Zm0-3.6V7.2h9.445V5.4ZM8.5,1.8a.924.924,0,0,0-.944.9.945.945,0,0,0,1.889,0A.924.924,0,0,0,8.5,1.8Z"/>
+      </g>
+
+      <g id="svg-prev" class="svg-icon svg-icon_arrow">
+        <path d="M5.488,12.779,0,6.39,5.488,0" transform="translate(1 0.652)"/>
+      </g>
+
+      <g id="svg-next" class="svg-icon svg-icon_arrow">
+        <path d="M0,12.779,5.488,6.39,0,0" transform="translate(0.759 0.652)"/>
+      </g>
+    </svg>
+  </body>
+</html>

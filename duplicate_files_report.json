@@ -1,0 +1,713 @@
+{
+  "d41d8cd98f00b204e9800998ecf8427e": [
+    "/home/andrewwork/academy.creatio.com/transcriptions/transcripts/N8PSk0GBhC8_prueba_transcript.txt",
+    "/home/andrewwork/academy.creatio.com/transcriptions/transcripts/N8PSk0GBhC8_prueba_subtitles.srt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-db/videos/transcripts/N8PSk0GBhC8_prueba_transcript.txt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-db/videos/transcripts/N8PSk0GBhC8_prueba_subtitles.srt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/urllib3/contrib/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/urllib3/packages/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/urllib3/packages/backports/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/chardet/cli/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/chardet/metadata/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/resolvelib/compat/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_internal/resolution/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_internal/resolution/legacy/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_internal/utils/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_internal/operations/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_internal/operations/build/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/itemadapter/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/urllib3/contrib/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/parsel/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy-2.13.3.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/persisted/newsfragments/9831.misc",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/application/newsfragments/10146.misc",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/runner/newsfragments/11681.misc",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip-24.0.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml/includes/__init__.pxd",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml/includes/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml/includes/libexslt/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml/includes/libxml/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml/includes/libxslt/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml/includes/extlibs/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/bs4/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy/downloadermiddlewares/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy/spidermiddlewares/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy/templates/project/module/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy/core/http2/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy/extensions/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy/utils/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/requests-2.32.4.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/html2text/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/soupsieve/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/service_identity/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/automat/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/automat/_test/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/yt_dlp/extractor/youtube/pot/_builtin/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/queuelib/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/yt_dlp-2025.7.21.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/python_dotenv-1.1.1.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pkg_resources/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pkg_resources/tests/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pkg_resources/tests/data/my-test-package-source/setup.cfg",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/whisper-1.1.10.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/tldextract/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/incremental/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/incremental/tests/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/certifi/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cryptography/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/filelock/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/charset_normalizer/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/protego/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/w3lib/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/idna/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/beautifulsoup4-4.13.4.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/compat/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_distutils/tests/test_versionpredicate.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_distutils/tests/compat/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/tests/compat/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/tests/config/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/tests/integration/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/tomli-2.0.1.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/platformdirs-4.2.2.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco/collections/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco/functools/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/typeguard/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/backports/tarfile/compat/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/zipp-3.19.2.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/compat/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.text-3.12.1.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/zipp/compat/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-24.2.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/platformdirs/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/more_itertools-10.3.0.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/vendored/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/vendored/packaging/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/inflect/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/inflect/compat/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/OpenSSL/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/attr/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cssselect/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/attrs/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/html2text-2025.4.15.dist-info/REQUESTED",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/itemloaders/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/creatio_crawler/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/videos/general/video_11_Tech Hour - W5H of teamwork - Git and Creatio.description"
+  ],
+  "e2ca8afd7a547b6af182b4c6670d86ce": [
+    "/home/andrewwork/academy.creatio.com/transcriptions/metadata/N8PSk0GBhC8_prueba_metadata.yaml",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-db/videos/metadata/N8PSk0GBhC8_prueba_metadata.yaml"
+  ],
+  "b887182b74ce10e631ac77cb54a790c2": [
+    "/home/andrewwork/academy.creatio.com/transcriptions/metadata/N8PSk0GBhC8_prueba_metadata.json",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-db/videos/metadata/N8PSk0GBhC8_prueba_metadata.json"
+  ],
+  "51b20dc4ab3d9f05f2b175ea2c526189": [
+    "/home/andrewwork/academy.creatio.com/transcriptions/summaries/N8PSk0GBhC8_prueba_summary.json",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-db/videos/summaries/N8PSk0GBhC8_prueba_summary.json"
+  ],
+  "099f941dc19c4ac1aecaca6f00dd049a": [
+    "/home/andrewwork/academy.creatio.com/transcriptions/summaries/N8PSk0GBhC8_prueba_enhanced_summary.json",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-db/videos/summaries/N8PSk0GBhC8_prueba_enhanced_summary.json"
+  ],
+  "3afa020e0dee485b657e3279f0a88da4": [
+    "/home/andrewwork/academy.creatio.com/transcriptions/transcripts/N8PSk0GBhC8_prueba_transcription.json",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-db/videos/transcripts/N8PSk0GBhC8_prueba_transcription.json"
+  ],
+  "9abb8acc719646615185907882fe72c6": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/bin/python",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/bin/python3",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/bin/python3.12"
+  ],
+  "6372c117832bf4820d0e1f0a22798c61": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/bin/pip",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/bin/pip3.12",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/bin/pip3"
+  ],
+  "365c9bfeb7d89244f2ce01c1de44cb85": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted-25.5.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/idna-3.10.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/queuelib-1.8.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy-2.13.3.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip-24.0.dist-info/top_level.txt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip-24.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/attrs-25.3.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/itemloaders-1.3.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/parsel-1.10.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1_modules-0.4.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/defusedxml-0.7.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1-0.6.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/tldextract-5.3.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml-6.0.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pycparser-2.22.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/incremental-24.7.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/requests-2.32.4.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/constantly-23.10.4.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/jmespath-1.0.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/requests_file-2.1.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/itemadapter-0.11.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyopenssl-25.1.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/urllib3-2.5.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cryptography-45.0.5.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/typing_extensions-4.14.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/yt_dlp-2025.7.21.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/python_dotenv-1.1.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/hyperlink-21.0.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cffi-1.17.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/whisper-1.1.10.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/w3lib-2.3.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/protego-0.5.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/zope.interface-7.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/soupsieve-2.7.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/filelock-3.18.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/service_identity-24.2.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cssselect-1.3.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/certifi-2025.7.14.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/charset_normalizer-3.4.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/beautifulsoup4-4.13.4.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/tomli-2.0.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/platformdirs-4.2.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.context-5.3.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/typeguard-4.3.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/typing_extensions-4.12.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/zipp-3.19.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/inflect-7.3.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.text-3.12.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/more_itertools-10.3.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/html2text-2025.4.15.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools-80.9.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/six-1.17.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging-25.0.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/PyDispatcher-2.0.7.dist-info/INSTALLER",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/automat-25.4.16.dist-info/INSTALLER"
+  ],
+  "e2fcb0ad9ea59332c808928b4b439e7a": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted-25.5.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/queuelib-1.8.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy-2.13.3.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/attrs-25.3.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/urllib3-2.5.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/yt_dlp-2025.7.21.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/protego-0.5.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/soupsieve-2.7.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/filelock-3.18.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/beautifulsoup4-4.13.4.dist-info/WHEEL"
+  ],
+  "926ce2b7da0112acaf761129460b96ac": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/web/newsfragments/.gitignore",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/trial/newsfragments/.gitignore",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/conch/newsfragments/.gitignore",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/mail/newsfragments/.gitignore",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/words/newsfragments/.gitignore",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/names/newsfragments/.gitignore",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/newsfragments/.gitignore"
+  ],
+  "1519f626c9ffade2dfe3327be5c1505d": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/internet/test/fake_CAs/thing2-duplicate.pem",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/internet/test/fake_CAs/thing2.pem"
+  ],
+  "786239b0f3b0d9c9403f6eecf35820dd": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy-2.13.3.dist-info/licenses/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/itemloaders-1.3.2.dist-info/LICENSE"
+  ],
+  "68b329da9893e34099c7d8ad5cb9c940": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/twisted/application/newsfragments/9746.misc",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1_modules-0.4.2.dist-info/zip-safe",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1-0.6.1.dist-info/zip-safe",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/zip-safe",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/top_level.txt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/dependency_links.txt"
+  ],
+  "190f79253908c986e6cacf380c3a5f6d": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1_modules-0.4.2.dist-info/licenses/LICENSE.txt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1-0.6.1.dist-info/LICENSE.rst"
+  ],
+  "d211a3a73f428ef86447d8b92d50a84f": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml/lxml.etree.h",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/lxml/etree.h"
+  ],
+  "0fc1b4d3e705f5c110975b1b90d43670": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1/codec/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1/codec/native/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1/codec/ber/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1/codec/der/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1/codec/cer/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1/type/__init__.py"
+  ],
+  "4d57030133e279ceb6a8236264823dfd": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pycparser-2.22.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/jmespath-1.0.1.dist-info/WHEEL"
+  ],
+  "de664fedc083927d3d084f416190d876": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/packaging/_structures.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging/_structures.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/_structures.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/vendored/packaging/_structures.py"
+  ],
+  "08dd01ac2afdbb287cc668d51c7056c8": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/requests-2.32.4.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/python_dotenv-1.1.1.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/whisper-1.1.10.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/certifi-2025.7.14.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools-80.9.0.dist-info/WHEEL"
+  ],
+  "d2a91f104288b412dbc67b54de94e3ac": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/defusedxml-0.7.1.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/hyperlink-21.0.0.dist-info/WHEEL"
+  ],
+  "3b83ef96387f14655fc854ddc3c6bd57": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyopenssl-25.1.0.dist-info/licenses/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/whisper-1.1.10.dist-info/licenses/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/LICENSE"
+  ],
+  "8a9dbf92a1904187a362d3fe098d4a1f": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/queuelib-1.8.0.dist-info/licenses/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/w3lib-2.3.1.dist-info/LICENSE"
+  ],
+  "68e6e969da03b3fdebefe35680a5c606": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/itemadapter-0.11.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/w3lib-2.3.1.dist-info/WHEEL"
+  ],
+  "90b425bf5a228d74998925659a5e2ebb": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/zope.interface-7.2.dist-info/top_level.txt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/zope.interface-7.2.dist-info/namespace_packages.txt"
+  ],
+  "fce95ff49e7ad344d9381226ee6f5b90": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cryptography/hazmat/primitives/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cryptography/hazmat/primitives/asymmetric/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cryptography/hazmat/bindings/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cryptography/hazmat/bindings/openssl/__init__.py"
+  ],
+  "9125eda3f09f08d7fbc08c84b50fe393": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cryptography/hazmat/decrepit/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/cryptography/hazmat/decrepit/ciphers/__init__.py"
+  ],
+  "94eb29001b47e2886c00d1e201b8733d": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/requests/hooks.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/requests/hooks.py"
+  ],
+  "9dfff48651ad4c1cd36b1229e869d749": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/requests/_internal_utils.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/requests/_internal_utils.py"
+  ],
+  "077948910ae6fb44dc6e58d3d25d6aee": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/requests/structures.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/requests/structures.py"
+  ],
+  "75c5a3d1bced4988376ba6148fa075e1": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/gui-32.exe",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/gui.exe"
+  ],
+  "46e9a273d6587191b512fd1050dc1fc4": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/cli-32.exe",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/cli.exe"
+  ],
+  "d0d487bb6b89df7d122f768d8f1f2f2d": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging/_musllinux.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/_musllinux.py"
+  ],
+  "2fc711cf5b4a1a8ac92aab0bd4e13284": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging/requirements.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/requirements.py"
+  ],
+  "fa56706c3c4b493a029a0069d9601e0e": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging/version.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/version.py"
+  ],
+  "f6d73a168977560761887d65c7e9ed18": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging/utils.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/utils.py"
+  ],
+  "313a72cf4425cf31a445d4745d659eb3": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging/licenses/_spdx.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/licenses/_spdx.py"
+  ],
+  "43136dde7dd276932f6197bb6d676ef4": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.context-5.3.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/typeguard-4.3.0.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/zipp-3.19.2.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.text-3.12.1.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/WHEEL"
+  ],
+  "19a32b713392e66bac544e73f025b2cb": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/tomli/_types.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/tomli/_types.py"
+  ],
+  "f67cd21bfa4c3aff92f17e6d06373ccc": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/tomli/_parser.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/tomli/_parser.py"
+  ],
+  "bd2fa011a5e69d2b68df68fbc59f8be6": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/dotenv/py.typed",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/tomli/py.typed"
+  ],
+  "0111df35a25a503e0247f50838d35aea": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/tomli/_re.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/tomli/_re.py"
+  ],
+  "eb1b063b57daf5569fbf24247a217fb9": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pip/_vendor/tomli/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/tomli/__init__.py"
+  ],
+  "fcf6b249c2641540219a727f35d8d2c2": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/typing_extensions-4.14.1.dist-info/licenses/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/typing_extensions-4.12.2.dist-info/LICENSE"
+  ],
+  "24019423ea7c0c2df41c8272a3791e7b": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/idna-3.10.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/typing_extensions-4.12.2.dist-info/WHEEL"
+  ],
+  "141643e11c48898150daa83802dbc65f": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.context-5.3.0.dist-info/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/zipp-3.19.2.dist-info/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/inflect-7.3.1.dist-info/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.text-3.12.1.dist-info/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools-80.9.0.dist-info/licenses/LICENSE"
+  ],
+  "0ba8d736b7b4ab182687318b0497e61e": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.context-5.3.0.dist-info/top_level.txt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/top_level.txt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.text-3.12.1.dist-info/top_level.txt",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/top_level.txt"
+  ],
+  "bef8b3a8022a44402ce1e4466e43ab6f": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-24.2.dist-info/WHEEL"
+  ],
+  "7bef9bf4a8e4263634d0597e7ba100b8": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-24.2.dist-info/LICENSE.BSD",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/vendored/packaging/LICENSE.BSD",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging-25.0.dist-info/licenses/LICENSE.BSD"
+  ],
+  "faadaedca9251a90b205c9167578ce91": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-24.2.dist-info/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/vendored/packaging/LICENSE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging-25.0.dist-info/licenses/LICENSE"
+  ],
+  "2ee41112a44fe7014dce33e26468ba93": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-24.2.dist-info/LICENSE.APACHE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/vendored/packaging/LICENSE.APACHE",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging-25.0.dist-info/licenses/LICENSE.APACHE"
+  ],
+  "9c3ef2336f4e16b5f7573c25c683ce63": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/pyasn1_modules-0.4.2.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/html2text-2025.4.15.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/automat-25.4.16.dist-info/WHEEL"
+  ],
+  "eca1d2e32987c5c9fd85f21a0c92d672": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/typing_extensions-4.14.1.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/packaging-25.0.dist-info/WHEEL"
+  ],
+  "88f09a0ec874fd86abcb9bc4e265b874": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/WHEEL",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/PyDispatcher-2.0.7.dist-info/WHEEL"
+  ],
+  "de4fefbb3612d742e604bf712a6b3496": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00002.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00001_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/system_designer.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00002_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_14.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00003.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00001_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00002_2.png"
+  ],
+  "babda748172f814fd0014caa9779f633": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00004.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab_7.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00006.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00003_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00002_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab_8.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00001_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00002.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab_1_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab_6.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab_5.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00002_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00001_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab_3.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00004_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00003.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00001_3.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00003_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00001.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_add_tab00001_2.png"
+  ],
+  "8726d5930386853f74917424a15c5a43": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_chapter_mobile_wizard_new_role_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_chapter_mobile_wizard_new_role_3.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_chapter_mobile_wizard_new_role.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_chapter_mobile_wizard_new_role_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_chapter_mobile_wizard_new_role_0.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_chapter_mobile_wizard_new_role_2.png"
+  ],
+  "f5def76c12e27871777296daf47d909a": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_ff_add.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_ff_add_0.png"
+  ],
+  "3f2586b9bd0998ab09fc77c91f86013d": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_section_email_bulk_settings_page.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_section_email_bulk_settings_page_1.png"
+  ],
+  "f5d64a3041fff26ea7eaf4c25e5bd8ec": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu_3.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu00005.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu00002.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu_0.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu_5.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_roles_actions_menu.png"
+  ],
+  "07b148c1e9311a1c46ae497c5934f104": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_products_change_field.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_products_change_field00001.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_products_change_field_1.png"
+  ],
+  "700c40a4ecfd0b98968fa49ed7b7d607": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_edit_1_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_edit_3.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_edit_0.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_edit.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_edit_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_edit00003.png"
+  ],
+  "5168b62d3c8e8590385e23da13ffb12c": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_lookup_0.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_lookup.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_lookup_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_lookup00001.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_lookup_1.png"
+  ],
+  "a977501c7e90e5080025c4d699d073b3": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00001_5.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00001.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00001_3.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_9.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_11.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_6.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_0.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_6_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00001_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_7.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_5.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_1_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_10.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00002_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer00002_3.png"
+  ],
+  "20c641d5d0187f2e576a09f24c5ebce1": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_map_marker00002.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_map_marker_3.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_map_marker_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_map_marker_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_map_marker00001.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_map_marker_0.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_map_marker_1_1.png"
+  ],
+  "170d0621a15437214a2b2b755fb54c4d": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_8_shell.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_8_shell_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_8_shell_3.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_8_shell_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_8_shell_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_8_shell_5.png"
+  ],
+  "cb0908b6690af609e8eecf157acefa4f": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_sidebar_start_process00001.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_sidebar_start_process.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_sidebar_start_process00002.png"
+  ],
+  "f1f95d6c4eb7e1bd4c634eaccd1f38dd": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_ldap_synchronization_ie_internet_options_security_tab.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_ldap_synchronization_ie_internet_options_security_tab_1.png"
+  ],
+  "572db281effb95a8a60337753f97f3ec": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_12.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_system_designer_8.png"
+  ],
+  "a8151eaccecf82477a70877789c245d7": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/check-in_filter_setup_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/check-in_filter_setup.png"
+  ],
+  "7894db27631908600ad3d255f4f09831": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/logo-white_1.svg",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/logo-white_3.svg",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/logo-white.svg"
+  ],
+  "6414fa9fe3f9c5916f53ff18bcd552fa": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/OG-Creatio-Docs.jpg",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/OG-Creatio-Docs_1.jpg"
+  ],
+  "2a2244b215abfbf724bcaeb6be527e60": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_add_button_in_schema.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_add_button_4.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_add_button_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_add_button_3.png"
+  ],
+  "dad420954b90eee9d9aee4e091fe5dc2": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_calendar_page_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_calendar_page.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_calendar_page_1.png"
+  ],
+  "3b561861df4b2f86ca04fec1f20205a4": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_add_ke_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_add_ke.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_add_ke_2.png"
+  ],
+  "419d424885990c90a939897c5df7e4b9": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_download_to_fs_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_download_to_fs.png"
+  ],
+  "4f860b0725e7f24143006317f3b3a425": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_add_from_list_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_add_from_list_2.png"
+  ],
+  "8d865535d092fe11c097b563832cc97c": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_add_button_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_add_button_5.png"
+  ],
+  "a62577af431a08446a5a3fed545d0769": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_field_force_edit_rule.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_field_force_edit_rule_1.png"
+  ],
+  "0f8a7de461c761cff4cd3a8a5ef89221": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_landing_page_designer_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_landing_page_designer.png"
+  ],
+  "5b27b769223f6ba9656517553b2a800f": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_field_force_plan_route_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_field_force_plan_route.png"
+  ],
+  "2ab1fa7163834f5e2e18118eed749cf5": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_mobile_card_menu_2.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_mobile_card_menu_1.png"
+  ],
+  "f93840301de6fc17fe3b2be24f78bd41": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/logo_1.svg",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/logo_4.svg",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/logo.svg"
+  ],
+  "e18b43b935256692ab7d6eb2d4fe9587": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_field_force_cyclic_tasks_plan_visits_action_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_pharma_cyclic_tasks_plan_visits_action.png"
+  ],
+  "2fefb81e01b7afa77e1c2f755b032a2d": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_edit_button.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_edit_button_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_edit_button_3.png"
+  ],
+  "dae411682163cc5bd9caaf87e8ca5093": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_show_on_map_check-in_check-out.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_show_on_map_check-in_check-out_1.png"
+  ],
+  "b3d379a63f1ec0c1d3ed28e75f908f94": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_apply.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_apply_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_apply_0.png"
+  ],
+  "316fb6acbbdfa61e7dc709f77c61bbcc": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_pkg_create_button_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_pkg_create_button.png"
+  ],
+  "fd8530ec7b8527e9b5248b7c8240efad": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_timeline.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_timeline_0.png"
+  ],
+  "b05a750c6b433c4fc47050e3d539139e": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/favicon.ico",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/favicon_1.ico",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/favicon_2.ico",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/favicon_4.ico"
+  ],
+  "d75bbf3a7ae945a92d809dedb24a9a94": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_Package_Settings_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_Package_Settings.png"
+  ],
+  "47a8938ecff4d3dc99a96043d67bda8a": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/accelerate_1.svg",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/accelerate.svg"
+  ],
+  "661a9c94cdbb88595e1898d842d51409": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_copilot_features_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_copilot_features.png"
+  ],
+  "f1238e340438fbe352ea2233bda5a4c1": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_section_email_sender_domains_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_section_email_sender_domains.png"
+  ],
+  "c48518ff2e9b14d346ae54e57eb28ca7": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_ldap_synchronization_ie_internet_options.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_ldap_synchronization_ie_internet_options_1.png"
+  ],
+  "1fd216838a2349b0d9553cbfe4445774": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_marketing_plans_detail_menu.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_marketing_plans_detail_menu_1.png"
+  ],
+  "315ea2b951c0b65091a5d6b537de5d9e": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_save_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_save.png"
+  ],
+  "fbdc4f4b5c316ecc9885c5c49cf8c45d": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_pharma_number_of_available_visits.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_field_force_number_of_available_visits_1.png"
+  ],
+  "a0c5a00d235b480cda166167adfe3239": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_mobile_add_product.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_mobile_add_product_1.png"
+  ],
+  "f8218cba2973db6fd1fb2a439dbe1f32": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_field_force_open_view.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_field_force_open_view_2.png"
+  ],
+  "2da843938470d1c18e0e54624c44e70c": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_process_tasks00014.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/btn_com_process_tasks00013.png"
+  ],
+  "d90858cc20a26a649a30e09237332895": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_ldap_synchronization_ie_internet_options_user_authentication_1.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_ldap_synchronization_ie_internet_options_user_authentication.png"
+  ],
+  "c8520d059df2acee8db5d07b00e127cc": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_MobileArchitecture.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/scr_mobile_app_architecture.png"
+  ],
+  "5e1f4aa24af162836943e313315959d2": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_field_force_check-in_on_map.png",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/resources/images/chapter_field_force_check-in_on_map_1.png"
+  ],
+  "128a904945986bdf14c329e8e0545963": [
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/venv/lib/python3.12/site-packages/scrapy/templates/project/module/spiders/__init__.py",
+    "/home/andrewwork/academy.creatio.com/creatio-academy-archive/creatio_crawler/spiders/__init__.py"
+  ]
+}

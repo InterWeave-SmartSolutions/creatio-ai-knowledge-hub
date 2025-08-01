@@ -1,0 +1,38 @@
+{
+  "summary_id": "0747a3b9883b",
+  "content_id": "699402ad4f39",
+  "summary_type": "extractive",
+  "summary_text": "So in case of big number of records to process, in case of very, let's say, \nhard speed requirements for your solution, the only suitable option is your own web service with your own data \nformats, your own direct database management without use of object model. Now we will \nsuccessfully run our query, we have some valid response JSON body and we see set of records, we see set of data \nand in general if you run something like this from third party app then you'll be able to parse your data and you'll be \nable to analyze it and get corresponding numbers or other columns if you need it. # Speaker 1\n\n--- Page 9 ---\n\nSo let's imagine we have a task to regularly get gold prices from this URL, from this API, save it in creatio and make it \npossible to run multiple times and correctly update such prices. In my case I have no request parameters at all, but if you will do it \nsomething like yourself with different web services, you need to remember that we have all possible ways to transfer \ndata that is commonly used in the REST API. So in my case \nresponse parameters can be added manually or we can use special very effective tool which is called quick setup \nand I will use example of my response body and give it to system in order to detect what are the possibilities, what \nare the possible values that we can get out from this example. So \nsuch web services, simply speaking, are parts of Clio to implement corresponding comments without this comment, \nwithout install gate, without additional package installed to your system, CLIO will be not capable to perform \ncorresponding commands. --- Page 18 ---\n\n# Speaker 1\n\nLet's try to run a command to install gate Clio install gate ED1 this is required in case if you want to enable full power \nof Clio commands. We can use this zip \nfile into next command which will be used for loading clio install the same as clio pool push pkg we will use source \nfile I will use on target environment D2 test and we need to use logs because it's important to see some technical \ndetails. # Speaker 1\n\nSomething is strange here and it looks like probably system failed to work with it but it looks like it's not a big trouble \nand you see one more issue here parent schema and was not found yes, this is more serious trouble because it \nlooks like our target environment was not fully prepared to install our changes because it miss customer 360 app \npossibly previous error message that we had here previous message with this stuff here probably it was also \nmissing corresponding app and we used so our solution expects that target system will help customer360 in my \nexample customers current our target environment did not have customer 360 that's why we have this stuff. So the type of the homework will include \nmaking your section, this one, making your detail, make programmed validation, some calculations, web service, and \nfor those who want to run an advanced level, some additional business process and adding data records and some \nautomatic update.",
+  "key_points": [
+    "So in case of big number of records to process, in case of very, let's say, \nhard speed requirements for your solution, the only suitable option is your own web service with your own data \nformats, your own direct database management without use of object model.",
+    "Now we will \nsuccessfully run our query, we have some valid response JSON body and we see set of records, we see set of data \nand in general if you run something like this from third party app then you'll be able to parse your data and you'll be \nable to analyze it and get corresponding numbers or other columns if you need it.",
+    "# Speaker 1\n\n--- Page 9 ---\n\nSo let's imagine we have a task to regularly get gold prices from this URL, from this API, save it in creatio and make it \npossible to run multiple times and correctly update such prices.",
+    "In my case I have no request parameters at all, but if you will do it \nsomething like yourself with different web services, you need to remember that we have all possible ways to transfer \ndata that is commonly used in the REST API.",
+    "So in my case \nresponse parameters can be added manually or we can use special very effective tool which is called quick setup \nand I will use example of my response body and give it to system in order to detect what are the possibilities, what \nare the possible values that we can get out from this example."
+  ],
+  "keywords": [
+    "data",
+    "speaker",
+    "use",
+    "let",
+    "service",
+    "need",
+    "like",
+    "okay",
+    "web",
+    "clio"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 541,
+  "original_length": 16974,
+  "compression_ratio": 0.03187227524449158,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:51:17.277390",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1178,
+    "method": "tfidf_position_ranking"
+  }
+}

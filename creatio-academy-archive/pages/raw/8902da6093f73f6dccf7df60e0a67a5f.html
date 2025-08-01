@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataValueTypeManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataValueTypeManager
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Core.DataValueTypeManager">
+  
+  
+  <h1 id="Terrasoft_Core_DataValueTypeManager" data-uid="Terrasoft.Core.DataValueTypeManager" class="text-break">Class DataValueTypeManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Terrasoft.Core.Manager-2.html">Manager</a>&lt;<a class="xref" href="Terrasoft.Core.DataValueTypeManagerItem.html">DataValueTypeManagerItem</a>, <a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a>&gt;</div>
+    <div class="level2"><span class="xref">DataValueTypeManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Terrasoft.Core.IManager-2.html">IManager</a>&lt;<a class="xref" href="Terrasoft.Core.DataValueTypeManagerItem.html">DataValueTypeManagerItem</a>, <a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a>&gt;</div>
+    <div><a class="xref" href="Terrasoft.Core.IManager.html">IManager</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_CreateItemCollection">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.CreateItemCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeInstance__0_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.InitializeInstance(DataValueTypeManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeSafeInstance__0_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.InitializeSafeInstance(DataValueTypeManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeAllItemCollection_Terrasoft_Core_IManagerItemCollection_Terrasoft_Core_IManagerItem__">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.InitializeAllItemCollection(IManagerItemCollection&lt;IManagerItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_ClearItems_System_Object_System_EventArgs_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.ClearItems(Object, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Initialize_Terrasoft_Core_ManagerProvider_Terrasoft_Core_ManagerProviderConfigurationElement_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.Initialize(ManagerProvider, ManagerProviderConfigurationElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItem_System_Predicate__0__">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.FindItem(Predicate&lt;DataValueTypeManagerItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.FindItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.FindItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.GetItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItemByUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.GetItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByRealUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.FindItemByRealUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByRealUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.GetItemByRealUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByName_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.FindItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByName_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.FindItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByName_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.GetItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItemByName_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.GetItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindInstanceByUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.FindInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindInstanceByUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.FindInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetInstanceByUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.GetInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetInstanceByUId_System_Guid_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.GetInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindInstanceByName_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.FindInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindInstanceByName_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.FindInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetInstanceByName_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.GetInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetInstanceByName_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.GetInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByCaption_System_String_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.FindItemByCaption(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItems">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.IManager.GetItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItems_System_Predicate_Terrasoft_Core_IManagerItem__">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.GetItems(Predicate&lt;IManagerItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItems">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.GetItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Add__0_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.Add(DataValueTypeManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Remove__0_">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.Remove(DataValueTypeManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Clear">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Items">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Name">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Provider">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.Provider</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_ItemCount">Manager&lt;DataValueTypeManagerItem, DataValueType&gt;.ItemCount</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Core.html">Terrasoft.Core</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Core.dll</h6>
+  <h5 id="Terrasoft_Core_DataValueTypeManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataValueTypeManager : Manager&lt;DataValueTypeManagerItem, DataValueType&gt;, IManager&lt;DataValueTypeManagerItem, DataValueType&gt;, IManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager__ctor_" data-uid="Terrasoft.Core.DataValueTypeManager.#ctor*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager__ctor" data-uid="Terrasoft.Core.DataValueTypeManager.#ctor">DataValueTypeManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataValueTypeManager()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_Groups_" data-uid="Terrasoft.Core.DataValueTypeManager.Groups*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_Groups" data-uid="Terrasoft.Core.DataValueTypeManager.Groups">Groups</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataValueTypeGroupCollection Groups { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueTypeGroupCollection.html">DataValueTypeGroupCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_CreateItemCollection_" data-uid="Terrasoft.Core.DataValueTypeManager.CreateItemCollection*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_CreateItemCollection" data-uid="Terrasoft.Core.DataValueTypeManager.CreateItemCollection">CreateItemCollection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IManagerItemCollection&lt;IManagerItem&gt; CreateItemCollection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IManagerItemCollection-1.html">IManagerItemCollection</a>&lt;<a class="xref" href="Terrasoft.Core.IManagerItem.html">IManagerItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.DataValueTypeManagerItem, Terrasoft.Core.DataValueType&gt;.CreateItemCollection()</span></div>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_FindDataValueTypeByType_" data-uid="Terrasoft.Core.DataValueTypeManager.FindDataValueTypeByType*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_FindDataValueTypeByType_System_Type_" data-uid="Terrasoft.Core.DataValueTypeManager.FindDataValueTypeByType(System.Type)">FindDataValueTypeByType(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataValueType FindDataValueTypeByType(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_GetDataValueTypeByType_" data-uid="Terrasoft.Core.DataValueTypeManager.GetDataValueTypeByType*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_GetDataValueTypeByType_System_Type_" data-uid="Terrasoft.Core.DataValueTypeManager.GetDataValueTypeByType(System.Type)">GetDataValueTypeByType(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataValueType GetDataValueTypeByType(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_GetDataValueTypeByValueType_" data-uid="Terrasoft.Core.DataValueTypeManager.GetDataValueTypeByValueType*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_GetDataValueTypeByValueType_System_Type_" data-uid="Terrasoft.Core.DataValueTypeManager.GetDataValueTypeByValueType(System.Type)">GetDataValueTypeByValueType(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataValueType GetDataValueTypeByValueType(Type valueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">valueType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_GetDataValueTypesByGroupName_" data-uid="Terrasoft.Core.DataValueTypeManager.GetDataValueTypesByGroupName*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_GetDataValueTypesByGroupName_System_String_" data-uid="Terrasoft.Core.DataValueTypeManager.GetDataValueTypesByGroupName(System.String)">GetDataValueTypesByGroupName(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;DataValueType&gt; GetDataValueTypesByGroupName(string groupName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_GetGroupNameByType_" data-uid="Terrasoft.Core.DataValueTypeManager.GetGroupNameByType*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_GetGroupNameByType_Terrasoft_Core_DataValueType_" data-uid="Terrasoft.Core.DataValueTypeManager.GetGroupNameByType(Terrasoft.Core.DataValueType)">GetGroupNameByType(DataValueType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetGroupNameByType(DataValueType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_GetInstanceByName_" data-uid="Terrasoft.Core.DataValueTypeManager.GetInstanceByName*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_GetInstanceByName_System_String_" data-uid="Terrasoft.Core.DataValueTypeManager.GetInstanceByName(System.String)">GetInstanceByName(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataValueType GetInstanceByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.DataValueTypeManagerItem, Terrasoft.Core.DataValueType&gt;.GetInstanceByName(System.String)</span></div>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_InitializeAllItemCollection_" data-uid="Terrasoft.Core.DataValueTypeManager.InitializeAllItemCollection*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_InitializeAllItemCollection_Terrasoft_Core_IManagerItemCollection_Terrasoft_Core_IManagerItem__" data-uid="Terrasoft.Core.DataValueTypeManager.InitializeAllItemCollection(Terrasoft.Core.IManagerItemCollection{Terrasoft.Core.IManagerItem})">InitializeAllItemCollection(IManagerItemCollection&lt;IManagerItem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitializeAllItemCollection(IManagerItemCollection&lt;IManagerItem&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IManagerItemCollection-1.html">IManagerItemCollection</a>&lt;<a class="xref" href="Terrasoft.Core.IManagerItem.html">IManagerItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.DataValueTypeManagerItem, Terrasoft.Core.DataValueType&gt;.InitializeAllItemCollection(Terrasoft.Core.IManagerItemCollection&lt;Terrasoft.Core.IManagerItem&gt;)</span></div>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_InitializeInstance_" data-uid="Terrasoft.Core.DataValueTypeManager.InitializeInstance*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_InitializeInstance_Terrasoft_Core_DataValueTypeManagerItem_" data-uid="Terrasoft.Core.DataValueTypeManager.InitializeInstance(Terrasoft.Core.DataValueTypeManagerItem)">InitializeInstance(DataValueTypeManagerItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override DataValueType InitializeInstance(DataValueTypeManagerItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueTypeManagerItem.html">DataValueTypeManagerItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.DataValueTypeManagerItem, Terrasoft.Core.DataValueType&gt;.InitializeInstance(Terrasoft.Core.DataValueTypeManagerItem)</span></div>
+  
+  
+  <a id="Terrasoft_Core_DataValueTypeManager_InitializeSafeInstance_" data-uid="Terrasoft.Core.DataValueTypeManager.InitializeSafeInstance*"></a>
+  <h4 id="Terrasoft_Core_DataValueTypeManager_InitializeSafeInstance_Terrasoft_Core_DataValueTypeManagerItem_" data-uid="Terrasoft.Core.DataValueTypeManager.InitializeSafeInstance(Terrasoft.Core.DataValueTypeManagerItem)">InitializeSafeInstance(DataValueTypeManagerItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override DataValueType InitializeSafeInstance(DataValueTypeManagerItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueTypeManagerItem.html">DataValueTypeManagerItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DataValueType.html">DataValueType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.DataValueTypeManagerItem, Terrasoft.Core.DataValueType&gt;.InitializeSafeInstance(Terrasoft.Core.DataValueTypeManagerItem)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IManager-2.html">IManager&lt;TItem, TInstance&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IManager.html">IManager</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupDataValueType__1_Terrasoft_Core_DataValueTypeManager_">SubstituteUtilities.SetupDataValueType&lt;TValueType&gt;(DataValueTypeManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "summary_id": "24e3e214e357",
+  "content_id": "ce77ce58529f",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: steps of our development career, so we'll discuss how general development is recommended to be performed in C-sharp, what are the environments, how to set up our own environment, and also we'll probably switch our own environment in a special mode, to enable full available set of tools for developer creation.\nINSTRUCTION: we'll work with packages, with version control, and enable git integration.\nINSTRUCTION: sessions will include working with object model, making data items using some bit advanced examples, so working with object, connecting it with database use, and so on.\nCONCEPT: module\nCONCEPT: entity\nCONCEPT: web service\nNOTE: them or maybe just prepare at the beginning of each session.\nNOTE: to take care and just check that your power of your PC is good enough.",
+  "key_points": [
+    "INSTRUCTION: steps of our development career, so we'll discuss how general development is recommended to be performed in C-sharp, what are the environments, how to set up our own environment, and also we'll probably switch our own environment in a special mode, to enable full available set of tools for developer creation.",
+    "INSTRUCTION: we'll work with packages, with version control, and enable git integration.",
+    "INSTRUCTION: sessions will include working with object model, making data items using some bit advanced examples, so working with object, connecting it with database use, and so on.",
+    "CONCEPT: module",
+    "CONCEPT: entity",
+    "CONCEPT: web service",
+    "NOTE: them or maybe just prepare at the beginning of each session.",
+    "NOTE: to take care and just check that your power of your PC is good enough."
+  ],
+  "keywords": [
+    "creation",
+    "file",
+    "windows",
+    "use",
+    "package",
+    "database",
+    "need",
+    "server",
+    "just",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 127,
+  "original_length": 16093,
+  "compression_ratio": 0.007891629901199279,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:54:15.618824",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

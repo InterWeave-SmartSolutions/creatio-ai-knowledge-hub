@@ -1,0 +1,60 @@
+{
+  "summary_id": "0a84d54a511e",
+  "content_id": "f74604cafd68",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: record, entity, section, database, server",
+  "key_points": [
+    "record",
+    "entity",
+    "section",
+    "database",
+    "server"
+  ],
+  "keywords": [
+    "ui",
+    "process",
+    "code",
+    "like",
+    "classic",
+    "data",
+    "freedom",
+    "use",
+    "freedom ui",
+    "classic ui"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 14614,
+  "compression_ratio": 0.00047899274668126453,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:51:19.891475",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "record",
+        "entity",
+        "section",
+        "database",
+        "server"
+      ],
+      "keywords": [
+        "ui",
+        "process",
+        "code",
+        "like",
+        "classic",
+        "data",
+        "freedom",
+        "use",
+        "freedom ui",
+        "classic ui"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

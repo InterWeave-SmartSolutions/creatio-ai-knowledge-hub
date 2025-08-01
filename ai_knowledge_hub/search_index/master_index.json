@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "created_at": "2025-07-24T14:23:46.143439",
+    "total_videos": 13,
+    "total_pdfs": 14,
+    "version": "1.0.0"
+  },
+  "videos": {
+    "a0bdf5f21b6e": {
+      "title": "Recording4",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "intermediate"
+    },
+    "eac8aef2e9d8": {
+      "title": "Recording11",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "beginner"
+    },
+    "00c0d9c85309": {
+      "title": "Recording9",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "intermediate"
+    },
+    "94f242f6b98e": {
+      "title": "Recording7",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "intermediate"
+    },
+    "5ec4f4200f2e": {
+      "title": "Recording13",
+      "duration": 0.0,
+      "topics": [
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "advanced"
+    },
+    "0bac334fdee7": {
+      "title": "Recording6",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "beginner"
+    },
+    "2cf1ccd103ed": {
+      "title": "Recording5",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "advanced"
+    },
+    "a76b4482f3f4": {
+      "title": "Recording8",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "advanced"
+    },
+    "db306ec3abcf": {
+      "title": "Recording10",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "advanced"
+    },
+    "f9a1e3e989fc": {
+      "title": "Recording3",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "advanced"
+    },
+    "323e73c9889e": {
+      "title": "Recording12",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "beginner"
+    },
+    "1ef702163ad0": {
+      "title": "Recording2",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "intermediate"
+    },
+    "6dd3fd41c2f4": {
+      "title": "Recording1",
+      "duration": 0.0,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ],
+      "complexity": "advanced"
+    }
+  },
+  "pdfs": {
+    "4d8790aa1530": {
+      "title": "Creatio Developer 6",
+      "page_count": 22,
+      "topics": [
+        "crm",
+        "bpm",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "0d8c1c94a6ac": {
+      "title": "Creatio Developer 12",
+      "page_count": 23,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "addfd1e21857": {
+      "title": "Creatio Developer 11",
+      "page_count": 22,
+      "topics": [
+        "crm",
+        "bpm",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "38bec6aacd2b": {
+      "title": "Creatiodeveloperbinder",
+      "page_count": 469,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "04a8f92b7f0e": {
+      "title": "Creatio Developer 9",
+      "page_count": 101,
+      "topics": [
+        "crm",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "27276e54b313": {
+      "title": "Creatio Developer 4",
+      "page_count": 125,
+      "topics": [
+        "crm",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "ca3cafc45c28": {
+      "title": "Creatio Developer 3",
+      "page_count": 27,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "dae911bfb043": {
+      "title": "Creatio Developer 1",
+      "page_count": 24,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "bda5cfd0d222": {
+      "title": "Creatio Developer 5",
+      "page_count": 21,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "376c4c757de4": {
+      "title": "Creatio Developer 10",
+      "page_count": 21,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "ccbbced9d46e": {
+      "title": "Creatio Developer 13",
+      "page_count": 18,
+      "topics": [
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "2d2e22451694": {
+      "title": "Creatio Developer 8",
+      "page_count": 20,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "a0ef9f2541a8": {
+      "title": "Creatio Developer 2",
+      "page_count": 25,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    },
+    "e8c5b73e93de": {
+      "title": "Creatio Developer 7",
+      "page_count": 20,
+      "topics": [
+        "crm",
+        "bpm",
+        "integration",
+        "development",
+        "configuration",
+        "ui_ux",
+        "database"
+      ]
+    }
+  }
+}

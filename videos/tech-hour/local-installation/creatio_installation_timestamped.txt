@@ -1,0 +1,3237 @@
+CREATIO TECH HOUR - TIMESTAMPED TRANSCRIPT
+==================================================
+
+[00:03] welcome to today's episode and
+[00:03] welcome to today's episode and today's episode is dedicated to
+[00:05] today's episode is dedicated to
+[00:05] today's episode is dedicated to installing local instance of creatio on
+[00:08] installing local instance of creatio on
+[00:08] installing local instance of creatio on your machine
+[00:09] your machine
+[00:09] your machine installing it on site um and so today
+[00:12] installing it on site um and so today
+[00:12] installing it on site um and so today we're going to take a look at
+[00:13] we're going to take a look at
+[00:14] we're going to take a look at some of the steps that are required that
+[00:15] some of the steps that are required that
+[00:15] some of the steps that are required that are expected of you as a developer or as
+[00:18] are expected of you as a developer or as
+[00:18] are expected of you as a developer or as a system administrator
+[00:20] a system administrator
+[00:20] a system administrator to perform in order to deploy creation
+[00:22] to perform in order to deploy creation
+[00:22] to perform in order to deploy creation on
+[00:23] on
+[00:23] on your local on your local machine data
+[00:26] your local on your local machine data
+[00:26] your local on your local machine data server be it a local
+[00:27] server be it a local
+[00:27] server be it a local local workstation for development
+[00:29] local workstation for development
+[00:29] local workstation for development purposes for testing for
+[00:31] purposes for testing for
+[00:31] purposes for testing for pre-production doesn't matter we're just
+[00:33] pre-production doesn't matter we're just
+[00:33] pre-production doesn't matter we're just going to take a look at some of the
+[00:35] going to take a look at some of the
+[00:35] going to take a look at some of the required steps what you're seeing on the
+[00:38] required steps what you're seeing on the
+[00:38] required steps what you're seeing on the screen now
+[00:39] screen now
+[00:39] screen now is i have navigated to creatio
+[00:42] is i have navigated to creatio
+[00:42] is i have navigated to creatio or i've navigated to academy
+[00:44] or i've navigated to academy
+[00:44] or i've navigated to academy creation.com and i went into a
+[00:46] creation.com and i went into a
+[00:46] creation.com and i went into a documentation section so if you just
+[00:47] documentation section so if you just
+[00:47] documentation section so if you just simply click on this documentation
+[00:49] simply click on this documentation
+[00:49] simply click on this documentation button
+[00:50] button
+[00:50] button you will be greeted with a lot of
+[00:52] you will be greeted with a lot of
+[00:52] you will be greeted with a lot of documentation
+[00:53] documentation
+[00:53] documentation towards the bottom of the page you will
+[00:55] towards the bottom of the page you will
+[00:55] towards the bottom of the page you will be able to find documentation on setup
+[00:57] be able to find documentation on setup
+[00:57] be able to find documentation on setup and administration
+[00:58] and administration
+[00:58] and administration right here and if you come here on the
+[01:01] right here and if you come here on the
+[01:01] right here and if you come here on the left hand side
+[01:02] left hand side
+[01:02] left hand side you will find a way to deploy here is a
+[01:05] you will find a way to deploy here is a
+[01:05] you will find a way to deploy here is a link that will follow and in this case
+[01:07] link that will follow and in this case
+[01:07] link that will follow and in this case we're going to be following on-site
+[01:08] we're going to be following on-site
+[01:08] we're going to be following on-site deployment instructions
+[01:10] deployment instructions
+[01:10] deployment instructions now there are a couple of instructions
+[01:12] now there are a couple of instructions
+[01:12] now there are a couple of instructions or is the documentation is broken down
+[01:15] or is the documentation is broken down
+[01:15] or is the documentation is broken down into multiple sections
+[01:17] into multiple sections
+[01:17] into multiple sections just to make it a little bit easier so
+[01:18] just to make it a little bit easier so
+[01:18] just to make it a little bit easier so we're going to cover one by one
+[01:21] we're going to cover one by one
+[01:21] we're going to cover one by one let's start off with system requirements
+[01:24] let's start off with system requirements
+[01:24] let's start off with system requirements system requirements broken down into
+[01:26] system requirements broken down into
+[01:26] system requirements broken down into client and server side and client will
+[01:28] client and server side and client will
+[01:28] client and server side and client will skip for now but essentially
+[01:29] skip for now but essentially
+[01:30] skip for now but essentially you need to make sure that you have a
+[01:31] you need to make sure that you have a
+[01:31] you need to make sure that you have a modern browser now
+[01:33] modern browser now
+[01:33] modern browser now in here in system requirements this is
+[01:35] in here in system requirements this is
+[01:35] in here in system requirements this is where the more difficult part starts
+[01:38] where the more difficult part starts
+[01:38] where the more difficult part starts the article goes into details explaining
+[01:40] the article goes into details explaining
+[01:40] the article goes into details explaining various possible installation options
+[01:43] various possible installation options
+[01:43] various possible installation options and it's listing uh some deployment
+[01:45] and it's listing uh some deployment
+[01:45] and it's listing uh some deployment ideas here where you have
+[01:47] ideas here where you have
+[01:47] ideas here where you have dotnet application or iis is server
+[01:51] dotnet application or iis is server
+[01:51] dotnet application or iis is server you've got a database could be ms sql it
+[01:54] you've got a database could be ms sql it
+[01:54] you've got a database could be ms sql it could be a postgrad
+[01:55] could be a postgrad
+[01:55] could be a postgrad it could be oracle and a third component
+[01:58] it could be oracle and a third component
+[01:58] it could be oracle and a third component a minimum component
+[01:59] a minimum component
+[01:59] a minimum component redis and this constitutes a minimum
+[02:02] redis and this constitutes a minimum
+[02:02] redis and this constitutes a minimum required
+[02:03] required
+[02:03] required components that are necessary to run
+[02:06] components that are necessary to run
+[02:06] components that are necessary to run creation
+[02:07] creation
+[02:07] creation so redis iis and a database of your
+[02:10] so redis iis and a database of your
+[02:10] so redis iis and a database of your choice
+[02:11] choice
+[02:11] choice there are more difficult and more
+[02:13] there are more difficult and more
+[02:13] there are more difficult and more challenging
+[02:14] challenging
+[02:14] challenging installations for example when you want
+[02:16] installations for example when you want
+[02:16] installations for example when you want to go in the farm when you want to go
+[02:19] to go in the farm when you want to go
+[02:19] to go in the farm when you want to go load balancer when you want to run redis
+[02:21] load balancer when you want to run redis
+[02:21] load balancer when you want to run redis in the cluster
+[02:22] in the cluster
+[02:22] in the cluster you can configure your installation in
+[02:24] you can configure your installation in
+[02:24] you can configure your installation in that way but for our purposes for today
+[02:27] that way but for our purposes for today
+[02:27] that way but for our purposes for today for simple development machine
+[02:28] for simple development machine
+[02:28] for simple development machine pre-production
+[02:29] pre-production
+[02:29] pre-production we're not going to be going with the
+[02:31] we're not going to be going with the
+[02:31] we're not going to be going with the installation of farm as it's fairly
+[02:33] installation of farm as it's fairly
+[02:33] installation of farm as it's fairly technical and it's fairly specific to
+[02:35] technical and it's fairly specific to
+[02:35] technical and it's fairly specific to your particular application
+[02:38] your particular application
+[02:38] your particular application so let's scroll down and see what we
+[02:39] so let's scroll down and see what we
+[02:39] so let's scroll down and see what we need to do there's a lot of text here
+[02:41] need to do there's a lot of text here
+[02:41] need to do there's a lot of text here but i'm just going to take you to the
+[02:43] but i'm just going to take you to the
+[02:43] but i'm just going to take you to the most interesting parts
+[02:45] most interesting parts
+[02:45] most interesting parts the first part is we need to make sure
+[02:47] the first part is we need to make sure
+[02:47] the first part is we need to make sure that our servers or the underlying os
+[02:49] that our servers or the underlying os
+[02:50] that our servers or the underlying os that we want to install is supported now
+[02:52] that we want to install is supported now
+[02:52] that we want to install is supported now here we see that the
+[02:54] here we see that the
+[02:54] here we see that the server windows server 2012 and up are
+[02:56] server windows server 2012 and up are
+[02:56] server windows server 2012 and up are supported however
+[02:58] supported however
+[02:58] supported however windows 10 is also supported now in our
+[03:01] windows 10 is also supported now in our
+[03:01] windows 10 is also supported now in our example today i will be using windows 10
+[03:03] example today i will be using windows 10
+[03:03] example today i will be using windows 10 machine for the deployment but you could
+[03:05] machine for the deployment but you could
+[03:05] machine for the deployment but you could use
+[03:06] use
+[03:06] use windows 10 i believe even earlier
+[03:08] windows 10 i believe even earlier
+[03:08] windows 10 i believe even earlier versions will also work if you
+[03:10] versions will also work if you
+[03:10] versions will also work if you run them now we can install it on linux
+[03:13] run them now we can install it on linux
+[03:13] run them now we can install it on linux in debian but we're not going to be
+[03:15] in debian but we're not going to be
+[03:15] in debian but we're not going to be using it
+[03:16] using it
+[03:16] using it for now most of the people will be
+[03:18] for now most of the people will be
+[03:18] for now most of the people will be installing it on linux on
+[03:19] installing it on linux on
+[03:19] installing it on linux on on windows not on linux and so we're
+[03:22] on windows not on linux and so we're
+[03:22] on windows not on linux and so we're going to address
+[03:23] going to address
+[03:23] going to address this part first in order for us to
+[03:26] this part first in order for us to
+[03:26] this part first in order for us to deploy
+[03:28] deploy
+[03:28] deploy creation we need to first make sure that
+[03:29] creation we need to first make sure that
+[03:29] creation we need to first make sure that our windows machine complies with all
+[03:32] our windows machine complies with all
+[03:32] our windows machine complies with all the
+[03:32] the
+[03:32] the requirements so let's go into uh
+[03:35] requirements so let's go into uh
+[03:35] requirements so let's go into uh deploying creation.net framework
+[03:37] deploying creation.net framework
+[03:38] deploying creation.net framework application on windows let's follow this
+[03:39] application on windows let's follow this
+[03:39] application on windows let's follow this link
+[03:40] link
+[03:40] link when we follow this link we'll see that
+[03:43] when we follow this link we'll see that
+[03:43] when we follow this link we'll see that some requirements
+[03:44] some requirements
+[03:44] some requirements or some packages we need to install we
+[03:46] or some packages we need to install we
+[03:46] or some packages we need to install we need to make sure that we install
+[03:48] need to make sure that we install
+[03:48] need to make sure that we install net core sdk 3.1 and that we install
+[03:51] net core sdk 3.1 and that we install
+[03:51] net core sdk 3.1 and that we install framework sdk472
+[03:54] framework sdk472
+[03:54] framework sdk472 this will be required for our
+[03:56] this will be required for our
+[03:56] this will be required for our application server to compile your
+[03:58] application server to compile your
+[03:58] application server to compile your source code or to compile the
+[03:59] source code or to compile the
+[03:59] source code or to compile the application do many
+[04:01] application do many
+[04:01] application do many many tasks that we when we run wizards
+[04:04] many tasks that we when we run wizards
+[04:04] many tasks that we when we run wizards etc
+[04:05] etc
+[04:05] etc now there's also a bunch of requirements
+[04:07] now there's also a bunch of requirements
+[04:07] now there's also a bunch of requirements here on the windows component side
+[04:09] here on the windows component side
+[04:09] here on the windows component side and this is what we're going to
+[04:10] and this is what we're going to
+[04:10] and this is what we're going to concentrate on now if you need to
+[04:13] concentrate on now if you need to
+[04:13] concentrate on now if you need to download your sdks just make sure you
+[04:14] download your sdks just make sure you
+[04:14] download your sdks just make sure you follow the link and
+[04:16] follow the link and
+[04:16] follow the link and click through the installation guide
+[04:17] click through the installation guide
+[04:17] click through the installation guide provided by microsoft
+[04:19] provided by microsoft
+[04:19] provided by microsoft and these sdks will be installed most
+[04:21] and these sdks will be installed most
+[04:22] and these sdks will be installed most likely your machine will need to be
+[04:23] likely your machine will need to be
+[04:23] likely your machine will need to be restarted or rebooted at least once when
+[04:25] restarted or rebooted at least once when
+[04:25] restarted or rebooted at least once when you're installing it so please take some
+[04:27] you're installing it so please take some
+[04:27] you're installing it so please take some time
+[04:28] time
+[04:28] time there's also another dot net core is
+[04:30] there's also another dot net core is
+[04:30] there's also another dot net core is decade that is required if you
+[04:32] decade that is required if you
+[04:32] decade that is required if you want to run identity service you need
+[04:35] want to run identity service you need
+[04:35] want to run identity service you need dotnet core
+[04:36] dotnet core
+[04:36] dotnet core 2.2 so you're also going to have to go
+[04:38] 2.2 so you're also going to have to go
+[04:38] 2.2 so you're also going to have to go and install it and i'll show you
+[04:40] and install it and i'll show you
+[04:40] and install it and i'll show you how to do that later in this tutorial
+[04:44] how to do that later in this tutorial
+[04:44] how to do that later in this tutorial and here we see that the windows 10 is
+[04:46] and here we see that the windows 10 is
+[04:46] and here we see that the windows 10 is not
+[04:47] not
+[04:47] not a production grade os and yet
+[04:50] a production grade os and yet
+[04:50] a production grade os and yet it's still supported so let's take a
+[04:53] it's still supported so let's take a
+[04:53] it's still supported so let's take a look at these common features and let's
+[04:54] look at these common features and let's
+[04:54] look at these common features and let's take a look at the components that
+[04:56] take a look at the components that
+[04:56] take a look at the components that windows machine needs to have installed
+[04:58] windows machine needs to have installed
+[04:58] windows machine needs to have installed prior to trying to or attempting to
+[05:00] prior to trying to or attempting to
+[05:00] prior to trying to or attempting to install creation
+[05:02] install creation
+[05:02] install creation so on the left hand side the features
+[05:05] so on the left hand side the features
+[05:05] so on the left hand side the features are broken down into
+[05:06] are broken down into
+[05:06] are broken down into the related components into groups and
+[05:09] the related components into groups and
+[05:09] the related components into groups and on the right hand side
+[05:10] on the right hand side
+[05:10] on the right hand side is the name of the component itself in
+[05:12] is the name of the component itself in
+[05:12] is the name of the component itself in order for you to install these
+[05:13] order for you to install these
+[05:13] order for you to install these components you need to navigate to
+[05:15] components you need to navigate to
+[05:15] components you need to navigate to control panel and
+[05:16] control panel and
+[05:16] control panel and activate them this is what i'm going to
+[05:18] activate them this is what i'm going to
+[05:18] activate them this is what i'm going to do so on my windows machine i'll just
+[05:21] do so on my windows machine i'll just
+[05:21] do so on my windows machine i'll just press start button and say control panel
+[05:23] press start button and say control panel
+[05:23] press start button and say control panel and go to my control panel
+[05:25] and go to my control panel
+[05:25] and go to my control panel and here we can go inside the programs
+[05:27] and here we can go inside the programs
+[05:27] and here we can go inside the programs and in the middle there is going to be
+[05:29] and in the middle there is going to be
+[05:29] and in the middle there is going to be turn
+[05:29] turn
+[05:29] turn windows features on and off this is the
+[05:32] windows features on and off this is the
+[05:32] windows features on and off this is the screen that we want to get to
+[05:34] screen that we want to get to
+[05:34] screen that we want to get to now depending on what you already have
+[05:35] now depending on what you already have
+[05:35] now depending on what you already have installed or what rights you have on
+[05:37] installed or what rights you have on
+[05:37] installed or what rights you have on your machine you may
+[05:39] your machine you may
+[05:39] your machine you may have some of these components installed
+[05:41] have some of these components installed
+[05:41] have some of these components installed make sure that your
+[05:43] make sure that your
+[05:43] make sure that your sdks.netcore.net frameworks are
+[05:45] sdks.netcore.net frameworks are
+[05:45] sdks.netcore.net frameworks are previously installed otherwise you will
+[05:46] previously installed otherwise you will
+[05:46] previously installed otherwise you will not be able to see these two checkboxes
+[05:50] not be able to see these two checkboxes
+[05:50] not be able to see these two checkboxes now it's time for me to install these
+[05:52] now it's time for me to install these
+[05:52] now it's time for me to install these components the installation is fairly
+[05:54] components the installation is fairly
+[05:54] components the installation is fairly straightforward as all you need to do is
+[05:56] straightforward as all you need to do is
+[05:56] straightforward as all you need to do is just simply find the component which is
+[05:57] just simply find the component which is
+[05:57] just simply find the component which is the most challenging part
+[05:59] the most challenging part
+[05:59] the most challenging part and then put a checkbox next to it so
+[06:01] and then put a checkbox next to it so
+[06:01] and then put a checkbox next to it so let's start off with this common http
+[06:03] let's start off with this common http
+[06:03] let's start off with this common http feature static content default content
+[06:05] feature static content default content
+[06:05] feature static content default content etc
+[06:06] etc
+[06:06] etc they're located under iis information
+[06:09] they're located under iis information
+[06:09] they're located under iis information services
+[06:10] services
+[06:10] services web web services or www services
+[06:15] web web services or www services
+[06:15] web web services or www services and then here are my components so
+[06:18] and then here are my components so
+[06:18] and then here are my components so application development common http
+[06:20] application development common http
+[06:20] application development common http features and inside these common http
+[06:22] features and inside these common http
+[06:22] features and inside these common http features
+[06:23] features
+[06:23] features are the actual component items that i'm
+[06:25] are the actual component items that i'm
+[06:25] are the actual component items that i'm looking for
+[06:26] looking for
+[06:26] looking for here is my static content here's my
+[06:28] here is my static content here's my
+[06:28] here is my static content here's my default
+[06:29] default
+[06:29] default document http error and redirection on
+[06:32] document http error and redirection on
+[06:32] document http error and redirection on the left
+[06:33] the left
+[06:33] the left it is up to you to make sure that you
+[06:35] it is up to you to make sure that you
+[06:35] it is up to you to make sure that you click through all of them
+[06:37] click through all of them
+[06:37] click through all of them and what i find sometimes people are not
+[06:39] and what i find sometimes people are not
+[06:39] and what i find sometimes people are not clicking through all of them or they
+[06:40] clicking through all of them or they
+[06:40] clicking through all of them or they think that they click through all of
+[06:42] think that they click through all of
+[06:42] think that they click through all of them
+[06:43] them
+[06:43] them and then something happens during the
+[06:44] and then something happens during the
+[06:44] and then something happens during the deployment and the application doesn't
+[06:46] deployment and the application doesn't
+[06:46] deployment and the application doesn't work
+[06:47] work
+[06:47] work just make sure that all these items are
+[06:49] just make sure that all these items are
+[06:49] just make sure that all these items are select and double check
+[06:50] select and double check
+[06:50] select and double check i will provide you with a powerful
+[06:52] i will provide you with a powerful
+[06:52] i will provide you with a powerful script later or as pow
+[06:54] script later or as pow
+[06:54] script later or as pow as attachment to this tutorial that you
+[06:56] as attachment to this tutorial that you
+[06:56] as attachment to this tutorial that you can run to make sure that all these
+[06:58] can run to make sure that all these
+[06:58] can run to make sure that all these components are activated
+[06:59] components are activated
+[06:59] components are activated i do however encourage you to do it by
+[07:01] i do however encourage you to do it by
+[07:01] i do however encourage you to do it by hand at least once so you have an
+[07:03] hand at least once so you have an
+[07:03] hand at least once so you have an understanding of how it's done without
+[07:05] understanding of how it's done without
+[07:05] understanding of how it's done without any automations
+[07:06] any automations
+[07:06] any automations now towards the bottom of this article
+[07:08] now towards the bottom of this article
+[07:08] now towards the bottom of this article you'll see that you have similar
+[07:10] you'll see that you have similar
+[07:10] you'll see that you have similar instructions provided how to go to
+[07:11] instructions provided how to go to
+[07:11] instructions provided how to go to control panel how to find them
+[07:13] control panel how to find them
+[07:13] control panel how to find them and then the instructions are offered
+[07:15] and then the instructions are offered
+[07:15] and then the instructions are offered for windows server installations as well
+[07:18] for windows server installations as well
+[07:18] for windows server installations as well as
+[07:18] as
+[07:18] as for xp for windows 10.
+[07:22] for xp for windows 10.
+[07:22] for xp for windows 10. now that we have installed all the
+[07:23] now that we have installed all the
+[07:23] now that we have installed all the necessary components it's time for us to
+[07:25] necessary components it's time for us to
+[07:25] necessary components it's time for us to move on to the installation of the
+[07:27] move on to the installation of the
+[07:27] move on to the installation of the actual
+[07:28] actual
+[07:28] actual application i've already downloaded
+[07:32] application i've already downloaded
+[07:32] application i've already downloaded the application you can take it wherever
+[07:34] the application you can take it wherever
+[07:34] the application you can take it wherever you are taking the
+[07:35] you are taking the
+[07:35] you are taking the uh the components of the application and
+[07:38] uh the components of the application and
+[07:38] uh the components of the application and what i'm going to do is
+[07:39] what i'm going to do is
+[07:39] what i'm going to do is i i've gotten the zip file that
+[07:42] i i've gotten the zip file that
+[07:42] i i've gotten the zip file that essentially contains everything that i
+[07:43] essentially contains everything that i
+[07:43] essentially contains everything that i need the backup to my database etc
+[07:46] need the backup to my database etc
+[07:46] need the backup to my database etc and i'm going to simply extract it here
+[07:49] and i'm going to simply extract it here
+[07:49] and i'm going to simply extract it here now i have a program called 7zip that
+[07:52] now i have a program called 7zip that
+[07:52] now i have a program called 7zip that allows me to
+[07:54] allows me to
+[07:54] allows me to to unzip files a little bit faster so
+[07:57] to unzip files a little bit faster so
+[07:57] to unzip files a little bit faster so i'm going to use
+[07:57] i'm going to use
+[07:58] i'm going to use 7-zip to extract files now i can extract
+[08:01] 7-zip to extract files now i can extract
+[08:01] 7-zip to extract files now i can extract files to a particular directory which is
+[08:02] files to a particular directory which is
+[08:02] files to a particular directory which is what i'm intending to do
+[08:04] what i'm intending to do
+[08:04] what i'm intending to do or you can just simply dump them in the
+[08:06] or you can just simply dump them in the
+[08:06] or you can just simply dump them in the entire directory
+[08:08] entire directory
+[08:08] entire directory okay so now that my installation or that
+[08:11] okay so now that my installation or that
+[08:12] okay so now that my installation or that my extraction is completed it's time for
+[08:14] my extraction is completed it's time for
+[08:14] my extraction is completed it's time for us to start playing around with that
+[08:15] us to start playing around with that
+[08:15] us to start playing around with that various components
+[08:17] various components
+[08:17] various components now i have some components installed as
+[08:19] now i have some components installed as
+[08:19] now i have some components installed as part of the infrastructure inside docker
+[08:21] part of the infrastructure inside docker
+[08:21] part of the infrastructure inside docker container
+[08:21] container
+[08:21] container namely i'm using my redis as the
+[08:24] namely i'm using my redis as the
+[08:24] namely i'm using my redis as the docker container now there is no
+[08:26] docker container now there is no
+[08:26] docker container now there is no official version of
+[08:29] official version of
+[08:29] official version of redis for windows there is only a
+[08:32] redis for windows there is only a
+[08:32] redis for windows there is only a workaround
+[08:33] workaround
+[08:33] workaround so it's not recommended that you run
+[08:35] so it's not recommended that you run
+[08:35] so it's not recommended that you run even in pre-production
+[08:37] even in pre-production
+[08:38] even in pre-production environment when the red is on windows
+[08:40] environment when the red is on windows
+[08:40] environment when the red is on windows however many people do and if you want
+[08:42] however many people do and if you want
+[08:42] however many people do and if you want to do so just google for
+[08:44] to do so just google for
+[08:44] to do so just google for redis for windows and there's going to
+[08:45] redis for windows and there's going to
+[08:46] redis for windows and there's going to be an msi file that you can just
+[08:47] be an msi file that you can just
+[08:48] be an msi file that you can just just install and becomes one of the
+[08:50] just install and becomes one of the
+[08:50] just install and becomes one of the windows services
+[08:51] windows services
+[08:51] windows services in my case though i will be using it in
+[08:53] in my case though i will be using it in
+[08:53] in my case though i will be using it in docker and i will provide you with
+[08:54] docker and i will provide you with
+[08:54] docker and i will provide you with all the necessary docker compose files
+[08:56] all the necessary docker compose files
+[08:56] all the necessary docker compose files so you can restore this infrastructure
+[08:58] so you can restore this infrastructure
+[08:58] so you can restore this infrastructure on your own machine now that i have my
+[09:02] on your own machine now that i have my
+[09:02] on your own machine now that i have my installation directory unzipped
+[09:05] installation directory unzipped
+[09:05] installation directory unzipped i can take a look at what's inside we'll
+[09:08] i can take a look at what's inside we'll
+[09:08] i can take a look at what's inside we'll find a bunch of files bunch of
+[09:09] find a bunch of files bunch of
+[09:09] find a bunch of files bunch of directories
+[09:11] directories
+[09:11] directories and one of them is going to be identity
+[09:13] and one of them is going to be identity
+[09:13] and one of them is going to be identity service we will be installing later
+[09:15] service we will be installing later
+[09:15] service we will be installing later there is going to be a connection string
+[09:16] there is going to be a connection string
+[09:16] there is going to be a connection string file where we have to specify how to
+[09:18] file where we have to specify how to
+[09:18] file where we have to specify how to connect to the underlying databases
+[09:20] connect to the underlying databases
+[09:20] connect to the underlying databases and there is going to be idb folder the
+[09:23] and there is going to be idb folder the
+[09:23] and there is going to be idb folder the b folder here contains a backup
+[09:25] b folder here contains a backup
+[09:26] b folder here contains a backup to mssql in my case i'm installing a
+[09:28] to mssql in my case i'm installing a
+[09:28] to mssql in my case i'm installing a mess sql
+[09:29] mess sql
+[09:29] mess sql but the procedure for postgrad is very
+[09:31] but the procedure for postgrad is very
+[09:31] but the procedure for postgrad is very similar it's going to contain a backup
+[09:33] similar it's going to contain a backup
+[09:33] similar it's going to contain a backup file that we will use to restore
+[09:36] file that we will use to restore
+[09:36] file that we will use to restore the database the next thing we need to
+[09:38] the database the next thing we need to
+[09:38] the database the next thing we need to do is we need to actually use this
+[09:40] do is we need to actually use this
+[09:40] do is we need to actually use this directory and put it in a place where we
+[09:42] directory and put it in a place where we
+[09:42] directory and put it in a place where we can
+[09:43] can
+[09:43] can bring up a website so in order for me to
+[09:45] bring up a website so in order for me to
+[09:46] bring up a website so in order for me to do that
+[09:46] do that
+[09:46] do that i'm going to be using my iis now is
+[09:49] i'm going to be using my iis now is
+[09:49] i'm going to be using my iis now is what's going to
+[09:49] what's going to
+[09:50] what's going to run the application and currently i have
+[09:52] run the application and currently i have
+[09:52] run the application and currently i have some applications already installed here
+[09:54] some applications already installed here
+[09:54] some applications already installed here but i will have them turned off as you
+[09:56] but i will have them turned off as you
+[09:56] but i will have them turned off as you can tell that i have already some
+[09:58] can tell that i have already some
+[09:58] can tell that i have already some samples installed here
+[09:59] samples installed here
+[09:59] samples installed here but they are all deactivated
+[10:02] but they are all deactivated
+[10:02] but they are all deactivated now by default i prefer to install my
+[10:04] now by default i prefer to install my
+[10:04] now by default i prefer to install my applications in a particular space on
+[10:06] applications in a particular space on
+[10:06] applications in a particular space on the disk and that's going to be under
+[10:08] the disk and that's going to be under
+[10:08] the disk and that's going to be under in that pub www and then
+[10:11] in that pub www and then
+[10:11] in that pub www and then all my applications are going to end up
+[10:13] all my applications are going to end up
+[10:13] all my applications are going to end up here now the reason i choose to install
+[10:15] here now the reason i choose to install
+[10:16] here now the reason i choose to install it in this particular four
+[10:17] it in this particular four
+[10:17] it in this particular four folders because this folder by default
+[10:19] folders because this folder by default
+[10:19] folders because this folder by default is where iis
+[10:20] is where iis
+[10:20] is where iis wants to look for all the files and
+[10:22] wants to look for all the files and
+[10:22] wants to look for all the files and there aren't going to be any permissions
+[10:23] there aren't going to be any permissions
+[10:23] there aren't going to be any permissions issues
+[10:24] issues
+[10:24] issues now if you want to install it in some
+[10:26] now if you want to install it in some
+[10:26] now if you want to install it in some other directory you need to make sure
+[10:27] other directory you need to make sure
+[10:27] other directory you need to make sure that you give proper permissions for the
+[10:29] that you give proper permissions for the
+[10:29] that you give proper permissions for the iis user to execute
+[10:31] iis user to execute
+[10:31] iis user to execute against that directory you can do that
+[10:34] against that directory you can do that
+[10:34] against that directory you can do that quite easily so let's create
+[10:35] quite easily so let's create
+[10:35] quite easily so let's create a new directory creatio
+[10:39] a new directory creatio
+[10:39] a new directory creatio demo oops demo
+[10:43] demo oops demo
+[10:43] demo oops demo and if i want to install it let's say
+[10:45] and if i want to install it let's say
+[10:45] and if i want to install it let's say inside this directory and i want to
+[10:46] inside this directory and i want to
+[10:46] inside this directory and i want to point
+[10:47] point
+[10:47] point iis to work in this directory i need to
+[10:48] iis to work in this directory i need to
+[10:48] iis to work in this directory i need to make sure that the iis
+[10:50] make sure that the iis
+[10:50] make sure that the iis user has the necessary permissions i'll
+[10:53] user has the necessary permissions i'll
+[10:53] user has the necessary permissions i'll right click properties on the directory
+[10:55] right click properties on the directory
+[10:55] right click properties on the directory i'll go into my security and i'll make
+[10:57] i'll go into my security and i'll make
+[10:57] i'll go into my security and i'll make sure that the user
+[10:59] sure that the user
+[10:59] sure that the user is actually has permissions so let's go
+[11:01] is actually has permissions so let's go
+[11:01] is actually has permissions so let's go here under
+[11:03] here under
+[11:03] here under edit i believe and let's add a new user
+[11:06] edit i believe and let's add a new user
+[11:06] edit i believe and let's add a new user it's going to be ias is you
+[11:09] it's going to be ias is you
+[11:09] it's going to be ias is you i saw i believe let's check names
+[11:14] i saw i believe let's check names
+[11:14] i saw i believe let's check names hopefully it picks it up if it doesn't
+[11:18] hopefully it picks it up if it doesn't
+[11:18] hopefully it picks it up if it doesn't i you sr something like this
+[11:34] no not in the domain in my machine
+[11:34] no not in the domain in my machine and object type
+[11:41] this is probably the hardest part i
+[11:41] this is probably the hardest part i can't find them
+[11:43] can't find them
+[11:43] can't find them let's go on the advanced
+[11:50] and in here we can start with searches
+[11:50] and in here we can start with searches find now but what am i looking for
+[11:53] find now but what am i looking for
+[11:53] find now but what am i looking for let's start find now and i s
+[11:56] let's start find now and i s
+[11:56] let's start find now and i s here that's the one that i want so this
+[11:58] here that's the one that i want so this
+[11:58] here that's the one that i want so this is the user that i want to
+[12:00] is the user that i want to
+[12:00] is the user that i want to know again didn't get it right
+[12:04] know again didn't get it right
+[12:04] know again didn't get it right sorry let's do it again this is the one
+[12:07] sorry let's do it again this is the one
+[12:07] sorry let's do it again this is the one that i want
+[12:07] that i want
+[12:08] that i want is iusrs so just a weird name
+[12:11] is iusrs so just a weird name
+[12:11] is iusrs so just a weird name but you just have to make sure that you
+[12:13] but you just have to make sure that you
+[12:13] but you just have to make sure that you find this uh
+[12:15] find this uh
+[12:15] find this uh find this user okay so now that i've
+[12:17] find this user okay so now that i've
+[12:17] find this user okay so now that i've selected this user to have access to
+[12:19] selected this user to have access to
+[12:19] selected this user to have access to this directory i also want to make sure
+[12:21] this directory i also want to make sure
+[12:21] this directory i also want to make sure that i
+[12:21] that i
+[12:21] that i grant full control to this director
+[12:23] grant full control to this director
+[12:23] grant full control to this director otherwise
+[12:24] otherwise
+[12:24] otherwise the user that executes the thread will
+[12:27] the user that executes the thread will
+[12:27] the user that executes the thread will not be able to touch the files and
+[12:28] not be able to touch the files and
+[12:28] not be able to touch the files and modify them
+[12:29] modify them
+[12:29] modify them as the application requires to do so so
+[12:32] as the application requires to do so so
+[12:32] as the application requires to do so so make sure that you allow full control to
+[12:34] make sure that you allow full control to
+[12:34] make sure that you allow full control to this folder
+[12:35] this folder
+[12:35] this folder okay and now we can click apply and we
+[12:38] okay and now we can click apply and we
+[12:38] okay and now we can click apply and we can click
+[12:38] can click
+[12:38] can click on ok now in some machines where you do
+[12:41] on ok now in some machines where you do
+[12:41] on ok now in some machines where you do not have administrative access that
+[12:43] not have administrative access that
+[12:43] not have administrative access that would be a problematic issue
+[12:45] would be a problematic issue
+[12:45] would be a problematic issue so make sure that you talk to your
+[12:46] so make sure that you talk to your
+[12:46] so make sure that you talk to your system administrators and they allow you
+[12:48] system administrators and they allow you
+[12:48] system administrators and they allow you to
+[12:55] great um that they allow you to
+[12:55] great um that they allow you to connect to
+[12:58] connect to
+[12:58] connect to or execute something as the
+[12:59] or execute something as the
+[13:00] or execute something as the administrator just give me a second i'll
+[13:01] administrator just give me a second i'll
+[13:01] administrator just give me a second i'll try to
+[13:03] try to
+[13:03] try to relog into my machine
+[13:06] relog into my machine
+[13:06] relog into my machine all right so now we've applied
+[13:09] all right so now we've applied
+[13:09] all right so now we've applied permissions to
+[13:10] permissions to
+[13:10] permissions to this folder so after having reconnected
+[13:13] this folder so after having reconnected
+[13:13] this folder so after having reconnected now we've applied permissions to this
+[13:15] now we've applied permissions to this
+[13:15] now we've applied permissions to this folder and the next thing i want to do
+[13:17] folder and the next thing i want to do
+[13:17] folder and the next thing i want to do is i want to make sure that
+[13:18] is i want to make sure that
+[13:18] is i want to make sure that i copy the content of our zip folder
+[13:21] i copy the content of our zip folder
+[13:21] i copy the content of our zip folder inside this directory
+[13:23] inside this directory
+[13:23] inside this directory so let's go back into our previously
+[13:25] so let's go back into our previously
+[13:26] so let's go back into our previously extracted directory
+[13:27] extracted directory
+[13:27] extracted directory and just copy the whole thing and i'll
+[13:29] and just copy the whole thing and i'll
+[13:30] and just copy the whole thing and i'll use control x to
+[13:31] use control x to
+[13:31] use control x to cut and i'm going to paste it into this
+[13:34] cut and i'm going to paste it into this
+[13:34] cut and i'm going to paste it into this directory
+[13:35] directory
+[13:35] directory now after having pasted everything back
+[13:38] now after having pasted everything back
+[13:38] now after having pasted everything back into
+[13:38] into
+[13:38] into this drive the next thing that we're
+[13:40] this drive the next thing that we're
+[13:40] this drive the next thing that we're going to do is we're going to try to
+[13:42] going to do is we're going to try to
+[13:42] going to do is we're going to try to create
+[13:42] create
+[13:42] create with the help of iis we're going to try
+[13:44] with the help of iis we're going to try
+[13:44] with the help of iis we're going to try to create a website and the application
+[13:47] to create a website and the application
+[13:47] to create a website and the application pool
+[13:53] let's open our is manager and
+[13:53] let's open our is manager and in here i have some sites and some
+[13:55] in here i have some sites and some
+[13:55] in here i have some sites and some application pools but they're all
+[13:56] application pools but they're all
+[13:56] application pools but they're all stopped as you could tell so let's
+[13:58] stopped as you could tell so let's
+[13:58] stopped as you could tell so let's create a new one we'll add a website
+[14:00] create a new one we'll add a website
+[14:00] create a new one we'll add a website let's give it a name so i'm going to
+[14:02] let's give it a name so i'm going to
+[14:02] let's give it a name so i'm going to call it stu
+[14:04] call it stu
+[14:04] call it stu creatio studio
+[14:07] creatio studio
+[14:07] creatio studio and let's give it a path to the folder
+[14:10] and let's give it a path to the folder
+[14:10] and let's give it a path to the folder that we have
+[14:11] that we have
+[14:11] that we have extracted our director our product in
+[14:14] extracted our director our product in
+[14:14] extracted our director our product in so creation demo now we can specify
+[14:17] so creation demo now we can specify
+[14:18] so creation demo now we can specify we have to specify a port i'm going to
+[14:20] we have to specify a port i'm going to
+[14:20] we have to specify a port i'm going to i'm going to pick 7010
+[14:21] i'm going to pick 7010
+[14:22] i'm going to pick 7010 any port will do 82 85 80 whatever the
+[14:25] any port will do 82 85 80 whatever the
+[14:25] any port will do 82 85 80 whatever the case might be
+[14:26] case might be
+[14:26] case might be just make sure that this port is not
+[14:28] just make sure that this port is not
+[14:28] just make sure that this port is not occupied by anything else
+[14:30] occupied by anything else
+[14:30] occupied by anything else the host name i'm going to specify is my
+[14:31] the host name i'm going to specify is my
+[14:32] the host name i'm going to specify is my own local host name
+[14:33] own local host name
+[14:33] own local host name this is the name of my machine if you
+[14:35] this is the name of my machine if you
+[14:35] this is the name of my machine if you want to find out what your
+[14:37] want to find out what your
+[14:37] want to find out what your machine name is just open your console
+[14:39] machine name is just open your console
+[14:39] machine name is just open your console and type in host
+[14:41] and type in host
+[14:41] and type in host name as one word and you will know what
+[14:43] name as one word and you will know what
+[14:43] name as one word and you will know what your host name is
+[14:45] your host name is
+[14:45] your host name is now the only reason i'm doing it is just
+[14:46] now the only reason i'm doing it is just
+[14:46] now the only reason i'm doing it is just because i'm addressing this machine from
+[14:48] because i'm addressing this machine from
+[14:48] because i'm addressing this machine from other applications by this
+[14:49] other applications by this
+[14:49] other applications by this host name so it makes sense uh
+[14:52] host name so it makes sense uh
+[14:52] host name so it makes sense uh for me to make sure that my ies site is
+[14:55] for me to make sure that my ies site is
+[14:55] for me to make sure that my ies site is going to be responsive
+[14:56] going to be responsive
+[14:56] going to be responsive when i'm addressing this way okay so
+[14:59] when i'm addressing this way okay so
+[14:59] when i'm addressing this way okay so let's save this
+[15:00] let's save this
+[15:00] let's save this and now let's open the website right
+[15:01] and now let's open the website right
+[15:02] and now let's open the website right click on it and say add application
+[15:04] click on it and say add application
+[15:04] click on it and say add application give it an alias of zero and specify
+[15:07] give it an alias of zero and specify
+[15:07] give it an alias of zero and specify physical path
+[15:08] physical path
+[15:08] physical path to the same folder but inside that
+[15:10] to the same folder but inside that
+[15:10] to the same folder but inside that folder there is another folder called
+[15:12] folder there is another folder called
+[15:12] folder there is another folder called chairsoft web app so let's just make
+[15:14] chairsoft web app so let's just make
+[15:14] chairsoft web app so let's just make sure that we
+[15:15] sure that we
+[15:15] sure that we select airsoft web app at this point
+[15:17] select airsoft web app at this point
+[15:17] select airsoft web app at this point good
+[15:19] good
+[15:19] good as soon as you add this application a
+[15:21] as soon as you add this application a
+[15:21] as soon as you add this application a new application pool will be created in
+[15:23] new application pool will be created in
+[15:23] new application pool will be created in iis
+[15:24] iis
+[15:24] iis if it doesn't get created you can go and
+[15:26] if it doesn't get created you can go and
+[15:26] if it doesn't get created you can go and manually add it
+[15:27] manually add it
+[15:27] manually add it by hand so all you can do is you can say
+[15:29] by hand so all you can do is you can say
+[15:29] by hand so all you can do is you can say add application pool
+[15:31] add application pool
+[15:31] add application pool give it a name so let's say test pool
+[15:33] give it a name so let's say test pool
+[15:33] give it a name so let's say test pool make sure that it's a clr
+[15:35] make sure that it's a clr
+[15:35] make sure that it's a clr integrated start immediately here's my
+[15:37] integrated start immediately here's my
+[15:38] integrated start immediately here's my test app pool
+[15:39] test app pool
+[15:39] test app pool and if i wanted to add an application
+[15:40] and if i wanted to add an application
+[15:40] and if i wanted to add an application pool so for example i'm going to add
+[15:42] pool so for example i'm going to add
+[15:42] pool so for example i'm going to add an application when i'm creating it here
+[15:46] an application when i'm creating it here
+[15:46] an application when i'm creating it here i can select the application that i uh i
+[15:48] i can select the application that i uh i
+[15:48] i can select the application that i uh i can use any pool that i have previously
+[15:50] can use any pool that i have previously
+[15:50] can use any pool that i have previously selected
+[15:51] selected
+[15:51] selected so you can go ahead and create the pool
+[15:53] so you can go ahead and create the pool
+[15:53] so you can go ahead and create the pool first and then
+[15:54] first and then
+[15:54] first and then add the application or you can just
+[15:56] add the application or you can just
+[15:56] add the application or you can just simply add the application and the pool
+[15:57] simply add the application and the pool
+[15:57] simply add the application and the pool will be created
+[15:58] will be created
+[15:58] will be created now if the pool doesn't get created in
+[16:00] now if the pool doesn't get created in
+[16:00] now if the pool doesn't get created in the right way then just make sure that
+[16:01] the right way then just make sure that
+[16:01] the right way then just make sure that you
+[16:02] you
+[16:02] you override it by hand okay so now we've
+[16:05] override it by hand okay so now we've
+[16:05] override it by hand okay so now we've got the application pool and we've got
+[16:08] got the application pool and we've got
+[16:08] got the application pool and we've got the website configured and if you try
+[16:10] the website configured and if you try
+[16:10] the website configured and if you try navigating to this port 7010
+[16:12] navigating to this port 7010
+[16:12] navigating to this port 7010 then you're going to get an error we
+[16:14] then you're going to get an error we
+[16:14] then you're going to get an error we have not specified a connection string
+[16:16] have not specified a connection string
+[16:16] have not specified a connection string to our redis database
+[16:18] to our redis database
+[16:18] to our redis database we have not specified a string to our
+[16:21] we have not specified a string to our
+[16:21] we have not specified a string to our data database server
+[16:22] data database server
+[16:22] data database server and this is what we're going to do next
+[16:24] and this is what we're going to do next
+[16:24] and this is what we're going to do next so the website at this point is not
+[16:26] so the website at this point is not
+[16:26] so the website at this point is not working at all
+[16:28] working at all
+[16:28] working at all all right if we want to follow the
+[16:30] all right if we want to follow the
+[16:30] all right if we want to follow the instructions
+[16:31] instructions
+[16:31] instructions uh we can take a look how we can
+[16:34] uh we can take a look how we can
+[16:34] uh we can take a look how we can install redis and how we can install the
+[16:37] install redis and how we can install the
+[16:37] install redis and how we can install the database
+[16:38] database
+[16:38] database but in my particular case what i'm going
+[16:40] but in my particular case what i'm going
+[16:40] but in my particular case what i'm going to do is i'm going to just simply start
+[16:42] to do is i'm going to just simply start
+[16:42] to do is i'm going to just simply start my iis
+[16:43] my iis
+[16:43] my iis so my uh not my is my sql so
+[16:46] so my uh not my is my sql so
+[16:46] so my uh not my is my sql so i have um
+[16:50] i have um
+[16:50] i have um i have sql installed already i'm not
+[16:52] i have sql installed already i'm not
+[16:52] i have sql installed already i'm not going to go through the installation
+[16:54] going to go through the installation
+[16:54] going to go through the installation uh just follow uh standard
+[16:57] uh just follow uh standard
+[16:57] uh just follow uh standard sql express installation tutorials
+[17:00] sql express installation tutorials
+[17:00] sql express installation tutorials online
+[17:00] online
+[17:00] online and you will be able to figure out how
+[17:03] and you will be able to figure out how
+[17:03] and you will be able to figure out how to do that
+[17:04] to do that
+[17:04] to do that in my case the service is not started so
+[17:07] in my case the service is not started so
+[17:07] in my case the service is not started so i'm going to go and start
+[17:08] i'm going to go and start
+[17:08] i'm going to go and start you don't need to do that if you if you
+[17:11] you don't need to do that if you if you
+[17:11] you don't need to do that if you if you never shut it down so if you just simply
+[17:13] never shut it down so if you just simply
+[17:13] never shut it down so if you just simply installed it
+[17:14] installed it
+[17:14] installed it then you don't need to do anything i'm
+[17:15] then you don't need to do anything i'm
+[17:15] then you don't need to do anything i'm also going to start the agent as well
+[17:17] also going to start the agent as well
+[17:17] also going to start the agent as well so just come here and click start
+[17:25] okay perfect so now everything is up and
+[17:25] okay perfect so now everything is up and running
+[17:26] running
+[17:26] running and the next thing that we need to do is
+[17:28] and the next thing that we need to do is
+[17:28] and the next thing that we need to do is we need to log on to our sql server
+[17:31] we need to log on to our sql server
+[17:31] we need to log on to our sql server make sure that we note the connection
+[17:33] make sure that we note the connection
+[17:33] make sure that we note the connection string and then we're going to have to
+[17:35] string and then we're going to have to
+[17:35] string and then we're going to have to go
+[17:35] go
+[17:35] go and adjust this connection string all
+[17:38] and adjust this connection string all
+[17:38] and adjust this connection string all right
+[17:39] right
+[17:39] right for that i'm going to use sql studio but
+[17:42] for that i'm going to use sql studio but
+[17:42] for that i'm going to use sql studio but before you do a sql studio let me point
+[17:44] before you do a sql studio let me point
+[17:44] before you do a sql studio let me point out to couple of uh
+[17:47] out to couple of uh
+[17:47] out to couple of uh common mistakes or common
+[17:50] common mistakes or common
+[17:50] common mistakes or common issues that people might be having so
+[17:52] issues that people might be having so
+[17:52] issues that people might be having so let's go into
+[17:54] let's go into
+[17:54] let's go into sql server i believe it's called
+[17:58] sql server i believe it's called
+[17:58] sql server i believe it's called uh i think that's the installation
+[18:01] uh i think that's the installation
+[18:01] uh i think that's the installation center or
+[18:02] center or
+[18:02] center or import export data i'm sorry
+[18:05] import export data i'm sorry
+[18:05] import export data i'm sorry uh sql server
+[18:09] uh sql server
+[18:09] uh sql server uh where's this management studio
+[18:11] uh where's this management studio
+[18:11] uh where's this management studio profiler
+[18:13] profiler
+[18:13] profiler error
+[18:20] uh you know what let's just skip it for
+[18:20] uh you know what let's just skip it for now let's go let's go straight into
+[18:23] now let's go let's go straight into
+[18:23] now let's go let's go straight into studio studio
+[18:28] studio studio
+[18:28] studio studio inside sql studio we'll use this product
+[18:31] inside sql studio we'll use this product
+[18:31] inside sql studio we'll use this product to restore the database and
+[18:33] to restore the database and
+[18:33] to restore the database and feed the feed the drive feed the file
+[18:36] feed the feed the drive feed the file
+[18:36] feed the feed the drive feed the file that's located here in db folder
+[18:38] that's located here in db folder
+[18:38] that's located here in db folder so this is what we're going to be
+[18:39] so this is what we're going to be
+[18:40] so this is what we're going to be restoring right now
+[18:42] restoring right now
+[18:42] restoring right now let me connect to my instance i'm
+[18:43] let me connect to my instance i'm
+[18:43] let me connect to my instance i'm connecting as the administrator
+[18:46] connecting as the administrator
+[18:46] connecting as the administrator with the help of and uh with the help of
+[18:48] with the help of and uh with the help of
+[18:48] with the help of and uh with the help of nt authentication
+[18:49] nt authentication
+[18:49] nt authentication but you need to make sure off on your
+[18:51] but you need to make sure off on your
+[18:51] but you need to make sure off on your sql express and this is probably the
+[18:53] sql express and this is probably the
+[18:53] sql express and this is probably the easiest
+[18:54] easiest
+[18:54] easiest configuration is to go right click on
+[18:56] configuration is to go right click on
+[18:56] configuration is to go right click on the name of your server
+[18:57] the name of your server
+[18:57] the name of your server click properties and in security make
+[19:00] click properties and in security make
+[19:00] click properties and in security make sure that you allow
+[19:02] sure that you allow
+[19:02] sure that you allow sql server authentication mode now you
+[19:05] sql server authentication mode now you
+[19:05] sql server authentication mode now you can
+[19:05] can
+[19:05] can use it with windows authentication mode
+[19:07] use it with windows authentication mode
+[19:07] use it with windows authentication mode in my particular case i'm using sql
+[19:10] in my particular case i'm using sql
+[19:10] in my particular case i'm using sql server authentication mode rather than
+[19:12] server authentication mode rather than
+[19:12] server authentication mode rather than windows so i can specify the username
+[19:14] windows so i can specify the username
+[19:14] windows so i can specify the username and password
+[19:15] and password
+[19:15] and password directly in my connection string when
+[19:17] directly in my connection string when
+[19:17] directly in my connection string when i'm using it for
+[19:19] i'm using it for
+[19:19] i'm using it for when i'm using it with with my product
+[19:23] when i'm using it with with my product
+[19:23] when i'm using it with with my product okay let's go in the database and i have
+[19:26] okay let's go in the database and i have
+[19:26] okay let's go in the database and i have i believe one database here already
+[19:27] i believe one database here already
+[19:27] i believe one database here already installed so let's just simply right
+[19:29] installed so let's just simply right
+[19:29] installed so let's just simply right click
+[19:30] click
+[19:30] click on the databases and say restore
+[19:32] on the databases and say restore
+[19:32] on the databases and say restore database so here's the
+[19:34] database so here's the
+[19:34] database so here's the option restore database and we're going
+[19:36] option restore database and we're going
+[19:36] option restore database and we're going to specify device
+[19:38] to specify device
+[19:38] to specify device from which we're restoring and device
+[19:39] from which we're restoring and device
+[19:39] from which we're restoring and device happens to be just a physical location
+[19:42] happens to be just a physical location
+[19:42] happens to be just a physical location so we're going to go back on our c drive
+[19:44] so we're going to go back on our c drive
+[19:44] so we're going to go back on our c drive find creation demo
+[19:46] find creation demo
+[19:46] find creation demo find db folder select it and here's my
+[19:50] find db folder select it and here's my
+[19:50] find db folder select it and here's my backup file
+[19:52] backup file
+[19:52] backup file and let's click ok now the studio
+[19:55] and let's click ok now the studio
+[19:55] and let's click ok now the studio database that's a default name that's
+[19:57] database that's a default name that's
+[19:57] database that's a default name that's going to be
+[19:58] going to be
+[19:58] going to be given by the creators of this backup you
+[20:01] given by the creators of this backup you
+[20:01] given by the creators of this backup you can rename it at any
+[20:03] can rename it at any
+[20:03] can rename it at any you can rename it at this point and why
+[20:05] you can rename it at this point and why
+[20:05] you can rename it at this point and why don't we just take a look what we call
+[20:06] don't we just take a look what we call
+[20:06] don't we just take a look what we call their website in is
+[20:09] their website in is
+[20:09] their website in is we called it creatio studio
+[20:13] we called it creatio studio
+[20:13] we called it creatio studio and let's go ahead and call this thing
+[20:14] and let's go ahead and call this thing
+[20:14] and let's go ahead and call this thing as well creation
+[20:17] as well creation
+[20:17] as well creation studio now it's going to perform a full
+[20:19] studio now it's going to perform a full
+[20:19] studio now it's going to perform a full backup it's telling you the version
+[20:21] backup it's telling you the version
+[20:21] backup it's telling you the version of the backup and just simply click ok
+[20:29] the backup doesn't take too long and in
+[20:29] the backup doesn't take too long and in later
+[20:29] later
+[20:29] later uh parts of the tutorial i'll show you
+[20:31] uh parts of the tutorial i'll show you
+[20:31] uh parts of the tutorial i'll show you how to restore it with the help of
+[20:32] how to restore it with the help of
+[20:32] how to restore it with the help of powershell so you don't have to do it by
+[20:34] powershell so you don't have to do it by
+[20:34] powershell so you don't have to do it by hand
+[20:35] hand
+[20:36] hand okay so now that we've restored the
+[20:37] okay so now that we've restored the
+[20:37] okay so now that we've restored the database we also need to make sure that
+[20:39] database we also need to make sure that
+[20:39] database we also need to make sure that we have a user who can connect to this
+[20:41] we have a user who can connect to this
+[20:41] we have a user who can connect to this database
+[20:42] database
+[20:42] database now to create a user you can go into
+[20:44] now to create a user you can go into
+[20:44] now to create a user you can go into security and to
+[20:46] security and to
+[20:46] security and to logins and just simply right click on
+[20:48] logins and just simply right click on
+[20:48] logins and just simply right click on the login create new login
+[20:50] the login create new login
+[20:50] the login create new login come up with the name make sure it's a
+[20:51] come up with the name make sure it's a
+[20:51] come up with the name make sure it's a sql authentication
+[20:53] sql authentication
+[20:53] sql authentication provide the name username and password
+[20:55] provide the name username and password
+[20:55] provide the name username and password make sure that you uncheck enforce
+[20:56] make sure that you uncheck enforce
+[20:56] make sure that you uncheck enforce policy security so you can provide some
+[20:58] policy security so you can provide some
+[20:58] policy security so you can provide some simple passwords such as one one one
+[21:01] simple passwords such as one one one
+[21:01] simple passwords such as one one one since it's just a development machine
+[21:02] since it's just a development machine
+[21:02] since it's just a development machine we don't want any any issues with the
+[21:05] we don't want any any issues with the
+[21:05] we don't want any any issues with the security here
+[21:07] security here
+[21:07] security here so i've done that already and i've
+[21:08] so i've done that already and i've
+[21:08] so i've done that already and i've created myself two usernames one is
+[21:10] created myself two usernames one is
+[21:10] created myself two usernames one is called creation one is called supervisor
+[21:12] called creation one is called supervisor
+[21:12] called creation one is called supervisor for no good reason it just the name that
+[21:15] for no good reason it just the name that
+[21:15] for no good reason it just the name that i've decided to give
+[21:15] i've decided to give
+[21:16] i've decided to give it let's now go back into our database
+[21:19] it let's now go back into our database
+[21:19] it let's now go back into our database the one that we just restored and what
+[21:21] the one that we just restored and what
+[21:21] the one that we just restored and what we can do is we can either right click
+[21:23] we can do is we can either right click
+[21:23] we can do is we can either right click on the database here go into properties
+[21:25] on the database here go into properties
+[21:25] on the database here go into properties and we can specify permissions okay and
+[21:28] and we can specify permissions okay and
+[21:28] and we can specify permissions okay and create user mappings this way
+[21:30] create user mappings this way
+[21:30] create user mappings this way but what i find the easiest is just to
+[21:32] but what i find the easiest is just to
+[21:32] but what i find the easiest is just to simply go to a login right click on the
+[21:34] simply go to a login right click on the
+[21:34] simply go to a login right click on the login go to properties
+[21:35] login go to properties
+[21:35] login go to properties and from the properties you go to user
+[21:38] and from the properties you go to user
+[21:38] and from the properties you go to user mappings
+[21:39] mappings
+[21:39] mappings okay choose the user mapping that you
+[21:42] okay choose the user mapping that you
+[21:42] okay choose the user mapping that you would like to use in this case you can
+[21:44] would like to use in this case you can
+[21:44] would like to use in this case you can say creatio studio
+[21:45] say creatio studio
+[21:45] say creatio studio and make sure that you give it a role of
+[21:47] and make sure that you give it a role of
+[21:47] and make sure that you give it a role of db owner
+[21:52] now we can do the same thing for say
+[21:52] now we can do the same thing for say another user if you want to have more
+[21:54] another user if you want to have more
+[21:54] another user if you want to have more than one user connecting to this
+[21:55] than one user connecting to this
+[21:55] than one user connecting to this database
+[21:56] database
+[21:56] database so all we have to do is use our mapping
+[21:59] so all we have to do is use our mapping
+[21:59] so all we have to do is use our mapping and where's my creation studio and let's
+[22:01] and where's my creation studio and let's
+[22:01] and where's my creation studio and let's just give it a db owner
+[22:04] just give it a db owner
+[22:04] just give it a db owner perfect so now we have a user we can
+[22:07] perfect so now we have a user we can
+[22:07] perfect so now we have a user we can try logging on so to make sure that i
+[22:10] try logging on so to make sure that i
+[22:10] try logging on so to make sure that i can
+[22:10] can
+[22:10] can actually connect what i'm going to do is
+[22:12] actually connect what i'm going to do is
+[22:12] actually connect what i'm going to do is i'm going to disconnect now and i'm
+[22:13] i'm going to disconnect now and i'm
+[22:13] i'm going to disconnect now and i'm going to try to reconnect
+[22:15] going to try to reconnect
+[22:15] going to try to reconnect and instead of using windows
+[22:16] and instead of using windows
+[22:16] and instead of using windows authentication i'm going to try to use
+[22:18] authentication i'm going to try to use
+[22:18] authentication i'm going to try to use sql authentication
+[22:20] sql authentication
+[22:20] sql authentication and i think the password is
+[22:27] supervisor let me connect
+[22:28] supervisor let me connect and i can see that i can connect and i
+[22:29] and i can see that i can connect and i
+[22:29] and i can see that i can connect and i have access to creation studio
+[22:31] have access to creation studio
+[22:31] have access to creation studio i can perform queries
+[22:40] uh so let's make sure we use creation
+[22:40] uh so let's make sure we use creation studio and let's
+[22:43] studio and let's
+[22:43] studio and let's select i don't know id from contact
+[22:47] select i don't know id from contact
+[22:47] select i don't know id from contact and if i execute the query you could
+[22:49] and if i execute the query you could
+[22:49] and if i execute the query you could tell that i'm getting some records back
+[22:51] tell that i'm getting some records back
+[22:51] tell that i'm getting some records back perfect so i've got my database working
+[22:53] perfect so i've got my database working
+[22:53] perfect so i've got my database working it's now time for me to
+[22:55] it's now time for me to
+[22:55] it's now time for me to configure my connection strings now
+[22:58] configure my connection strings now
+[22:58] configure my connection strings now what i'm going to do is i'm going to
+[23:00] what i'm going to do is i'm going to
+[23:00] what i'm going to do is i'm going to actually copy this
+[23:02] actually copy this
+[23:02] actually copy this copy this uh database name for
+[23:05] copy this uh database name for
+[23:05] copy this uh database name for later use but now let's go ahead and
+[23:08] later use but now let's go ahead and
+[23:08] later use but now let's go ahead and configure it so
+[23:11] configure it so
+[23:11] configure it so in our
+[23:17] i think this is us right no this is us
+[23:17] i think this is us right no this is us on this disk uh directory there is a
+[23:20] on this disk uh directory there is a
+[23:20] on this disk uh directory there is a file called connection string
+[23:22] file called connection string
+[23:22] file called connection string let's find it here's a connection string
+[23:24] let's find it here's a connection string
+[23:24] let's find it here's a connection string and i'll open it with my favorite text
+[23:26] and i'll open it with my favorite text
+[23:26] and i'll open it with my favorite text editor
+[23:27] editor
+[23:27] editor so here's my connection string and i
+[23:28] so here's my connection string and i
+[23:28] so here's my connection string and i have an example of a connection string
+[23:30] have an example of a connection string
+[23:30] have an example of a connection string that i was using in the past this is
+[23:31] that i was using in the past this is
+[23:31] that i was using in the past this is what it's going to look like
+[23:33] what it's going to look like
+[23:33] what it's going to look like when you open it on your screen and
+[23:35] when you open it on your screen and
+[23:35] when you open it on your screen and we're going to have to modify a couple
+[23:36] we're going to have to modify a couple
+[23:36] we're going to have to modify a couple of lines here
+[23:37] of lines here
+[23:37] of lines here the first line that you want to modify
+[23:39] the first line that you want to modify
+[23:39] the first line that you want to modify is this this is the line that's
+[23:41] is this this is the line that's
+[23:41] is this this is the line that's responsible for specifying where your
+[23:43] responsible for specifying where your
+[23:43] responsible for specifying where your redis lives
+[23:45] redis lives
+[23:45] redis lives now in my case my redis lives on my
+[23:47] now in my case my redis lives on my
+[23:47] now in my case my redis lives on my local host so i can just simply say
+[23:50] local host so i can just simply say
+[23:50] local host so i can just simply say localhost or local host
+[23:54] localhost or local host
+[23:54] localhost or local host i have to assign a database by default
+[23:56] i have to assign a database by default
+[23:56] i have to assign a database by default redis when installed in docker or as a
+[23:59] redis when installed in docker or as a
+[23:59] redis when installed in docker or as a windows service has 16 databases with
+[24:01] windows service has 16 databases with
+[24:01] windows service has 16 databases with the
+[24:01] the
+[24:02] the xero based index so 0 is the first
+[24:05] xero based index so 0 is the first
+[24:05] xero based index so 0 is the first database and 15 is the last one
+[24:07] database and 15 is the last one
+[24:07] database and 15 is the last one so we're going to give it let's say
+[24:08] so we're going to give it let's say
+[24:08] so we're going to give it let's say database 15 as i i'm pretty sure i'm not
+[24:11] database 15 as i i'm pretty sure i'm not
+[24:11] database 15 as i i'm pretty sure i'm not using it for anything
+[24:12] using it for anything
+[24:12] using it for anything at the moment on my machine 6379 is a
+[24:16] at the moment on my machine 6379 is a
+[24:16] at the moment on my machine 6379 is a default port for redis so if you haven't
+[24:18] default port for redis so if you haven't
+[24:18] default port for redis so if you haven't configured anything
+[24:19] configured anything
+[24:19] configured anything differently then 6379 is going to be the
+[24:22] differently then 6379 is going to be the
+[24:22] differently then 6379 is going to be the port that
+[24:23] port that
+[24:23] port that radius will listen on the next thing for
+[24:26] radius will listen on the next thing for
+[24:26] radius will listen on the next thing for us to configure
+[24:27] us to configure
+[24:27] us to configure is this line and this line is our
+[24:30] is this line and this line is our
+[24:30] is this line and this line is our database connection let me just copy
+[24:32] database connection let me just copy
+[24:32] database connection let me just copy this database connection string
+[24:34] this database connection string
+[24:34] this database connection string you can build your own but i'm since
+[24:35] you can build your own but i'm since
+[24:35] you can build your own but i'm since i've already pre-built it
+[24:37] i've already pre-built it
+[24:37] i've already pre-built it i'm just simply going to copy it here
+[24:40] i'm just simply going to copy it here
+[24:40] i'm just simply going to copy it here and we're going to tweak it a little bit
+[24:43] and we're going to tweak it a little bit
+[24:43] and we're going to tweak it a little bit so in this case i'm specifying a data
+[24:45] so in this case i'm specifying a data
+[24:45] so in this case i'm specifying a data source for
+[24:46] source for
+[24:46] source for my instance of sql and i can easily get
+[24:49] my instance of sql and i can easily get
+[24:49] my instance of sql and i can easily get it if i look
+[24:49] it if i look
+[24:49] it if i look at my sql management studio i
+[24:53] at my sql management studio i
+[24:53] at my sql management studio i you can tell what this is it's going to
+[24:55] you can tell what this is it's going to
+[24:55] you can tell what this is it's going to say
+[24:56] say
+[24:56] say your connection string here not
+[24:57] your connection string here not
+[24:57] your connection string here not connection string that the instance of
+[24:59] connection string that the instance of
+[24:59] connection string that the instance of the server
+[25:00] the server
+[25:00] the server you can also simply disconnect from it
+[25:02] you can also simply disconnect from it
+[25:02] you can also simply disconnect from it and try to reconnect
+[25:04] and try to reconnect
+[25:04] and try to reconnect and here is your connection string
+[25:06] and here is your connection string
+[25:06] and here is your connection string another connection string but the
+[25:08] another connection string but the
+[25:08] another connection string but the server name the initial catalog refers
+[25:10] server name the initial catalog refers
+[25:10] server name the initial catalog refers to the database name
+[25:11] to the database name
+[25:12] to the database name so if we're going to go back here as a
+[25:16] so if we're going to go back here as a
+[25:16] so if we're going to go back here as a um let me just log in
+[25:20] um let me just log in
+[25:20] um let me just log in and the database that we would like to
+[25:21] and the database that we would like to
+[25:22] and the database that we would like to target is this so
+[25:23] target is this so
+[25:23] target is this so select this database press f2 and just
+[25:26] select this database press f2 and just
+[25:26] select this database press f2 and just simply
+[25:27] simply
+[25:27] simply copy the name of the database so that's
+[25:30] copy the name of the database so that's
+[25:30] copy the name of the database so that's going to be
+[25:31] going to be
+[25:31] going to be my database name now the user id in
+[25:34] my database name now the user id in
+[25:34] my database name now the user id in mind the space between the user and id
+[25:36] mind the space between the user and id
+[25:36] mind the space between the user and id this is the right spelling
+[25:38] this is the right spelling
+[25:38] this is the right spelling is going to say creation this is the
+[25:40] is going to say creation this is the
+[25:40] is going to say creation this is the user who's going to be accessing
+[25:42] user who's going to be accessing
+[25:42] user who's going to be accessing our database or essentially this is
+[25:44] our database or essentially this is
+[25:44] our database or essentially this is going to be the user that the
+[25:46] going to be the user that the
+[25:46] going to be the user that the application pool is using to access the
+[25:48] application pool is using to access the
+[25:48] application pool is using to access the database
+[25:49] database
+[25:49] database we're then specifying the password and
+[25:51] we're then specifying the password and
+[25:51] we're then specifying the password and this is the reason that i wanted to use
+[25:54] this is the reason that i wanted to use
+[25:54] this is the reason that i wanted to use sql authentication so i can specify it
+[25:57] sql authentication so i can specify it
+[25:57] sql authentication so i can specify it very vividly
+[25:58] very vividly
+[25:58] very vividly right here in my connection string and
+[26:01] right here in my connection string and
+[26:01] right here in my connection string and then couple of other properties how to
+[26:02] then couple of other properties how to
+[26:02] then couple of other properties how to manage the connection
+[26:03] manage the connection
+[26:03] manage the connection this is all we have to do in order for
+[26:06] this is all we have to do in order for
+[26:06] this is all we have to do in order for us to start with the application
+[26:08] us to start with the application
+[26:08] us to start with the application so let's make sure we save this and we
+[26:10] so let's make sure we save this and we
+[26:10] so let's make sure we save this and we can now
+[26:11] can now
+[26:11] can now roll down our studio the next thing that
+[26:14] roll down our studio the next thing that
+[26:14] roll down our studio the next thing that i want to do is i want to simply check
+[26:16] i want to do is i want to simply check
+[26:16] i want to do is i want to simply check if my application is running now we can
+[26:19] if my application is running now we can
+[26:19] if my application is running now we can specify additional properties and
+[26:20] specify additional properties and
+[26:20] specify additional properties and additional settings and configure them
+[26:22] additional settings and configure them
+[26:22] additional settings and configure them but that's something that we're going to
+[26:23] but that's something that we're going to
+[26:24] but that's something that we're going to do with the help of a batch file that
+[26:26] do with the help of a batch file that
+[26:26] do with the help of a batch file that i've prepared for us that will do all
+[26:27] i've prepared for us that will do all
+[26:28] i've prepared for us that will do all this work for us automatically
+[26:30] this work for us automatically
+[26:30] this work for us automatically let's make sure that we can navigate to
+[26:31] let's make sure that we can navigate to
+[26:32] let's make sure that we can navigate to 7010 and that the application actually
+[26:34] 7010 and that the application actually
+[26:34] 7010 and that the application actually starts
+[26:35] starts
+[26:35] starts in some cases this application may not
+[26:38] in some cases this application may not
+[26:38] in some cases this application may not start and will give you some errors
+[26:40] start and will give you some errors
+[26:40] start and will give you some errors so in this case system argument
+[26:42] so in this case system argument
+[26:42] so in this case system argument exception parameter host cannot be
+[26:44] exception parameter host cannot be
+[26:44] exception parameter host cannot be empty string now it's too bad it's not
+[26:46] empty string now it's too bad it's not
+[26:46] empty string now it's too bad it's not telling us where but
+[26:48] telling us where but
+[26:48] telling us where but we simply need to go and configure um
+[26:52] we simply need to go and configure um
+[26:52] we simply need to go and configure um go and find where we did not configure
+[26:55] go and find where we did not configure
+[26:55] go and find where we did not configure this so maybe it's in our
+[26:57] this so maybe it's in our
+[26:57] this so maybe it's in our connection string so let's just simply
+[26:59] connection string so let's just simply
+[26:59] connection string so let's just simply find
+[27:00] find
+[27:00] find the connection string and host has to be
+[27:03] the connection string and host has to be
+[27:03] the connection string and host has to be i believe
+[27:04] i believe
+[27:04] i believe this way so i i believe i missed the
+[27:07] this way so i i believe i missed the
+[27:07] this way so i i believe i missed the word host this is the proper spelling
+[27:09] word host this is the proper spelling
+[27:09] word host this is the proper spelling and i forgot it so if you make a mistake
+[27:11] and i forgot it so if you make a mistake
+[27:12] and i forgot it so if you make a mistake you will get an error here
+[27:13] you will get an error here
+[27:13] you will get an error here this way this kind of error message and
+[27:16] this way this kind of error message and
+[27:16] this way this kind of error message and just make sure that you
+[27:17] just make sure that you
+[27:17] just make sure that you uh you can debug it you will also get
+[27:19] uh you can debug it you will also get
+[27:19] uh you can debug it you will also get some ideas or some hints
+[27:21] some ideas or some hints
+[27:21] some ideas or some hints into what's not working in this
+[27:23] into what's not working in this
+[27:23] into what's not working in this particular pic in this particular case
+[27:25] particular pic in this particular case
+[27:25] particular pic in this particular case you could clearly see that
+[27:26] you could clearly see that
+[27:26] you could clearly see that there's a lot of mention of redis so you
+[27:29] there's a lot of mention of redis so you
+[27:29] there's a lot of mention of redis so you know that something is going on with
+[27:30] know that something is going on with
+[27:30] know that something is going on with redis
+[27:31] redis
+[27:31] redis let's just try to f5 on this page and
+[27:33] let's just try to f5 on this page and
+[27:33] let's just try to f5 on this page and reload it
+[27:34] reload it
+[27:34] reload it if everything goes correctly i should
+[27:35] if everything goes correctly i should
+[27:35] if everything goes correctly i should see a login page which is what i expect
+[27:37] see a login page which is what i expect
+[27:37] see a login page which is what i expect at this point
+[27:39] at this point
+[27:39] at this point also mind you that you get some
+[27:40] also mind you that you get some
+[27:40] also mind you that you get some redirects here okay and at this point we
+[27:42] redirects here okay and at this point we
+[27:42] redirects here okay and at this point we can try to log in with the super
+[27:45] can try to log in with the super
+[27:45] can try to log in with the super supervisor supervisor
+[27:48] supervisor supervisor
+[27:48] supervisor supervisor now another reason that i've created
+[27:50] now another reason that i've created
+[27:50] now another reason that i've created this creation supervisor username and
+[27:51] this creation supervisor username and
+[27:52] this creation supervisor username and password here is that
+[27:53] password here is that
+[27:53] password here is that what the database credentials are in
+[27:56] what the database credentials are in
+[27:56] what the database credentials are in here for this database
+[27:58] here for this database
+[27:58] here for this database they have nothing to do with what your
+[28:01] they have nothing to do with what your
+[28:01] they have nothing to do with what your username and password will be here
+[28:03] username and password will be here
+[28:03] username and password will be here and the reason they have nothing to do
+[28:04] and the reason they have nothing to do
+[28:04] and the reason they have nothing to do here is because
+[28:06] here is because
+[28:06] here is because this is how you're accessing the
+[28:07] this is how you're accessing the
+[28:08] this is how you're accessing the database
+[28:09] database
+[28:09] database and supervisor supervisor is how you're
+[28:11] and supervisor supervisor is how you're
+[28:11] and supervisor supervisor is how you're actually accessing the application
+[28:14] actually accessing the application
+[28:14] actually accessing the application the first time we start the application
+[28:15] the first time we start the application
+[28:15] the first time we start the application it might take us a little while
+[28:17] it might take us a little while
+[28:17] it might take us a little while to load the application but then
+[28:19] to load the application but then
+[28:19] to load the application but then essentially everything
+[28:20] essentially everything
+[28:20] essentially everything works just fine now once your
+[28:23] works just fine now once your
+[28:23] works just fine now once your application is loaded for the first time
+[28:24] application is loaded for the first time
+[28:24] application is loaded for the first time you can try
+[28:25] you can try
+[28:25] you can try navigating from place to place you can
+[28:27] navigating from place to place you can
+[28:27] navigating from place to place you can go to different sections just to make
+[28:29] go to different sections just to make
+[28:29] go to different sections just to make sure
+[28:29] sure
+[28:29] sure everything works fine the best test and
+[28:32] everything works fine the best test and
+[28:32] everything works fine the best test and the best
+[28:33] the best
+[28:33] the best the best advice that i can give you is
+[28:34] the best advice that i can give you is
+[28:34] the best advice that i can give you is to just go into a cog wheel here
+[28:36] to just go into a cog wheel here
+[28:36] to just go into a cog wheel here scroll all the way down go to your
+[28:38] scroll all the way down go to your
+[28:38] scroll all the way down go to your advanced settings another by the way
+[28:40] advanced settings another by the way
+[28:40] advanced settings another by the way shortcut in the advanced settings if you
+[28:42] shortcut in the advanced settings if you
+[28:42] shortcut in the advanced settings if you open the new tab
+[28:45] open the new tab
+[28:45] open the new tab and if you go to slash zero slash dev it
+[28:47] and if you go to slash zero slash dev it
+[28:47] and if you go to slash zero slash dev it will also take you in the back end
+[28:50] will also take you in the back end
+[28:50] will also take you in the back end now when you're here in the back end the
+[28:51] now when you're here in the back end the
+[28:51] now when you're here in the back end the thing that you want to check is to make
+[28:53] thing that you want to check is to make
+[28:53] thing that you want to check is to make sure that everything compiles
+[28:55] sure that everything compiles
+[28:55] sure that everything compiles you usually do it only for the first
+[28:56] you usually do it only for the first
+[28:56] you usually do it only for the first time on the machine that you're
+[28:57] time on the machine that you're
+[28:57] time on the machine that you're installing the application for the first
+[28:59] installing the application for the first
+[28:59] installing the application for the first time so if it's your server
+[29:01] time so if it's your server
+[29:01] time so if it's your server and it's the first time you're
+[29:02] and it's the first time you're
+[29:02] and it's the first time you're installing application for the first
+[29:03] installing application for the first
+[29:03] installing application for the first time you want to make sure that the
+[29:04] time you want to make sure that the
+[29:04] time you want to make sure that the dependencies are addressed
+[29:06] dependencies are addressed
+[29:06] dependencies are addressed to make sure that everything is
+[29:08] to make sure that everything is
+[29:08] to make sure that everything is installed just simply click on compile
+[29:10] installed just simply click on compile
+[29:10] installed just simply click on compile if you're missing some components the
+[29:12] if you're missing some components the
+[29:12] if you're missing some components the compilation will let you know
+[29:13] compilation will let you know
+[29:13] compilation will let you know immediately
+[29:14] immediately
+[29:14] immediately or it will let you know immediately
+[29:16] or it will let you know immediately
+[29:16] or it will let you know immediately after it fails to compile
+[29:18] after it fails to compile
+[29:18] after it fails to compile so it one way or the other if your
+[29:20] so it one way or the other if your
+[29:20] so it one way or the other if your compilation is successful
+[29:21] compilation is successful
+[29:21] compilation is successful then you know everything is installed
+[29:23] then you know everything is installed
+[29:23] then you know everything is installed correctly now this is not the first time
+[29:25] correctly now this is not the first time
+[29:25] correctly now this is not the first time that i'm installing a
+[29:27] that i'm installing a
+[29:27] that i'm installing a instance of creation on this machine so
+[29:29] instance of creation on this machine so
+[29:29] instance of creation on this machine so i'm pretty confident that things will go
+[29:32] i'm pretty confident that things will go
+[29:32] i'm pretty confident that things will go as planned now after this
+[29:35] as planned now after this
+[29:35] as planned now after this compilation is completed you can see you
+[29:37] compilation is completed you can see you
+[29:37] compilation is completed you can see you can you can then
+[29:39] can you can then
+[29:39] can you can then go ahead and convert it to development
+[29:40] go ahead and convert it to development
+[29:40] go ahead and convert it to development and file system mode or do whatever it
+[29:42] and file system mode or do whatever it
+[29:42] and file system mode or do whatever it is that you want to do
+[29:43] is that you want to do
+[29:43] is that you want to do and in my case you could tell that the
+[29:45] and in my case you could tell that the
+[29:45] and in my case you could tell that the operation was successful so i now know
+[29:47] operation was successful so i now know
+[29:47] operation was successful so i now know that everything that i did is correctly
+[29:49] that everything that i did is correctly
+[29:49] that everything that i did is correctly installed
+[29:51] installed
+[29:51] installed the next couple of things that we want
+[29:53] the next couple of things that we want
+[29:53] the next couple of things that we want to do is we want to probably configure
+[29:55] to do is we want to probably configure
+[29:55] to do is we want to probably configure it to operate
+[29:56] it to operate
+[29:56] it to operate with the to work with the exchange
+[29:59] with the to work with the exchange
+[29:59] with the to work with the exchange listener
+[30:00] listener
+[30:00] listener to maybe install uh identity service and
+[30:03] to maybe install uh identity service and
+[30:03] to maybe install uh identity service and things of that nature
+[30:04] things of that nature
+[30:04] things of that nature now previous episodes demonstrated how
+[30:07] now previous episodes demonstrated how
+[30:07] now previous episodes demonstrated how to configure
+[30:08] to configure
+[30:08] to configure exchange listeners so i'm not going to
+[30:09] exchange listeners so i'm not going to
+[30:09] exchange listeners so i'm not going to spend time on that but what i will spend
+[30:11] spend time on that but what i will spend
+[30:11] spend time on that but what i will spend time on a little bit right now
+[30:13] time on a little bit right now
+[30:13] time on a little bit right now is to show you how and walk you through
+[30:15] is to show you how and walk you through
+[30:15] is to show you how and walk you through a powershell script that will help you
+[30:17] a powershell script that will help you
+[30:17] a powershell script that will help you configure the application in a similar
+[30:19] configure the application in a similar
+[30:19] configure the application in a similar fashion
+[30:20] fashion
+[30:20] fashion so let me close this down let me close
+[30:24] so let me close this down let me close
+[30:24] so let me close this down let me close this
+[30:24] this
+[30:24] this on this thing down okay let me close all
+[30:28] on this thing down okay let me close all
+[30:28] on this thing down okay let me close all this stuff down
+[30:29] this stuff down
+[30:29] this stuff down and what i'm going to do is i'm going to
+[30:30] and what i'm going to do is i'm going to
+[30:30] and what i'm going to do is i'm going to stop uh all these
+[30:33] stop uh all these
+[30:33] stop uh all these applications i don't want it to consume
+[30:34] applications i don't want it to consume
+[30:34] applications i don't want it to consume any any ram right now
+[30:37] any any ram right now
+[30:37] any any ram right now so i'm going to stop them all
+[30:40] so i'm going to stop them all
+[30:40] so i'm going to stop them all my test pool i can stop and everything
+[30:44] my test pool i can stop and everything
+[30:44] my test pool i can stop and everything should stop now in creation studio let
+[30:47] should stop now in creation studio let
+[30:47] should stop now in creation studio let me stop this one as well
+[30:50] me stop this one as well
+[30:50] me stop this one as well okay perfect
+[30:54] okay perfect
+[30:54] okay perfect let me now find i believe
+[31:03] i have a directory here and my builds
+[31:03] i have a directory here and my builds and in my install scripts
+[31:05] and in my install scripts
+[31:05] and in my install scripts uh install creation now that's not the
+[31:08] uh install creation now that's not the
+[31:08] uh install creation now that's not the right one
+[31:09] right one
+[31:09] right one just give me a second i'm looking for it
+[31:11] just give me a second i'm looking for it
+[31:11] just give me a second i'm looking for it maybe it's
+[31:12] maybe it's
+[31:12] maybe it's in this episode that i copied it
+[31:15] in this episode that i copied it
+[31:15] in this episode that i copied it uh postgrad database install creatio
+[31:25] no that's not the one uh
+[31:25] no that's not the one uh one second install creation
+[31:28] one second install creation
+[31:28] one second install creation let me see if this is the one
+[31:39] right so what we're trying to do here
+[31:39] right so what we're trying to do here is we're trying to create an application
+[31:42] is we're trying to create an application
+[31:42] is we're trying to create an application pool
+[31:43] pool
+[31:43] pool or we're trying to create essentially a
+[31:45] or we're trying to create essentially a
+[31:45] or we're trying to create essentially a powershell
+[31:46] powershell
+[31:46] powershell script that helps us with the database
+[31:50] script that helps us with the database
+[31:50] script that helps us with the database so before we we did quite a lot of steps
+[31:53] so before we we did quite a lot of steps
+[31:53] so before we we did quite a lot of steps manually here
+[31:54] manually here
+[31:54] manually here and what we're going to try to do now is
+[31:57] and what we're going to try to do now is
+[31:57] and what we're going to try to do now is we're going to try to
+[31:58] we're going to try to
+[31:58] we're going to try to build the same thing but now with the
+[32:00] build the same thing but now with the
+[32:00] build the same thing but now with the help of the
+[32:02] help of the
+[32:02] help of the with the help of powershell script now
+[32:04] with the help of powershell script now
+[32:04] with the help of powershell script now let's uh
+[32:05] let's uh
+[32:06] let's uh explore some of the infrastructure that
+[32:07] explore some of the infrastructure that
+[32:07] explore some of the infrastructure that i kind of alluded to before but i
+[32:09] i kind of alluded to before but i
+[32:09] i kind of alluded to before but i haven't really shown it to you
+[32:11] haven't really shown it to you
+[32:11] haven't really shown it to you so in my docker i have a couple of
+[32:14] so in my docker i have a couple of
+[32:14] so in my docker i have a couple of containers running so as soon as it
+[32:15] containers running so as soon as it
+[32:15] containers running so as soon as it starts
+[32:16] starts
+[32:16] starts you'll see that i have exchange sync
+[32:18] you'll see that i have exchange sync
+[32:18] you'll see that i have exchange sync running this is the exchange listener
+[32:20] running this is the exchange listener
+[32:20] running this is the exchange listener container
+[32:20] container
+[32:20] container i got a redis running and i got a
+[32:22] i got a redis running and i got a
+[32:22] i got a redis running and i got a postgrad database running here
+[32:24] postgrad database running here
+[32:24] postgrad database running here as well now the postgrad database
+[32:27] as well now the postgrad database
+[32:27] as well now the postgrad database contains
+[32:28] contains
+[32:28] contains two containers actually one is just the
+[32:31] two containers actually one is just the
+[32:31] two containers actually one is just the actual postgrad database itself so
+[32:33] actual postgrad database itself so
+[32:33] actual postgrad database itself so that's the thing that
+[32:35] that's the thing that
+[32:35] that's the thing that stores the data and allows for
+[32:37] stores the data and allows for
+[32:37] stores the data and allows for persistent data storage
+[32:38] persistent data storage
+[32:38] persistent data storage but then i'm also running a separate
+[32:40] but then i'm also running a separate
+[32:40] but then i'm also running a separate container for pg admin and the pg admin
+[32:43] container for pg admin and the pg admin
+[32:43] container for pg admin and the pg admin is the container that allows me to
+[32:45] is the container that allows me to
+[32:45] is the container that allows me to manage my
+[32:46] manage my
+[32:46] manage my postgrad database with the gui rather
+[32:48] postgrad database with the gui rather
+[32:48] postgrad database with the gui rather than with the command mode
+[32:50] than with the command mode
+[32:50] than with the command mode now you can tell that i've exposed port
+[32:52] now you can tell that i've exposed port
+[32:52] now you can tell that i've exposed port 8080 for
+[32:54] 8080 for
+[32:54] 8080 for pg admin i've exposed port 5432
+[32:58] pg admin i've exposed port 5432
+[32:58] pg admin i've exposed port 5432 for my database i've done the same thing
+[33:00] for my database i've done the same thing
+[33:00] for my database i've done the same thing for my redis and i exposed port 6379
+[33:04] for my redis and i exposed port 6379
+[33:04] for my redis and i exposed port 6379 and this is why i can connect from
+[33:06] and this is why i can connect from
+[33:06] and this is why i can connect from creation running in windows
+[33:08] creation running in windows
+[33:08] creation running in windows to redis running in a subsystem for
+[33:11] to redis running in a subsystem for
+[33:12] to redis running in a subsystem for linux on windows this is this is how i'm
+[33:15] linux on windows this is this is how i'm
+[33:15] linux on windows this is this is how i'm running my redis
+[33:16] running my redis
+[33:16] running my redis so if i simply navigate now to localhost
+[33:18] so if i simply navigate now to localhost
+[33:18] so if i simply navigate now to localhost port 8080
+[33:19] port 8080
+[33:19] port 8080 and let's try making make sure that it's
+[33:22] and let's try making make sure that it's
+[33:22] and let's try making make sure that it's actually work
+[33:29] i will be greeted by my postgrad now
+[33:29] i will be greeted by my postgrad now i've configured my username and password
+[33:30] i've configured my username and password
+[33:30] i've configured my username and password already so
+[33:31] already so
+[33:31] already so as soon as i connect i should be able oh
+[33:33] as soon as i connect i should be able oh
+[33:33] as soon as i connect i should be able oh there's an update great
+[33:35] there's an update great
+[33:35] there's an update great as soon as i connect i should be able to
+[33:37] as soon as i connect i should be able to
+[33:37] as soon as i connect i should be able to see my server and all my databases and
+[33:40] see my server and all my databases and
+[33:40] see my server and all my databases and whatever else i have here now with the
+[33:42] whatever else i have here now with the
+[33:42] whatever else i have here now with the help of this tool just like we did with
+[33:44] help of this tool just like we did with
+[33:44] help of this tool just like we did with the help of
+[33:45] the help of
+[33:45] the help of sql from window from microsoft
+[33:48] sql from window from microsoft
+[33:48] sql from window from microsoft with the help of postgrad we can also
+[33:50] with the help of postgrad we can also
+[33:50] with the help of postgrad we can also restore the database in exactly the same
+[33:52] restore the database in exactly the same
+[33:52] restore the database in exactly the same way
+[33:52] way
+[33:52] way if we want to go to database we can say
+[33:54] if we want to go to database we can say
+[33:54] if we want to go to database we can say create and once the database is created
+[33:57] create and once the database is created
+[33:57] create and once the database is created we can
+[33:58] we can
+[33:58] we can essentially come back here and we can
+[34:00] essentially come back here and we can
+[34:00] essentially come back here and we can restore the database so the process is
+[34:02] restore the database so the process is
+[34:02] restore the database so the process is exactly
+[34:02] exactly
+[34:02] exactly the same but rather than using uh
+[34:06] the same but rather than using uh
+[34:06] the same but rather than using uh this gui what i would rather do is i
+[34:08] this gui what i would rather do is i
+[34:08] this gui what i would rather do is i would rather not touch the gui at all
+[34:09] would rather not touch the gui at all
+[34:09] would rather not touch the gui at all and i want to make sure that i can
+[34:11] and i want to make sure that i can
+[34:11] and i want to make sure that i can install everything
+[34:12] install everything
+[34:12] install everything with the help of my um with the help of
+[34:15] with the help of my um with the help of
+[34:15] with the help of my um with the help of my
+[34:17] my
+[34:17] my uh powershell so let me open uh
+[34:20] uh powershell so let me open uh
+[34:20] uh powershell so let me open uh visual studio and let me open this
+[34:22] visual studio and let me open this
+[34:22] visual studio and let me open this directory and i believe
+[34:24] directory and i believe
+[34:24] directory and i believe this is not the right place so let me
+[34:25] this is not the right place so let me
+[34:25] this is not the right place so let me just open this guy
+[34:27] just open this guy
+[34:27] just open this guy all right so
+[34:30] all right so
+[34:30] all right so what we're seeing here um yeah i think
+[34:33] what we're seeing here um yeah i think
+[34:33] what we're seeing here um yeah i think this is the right place
+[34:34] this is the right place
+[34:34] this is the right place uh and i will share all these scripts
+[34:36] uh and i will share all these scripts
+[34:36] uh and i will share all these scripts for you so what we're seeing here is
+[34:38] for you so what we're seeing here is
+[34:38] for you so what we're seeing here is inside this file we're gonna start
+[34:41] inside this file we're gonna start
+[34:41] inside this file we're gonna start installing the application
+[34:43] installing the application
+[34:43] installing the application now the partial script starts off with
+[34:45] now the partial script starts off with
+[34:45] now the partial script starts off with the couple of parameters it's asking for
+[34:47] the couple of parameters it's asking for
+[34:47] the couple of parameters it's asking for at the
+[34:48] at the
+[34:48] at the input so it says that i need to know the
+[34:50] input so it says that i need to know the
+[34:50] input so it says that i need to know the app name and i need to know the
+[34:52] app name and i need to know the
+[34:52] app name and i need to know the folder name some db user and the db
+[34:54] folder name some db user and the db
+[34:54] folder name some db user and the db password
+[34:55] password
+[34:55] password some ports and basically a bunch of
+[34:57] some ports and basically a bunch of
+[34:57] some ports and basically a bunch of other configurations that
+[34:58] other configurations that
+[34:58] other configurations that are necessary for me to install the
+[35:01] are necessary for me to install the
+[35:01] are necessary for me to install the application
+[35:02] application
+[35:02] application then we're gonna go and we're gonna
+[35:03] then we're gonna go and we're gonna
+[35:03] then we're gonna go and we're gonna start with the various installation
+[35:05] start with the various installation
+[35:05] start with the various installation steps so step one we need to make sure
+[35:07] steps so step one we need to make sure
+[35:07] steps so step one we need to make sure that we create the directory
+[35:09] that we create the directory
+[35:09] that we create the directory i'm taking simply the app name and i'm
+[35:11] i'm taking simply the app name and i'm
+[35:11] i'm taking simply the app name and i'm saying i'm gonna create this directory
+[35:13] saying i'm gonna create this directory
+[35:13] saying i'm gonna create this directory and i'm going to copy
+[35:14] and i'm going to copy
+[35:14] and i'm going to copy everything into that directory
+[35:17] everything into that directory
+[35:17] everything into that directory i'm then going to restore my powershell
+[35:20] i'm then going to restore my powershell
+[35:20] i'm then going to restore my powershell restore my
+[35:23] restore my
+[35:23] restore my database with the help of postgresql and
+[35:27] database with the help of postgresql and
+[35:27] database with the help of postgresql and here's how i'm restoring it so here's
+[35:29] here's how i'm restoring it so here's
+[35:29] here's how i'm restoring it so here's two steps to restore the database
+[35:31] two steps to restore the database
+[35:31] two steps to restore the database first we execute command in docker to
+[35:33] first we execute command in docker to
+[35:33] first we execute command in docker to make sure that we create the database
+[35:35] make sure that we create the database
+[35:35] make sure that we create the database and then we execute the command that we
+[35:37] and then we execute the command that we
+[35:37] and then we execute the command that we actually restore the database
+[35:39] actually restore the database
+[35:39] actually restore the database and i can go ahead and delete the
+[35:40] and i can go ahead and delete the
+[35:40] and i can go ahead and delete the database folder if i wanted to
+[35:43] database folder if i wanted to
+[35:43] database folder if i wanted to and then i can start configuring my
+[35:44] and then i can start configuring my
+[35:44] and then i can start configuring my connection string and here i'm parsing
+[35:47] connection string and here i'm parsing
+[35:47] connection string and here i'm parsing my connection string
+[35:48] my connection string
+[35:48] my connection string file i'm looking for the redis
+[35:52] file i'm looking for the redis
+[35:52] file i'm looking for the redis name and i'm just simply giving it a
+[35:53] name and i'm just simply giving it a
+[35:53] name and i'm just simply giving it a localhost radius
+[35:55] localhost radius
+[35:55] localhost radius a db number which i'm taking as a
+[35:57] a db number which i'm taking as a
+[35:57] a db number which i'm taking as a parameter into the script and i'm
+[35:58] parameter into the script and i'm
+[35:58] parameter into the script and i'm specifying the port
+[36:00] specifying the port
+[36:00] specifying the port i'm doing exactly the same thing to
+[36:02] i'm doing exactly the same thing to
+[36:02] i'm doing exactly the same thing to address the connection to the database
+[36:04] address the connection to the database
+[36:04] address the connection to the database and at this point my database is
+[36:06] and at this point my database is
+[36:06] and at this point my database is restored now in microsoft sql restoring
+[36:09] restored now in microsoft sql restoring
+[36:09] restored now in microsoft sql restoring the databases
+[36:10] the databases
+[36:10] the databases you saw takes no time at all maybe a
+[36:12] you saw takes no time at all maybe a
+[36:12] you saw takes no time at all maybe a second maybe two
+[36:13] second maybe two
+[36:13] second maybe two on postgre it takes quite a bit of time
+[36:15] on postgre it takes quite a bit of time
+[36:15] on postgre it takes quite a bit of time in my case it takes up to four minutes
+[36:18] in my case it takes up to four minutes
+[36:18] in my case it takes up to four minutes to restore database so if you're sitting
+[36:19] to restore database so if you're sitting
+[36:20] to restore database so if you're sitting there and you're thinking that nothing
+[36:21] there and you're thinking that nothing
+[36:21] there and you're thinking that nothing is happening
+[36:22] is happening
+[36:22] is happening things are happening it just it just
+[36:24] things are happening it just it just
+[36:24] things are happening it just it just takes significantly longer
+[36:26] takes significantly longer
+[36:26] takes significantly longer the next step for us is to create iis
+[36:29] the next step for us is to create iis
+[36:29] the next step for us is to create iis this
+[36:30] this
+[36:30] this uh or create the website and create the
+[36:32] uh or create the website and create the
+[36:32] uh or create the website and create the application pool
+[36:33] application pool
+[36:33] application pool these steps are exactly the same for ms
+[36:36] these steps are exactly the same for ms
+[36:36] these steps are exactly the same for ms sql installation as well as a postgrad
+[36:39] sql installation as well as a postgrad
+[36:39] sql installation as well as a postgrad i have install creation in this install
+[36:41] i have install creation in this install
+[36:41] i have install creation in this install script that i will share with you and
+[36:43] script that i will share with you and
+[36:43] script that i will share with you and this is for postgre i'll probably give
+[36:44] this is for postgre i'll probably give
+[36:44] this is for postgre i'll probably give it a proper name
+[36:45] it a proper name
+[36:45] it a proper name and then i believe there is an install
+[36:47] and then i believe there is an install
+[36:47] and then i believe there is an install script for
+[36:49] script for
+[36:49] script for sql and you could tell that the sql is
+[36:51] sql and you could tell that the sql is
+[36:51] sql and you could tell that the sql is slightly
+[36:52] slightly
+[36:52] slightly different and this is just to make sure
+[36:54] different and this is just to make sure
+[36:54] different and this is just to make sure that i am now restoring the database
+[36:56] that i am now restoring the database
+[36:56] that i am now restoring the database with ms sql
+[36:57] with ms sql
+[36:57] with ms sql but the rest of the script is it
+[36:59] but the rest of the script is it
+[36:59] but the rest of the script is it actually exactly the same
+[37:01] actually exactly the same
+[37:01] actually exactly the same so let's proceed with the installation
+[37:03] so let's proceed with the installation
+[37:03] so let's proceed with the installation take a look at what's happening here
+[37:05] take a look at what's happening here
+[37:05] take a look at what's happening here creatio register we're going to create a
+[37:09] creatio register we're going to create a
+[37:09] creatio register we're going to create a web app we're going to go and
+[37:11] web app we're going to go and
+[37:11] web app we're going to go and update clio because i'm going to be
+[37:12] update clio because i'm going to be
+[37:12] update clio because i'm going to be using clio to make sure that i can
+[37:14] using clio to make sure that i can
+[37:14] using clio to make sure that i can connect
+[37:15] connect
+[37:15] connect to my application then inside my
+[37:17] to my application then inside my
+[37:17] to my application then inside my application i'm going to install clio
+[37:19] application i'm going to install clio
+[37:19] application i'm going to install clio gate
+[37:19] gate
+[37:19] gate then i'm going to use clio to turn off
+[37:22] then i'm going to use clio to turn off
+[37:22] then i'm going to use clio to turn off these widgets
+[37:24] these widgets
+[37:24] these widgets for news i'm going to overwrite a couple
+[37:25] for news i'm going to overwrite a couple
+[37:25] for news i'm going to overwrite a couple of other settings i'm going to set up my
+[37:28] of other settings i'm going to set up my
+[37:28] of other settings i'm going to set up my default time zone to a particular value
+[37:31] default time zone to a particular value
+[37:31] default time zone to a particular value i'm going to override the user session
+[37:33] i'm going to override the user session
+[37:33] i'm going to override the user session value etc and i'm going to go and
+[37:36] value etc and i'm going to go and
+[37:36] value etc and i'm going to go and reconfigure a bunch of stuff here all
+[37:39] reconfigure a bunch of stuff here all
+[37:39] reconfigure a bunch of stuff here all with the help of clio
+[37:40] with the help of clio
+[37:40] with the help of clio and then at the end as soon as the clio
+[37:42] and then at the end as soon as the clio
+[37:42] and then at the end as soon as the clio is done
+[37:43] is done
+[37:43] is done reconfiguring my application all i want
+[37:45] reconfiguring my application all i want
+[37:45] reconfiguring my application all i want to do is i want to make sure that
+[37:47] to do is i want to make sure that
+[37:47] to do is i want to make sure that i start the process and navigate to this
+[37:49] i start the process and navigate to this
+[37:49] i start the process and navigate to this host and port
+[37:50] host and port
+[37:50] host and port now the way i launch it is perhaps not
+[37:53] now the way i launch it is perhaps not
+[37:53] now the way i launch it is perhaps not the way that
+[37:54] the way that
+[37:54] the way that you would launch it normally but i just
+[37:56] you would launch it normally but i just
+[37:56] you would launch it normally but i just find it a little bit easier inside
+[37:58] find it a little bit easier inside
+[37:58] find it a little bit easier inside visual studio
+[37:59] visual studio
+[37:59] visual studio to do it this way so inside my visual
+[38:02] to do it this way so inside my visual
+[38:02] to do it this way so inside my visual studio
+[38:03] studio
+[38:03] studio in the launcher json what i have is i
+[38:05] in the launcher json what i have is i
+[38:05] in the launcher json what i have is i have couple of launch files here
+[38:08] have couple of launch files here
+[38:08] have couple of launch files here so if you go inside the visual studio
+[38:09] so if you go inside the visual studio
+[38:09] so if you go inside the visual studio debugger you will see that you can
+[38:11] debugger you will see that you can
+[38:11] debugger you will see that you can launch
+[38:12] launch
+[38:12] launch this powershell script with couple of
+[38:13] this powershell script with couple of
+[38:13] this powershell script with couple of configuration options
+[38:15] configuration options
+[38:15] configuration options install creation psql just regular
+[38:18] install creation psql just regular
+[38:18] install creation psql just regular powershell
+[38:19] powershell
+[38:19] powershell install creation with ms sql when i want
+[38:22] install creation with ms sql when i want
+[38:22] install creation with ms sql when i want to install creation with psql i have to
+[38:25] to install creation with psql i have to
+[38:25] to install creation with psql i have to address this section
+[38:26] address this section
+[38:26] address this section i have to specify the app name folder
+[38:29] i have to specify the app name folder
+[38:29] i have to specify the app name folder name where this stuff is stored
+[38:31] name where this stuff is stored
+[38:31] name where this stuff is stored i have to make sure that i specify
+[38:32] i have to make sure that i specify
+[38:32] i have to make sure that i specify username and password
+[38:34] username and password
+[38:34] username and password the port where it's going to live the
+[38:36] the port where it's going to live the
+[38:36] the port where it's going to live the database or redis database number as
+[38:38] database or redis database number as
+[38:38] database or redis database number as well as redisport
+[38:39] well as redisport
+[38:39] well as redisport and couple of other parameters and
+[38:41] and couple of other parameters and
+[38:41] and couple of other parameters and they're specific to my application
+[38:43] they're specific to my application
+[38:43] they're specific to my application so let's go ahead and do that we're
+[38:45] so let's go ahead and do that we're
+[38:45] so let's go ahead and do that we're going to give it a
+[38:47] going to give it a
+[38:47] going to give it a app name we're going to call it creatio
+[38:50] app name we're going to call it creatio
+[38:50] app name we're going to call it creatio studio
+[38:51] studio
+[38:51] studio now one thing that uh be careful of
+[38:54] now one thing that uh be careful of
+[38:54] now one thing that uh be careful of is for some reason i found that
+[38:59] is for some reason i found that
+[38:59] is for some reason i found that if i call through powershell scripts my
+[39:01] if i call through powershell scripts my
+[39:01] if i call through powershell scripts my database with the uppercase
+[39:03] database with the uppercase
+[39:03] database with the uppercase letters then something is not working
+[39:05] letters then something is not working
+[39:05] letters then something is not working correctly and the database
+[39:07] correctly and the database
+[39:07] correctly and the database is always created in either lowercase or
+[39:09] is always created in either lowercase or
+[39:09] is always created in either lowercase or uppercase and
+[39:10] uppercase and
+[39:10] uppercase and it's probably something to do with my
+[39:12] it's probably something to do with my
+[39:12] it's probably something to do with my script but i couldn't figure out it
+[39:13] script but i couldn't figure out it
+[39:14] script but i couldn't figure out it real quick so if you want to use this
+[39:16] real quick so if you want to use this
+[39:16] real quick so if you want to use this script and you want to use these launch
+[39:18] script and you want to use these launch
+[39:18] script and you want to use these launch parameters then just make sure that
+[39:20] parameters then just make sure that
+[39:20] parameters then just make sure that everything is in the lower case
+[39:22] everything is in the lower case
+[39:22] everything is in the lower case okay so folder name i will explain what
+[39:24] okay so folder name i will explain what
+[39:24] okay so folder name i will explain what that stuff is and how it works
+[39:27] that stuff is and how it works
+[39:27] that stuff is and how it works but we're going to specify that to
+[39:29] but we're going to specify that to
+[39:29] but we're going to specify that to connect to my redis database is going to
+[39:31] connect to my redis database is going to
+[39:31] connect to my redis database is going to be a supervisor the password is also
+[39:33] be a supervisor the password is also
+[39:33] be a supervisor the password is also supervisor
+[39:34] supervisor
+[39:34] supervisor let's put it on the port 7020 just to
+[39:38] let's put it on the port 7020 just to
+[39:38] let's put it on the port 7020 just to make sure it lives there and the
+[39:40] make sure it lives there and the
+[39:40] make sure it lives there and the uh ms application was installed on redis
+[39:44] uh ms application was installed on redis
+[39:44] uh ms application was installed on redis 15 so let's give this red is 14.
+[39:47] 15 so let's give this red is 14.
+[39:47] 15 so let's give this red is 14. my redis port is 63.79
+[39:50] my redis port is 63.79
+[39:50] my redis port is 63.79 and i'm using studio softkey
+[39:53] and i'm using studio softkey
+[39:53] and i'm using studio softkey backup file okay so now
+[39:56] backup file okay so now
+[39:56] backup file okay so now that i've configured my launcher
+[39:58] that i've configured my launcher
+[39:58] that i've configured my launcher essentially what the launcher file
+[39:59] essentially what the launcher file
+[39:59] essentially what the launcher file allows me to do is rather than
+[40:01] allows me to do is rather than
+[40:01] allows me to do is rather than typing this entire command by hand every
+[40:04] typing this entire command by hand every
+[40:04] typing this entire command by hand every time
+[40:05] time
+[40:05] time i can just simply now open my
+[40:07] i can just simply now open my
+[40:07] i can just simply now open my installation file and say
+[40:09] installation file and say
+[40:09] installation file and say apply these launcher settings okay and
+[40:12] apply these launcher settings okay and
+[40:12] apply these launcher settings okay and just simply go ahead and launch them
+[40:14] just simply go ahead and launch them
+[40:14] just simply go ahead and launch them it will start the powershell and visuals
+[40:17] it will start the powershell and visuals
+[40:17] it will start the powershell and visuals well not in visual studio but it will
+[40:19] well not in visual studio but it will
+[40:19] well not in visual studio but it will start an instance of my powershell and
+[40:22] start an instance of my powershell and
+[40:22] start an instance of my powershell and it will create me
+[40:23] it will create me
+[40:23] it will create me this application now what i realize is
+[40:26] this application now what i realize is
+[40:26] this application now what i realize is that i may have called my
+[40:28] that i may have called my
+[40:28] that i may have called my application pool and my website to
+[40:32] application pool and my website to
+[40:32] application pool and my website to very similar to what windows instance
+[40:35] very similar to what windows instance
+[40:35] very similar to what windows instance already has
+[40:36] already has
+[40:36] already has so it may or may not fail on me i didn't
+[40:41] so it may or may not fail on me i didn't
+[40:41] so it may or may not fail on me i didn't i didn't think of it but in the meantime
+[40:43] i didn't think of it but in the meantime
+[40:43] i didn't think of it but in the meantime while we're doing this or while visual
+[40:45] while we're doing this or while visual
+[40:45] while we're doing this or while visual studio is doing this and it's going to
+[40:47] studio is doing this and it's going to
+[40:47] studio is doing this and it's going to do it for a couple of minutes let's go
+[40:48] do it for a couple of minutes let's go
+[40:48] do it for a couple of minutes let's go and take a look how my infrastructure is
+[40:50] and take a look how my infrastructure is
+[40:50] and take a look how my infrastructure is laid out here
+[40:52] laid out here
+[40:52] laid out here so on my disk c when i built my
+[40:56] so on my disk c when i built my
+[40:56] so on my disk c when i built my docker files i've created couple of
+[40:58] docker files i've created couple of
+[40:58] docker files i've created couple of volumes
+[40:59] volumes
+[40:59] volumes i've got volumes that i'm passing to pg
+[41:02] i've got volumes that i'm passing to pg
+[41:02] i've got volumes that i'm passing to pg admin i've got volumes that i'm passing
+[41:04] admin i've got volumes that i'm passing
+[41:04] admin i've got volumes that i'm passing or
+[41:05] or
+[41:05] or disk space that i'm passing to
+[41:06] disk space that i'm passing to
+[41:06] disk space that i'm passing to postgresql
+[41:08] postgresql
+[41:08] postgresql and in postgrassclaw what you're seeing
+[41:11] and in postgrassclaw what you're seeing
+[41:11] and in postgrassclaw what you're seeing here is essentially what's on linux
+[41:13] here is essentially what's on linux
+[41:13] here is essentially what's on linux these files are called so this is inside
+[41:15] these files are called so this is inside
+[41:15] these files are called so this is inside the etsy directory and i don't remember
+[41:17] the etsy directory and i don't remember
+[41:17] the etsy directory and i don't remember the exact
+[41:17] the exact
+[41:17] the exact uh space uh the exact name of this
+[41:19] uh space uh the exact name of this
+[41:19] uh space uh the exact name of this directory but
+[41:20] directory but
+[41:20] directory but we got to look at the docker compose
+[41:22] we got to look at the docker compose
+[41:22] we got to look at the docker compose file so i'm passing it and essentially
+[41:25] file so i'm passing it and essentially
+[41:25] file so i'm passing it and essentially i can take a backup of this directory
+[41:27] i can take a backup of this directory
+[41:27] i can take a backup of this directory and this would represent backup of my
+[41:29] and this would represent backup of my
+[41:29] and this would represent backup of my entire server
+[41:30] entire server
+[41:30] entire server i've created myself files called db
+[41:33] i've created myself files called db
+[41:33] i've created myself files called db images
+[41:34] images
+[41:34] images db images are files that i'm using to
+[41:37] db images are files that i'm using to
+[41:37] db images are files that i'm using to restore my database
+[41:38] restore my database
+[41:38] restore my database just like in windows application you had
+[41:40] just like in windows application you had
+[41:40] just like in windows application you had a db folder
+[41:42] a db folder
+[41:42] a db folder when you're going to download a
+[41:43] when you're going to download a
+[41:43] when you're going to download a postgraph
+[41:46] postgraph
+[41:46] postgraph when you're going to download a postgrad
+[41:48] when you're going to download a postgrad
+[41:48] when you're going to download a postgrad file there's also going to be a db
+[41:51] file there's also going to be a db
+[41:51] file there's also going to be a db file now this db file is going to be
+[41:53] file now this db file is going to be
+[41:53] file now this db file is going to be obviously in different format and called
+[41:55] obviously in different format and called
+[41:55] obviously in different format and called something
+[41:56] something
+[41:56] something different so what i did is i essentially
+[41:58] different so what i did is i essentially
+[41:58] different so what i did is i essentially copied them all because i only need one
+[42:00] copied them all because i only need one
+[42:00] copied them all because i only need one per type of the application so if i want
+[42:02] per type of the application so if i want
+[42:02] per type of the application so if i want a studio
+[42:03] a studio
+[42:03] a studio it is always going to be the same backup
+[42:05] it is always going to be the same backup
+[42:05] it is always going to be the same backup file if i want a
+[42:07] file if i want a
+[42:07] file if i want a full bundle then it's also going to be
+[42:09] full bundle then it's also going to be
+[42:09] full bundle then it's also going to be exactly the same file for bundle so
+[42:11] exactly the same file for bundle so
+[42:11] exactly the same file for bundle so i just simply copied them and pre-copied
+[42:13] i just simply copied them and pre-copied
+[42:13] i just simply copied them and pre-copied them so i don't have to make sure that
+[42:15] them so i don't have to make sure that
+[42:15] them so i don't have to make sure that i'm copying the entire thing just kind
+[42:17] i'm copying the entire thing just kind
+[42:17] i'm copying the entire thing just kind of speeds things up a little bit
+[42:19] of speeds things up a little bit
+[42:19] of speeds things up a little bit so this is what this file name is okay
+[42:23] so this is what this file name is okay
+[42:23] so this is what this file name is okay now let's go back into our studio and
+[42:25] now let's go back into our studio and
+[42:25] now let's go back into our studio and take a look at what the studio is doing
+[42:27] take a look at what the studio is doing
+[42:27] take a look at what the studio is doing now
+[42:28] now
+[42:28] now so powershell is now trying to restore
+[42:30] so powershell is now trying to restore
+[42:30] so powershell is now trying to restore database and it essentially gotten to
+[42:32] database and it essentially gotten to
+[42:32] database and it essentially gotten to this point
+[42:33] this point
+[42:33] this point it gotten to a point of here creating
+[42:36] it gotten to a point of here creating
+[42:36] it gotten to a point of here creating the
+[42:36] the
+[42:36] the database right so it probably already
+[42:38] database right so it probably already
+[42:38] database right so it probably already created this process takes
+[42:40] created this process takes
+[42:40] created this process takes no time at all um this is really really
+[42:42] no time at all um this is really really
+[42:42] no time at all um this is really really fast and inexpensive
+[42:44] fast and inexpensive
+[42:44] fast and inexpensive but this takes some time so
+[42:48] but this takes some time so
+[42:48] but this takes some time so what are we doing here well the first
+[42:50] what are we doing here well the first
+[42:50] what are we doing here well the first thing when you're restoring a database
+[42:52] thing when you're restoring a database
+[42:52] thing when you're restoring a database is you need to create it now in ms
+[42:54] is you need to create it now in ms
+[42:54] is you need to create it now in ms we didn't have to do it but in postgre
+[42:55] we didn't have to do it but in postgre
+[42:56] we didn't have to do it but in postgre you first have to create a database give
+[42:57] you first have to create a database give
+[42:57] you first have to create a database give it a name
+[42:58] it a name
+[42:58] it a name specify some of the parameters and then
+[43:00] specify some of the parameters and then
+[43:00] specify some of the parameters and then you need to make sure that you're
+[43:01] you need to make sure that you're
+[43:02] you need to make sure that you're restoring it
+[43:03] restoring it
+[43:03] restoring it now granted that it's done that it's
+[43:05] now granted that it's done that it's
+[43:05] now granted that it's done that it's living in the docker so it's living
+[43:07] living in the docker so it's living
+[43:07] living in the docker so it's living inside this kind of a
+[43:09] inside this kind of a
+[43:09] inside this kind of a isolated environment we have to use a
+[43:11] isolated environment we have to use a
+[43:11] isolated environment we have to use a docker exact command out of the
+[43:13] docker exact command out of the
+[43:13] docker exact command out of the powershell to restore it now there are
+[43:15] powershell to restore it now there are
+[43:15] powershell to restore it now there are other ways but i found that this is the
+[43:17] other ways but i found that this is the
+[43:17] other ways but i found that this is the easiest to get it going
+[43:18] easiest to get it going
+[43:18] easiest to get it going so all i'm saying here is docker go and
+[43:21] so all i'm saying here is docker go and
+[43:21] so all i'm saying here is docker go and execute some command in interactive mode
+[43:24] execute some command in interactive mode
+[43:24] execute some command in interactive mode i am addressing the container where my
+[43:26] i am addressing the container where my
+[43:26] i am addressing the container where my particular database lives
+[43:27] particular database lives
+[43:27] particular database lives i'm specifying the username or
+[43:31] i'm specifying the username or
+[43:31] i'm specifying the username or basically parameters how to restore it
+[43:33] basically parameters how to restore it
+[43:33] basically parameters how to restore it i'm saying no owner no privileges
+[43:35] i'm saying no owner no privileges
+[43:35] i'm saying no owner no privileges a couple of other keys and essentially
+[43:37] a couple of other keys and essentially
+[43:37] a couple of other keys and essentially here's my database
+[43:38] here's my database
+[43:38] here's my database name now where am i going to take this
+[43:40] name now where am i going to take this
+[43:40] name now where am i going to take this database name i'm going to take it yeah
+[43:42] database name i'm going to take it yeah
+[43:42] database name i'm going to take it yeah i'm going to take it from usr local db
+[43:46] i'm going to take it from usr local db
+[43:46] i'm going to take it from usr local db db file name now what we saw now is that
+[43:49] db file name now what we saw now is that
+[43:49] db file name now what we saw now is that i made a mistake and when i restored the
+[43:53] i made a mistake and when i restored the
+[43:53] i made a mistake and when i restored the database
+[43:54] database
+[43:54] database or when i gave the parameters to launch
+[43:57] or when i gave the parameters to launch
+[43:57] or when i gave the parameters to launch is i did not specify a unique name for
+[44:00] is i did not specify a unique name for
+[44:00] is i did not specify a unique name for my application server
+[44:02] my application server
+[44:02] my application server so this application server creation
+[44:05] so this application server creation
+[44:05] so this application server creation creation studio already exists
+[44:07] creation studio already exists
+[44:07] creation studio already exists so what we can do is say creatio studio
+[44:10] so what we can do is say creatio studio
+[44:10] so what we can do is say creatio studio p sql right so now that's going to be a
+[44:14] p sql right so now that's going to be a
+[44:14] p sql right so now that's going to be a unique name
+[44:15] unique name
+[44:15] unique name i just make sure we give it another
+[44:18] i just make sure we give it another
+[44:18] i just make sure we give it another i just for now i'll clean it up later
+[44:20] i just for now i'll clean it up later
+[44:20] i just for now i'll clean it up later but let's make sure that we do this
+[44:23] but let's make sure that we do this
+[44:23] but let's make sure that we do this 70 30. okay let's save this
+[44:27] 70 30. okay let's save this
+[44:27] 70 30. okay let's save this and let's try launching it one more time
+[44:29] and let's try launching it one more time
+[44:29] and let's try launching it one more time so the same way
+[44:30] so the same way
+[44:30] so the same way psql so now the name of my application
+[44:34] psql so now the name of my application
+[44:34] psql so now the name of my application the name of my uh
+[44:37] the name of my uh
+[44:38] the name of my uh the name of everything is essentially
+[44:39] the name of everything is essentially
+[44:39] the name of everything is essentially unique i
+[44:41] unique i
+[44:41] unique i cannot debug until the
+[44:45] cannot debug until the
+[44:45] cannot debug until the what until
+[44:48] what until
+[44:48] what until has started okay so i crashed the
+[44:50] has started okay so i crashed the
+[44:50] has started okay so i crashed the powershell
+[44:51] powershell
+[44:51] powershell so let's start a new one and let's see
+[44:54] so let's start a new one and let's see
+[44:54] so let's start a new one and let's see if you can launch
+[44:55] if you can launch
+[44:55] if you can launch in noaa
+[44:58] in noaa
+[44:58] in noaa okay let's see if we can add another
+[45:01] okay let's see if we can add another
+[45:01] okay let's see if we can add another instance of it
+[45:03] instance of it
+[45:03] instance of it can you launch now
+[45:12] um okay let's close
+[45:12] um okay let's close this one and let's reopen our studio one
+[45:15] this one and let's reopen our studio one
+[45:15] this one and let's reopen our studio one more time so
+[45:17] more time so
+[45:17] more time so sometimes this happens and that was my
+[45:20] sometimes this happens and that was my
+[45:20] sometimes this happens and that was my fault
+[45:21] fault
+[45:21] fault so back to where we were let's go back
+[45:24] so back to where we were let's go back
+[45:24] so back to where we were let's go back to
+[45:24] to
+[45:24] to installer let's go back to debugger and
+[45:27] installer let's go back to debugger and
+[45:27] installer let's go back to debugger and just simply
+[45:28] just simply
+[45:28] just simply launch it okay so now it's copying it to
+[45:32] launch it okay so now it's copying it to
+[45:32] launch it okay so now it's copying it to creation
+[45:33] creation
+[45:33] creation psql and what we can do is we can
+[45:35] psql and what we can do is we can
+[45:35] psql and what we can do is we can essentially go back to our
+[45:37] essentially go back to our
+[45:38] essentially go back to our local disk c and we can take a look at
+[45:40] local disk c and we can take a look at
+[45:40] local disk c and we can take a look at what was
+[45:41] what was
+[45:41] what was happening in the past so if we're going
+[45:43] happening in the past so if we're going
+[45:43] happening in the past so if we're going to go back to inet pub
+[45:44] to go back to inet pub
+[45:44] to go back to inet pub and we're going to go back in the root
+[45:46] and we're going to go back in the root
+[45:46] and we're going to go back in the root application you could tell that here's
+[45:48] application you could tell that here's
+[45:48] application you could tell that here's my creation studio
+[45:49] my creation studio
+[45:50] my creation studio and i just essentially copied everything
+[45:51] and i just essentially copied everything
+[45:51] and i just essentially copied everything into one directory so i made a
+[45:53] into one directory so i made a
+[45:53] into one directory so i made a i made a mistake here so a few things
+[45:56] i made a mistake here so a few things
+[45:56] i made a mistake here so a few things that i need to do
+[45:58] that i need to do
+[45:58] that i need to do when i am removing the application the
+[46:00] when i am removing the application the
+[46:00] when i am removing the application the first thing i would normally start off
+[46:02] first thing i would normally start off
+[46:02] first thing i would normally start off with
+[46:03] with
+[46:03] with is i'm going to go back to my ms into my
+[46:05] is i'm going to go back to my ms into my
+[46:05] is i'm going to go back to my ms into my iis
+[46:06] iis
+[46:06] iis inside my ass i could tell here's my
+[46:08] inside my ass i could tell here's my
+[46:08] inside my ass i could tell here's my creation studio
+[46:10] creation studio
+[46:10] creation studio and inside this creation studio i can
+[46:12] and inside this creation studio i can
+[46:12] and inside this creation studio i can just simply
+[46:13] just simply
+[46:13] just simply delete this thing i can right click on
+[46:15] delete this thing i can right click on
+[46:15] delete this thing i can right click on it and i can delete it
+[46:17] it and i can delete it
+[46:17] it and i can delete it if a machine allows me but before i
+[46:20] if a machine allows me but before i
+[46:20] if a machine allows me but before i delete it
+[46:22] delete it
+[46:22] delete it yes i'm sure i want to delete it
+[46:25] yes i'm sure i want to delete it
+[46:25] yes i'm sure i want to delete it before you delete it make sure that
+[46:27] before you delete it make sure that
+[46:27] before you delete it make sure that you're deleting actually the right one
+[46:29] you're deleting actually the right one
+[46:29] you're deleting actually the right one you might have a ton of applications
+[46:30] you might have a ton of applications
+[46:30] you might have a ton of applications here and now we're ready to come back
+[46:33] here and now we're ready to come back
+[46:33] here and now we're ready to come back here to creation studio application pool
+[46:35] here to creation studio application pool
+[46:35] here to creation studio application pool and delete this thing as well
+[46:37] and delete this thing as well
+[46:37] and delete this thing as well so let's remove this one as well now
+[46:40] so let's remove this one as well now
+[46:40] so let's remove this one as well now everything is
+[46:41] everything is
+[46:41] everything is fine here but um what you need to know
+[46:43] fine here but um what you need to know
+[46:43] fine here but um what you need to know about
+[46:44] about
+[46:44] about is that under your users directory
+[46:47] is that under your users directory
+[46:47] is that under your users directory usually
+[46:48] usually
+[46:48] usually depending on how your machine is
+[46:50] depending on how your machine is
+[46:50] depending on how your machine is configured you may also get an
+[46:52] configured you may also get an
+[46:52] configured you may also get an application
+[46:53] application
+[46:53] application you may also get a directory for your
+[46:55] you may also get a directory for your
+[46:55] you may also get a directory for your user for every application pool
+[46:57] user for every application pool
+[46:57] user for every application pool so the way my machine is configured in
+[46:59] so the way my machine is configured in
+[46:59] so the way my machine is configured in particular
+[47:00] particular
+[47:00] particular every time i'm adding in the app pool it
+[47:02] every time i'm adding in the app pool it
+[47:02] every time i'm adding in the app pool it creates a directory for this user
+[47:04] creates a directory for this user
+[47:04] creates a directory for this user and then happens to be about 200
+[47:05] and then happens to be about 200
+[47:06] and then happens to be about 200 megabytes or maybe even 500 megabytes if
+[47:09] megabytes or maybe even 500 megabytes if
+[47:09] megabytes or maybe even 500 megabytes if i'm whoa that's huge actually
+[47:12] i'm whoa that's huge actually
+[47:12] i'm whoa that's huge actually so what you may want to do is you want
+[47:15] so what you may want to do is you want
+[47:15] so what you may want to do is you want to make sure
+[47:16] to make sure
+[47:16] to make sure that when you're deleting the
+[47:18] that when you're deleting the
+[47:18] that when you're deleting the application that
+[47:20] application that
+[47:20] application that things are simply dis that you're
+[47:22] things are simply dis that you're
+[47:22] things are simply dis that you're deleting them
+[47:23] deleting them
+[47:23] deleting them if you install it 10 or 15 times i mean
+[47:25] if you install it 10 or 15 times i mean
+[47:25] if you install it 10 or 15 times i mean 5 gigs is not that much
+[47:28] 5 gigs is not that much
+[47:28] 5 gigs is not that much but what you may want to make sure off
+[47:29] but what you may want to make sure off
+[47:29] but what you may want to make sure off is that you actually go and delete it
+[47:31] is that you actually go and delete it
+[47:31] is that you actually go and delete it right because this is junk right now
+[47:33] right because this is junk right now
+[47:33] right because this is junk right now this user doesn't exist
+[47:35] this user doesn't exist
+[47:35] this user doesn't exist it was created for us when
+[47:38] it was created for us when
+[47:38] it was created for us when the application was added and now we
+[47:40] the application was added and now we
+[47:40] the application was added and now we just cleaned up and
+[47:41] just cleaned up and
+[47:41] just cleaned up and now everything is fine now don't delete
+[47:43] now everything is fine now don't delete
+[47:43] now everything is fine now don't delete too much
+[47:44] too much
+[47:44] too much this is my actual user don't delete
+[47:46] this is my actual user don't delete
+[47:46] this is my actual user don't delete temps and
+[47:48] temps and
+[47:48] temps and these might be actually useful for you
+[47:50] these might be actually useful for you
+[47:50] these might be actually useful for you just make sure that you only delete
+[47:52] just make sure that you only delete
+[47:52] just make sure that you only delete things that
+[47:52] things that
+[47:52] things that you want to delete okay there is nothing
+[47:55] you want to delete okay there is nothing
+[47:55] you want to delete okay there is nothing else to do
+[47:56] else to do
+[47:56] else to do um the other thing that we may want to
+[47:58] um the other thing that we may want to
+[47:58] um the other thing that we may want to do is we may want to
+[47:59] do is we may want to
+[47:59] do is we may want to uh just free up a few resources so we're
+[48:02] uh just free up a few resources so we're
+[48:02] uh just free up a few resources so we're going to go to
+[48:03] going to go to
+[48:03] going to go to sql service and since i'm not using a ms
+[48:05] sql service and since i'm not using a ms
+[48:05] sql service and since i'm not using a ms sql
+[48:06] sql
+[48:06] sql on my local environment i'm going to go
+[48:09] on my local environment i'm going to go
+[48:09] on my local environment i'm going to go and
+[48:09] and
+[48:09] and stop this application here
+[48:12] stop this application here
+[48:12] stop this application here so let's search for sql
+[48:16] so let's search for sql
+[48:16] so let's search for sql sql server and i can just simply stop it
+[48:20] sql server and i can just simply stop it
+[48:20] sql server and i can just simply stop it i no longer want to use it and i believe
+[48:23] i no longer want to use it and i believe
+[48:23] i no longer want to use it and i believe this one agent is also running
+[48:26] this one agent is also running
+[48:26] this one agent is also running this will free up maybe i don't know
+[48:29] this will free up maybe i don't know
+[48:29] this will free up maybe i don't know half a gig of ram
+[48:31] half a gig of ram
+[48:31] half a gig of ram uh not much but if you're on limited
+[48:34] uh not much but if you're on limited
+[48:34] uh not much but if you're on limited resources that that might actually
+[48:37] resources that that might actually
+[48:37] resources that that might actually make significant changes okay so now you
+[48:39] make significant changes okay so now you
+[48:39] make significant changes okay so now you could tell that here's my creation
+[48:41] could tell that here's my creation
+[48:41] could tell that here's my creation studio psql so this is the
+[48:43] studio psql so this is the
+[48:43] studio psql so this is the one that is being installed but then
+[48:46] one that is being installed but then
+[48:46] one that is being installed but then this
+[48:46] this
+[48:46] this creation studio we can just simply nuke
+[48:49] creation studio we can just simply nuke
+[48:49] creation studio we can just simply nuke this
+[48:49] this
+[48:50] this directory so the previous one that we
+[48:52] directory so the previous one that we
+[48:52] directory so the previous one that we used for
+[48:53] used for
+[48:53] used for microsoft windows now let's take a look
+[48:56] microsoft windows now let's take a look
+[48:56] microsoft windows now let's take a look at the application what the script is
+[48:58] at the application what the script is
+[48:58] at the application what the script is doing now
+[48:59] doing now
+[48:59] doing now um so created new app pool environment
+[49:03] um so created new app pool environment
+[49:03] um so created new app pool environment uh was configured try logging in so it's
+[49:06] uh was configured try logging in so it's
+[49:06] uh was configured try logging in so it's trying to log in right now with the
+[49:07] trying to log in right now with the
+[49:07] trying to log in right now with the creation
+[49:10] creation
+[49:10] creation permissions by with the help of clio
+[49:12] permissions by with the help of clio
+[49:12] permissions by with the help of clio somewhere here we'll see that the clio
+[49:14] somewhere here we'll see that the clio
+[49:14] somewhere here we'll see that the clio is being
+[49:15] is being
+[49:15] is being checked or updated
+[49:19] checked or updated
+[49:19] checked or updated so clio is trying to uh here create clio
+[49:22] so clio is trying to uh here create clio
+[49:22] so clio is trying to uh here create clio was reinstalled to the latest
+[49:24] was reinstalled to the latest
+[49:24] was reinstalled to the latest version clio is our command line
+[49:26] version clio is our command line
+[49:26] version clio is our command line interface
+[49:27] interface
+[49:27] interface now the first time you're trying to
+[49:29] now the first time you're trying to
+[49:29] now the first time you're trying to connect to clear this will take some
+[49:31] connect to clear this will take some
+[49:32] connect to clear this will take some time
+[49:32] time
+[49:32] time and that's because well the application
+[49:34] and that's because well the application
+[49:34] and that's because well the application actually needs to start
+[49:36] actually needs to start
+[49:36] actually needs to start um start something and as soon as the
+[49:39] um start something and as soon as the
+[49:39] um start something and as soon as the clio
+[49:40] clio
+[49:40] clio was able to connect it's going to try to
+[49:43] was able to connect it's going to try to
+[49:43] was able to connect it's going to try to install
+[49:44] install
+[49:44] install a clio gate automatically
+[49:48] a clio gate automatically
+[49:48] a clio gate automatically cleargate is the api extension that
+[49:50] cleargate is the api extension that
+[49:50] cleargate is the api extension that allows us to perform things such as
+[49:52] allows us to perform things such as
+[49:52] allows us to perform things such as setting up
+[49:54] setting up
+[49:54] setting up configuration settings installing
+[49:55] configuration settings installing
+[49:56] configuration settings installing packages and things of that nature
+[49:57] packages and things of that nature
+[49:57] packages and things of that nature specifying your cultures configuring
+[50:01] specifying your cultures configuring
+[50:01] specifying your cultures configuring many many different things
+[50:02] many many different things
+[50:02] many many different things and essentially everything and anything
+[50:04] and essentially everything and anything
+[50:04] and essentially everything and anything and everything about creation can be
+[50:05] and everything about creation can be
+[50:06] and everything about creation can be done
+[50:06] done
+[50:06] done with clio so sometimes you'll see the
+[50:09] with clio so sometimes you'll see the
+[50:09] with clio so sometimes you'll see the remote server return errors that's
+[50:11] remote server return errors that's
+[50:11] remote server return errors that's that's fine um all we're doing now is
+[50:14] that's fine um all we're doing now is
+[50:14] that's fine um all we're doing now is we're configuring system
+[50:15] we're configuring system
+[50:15] we're configuring system settings you could see that they're all
+[50:17] settings you could see that they're all
+[50:17] settings you could see that they're all being updated i'm
+[50:19] being updated i'm
+[50:19] being updated i'm turning things on and turning things off
+[50:21] turning things on and turning things off
+[50:21] turning things on and turning things off i am installing
+[50:22] i am installing
+[50:22] i am installing setting myself to debug mode and then at
+[50:25] setting myself to debug mode and then at
+[50:25] setting myself to debug mode and then at this point
+[50:26] this point
+[50:26] this point my application is completed
+[50:29] my application is completed
+[50:29] my application is completed i'm gonna try to log on with the
+[50:31] i'm gonna try to log on with the
+[50:31] i'm gonna try to log on with the supervisor
+[50:33] supervisor
+[50:33] supervisor supervisor i'm logging on you could tell
+[50:36] supervisor i'm logging on you could tell
+[50:36] supervisor i'm logging on you could tell that there is no more this
+[50:38] that there is no more this
+[50:38] that there is no more this widget that tells me things about the
+[50:40] widget that tells me things about the
+[50:40] widget that tells me things about the news anymore
+[50:42] news anymore
+[50:42] news anymore so that's gone and there are going to be
+[50:44] so that's gone and there are going to be
+[50:44] so that's gone and there are going to be a couple of other notable differences
+[50:46] a couple of other notable differences
+[50:46] a couple of other notable differences as soon as my application is installed
+[50:48] as soon as my application is installed
+[50:48] as soon as my application is installed you see it's in the debug mode
+[50:49] you see it's in the debug mode
+[50:50] you see it's in the debug mode if i go into my profile you will also
+[50:52] if i go into my profile you will also
+[50:52] if i go into my profile you will also see that
+[50:53] see that
+[50:53] see that i have my language configured for myself
+[50:56] i have my language configured for myself
+[50:56] i have my language configured for myself as well as the default time zone for all
+[50:59] as well as the default time zone for all
+[50:59] as well as the default time zone for all users
+[50:59] users
+[50:59] users now all i have to do is just simply
+[51:01] now all i have to do is just simply
+[51:01] now all i have to do is just simply choose my date time format if i so
+[51:03] choose my date time format if i so
+[51:03] choose my date time format if i so choose
+[51:04] choose
+[51:04] choose and my time zone but i'm happy with the
+[51:06] and my time zone but i'm happy with the
+[51:06] and my time zone but i'm happy with the default configurations that
+[51:08] default configurations that
+[51:08] default configurations that that are applied so essentially at this
+[51:10] that are applied so essentially at this
+[51:10] that are applied so essentially at this point everything is configured
+[51:13] point everything is configured
+[51:13] point everything is configured as well as the exchange listener so if
+[51:15] as well as the exchange listener so if
+[51:15] as well as the exchange listener so if we wanted to simply go
+[51:17] we wanted to simply go
+[51:17] we wanted to simply go and let's see if we can add
+[51:20] and let's see if we can add
+[51:20] and let's see if we can add an email really quickly
+[51:30] so let's go into go to mailbox settings
+[51:30] so let's go into go to mailbox settings let's create a mailbox and i'm going to
+[51:32] let's create a mailbox and i'm going to
+[51:32] let's create a mailbox and i'm going to add
+[51:33] add
+[51:33] add my work email
+[51:37] my work email
+[51:37] my work email and that's going to be office 365.
+[51:47] i'm going to provide my username and
+[51:47] i'm going to provide my username and password
+[51:48] password
+[51:48] password and if everything is installed correctly
+[51:51] and if everything is installed correctly
+[51:51] and if everything is installed correctly then i should be able to connect
+[51:53] then i should be able to connect
+[51:53] then i should be able to connect perfect uh it's been successfully added
+[51:55] perfect uh it's been successfully added
+[51:55] perfect uh it's been successfully added so now i know my exchange listener
+[51:57] so now i know my exchange listener
+[51:57] so now i know my exchange listener is also connected to this instance and
+[52:00] is also connected to this instance and
+[52:00] is also connected to this instance and i'm going to go and immediately
+[52:01] i'm going to go and immediately
+[52:01] i'm going to go and immediately change my settings as i do not wish for
+[52:04] change my settings as i do not wish for
+[52:04] change my settings as i do not wish for any emails to be downloaded
+[52:06] any emails to be downloaded
+[52:06] any emails to be downloaded right so you can just go ahead and
+[52:08] right so you can just go ahead and
+[52:08] right so you can just go ahead and configure email or go
+[52:10] configure email or go
+[52:10] configure email or go through the exchange listener
+[52:11] through the exchange listener
+[52:11] through the exchange listener configuration so
+[52:14] configuration so
+[52:14] configuration so this is essentially how you would
+[52:15] this is essentially how you would
+[52:15] this is essentially how you would configure
+[52:17] configure
+[52:17] configure creatio to run for the first time
+[52:21] creatio to run for the first time
+[52:21] creatio to run for the first time on the new instance of the application
+[52:24] on the new instance of the application
+[52:24] on the new instance of the application now just for good measure
+[52:25] now just for good measure
+[52:26] now just for good measure since we're in the debug mode already
+[52:27] since we're in the debug mode already
+[52:28] since we're in the debug mode already let's click on this button
+[52:29] let's click on this button
+[52:29] let's click on this button let's make sure that we can also perform
+[52:31] let's make sure that we can also perform
+[52:31] let's make sure that we can also perform this step to recompile our application
+[52:34] this step to recompile our application
+[52:34] this step to recompile our application just to make sure that nothing is broken
+[52:36] just to make sure that nothing is broken
+[52:36] just to make sure that nothing is broken and if application compiles
+[52:38] and if application compiles
+[52:38] and if application compiles installs and compiles and we know
+[52:41] installs and compiles and we know
+[52:41] installs and compiles and we know everything has been
+[52:42] everything has been
+[52:42] everything has been installed successfully so let's give it
+[52:45] installed successfully so let's give it
+[52:45] installed successfully so let's give it a
+[52:45] a
+[52:45] a let's give it a moment hopefully it's
+[52:46] let's give it a moment hopefully it's
+[52:46] let's give it a moment hopefully it's not going to be too long
+[52:58] in terms of performance if you're
+[52:58] in terms of performance if you're wondering what's faster
+[53:00] wondering what's faster
+[53:00] wondering what's faster running it in windows with ms running it
+[53:03] running it in windows with ms running it
+[53:03] running it in windows with ms running it on windows
+[53:04] on windows
+[53:04] on windows with postgrain docker postgre natively
+[53:06] with postgrain docker postgre natively
+[53:06] with postgrain docker postgre natively installed on windows
+[53:08] installed on windows
+[53:08] installed on windows um perhaps i'm not the best judge
+[53:11] um perhaps i'm not the best judge
+[53:11] um perhaps i'm not the best judge uh i can't tell you uh what's faster
+[53:14] uh i can't tell you uh what's faster
+[53:14] uh i can't tell you uh what's faster what's better
+[53:15] what's better
+[53:15] what's better i found that it's just as lightning fast
+[53:18] i found that it's just as lightning fast
+[53:18] i found that it's just as lightning fast in one uh technology as it is with the
+[53:21] in one uh technology as it is with the
+[53:21] in one uh technology as it is with the other
+[53:22] other
+[53:22] other i honestly did not find any differences
+[53:25] i honestly did not find any differences
+[53:25] i honestly did not find any differences operation
+[53:25] operation
+[53:25] operation is successful so i know my creatio is uh
+[53:28] is successful so i know my creatio is uh
+[53:28] is successful so i know my creatio is uh perfectly installed now i'm talking
+[53:31] perfectly installed now i'm talking
+[53:31] perfectly installed now i'm talking close this thing
+[53:32] close this thing
+[53:32] close this thing and i am i can go back to my let's say
+[53:36] and i am i can go back to my let's say
+[53:36] and i am i can go back to my let's say to my pg admin and just to make sure
+[53:39] to my pg admin and just to make sure
+[53:39] to my pg admin and just to make sure that i can connect to my database just
+[53:41] that i can connect to my database just
+[53:41] that i can connect to my database just to kind of
+[53:42] to kind of
+[53:42] to kind of give it a quick look so what you will
+[53:44] give it a quick look so what you will
+[53:44] give it a quick look so what you will see here is that we've got this
+[53:46] see here is that we've got this
+[53:46] see here is that we've got this postgresql now
+[53:48] postgresql now
+[53:48] postgresql now here's my postgresql and here's my
+[53:50] here's my postgresql and here's my
+[53:50] here's my postgresql and here's my previous attempt
+[53:52] previous attempt
+[53:52] previous attempt that has failed the database didn't
+[53:54] that has failed the database didn't
+[53:54] that has failed the database didn't actually fail to restore but we failed
+[53:56] actually fail to restore but we failed
+[53:56] actually fail to restore but we failed to
+[53:57] to
+[53:57] to create ies and the pool so what i can
+[54:00] create ies and the pool so what i can
+[54:00] create ies and the pool so what i can just simply do here is i can delete this
+[54:03] just simply do here is i can delete this
+[54:03] just simply do here is i can delete this or drop this database it's going to ask
+[54:05] or drop this database it's going to ask
+[54:05] or drop this database it's going to ask me if i'm sure
+[54:06] me if i'm sure
+[54:06] me if i'm sure i say i am and it's going to go and
+[54:08] i say i am and it's going to go and
+[54:08] i say i am and it's going to go and delete it now the
+[54:09] delete it now the
+[54:10] delete it now the web ui for pg admin is not as
+[54:14] web ui for pg admin is not as
+[54:14] web ui for pg admin is not as refined as let's say a native
+[54:16] refined as let's say a native
+[54:16] refined as let's say a native application such as
+[54:18] application such as
+[54:18] application such as sql studio but it's good enough it's
+[54:21] sql studio but it's good enough it's
+[54:21] sql studio but it's good enough it's definitely good enough to perform most
+[54:22] definitely good enough to perform most
+[54:22] definitely good enough to perform most of the common tasks
+[54:24] of the common tasks
+[54:24] of the common tasks if i want to go now inside let's say my
+[54:26] if i want to go now inside let's say my
+[54:26] if i want to go now inside let's say my schemas
+[54:27] schemas
+[54:27] schemas i want to go to my public and i want to
+[54:30] i want to go to my public and i want to
+[54:30] i want to go to my public and i want to go into my tables
+[54:31] go into my tables
+[54:31] go into my tables here's a list of all the tables and it
+[54:33] here's a list of all the tables and it
+[54:33] here's a list of all the tables and it gives you all the same features
+[54:35] gives you all the same features
+[54:35] gives you all the same features as before you've got here under uh tools
+[54:38] as before you've got here under uh tools
+[54:38] as before you've got here under uh tools i believe
+[54:39] i believe
+[54:39] i believe uh query tool and from the query tool
+[54:42] uh query tool and from the query tool
+[54:42] uh query tool and from the query tool you can
+[54:42] you can
+[54:42] you can query whatever you want so let's just
+[54:44] query whatever you want so let's just
+[54:44] query whatever you want so let's just say that we want to query something
+[54:47] say that we want to query something
+[54:47] say that we want to query something select id from
+[54:50] select id from
+[54:50] select id from and i believe it's called public dot um
+[54:54] and i believe it's called public dot um
+[54:54] and i believe it's called public dot um contact if i'm not mistaken
+[55:02] uh id i think
+[55:02] uh id i think everything needs to be in single quotes
+[55:05] everything needs to be in single quotes
+[55:05] everything needs to be in single quotes here
+[55:06] here
+[55:06] here i think from public
+[55:10] i think from public
+[55:10] i think from public contact that's weird
+[55:13] contact that's weird
+[55:13] contact that's weird select id from
+[55:19] public contact that's uh that looks
+[55:19] public contact that's uh that looks right
+[55:21] right
+[55:21] right uh maybe i need that oh no hold on it
+[55:24] uh maybe i need that oh no hold on it
+[55:24] uh maybe i need that oh no hold on it needs to be double quotes
+[55:27] needs to be double quotes
+[55:27] needs to be double quotes right double or single well whichever
+[55:30] right double or single well whichever
+[55:30] right double or single well whichever way
+[55:30] way
+[55:30] way uh i don't spend a lot of time here
+[55:35] uh i don't spend a lot of time here
+[55:35] uh i don't spend a lot of time here select id
+[55:42] okay so there we go so everything needs
+[55:42] okay so there we go so everything needs to be escaped with double quotes
+[55:44] to be escaped with double quotes
+[55:44] to be escaped with double quotes um so this is kind of unfortunate way of
+[55:48] um so this is kind of unfortunate way of
+[55:48] um so this is kind of unfortunate way of that we need to address p sql but
+[55:52] that we need to address p sql but
+[55:52] that we need to address p sql but this is the only difference that
+[55:55] this is the only difference that
+[55:55] this is the only difference that probably you're going to care about
+[55:57] probably you're going to care about
+[55:57] probably you're going to care about if you get to work with psql and most of
+[55:59] if you get to work with psql and most of
+[55:59] if you get to work with psql and most of the time when you're doing development
+[56:01] the time when you're doing development
+[56:01] the time when you're doing development you
+[56:01] you
+[56:01] you quite honestly don't care all right so
+[56:04] quite honestly don't care all right so
+[56:04] quite honestly don't care all right so um
+[56:04] um
+[56:04] um this concludes our
+[56:08] this concludes our
+[56:08] this concludes our this concludes our session for today for
+[56:10] this concludes our session for today for
+[56:10] this concludes our session for today for how to install
+[56:12] how to install
+[56:12] how to install creation i will provide you with all the
+[56:14] creation i will provide you with all the
+[56:14] creation i will provide you with all the necessary files for
+[56:16] necessary files for
+[56:16] necessary files for installing creation with the help of a
+[56:18] installing creation with the help of a
+[56:18] installing creation with the help of a script and i will provide you with the
+[56:21] script and i will provide you with the
+[56:21] script and i will provide you with the docker compose files that you can
+[56:24] docker compose files that you can
+[56:24] docker compose files that you can let's say resurrect the environment if
+[56:27] let's say resurrect the environment if
+[56:27] let's say resurrect the environment if you so choose and then just simply use
+[56:29] you so choose and then just simply use
+[56:29] you so choose and then just simply use my files
+[56:30] my files
+[56:30] my files if you want to see how it's done i'll
+[56:32] if you want to see how it's done i'll
+[56:32] if you want to see how it's done i'll provide you with two options with the
+[56:33] provide you with two options with the
+[56:33] provide you with two options with the option for
+[56:35] option for
+[56:35] option for microsoft sql as well as postgrad if you
+[56:37] microsoft sql as well as postgrad if you
+[56:37] microsoft sql as well as postgrad if you have any questions as usual
+[56:39] have any questions as usual
+[56:39] have any questions as usual please raise an issue on the github
+[56:41] please raise an issue on the github
+[56:41] please raise an issue on the github repository where all the files are going
+[56:43] repository where all the files are going
+[56:43] repository where all the files are going to be posted
+[56:44] to be posted
+[56:44] to be posted and i will try to help you out as much
+[56:46] and i will try to help you out as much
+[56:46] and i will try to help you out as much as possible so thank you very much and
+[56:48] as possible so thank you very much and
+[56:48] as possible so thank you very much and i'll see you
+[56:49] i'll see you
+[56:49] i'll see you next time in the next episode is going
+[56:52] next time in the next episode is going
+[56:52] next time in the next episode is going to be dedicated to
+[56:53] to be dedicated to
+[56:53] to be dedicated to working with integrations
+[56:57] working with integrations
+[56:57] working with integrations and we're still going to do a little bit
+[56:58] and we're still going to do a little bit
+[56:58] and we're still going to do a little bit of infrastructure we're going to have to
+[57:00] of infrastructure we're going to have to
+[57:00] of infrastructure we're going to have to install
+[57:00] install
+[57:00] install an additional component uh called
+[57:02] an additional component uh called
+[57:02] an additional component uh called identity service
+[57:04] identity service
+[57:04] identity service and then we're going to try to use
+[57:05] and then we're going to try to use
+[57:05] and then we're going to try to use identity service to authenticate
+[57:07] identity service to authenticate
+[57:07] identity service to authenticate ourselves
+[57:08] ourselves
+[57:08] ourselves and to exchange some data with creation
+[57:11] and to exchange some data with creation
+[57:11] and to exchange some data with creation so see you on the next episode thanks

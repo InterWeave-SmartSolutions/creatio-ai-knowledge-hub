@@ -1,0 +1,82 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - "alert_rules.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - localhost:9093
+
+scrape_configs:
+  # Main application metrics
+  - job_name: 'creatio-ai-knowledge-hub'
+    static_configs:
+      - targets: ['app:8000']
+    metrics_path: '/metrics'
+    scrape_interval: 15s
+    scrape_timeout: 10s
+    honor_labels: true
+
+  # System metrics using node_exporter
+  - job_name: 'node_exporter'
+    static_configs:
+      - targets: ['localhost:9100']
+    scrape_interval: 15s
+
+  # Redis metrics
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']
+    metrics_path: '/metrics'
+
+  # Elasticsearch metrics (if enabled)
+  - job_name: 'elasticsearch'
+    static_configs:
+      - targets: ['elasticsearch:9200']
+    metrics_path: '/_prometheus/metrics'
+
+  # Nginx metrics (if enabled)
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['nginx:9113']
+    
+  # Database metrics (SQLite monitoring via custom exporter)
+  - job_name: 'sqlite_exporter'
+    static_configs:
+      - targets: ['localhost:9199']
+
+# Recording rules for aggregated metrics
+recording_rules:
+  - name: "application_rules"
+    rules:
+      - record: "app:request_rate_5m"
+        expr: "rate(app_requests_total[5m])"
+      
+      - record: "app:error_rate_5m"
+        expr: "rate(app_requests_total{status_code=~'5..'}[5m])"
+      
+      - record: "app:response_time_p95_5m"
+        expr: "histogram_quantile(0.95, rate(app_request_duration_seconds_bucket[5m]))"
+      
+      - record: "app:response_time_p99_5m"
+        expr: "histogram_quantile(0.99, rate(app_request_duration_seconds_bucket[5m]))"
+
+  - name: "search_rules"
+    rules:
+      - record: "search:query_rate_5m"
+        expr: "rate(search_queries_total[5m])"
+      
+      - record: "search:avg_response_time_5m"
+        expr: "rate(search_query_duration_seconds_sum[5m]) / rate(search_query_duration_seconds_count[5m])"
+
+  - name: "database_rules"
+    rules:
+      - record: "db:query_rate_5m"
+        expr: "rate(database_query_duration_seconds_count[5m])"
+      
+      - record: "db:avg_query_time_5m"
+        expr: "rate(database_query_duration_seconds_sum[5m]) / rate(database_query_duration_seconds_count[5m])"

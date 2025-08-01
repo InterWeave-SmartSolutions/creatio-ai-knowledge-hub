@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MetaItem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MetaItem
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Core.MetaItem">
+  
+  
+  <h1 id="Terrasoft_Core_MetaItem" data-uid="Terrasoft.Core.MetaItem" class="text-break">Class MetaItem
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MetaItem</span></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.ClientUnitSchemaDependency.html">ClientUnitSchemaDependency</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.ClientUnitSchemaMessage.html">ClientUnitSchemaMessage</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.DB.DBMetaAction.html">DBMetaAction</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchemaStageConnection.html">DcmSchemaStageConnection</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchemaStageConnections.html">DcmSchemaStageConnections</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchemaStagePermission.html">DcmSchemaStagePermission</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.DcmProcess.DcmSchemaStageTarget.html">DcmSchemaStageTarget</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaCaseNotNullQueryFunctionWhenItem.html">EntitySchemaCaseNotNullQueryFunctionWhenItem</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaColumnReferenceSchema.html">EntitySchemaColumnReferenceSchema</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaEvents.html">EntitySchemaEvents</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaIndex.html">EntitySchemaIndex</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaIndexColumn.html">EntitySchemaIndexColumn</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaQueryColumn.html">EntitySchemaQueryColumn</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaQueryExpression.html">EntitySchemaQueryExpression</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaQueryFilter.html">EntitySchemaQueryFilter</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaQueryFunction.html">EntitySchemaQueryFunction</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.EntitySchemaSegmentationOptions.html">EntitySchemaSegmentationOptions</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Entities.ShowInAdvancedModeSet.html">ShowInAdvancedModeSet</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.GuidMetaItem.html">GuidMetaItem</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.ImageListSchemaItem.html">ImageListSchemaItem</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.MetaSchema.html">MetaSchema</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Process.BaseProcessSchemaItem.html">BaseProcessSchemaItem</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Process.BranchingDecision.html">BranchingDecision</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Process.ProcessSchemaMultiInstanceOptions.html">ProcessSchemaMultiInstanceOptions</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Process.ProcessSchemaPerformerAssignmentOptions.html">ProcessSchemaPerformerAssignmentOptions</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.Process.ProcessSchemaUserContext.html">ProcessSchemaUserContext</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.SchemaLocalizableString.html">SchemaLocalizableString</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.SchemaMethod.html">SchemaMethod</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.SchemaMethodArgument.html">SchemaMethodArgument</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.SchemaProperty.html">SchemaProperty</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Core.SchemaUsing.html">SchemaUsing</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Services.Metadata.ServiceMethod.html">ServiceMethod</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Services.Metadata.ServiceNamespace.html">ServiceNamespace</a></div>
+      <div class="level2"><a class="xref" href="Terrasoft.Services.Metadata.ServiceParameter.html">ServiceParameter</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Terrasoft.Core.IMetaItem.html">IMetaItem</a></div>
+    <div><a class="xref" href="Terrasoft.Common.IMetaDataSerializable.html">IMetaDataSerializable</a></div>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Core.html">Terrasoft.Core</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Core.dll</h6>
+  <h5 id="Terrasoft_Core_MetaItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DesignModeClass(ResourceManager = &quot;Terrasoft.Core&quot;)]
+[DesignModeGroup(Name = &quot;General&quot;)]
+[DesignModeProperty(Name = &quot;UId&quot;, MetaPropertyName = &quot;A1&quot;, UsageType = DesignModeUsageType.None)]
+[DesignModeProperty(Name = &quot;Name&quot;, Position = 1, MetaPropertyName = &quot;A2&quot;)]
+[DesignModeProperty(Name = &quot;CreatedInSchemaUId&quot;, MetaPropertyName = &quot;A3&quot;, UsageType = DesignModeUsageType.None)]
+[DesignModeProperty(Name = &quot;ModifiedInSchemaUId&quot;, MetaPropertyName = &quot;A4&quot;, UsageType = DesignModeUsageType.None)]
+[DesignModeProperty(Name = &quot;CreatedInPackageId&quot;, MetaPropertyName = &quot;A5&quot;, UsageType = DesignModeUsageType.None)]
+public abstract class MetaItem : IMetaItem, IMetaDataSerializable, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_MetaItem__ctor_" data-uid="Terrasoft.Core.MetaItem.#ctor*"></a>
+  <h4 id="Terrasoft_Core_MetaItem__ctor" data-uid="Terrasoft.Core.MetaItem.#ctor">MetaItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MetaItem()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_MetaItem__ctor_" data-uid="Terrasoft.Core.MetaItem.#ctor*"></a>
+  <h4 id="Terrasoft_Core_MetaItem__ctor_Terrasoft_Core_MetaItem_" data-uid="Terrasoft.Core.MetaItem.#ctor(Terrasoft.Core.MetaItem)">MetaItem(MetaItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MetaItem(MetaItem source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.MetaItem.html">MetaItem</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_CreatedInPackageId_" data-uid="Terrasoft.Core.MetaItem.CreatedInPackageId*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_CreatedInPackageId" data-uid="Terrasoft.Core.MetaItem.CreatedInPackageId">CreatedInPackageId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaTypeProperty(&quot;{DD547E56-6892-4288-805B-2CA16A9D0EEF}&quot;)]
+public Guid CreatedInPackageId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_CreatedInSchemaUId_" data-uid="Terrasoft.Core.MetaItem.CreatedInSchemaUId*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_CreatedInSchemaUId" data-uid="Terrasoft.Core.MetaItem.CreatedInSchemaUId">CreatedInSchemaUId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaTypeProperty(&quot;{B0D50CD9-2558-4EE1-BECC-FDD374DA4508}&quot;)]
+public virtual Guid CreatedInSchemaUId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_Id_" data-uid="Terrasoft.Core.MetaItem.Id*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_Id" data-uid="Terrasoft.Core.MetaItem.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Guid Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_IsDeserializedFromMetaData_" data-uid="Terrasoft.Core.MetaItem.IsDeserializedFromMetaData*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_IsDeserializedFromMetaData" data-uid="Terrasoft.Core.MetaItem.IsDeserializedFromMetaData">IsDeserializedFromMetaData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDeserializedFromMetaData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_ModifiedInSchemaUId_" data-uid="Terrasoft.Core.MetaItem.ModifiedInSchemaUId*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_ModifiedInSchemaUId" data-uid="Terrasoft.Core.MetaItem.ModifiedInSchemaUId">ModifiedInSchemaUId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaTypeProperty(&quot;{15F6FFB4-45BB-4C28-AED6-982544C41D1C}&quot;)]
+public Guid ModifiedInSchemaUId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_Name_" data-uid="Terrasoft.Core.MetaItem.Name*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_Name" data-uid="Terrasoft.Core.MetaItem.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaTypeProperty(&quot;{11B2AEB6-BC86-4aee-B7E0-AE1ED6D66641}&quot;)]
+public virtual string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_NamePrefix_" data-uid="Terrasoft.Core.MetaItem.NamePrefix*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_NamePrefix" data-uid="Terrasoft.Core.MetaItem.NamePrefix">NamePrefix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string NamePrefix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_ParentMetaSchema_" data-uid="Terrasoft.Core.MetaItem.ParentMetaSchema*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_ParentMetaSchema" data-uid="Terrasoft.Core.MetaItem.ParentMetaSchema">ParentMetaSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IMetaSchema ParentMetaSchema { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IMetaSchema.html">IMetaSchema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_RealUId_" data-uid="Terrasoft.Core.MetaItem.RealUId*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_RealUId" data-uid="Terrasoft.Core.MetaItem.RealUId">RealUId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid RealUId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_UId_" data-uid="Terrasoft.Core.MetaItem.UId*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_UId" data-uid="Terrasoft.Core.MetaItem.UId">UId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Guid UId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_ApplyMetaDataValue_" data-uid="Terrasoft.Core.MetaItem.ApplyMetaDataValue*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_ApplyMetaDataValue_Terrasoft_Common_DataReader_" data-uid="Terrasoft.Core.MetaItem.ApplyMetaDataValue(Terrasoft.Common.DataReader)">ApplyMetaDataValue(DataReader)</h4>
+  <div class="markdown level1 summary"><p>Applies meta data values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ApplyMetaDataValue(DataReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Instance of the <a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_ApplyTemplateDataValue_" data-uid="Terrasoft.Core.MetaItem.ApplyTemplateDataValue*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_ApplyTemplateDataValue_Terrasoft_Common_DataReader_" data-uid="Terrasoft.Core.MetaItem.ApplyTemplateDataValue(Terrasoft.Common.DataReader)">ApplyTemplateDataValue(DataReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ApplyTemplateDataValue(DataReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_CheckIsNameValidIdentifier_" data-uid="Terrasoft.Core.MetaItem.CheckIsNameValidIdentifier*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_CheckIsNameValidIdentifier_System_String_" data-uid="Terrasoft.Core.MetaItem.CheckIsNameValidIdentifier(System.String)">CheckIsNameValidIdentifier(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckIsNameValidIdentifier(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_Clone_" data-uid="Terrasoft.Core.MetaItem.Clone*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_Clone" data-uid="Terrasoft.Core.MetaItem.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance that is a copy of the current instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract object Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_CompleteApplyingMetaDataValues_" data-uid="Terrasoft.Core.MetaItem.CompleteApplyingMetaDataValues*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_CompleteApplyingMetaDataValues" data-uid="Terrasoft.Core.MetaItem.CompleteApplyingMetaDataValues">CompleteApplyingMetaDataValues()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CompleteApplyingMetaDataValues()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_CompleteApplyingTemplateDataValues_" data-uid="Terrasoft.Core.MetaItem.CompleteApplyingTemplateDataValues*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_CompleteApplyingTemplateDataValues" data-uid="Terrasoft.Core.MetaItem.CompleteApplyingTemplateDataValues">CompleteApplyingTemplateDataValues()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CompleteApplyingTemplateDataValues()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_GetResourceManagerName_" data-uid="Terrasoft.Core.MetaItem.GetResourceManagerName*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_GetResourceManagerName" data-uid="Terrasoft.Core.MetaItem.GetResourceManagerName">GetResourceManagerName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetResourceManagerName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_HandleNameChanging_" data-uid="Terrasoft.Core.MetaItem.HandleNameChanging*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_HandleNameChanging_System_String_" data-uid="Terrasoft.Core.MetaItem.HandleNameChanging(System.String)">HandleNameChanging(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HandleNameChanging(string oldName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_ReadMetaData_" data-uid="Terrasoft.Core.MetaItem.ReadMetaData*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_ReadMetaData_Terrasoft_Common_DataReader_" data-uid="Terrasoft.Core.MetaItem.ReadMetaData(Terrasoft.Common.DataReader)">ReadMetaData(DataReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReadMetaData(DataReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_ReadTemplateData_" data-uid="Terrasoft.Core.MetaItem.ReadTemplateData*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_ReadTemplateData_Terrasoft_Common_DataReader_" data-uid="Terrasoft.Core.MetaItem.ReadTemplateData(Terrasoft.Common.DataReader)">ReadTemplateData(DataReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReadTemplateData(DataReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_WriteMetaData_" data-uid="Terrasoft.Core.MetaItem.WriteMetaData*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_WriteMetaData_Terrasoft_Common_DataWriter_" data-uid="Terrasoft.Core.MetaItem.WriteMetaData(Terrasoft.Common.DataWriter)">WriteMetaData(DataWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes meta data values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteMetaData(DataWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Instance of the <a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_MetaItem_WriteTemplateData_" data-uid="Terrasoft.Core.MetaItem.WriteTemplateData*"></a>
+  <h4 id="Terrasoft_Core_MetaItem_WriteTemplateData_Terrasoft_Common_DataWriter_" data-uid="Terrasoft.Core.MetaItem.WriteTemplateData(Terrasoft.Common.DataWriter)">WriteTemplateData(DataWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteTemplateData(DataWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IMetaItem.html">IMetaItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.IMetaDataSerializable.html">IMetaDataSerializable</a>
+  </div>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_CloneSchema__1___0_System_Object___">MetaDataTestUtils.CloneSchema&lt;TItem&gt;(TItem, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_CloneAbstractMetaItem__1___0_">MetaDataTestUtils.CloneAbstractMetaItem&lt;TItem&gt;(TItem)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_GetMetaData_Terrasoft_Common_IMetaDataSerializable_">MetaDataTestUtils.GetMetaData(IMetaDataSerializable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "summary_id": "5e407de29f95",
+  "content_id": "7ce29bfbf05e",
+  "summary_type": "extractive",
+  "summary_text": "# Speaker 1\n\nSo we need to enable Freedom UI back, use Freedom UI Interface, open it, set it again, save it, close it and yes, let's \nlog out and log in again to see back our background Freedom UI setting, which is default setting now and which is \nrecommended to work with Freedom UI sections and also with some Classic sections. What I wanted you to know next is Special \nsection designed to simplify such transition between Classic UI and Freedom UI sections and user interface. Inside of Creatio we have several big creature based \nsolutions inside of Creature company and it's also so we also like face as most of our customers we face such \nupgrade needs because Freedom UI is now like primary user interface and we still have a lot of Classic UI legacy. # Speaker 1\n\nWe will make an example now and I think that the easiest possible way to demonstrate how you can write and run C \nSharp code at creation platform is to make a business process which will execute C Sharp script task into it. So if \nyou have a changes in your script task and you save, your process system asks you to compile here publish means \nstart compilation and I do not plan to do it right now because my code needs some improvement and I need to \nexplain what is going on and explain you step by step what is happening here. The common idea is to run a business process which will accept some \narguments at the beginning and then we will do calculation of average realty price based on our existing data. So \nthat's how it works and working with this class entity schema query Class means making selections of data records \nfrom creation data model, respecting objects, respecting all their column structures. Also it supports paging when you need to \nprocess a very big set of data records and you prefer to do it by parts working with portions of data pages and entity \nschema query also supports complex query structures including hierarchical queries. So we plan to use such parameters, but also I will tell \nyou that unfortunately we have so fortunately we have possibility to run process as a no code tool with no \nprogramming from section list or section page in Freedom UI and unfortunately we can only pass one single value \nas an argument. # Speaker 1\n\nBut in real life when you do development of your own solution, of course you will get compilation issues, you will get \nerror messages, so you will have to go to your code, find corresponding lines, fix it, save again, publish again, and \nfinally you'll have to make your process work normally.",
+  "key_points": [
+    "# Speaker 1\n\nSo we need to enable Freedom UI back, use Freedom UI Interface, open it, set it again, save it, close it and yes, let's \nlog out and log in again to see back our background Freedom UI setting, which is default setting now and which is \nrecommended to work with Freedom UI sections and also with some Classic sections.",
+    "What I wanted you to know next is Special \nsection designed to simplify such transition between Classic UI and Freedom UI sections and user interface.",
+    "Inside of Creatio we have several big creature based \nsolutions inside of Creature company and it's also so we also like face as most of our customers we face such \nupgrade needs because Freedom UI is now like primary user interface and we still have a lot of Classic UI legacy.",
+    "# Speaker 1\n\nWe will make an example now and I think that the easiest possible way to demonstrate how you can write and run C \nSharp code at creation platform is to make a business process which will execute C Sharp script task into it.",
+    "So if \nyou have a changes in your script task and you save, your process system asks you to compile here publish means \nstart compilation and I do not plan to do it right now because my code needs some improvement and I need to \nexplain what is going on and explain you step by step what is happening here."
+  ],
+  "keywords": [
+    "ui",
+    "process",
+    "speaker",
+    "like",
+    "code",
+    "classic",
+    "data",
+    "freedom",
+    "page",
+    "freedom ui"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 458,
+  "original_length": 14990,
+  "compression_ratio": 0.030553702468312207,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:59:16.278855",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1016,
+    "method": "tfidf_position_ranking"
+  }
+}

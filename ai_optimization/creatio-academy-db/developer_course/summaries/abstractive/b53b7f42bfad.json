@@ -1,0 +1,35 @@
+{
+  "summary_id": "b53b7f42bfad",
+  "content_id": "797e8d613a2f",
+  "summary_type": "abstractive",
+  "summary_text": "Web services are server side items that we can easily call from client side with the help of HTTP queries. Creature has a lot of embedded out of the box web services. We can create our own web services if necessary.",
+  "key_points": [
+    "Web services are server side items that we can easily call from client side with the help of HTTP queries.",
+    "Creature has a lot of embedded out of the box web services.",
+    "We can create our own web services if necessary."
+  ],
+  "keywords": [
+    "web",
+    "services",
+    "web services",
+    "client",
+    "server",
+    "different",
+    "service",
+    "data",
+    "functionality",
+    "like"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 41,
+  "original_length": 654,
+  "compression_ratio": 0.06269113149847094,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T17:00:43.901104",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

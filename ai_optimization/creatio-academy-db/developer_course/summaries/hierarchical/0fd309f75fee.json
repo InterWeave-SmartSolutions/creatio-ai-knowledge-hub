@@ -1,0 +1,60 @@
+{
+  "summary_id": "0fd309f75fee",
+  "content_id": "c7028f12cf1e",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: server, database, sql, api, package",
+  "key_points": [
+    "server",
+    "database",
+    "sql",
+    "api",
+    "package"
+  ],
+  "keywords": [
+    "data",
+    "git",
+    "need",
+    "package",
+    "object",
+    "like",
+    "repository",
+    "file",
+    "changes",
+    "make"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 17806,
+  "compression_ratio": 0.0003931259126137257,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T17:01:00.022803",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "server",
+        "database",
+        "sql",
+        "api",
+        "package"
+      ],
+      "keywords": [
+        "data",
+        "git",
+        "need",
+        "package",
+        "object",
+        "like",
+        "repository",
+        "file",
+        "changes",
+        "make"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

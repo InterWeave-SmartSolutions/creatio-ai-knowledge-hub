@@ -1,0 +1,43 @@
+{
+  "summary_id": "082672579903",
+  "content_id": "c326b609b172",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: the next step is to prepare for the exam and then ask the section.\nINSTRUCTION: price, whatever is working, parameters are not showing that fast.\nINSTRUCTION: you can apply for this exam just from a cad in the website and register for the exam at a cad.\nCONCEPT: page\nCONCEPT: schema\nCONCEPT: customization\nNOTE: it somewhere.\nNOTE: we have a bit different percentage of prices and for rentals and for sale.",
+  "key_points": [
+    "INSTRUCTION: the next step is to prepare for the exam and then ask the section.",
+    "INSTRUCTION: price, whatever is working, parameters are not showing that fast.",
+    "INSTRUCTION: you can apply for this exam just from a cad in the website and register for the exam at a cad.",
+    "CONCEPT: page",
+    "CONCEPT: schema",
+    "CONCEPT: customization",
+    "NOTE: it somewhere.",
+    "NOTE: we have a bit different percentage of prices and for rentals and for sale."
+  ],
+  "keywords": [
+    "data",
+    "let",
+    "test",
+    "like",
+    "exam",
+    "use",
+    "client",
+    "process",
+    "yes",
+    "homework"
+  ],
+  "topics": [],
+  "summary_length": 72,
+  "original_length": 12853,
+  "compression_ratio": 0.005601805026063954,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:58:41.685732",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

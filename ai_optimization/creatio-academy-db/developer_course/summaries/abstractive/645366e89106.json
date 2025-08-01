@@ -1,0 +1,35 @@
+{
+  "summary_id": "645366e89106",
+  "content_id": "64b48b00fe9b",
+  "summary_type": "abstractive",
+  "summary_text": "Details are a very important piece of Creature configuration and you will face it almost everywhere. Details are usually connected with main entity with the help of lookups, lookup columns. Each detail record has information about its parent account.",
+  "key_points": [
+    "Details are a very important piece of Creature configuration and you will face it almost everywhere.",
+    "Details are usually connected with main entity with the help of lookups, lookup columns.",
+    "Each detail record has information about its parent account."
+  ],
+  "keywords": [
+    "account",
+    "details",
+    "entity",
+    "main",
+    "record",
+    "connected",
+    "contacts",
+    "addresses",
+    "connection",
+    "speaker"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 39,
+  "original_length": 640,
+  "compression_ratio": 0.0609375,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:57:21.834996",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

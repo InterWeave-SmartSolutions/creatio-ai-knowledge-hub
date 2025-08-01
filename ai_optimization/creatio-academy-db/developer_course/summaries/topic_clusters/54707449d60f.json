@@ -1,0 +1,36 @@
+{
+  "summary_id": "54707449d60f",
+  "content_id": "developer_course_clusters",
+  "summary_type": "topic_clusters",
+  "summary_text": "Content organized into 5 main topic clusters:\nCluster 1: speaker (609 chunks)\nCluster 2: speaker (804 chunks)\nCluster 3: speaker (4394 chunks)\nCluster 4: speaker (286 chunks)\nCluster 5: speaker (318 chunks)",
+  "key_points": [
+    "Cluster 1: speaker (609 chunks)",
+    "Cluster 2: speaker (804 chunks)",
+    "Cluster 3: speaker (4394 chunks)",
+    "Cluster 4: speaker (286 chunks)",
+    "Cluster 5: speaker (318 chunks)"
+  ],
+  "keywords": [
+    "add",
+    "app",
+    "application",
+    "base",
+    "bit",
+    "business",
+    "button",
+    "called",
+    "case",
+    "change"
+  ],
+  "topics": [],
+  "summary_length": 32,
+  "original_length": 613047,
+  "compression_ratio": 5.219828169781436e-05,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T17:01:39.597537",
+  "metadata": {
+    "n_clusters": 5,
+    "clustering_method": "kmeans_tfidf",
+    "method": "topic_clustering"
+  }
+}

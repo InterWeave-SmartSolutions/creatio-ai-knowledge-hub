@@ -1,0 +1,35 @@
+{
+  "summary_id": "7577d1f6ca1c",
+  "content_id": "05031a09507b",
+  "summary_type": "abstractive",
+  "summary_text": "Dmytro is a trainer who has worked in Creation for more than 18 years. He will share some experience and Creation development basics with you. At the end of the course he will perform individual development certification.",
+  "key_points": [
+    "Dmytro is a trainer who has worked in Creation for more than 18 years.",
+    "He will share some experience and Creation development basics with you.",
+    "At the end of the course he will perform individual development certification."
+  ],
+  "keywords": [
+    "creation",
+    "working",
+    "development",
+    "programming",
+    "speaker",
+    "ui",
+    "examples",
+    "explain",
+    "making",
+    "sessions"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 37,
+  "original_length": 649,
+  "compression_ratio": 0.05701078582434515,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:58:16.853009",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

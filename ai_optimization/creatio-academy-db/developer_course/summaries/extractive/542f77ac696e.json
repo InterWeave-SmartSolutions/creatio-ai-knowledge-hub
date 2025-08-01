@@ -1,0 +1,38 @@
+{
+  "summary_id": "542f77ac696e",
+  "content_id": "05031a09507b",
+  "summary_type": "extractive",
+  "summary_text": "# Speaker 1\n\nAnd then when finished I will show you server side programming in C Sharp and server side includes programming \nwith data model, working with database, writing your own C scripts, making your own classes of course integrating \nwith modern powerful tools like Visual Studio or Rider and I will show you how to debug, how to process object \nevents so how to do different server side things. But in case if you customize big base product solution like sales, service or marketing, and in case if you \nneed to customize existing sections like make your own changes into opportunities, into contacts, into accounts and \nso on, it makes sense to make visible and available for customization all base product structures. # Speaker 1\n\nIf you experience some problems with your app and if you start to get error messages about some files are not \ncannot be written or you have some file system access issues, especially you can face it during calculation, you can \ncreate separate setting and you can find your app folder Terrasoft web folder and add special role IIs underscore I \nusers and you should provide modified permission for this role for all of your application folder Javasoft web folder \nthis will grant unlimited file system access to create your application. So required G's is used in creature and its main purpose is to keep and handle all such client side \nmodule structure in browser memory, providing possibility to load only necessary modules when they are requested \nfor certain page and which makes quite good performance because in total our client side now has probably 1000 of \nmodules, 1000 of small JavaScript files. # Speaker 1\n\nBut in real life when you do development of your own solution, of course you will get compilation issues, you will get \nerror messages, so you will have to go to your code, find corresponding lines, fix it, save again, publish again, and \nfinally you'll have to make your process work normally. --- Page 285 ---\n\n# Speaker 1\n\nToday is session number four of our development on Creature Platform Guided learning set of practical sessions \nthat we do for developing different features and functionality that requires some programming on Creature Platform \nand previously we finished with building our own section named Realty and we managed to set up List View, we \nmanaged to make a form page for it, we also added some default values and we. # Speaker 1\n\nBut in real life, when you do development of your own solution, of course you will get compilation issues, you will get \nerror messages, so you will have to go to your code, find corresponding lines, fix it, save again, publish again, and \nfinally you'll have to make your process work normally. # Speaker 1\n\nSomething is strange here and it looks like probably system failed to work with it but it looks like it's not a big trouble \nand you see one more issue here parent schema and was not found yes, this is more serious trouble because it \nlooks like our target environment was not fully prepared to install our changes because it miss customer 360 app \npossibly previous error message that we had here previous message with this stuff here probably it was also \nmissing corresponding app and we used so our solution expects that target system will help customer360 in my \nexample customers current our target environment did not have customer 360 that's why we have this stuff. So the type of the homework will include \nmaking your section, this one, making your detail, make programmed validation, some calculations, web service, and \nfor those who want to run an advanced level, some additional business process and adding data records and some \nautomatic update. This is correct answer other is incorrect can't use types this is not true Implement custom \ntype class connect namespace no any word about data contract so this is not true A is True Moving one more \nstandard Web Services question HTTP for OData to create new record we used it in our postman Here is my \npostman and here is example of a post query to create new data record.",
+  "key_points": [
+    "# Speaker 1\n\nAnd then when finished I will show you server side programming in C Sharp and server side includes programming \nwith data model, working with database, writing your own C scripts, making your own classes of course integrating \nwith modern powerful tools like Visual Studio or Rider and I will show you how to debug, how to process object \nevents so how to do different server side things.",
+    "But in case if you customize big base product solution like sales, service or marketing, and in case if you \nneed to customize existing sections like make your own changes into opportunities, into contacts, into accounts and \nso on, it makes sense to make visible and available for customization all base product structures.",
+    "# Speaker 1\n\nIf you experience some problems with your app and if you start to get error messages about some files are not \ncannot be written or you have some file system access issues, especially you can face it during calculation, you can \ncreate separate setting and you can find your app folder Terrasoft web folder and add special role IIs underscore I \nusers and you should provide modified permission for this role for all of your application folder Javasoft web folder \nthis will grant unlimited file system access to create your application.",
+    "So required G's is used in creature and its main purpose is to keep and handle all such client side \nmodule structure in browser memory, providing possibility to load only necessary modules when they are requested \nfor certain page and which makes quite good performance because in total our client side now has probably 1000 of \nmodules, 1000 of small JavaScript files.",
+    "# Speaker 1\n\nBut in real life when you do development of your own solution, of course you will get compilation issues, you will get \nerror messages, so you will have to go to your code, find corresponding lines, fix it, save again, publish again, and \nfinally you'll have to make your process work normally."
+  ],
+  "keywords": [
+    "speaker",
+    "data",
+    "page",
+    "let",
+    "like",
+    "okay",
+    "use",
+    "need",
+    "code",
+    "make"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 701,
+  "original_length": 207848,
+  "compression_ratio": 0.0033726569416111774,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T17:01:12.015998",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 15423,
+    "method": "tfidf_position_ranking"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "summary_id": "3341eb4edb01",
+  "content_id": "3ae506ca01ce",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: detail, module, entity, json, integration",
+  "key_points": [
+    "detail",
+    "module",
+    "entity",
+    "json",
+    "integration"
+  ],
+  "keywords": [
+    "let",
+    "page",
+    "package",
+    "object",
+    "data",
+    "classic",
+    "ui",
+    "okay",
+    "like",
+    "need"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 14013,
+  "compression_ratio": 0.0004995361450082067,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:53:54.644472",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "detail",
+        "module",
+        "entity",
+        "json",
+        "integration"
+      ],
+      "keywords": [
+        "let",
+        "page",
+        "package",
+        "object",
+        "data",
+        "classic",
+        "ui",
+        "okay",
+        "like",
+        "need"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

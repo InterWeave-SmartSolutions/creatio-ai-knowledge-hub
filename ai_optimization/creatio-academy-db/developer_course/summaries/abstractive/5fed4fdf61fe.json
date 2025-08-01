@@ -1,0 +1,35 @@
+{
+  "summary_id": "5fed4fdf61fe",
+  "content_id": "bbecd2297326",
+  "summary_type": "abstractive",
+  "summary_text": "This is session number four of our development on Creature Platform Guided learning set of practical sessions. Today I will show you a bit. about organizing of Workplace for your users and for my developer purpose it will be quite often when we will.",
+  "key_points": [
+    "This is session number four of our development on Creature Platform Guided learning set of practical sessions.",
+    "Today I will show you a bit.",
+    "about organizing of Workplace for your users and for my developer purpose it will be quite often when we will."
+  ],
+  "keywords": [
+    "speaker",
+    "workplace",
+    "like",
+    "page",
+    "button",
+    "make",
+    "sections",
+    "today",
+    "workplaces",
+    "new"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 44,
+  "original_length": 583,
+  "compression_ratio": 0.07547169811320754,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:54:32.769935",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

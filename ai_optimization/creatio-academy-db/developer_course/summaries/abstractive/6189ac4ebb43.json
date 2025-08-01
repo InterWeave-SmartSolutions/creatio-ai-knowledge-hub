@@ -1,0 +1,33 @@
+{
+  "summary_id": "6189ac4ebb43",
+  "content_id": "c7028f12cf1e",
+  "summary_type": "abstractive",
+  "summary_text": "Today we will continue with Git, with doing other preparations, I will explain how to create with packages, how to integrate with Git and we will work with objects and data. In case of any questions, feel free to ask. I will be really happy to answer your questions.",
+  "key_points": [
+    "Today we will continue with Git, with doing other preparations, I will explain how to create with packages, how to integrate with Git and we will work with objects and data.",
+    "In case of any questions, feel free to ask.",
+    "I will be really happy to answer your questions."
+  ],
+  "keywords": [
+    "radius",
+    "like",
+    "clear",
+    "flash",
+    "number",
+    "run",
+    "running",
+    "command",
+    "need",
+    "radius cli"
+  ],
+  "topics": [],
+  "summary_length": 49,
+  "original_length": 692,
+  "compression_ratio": 0.0708092485549133,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T17:01:00.011469",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

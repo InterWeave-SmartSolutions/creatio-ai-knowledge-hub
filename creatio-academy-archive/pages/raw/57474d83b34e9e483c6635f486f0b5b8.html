@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+          <!-- Google Tag Manager -->
+      <script nonce="78d690e281c26d1d043177548d6e46da">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+          n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5C6KM9TP');</script>
+      <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+<meta name="description" content="The purpose of the modal box is to display data in a dialog box. The modal box behaves as follows: The page from which the modal box was called remains open. Creatio does not go to a new page. The browser history does not record the page the modal box displays. The modal box lets you:" />
+<link rel="canonical" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/modal_window/overview" />
+<meta property="og:url" content="https://academy.creatio.com/docs/7-18/developer/interface_elements/modal_window/overview" />
+<meta property="og:title" content="Modal box" />
+<meta property="og:description" content="The purpose of the modal box is to display data in a dialog box. The modal box behaves as follows: The page from which the modal box was called remains open. Creatio does not go to a new page. The browser history does not record the page the modal box displays. The modal box lets you:" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/docs/sites/academy_en/themes/creatio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/modal_window/overview" />
+
+    <title>Modal box | Creatio Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="https://libraries.creatio.com/drupal_fixed_tabs/tabs.css" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/align.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/fieldgroup.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/container-inline.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/clearfix.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/details.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/hidden.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/item-list.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/js.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/nowrap.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/position-container.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/reset-appearance.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/resize.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-counter.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-counters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-general-info.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/tablesort.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/modules/academy/ts_title_anchor/css/ts-title-anchor.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/core/modules/layout_discovery/layouts/onecol/onecol.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/assets/vendor/normalize-css/normalize.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/normalize-fixes.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/bootstrap4/css/bootstrap.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme-dark.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/slick/slick.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.nice-select/jquery.nice-select.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/base.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/elements.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/fonts.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.scrollbar/jquery.scrollbar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/select2/css/select2.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/layouts/layout.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/action-links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/breadcrumb.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/button.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/collapse-processed.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/container-inline.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/details.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/exposed-filters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/field.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/icons.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/inline-form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/item-list.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/menu.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/more-link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/pager.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabledrag.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tableselect.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tablesort.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabs.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/textarea.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/ui-dialog.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/node.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/fancybox/jquery.fancybox.min.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/fancybox.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/block.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/footer.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/header.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/sidebar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/notification.css?szsnyq" />
+<link rel="stylesheet" media="print" href="/docs/themes/custom/creatio_academy/css/theme/print.css?szsnyq" />
+
+    
+  </head>
+  <body class="path-node page-node-type-developer-documentation">
+          <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="creatio-page d-flex flex-column">
+        <div class="region region-informer">
+    <div id="block-notification-union" class="block block-simple-block block-simple-blocknotification-union">
+  
+    
+      <div id="union-notification">
+<div class="union-content notification-com">
+<p class="union-subtitle">This documentation is valid for Creatio version 7.17(7.18).</p>
+
+<p class="union-subtitle">We recommend using <a href="https://academy.creatio.com/docs/8.x/" target="_blank">the newest version of Creatio documentation</a>.</p>
+
+<!-- <div class="union-close">&nbsp;</div> -->
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+  <header role="banner">
+          <div class="creatio-region creatio-region_top">
+        <div class="creatio-container">
+            <div class="region region-top">
+    <div id="block-menutoggle" class="block block-simple-block block-simple-blockmenu-toggle">
+  
+    
+      <div class="menu-toggle"><span>&nbsp;</span></div>
+
+  </div>
+<div id="block-logowhite-2" class="block block-simple-block block-simple-blocklogo-white">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo-white.svg"></a></p>
+
+  </div>
+<div id="block-search" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-sites-menu" id="block-sites" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-usermenu" class="block block-ts-user block-ts-user-menu-block">
+  
+    
+      <ul class="user-menu">
+      <li class="user-menu__item">
+      <a class="user-menu__link" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/modal_window/overview">Log in</a>
+    </li>
+  </ul>
+
+  </div>
+<div id="block-usermenumobile" class="block block-ts-user block-ts-user-menu-mobile-block">
+  
+    
+      <ul class="user-menu-mobile">
+      <li class="user-menu-mobile__item">
+      <div class="user-menu-mobile__user user-menu-mobile__user_icon"></div>
+      <ul class="user-menu-mobile__submenu">
+        <li class="user-menu-mobile__subitem">
+          <a class="user-menu-mobile__sublink" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/modal_window/overview">Log in</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+              <div class="creatio-region creatio-region_header">
+        <div class="creatio-container">
+            <div class="region region-header">
+    <div id="block-logo" class="block block-simple-block block-simple-blocklogo">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo.svg"></a></p>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/docs/8.x">Guides</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/e-learning">E-learning</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/training">Training</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/certification">Certification</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-sites-2-menu" id="block-sites-2" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-2-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-search-2" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+      </header>
+
+      <div class="creatio-region creatio-region_breadcrumb">
+      <div class="creatio-container">
+          <div class="region region-breadcrumb">
+    <div id="block-breadcrumbnaviagtion" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  
+  <div class="creatio-region creatio-region_main">
+    <div class="creatio-container">
+                <div class="region region-breadcrumb-mobile">
+    <div id="block-breadcrumbnaviagtion-2" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      
+      <main class="creatio-main" role="main">
+                                                    
+        <div class="creatio-content creatio-content_small">
+          <div class="creatio-content__inner creatio-content__inner_bg">
+                            <div class="region region-messages">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            
+              <div class="region region-content">
+    <div id="block-creatio-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Modal box</span>
+</h1>
+
+
+  </div>
+<div id="block-creatio-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article data-history-node-id="1432" class="node node--type-developer-documentation node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-ts-nav block-ts-nav-sdk-navigation">
+  
+    
+      <div class="ts-nav-sdk">
+  <div class="ts-nav-sdk__container">
+    <div class="ts-nav-sdk__items">
+      <div class="ts-nav-sdk__item">
+        <a class="ts-nav-sdk__link ts-nav-sdk__link_active" href="#"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_guide"></span>Guide</a>
+      </div>
+    </div>
+  </div>
+      <div class="ts-nav-sdk__container">
+      <ul class="ts-nav-sdk__items">
+                                <li class="ts-nav-sdk__item">
+          <a class="ts-nav-sdk__link" data-id="2173" href="#case-2173"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_case"></span>Examples</a>
+                  </li>
+      </ul>
+    </div>
+    </div>
+<div class="ts-nav-sdk-mobile">
+  <select class="ts-nav-sdk-mobile__select">
+    <option value="0">Guide</option>
+          <optgroup label="Cases">
+                  <option value="2173">Implement a modal box</option>
+              </optgroup>
+          </select>
+</div>
+
+  </div>
+<div class="block block-ts-doc block-ts-doc-versions">
+  
+    
+        <div class="ts-doc-versions">
+    <select class="ts-doc-versions__select">
+                                                <option value="/docs/7-18/developer/interface_elements/modal_window/overview" selected>Version 7.18</option>
+                              <option value="/docs/7-17/developer/interface_elements/modal_window/overview">Version 7.17</option>
+                              <option value="/docs/7-16/developer/interface_elements/modal_window/overview">Version 7.16</option>
+          </select>
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-121" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/beginner.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Beginner</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationbody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>The <strong>purpose</strong> of the modal box is to display data in a dialog box.</p>
+
+<p>The modal box <strong>behaves</strong> as follows:</p>
+
+<ul>
+	<li>The page from which the modal box was called remains open.</li>
+	<li>Creatio does not go to a new page.</li>
+	<li>The browser history does not record the page the modal box displays.</li>
+</ul>
+
+<p>The modal box <strong>lets you</strong>:</p>
+
+<ul>
+	<li>Display any information. For example, text, buttons, etc.</li>
+	<li>
+	<p>Select data from a <a href="/node/285">lookup</a>. For example, the modal box displays the contact lookup to select the activity owner.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/BasicUIElements/ModalBox/7.18/scr_ModalBox.png"></div>
+	</div>
+	</li>
+</ul>
+
+<p>The modal box includes the following <strong>components</strong>:</p>
+
+<ul>
+	<li>The <span class="filled">ModalBox</span> and <span class="filled">ModalBoxSchemaModule</span> schemas of the <span class="filled">NUI</span> package that implement the functionality of the modal box.</li>
+	<li>The <span class="filled">LookupUtilitiesV2</span> schema of the <span class="filled">NUI</span> package that implements calls to the modal box for selecting lookup data.</li>
+</ul>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-linked">
+  
+    
+      
+  <div class="field field--name-field-linked field--type-entity-reference field--label-above">
+    <div class="field__label">See also</div>
+          <div class="field__items">
+              <div class="field__item"><a href="/docs/7-18/user/setup_and_administration/system_settings_and_lookups/lookup_values/manage_lookup_values" hreflang="en">Manage lookup values</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-cases">
+  
+    
+      
+      <div class="field field--name-field-cases field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="2173" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Implement a modal box</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Implement a process task that displays a modal box as part of a business process. The box must contain text and <span class="key">Yes</span>, <span class="key">No</span>, <span class="key">Cancel</span> buttons.</p>
+
+<p>Set up the following button logic:</p>
+
+<ul>
+	<li>If you click <span class="key">Yes</span> or <span class="key">No</span>, the corresponding auto-generated pages open.</li>
+	<li>If you click <span class="key">Cancel</span>, the modal box closes.</li>
+</ul>
+
+<p>Set up logging for the process task.</p>
+</div>
+
+<h2>1. Create a process task<a class="title-anchor" href="#title-2173-1" id="title-2173-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">User task</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_user_task.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Specify the <strong>process task properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">UsrShowModalPageUserTask</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Show modal page (process user task)</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_user_task_props.png"></div>
+	</div>
+	</li>
+</ol>
+
+<p>Click <span class="key">Apply</span> to apply the properties.</p>
+
+<h2>2. Add process task parameters<a class="title-anchor" href="#title-2173-2" id="title-2173-2">&nbsp;</a></h2>
+
+<ol>
+	<li>
+	<p>Add a parameter that displays the message to the user.</p>
+
+	<ol>
+		<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the <span class="key">Parameters</span> node.</li>
+		<li>
+		<p>Fill out the <strong>parameter properties</strong>.</p>
+
+		<ul>
+			<li>Set <span class="key">Code</span> to "<span class="consolas">UsrDialogText</span>."</li>
+			<li>Set <span class="key">Title</span> to "<span class="consolas">Dialog message text</span>."</li>
+			<li>Set <span class="key">Type</span> to "<span class="consolas">Text</span>."</li>
+			<li>Select the <span class="key">Required</span> checkbox.</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_Add_UsrDialogText_Parameter.png"></div>
+		</div>
+		</li>
+	</ol>
+	</li>
+	<li>
+	<p>Add a parameter that passes the names of the displayed buttons from the process to the element. The parameter must accept comma-separated button codes in a string.</p>
+
+	<ol>
+		<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the <span class="key">Parameters</span> node.</li>
+		<li>
+		<p>Fill out the <strong>parameter properties</strong>.</p>
+
+		<ul>
+			<li>Set <span class="key">Code</span> to "<span class="consolas">UsrCommaSeparatedReturnCodes</span>."</li>
+			<li>Set <span class="key">Title</span> to "<span class="consolas">Button return codes separated with comma</span>.”</li>
+			<li>Set <span class="key">Type</span> to "<span class="consolas">Text</span>."</li>
+			<li>Select the <span class="key">Required</span> checkbox.</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_Add_UsrCommaSeparatedReturnCodes_Parameter.png"></div>
+		</div>
+		</li>
+	</ol>
+	</li>
+	<li>
+	<p>Add a parameter that contains the code of the clicked button.</p>
+
+	<ol>
+		<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the <span class="key">Parameters</span> node.</li>
+		<li>
+		<p>Fill out the <strong>parameter properties</strong>.</p>
+
+		<ul>
+			<li>Set <span class="key">Code</span> to "<span class="consolas">UsrReturnCode</span>."</li>
+			<li>Set <span class="key">Title</span> to "<span class="consolas">Selected button code</span>."</li>
+			<li>Set <span class="key">Type</span> to "<span class="consolas">Text</span>."</li>
+			<li>Select the <span class="key">Resulting</span> checkbox.</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_Add_UsrReturnCode_Parameter.png"></div>
+		</div>
+		</li>
+	</ol>
+	</li>
+</ol>
+
+<h2>3. Implement the process task in the back-end<a class="title-anchor" href="#title-2173-3" id="title-2173-3">&nbsp;</a></h2>
+
+<ol>
+	<li>
+	<p>Set up process logging.</p>
+
+	<ol>
+		<li>
+		<p>Use the <span class="filled">using</span> directive to add the needed namespaces.</p>
+
+		<div class="code">
+		<div class="code__widgets">
+		<div class="code__source">
+		<pre class="prettyprint">
+using global::Common.Logging;
+using Terrasoft.Configuration;
+</pre>
+		</div>
+		</div>
+		</div>
+		</li>
+		<li>
+		<p>Implement the logic of the process task and process logging</p>
+
+		<div class="code">
+		<div class="code__widgets">
+		<div class="code__top">
+		<div class="code__title"><span class="filled">UsrShowModalPageUserTask</span></div>
+		</div>
+
+		<div class="code__source">
+		<pre class="prettyprint">
+namespace Terrasoft.Core.Process.Configuration
+{
+
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Linq;
+    using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Globalization;
+    using Terrasoft.Common;
+    using Terrasoft.Core;
+    using Terrasoft.Core.Configuration;
+    using Terrasoft.Core.DB;
+    using Terrasoft.Core.Entities;
+    using Terrasoft.Core.Process;
+    using Terrasoft.UI.WebControls.Controls;
+
+    /* Required for logging to operate correctly. */
+    using global::Common.Logging;
+
+    /* Required for message sending tools to operate correctly. */
+    using Terrasoft.Configuration;
+
+    #region Class: UsrShowModalPageUserTask
+
+    /// &lt;exclude/&gt;
+    public partial class UsrShowModalPageUserTask
+    {
+        /* Set up logging.
+        Create an individual logger. Record the logging results to the Common.log file. */
+        private static readonly ILog _log = LogManager.GetLogger("UsrShowModalPageUserTask");
+
+        /* Define the sender in the back-end. */
+        private const string MessageSender = "UsrShowModalPageUserTask";
+
+        #region Methods: Protected
+
+        /* The business logic of the process task. */
+        protected override bool InternalExecute(ProcessExecutingContext context) {
+
+            /* Log the information level message. */
+            _log.InfoFormat("UserTask works well. UsrDialogText = {0}, UsrCommaSeparatedReturnCodes = {1}", UsrDialogText, UsrCommaSeparatedReturnCodes);
+            /* Create a message. */
+            var messageData = new
+            {
+                /* The text in the dialog box. */
+                UsrDialogText = UsrDialogText,
+                /* The comma-separated button return codes. */
+                UsrCommaSeparatedReturnCodes = UsrCommaSeparatedReturnCodes,
+                /* The service parameter. The unique ID of the element instance within the process instance. */
+                procElUId = UId
+            };
+            /* Serialize the message body object. */
+            string messageBody = JsonConvert.SerializeObject(messageData);
+            /* The message body sent from the back-end to front-end. */
+            MsgChannelUtilities.PostMessage(UserConnection, MessageSender, messageBody);
+            return false;
+        }
+
+        #endregion
+
+        #region Methods: Public
+
+        public override bool CompleteExecuting(params object[] parameters) {
+            return base.CompleteExecuting(parameters);
+        }
+
+        public override void CancelExecuting(params object[] parameters) {
+            base.CancelExecuting(parameters);
+        }
+
+        public override string GetExecutionData() {
+            return string.Empty;
+        }
+
+        public override ProcessElementNotification GetNotificationData() {
+            return base.GetNotificationData();
+        }
+
+        #endregion
+
+    }
+
+    #endregion
+
+}
+</pre>
+		</div>
+		</div>
+		</div>
+		</li>
+	</ol>
+	</li>
+	<li>Click <span class="key">Publish</span> on the Designer’s toolbar.</li>
+</ol>
+
+<h2>4. Implement the task processing in the front-end<a class="title-anchor" href="#title-2173-4" id="title-2173-4">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>Click <span class="key">Add</span> → <span class="key">Module</span> on the section list toolbar.
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>module properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">UsrShowModalPageUserTaskMixin</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">ShowModalPageUserTaskMixin</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_UsrShowModalPageUserTaskMixin_Settings.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Add the source code in the Module Designer.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">UsrShowModalPageUserTaskMixin</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("UsrShowModalPageUserTaskMixin", [],
+    function() {
+        Ext.define("Terrasoft.configuration.mixins.ShowModalPageUserTaskMixin", {
+            alternateClassName: "Terrasoft.ShowModalPageUserTaskMixin",
+            
+            /* Subscribe to the WebSocket channel messages. */
+            UsrSubscribeForShowModalWindowServerChannelMessages: function() {
+                this.Terrasoft.ServerChannel.on(this.Terrasoft.EventName.ON_MESSAGE, this.UsrServerChannelMessageHandler, this);
+            },
+            /* Unsubscribe from the WebSocket channel messages. */
+            UsrUnsubscribeForShowModalWindowServerChannelMessages: function() {
+                this.Terrasoft.ServerChannel.un(this.Terrasoft.EventName.ON_MESSAGE, this.UsrServerChannelMessageHandler, this);
+            },
+            
+            UsrShowModalPageUserTask_procElUId: "",
+            
+            /* The function that processes WebSocket messages. */
+            UsrServerChannelMessageHandler: function(scope, message) {
+                if (!message) {
+                    return;
+                }
+                /* Define the message from the UsrShowModalPageUserTask sender. */
+                if (message.Header &amp;&amp; message.Header.Sender !== "UsrShowModalPageUserTask") {
+                    return;
+                }
+                if (message.Body) {
+                    var bodyData = this.Ext.decode(message.Body);
+                    var UsrDialogText = bodyData.UsrDialogText;
+                    var UsrCommaSeparatedReturnCodes = bodyData.UsrCommaSeparatedReturnCodes;
+                    
+                    /* Retrieve and save the button codes as an array. */
+                    var returnCodesArray = UsrCommaSeparatedReturnCodes.split(",");
+                    var procElUId = bodyData.procElUId;
+                    UsrShowModalPageUserTask_procElUId = procElUId;
+                    
+                    /* Display the dialog box. */
+                    this.showConfirmationDialog(UsrDialogText, this.UsrGetConfirmationResult, returnCodesArray);
+                }
+            },
+            /* Process the button code selection results. */
+            UsrGetConfirmationResult: function(returnCode) {
+                this.console.log("UsrGetConfirmationResult: returnCode = " + returnCode + " UsrShowModalPageUserTask_procElUId = " + UsrShowModalPageUserTask_procElUId);
+                
+                var procElUId = UsrShowModalPageUserTask_procElUId;
+                
+                /* Create a POST request. */
+                this.Terrasoft.AjaxProvider.request({
+                    url: "../ServiceModel/ProcessEngineService.svc/" + procElUId + "/CompleteExecution" + "?UsrReturnCode=" + returnCode,
+                    method: "POST",
+                    scope: this,
+                    callback: function(request, success, response) {	
+                    }
+                });
+            }
+        });
+    });
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer’s toolbar.</li>
+</ol>
+
+<h2>5. Create a replacing view model of the container<a class="title-anchor" href="#title-2173-5" id="title-2173-5">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>module properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">MainHeaderSchema</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">MainHeaderSchema</span>."</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">MainHeaderSchema</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_schema_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Add the source code in the Module Designer.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">MainHeaderSchema</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("MainHeaderSchema", ["UsrShowModalPageUserTaskMixin"], function(){
+    return {
+        mixins: {
+            ShowModalPageUserTaskMixin: "Terrasoft.ShowModalPageUserTaskMixin"
+        },
+        methods: {
+            init: function() {
+                this.callParent(arguments);
+                this.UsrSubscribeForShowModalWindowServerChannelMessages();
+            },
+            destroy: function() {
+                this.callParent(arguments);
+                this.UsrUnsubscribeForShowModalWindowServerChannelMessages();
+            }	
+        }
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer’s toolbar.</li>
+</ol>
+
+<h2>6. Create a business process that displays the modal box<a class="title-anchor" href="#title-2173-6" id="title-2173-6">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Business process</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateBusinessProcessSchema/scr_add_schema.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>process properties</strong>.</p>
+
+	<ul>
+		<li>Set the <span class="key">Title</span> property in the element setup area to "<span class="consolas">Show Modal Page Example Process</span>."</li>
+		<li>Set the <span class="key">Code</span> property on the <span class="key">Settings</span> tab of the element setup area to "<span class="consolas">UsrShowModalPageExampleProcess</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_UsrShowModalPageExampleProcess_Settings.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Implement the business process.</p>
+
+	<ol>
+		<li>
+		<p>Add the process task.</p>
+
+		<ol>
+			<li>
+			<p>Click <span class="key">System actions</span> in the Designer’s element area and place a <span class="key">User task</span> element between the <span class="key">Simple</span> start event and <span class="key">Terminate</span> end event on the Process Designer’s working area.</p>
+
+			<div class="media">
+			<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_add_UserTask.png"></div>
+			</div>
+			</li>
+			<li>
+			<p>Specify the <strong>process task properties</strong>.</p>
+
+			<ul>
+				<li>Set <span class="key">Which user task to perform?</span> to "<span class="consolas">Show modal page (process user task)</span>."</li>
+				<li>
+				<p>Fill out the process task parameters.</p>
+
+				<ul>
+					<li>Set <span class="key">Dialog message text</span> to "<span class="consolas">Do you like new window?</span>."</li>
+					<li>Set <span class="key">Button return codes separated with comma</span> to "<span class="consolas">yes,no,cancel</span>."</li>
+				</ul>
+
+				<div class="media">
+				<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_UserTask_Parameters.png"></div>
+				</div>
+				</li>
+			</ul>
+			</li>
+		</ol>
+		</li>
+		<li>
+		<p>Add the auto-generated page.</p>
+
+		<ol>
+			<li>
+			<p>Click <span class="key">User actions</span> in the Designer's element area and place an <span class="key">Auto-generated page</span> element in the Process Designer’s working area.</p>
+
+			<div class="media">
+			<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_add_AutoGeneratedPage.png"></div>
+			</div>
+			</li>
+			<li>
+			<p>Fill out the <strong>auto-generated page properties</strong>.</p>
+
+			<ul>
+				<li>Set <span class="key">Title</span> to "<span class="consolas">YES</span>."</li>
+				<li>Set <span class="key">Page title</span> to "<span class="consolas">Pressed YES</span>."</li>
+			</ul>
+			</li>
+			<li>
+			<p>Add a button.</p>
+
+			<ol>
+				<li>Click the <img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the <span class="key">Buttons</span> block.</li>
+				<li>
+				<p>Fill out the <strong>button properties</strong>.</p>
+
+				<ul>
+					<li>Set <span class="key">Caption</span> to "<span class="consolas">OK</span>."</li>
+				</ul>
+
+				<div class="media">
+				<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_add_OKButton.png"></div>
+				</div>
+				</li>
+				<li>Save the changes.</li>
+			</ol>
+			</li>
+		</ol>
+
+		<p>View the auto-generated page settings on the figure below.</p>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_AutoGeneratedPage_Settings.png"></div>
+		</div>
+		</li>
+		<li>
+		<p>Set up the conditional flow.</p>
+
+		<ol>
+			<li>Select <span class="key">Add flow</span> in the process task menu and connect the process task to the auto-generated page.</li>
+			<li>
+			<p>Convert the sequence flow into a conditional flow. To do this, click the <img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_Settings_Button.png"> button and select <span class="key">Conditional flow</span> in the flow menu.</p>
+
+			<div class="media">
+			<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_ConditionalFlow.png"></div>
+			</div>
+			</li>
+			<li>
+			<p>Fill out the <strong>conditional flow properties</strong>.</p>
+
+			<ul>
+				<li>Set <span class="key">Title</span> to "<span class="consolas">yes</span>."</li>
+			</ul>
+			</li>
+			<li>
+			<p>Specify the move conditions.</p>
+
+			<ol>
+				<li>Click the <img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_Condition_Button.png"> button of the <span class="key">Condition to move down the flow</span> property in the element setup area.</li>
+				<li>Select the "<span class="consolas">Show modal page (process user task)</span>" process element.</li>
+				<li>Double-click the "<span class="consolas">Selected button code</span>" process parameter.</li>
+				<li>
+				<p>Set the parameter formula.</p>
+
+				<div class="code">
+				<div class="code__widgets">
+				<div class="code__source">
+				<pre class="prettyprint">
+[#Show modal page (process user task).Selected button code#] == "yes"
+</pre>
+				</div>
+				</div>
+				</div>
+				</li>
+				<li>Save the changes.</li>
+			</ol>
+			</li>
+		</ol>
+		</li>
+		<li>Add a <span class="filled">NO</span> auto-generated page connected to the corresponding <span class="filled">no</span> conditional flow in a similar way.</li>
+		<li>
+		<p>Set up the default flow.</p>
+
+		<ol>
+			<li>Select <span class="key">Add flow</span> in the process task menu and connect the process task to the <span class="key">Terminate</span> end event.</li>
+			<li>
+			<p>Convert the conditional flow into a default flow. To do this, click the <img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_Settings_Button.png"> button and select <span class="key">Default flow</span> in the flow menu.</p>
+
+			<div class="media">
+			<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_DefaultFlow.png"></div>
+			</div>
+			</li>
+			<li>
+			<p>Fill out the <strong>default flow properties</strong>.</p>
+
+			<ul>
+				<li>Set <span class="key">Title</span> to "<span class="consolas">cancel</span>."</li>
+			</ul>
+			</li>
+		</ol>
+		</li>
+	</ol>
+
+	<p>View the business process in the figure below</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_BusinessProcess.png"></div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Process Designer’s toolbar.</li>
+</ol>
+
+<h2>Outcome of the example<a class="title-anchor" href="#title-2173-7" id="title-2173-7">&nbsp;</a></h2>
+
+<p>You can run the <span class="filled">Show Modal Page Example Process</span> business process from any Creatio section. For example, run the business process from the <span class="key">Contacts</span> section.</p>
+
+<p>To <strong>run</strong> the <span class="filled">Show Modal Page Example Process</span> business process from the <span class="key">Contacts</span> section:</p>
+
+<ol>
+	<li>Open the <span class="key">Contacts</span> section.</li>
+	<li>Click the <img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_RunProcess_Button.png"> button in the section panel.</li>
+	<li>Select the <span class="filled">Show Modal Page Example Process</span> business process and click <span class="key">Run</span>.</li>
+</ol>
+
+<p>As a result, the <span class="filled">Show Modal Page Example Process</span> business process will display the modal box in the <span class="key">Contacts</span> section.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_ModalBox_result.png"></div>
+</div>
+
+<ul>
+	<li>
+	<p>If you click the <span class="key">Yes</span> button, the <span class="key">Pressed YES</span> page that contains the <span class="key">OK</span> button will open.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_Pressed_Yes.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>If you click the <span class="key">No</span> button, the <span class="key">Pressed NO</span> page that contains the <span class="key">OK</span> button will open.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ModalPageUserTask/7.18/scr_Pressed_No.png"></div>
+	</div>
+	</li>
+	<li>If you click the <span class="key">Cancel</span> button, the modal box will close.</li>
+</ul>
+
+<p>View the request logging results in the <span class="filled">Common.log</span> file in the Creatio root directory. Use the browser developer tools to track the WebSocket messages passed from the back-end to the front-end.</p>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkModalBoxPackage_2021-10-27_08.27.21.zip" target="_blank">Package with example implementation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+          </div>
+  
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+          </div>
+          
+        </div>
+
+                  <aside class="creatio-sidebar creatio-sidebar_first" role="complementary">
+              <div class="region region-sidebar-first">
+    <div id="block-documentationnaviagtion" class="block block-ts-nav block-ts-nav-doc-nav">
+  
+    
+      <div class="ts-nav-block"><a href="/docs/" class="ts-nav-block__link">Documentation</a><div class="ts-nav-block__title">Developer documentation</div>
+</div>
+<div class="ts-nav-container"><ul class="ts-nav-menu"><li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/getting_started" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Getting started&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Architecture&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/development_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Development tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/back_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Back-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/front_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Front-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/integrations_and_api" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Integrations & API&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements" class="ts-nav-menu__link ts-nav-menu__link_expanded ts-nav-menu__link_open" hreflang="en">Interface elements&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+      <ul class="ts-nav-menu__children">
+      <li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/main_menu" class="ts-nav-menu__link" hreflang="en">Main menu</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/section" class="ts-nav-menu__link" hreflang="en">Section</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/record_page" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Record page&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/detail" class="ts-nav-menu__link" hreflang="en">Detail</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/mini_page" class="ts-nav-menu__link" hreflang="en">Mini page</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/modal_window" class="ts-nav-menu__link ts-nav-menu__link_open" hreflang="en">Modal window</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/communication_panel" class="ts-nav-menu__link" hreflang="en">Communication panel</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/command_line" class="ts-nav-menu__link" hreflang="en">Command line</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/dashboard_widgets" class="ts-nav-menu__link" hreflang="en">Dashboard widgets</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/chats" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Chats&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/interface_control_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Interface control tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+
+    </ul>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/application_components" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Application components&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/mobile_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Mobile development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/marketplace_app_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Marketplace app development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+</ul>
+</div>
+
+  </div>
+
+  </div>
+
+            <div class="creatio-sidebar__toggle"></div>
+          </aside>
+        
+                  <aside class="creatio-sidebar creatio-sidebar_second" role="complementary">
+              <div class="region region-sidebar-second">
+    <div id="block-example" class="block block-ts-nav block-ts-nav-page-nav">
+  
+    
+      <div class="ts-nav-page">
+  </div>
+
+  </div>
+
+  </div>
+
+          </aside>
+              </main>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="creatio-region creatio-region_footer">
+      <div class="creatio-container">
+          <div class="region region-footer">
+    <div id="block-footer" class="block block-simple-block block-simple-blockfooter">
+  
+    
+      <div class="footer">
+<div class="footer-left">
+<ul class="footer-socials">
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_fb" href="https://www.facebook.com/CreatioCompany" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_in" href="https://www.linkedin.com/company/creatioglobal" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_yt" href="https://www.youtube.com/c/creatio" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_tw" href="https://www.twitter.com/Creatio_Global" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_ow" href="https://www.owler.com/company/Creatio" target="_blank">&nbsp;</a></li>
+</ul>
+</div>
+
+<div class="footer-contact">
+<div class="footer-title">Connect with us</div>
+
+<div class="footer-content">
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+16177657997">USA: +1 617 765 7997</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+442033840040">UK: +44 20 3384 0040</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+61261452888">Australia: +61 261 452 888</a></div>
+</div>
+
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:info@creatio.com">info@creatio.com</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:support@creatio.com">support@creatio.com</a></div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+    <div class="creatio-region creatio-region_bottom">
+      <div class="creatio-container">
+          <div class="region region-bottom">
+    <div id="block-allrightsreserved" class="block block-simple-block block-simple-blockfooter-bottom">
+  
+    
+      <p>© 2025 Creatio. All rights reserved.&nbsp; |&nbsp; <a href="https://www.creatio.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="creatio-bg"></div>
+
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/docs\/","pathPrefix":"","currentPath":"node\/1432","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"94c0ca72342e8e43fd5c70378d64533b2b6422845e0b3fd749b2ff1b4bd0b914"}}</script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery_3.7.1_jquery.min.js?v=3.7.1"></script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery-once-2.2.3/jquery.once.min.js?v=2.2.3"></script>
+<script src="/docs/core/misc/drupalSettingsLoader.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.init.js?v=10.4.1"></script>
+<script src="/docs/libraries/fancybox/jquery.fancybox.min.js?v=1"></script>
+<script src="/docs/themes/custom/creatio_academy/js/fancybox.js?v=1"></script>
+<script src="/docs/libraries/prettify/prettify.js?v=1"></script>
+<script src="/docs/libraries/slick/slick.js?v=1"></script>
+<script src="/docs/libraries/jquery.nice-select/jquery.nice-select.js?v=1"></script>
+<script src="https://libraries.creatio.com/drupal_fixed_tabs/tabs.js"></script>
+<script src="/docs/themes/custom/creatio_academy/js/creatio.js?v=1"></script>
+<script src="/docs/libraries/jquery.cookie/jquery.cookie.js?szsnyq"></script>
+<script src="/docs/themes/custom/creatio_academy/js/notification.js?szsnyq"></script>
+<script src="/docs/modules/marketplace/ts_datalayer/js/ts-datalayer.js?szsnyq"></script>
+<script src="/docs/libraries/select2/js/select2.js?v=1"></script>
+<script src="/docs/libraries/select2/js/select2.position.js?v=1"></script>
+<script src="/docs/libraries/jquery.scrollbar/jquery.scrollbar.js?v=1"></script>
+<script src="/docs/modules/academy/ts_doc/js/ts-doc-version.js?szsnyq"></script>
+<script src="https://libraries.creatio.com/ts_country/index.js"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-breadcrumb.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-doc-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-page-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-sdk-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_title_anchor/js/ts-title-anchor.js?szsnyq"></script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <g id="svg-copy" class="svg-icon svg-icon_copy">
+        <path d="M15.111,18H1.889A1.848,1.848,0,0,1,0,16.2V3.6A1.848,1.848,0,0,1,1.889,1.8H5.837a2.87,2.87,0,0,1,5.326,0h3.948A1.848,1.848,0,0,1,17,3.6V16.2A1.848,1.848,0,0,1,15.111,18ZM3.777,12.6v1.8h6.611V12.6Zm0-3.6v1.8h9.445V9Zm0-3.6V7.2h9.445V5.4ZM8.5,1.8a.924.924,0,0,0-.944.9.945.945,0,0,0,1.889,0A.924.924,0,0,0,8.5,1.8Z"/>
+      </g>
+
+      <g id="svg-prev" class="svg-icon svg-icon_arrow">
+        <path d="M5.488,12.779,0,6.39,5.488,0" transform="translate(1 0.652)"/>
+      </g>
+
+      <g id="svg-next" class="svg-icon svg-icon_arrow">
+        <path d="M0,12.779,5.488,6.39,0,0" transform="translate(0.759 0.652)"/>
+      </g>
+    </svg>
+  </body>
+</html>

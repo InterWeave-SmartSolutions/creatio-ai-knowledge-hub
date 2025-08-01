@@ -1,0 +1,38 @@
+{
+  "summary_id": "e429ec8cd29b",
+  "content_id": "8248991c3929",
+  "summary_type": "extractive",
+  "summary_text": "# Speaker 1\n\nAnd then when finished I will show you server side programming in C Sharp and server side includes programming \nwith data model, working with database, writing your own C scripts, making your own classes of course integrating \nwith modern powerful tools like Visual Studio or Rider and I will show you how to debug, how to process object \nevents so how to do different server side things. # Speaker 1\n\n--- Page 3 ---\n\nFinally when we decide that our solution is good enough, then we can go to production environment and choose \nproper moment of time to load our settings like the time where minimum of our users are active and then the same \nway as we imported solutions on test environment you can easily import it on production, also taking care about \nbacking up existing settings. So the main reason why it is not recommended to operate as many developers with \none site is such operations like compilation, like debugging and other scenarios where a website will be, let's say, will \nlook like it's hanging and not responding if all the team is okay with it and such developer actions are not performed \ntoo often. So invite email you have chance to \ndownload such zip archive file and depending on the platform, Windows or Linux and depending on the Target \ndatabase, Microsoft SQL or Postgres, you may find the three different options. # Speaker 1\n\nIf you prefer to run connection to your database using Windows credentials, then you have to go to advanced \nsettings of the pool, find identity and change this identity to some specific Windows user account which you expect \nto use for connection between application server and database. Select our created app inside of default website right button Click Add application 0 alias this \nis always 0 alias Same application pool and physical path should point to the special folder terrasoft web app this is \nfolder for our inner application click ok. That's how we can register our app in iis. But Creature ID mode means you have \nno access to file system, you cannot use any type of version control except of SVN and you cannot debug server \nside easily and effectively. It's Just to make sure everything is working fine and we \nfinishing our switch into this developer mode file system Developer Mode it looks like we have not enough time \ntoday to show git integration, so I plan to show it for you tomorrow. # Speaker 1\n\nThis is a special package named custom and custom package is designed for cases when you so when customer \ndoesn't think too much about storage of settings at all and when customer just don't know the architecture and they \njust want to customize system, save it, perform some no code settings and that's it. But in case if you customize big base product solution like sales, service or marketing, and in case if you \nneed to customize existing sections like make your own changes into opportunities, into contacts, into accounts and \nso on, it makes sense to make visible and available for customization all base product structures.",
+  "key_points": [
+    "# Speaker 1\n\nAnd then when finished I will show you server side programming in C Sharp and server side includes programming \nwith data model, working with database, writing your own C scripts, making your own classes of course integrating \nwith modern powerful tools like Visual Studio or Rider and I will show you how to debug, how to process object \nevents so how to do different server side things.",
+    "# Speaker 1\n\n--- Page 3 ---\n\nFinally when we decide that our solution is good enough, then we can go to production environment and choose \nproper moment of time to load our settings like the time where minimum of our users are active and then the same \nway as we imported solutions on test environment you can easily import it on production, also taking care about \nbacking up existing settings.",
+    "So the main reason why it is not recommended to operate as many developers with \none site is such operations like compilation, like debugging and other scenarios where a website will be, let's say, will \nlook like it's hanging and not responding if all the team is okay with it and such developer actions are not performed \ntoo often.",
+    "So invite email you have chance to \ndownload such zip archive file and depending on the platform, Windows or Linux and depending on the Target \ndatabase, Microsoft SQL or Postgres, you may find the three different options.",
+    "# Speaker 1\n\nIf you prefer to run connection to your database using Windows credentials, then you have to go to advanced \nsettings of the pool, find identity and change this identity to some specific Windows user account which you expect \nto use for connection between application server and database."
+  ],
+  "keywords": [
+    "speaker",
+    "file",
+    "windows",
+    "use",
+    "creation",
+    "package",
+    "need",
+    "server",
+    "database",
+    "like"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 526,
+  "original_length": 16588,
+  "compression_ratio": 0.031709669640704125,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:54:45.919848",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1124,
+    "method": "tfidf_position_ranking"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "summary_id": "4b7069115b4b",
+  "content_id": "3c30ea1c92f0",
+  "summary_type": "abstractive",
+  "summary_text": "Developing different features and functionality that. require some programming on Creature platform. Today I will show you how to make something that you probably get used to do when you operate with any like modern version, modern. version of Visual Studio or other.",
+  "key_points": [
+    "Developing different features and functionality that.",
+    "require some programming on Creature platform."
+  ],
+  "keywords": [
+    "speaker",
+    "workplace",
+    "like",
+    "page",
+    "button",
+    "make",
+    "sections",
+    "today",
+    "workplaces",
+    "new"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 43,
+  "original_length": 574,
+  "compression_ratio": 0.07491289198606271,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:57:54.455325",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

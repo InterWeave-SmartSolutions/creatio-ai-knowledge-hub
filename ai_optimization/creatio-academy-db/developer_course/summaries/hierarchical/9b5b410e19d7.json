@@ -1,0 +1,60 @@
+{
+  "summary_id": "9b5b410e19d7",
+  "content_id": "ce77ce58529f",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: detail, module, entity, web service, schema",
+  "key_points": [
+    "detail",
+    "module",
+    "entity",
+    "web service",
+    "schema"
+  ],
+  "keywords": [
+    "creation",
+    "file",
+    "windows",
+    "use",
+    "package",
+    "database",
+    "need",
+    "server",
+    "just",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 8,
+  "original_length": 16093,
+  "compression_ratio": 0.0004971105449574349,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:54:15.596738",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "detail",
+        "module",
+        "entity",
+        "web service",
+        "schema"
+      ],
+      "keywords": [
+        "creation",
+        "file",
+        "windows",
+        "use",
+        "package",
+        "database",
+        "need",
+        "server",
+        "just",
+        "like"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

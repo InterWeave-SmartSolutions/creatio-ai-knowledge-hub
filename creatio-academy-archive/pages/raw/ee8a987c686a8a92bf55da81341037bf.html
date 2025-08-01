@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StreamUtilities
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StreamUtilities
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.StreamUtilities">
+  
+  
+  <h1 id="Terrasoft_Common_StreamUtilities" data-uid="Terrasoft.Common.StreamUtilities" class="text-break">Class StreamUtilities
+  </h1>
+  <div class="markdown level0 summary"><p>Comprises utility methods for working with streams.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">StreamUtilities</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.html">Terrasoft.Common</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_StreamUtilities_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StreamUtilities</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Terrasoft_Common_StreamUtilities_ReadStreamBufferLength" data-uid="Terrasoft.Common.StreamUtilities.ReadStreamBufferLength">ReadStreamBufferLength</h4>
+  <div class="markdown level1 summary"><p>The number of bytes that must be read from the current stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ReadStreamBufferLength = 100</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_GetAllBytes_" data-uid="Terrasoft.Common.StreamUtilities.GetAllBytes*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_GetAllBytes_System_IO_Stream_" data-uid="Terrasoft.Common.StreamUtilities.GetAllBytes(System.IO.Stream)">GetAllBytes(Stream)</h4>
+  <div class="markdown level1 summary"><p>Reads all bytes from stream, restores initial position.
+Please use <a class="xref" href="Terrasoft.Common.StreamUtilities.html#Terrasoft_Common_StreamUtilities_ReadToEnd_System_IO_Stream_">ReadToEnd(Stream)</a> method when only reading stream content is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] GetAllBytes(this Stream source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Stream bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>When <code data-dev-comment-type="paramref" class="paramref">source</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_GetContent_" data-uid="Terrasoft.Common.StreamUtilities.GetContent*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_GetContent_System_IO_Stream_" data-uid="Terrasoft.Common.StreamUtilities.GetContent(System.IO.Stream)">GetContent(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetContent(this Stream source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_GetStreamContent_" data-uid="Terrasoft.Common.StreamUtilities.GetStreamContent*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_GetStreamContent_System_IO_Stream_" data-uid="Terrasoft.Common.StreamUtilities.GetStreamContent(System.IO.Stream)">GetStreamContent(Stream)</h4>
+  <div class="markdown level1 summary"><p>String view of the stream’s contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStreamContent(Stream source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Stream contents shown as string (from the current position and to the end).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_StreamUtilities_GetStreamContent_System_IO_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To read stream’s contents, standard <code>ReadToEnd()</code> method of the <span class="xref">System.IO.StreamReader</span> class is used.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_IsNullOrEmpty_" data-uid="Terrasoft.Common.StreamUtilities.IsNullOrEmpty*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_IsNullOrEmpty_System_IO_Stream_" data-uid="Terrasoft.Common.StreamUtilities.IsNullOrEmpty(System.IO.Stream)">IsNullOrEmpty(Stream)</h4>
+  <div class="markdown level1 summary"><p>Checking if a stream is null or empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNullOrEmpty(this Stream source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_ReadAllBytes_" data-uid="Terrasoft.Common.StreamUtilities.ReadAllBytes*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_ReadAllBytes_System_IO_Stream_" data-uid="Terrasoft.Common.StreamUtilities.ReadAllBytes(System.IO.Stream)">ReadAllBytes(Stream)</h4>
+  <div class="markdown level1 summary"><p>Reads all bytes from beginning of the stream, restores initial position.
+Please use <a class="xref" href="Terrasoft.Common.StreamUtilities.html#Terrasoft_Common_StreamUtilities_ReadToEnd_System_IO_Stream_">ReadToEnd(Stream)</a> method when only reading stream content is required.
+This method should be used only in specific cases, and when source stream supports
+<span class="xref">System.IO.Stream.Position</span> and <span class="xref">System.IO.Stream.Length</span> properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ReadAllBytes(this Stream source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Stream bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>When <code data-dev-comment-type="paramref" class="paramref">source</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_ReadToEnd_" data-uid="Terrasoft.Common.StreamUtilities.ReadToEnd*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_ReadToEnd_System_IO_Stream_" data-uid="Terrasoft.Common.StreamUtilities.ReadToEnd(System.IO.Stream)">ReadToEnd(Stream)</h4>
+  <div class="markdown level1 summary"><p>Reads all bytes from stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ReadToEnd(this Stream source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_SaveToFile_" data-uid="Terrasoft.Common.StreamUtilities.SaveToFile*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_SaveToFile_System_IO_Stream_System_String_" data-uid="Terrasoft.Common.StreamUtilities.SaveToFile(System.IO.Stream,System.String)">SaveToFile(Stream, String)</h4>
+  <div class="markdown level1 summary"><p>Saving stream to file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SaveToFile(this Stream source, string filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>When passing as a parameter <code data-dev-comment-type="paramref" class="paramref">source</code> of the <code>null</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_Write_" data-uid="Terrasoft.Common.StreamUtilities.Write*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_Write_System_IO_Stream_System_IO_Stream_" data-uid="Terrasoft.Common.StreamUtilities.Write(System.IO.Stream,System.IO.Stream)">Write(Stream, Stream)</h4>
+  <div class="markdown level1 summary"><p>Recording to stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this Stream source, Stream value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Receiving stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_StreamUtilities_Write_System_IO_Stream_System_IO_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Extensible method.</p>
+<p>Recording to the receiving stream is done in blocks of <span class="xref">Terrasoft.Common.StreamUtilities.CopiedStreamBufferLength</span> bytes. After the recording is complete, the position in the source stream returns to its original state.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_Write_" data-uid="Terrasoft.Common.StreamUtilities.Write*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_Write__1_System_IO_Stream___0_System_Func___0_System_Byte____" data-uid="Terrasoft.Common.StreamUtilities.Write``1(System.IO.Stream,``0,System.Func{``0,System.Byte[]})">Write&lt;T&gt;(Stream, T, Func&lt;T, Byte[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write&lt;T&gt;(this Stream source, T value, Func&lt;T, byte[]&gt; func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="parametername">func</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_StreamUtilities_WriteTo_" data-uid="Terrasoft.Common.StreamUtilities.WriteTo*"></a>
+  <h4 id="Terrasoft_Common_StreamUtilities_WriteTo_System_IO_Stream_System_IO_Stream_" data-uid="Terrasoft.Common.StreamUtilities.WriteTo(System.IO.Stream,System.IO.Stream)">WriteTo(Stream, Stream)</h4>
+  <div class="markdown level1 summary"><p>Copies all the data from one stream into another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteTo(this Stream source, Stream targetStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">targetStream</span></td>
+        <td><p>Target stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

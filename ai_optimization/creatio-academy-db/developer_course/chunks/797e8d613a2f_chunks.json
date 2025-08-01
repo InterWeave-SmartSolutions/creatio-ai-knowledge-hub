@@ -1,0 +1,1928 @@
+[
+  {
+    "chunk_id": "b2cd02a7ea95a0e19022fdbe0c0f51f3",
+    "document_id": "797e8d613a2f",
+    "content": "--- Page 1 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 0,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 4,
+    "token_count": 5,
+    "context": {
+      "heading": null,
+      "paragraph_count": 1,
+      "position_in_document": 0
+    }
+  },
+  {
+    "chunk_id": "cf85a2e26825932e3f11c6033b1aade9",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nToday is session number eight of our development on Creature Platform Guided Learning and we will continue to \nwork with server side features and functionality. So today we will focus on the web services, making our own \nclasses at creation server side and make it work at the web service, write C Sharp code and practice with calling of \nweb services from Creature client side and from third party applications. So today is quite big plan. I hope we will \nhave enough time for this. So possibly we will spend a bit more than two hours. I will try to squeeze it into our \ntoday's session. So what about web services and why we need it? In general, web services are server side items that \nwe can easily call from client side with the help of HTTP queries.",
+    "chunk_type": "paragraph",
+    "chunk_index": 1,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 141,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 1
+    }
+  },
+  {
+    "chunk_id": "9573c135c5bde3dd590a18e20f9f1636",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo when you look at your network tab, for example, when you open any record page, you see plenty of different web \nservice requests, different HTTP calls that were executed from server side. So from client side to the server side \nwith different request body with different responses and in general all our website operation is set of different \nqueries, different HTTP requests and then getting some responses at client side. Creature has a lot of embedded out \nof the box web services. Some of them are system web services, some of them are developed at configuration. And \nwe can create our own web services if necessary. So we can do some certain functionality. And it will be much more \nefficient than to do the same functionality at client side. Because client side is less safe, it's less powerful. Not so \nfast as server side.",
+    "chunk_type": "paragraph",
+    "chunk_index": 2,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 148,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 2
+    }
+  },
+  {
+    "chunk_id": "5a559f4e6ad4085f5bb7ed53b3279b45",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo client side definitely is not the place where you would like to perform some sensitive data operations or \ncalculations. So server side is a very natural place to do some complicated business logic like doing some \ncalculations, data processing, file processing and so on. So web services can be created in configuration and if \nyou're interested you can look at existing examples. If you search for C Sharp sources that contain the word service \nin their name or title condition is contains. Okay, you will see a lot of examples. You can randomly select any item \nand you will see some C code inside. So the reason why we have so many web services is need to have and to run \ndifferent functionality at server side.",
+    "chunk_type": "paragraph",
+    "chunk_index": 3,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 130,
+    "token_count": 151,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 3
+    }
+  },
+  {
+    "chunk_id": "e146abad3940d4608e3fc56ec399ba75",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nUsually it's written in C Sharp and today I plan to explain how you can create your own web service, how you can \nmake it run and how it can be useful for you. So we have a lot of existing examples, but the most important you need \nto remember that web service is a special piece of functionality that was specially designed to be called from client \nside. And this piece of functionality usually has no own user interface. It can only be called with the help Of HTTP \nqueries like this, you can see examples of HTTP query. Here you can see request URL request method type, you can \nsee some payload which means data parameters, you can see some response and so on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 4,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 129,
+    "token_count": 147,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 4
+    }
+  },
+  {
+    "chunk_id": "79df649cb1c96724ca35b28bf4164067",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo in general web service is something that we can call from client side which works at server side, usually gets \nsome argument data, usually returns some result data and also makes some useful work etc. Side and that's why we \nneed it. So it's a very common functionality to use to run different business logic. We have a lot of standard based \nplatform web services like web services to get data like this one. This web service is called data service. We have a \nlot of other web services like file API services, like system setting services and a lot of other services. So probably \nhundreds of them. And also creation configuration offers us possibility to build our own web service to provide our \nown server side functionality that can be called from client side. And it doesn't matter which kind of client side you \nare using.\n\n--- Page 2 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 5,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 155,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 5
+    }
+  },
+  {
+    "chunk_id": "dd54ef9245e00688685b8db708c9ce6a",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIs it a freedom user interface or if it's a classic UI so you can use web services? Absolutely the same because server \nside is on the single item and requests and payload and response data will be parsed and will be processed \nabsolutely the same way. So we will study how to make our own web services. I also want to mention that web \nservice can be used with a third party applications. So this is a tool of other system may call some functionality at \ncreation ask and may probably transfer some arguments and then get some results. So we will study how to do this \nand before we continue I recommend you a couple of very useful examples. As you can see, we have plenty of \nexamples here in base configuration.",
+    "chunk_type": "paragraph",
+    "chunk_index": 6,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 137,
+    "token_count": 155,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 6
+    }
+  },
+  {
+    "chunk_id": "109e7ecf31de9ed541f4d3296d6bbf33",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIf you randomly select then you probably will face unnecessary complex examples which will be hard to use it for \ntraining purpose for your study. So that's why I recommend you to use couple of very useful and simple examples. \nFirst one is a cryptographic service located in CRT base package. So it's a base platform item and it will be found in \nany creatio system. So you can find it at any environment, you can open it to see its code. So physically this is a C \nsharp source code item piece of code written in C and then to be compiled inside of a package or inside of an \napplication. By the way, it's interesting, CRT base seems to be a package that is not compiled as separate assembly. \nYes.",
+    "chunk_type": "paragraph",
+    "chunk_index": 7,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 135,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 7
+    }
+  },
+  {
+    "chunk_id": "dc7efafb653b4e4364214689f5766fe2",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo it means that contents of this package will be compiled in all terasoft configuration sln and you will have terse of \nconfiguration DLL as A result. Okay, so this is a simple C Sharp code as I told you at the beginning, just expected but \nthat creation developer has some experience in C, in JavaScript and also in SQL scripting. So here your C Sharp \nknowledge will be requested to be important. So physically what we have here we have a class which is declared in \nthe C sharp module. We have set of usings and also namespace decoration. There is a tradition to put your custom \nclasses into terrasoft configuration namespace but you can also make your own namespace and put your logic \nthere. So it will work absolutely the same.",
+    "chunk_type": "paragraph",
+    "chunk_index": 8,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 136,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 8
+    }
+  },
+  {
+    "chunk_id": "13a60a4ae2cd4c19021798d52680f150",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nWe use set of standard base platform and system namespaces that are necessary to declare our class to use some \nof functions that we need inside of it. And mainly all these stuff is made possible thanks to system service model \nnamespace and I need to say that creatio uses. NET framework backed tools to create web services based on WCF \nWindows Communication foundation web services. So there are several conditions how we can make such a WCF \nweb service. We have to declare a class. In our case it's recommended, strongly recommended to inherit it from \nbase service. I will explain it a bit later why this is so recommended. But generally you have to create a class and \ndecorate it with a special C sharp attribute, service contract attribute and ASP NET compatibility requirements \nattribute.",
+    "chunk_type": "paragraph",
+    "chunk_index": 9,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 140,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 9
+    }
+  },
+  {
+    "chunk_id": "32545bb0ba6fa90a6b38a4a7f23aa7c7",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd then inside of this class you should make at least one method to turn it into endpoint something that we can \ncall and this endpoint must be decorated method. This method must be decorated with operation contract attribute \nand some additional web invoke attribute. All such rules how to make it were delivered from WCF so it was not \ninvented by creative developers. We just used WCF based approach for making creation web services. So when we \nhave such class decorated with attributes, when you have at least one method decorated with corresponding \nattributes, when we compile our package or when we compile our full creation solution system will make DLL based \non it and also it will host so it will register endpoints and it will host our web service at our website.",
+    "chunk_type": "paragraph",
+    "chunk_index": 10,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 138,
+    "token_count": 156,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 10
+    }
+  },
+  {
+    "chunk_id": "c5bf14ffe33885721e40a781717c293a",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\n--- Page 3 ---\n\nSo after compilation this web service will be fully operational and it will be ready for calls that will be done from \nclient side. It could be done from creation client side or even from third party applications client side. We will \ndemonstrate how you can use it. So I will show you so the main reason why we need web services is to make some \nfunctionality that can be easily called from client side of creature page or from client side of third party application. \nSo we can also use it for integration purpose. Okay, let's look Closer how in general it works, we can create at least \none method decorated with attributes, and it makes sense to organize some kind of attributes that will be passed \ninto this method and get some results back.",
+    "chunk_type": "paragraph",
+    "chunk_index": 11,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 143,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 11
+    }
+  },
+  {
+    "chunk_id": "31b12b385aa9baca3ff9770ad6d76fc5",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAlso we will have some business logic functionality that also can include access to database, operating with some \nfiles, running other web services and so on. So we can use some useful method body. But in general you should \nexpect that web service method can get some optional parameters, can return some results. If your data type of \narguments and results if display the type is simple and standard like string, decimal, integer, guid or boolean or \nsomething like this, which is very easy for creation, to decode, to parse, then you need no additional settings and the \nsystem will be capable to run such a service and you will be able to transfer such relatively simple parameters as \narguments or get result data.",
+    "chunk_type": "paragraph",
+    "chunk_index": 12,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 127,
+    "token_count": 149,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 12
+    }
+  },
+  {
+    "chunk_id": "6a81df6bc262174215a9b03031227284",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nBut it can happen that you will need more complicated arguments like structures like instance of classes, objects \nand so on, and you may need to return some complex responses and complex result data. As example, you can see \nwhen we run some query at our creation list page, you see some request and response which usually includes a lot \nof properties, a lot of different values. Definitely for such complicated request body, we need some classes and we \nneed to organize it in more or less structured way. And also response usually includes a lot of additional subordinate \nproperties, values and so on. So it's also important to have a corresponding data types. So in case if you transport \nas arguments or get as results complex data arguments, you need some additional classes to let WCF know how to \nde serialize of arguments and serialize of results.",
+    "chunk_type": "paragraph",
+    "chunk_index": 13,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 151,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 13
+    }
+  },
+  {
+    "chunk_id": "5b1d8f8fd723ff660421f635735af048",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nWhy I'm saying about serializing because server side will be a dll, a library with a runtime code which will be capable \nto operate with some data with a certain data type. When client side calls a web service, it usually packs so parses, \nmaybe encodes your arguments into a string. Here you can see an example of a big JSON string. So when server \nside receives such string, it must know how to convert the string into an instance of a class. And this procedure is \ncalled deserialization or deserializing, which means getting a string and then convert it into a class instance. This \ndeserializing should be done according to some class information, and that's why we need definition of the class \nwhich was used to transfer this data.",
+    "chunk_type": "paragraph",
+    "chunk_index": 14,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 133,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 14
+    }
+  },
+  {
+    "chunk_id": "2c1dae56742d6f3c9cbf8e25c82f583c",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nThe same task will happen when server side already finished execution of a method and needs to return some data. \nSo server side returned data also represents some class with some properties, and then it's necessary to serialize it \nback into a string because originally HTTP query will transport some string for you as result. So serializing and \ndeserializing is important part of any web service call. And in case if your data is complex so system will fail to \ndeserialize it without additional information, you should use special classes such as data classes. Let me show you \nanother example. So let's remember first one is cryptographic service which I recommend you to look at as a very \nsimple and very useful template for your own services. And one more, a bit more complicated data. No, no, no. Visa \ndata service, we need to look at all packages.",
+    "chunk_type": "paragraph",
+    "chunk_index": 15,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 151,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 15
+    }
+  },
+  {
+    "chunk_id": "49f40cd952a24bdd22eaf9373e721375",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nVisa data service web service is a good example of a web service which is designed to get some arguments and\n\n--- Page 4 ---\n\nreturn some results using complex data type. In this example, Request options is a complex argument that is \nprovided as an argument for your method. So we need to find corresponding class somewhere here. This class is \ncalled request options and you can see that in case if you need to transfer complex data arguments, you must create \nsuch a data type such class for your data transfer and you must decorate it with data contract C sharp attribute for a \nclass and data member C sharp attribute for all fields or properties that you plan to serialize that you plan actually to \ntransport. So this is example of much more complicated arguments for your data transfer.",
+    "chunk_type": "paragraph",
+    "chunk_index": 16,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 145,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 16
+    }
+  },
+  {
+    "chunk_id": "ef90ab4447c5105aa9a7d9155a08eecc",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd if you need it, so you have a lot of examples how to do this. You have samples in Creature, you can easily open it \nand find it. So don't forget about this Visa data service a bit more complicated example, so it will really work well for \nyou. Why you need such examples? Because it's really hard to remember all necessary settings and implement it just \nby your memory in next example. So decorating a class with such attributes, decorating methods with such \nattributes, it's quite hard to remember. So I prefer when I need to create my own new web service, I prefer just to \ncopy and paste some pieces from this example. It works well and it saves your time. So I think it's one of the most \nefficient ways to create your own web services.",
+    "chunk_type": "paragraph",
+    "chunk_index": 17,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 143,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 17
+    }
+  },
+  {
+    "chunk_id": "3cf535b3a22fe86a98c487170e763737",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nNow I will show you how to make our own web service. How to use Visual Studio for its development, to make it \nmore efficient and to make possible development of complicated functionality with a powerful editor. So let's do our \nown example and also later I will show you how to run it from Creature side, from Freedom ui, from Classic UI and \nalso from third party application like post one. Let's go to our Freedom UI package and our creation of a web service \nstarts with making of a new C source code item. We can create it only from embedded editor. So we select our \npackage add source code. When doing it makes sense to provide some good looking friendly name because this \nname will also appear at file system, it will travel to version control.",
+    "chunk_type": "paragraph",
+    "chunk_index": 18,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 142,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 18
+    }
+  },
+  {
+    "chunk_id": "8c79191362690a96f6964ee39fa54ba6",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo having this name well spelled is a good idea in general. So let's call it realty service and we can make the same \ntitle for this source code item saving our package no description and just apply. So as you already remember from \nyesterday example with handling object events, C source code item is just a big set. So it's just a code part of a C \nmodule and possibly you can also add some localizable strings into it. So we can put our code here if you work in \ncloud conditions or I just put some sample code if I work in my local environment. I have to save this item because \nwe need to properly organize and make this item saved before running of Visual Studio to make our development. \nAnd now I need to explain you some business sense of it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 19,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 148,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 19
+    }
+  },
+  {
+    "chunk_id": "4054c98e8f566073101b1461caff09a9",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo my plan is to create a web service that will work at server side and will be capable to calculate maximum price of \nreality objects filtering them by type and offering type. This is important because it's not good idea to mix \napartments, houses, parkings and so on. And also it's a good idea to filter by offer type because it's definitely not \ncorrect to mix rentals and sales. So the business sense of my web service will be to do some database calculations \nto do some operation with database. And also it will work as a good example for you how you can use alternative \nways to operate with data without use of object model. So let's move on. Here is our C item. Some dummy code is \nhere. No localizable string so far. Okay, great.",
+    "chunk_type": "paragraph",
+    "chunk_index": 20,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 141,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 20
+    }
+  },
+  {
+    "chunk_id": "73418b0aec9c6ac147ccfbba0dc6226e",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nWe can as you can see we have a star here which means not all the items were fully saved on disk. So let's do this. \nDownload packages to file system. This usually is a safe action. It helps us to get all things right at the database. \nNow you still see this star. So sometimes you will get this star. But it's it doesn't show that something is really \nmissing on your disk. So sometimes we have scenarios where this star doesn't disappear. But in general everything \nis okay with our data and all the stuff was saved on disk. Let me show you what you can see on disk now. So we go\n\n--- Page 5 ---\n\nto our app folder test of the web test of configuration pkg. Then we go to realty package folder schemas realty \nservice. Now you will see some metadata files.",
+    "chunk_type": "paragraph",
+    "chunk_index": 21,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 151,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 21
+    }
+  },
+  {
+    "chunk_id": "1cd9043de97c6f66098f9bb1a618e02d",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nI strongly recommend you not to modify Anything manually here and C sharp file which we will fill in now with the \nright good looking code. As usual I prefer to use local environment advantage and one of them is use of file system \nand use of external editors. So we can use Microsoft Visual Studio. I'm using Community Edition to operate with this \ncode using external powerful editor. And previously we worked with realty events. Now we have one more item here, \nso possibly it will be updated quite soon. Now you see some realty service code and it's just not set properly. Okay, \nso let's do something here. As you remember from yesterday's session, here we have full support of intellisense \nautocomplete and you can put using system service model and so on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 22,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 138,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 22
+    }
+  },
+  {
+    "chunk_id": "5110ec5949ec26ea1585b2215f0044dd",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nI already have an example which implements all this logic and that's why probably it makes sense to do it faster. So \nlet me show you. Here is my example of code. It's too big to fit into one zoom message in chat. So we try to fix it in \ntwo messages. Okay, this one and another is this. Okay, good. So now if you want you can get it from chat message. \nSo I will put it into my C sharp code when I develop using Visual Studio. Finally I must save my changes otherwise \ncreation will not see it and will not include it into our compilation. What is inside here? This example was originally \nmade based on cryptographic service example. So I copied this part from it. And of course we have our own name \nfor the class. My class is named realty service.",
+    "chunk_type": "paragraph",
+    "chunk_index": 23,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 150,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 23
+    }
+  },
+  {
+    "chunk_id": "c5a594338351006977a063ceeeec86b3",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nThere is a tradition of creature developers to name classes which represent web services with the help of service \nsuffix. So if you do something when you develop C sharp class for the service of it will be do something service. And \nit's quite common tradition. You may find a lot of examples in base product logic. So we made a class realty service \nand inherit it from special base service class. I need to tell you a couple of boring sentences about why we need to \ninherit from base service and generally the most important reason. So let's go and use Visual Studio tools to help us \nto understand what web service is. So we can click here you can see decompiled sources of base service class \nbecause its namespace is telesoft web common provided as a dll. So actually we don't have original services of this \ncloud.",
+    "chunk_type": "paragraph",
+    "chunk_index": 24,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 152,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 24
+    }
+  },
+  {
+    "chunk_id": "dcd0eae9a11967299499c5e9c3530b21",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nBut thanks to decompilation features of Visual Studio we can see some code from it at least interface part of it. And \nit has a lot of useful things. And the most important I think is property that is named user connection. Let me show \nYou a lot of libraries abstract class service. Yes, this one the most important property, user connection. So user \nconnection is a reference to a class that keeps context of our current user session and current user connection to \nthe database. As you remember, user connection is used always when you operate with the database and it's used in \nmany other places where you have to provide some current user credentials data and the current user session \ninformation. So if you make your own web service without inheritance of base service, you have to get this user \nconnection, for example from HTTP context yourself.",
+    "chunk_type": "paragraph",
+    "chunk_index": 25,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 152,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 25
+    }
+  },
+  {
+    "chunk_id": "e0d5aa4ef32809297de277988fc05a48",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nLet me show you here you can see examples. So we have HTTP context usually like this, and this works only for. \nNET framework version. But also this code and this application may run in. NET core conditions in for example Linux \noperating system. So for Linux there is another way of getting user connection. And this base service class helps us \nto hide all this complexity of getting user connection reference and we just use it as a property. So you can see \nexamples here. This property User connection is inherited from base service and you feel no troubles. So use of \nbase service is strongly recommended, especially if you plan to make your solution that will be portable, so it will be \ntransportable and compatible with. NET core version on Linux. So inheriting from base service is strongly\n\n--- Page 6 ---\n\nrecommended. We have also other useful properties.",
+    "chunk_type": "paragraph",
+    "chunk_index": 26,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 154,
+    "token_count": 184,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 26
+    }
+  },
+  {
+    "chunk_id": "e892d783131a91f2e53283f37a12b4e3",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nBut now you should remember that inheriting from base service helps to get user connection and helps to get it \ninitialized properly. When your method started, your user connection property of your class will be already initialized. \nThis is important also. Next, what you can see here is a strange interface named iReadonly session state. This \nmakes sense only for Windows and doesn't makes any difference for Linux. And this is a marker interface, which \nmeans it has no methods, but it tells to the IIS that your web service has no code inside that changes session state \nvariables. And if your code does not change such session state variables, it means that IIS can afford running your \nmethods simultaneously utilizing multi thread support, utilizing multi core CPU and generally making your web \nservice calls processed much faster.",
+    "chunk_type": "paragraph",
+    "chunk_index": 27,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 141,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 27
+    }
+  },
+  {
+    "chunk_id": "b2a287808ed6149c68f0a1225604ad1e",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo in general, declaring of support of this interface costs you nothing because you have no methods to implement \nfor it. But it tells IIS that it can process your web service calls with the fastest possible way. So in general it is a good \nresult for high load conditions and for situations when you have performance issues at IIS because of multiple calls \nor the same service and not so fast processing inside of these calls and just for better performance. Okay, so I \nrecommend you to use it. And if you are curious, you can also find how many times let's go and make some \nresearch. We look at all terrace of configuration folder and for the beginning we can search to find any not any all \nfiles that include service contract attributes.",
+    "chunk_type": "paragraph",
+    "chunk_index": 28,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 138,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 28
+    }
+  },
+  {
+    "chunk_id": "e9dad1e592dc2f4b764e5c9b07a74a66",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo now I'm searching through C files which include service contract attribute and I will find approximately 200 web \nservices created out of the box in creatio based studio product. Okay, 157 files and possibly a bit more web services \ninside because one file may include more than one web service, but in general. Okay, so 157. Now let's search for I \nread only session state interface usage. So now we find only 54 places where this interface was used. In general it is \nrecommended to be used for any windows based creation web service. And you see that each time when developers \nmodify some code, when they improve existing web services, when they rewrite such code, reorganize it, refactor it, \nthey usually add such interface declaring declaration into code and that why from time to time the number of such \nitems is increasing from release to release.",
+    "chunk_type": "paragraph",
+    "chunk_index": 29,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 151,
+    "token_count": 184,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 29
+    }
+  },
+  {
+    "chunk_id": "17842ad36eec1479e0c4f8d273010421",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nOkay, so this is only for better performance. What we have inside we have some method, but probably I have to start \nwith this. This is a simple method which is just gets no argument, returns some string and is organized as a web \nservice method because of operation contract attribute. So it tells to WCF that we have to turn this method into \nendpoint and register it at our website. And we have setting get HTTP method the easiest possible way to call a web \nservice. So we will be able to run this web service from an browser address bar. The reason why we do this is to \nmake sure that our service is normally hosted, is normally operational. So our compilation was successful and no \ntroubles with server side. So this method is only to check availability of our class and our web service in general.",
+    "chunk_type": "paragraph",
+    "chunk_index": 30,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 152,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 30
+    }
+  },
+  {
+    "chunk_id": "165b2bb8fb027e38764d430a476bda0a",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nYou can create a lot of other methods in your class and some of them maybe will be decorated with operation \ncontract. If method is decorated with operation contract it will turn into endpoint. If it's if you have just a single \nmethod which has no decoration, it means that it will be just a regular method that can be called by other methods, \nbut not by HTTP query, not an endpoint which is registered at our web server. So as you can see, creating of web \nservices in WCF is not so technically complex, especially if you understand how to write C sharp code. So in my \nexample I have two methods.\n\n--- Page 7 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 31,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 120,
+    "token_count": 140,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 31
+    }
+  },
+  {
+    "chunk_id": "37588c7ecad9c3af5477a38f7ff87293",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nOne of them is very easy get example so this is just an example of a method which will return us okay string and if it, \nif we get it means that our web service is present Normally compiled and fully operational, this method get max \nprice by type id. So I decided to name this method like this will go to the database and search for realty records with \ncorresponding type offer type and also I plan to make it more universal and to call my service from different \nsections. That's why I need to transfer my source table which I plan to use for my calculations. So for Freedom UI \nsection my source table will be USR Realty and for classic UI example I will have USR realty Classic. So different \nsource tables, but very similar columns, similar conditions and filters.",
+    "chunk_type": "paragraph",
+    "chunk_index": 32,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 146,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 32
+    }
+  },
+  {
+    "chunk_id": "38e039b5df281c73f1d47a6c2b728340",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd that's why I will use the same selection statement to work with different tables inside of my code. At the \nbeginning it makes sense to make a very simple check of our arguments and if any of them is empty then we will \nreturn minus one. So we will do nothing. By the way, we return decimal result and we get three string arguments. So \nwe use only standard data types, which means we will have no problems with serializing and deserializing and we do \nnot need any additional data contract class in case if you have more complicated scenario, of course it makes sense \nto use data contract and so you may pass much more parameters properties and you can easily extend such \nstructures.",
+    "chunk_type": "paragraph",
+    "chunk_index": 33,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 129,
+    "token_count": 150,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 33
+    }
+  },
+  {
+    "chunk_id": "e0232ef62961c93714fe916d77cb8e56",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nOkay, we have several arguments, we check it out if they are empty or not and then I will show you another approach \nto get data. Previously you probably remember we used entity schema query approach to get data. Let me show you \nbusiness processes and calculate an average realty price. It was couple of days before and we used this code and \nwe used entity schema query class to make data selection and then we processed it with for each statement and we \nused entity data model here because as a result we get collection of entity class instances where we have special \ncolumns with data values and we can get such values from each data row. So this approach with support of data \nmodel worked for us and it respected column names, it respected columns lookups and joins and access rights \nrestrictions and so on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 34,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 150,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 34
+    }
+  },
+  {
+    "chunk_id": "157b90527a5805d4fc21c8f5091b4505",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nNow I will show you another approach to operate with data which will not use data model at all. So this is alternative \napproach to operate with data, but of course we need to know source table name. Here entity name is used as table \nname at the database. Of course we need to know exact column names and also for lookups you need to remember \nthat at database Corresponding columns have id suffix, but @ your object level such columns have no ID suffix. Let \nme explain what I'm talking about. Let's go to objects, find our reality freedom UI object and let's Take a look at type \ncolumn. Now all the columns will be loaded here. USR type this is a lookup column named USR type based on the \nreality type lookup. And we have a dropdown list here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 35,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 144,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 35
+    }
+  },
+  {
+    "chunk_id": "97d16378a3c370eab71bd22ac337ab08",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd as you can see, no ID suffix at column code. But when you go to the database. Let's go and check our database \nD1 you can make filter for tables contains USR. Now we'll have just a little set of tables USR realty columns. Now you \nwill see the type column as suffix id and you may also notice such suffix ID for offer type, for city, for country and \neven for created by ID and modified by id. So for any lookup column in your object here system creates \ncorresponding GUID column at the database table. But let me show you. You see that at the database table it always \nadds ID to column name. So it's kind of creature architecture. It's not likely that it will be changed in future. So you \nmay rely on it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 36,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 142,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 36
+    }
+  },
+  {
+    "chunk_id": "7e87eaba915cc9afd6dc4b7d37654353",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\n--- Page 8 ---\n\nAnd you should expect exactly the same data columns of your tables. And in general, when you operate with \ndatabase like this, you must go to the database physically to see corresponding table, corresponding columns, just \nto make sure that all your columns that you work with are present and so they represent what you expect from them. \nOkay, my case I'm using direct database operation with select statement. It's also possible to use insert, update, \ndelete and even stored procedure classes which will operate with the database directly without use of object model. \nAnd the best way how you can study how to use such classes is I think searching for existing examples. Let me \nshow you how you can do this. You need to use some tool that will help you to find out files at file system. You can \nuse Visual Studio code.",
+    "chunk_type": "paragraph",
+    "chunk_index": 37,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 153,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 37
+    }
+  },
+  {
+    "chunk_id": "845fe5c81beb8773dea7cf460dbe796a",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nYou can use Visual Studio or Total Commander. Or in my case I'm using far manager tool inside of JSoft Web folder, \nmaybe even inside of JSOP configuration. We can use search for all C files where we have for example new select \nclass usage. We will find more than 200 of examples, maybe even 300 examples, almost 300 examples. And there \nare a lot of different so randomly selecting them a lot of different examples. How you can create such class \ninstance, how you can set it up, how you can use it and finally get result data from it. Let's look at another random \nexample, maybe not so perfect. Here you see creating of a select example from where it's possible to use hints. It's \npossible to use different operators like group by like having.",
+    "chunk_type": "paragraph",
+    "chunk_index": 38,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 140,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 38
+    }
+  },
+  {
+    "chunk_id": "e2b95d9324ac2480ca48f7a5472f2937",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd sometimes you will notice that use of direct database approach gives you More flexibility and more powerful \ntools than using just entity support and using entity schema clearer method. So depending on your task you can \nchoose proper tool. And this select class works a bit faster because it doesn't include entity data model, it doesn't \ncreate corresponding instances for working with entities, and in general it consumes less memory. And I think it will \nwork a bit faster than entity schema query. So we have a lot of examples of select class usage. I'd like you to see \none of the best examples. I think this one it's I canonic iconic examples. So here you can create class instance. Then \nyou already finish with settings and filters.",
+    "chunk_type": "paragraph",
+    "chunk_index": 39,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 132,
+    "token_count": 156,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 39
+    }
+  },
+  {
+    "chunk_id": "5758bc46eacfe4eb46c72bd9f1fc6e36",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd also it's important to mention you create class instance and then in order to set it up you use different methods \nlike top method, column method, maybe many times from method makes to run it one time where method is equal \nmethod and a lot of others. So finally running such methods will configure your class to read corresponding columns \nfrom corresponding tables. You can use joins, you can use different conditions and types of filters. And finally you \nwill have select class. You also have to turn it back to select type and then you can use it for data selection. Data \nselection must be performed in two steps. First you need to ensure DB connection physically.",
+    "chunk_type": "paragraph",
+    "chunk_index": 40,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 122,
+    "token_count": 140,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 40
+    }
+  },
+  {
+    "chunk_id": "0d661f58afe80c92706c1fc2e11a1564",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIt means get one of the three database connection threads from thread pool from connection pool because \nconnection to database is pooled and you have like set of available threads for it. Then you take it and this is DB \nexecutor reference and then you run your select statement with the chosen DB executor and finally you will get data \nreader. This data reader holds your data and offers you possibility to process it row by row. And you can run its read \nmethod to get next line of data. And you can use get column value method to collect corresponding result values \nfrom your result data collection row. In case if you have many rows you can use while or if statement or something \nelse which will organize your cycle.",
+    "chunk_type": "paragraph",
+    "chunk_index": 41,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 134,
+    "token_count": 148,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 41
+    }
+  },
+  {
+    "chunk_id": "47fca13c2a7071192096d0206fe3c873",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo while read returns you true, you can try to get some data and you can put it somewhere in order to analyze in \nfuture. So this tool is helpful to get data selection with many columns, as many data rows. And also you may notice \nsome strange things here and here. Normally C code correctly operates with data allocates and releases memory\n\n--- Page 9 ---\n\nwith the help of garbage collector. But here as you can see, developers do not trust into garbage collection. The \nreason is when you run ensuredb connection or when you run execute reader, some subordinate functions are \nexecuted which are implemented in visual C and they implemented as a non managed code. Simply speaking \nAttempt to get some data from the database, runs some code that is part of Microsoft SQL Server client software \nwritten in non managed way.",
+    "chunk_type": "paragraph",
+    "chunk_index": 42,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 149,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 42
+    }
+  },
+  {
+    "chunk_id": "df63f43fec816e8e7198dd26e34358d0",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd that's how that's why you need to handle memory yourself. So when this method was executed, some memory \nwas allocated and in order to properly release it you need to dispose created class instance, you need to dispose the \nSTB executor or you need to use special using operator which will do this dispose automatically when this code \nfinishes its work. So you need to correctly dispose memory from ensuredb connection and also connect dispose \nmemory after executing reader. If you will not follow such recommendations, your code will be compiled and \nworking almost normally, but in high load conditions. Especially in high load conditions when there are many calls of \nthe same logic in short period of time, you will notice so called memory leakage. This leakage will look like \nenormous memory consumption in your system resources.",
+    "chunk_type": "paragraph",
+    "chunk_index": 43,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 142,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 43
+    }
+  },
+  {
+    "chunk_id": "423799c036907edd99b39170e80274e0",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo now you see 1 gigabyte, so 900 megabyte it's more or less okay, but you may see much more memory up to all of \nyour available virtual memory and one it will come to a certain limit. IIS will suddenly restart your website and you \nwill not know why this happens. So it will be very unusual for you. And the reason is that non allocated so not \ndisposed memory will be leaked and so you have no way how to fix it until you will make this using operator \nprotection. So you may find a lot of examples where creature developers do exec ensure the connection and \nsupporting it with using operators. This is mandatory. If you do not follow this you will have memory leakage. And \nthis works well for selections of some number of columns and number of rows.",
+    "chunk_type": "paragraph",
+    "chunk_index": 44,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 146,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 44
+    }
+  },
+  {
+    "chunk_id": "95cacb30c6e33312c02300becd68fcbe",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nBut in my example you may notice that we don't have using protection, we just use execute scalar method which is a \ngeneric method and it accepts expected data type of our result. And execute scalar is useful in case if you plan to \nread only one data row and you expect to read only one column value there. So execute scalar returns you first row \nand first value of the first column that you select. In my case, running this aggregate function guarantees that I will \nhave just one data row having only one column in my columns selection list is obvious and I will get only one column \nas a result. And that's why execute scalar is perfect for such scenarios. All necessary protection to using to use \nusing for two methods for data selection is already performed inside of execute scour.",
+    "chunk_type": "paragraph",
+    "chunk_index": 45,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 147,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 45
+    }
+  },
+  {
+    "chunk_id": "f4aa5763ed4e40cd624a3d9c53b160dd",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nYou can try to see it would possible to decode scalar async probably no, but let's see, you see decompiled stuff DB \nexecutor you see using yes so first using is already used here ensure special DB executor then internal execute \nscanner sync probably here failover execute and somewhere so you probably may find another using here in this \ndecompiled code. But you can just trust me that execute scalar performs all code correct operation with memory so \nyou do not need to handle and to care here with additional protection. Finally it returns your expected data type \nvalue. In my case this is decimal and this is our maximum price from some records where type equals certain \nargument and offer type also equals to another certain argument. So this is quite simple data selection procedure \nwhich makes one single SQL query and runs our data selection.",
+    "chunk_type": "paragraph",
+    "chunk_index": 46,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 150,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 46
+    }
+  },
+  {
+    "chunk_id": "3bf0f567e6b0f9326006b5c36dd31870",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo my example here is not only how to organize your web service, but it's also how to operate with the database and \nhow to use alternative data selection approach with some data that we expect to get and return. I try to make it \nsimple without need to collect many data records with many data columns inside of it. If you want you can find more \nexamples in these variation sources and make more complex calculations. This example just shows you general\n\n--- Page 10 ---\n\napproach and you can see we have user connection as argument thanks to base service class.",
+    "chunk_type": "paragraph",
+    "chunk_index": 47,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 106,
+    "token_count": 121,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 47
+    }
+  },
+  {
+    "chunk_id": "36a10aea1726e11bc3094b37b252c61b",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nWe get this user connection as a property and this property is ready for use when at the moment when our method \nis called so WCF and our base service class makes all that is necessary to initialize user connection at the moment \nwhen our customer runs this HTTP post method. By the way, we used post because it's very common for creation. \nYou may find that for example we can search for all sources where we have just get method information. We will find \nprobably 50, 15 or 16 places including ours. So 15 base product places where a get method is used like this so you \ncan see not so many. We have 150 plus examples and only 15 base product examples. And when we will search for \nthe post example, you'll find more than 150 examples.",
+    "chunk_type": "paragraph",
+    "chunk_index": 48,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 142,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 48
+    }
+  },
+  {
+    "chunk_id": "9d11e25e41d7e5d43e0dfa812581bbc8",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nBecause this is very traditional, very typical, difficult to create for creation to use post. It offers us quite comfortable \nway to handle data. You can serialize almost anything as a post request body. So post request data, that's why it is \nso comfortable and also it's well protected. It's better protected with security settings. Again if we compare it with \nget, I will explain and you will see it later. So post is very typical and okay, when we finished we can just save it. All \nthe code samples are available for you so we can save this code. As you remember, configuration must be \nperformed inside of creation so our code is Ready we can just check that column are the same as we expect to get \nit. And let's go back to our app and select our package.",
+    "chunk_type": "paragraph",
+    "chunk_index": 49,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 144,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 49
+    }
+  },
+  {
+    "chunk_id": "1ee02d306c9c6910ed8b83b240ebbdaf",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nWe can also see our recent reality service item. It has all this code already, so it was loaded from the file system and \nwe can compile it. Compiling package makes collection of all of its sources including automatically generated items \nand like process code. If process includes C sharp tasks and then it performs compilation of our CS proj C sharp \nproject. So this one, this C sharp project will be compiled. We have several compilable stuff here. We have set of \nassemblies used in this project and that's why we can compile it normally without any error messages. And in \ngeneral this compilation was quite fast. But in your case probably you will face some additional difficulties mainly \ncaused by lack of assemblies, lack of some references or just incorrect code which operates with classes which \nwere not mentioned in usings.",
+    "chunk_type": "paragraph",
+    "chunk_index": 50,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 146,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 50
+    }
+  },
+  {
+    "chunk_id": "c451bdc6ff19a135ede70f33dde49327",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo in my case compilation was successful. And in case if you have compilation error, you will see a big error page \nwith information about lines of code, type of the error and you will be able to look at it. Even after you close this \npage, you will have a special button in this list compilation error. So developers tried their best to support you. And if \nyou have some troubles, you will be able to look at the list of your troubles in order to fix it. So once our web service \nwas successfully compiled, it is already hosted at our application server and we can easily check it out. So we can \ncheck with get example method that our service is present. Let me show you how we can do this. We can use our \nbrowser to run get HTTP queries easily.",
+    "chunk_type": "paragraph",
+    "chunk_index": 51,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 148,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 51
+    }
+  },
+  {
+    "chunk_id": "b79558eecc7988b6bf4c8dbdfb734fd2",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nWe need to get our browser URL copy go to separate tab paste. So this is my web server address including zero \napplication alias. This zero is very important. Let me remind when we registered our application our website at \ncreation at iis. So I have a structure of default website which uses port number 80. Then I register at my D1 Studio \napp this one. This is part of URL. And then we have zero application alias for main application part which is \nphysically saved in chiras or the web folio. So this zero is very important. You will face it almost everywhere when \nyou combine when you compose your URLs for creation. So this zero is pointing to main application part of creation \nplatform. If you run creation on Linux, you will not see this 0 on Linux.\n\n--- Page 11 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 52,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 147,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 52
+    }
+  },
+  {
+    "chunk_id": "104f324173c5cc3f24e6df061c3de28e",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIn net core we have all the stuff placed in one root folder. So it's a bit different, but all creature configuration will work \nabsolutely the same. So we have functions that Return main application URL and for Linux it also returns everything \ncorrectly. So don't worry if you write something and run it on Windows there is a very high chance but it will also \nnormally work on Linux. Okay, so let's move on. We have this main web server part of URL including zero application \nalias. What's next? We have to use special word that is used for automatic registering of all our configuration \nendpoints. So this word is rest. Okay, rest. Then we have some standard how creatio registers all our endpoints and \nit uses class name. Let's go to studio find our class name copy paste so we use 0rest/reality service/method name.",
+    "chunk_type": "paragraph",
+    "chunk_index": 53,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 149,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 53
+    }
+  },
+  {
+    "chunk_id": "4311857a42fc06de89ef28f78767fb3e",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIf you use URI template your method name may be different. I mean your code URI will be different. But in my case \nit's very simple. I will just use this get example method name. I'm lucky to have no arguments here so my query will \nbe not so hard to do. I will copy this URL for you so you can also practice and check it out how it works and let's \nmove on. Let's check also enabling browser developer console going to network tab clearing all the console. So let's \nsee how it works. I press enter now you see that my get example was successful. 200 means successful execution. \nHere is my full request URL I have some request headers, I have some response parameters and here is you see my \nresponse JSON string returned some data. It looks like everything is okay.",
+    "chunk_type": "paragraph",
+    "chunk_index": 54,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 149,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 54
+    }
+  },
+  {
+    "chunk_id": "31c0ab54a3ab2511c9bd50a32cc575f0",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo this is a very easy and quite practical way to check availability of your web service. For example, if you have \ncompilation issue your web service will not be hosted at creation web server and your query like this will return you \n404not found. So it will show you that there is no registered web service with this address. So in my case it looks \ngood and it was get query which is very easy to get from your browser. But our main working query is a post query \nand we have to make a special steps to do this from our creation page let's make a five or seven minutes break. So \njust a quick. I hope to make it quick. I understand some of you have other plans after the finishing of the session.",
+    "chunk_type": "paragraph",
+    "chunk_index": 55,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 140,
+    "token_count": 159,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 55
+    }
+  },
+  {
+    "chunk_id": "0b7526bbf1829079a4103dde1ca4f389",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo let's make a 7 minutes coffee break and then we will move on with calls of our web service. We will make call of \nweb service from creature page and also I will show you to make how to make it from Freedom UI page, from classic \nUI page and from third party applications. In case if you have questions please type in your chat and we'll answer so \nlet's make a quick break right now. So today, now our task will be to call creature service from our client side page. \nHow we can do this? You already probably guessed that we will have to write some code. Unfortunately we still don't \nhave no code options to call a web service. Like we start a process for example. So possibly we will have something \nlike this in future.",
+    "chunk_type": "paragraph",
+    "chunk_index": 56,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 143,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 56
+    }
+  },
+  {
+    "chunk_id": "1331293c4422ffd7d19e3307d9235e8b",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd now we have to write some code at our creature client side in our browser JavaScript in our browser page \nJavaScript part. So let me show you. I already had all of the examples. It will not take too much time today. So I will \nshow you how we can call the web service from creation client side. Of course we need to go to our page code. Let's \ngo to edit page and then we can open its code. Also I can show you faster way to open source code and save and \nopen it. Or you can go to client module. In my case it's a real T form page. You go to this right part, this actions three \ndot button. And then we have open source code action. I think it's more practical and faster than to do like this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 57,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 147,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 57
+    }
+  },
+  {
+    "chunk_id": "6ef6db8f0727520193c003170657a51a",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nBut okay, I will recover closed page. This one go to front page. Okay, this one. Let me show you what we need first. \nSo we need first some button that will start our code and then we will implement it. So that's why I recovered this \npage first. Let's go to our actions menu. We already have one item here, so we can create another one. Another\n\n--- Page 12 ---\n\nmenu item. This menu item will include calculate max price and the action could be just some random action that \nwe need temporary here because we will replace it with our own programmed method. Programmed handler. Let's \nuse data, let's use icon. Let's do some. Some we can use some kind of things. Okay, let's take this one. So we will \nuse it for calculations and element code. Okay, let's call it max price menu item and confirm.",
+    "chunk_type": "paragraph",
+    "chunk_index": 58,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 153,
+    "token_count": 194,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 58
+    }
+  },
+  {
+    "chunk_id": "712a7e049c2331bdd0e677cf23c63218",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo and then we have to save this. Our menu item will appear in actions menu and then we go to its code part. So \nlet's go to open source code. You can close this editor so not to accidentally resave anything. Let's search for our \nmax price item. And as you can see, this is somewhere like number 116. So here we have our menu item in view \nconfig div area. And we will just remember this line 116 because we need it a bit later. So let's collapse view config \ndiv, your model configuration. Collapse everything. Now we will make one More handler in our code, so please be \ncareful. I put comma and I plan to paste here an example of handler for my calculation Example of a web service call \nwork from Freedom ui. Example run web service in Freedom ui.",
+    "chunk_type": "paragraph",
+    "chunk_index": 59,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 148,
+    "token_count": 179,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 59
+    }
+  },
+  {
+    "chunk_id": "58d513591f6f0a60798a7bacd6de6a72",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo this code will be quite big. I will copy it into parts for you. But first of all let's pay attention on the definition of our \nmodule. I copied it for you, so you'll be able to reproduce the same in this line where we define our module, we \nstarted to request one more additional module named Creature Dev Kit command. This module is kind of utility set \nof tools which includes a lot of useful things including HTTP service. So we requested this module to be created in \nour dependency modules list. So our require GS framework will first look at this array, find this array item, create its \ninstance, return it as an argument when our factory function will be called. So we can call it SDK as we did it here, so \nwe call it SDK here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 60,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 144,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 60
+    }
+  },
+  {
+    "chunk_id": "c47642f69d4f83d41936e480140ded08",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd if you forget about line number one here, your next code samples will not work because you have no these utility \nmodules. Okay, we have this SDK now and it's time to implement our handler for our menu item. I will copy and paste \nit in parts for you because Zoom has limitations on size of code that is possible. So size of chat messages. Okay, \nthree parts. And then of course I will copy it fully into my handlers area here. Taking care about commas, taking care \nabout syntax. If you do some kind of syntax mistakes like this, you will immediately see this parsing error. So please \nbe careful, avoid such errors and provide correct indentation. Don't forget about any brace here. And now I have to \nexplain how it will work. So this is one more handler in my handlers array.",
+    "chunk_type": "paragraph",
+    "chunk_index": 61,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 148,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 61
+    }
+  },
+  {
+    "chunk_id": "a78cae5ffe24d862e140bf9fb017e7dc",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd this handler has its own request property. So it's like handler name. And you see, there is a tradition to name \nyour own custom handlers with usr Prefix and base product handlers are usually provided with crt. Okay, we can \nname it as we wish. Then we have a handler implementation asynchronous function. So this function finally makes \nsome useful code for us. And first of all we do some console output just to make sure that our button so our menu \nitem normally worked. Then we have to compose some arguments to call our web service. And the main idea is we \nselect a page which already has type value and offer type. So if we selected for example, apartments for sale, we \nhave this type value and offer type. That's what we need to run our web service.",
+    "chunk_type": "paragraph",
+    "chunk_index": 62,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 144,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 62
+    }
+  },
+  {
+    "chunk_id": "d084a9912f7b5e27cd55127927149ead",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo we plan to get type from our page, but when we operate with it, we will get an object in JavaScript. This object \nwill include several properties and if we need ID of selected data record we will look at value property. If you need to \nlook at display text of a lookup value like this apartment, you have to operate with display value property of this \nobject obtained from a lookup column. I also need to make sure that I'm using correct names here. Let's go to view \nmodel config search for type and now we see this attribute name. I will collapse unnecessary parts so you will easily \nsee what we have here. So we need to look here.\n\n--- Page 13 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 63,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 129,
+    "token_count": 149,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 63
+    }
+  },
+  {
+    "chunk_id": "051695a02efa064df71dfdd9933ba1f3",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nType represents this attribute name so I have to copy it, find my handler and paste it this one so PDS usr type and \nthere is a unique name for this attribute. So that's how we will get with await operator we will get our type lookup \nvalue which represents an object and if this object is not empty so it includes something then we will try to get value \nproperty in case if it's empty we will keep it clear so we will not use it. The same with offer type. Let's go and find \noffer type attribute copy paste and we get offer type. If it's not empty we get its value. This is important to get \ncorresponding arguments for type and for offer type that is required for our webshop.",
+    "chunk_type": "paragraph",
+    "chunk_index": 64,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 136,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 64
+    }
+  },
+  {
+    "chunk_id": "fe8a5537710daa2f1dd466a08a37776c",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nNow we will use our dev kit library in order to get HTTP client service out of it so we can ask SDK to create one and \nthat's how we get this JavaScript class instance in our code. We have to combine and collect correct viewers URL \nfor our web service. I'm using Terasoft base product client side JavaScript framework. It's a core framework, you \ncannot change it easily and it has some functions to provide web service. Base URL so we have this base URL then \nwe combine path in order to get rest then class name then method name. By the way my method name is called \nwhere is my visual studio here My method main is called get max price by type id I have to fix it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 65,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 134,
+    "token_count": 153,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 65
+    }
+  },
+  {
+    "chunk_id": "178f1613b25c7d68fe31fbce66c490ca",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nI have to fix it in my code here get max price by type id so it was mistake because I renamed this method recently \nand finally my endpoint URL will be combination of the base URL/method name slash this rest like template part \nthen class name then method name. Okay great, my endpoint is ready and here you can see some example of brick \nof my endpoint. I will name it better here something like this. Okay, now we have to prepare parameters and perform \nsending of an HTTP post query we have params. This is a JavaScript object with several properties and it's very \nimportant. Property names must match your web service method parameter names. Reality type ID here must \nmatch this offer type ID here must match this and entity name here matches with this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 66,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 141,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 66
+    }
+  },
+  {
+    "chunk_id": "9a3572dd8d0ffb721772c6582c9d5307",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd also I have to fix my code because this one already changed its name so my object is named usr reality. Okay, \nthis is important part and parameters will be passed as a part of our request HTTP request body. So parameters will \nbe encoded into a stream and thanks to this SDK library it will be done by this method post method, not by us. So we \njust wait for getresponse running post method. If you need to run get method you will have a get instead of post \nhere. Endpoint is a URL and params is a JavaScript object with parameters. Now you can see we have an \nasynchronous call here. It actually includes two parts. Sending a request, then waiting for some time and then \ngetting response. So physically it may take some time, like 30 or 50 or hundreds of milliseconds.",
+    "chunk_type": "paragraph",
+    "chunk_index": 67,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 149,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 67
+    }
+  },
+  {
+    "chunk_id": "b6ca102264254a7610b0d6f3fc0c3e70",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo you should understand that even if it looks like easy thing and line by line execution, physically it is asynchronous \ncall which means we send request, then browser waits, then we get some response. Okay, we got response object \nwhich is a JavaScript object instance. We can look at its properties. This object will have a body property and then \nwe'll have property name the same as our method name + result suffix get max price by type id result so this is our \nmax price response and when we finish we just continue normal execution of potential other handlers with this \ntypical return. So I had to make fixes in my video and such fixes were not down in the code in our chat. So please \ntake care and modify this code accordingly to the video.",
+    "chunk_type": "paragraph",
+    "chunk_index": 68,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 141,
+    "token_count": 161,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 68
+    }
+  },
+  {
+    "chunk_id": "1a8197b1074f584cd0baaf0c6d6a5a50",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIf you plan to perform your own examples of the same then we have to save this carefully because if you have \nmistakes of course you will see it doesn't work. And also let's remember about our your request name and return\n\n--- Page 14 ---\n\nback to line number 115 or something like this. Let's go. Here we have our menu item, our action item and we have \nclicked event with the request name. Originally we set it to some random save request, but of course we will replace \nit with our own code. So I will highlight it in our chat. So don't forget about this. We need to organize running of our \nhandler by manual changes in our diff view config diff array. This is responsible part, so please be careful. Please \ndon't accidentally Remove any breakage, any comma or something like this. So please be careful.",
+    "chunk_type": "paragraph",
+    "chunk_index": 69,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 153,
+    "token_count": 186,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 69
+    }
+  },
+  {
+    "chunk_id": "34cac2f2dc6626d06870b5caf40677c6",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd then we can save it. Great. Everything saved correctly. We can close this editor. Probably can just close and \nopen the page. So now we have apartment for sale. That will be argument and let's try to find our action calculating \nmax price. Go to network and clear all previous history. So now let's check how it will work for us. It looks like status \n200 means it was collected correctly. Web service runs and returns our maximum price for apartments for sale. \nOkay, let's see network tab details. This is our request properties. This is full URL was created correctly. We have \nsome request headers, response headers. Our request payload physically was a string, but we can parse it into look \nat it a bit more comfortably. So here we have all the parameters that were sent as arguments.",
+    "chunk_type": "paragraph",
+    "chunk_index": 70,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 144,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 70
+    }
+  },
+  {
+    "chunk_id": "7490002861e6763b172a6c166cd3fb72",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nThen we have response with some number correctly calculated by our server side and returned and some timing \ninformation. Now you see it's quite fast execution. So it took only 31 milliseconds to run. It's very good speed. Okay, \nlet's look at another example. We have a lot of apartments for maybe houses for sale. Let's search for random house \nand calculate max price. Now you see it's calculated correctly. We return the data. This is our max price returned by \nour system. And let's check out what was the paywall, what is the response? So here we have our response date. We \ncan check it out if we go to our main list and sort by price. Yes, it looks like 99999 millions. Yes, it's okay. This is our \nmax price according to current data. So it looks like correct calculation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 71,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 145,
+    "token_count": 185,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 71
+    }
+  },
+  {
+    "chunk_id": "1122bad523d62ad67377bd1d5d5b1c11",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo our Freedom UI page calculation worked well. In case if you have any questions, please ask. I'll be happy to \nanswer. Now I want you to see the same call how it can be done in Classic ui. Some of you probably will do some \nClassic UI customizations. So you may need to know how to do some simple programming steps. In classic \nprogramming page, let's go to our edit page in Classic ui. But it turns because of our migration into Freedom UI page. \nSo okay, we can try to temporary switch all our user interface into Classic ui. So use Freedom UI interface. Open it, \nturn off, save, close, log out, log in. Now we see background in Classic UI we go to classic section. We open edit \npage and it's also classic. Great.",
+    "chunk_type": "paragraph",
+    "chunk_index": 72,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 140,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 72
+    }
+  },
+  {
+    "chunk_id": "3220f5ff25006d4dd65ef35184660ed4",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo now I will show you how to program some buttons in Classic ui. Go to view and open section wizard. So this is an \nalternative of what you get used to work with edit page in Freedom ui. So open Section wizard from this edit page \nwill open as an editor for a button. Unfortunately you can't easily add a button using this page. So in Classic UI we \nhave a lot of limitations according to controls used on the page and we will have to use code part for it. Okay, we can \ngo to code part. Here we have Classic UI code. We need to look at default array and add one more button there. \nAdrian, question possibility of web service returns Is it possible to call a third party app that returns base 64 and how \nto handle? Yes.",
+    "chunk_type": "paragraph",
+    "chunk_index": 73,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 146,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 73
+    }
+  },
+  {
+    "chunk_id": "0847239ccac7834865a9b1edc3f85b64",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo in case if you want to call third party application from Creature. So Creature will initialize this call and do it. It's \neven possible to make it no code solution for this. We will study it a bit later. Probably tomorrow I will show you how \nto make integration with third party apps and how to call third party web services. This is a bit separate from our \ntoday topic because today we create our own web services and call it from client side. Third party web services is \nbetter to call from creature server side. So you will see it's quite comfortable. Okay, I'm trying to make a button in my \nClassic ui. So here you see diff array which represents set of items and each item looks like definition of one control\n\n--- Page 15 ---\n\non the page. In my case I have name price area. Price area.",
+    "chunk_type": "paragraph",
+    "chunk_index": 74,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 155,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 74
+    }
+  },
+  {
+    "chunk_id": "8349c5e421b86700cf1885e59a2e6db5",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nYou see this is area and somewhere here just nearby I plan to put some code for a button I need to steal some \nbutton definition from Academy. So so I will show you how you can find it. Go to guides. By the way, our training \nladies will write next. So current 813 release highlights with a video that will be released in a week. So you will see \nsome news and it will be so probably interesting for those who keep an eye on evolution of Creature tools \ncapabilities. So now we go to development front. Oh no. Platform customization Classic UI page button examples \nSo I will find some simple button to the page and I need to copy piece of code which represents button properties \nbecause it's really hard to remember them. So I just copy this part paste it into my code.",
+    "chunk_type": "paragraph",
+    "chunk_index": 75,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 150,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 75
+    }
+  },
+  {
+    "chunk_id": "384683a99c6ebb9be29bac911bf66d54",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nOf course I will have to fix it. I will have to make it look correct. So comma is missing here. Here's my button \ndefinition and I. Oh, I have to exclude unnecessary stuff here. And yeah it looks like I have a lot of extra things \ncopied. So this one is proper piece of code that I need to copy insert current name. So I will do it quite fast because \nprobably you should not focus so Much on quisecure this will be just an example. So my parent name will be the \nsame as for nearby fields because I want to put it nearby to area and values will include location and size settings in \nlayout and here layout means position and size columns. So this is 012 column two for area. Here you see row two.",
+    "chunk_type": "paragraph",
+    "chunk_index": 76,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 142,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 76
+    }
+  },
+  {
+    "chunk_id": "c4c4633722e112a6c8ff88103fb3205b",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nThen I will have row three because I want to put it a bit below Parent name is the same button. We can call it Run \nweb service button. It will be our button name button title button caption should be localizable string. This editor \ndoes not allow me to do this. Okay, red color always enabled so I will do it always enable it. I will have to rename this \non run web service button click I will have to make a method for it and the localizable strings should be managed in \nits editor. Okay, so I will do it a bit later. This is our button. It will have a red color. It will have some caption item type \nname. Okay, I hope I have no. Now you will see this button representation here. Go back to section wizard and save.",
+    "chunk_type": "paragraph",
+    "chunk_index": 77,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 147,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 77
+    }
+  },
+  {
+    "chunk_id": "425212ceb2da616aca478e7cbdfd48e4",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nProbably it was not the best idea because I need to implement method for the button. I also need to make my in my \nclassic package. I also need to make localizable string for the page. So let's make localizable string. I called my \nbutton action could be run service okay and try to save. Do we have any troubles with localizable strings? In previous \nversions we had okay, my button caption is okay, go to div in order to search for my new button here. I expect it to be \npresent somewhere here and caption should be like this My button caption okay, great Method or click Run service \nbutton click. We have to implement in methods collection so usually you do it like this function and then we have \nsome function body. Now I plan to get examples of running web service in client side.",
+    "chunk_type": "paragraph",
+    "chunk_index": 78,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 150,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 78
+    }
+  },
+  {
+    "chunk_id": "caa4381c6efae70384ced053c1ff747f",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo here is my own run web service button click. Okay, and also I need to have a callback function here. So we have \ntwo methods and that will fix it. Okay, so when I need to do this is my method name. I use it for a button and method \nis in classic UI it's easier way to call some functionality because it just implements some function in your JavaScript \nobject. We will get type column and get its value. If it's not empty, we'll get offer type and get its value. We'll \ncompose parameters. Let's check our entity name. It's called reality Classic. Yes, looks good. And we can run our \nweb service run our method name let's check this method name. Get Max Price by type ID. Okay, great.",
+    "chunk_type": "paragraph",
+    "chunk_index": 79,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 135,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 79
+    }
+  },
+  {
+    "chunk_id": "5bd5919ad0d1f9b5baa06719cb365faa",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd we need to provide callback method to accept our result because in Classic UI we don't have so fancy stuff like\n\n--- Page 16 ---\n\nawait. And so it's because of the tools used here. So your JavaScript of course will run Await normally. But the tool \nthat we use to call service expects to get this callback function and parameters should be executed. By the way, this \ntool is called Service Helper and we must ask for this module Service Helper and get its reference here. So this is \nalso an important part in Classic ui. This is my set of methods for you in Classic ui. And this is a divide or a button. \nOh, probably I should care about index, but okay, so it was already saved Item type originally was button but when \nSection wizard saved it replaced with just a number.",
+    "chunk_type": "paragraph",
+    "chunk_index": 80,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 150,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 80
+    }
+  },
+  {
+    "chunk_id": "0e50a37f4186e239c5f82cfd86601dd1",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo it's a value of that enumeration item that we found in our article. So item type. This one turned to be a constant, \nwhich means five by the way, you can also study your client side framework. So you can just do terasoft. Then you \nsee a lot of properties like item. Let's see how it looks like View item type. Sorry View item type. Then you see a list \nof approximately 30 different options here. So it means items available for Classic UI pages. In my case I used \nbutton. So looks like everything is ready. And this is how we use special utility module. It helps us with calling of web \nservices. We have two steps, call service which means send request and provide response callback function. And \nwhen response will come, this callback function will be called.",
+    "chunk_type": "paragraph",
+    "chunk_index": 81,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 144,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 81
+    }
+  },
+  {
+    "chunk_id": "cd9e718cd3b86e2549157e03ca517a28",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nThat's how we will do some console output and show us returned data. Okay, finally we can save it. In Classic UI we \nhave to constantly think of browser cache. So we have to reload the page in order to fight with cache. Now we have \nhouses for sale. Okay, let's make a copy cheaper one. So we have two houses for sale in our database in Classic ui. \nLet's open. Now you see a button. Okay. Okay, let's check how it works. And the web service is the same, but we have \ndifferent tables to calculate. So let's try. Our call was successful. You see maximum price was calculated. And also \nyou can see history. You see request URL 200 it was a post query. We have payload. This is our request body. And \nwe have response. And also it's timing. Timing is quite fast. 21 milliseconds.",
+    "chunk_type": "paragraph",
+    "chunk_index": 82,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 151,
+    "token_count": 194,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 82
+    }
+  },
+  {
+    "chunk_id": "4ef0eab2cd0cacfcf383135cafa28b27",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo perfect time. Very good speed. Okay, great. We're almost done. And now we already practiced with Sending of \nqueries from client side. But you may notice so we only worked with Creature client side. It's also possible to call \nsame queries from third party apps. Let's go back to Freedom ui. We have better data there. System settings, put it \non your interface, enable it, save, log out, log in. So I plan to show you how we can use third party app to perform \nsuch web service calls. As example, I will use Postman app. I already installed Postman app on my own and maybe \nyou'll be interested also in some alternatives. Postman is a very helpful and useful and very like handy software. I \nhave a collection of different tools which also work for the same purpose.",
+    "chunk_type": "paragraph",
+    "chunk_index": 83,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 143,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 83
+    }
+  },
+  {
+    "chunk_id": "ccebb65ecfeeb8b6ee685ecc75424171",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nPostman is on first position but we have Thunder client. You may use Advanced Rest client, Rest, Wet Insomnia and \na lot of other names. The recent one was Mako Kuhn and Talent API Tester. Or you can use hard code old tools like \nFiddler Swap UI or Wireshark. So it's up to you what to use. Postman is one of the best from them. And no, no, don't \nupgrade now. So I need to show you. Let's close all existing. Don't say close all tabs. Okay. Don't save. Okay. Here is \nPostman app which is designed to test. To test queries, to test web service requests. We can try to run it so we can \ncreate new post query and we can take all the parameters we need it. For example, let's make calculation of the \nmost expensive apartment for sale. So we go there network.",
+    "chunk_type": "paragraph",
+    "chunk_index": 84,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 150,
+    "token_count": 198,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 84
+    }
+  },
+  {
+    "chunk_id": "3d91f9597d89b5d0220f761fd6fa7225",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nTry to run this button here. We can steal all necessary parameters. So this is our request URL. Okay, copy it, go to \nPostman, paste it here carefully. So this is our request URL. Great. This is a post query. Great. Body should be row \nJSON. Okay. And we will provide request body value, payload, view source so we can copy all of this and paste it into \nour Postman beautify a bit just to make it good looking view of what we're trying to do. And then we have originally \nno cookies and let's try to run this query. We will see what happens. Obviously creation server side will reject such\n\n--- Page 17 ---\n\nexecutions because it means that we are trying to run some business functionality without any credentials. So trying \nto run it anonymously of course. Course rejected and unauthorized error 401.",
+    "chunk_type": "paragraph",
+    "chunk_index": 85,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 149,
+    "token_count": 187,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 85
+    }
+  },
+  {
+    "chunk_id": "1df1820ca9c587193180729eaa1756f7",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nNow you need to know that if you want to call Creature Services from third party apps, you have to pass \nauthentication. Creature has different ways of authentication. Now let's go to our documentation about integration \ntopics. We have authentication articles, basics and overview. So we have different authentication types. The most \npractical are forms authentication based on cookies or OAuth version 2 authentication based on application name \nor client name and client secret. I will show you forms authentication because it's out of the box and it doesn't \nrequire any other secret special settings. Any other preparation for my system? If interested how to make OAuth \nversion 2 authentication, you can read corresponding articles. So here you will see all necessary data and I will show \nyou forms authentication forms. Authentication is based on running a special web service. Let me show you \nexamples and this one.",
+    "chunk_type": "paragraph",
+    "chunk_index": 86,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 151,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 86
+    }
+  },
+  {
+    "chunk_id": "a5a2e885abae387df2c6c5d9a20e10dd",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nNo, no, no. I need to reference for our service. So we need to run special web service providing request body with our \nname and password. As a result, we will have set of authentication cookies. And such cookies will include necessary \ndata that will work like a temporary ticket. So for us to operate with creature. So in order to run this business logic \nquery, we must provide special cookies. Originally we don't have such cookies and we will get it with the help of \nauthentication query. So let me show you how we get how we make authentication query. This should be a post \nquery. According to the article, we must use our web server address, service model or service login. Okay, Copy this \npart here and then take our address without 0als because we work with root folder.",
+    "chunk_type": "paragraph",
+    "chunk_index": 87,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 144,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 87
+    }
+  },
+  {
+    "chunk_id": "218273312eef3616a5dd42586ac78d0d",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo what we have here, this is our web server address. This is our root folder pass to our web service. Let me show \nyou this. My is my web server folder service model O service. You see some definition of this web service class and \nsome technical information from it. So this is in root part of our application. We have to provide body row JSON and \nwe have to make this body with two properties. Okay, we can copy it from here. Username should be our name. We \nwant to use and password like this. Okay. No special headers. Only body is required here. So let's try to run it. First of \nall, I would try to run with incorrect password. You will See error message. SO200 here, but error message code 1 \ninvalid username or password. Okay.",
+    "chunk_type": "paragraph",
+    "chunk_index": 88,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 143,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 88
+    }
+  },
+  {
+    "chunk_id": "4b9fdcb71b822bf883023f7c707e7b02",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd obviously we will not get full set of cookies. So we are getting only just one temporary cookie, which is not \nenough, of course. Okay, let's provide correct value. Now you see 200, which is okay. No error messages in response. \nAnd four cookies obtained. Only four? It's strange. I expected five cookies here. Let me think. What is missing? Oh, it \nwas missing USR name. Okay. It's not. Not so. Not so difficult. Okay, we have four cookies. Normally it's five cookies, \nbut probably something changed. The most important are BPM CSRF and aspx auth. Okay, so we have some set of \ncookies which will be working as a temporary tickets. Such cookies will work not forever, it will work just within our \nuser session inside of having such cookies we can run query using postman.",
+    "chunk_type": "paragraph",
+    "chunk_index": 89,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 141,
+    "token_count": 188,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 89
+    }
+  },
+  {
+    "chunk_id": "a4d028c15ee0df05468c250f0b59f3e1",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIn this query we already have set of cookies thanks to postman sharing cookies with the same sites. And then we \ncan run our query. And it looks like we have one more error 403. But this time this error is not because of \nauthentication. This is because of additional protection from CSRF attacks. If you have time you can find what is \nCSRF attack? It's a cross site request forgery special type of attack where a hacker may use current user session \ncredentials and ask a user to run specific code which will turn into some change that was intended by hacker. So use \nof current user session in order to do some malicious functions across site request forgery. So we have special \nprotection for it for this type of attacks.\n\n--- Page 18 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 90,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 139,
+    "token_count": 164,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 90
+    }
+  },
+  {
+    "chunk_id": "0df239c98bfea08d58fa1c08005dd7fc",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd in order to run post queries you have to make a header in post query named BPM CSRF and the value for this \nheader must match the same cookie BPM csrf. So I take cookie value carefully put it to value of our BPM CSRF \nheader and in this case my calculation is correct. Response is 200 and I have some response data. So now I \nsuccessfully called creation method from third party app from my Postman application. That's how you can do this. \nAnd also you probably will be interested to know that this session initialized by Postman is not forever and it has \nsliding expiration. We have default timeout for user sessions. Let me show you. It's about some session data \ninformation. So we almost finished for today. And let's go to system settings, I can show you Timeout user session \ntimeout.",
+    "chunk_type": "paragraph",
+    "chunk_index": 91,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 148,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 91
+    }
+  },
+  {
+    "chunk_id": "bb223e01ea6e432fb0dd4d6c5054a237",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd you see original value was 60, which means 60 minutes 1 hour. I've already changed this timeout to 600 which \nmeans 10 hours. The maximum value here is 720 which means 12 hours and minimum value is 10, which means 10 \nminutes. So this is user session timeout. If you run any query within this timeout, then your session will be extended. \nSo creature has sliding expiration of such cookies. And simply speaking, if you run queries too often, so often \nenough like every 10 minutes or every 20 minutes, you will have everlasting session. So your session will never die in \npractice. In real practice, such sessions will be finished if you do nothing for some time.",
+    "chunk_type": "paragraph",
+    "chunk_index": 92,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 122,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 92
+    }
+  },
+  {
+    "chunk_id": "675f3058d3b7fe6abda54927f04ed584",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo in case if you plan to do some integration, of course first you will do authentication, then you Will do some \nintegration steps and also you can check how it goes and you can check current user sessions. If you go to system \nusers, find your user, go to access rules detail, then sort by start of the session. Now you see two different sessions \ninitialized by our supervisor user. And one is browser based by our Chrome, another is made by Postman. Both \nsessions are active. Now you can close such sessions if you want. That's how you can track history of your users. \nAnd in general you can see this history also in database if you will do something like this sys user session.",
+    "chunk_type": "paragraph",
+    "chunk_index": 93,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 130,
+    "token_count": 153,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 93
+    }
+  },
+  {
+    "chunk_id": "da0342ba69bd4655316e1bb87d9a5711",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo if you do something like this in your database, you will see all user sessions created initialized by any user in your \nsystem. And you will see session end date, session start date. You can calculate how long your users were working, \nwho worked and who did not work in your system. So this may be really helpful for you. And you see we have \ndifferent session end methods. Session end means the way how system finished to your session. And we have like \nlog out scenario, we have timeout scenario. And you see different stories here, different history. Okay, at the end of \ntoday's session, I wanted to mention that it's also possible to make your own web services which will not require \nauthentication at all. Such web services are called anonymous services, but you should be very careful \nimplementing them.",
+    "chunk_type": "paragraph",
+    "chunk_index": 94,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 146,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 94
+    }
+  },
+  {
+    "chunk_id": "a6c6a45b73fdce5bc25dd8c91df0c6d1",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nBecause anonymous web service is simply a back door or kind of place which could be utilized by anyone without \nany credentials. So potentially making it possible to do some kind of DDoS attack on your website. So generally it's \nnot safe. You can read more data about anonymous web services at our documentation. So let me find it in backend \nweb services examples Anonymous subservice so anonymous web service is similar to traditional one, but it has \none difference in the code. You will have no user connection, but thanks to inheriting from base service you will have \napp connection. And also it's possible to get system user connection from it. So anyway, application has its own \nembedded system user session which is created actually by user who is specified into special system settings and \nthe system operations. User System operations user system setting.",
+    "chunk_type": "paragraph",
+    "chunk_index": 95,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 148,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 95
+    }
+  },
+  {
+    "chunk_id": "460fddfdde56f330a7835279771483fb",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\n--- Page 19 ---\n\nBy default it's supervisor, but you can change and this user will be used for this Background Started and created user \nsession used only for system purpose and running anonymous services is also based on this approach. So if \ninterested in running anonymous web services, here is the article. And the difference is that you have to check out \ndo you have user connection or not? If not, you can take app connection system user connection instead and then \nyou can do all the same operations as you planned.",
+    "chunk_type": "paragraph",
+    "chunk_index": 96,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 96,
+    "token_count": 112,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 96
+    }
+  },
+  {
+    "chunk_id": "8046137de02feed31b7e0c51ba675c37",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nBut in order to implement anonymous web service, you have to perform a lot of changes in file system, which is not \na problem if you deploy your anonymous service at on site environment, where you have access to file system, but \nwhich will be a trouble if you deploy it in cloud conditions, because you simply cannot modify such files in cloud. You \nonly can provide manual for support team and ask them, hey guys, please, I need to deploy anonymous web service \nat cloud environment. Could you help me and provide them all the necessary manuals for your web service to be \ndeployed at cloud conditions. And as you can see, a lot of steps here. So it requires manual for support team, what \nexactly you plan to save, what file to modify.",
+    "chunk_type": "paragraph",
+    "chunk_index": 97,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 138,
+    "token_count": 164,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 97
+    }
+  },
+  {
+    "chunk_id": "88b7c27b11aa29c6fa5fc0d8a745d9c0",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd you may know that we have already a lot of base product anonymous services. You can find it inner web config \nfile. Let me show you Inner it means inside of terrasoftware web config search for allowed locations. And you'll be \nsurprised how many anonymous web services we already have on board. More than 30 items that could be called \nwithout authentication. So you see, when you run anonymous web service, you should not provide any \nauthentication cookies and it will work for you even without any authentication. But potentially this makes a threat \nfor you, because anyone can run such queries and anyone can use such endpoints to make some kind of DOS \nattacks denial of service, running it too often. So please be careful with making your own anonymous services.",
+    "chunk_type": "paragraph",
+    "chunk_index": 98,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 136,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 98
+    }
+  },
+  {
+    "chunk_id": "0766866ae5be85e7729f1e49bd537e8d",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd I will just show you a quick example of a web service which may work anonymously. The biggest difference is \nthis. If you have user connection, you can just get it. If not, you can get it from app connection, system, user \nconnection. That's how you use this user connection obtained with this code and can just copy it for you. So if you \never need it, you'll know what to do. And then you work with the same query, but using user connection obtained with \nthis example. Okay, that's all for today. Thank you very much for your time. We already finished the questions with \nmaking our own web services, running it anonymously, making postman queries. And tomorrow we will continue \nwith data exchange tools with integrations with coding of third party web services. So thank you for your time today.",
+    "chunk_type": "paragraph",
+    "chunk_index": 99,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 146,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 99
+    }
+  },
+  {
+    "chunk_id": "8452db88bb9c2abdb56d7135cb4f61c2",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nDimitri, I have one question, if that's possible. Yes, yes, please. It is a bit off topic, but we have an opportunity where \nwe can also leverage the business to business portal users. And we would actually like to apply row level security. Is \nthat possible? No, sure. We already have cloud powerful security tools in creation. We just did not cover it because \nit's something that is described and discussed at Customization course. So we have roles, we have users. And you \ncan see list of users here you can create your own users, you can provide different role permissions. So everything is \njust out of the box here. We do not need to program specially things for it. Is it what you asked before or something? \nAnd also not if they are not allowed to see each other's data or is it still?",
+    "chunk_type": "paragraph",
+    "chunk_index": 100,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 148,
+    "token_count": 184,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 100
+    }
+  },
+  {
+    "chunk_id": "9192ccbbc5f3d815130553c26f57e1c1",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIt's possible, but I would not recommend you to make such strict restrictions because your end users usually work \nas a team. And if one created a customer, someone else may need to look at it. But in general it's possible if you plan \nto implement couple of competitive teams or competitive users, so they should not see data from each other. It's\n\n--- Page 20 ---\n\npossible to implement with the help of default record level permissions. You can find it here and object permissions. \nThen you can select corresponding entity like real T. You can enable record level permissions. And it's possible to \nmake situation when first user creates some record. And obviously first user can see this record, but other users will \nnot be able to see this record. If necessary, you can do this only in case if users have single user privilege, \nadministrators will see data anyway.",
+    "chunk_type": "paragraph",
+    "chunk_index": 101,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 155,
+    "token_count": 187,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 101
+    }
+  },
+  {
+    "chunk_id": "f58b406982b2ebc33262f8cfd278dfa2",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo they will see all the data. Okay, that's clear. Let's try that. Thank you. Yes. And also Adrian was asking about \nbusiness processes and call web service and to put our web service inside. Oh, in case if you run call web service. \nSo it was designed to run third party web services. Let me show you. We had our own examples. And when you use \ncall web service item, it is designed to run third party web services. We will study how to do this tomorrow. If you \nneed to run your own service, you can write some code at client side. Or technically you can use code web service \nfor your own web service. But in case, in this case you have to take care about all necessary things like \nauthentication, passing cookies, passing parameters.",
+    "chunk_type": "paragraph",
+    "chunk_index": 102,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 141,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 102
+    }
+  },
+  {
+    "chunk_id": "924cf834d4cc9d503d52c9da7e98ec92",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAnd in my practice we had successful examples where two different creation systems were communicating with \neach other using no code call web service tool. So it's possible. And what's the difference between implementing a \nbutton handler and launching web service from business process? There is a big difference. Because core web \nservice is designed to run third party systems, third party endpoints, you can use it for your own, but you will have to \nprovide too many technical parameters so the same number of settings that you will do it from client side. Also I \nneed to mention, which is not obvious, that when we run our web service methods for creature web service from \nclient side, we did not care about authentication. The reason Was we already have all necessary cookies in our \nbrowser in client side. Let me show you.",
+    "chunk_type": "paragraph",
+    "chunk_index": 103,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 146,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 103
+    }
+  },
+  {
+    "chunk_id": "de2a22859f0d19336758418d87f79553",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nSo let's look at our call again. Now you see this query, but if you look at headers part you will see that we have \ncookies. So this is our cookies parameter and such cookies were provided by our browser because we are running \nour creation page in a browser that was authenticated to work with this website. Browser supports all queries made \nfrom client side with cookies. And that's why our queries were executed without any error messages related to \nsecurity. So we had cookies in our client side when we call any query. So for example, when you do some simple \nstep like reward data, you see select query was performed. You see also cookie was passed from browser side and \nthat's why we have no any issues with running the same query from the same page.",
+    "chunk_type": "paragraph",
+    "chunk_index": 104,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 142,
+    "token_count": 164,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 104
+    }
+  },
+  {
+    "chunk_id": "53559fd74674ec41871dd88ae25cebe0",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nIf we will steal all this data and try to make it from another browser without cookies, of course it will fail. And it was \nshown by postman, we will have 401. So Adrian, is it clear what we're talking? Okay Adrian, thank you very much. \nThanks all of you for today. Attention. We will see each other tomorrow. Tomorrow we will talk about integrations. I \nwill show you examples of onboard protocols supported by Creation, odata and data service. You will see how you \ncan use it for integration with third party apps. And also we will practice with scope of web service and we will do \nsome calls to third party apps without programming using no code tools.",
+    "chunk_type": "paragraph",
+    "chunk_index": 105,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 123,
+    "token_count": 151,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 105
+    }
+  },
+  {
+    "chunk_id": "5cb467519ce48ecd5b5558ca81c284a9",
+    "document_id": "797e8d613a2f",
+    "content": "# Speaker 1\n\nAt the end of tomorrow session I'm going to show you Clio tool, explain why you need it, how you can do some \nsystem maintenance with it and how you can organize delivery with help of Clio. So thank you for your time today \nand see you tomorrow. Please prepare questions because we will have Thursday and Friday sessions. You have \nchance to ask your questions related to development organizing or architecture of Croatia. I'll be happy to answer. \nSo tomorrow we will work with integration tools and on Friday we will prepare for the developer action. Thank you \nvery much for your time. See you tomorrow.",
+    "chunk_type": "paragraph",
+    "chunk_index": 106,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-8.pdf"
+    },
+    "word_count": 110,
+    "token_count": 132,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 106
+    }
+  }
+]

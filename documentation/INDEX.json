@@ -1,0 +1,39 @@
+{
+  "directory": "documentation",
+  "created": "2025-07-22T13:15:52.898628",
+  "structure": {
+    "root": {
+      "subdirectories": [
+        "markdown",
+        "metadata",
+        "api_docs",
+        "raw_html"
+      ],
+      "files": [],
+      "file_count": 0
+    },
+    "markdown": {
+      "subdirectories": [],
+      "files": [],
+      "file_count": 0
+    },
+    "metadata": {
+      "subdirectories": [],
+      "files": [
+        "README.md",
+        "manifest.json"
+      ],
+      "file_count": 2
+    },
+    "api_docs": {
+      "subdirectories": [],
+      "files": [],
+      "file_count": 0
+    },
+    "raw_html": {
+      "subdirectories": [],
+      "files": [],
+      "file_count": 0
+    }
+  }
+}

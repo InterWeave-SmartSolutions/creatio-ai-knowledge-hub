@@ -1,0 +1,59 @@
+# Core API and Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+websockets==12.0
+python-multipart==0.0.6
+
+# MCP (Model Context Protocol) Support
+mcp==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.0.3
+
+# Authentication and Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-decouple==3.8
+
+# Rate Limiting and Caching
+slowapi==0.1.9
+redis==5.0.1
+python-redis-cache==2.1.0
+
+# Database Support
+sqlalchemy==2.0.23
+alembic==1.12.1
+sqlite3  # Built-in with Python
+
+# Data Processing and Search
+elasticsearch==8.11.0
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+
+# API Documentation
+swagger-ui-bundle==1.1.0
+
+# Existing dependencies
+whisper
+torch
+torchaudio
+openai-whisper
+pyyaml
+tqdm
+beautifulsoup4
+requests
+numpy
+scipy
+scikit-learn
+
+# Document Processing
+python-docx==1.2.0
+python-pptx==1.0.2
+pytesseract==0.3.13
+pillow==11.3.0
+pypdf2==3.0.1
+beautifulsoup4==4.13.4
+
+# Additional utilities
+python-dotenv==1.0.0
+httpx==0.25.2
+aiofiles==23.2.1

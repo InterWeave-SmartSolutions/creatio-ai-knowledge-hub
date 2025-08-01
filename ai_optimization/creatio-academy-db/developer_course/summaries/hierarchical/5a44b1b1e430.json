@@ -1,0 +1,60 @@
+{
+  "summary_id": "5a44b1b1e430",
+  "content_id": "ce77ce58529f",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: record, entity, section, database, server",
+  "key_points": [
+    "record",
+    "entity",
+    "section",
+    "database",
+    "server"
+  ],
+  "keywords": [
+    "creation",
+    "file",
+    "windows",
+    "use",
+    "package",
+    "database",
+    "need",
+    "server",
+    "just",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 16093,
+  "compression_ratio": 0.00043497172683775554,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:51:19.364119",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "record",
+        "entity",
+        "section",
+        "database",
+        "server"
+      ],
+      "keywords": [
+        "creation",
+        "file",
+        "windows",
+        "use",
+        "package",
+        "database",
+        "need",
+        "server",
+        "just",
+        "like"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

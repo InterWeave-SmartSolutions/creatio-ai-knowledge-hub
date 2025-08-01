@@ -1,0 +1,45 @@
+{
+  "summary_id": "6ef9e7a9e3af",
+  "content_id": "bbecd2297326",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: find Workplace Setup.\nINSTRUCTION: your sections will be displayed in a different order.\nINSTRUCTION: one is classic UI, second one which is younger.\nCONCEPT: page\nCONCEPT: schema\nCONCEPT: field\nNOTE: to say that other items were changed so they \nchanged.\nNOTE: and this warning will tell us that such Studio Workplace was already.",
+  "key_points": [
+    "INSTRUCTION: find Workplace Setup.",
+    "INSTRUCTION: your sections will be displayed in a different order.",
+    "INSTRUCTION: one is classic UI, second one which is younger.",
+    "CONCEPT: page",
+    "CONCEPT: schema",
+    "CONCEPT: field",
+    "NOTE: to say that other items were changed so they \nchanged.",
+    "NOTE: and this warning will tell us that such Studio Workplace was already."
+  ],
+  "keywords": [
+    "speaker",
+    "page",
+    "let",
+    "okay",
+    "data",
+    "save",
+    "like",
+    "speaker page",
+    "commission",
+    "type"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 54,
+  "original_length": 17931,
+  "compression_ratio": 0.0030115442529697173,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:58:05.905765",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

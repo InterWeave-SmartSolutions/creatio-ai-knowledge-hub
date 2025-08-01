@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+          <!-- Google Tag Manager -->
+      <script nonce="0af8b202c2250be3af719b803020f087">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+          n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5C6KM9TP');</script>
+      <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+<meta name="description" content="Communication panel is a tool that lets you talk to customers and coworkers, as well as receive Creatio notifications. Creatio displays the panel on the right. Communication panel structure  The communication panel tabs are as follows:" />
+<link rel="canonical" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/communication_panel/overview" />
+<meta property="og:url" content="https://academy.creatio.com/docs/7-18/developer/interface_elements/communication_panel/overview" />
+<meta property="og:title" content="Communication panel" />
+<meta property="og:description" content="Communication panel is a tool that lets you talk to customers and coworkers, as well as receive Creatio notifications. Creatio displays the panel on the right. Communication panel structure  The communication panel tabs are as follows:" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/docs/sites/academy_en/themes/creatio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/communication_panel/overview" />
+
+    <title>Communication panel | Creatio Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="https://libraries.creatio.com/drupal_fixed_tabs/tabs.css" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/align.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/fieldgroup.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/container-inline.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/clearfix.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/details.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/hidden.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/item-list.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/js.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/nowrap.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/position-container.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/reset-appearance.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/resize.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-counter.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-counters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-general-info.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/tablesort.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/modules/academy/ts_title_anchor/css/ts-title-anchor.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/core/modules/layout_discovery/layouts/onecol/onecol.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/assets/vendor/normalize-css/normalize.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/normalize-fixes.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/bootstrap4/css/bootstrap.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme-dark.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/slick/slick.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.nice-select/jquery.nice-select.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/base.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/elements.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/fonts.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.scrollbar/jquery.scrollbar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/select2/css/select2.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/layouts/layout.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/action-links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/breadcrumb.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/button.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/collapse-processed.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/container-inline.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/details.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/exposed-filters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/field.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/icons.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/inline-form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/item-list.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/menu.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/more-link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/pager.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabledrag.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tableselect.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tablesort.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabs.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/textarea.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/ui-dialog.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/node.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/fancybox/jquery.fancybox.min.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/fancybox.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/block.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/footer.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/header.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/sidebar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/notification.css?szsnyq" />
+<link rel="stylesheet" media="print" href="/docs/themes/custom/creatio_academy/css/theme/print.css?szsnyq" />
+
+    
+  </head>
+  <body class="path-node page-node-type-developer-documentation">
+          <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="creatio-page d-flex flex-column">
+        <div class="region region-informer">
+    <div id="block-notification-union" class="block block-simple-block block-simple-blocknotification-union">
+  
+    
+      <div id="union-notification">
+<div class="union-content notification-com">
+<p class="union-subtitle">This documentation is valid for Creatio version 7.17(7.18).</p>
+
+<p class="union-subtitle">We recommend using <a href="https://academy.creatio.com/docs/8.x/" target="_blank">the newest version of Creatio documentation</a>.</p>
+
+<!-- <div class="union-close">&nbsp;</div> -->
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+  <header role="banner">
+          <div class="creatio-region creatio-region_top">
+        <div class="creatio-container">
+            <div class="region region-top">
+    <div id="block-menutoggle" class="block block-simple-block block-simple-blockmenu-toggle">
+  
+    
+      <div class="menu-toggle"><span>&nbsp;</span></div>
+
+  </div>
+<div id="block-logowhite-2" class="block block-simple-block block-simple-blocklogo-white">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo-white.svg"></a></p>
+
+  </div>
+<div id="block-search" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-sites-menu" id="block-sites" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-usermenu" class="block block-ts-user block-ts-user-menu-block">
+  
+    
+      <ul class="user-menu">
+      <li class="user-menu__item">
+      <a class="user-menu__link" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/communication_panel/overview">Log in</a>
+    </li>
+  </ul>
+
+  </div>
+<div id="block-usermenumobile" class="block block-ts-user block-ts-user-menu-mobile-block">
+  
+    
+      <ul class="user-menu-mobile">
+      <li class="user-menu-mobile__item">
+      <div class="user-menu-mobile__user user-menu-mobile__user_icon"></div>
+      <ul class="user-menu-mobile__submenu">
+        <li class="user-menu-mobile__subitem">
+          <a class="user-menu-mobile__sublink" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/communication_panel/overview">Log in</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+              <div class="creatio-region creatio-region_header">
+        <div class="creatio-container">
+            <div class="region region-header">
+    <div id="block-logo" class="block block-simple-block block-simple-blocklogo">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo.svg"></a></p>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/docs/8.x">Guides</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/e-learning">E-learning</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/training">Training</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/certification">Certification</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-sites-2-menu" id="block-sites-2" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-2-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-search-2" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+      </header>
+
+      <div class="creatio-region creatio-region_breadcrumb">
+      <div class="creatio-container">
+          <div class="region region-breadcrumb">
+    <div id="block-breadcrumbnaviagtion" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  
+  <div class="creatio-region creatio-region_main">
+    <div class="creatio-container">
+                <div class="region region-breadcrumb-mobile">
+    <div id="block-breadcrumbnaviagtion-2" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      
+      <main class="creatio-main" role="main">
+                                                    
+        <div class="creatio-content creatio-content_small">
+          <div class="creatio-content__inner creatio-content__inner_bg">
+                            <div class="region region-messages">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            
+              <div class="region region-content">
+    <div id="block-creatio-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Communication panel</span>
+</h1>
+
+
+  </div>
+<div id="block-creatio-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article data-history-node-id="1433" class="node node--type-developer-documentation node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-ts-nav block-ts-nav-sdk-navigation">
+  
+    
+      <div class="ts-nav-sdk">
+  <div class="ts-nav-sdk__container">
+    <div class="ts-nav-sdk__items">
+      <div class="ts-nav-sdk__item">
+        <a class="ts-nav-sdk__link ts-nav-sdk__link_active" href="#"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_guide"></span>Guide</a>
+      </div>
+    </div>
+  </div>
+      <div class="ts-nav-sdk__container">
+      <ul class="ts-nav-sdk__items">
+                                                            <li class="ts-nav-sdk__item ts-nav-sdk__item_expanded">
+          <a class="ts-nav-sdk__link ts-nav-sdk__link_expanded" data-id="1959" href="#case-1959"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_case"></span>Examples</a>
+                      <ul class="ts-nav-sdk__subitems">
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1959" href="#case-1959">Create a case based on a message from the internal feed of another case</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1958" href="#case-1958">Hide feed area in the agent desktop</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1912" href="#case-1912">Display the time zone of a contact on a communication panel tab</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1950" href="#case-1950">Create a custom reminder</a>
+                </li>
+                          </ul>
+                  </li>
+      </ul>
+    </div>
+    </div>
+<div class="ts-nav-sdk-mobile">
+  <select class="ts-nav-sdk-mobile__select">
+    <option value="0">Guide</option>
+          <optgroup label="Cases">
+                  <option value="1959">Create a case based on a message from the internal feed of another case</option>
+                  <option value="1958">Hide feed area in the agent desktop</option>
+                  <option value="1912">Display the time zone of a contact on a communication panel tab</option>
+                  <option value="1950">Create a custom reminder</option>
+              </optgroup>
+          </select>
+</div>
+
+  </div>
+<div class="block block-ts-doc block-ts-doc-versions">
+  
+    
+        <div class="ts-doc-versions">
+    <select class="ts-doc-versions__select">
+                                                <option value="/docs/7-18/developer/interface_elements/communication_panel/overview" selected>Version 7.18</option>
+                              <option value="/docs/7-17/developer/interface_elements/communication_panel/overview">Version 7.17</option>
+                              <option value="/docs/7-16/developer/interface_elements/communication_panel/overview">Version 7.16</option>
+          </select>
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-121" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/beginner.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Beginner</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationbody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><strong>Communication panel</strong> is a tool that lets you talk to customers and coworkers, as well as receive Creatio notifications. Creatio displays the panel on the right.</p>
+
+<h2>Communication panel structure<a class="title-anchor" href="#title-2341-1" id="title-2341-1">&nbsp;</a></h2>
+
+<p>The communication panel <strong>tabs</strong> are as follows:</p>
+
+<ul>
+	<li><span class="key">Operation single window</span>. Enables bank tellers to consult with customers. Available in Financial Services Creatio, customer journey edition. Tellers can search for bank customers by various criteria, initiate consultations, and postpone consultations.</li>
+	<li><span class="key">CTI panel</span>. Lets you accept incoming and initiate outgoing calls directly in Creatio. One of Creatio phone integration tools. Learn more about the phone integration in the user documentation: <a href="https://academy.creatio.com/docs/user/more_apps/phone_integration_connectors">Phone integration connectors</a>, <a href="https://academy.creatio.com/documents?id=1027">Manage calls</a>.</li>
+	<li><span class="key">Email</span>. Lets you send and receive emails. You can link emails to other Creatio objects. Learn more about managing emails in the user documentation: <a href="https://academy.creatio.com/documents?id=1020">Work with emails</a>.</li>
+	<li><span class="key">Feed</span>. Displays messages of the <span class="key">Feed</span> section. Lets you view messages from the channels you follow, as well as add new messages and comments. The functionality of the tab is identical to the functionality of the <span class="key">Feed</span> section.</li>
+	<li><span class="key">Notification center</span>. Displays notifications about various Creatio events. Learn more about managing notifications in the user documentation: <a href="https://academy.creatio.com/documents?id=1589">Check notifications and process tasks</a>.</li>
+	<li><span class="key">Business process tasks</span>. Displays incomplete steps of running business processes. Learn more about managing running business processes in the user documentation: <a href="https://academy.creatio.com/documents?id=1589&amp;anchor=title-2099-13">Check notifications and process tasks</a>.</li>
+</ul>
+
+<h2>Communication panel containers<a class="title-anchor" href="#title-2341-2" id="title-2341-2">&nbsp;</a></h2>
+
+<p>Creatio stores the UI elements related to the communication panel in the corresponding containers. Configure the communication panel containers in the <span class="filled">CommunicationPanel</span> base schema of the <span class="filled">Uiv2</span> package. Configure the <span class="key">CTI panel</span> tab in the <span class="filled">CtiPanel</span> child schema of the <span class="filled">CTIBase</span> package.</p>
+
+<div class="message">
+<p><span class="message__bold">Note.</span> Creatio uses HTML container meta names. It generates actual IDs that match the HTML elements of the communication panel based on the meta names.</p>
+</div>
+
+<p>View the main <strong>communication panel containers</strong> in the figure below.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CommunicationPanel/8.0/scr_intro_ui_communicationpanel.png"></div>
+</div>
+
+<ul>
+	<li>The button container of the communication panel (<span class="filled">CommunicationPanelContainer</span>) includes buttons that open communication panel tabs.</li>
+	<li>The tab container of the communication panel (<span class="filled">rightPanel</span>) includes the content of the communication panel’s current tab.</li>
+</ul>
+
+<h2>Create a custom reminder or notification<a class="title-anchor" href="#title-2341-3" id="title-2341-3">&nbsp;</a></h2>
+
+<p>Creatio lets you display notifications in the following <strong>ways</strong>:</p>
+
+<ul>
+	<li>immediately</li>
+	<li>at the specified time</li>
+</ul>
+
+<p>To <strong>create a custom reminder or notification</strong>:</p>
+
+<ol>
+	<li>
+	<p>Implement the <strong>reminder text and dialog</strong>.</p>
+
+	<p>Create a <span class="key">Source code</span> type schema. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15108">Source code (C#)</a>.</p>
+
+	<ol>
+		<li>Create a class that generates the reminder text and dialog.</li>
+		<li>Implement the <span class="filled">IRemindingTextFormer</span> interface of the <span class="filled">Base</span> package's <span class="filled">IRemindingTextFormer</span> schema in the class.</li>
+	</ol>
+	</li>
+	<li>
+	<p>Implement the <strong>mechanism that sends the reminder</strong>.</p>
+
+	<ol>
+		<li>Create a replacing object on which to send the reminder. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15107&amp;anchor=title-3028-7">Object</a>.</li>
+		<li>
+		<p>Create an <strong>object event</strong>. To do this, go to the <span class="key">Events</span> node and select the <span class="key">After record added</span> checkbox in the <span class="key">Adding</span> block.</p>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_After_record_added.png"></div>
+		</div>
+		</li>
+		<li>
+		<p>Set up the <strong>parameter the business process uses to generate the reminder</strong> in the object schema.</p>
+
+		<ol>
+			<li>
+			<p>Add a <strong>parameter</strong>.</p>
+
+			<ol>
+				<li>
+				<p>Open the <span class="key">Parameters</span> tab in the setup area and click <span class="key">Add parameter</span> → <span class="key">Boolean</span>.</p>
+
+				<div class="media">
+				<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_Boolean_parameter.png"></div>
+				</div>
+				</li>
+				<li>Fill out the <strong>parameter properties</strong> in the Object Designer.</li>
+			</ol>
+			</li>
+			<li>
+			<p>Overload the <strong>methods</strong>.</p>
+
+			<ul>
+				<li>
+				<p>Overload the <strong>method called after the object is saved</strong>. To do this, open the <span class="key">Methods</span> tab of the setup area and add the source code of the overloaded method.</p>
+
+				<p>Creatio can display the notification in the following <strong>ways</strong>:</p>
+
+				<ul>
+					<li>The reminder tab of the notification center. To set this up, assign <span class="filled">RemindingConsts.NotificationTypeRemindingId</span> to the <span class="filled">remindingConfig.NotificationTypeId</span> constant.</li>
+					<li>The service message tab of the notification center. To set this up, assign <span class="filled">RemindingConsts.NotificationTypeNotificationId</span> to the <span class="filled">remindingConfig.NotificationTypeId</span> constant.</li>
+				</ul>
+				</li>
+				<li>Overload the <strong>method called before the object is saved</strong>. To do this, open the <span class="key">Methods</span> tab of the setup area and add the source code of the overloaded method.</li>
+			</ul>
+			</li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li>
+	<p>Implement the <strong>mechanism that displays the reminder</strong>.</p>
+
+	<p>Create a replacing view model. To do this, follow the guide in a separate article: <a href="https://academy.creatio.com/documents?id=15106&amp;anchor=title-3028-4">Client module</a>. Select <span class="filled">ReminderNotificationsSchema</span> as the parent object.</p>
+	</li>
+</ol>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-linked">
+  
+    
+      
+  <div class="field field--name-field-linked field--type-entity-reference field--label-above">
+    <div class="field__label">See also</div>
+          <div class="field__items">
+              <div class="field__item"><a href="/docs/7-18/user/platform_basics/communications/calls/managing_calls" hreflang="en">Manage calls</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/platform_basics/communications/emails/working_with_emails" hreflang="en">Work with emails</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/platform_basics/communications/notifications/check_notifications_and_process_tasks" hreflang="en">Check notifications and process tasks</a></div>
+              </div>
+      </div>
+
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/docs/user/more_apps/phone_integration_connectors">Phone integration connectors Creatio documentation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-cases">
+  
+    
+      
+      <div class="field field--name-field-cases field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="1959" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Create a case based on a message from the internal feed of another case</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_warning">
+<p>The example is relevant to Service Creatio products.</p>
+</div>
+
+<div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Add a pop-up button to the <span class="key">Processing</span> tab of the case page. Display the button when you select text in emails and self-service portal messages sent from the internal case feed. Create a new case on button click. Populate the <span class="key">Subject</span> and <span class="key">Description</span> fields automatically. Set the field values to selected text.</p>
+</div>
+
+<h2>Create a replacing view model schema of the case page<a class="title-anchor" href="#title-3249-1" id="title-3249-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-2093-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">SocialMessageHistoryItemPageV2</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">SocialMessageHistoryItemPageV2</span>."</li>
+		<li>Select "<span class="consolas">SocialMessageHistoryItemPageV2</span>" in the <span class="key">Parent object</span> property.</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddFloatingIcon/7.18/scr_SocialMessageHistoryItemPageV2_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Implement the <strong>pop-up button logic</strong>.</p>
+
+	<ul>
+		<li>
+		<p>Implement the following <strong>methods</strong> in the <span class="filled">methods</span> property:</p>
+
+		<ul>
+			<li><span class="filled">onSelectedTextChanged()</span>. Passes the selected text to the <span class="filled">HighlightedHistoryMessage</span> attribute. Triggered on text selection.</li>
+			<li><span class="filled">onSelectedTextButtonClick()</span>. Creates a case, retrieves the case subject from the <span class="filled">HighlightedHistoryMessage</span> attribute. The <span class="filled">BaseMessageHistory</span> parent schema defines the case creation logic. Triggered on pop-up button click.</li>
+			<li><span class="filled">getMessageFromHistory()</span>. An overloaded parent schema method that retrieves the subject of the selected message.</li>
+		</ul>
+		</li>
+		<li>Add a configuration object that contains the settings of the the <span class="filled">Message</span> package's <span class="filled">SelectionHandlerMultiLineLabel</span> element to the <span class="filled">diff</span> array of modifications. The element implements the mechanism that creates a new case based on selected text.</li>
+	</ul>
+
+	<p>View the source code of the replacing view model schema of the case page below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">SocialMessageHistoryItemPageV2</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("SocialMessageHistoryItemPageV2", ["SocialMessageConstants", "css!SocialMessageHistoryItemStyle"], function(socialMessageConstants) {
+    return {
+        /* The name of the record page object's schema. */
+        entitySchemaName: "BaseMessageHistory",
+        /* The details of the record page's view model. */
+        details: /**SCHEMA_DETAILS*/{}/**SCHEMA_DETAILS*/,
+        /* The methods of the record page's view model. */
+        methods: {
+            /* Overload the base method. Retrieve the subject of the selected message. */
+            getMessageFromHistory: function() {
+                var message = this.get("HighlightedHistoryMessage");
+                if (this.isHistoryMessageEmpty(message)) {
+                    message = this.get("[Activity:Id:RecordId].Body");
+                }
+                return message;
+            },
+            /* The handler of the text selection event. */
+            onSelectedTextChanged: function(text) {
+                this.set("HighlightedHistoryMessage", text);
+            },
+            /* The handler of the pop-up button click. */
+            onSelectedTextButtonClick: function() {
+                /* Prepare case data from history. */
+                this.prepareCaseDataFromHistory();
+            }
+        },
+        /* Display the button on the record page. */
+        diff: /**SCHEMA_DIFF*/[
+            /* The metadata to add the pop-up button to the page. */
+            {
+                /* Execute the operation that modifies the existing element. */
+                "operation": "merge",
+                /* The meta name of the component to change. */
+                "name": "MessageText",
+                /* The properties to pass to the element's constructor. */
+                "values": {
+                    /* The properties of the view generator. */
+                    "generator": function() {
+                        return {
+                            /* The value of the id HTML tag. */
+                            "id": "MessageText",
+                            /* The value of the marker. */
+                            "markerValue": "MessageText",
+                            /* The name of the component class. */
+                            "className": "Terrasoft.SelectionHandlerMultilineLabel",
+                            /* Set up the CSS styles. */
+                            "classes": {
+                                "multilineLabelClass": ["messageText"]
+                            },
+                            /* The caption. */
+                            "caption": {"bindTo": "Message"},
+                            "showLinks": true,
+                            /* Bind the change event of the selected text to the handler method. */
+                            "selectedTextChanged": {"bindTo": "onSelectedTextChanged"},
+                            /* Bind the click event of the selected text's pop-up button to the handler method. */
+                            "selectedTextHandlerButtonClick": {"bindTo": "onSelectedTextButtonClick"},
+                            /* Flag the pop-up button as visible. */
+                            "showFloatButton": true
+                        };
+                    }
+                }
+            }
+        ]/**SCHEMA_DIFF*/
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h2>Outcome of the example<a class="title-anchor" href="#title-3249-2" id="title-3249-2">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>:</p>
+
+<ol>
+	<li>Refresh the <span class="key">Cases</span> section page.</li>
+	<li>Open a case page.</li>
+</ol>
+
+<p>As a result, Creatio will add a pop-up button to the <span class="key">Processing</span> tab of the case page. The button appears when you select text from emails and self-service portal messages sent from the internal case feed. Click the button to create a new case. Creatio populates the <span class="key">Subject</span> and <span class="key">Description</span> fields automatically. The field values are set to selected text.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/AddFloatingIcon/7.18/result.gif"></div>
+</div></div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkAddFloatingIconPackage_2022-02-04_10.41.55.zip" target="_blank">Package with example implementation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1958" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Hide feed area in the agent desktop</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_warning">
+<p>The example is relevant to the <span class="key">Contact center</span> workplace.</p>
+</div>
+
+<div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Hide the feed area from the <span class="key">Agent desktop</span> section.</p>
+</div>
+
+<h2>Create a schema of the replacing section view model<a class="title-anchor" href="#title-3248-1" id="title-3248-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-2093-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">OperatorSingleWindowPage</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Agent desktop page</span>."</li>
+		<li>Select "<span class="consolas">OperatorSingleWindowPage</span>" in the <span class="key">Parent object</span> property.</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/HideFeedArea/7.18/scr_OperatorSingleWindowPage_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Implement the <strong>mechanism that hides the feed area</strong>.</p>
+
+	<ul>
+		<li>Implement the <span class="filled">loadContent()</span> method in the <span class="filled">methods</span> property. This is an overloaded base method that excludes the <span class="filled">ESNFeedModule</span> feed module from the index of loaded modules.</li>
+		<li>Add a configuration object that deletes the element from the page to the <span class="filled">diff</span> array of modifications.</li>
+	</ul>
+
+	<p>View the source code of the replacing view model schema of the section below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">OperatorSingleWindowPage</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("OperatorSingleWindowPage", [], function() {
+    return {
+        /* The methods of the section view model. */
+        methods: {
+            /* Replace the base method to exclude the ESNFeedModule feed module from the index of loaded modules. */
+            loadContent: function() {
+                /* Since the centerContainer container is deleted, you do not need to load the ESNFeedModule module.
+                this.loadModule("ESNFeedModule", "centerContainer"); */
+                /* Load the modules. */ 
+                this.loadModule("SectionDashboardsModule", "rightContainer");
+                this.loadModule("OperatorQueuesModule", "leftContainer");
+            }
+        },
+        /* Display the container in the section. */
+        diff: /**SCHEMA_DIFF*/[
+            /* The metadata to remove the container from the section. */
+            {
+                /* Execute the operation that deletes the existing element. */
+                "operation": "remove",
+                /* The meta name of the component to delete. */
+                "name": "centerContainer"
+            }
+        ]/**SCHEMA_DIFF*/
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h2>Outcome of the example<a class="title-anchor" href="#title-3248-2" id="title-3248-2">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>, refresh the <span class="key">Agent desktop</span> section page.</p>
+
+<p>As a result, Creatio will hide the feed area from the <span class="key">Agent desktop</span> section.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/HideFeedArea/7.18/scr_result.png"></div>
+</div></div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkHideFeedAreaPackage_2022-02-04_11.58.43.zip" target="_blank">Package with example implementation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1912" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Display the time zone of a contact on a communication panel tab</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Display the time zone of a contact on the <span class="key">CTI panel</span> tab of the communication panel when you search for a contact. Use the current time of a contact.</p>
+</div>
+
+<h2>1. Create a replacing view model schema of the page for found subscribers <a class="title-anchor" href="#title-3191-1" id="title-3191-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>.</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">SubscriberSearchResultItem</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Found subscriber schema</span>."</li>
+		<li>Select "<span class="consolas">SubscriberSearchResultItem</span>" in the <span class="key">Parent object</span> property.</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/TimeZone/7.18/scr_SubscriberSearchResultItem_props.png"></div>
+	</div>
+	</li>
+	<li>Add the <span class="filled">TimezoneGenerator</span> and <span class="filled">TimezoneMixin</span> modules as dependencies to the declaration of the view model class. The <span class="filled">TimezoneGenerator</span> module creates an element that displays the time zone of the contact. The <span class="filled">TimezoneMixin</span> module searches for the time zone of the contact.</li>
+	<li>
+	<p>Implement a <strong>mechanism that displays the time zone</strong>.</p>
+
+	<ul>
+		<li>Add the <span class="filled">IsShowTimeZone</span> attribute to the <span class="filled">attributes</span> property. The attribute determines the visibility of the time zone element.</li>
+		<li>
+		<p>Add the <span class="filled">TimezoneMixin</span> mixin to the <span class="filled">mixins</span> property. To run the search for the contact time zone, pass the contact ID to the <span class="filled">init</span> method of the <span class="filled">TimezoneMixin</span> mixin. As a result, Creatio will set the following <strong>attributes</strong>:</p>
+
+		<ul>
+			<li><span class="filled">TimeZoneCaption</span>. The name of the contact's time zone and current time.</li>
+			<li><span class="filled">TimeZoneCity</span>. The name of the city in the time zone.</li>
+		</ul>
+		</li>
+		<li>
+		<p>Implement the following <strong>methods</strong> in the <span class="filled">methods</span> property:</p>
+
+		<ul>
+			<li><span class="filled">constructor()</span>. The class constructor.</li>
+			<li><span class="filled">isContactType()</span>. Returns the flag that indicates that the subscriber is a contact.</li>
+		</ul>
+		</li>
+		<li>
+		<p>Add a configuration object with the display settings of the contact's time zone to the <span class="filled">diff</span> array of modifications.</p>
+
+		<ul>
+			<li>
+			<p><span class="filled">index</span> property. Configures the element layout.</p>
+
+			<p><span class="filled">SubscriberSearchResultItemContainer</span> container <strong>elements</strong>:</p>
+
+			<ul>
+				<li><span class="consolas">0</span> index: subscriber photo.</li>
+				<li><span class="consolas">1</span> index: subscriber info.</li>
+				<li><span class="consolas">2</span> index: subscriber phones.</li>
+			</ul>
+
+			<p>Assign <span class="consolas">2</span> to the <span class="filled">index</span> property of the array of modifications to display the contact time zone between the subscriber info and the index of phone numbers.</p>
+			</li>
+			<li> <span class="filled">wrapClass</span> property. Controls the styles. An element generator. Use the <span class="filled">subscriber-data</span> CSS class to define styles for text elements in the schema.</li>
+		</ul>
+		</li>
+	</ul>
+
+	<p>View the source code of the replacing view model schema of the page for found subscribers below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">SubscriberSearchResultItem</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("SubscriberSearchResultItem", ["TimezoneGenerator", "TimezoneMixin"], function() {
+    return {
+        /* The attributes of the page view model. */
+        attributes: {
+            /* The name of the attribute that determines the visibility of the time zone element. */
+            "IsShowTimeZone": {
+                /* The data type of the view model column. */
+                "dataValueType": Terrasoft.DataValueType.BOOLEAN,
+                /* The attribute type. */
+                "type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+                /* The default value. */
+                "value": true
+            }
+        },
+        /* The mixins of the page view model. */
+        mixins: {
+            /* Enable the mixin. */
+            TimezoneMixin: "Terrasoft.TimezoneMixin"
+        },
+        /* The methods of the page view model. */
+        methods: {
+            /* The class constructor. */
+            constructor: function() {
+                /* Call the base constructor. */
+                this.callParent(arguments);
+                /* The flag that indicates that the subscriber is a contact. */
+                var isContact = this.isContactType();
+                /* If the subscriber is a contact, display the element. */
+                this.set("IsShowTimeZone", isContact);
+                /* If the subscriber is a contact. */
+                if (isContact) {
+                    /* The contact ID. */
+                    var contactId = this.get("Id");
+                    /* Search for the contact time zone. */
+                    this.mixins.TimezoneMixin.init.call(this, contactId);
+                }
+            },
+            /* Return the flag that indicates that the subscriber is a contact. */
+            isContactType: function() {
+                /* The subscriber type. */
+                var type = this.get("Type");
+                /* Return the comparison result. */
+                return type === "Contact";
+            }
+        },
+        /* The array of modifications of the page view model. */
+        diff: [
+            {
+                /* Add the element to the page. */
+                "operation": "insert",
+                /* The meta name of the parent container to add the element. */
+                "parentName": "SubscriberSearchResultItemContainer",
+                /* Add the element to the parent element's collection of elements. */
+                "propertyName": "items",
+                /* The meta name of the element to add. */
+                "name": "TimezoneContact",
+                /* The properties to pass to the element constructor. */
+                "values": {
+                    /* The element type. */
+                    "itemType": Terrasoft.ViewItemType.CONTAINER,
+                    /* Call the method of the generator to create the view configuration. */
+                    "generator": "TimezoneGenerator.generateTimeZone",
+                    /* Bind the container visibility to the attribute. */
+                    "visible": {"bindTo": "IsShowTimeZone"},
+                    /* The name of the CSS class. */
+                    "wrapClass": ["subscriber-data", "timezone"],
+                    /* Bind the caption to the attribute. */
+                    "timeZoneCaption": {"bindTo": "TimeZoneCaption"},
+                    /* Bind the city to the attribute. */
+                    "timeZoneCity": {"bindTo": "TimeZoneCity"}
+                },
+                /* The element layout in the parent container. */
+                "index": 2
+            }
+        ]
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<p>As a result, Creatio will display the current time and city of the contact.</p>
+
+<h2>2. Add display styles of the time zone<a class="title-anchor" href="#title-3191-2" id="title-3191-2">&nbsp;</a></h2>
+
+<p>The view model schema of a page for found subscribers does not support visual styles. As such, take the following steps to add the styles:</p>
+
+<ol>
+	<li>Create a module schema. Define the styles in it.</li>
+	<li>Add the style module to the dependencies of the page for found subscribers.</li>
+</ol>
+
+<h3>1. Create a module schema<a class="title-anchor" href="#title-3191-3" id="title-3191-3">&nbsp;</a></h3>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Module</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong>:</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">UsrSubscriberSearchResultItemCSS</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">SubscriberSearchResultItemCSS</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/TimeZone/7.18/scr_UsrSubscriberSearchResultItemCSS_props.png"></div>
+	</div>
+
+	<p>Click <span class="key">Apply</span> to apply the properties.</p>
+	</li>
+	<li>
+	<p>Go to the <span class="key">LESS</span> node of the object structure and set up the needed visual styles of the time zone.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title">Set up the visual styles of the time zone</div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+/* Set up the visual styles of the element to add. */
+.ctiPanelMain .search-result-items-list-container .timezone {
+    /* Top padding. */
+    padding-top: 13px;
+    /* Bottom margin. */
+    margin-bottom: -10px;
+}
+/* Set up the visual styles of the contact time. */
+.ctiPanelMain .search-result-items-list-container .timezone-caption {
+    /* Left padding. */
+    padding-left: 10px;
+    /* Text color. */
+    color: rgb(255, 174, 0);
+    /* Set the text font to bold. */
+    font-weight: bold;
+}
+/* Set up the visual styles of the contact city. */
+.ctiPanelMain .search-result-items-list-container .timezone-city {
+    /* Left padding. */
+    padding-left: 10px;
+}
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>
+	<p>Go to the <span class="key">JS</span> node of the object structure and add the module code.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">UsrSubscriberSearchResultItemCSS</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("UsrSubscriberSearchResultItemCSS", [], function() {
+    return {};
+});
+    </pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h3>2. Edit the view model schema of the page for found subscribers<a class="title-anchor" href="#title-3191-4" id="title-3191-4">&nbsp;</a></h3>
+
+<p>To <strong>use the module and its styles</strong> in the schema of the page for found subscribers:</p>
+
+<ol>
+	<li>Open the <span class="filled">SubscriberSearchResultItem</span> view model schema of the page for found subscribers.</li>
+	<li>
+	<p>Add the <span class="filled">UsrSubscriberSearchResultItemCSS</span> module to the dependencies of the <span class="filled">SubscriberSearchResultItem</span> schema.</p>
+
+	<p>View the source code of the edited schema of the page for found subscribers.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">SubscriberSearchResultItem</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("SubscriberSearchResultItem", ["TimezoneGenerator", "TimezoneMixin", "css!UsrSubscriberSearchResultItemCSS"], function() {
+    return {
+        /* The attributes of the page view model. */
+        attributes: {
+            /* The name of the attribute that controls the visibility of the time zone element. */
+            "IsShowTimeZone": {
+                /* The data type of the view model column. */
+                "dataValueType": Terrasoft.DataValueType.BOOLEAN,
+                /* The attribute type. */
+                "type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+                /* The default value. */
+                "value": true
+            }
+        },
+        /* The mixins of the page view model. */
+        mixins: {
+            /* Enable the mixin. */
+            TimezoneMixin: "Terrasoft.TimezoneMixin"
+        },
+        /* The methods of the page view model. */
+        methods: {
+            /* The class constructor. */
+            constructor: function() {
+                /* Call the base constructor. */
+                this.callParent(arguments);
+                /* The flag that indicates that the subscriber is a contact. */
+                var isContact = this.isContactType();
+                /* If the subscriber is a contact, display the element. */
+                this.set("IsShowTimeZone", isContact);
+                /* If the subscriber is a contact. */
+                if (isContact) {
+                    /* The contact ID. */
+                    var contactId = this.get("Id");
+                    /* Search for the contact time zone. */
+                    this.mixins.TimezoneMixin.init.call(this, contactId);
+                }
+            },
+            /* Return the flag that indicates that the subscriber is a contact. */
+            isContactType: function() {
+                /* The subscriber type. */
+                var type = this.get("Type");
+                /* Return the comparison result. */
+                return type === "Contact";
+            }
+        },
+        /* The array of modifications of the page view model. */
+        diff: [
+            {
+                /* Add the element to the page. */
+                "operation": "insert",
+                /* The meta name of the parent container to add the element. */
+                "parentName": "SubscriberSearchResultItemContainer",
+                /* Add the element to the parent element's collection of elements. */
+                "propertyName": "items",
+                /* The meta name of the element to add. */
+                "name": "TimezoneContact",
+                /* The properties to pass to the element constructor. */
+                "values": {
+                    /* The element type. */
+                    "itemType": Terrasoft.ViewItemType.CONTAINER,
+                    /* Call the method of the generator to create the view configuration. */
+                    "generator": "TimezoneGenerator.generateTimeZone",
+                    /* Bind the container visibility to the attribute. */
+                    "visible": {"bindTo": "IsShowTimeZone"},
+                    /* The name of the CSS class. */
+                    "wrapClass": ["subscriber-data", "timezone"],
+                    /* Bind the caption to the attribute. */
+                    "timeZoneCaption": {"bindTo": "TimeZoneCaption"},
+                    /* Bind the city to the attribute. */
+                    "timeZoneCity": {"bindTo": "TimeZoneCity"}
+                },
+                /* The element layout in the parent container. */
+                "index": 2
+            }
+        ]
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Designer's toolbar.</li>
+</ol>
+
+<h2>Outcome of the example<a class="title-anchor" href="#title-3191-5" id="title-3191-5">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>:</p>
+
+<ol>
+	<li>Open the <span class="key">CTI panel</span> tab of the communication panel.</li>
+	<li>Search for a subscriber.</li>
+</ol>
+
+<p>As a result, when you search for a contact, Creatio will display their time zone on the <span class="key">CTI panel</span> tab of the communication panel. The current time of the contact will be used.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/TimeZone/7.18/scr_result.png"></div>
+</div></div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkTimeZonePackage_2022-02-07_10.40.29.zip" target="_blank">Package with example implementation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1950" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Create a custom reminder</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-123" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/medium.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Medium</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Create a custom reminder for the opportunity update date in a lead. Creatio displays the date in the <span class="key">Next actualization date</span> field on the <span class="key">Opportunity info</span> tab. Display the reminder on the reminder tab of the notification center.</p>
+</div>
+
+<h2>1. Implement the reminder text and dialog<a class="title-anchor" href="#title-3251-1" id="title-3251-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Source code</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SourceCode/8.0/scr_AddList.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the <strong>schema properties</strong> in the Source Code Designer:</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">UsrLeadRemindingText</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Lead reminding text</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_UsrLeadRemindingText_props.png"></div>
+	</div>
+
+	<p>Click <span class="key">Apply</span> to apply the properties.</p>
+	</li>
+	<li>
+	<p>Add a <strong>localizable string</strong> that contains the reminder dialog caption.</p>
+
+	<ol>
+		<li>Click the <img alt="scr_add_button.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_button.png"> button in the context menu of the <span class="key">Localizable strings</span> node.</li>
+		<li>
+		<p>Fill out the <strong>localizable string properties</strong>:</p>
+
+		<ul>
+			<li>Set <span class="key">Code</span> to "<span class="consolas">TitleTemplate</span>."</li>
+			<li>Set <span class="key">Value</span> to "<span class="consolas">You need to update the sale</span>."</li>
+		</ul>
+
+		<div class="media">
+		<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_TitleTemplate_props.png"></div>
+		</div>
+		</li>
+		<li>Click <span class="key">Add</span> to add a localizable string.</li>
+	</ol>
+	</li>
+	<li>
+	<p>Add a <strong>localizable string</strong> that contains the reminder text similarly.</p>
+
+	<p>View the properties of the localizable string to add in the table below.</p>
+
+	<div class="table">
+	<div class="table__caption">Localizable string properties</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>
+				<center><span class="key">Code</span></center>
+				</th>
+				<th>
+				<center><span class="key">Value</span></center>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<center>"<span class="consolas">BodyTemplate</span>"</center>
+				</td>
+				<td>
+				<center>"<span class="consolas">Lead {0} requires update of sales information</span>"</center>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	</li>
+	<li>
+	<p>Implement the <strong>reminder text and dialog</strong>.</p>
+
+	<p>View the source code of the source code schema below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">UsrLeadRemindingText</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+namespace Terrasoft.Configuration
+{
+    using System.Collections.Generic;
+    using Terrasoft.Common;
+    using Terrasoft.Core;
+
+    public class UsrLeadRemindingText : IRemindingTextFormer
+    {
+        private const string ClassName = nameof(UsrLeadRemindingText);
+        protected readonly UserConnection UserConnection;
+
+        public UsrLeadRemindingText(UserConnection userConnection) {
+            UserConnection = userConnection;
+        }
+        /* Generate the reminder text using the collection of incoming parameters and BodyTemplate localizable string. */
+        public string GetBody(IDictionary&lt;string, object&gt; formParameters) {
+            formParameters.CheckArgumentNull("formParameters");
+            var bodyTemplate = UserConnection.GetLocalizableString(ClassName, "BodyTemplate");
+            var leadName = (string)formParameters["LeadName"];
+            var body = string.Format(bodyTemplate, leadName);
+            return body;
+        }
+        /* Generate the reminder caption using the class name and TitleTemplate localizable string. */
+        public string GetTitle(IDictionary&lt;string, object&gt; formParameters) {
+            return UserConnection.GetLocalizableString(ClassName, "TitleTemplate");
+        }
+    }
+}
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Source Code Designer's toolbar to save the changes to Creatio metadata temporarily.</li>
+	<li>Click <span class="key">Publish</span> on the Source Code Designer's toolbar to apply the changes to the database level.</li>
+</ol>
+
+<h2>2. Implement the mechanism that sends the reminder<a class="title-anchor" href="#title-3251-2" id="title-3251-2">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing object</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Object/8.0/scr_add_replacing_object.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Select "<span class="consolas">Lead</span>" in the <span class="key">Parent object</span> property of the Object Designer.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_UsrLead_props.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Create an <strong>object event</strong>.</p>
+
+	<ol>
+		<li>Open the <span class="key">Events</span> node.</li>
+		<li>Go to the <span class="key">Adding</span> block → select the <span class="key">After record added</span> checkbox.</li>
+	</ol>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_After_record_added.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Set up the <strong>parameter the business process uses to generate the reminder</strong> in the object schema.</p>
+
+	<ol>
+		<li>Click <span class="key">Save</span> on the Object Designer's toolbar.</li>
+		<li>Click <span class="key">Open process</span> on the Object Designer's toolbar.</li>
+		<li>
+		<p>Add a <strong>parameter</strong>.</p>
+
+		<ol>
+			<li>
+			<p>Open the <span class="key">Parameters</span> tab in the setup area and click <span class="key">Add parameter</span> → <span class="key">Boolean</span>.</p>
+
+			<div class="media">
+			<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_Boolean_parameter.png"></div>
+			</div>
+			</li>
+			<li>
+			<p>Fill out the <strong>parameter properties</strong> in the Object Designer.</p>
+
+			<ul>
+				<li>Set <span class="key">Title</span> to "<span class="consolas">Generate reminding</span>."</li>
+				<li>Set <span class="key">Code</span> to "<span class="consolas">GenerateReminding</span>."</li>
+			</ul>
+
+			<div class="media">
+			<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_GenerateReminding_props.png"></div>
+			</div>
+			</li>
+			<li>Click <span class="key">Save</span>.</li>
+		</ol>
+		</li>
+		<li>
+		<p>Overload the <strong>methods</strong>.</p>
+
+		<ul>
+			<li>
+			<p>Overload the <strong>method called after the object is saved</strong>. To do this, open the <span class="key">Methods</span> tab of the setup area and add the source code of the overloaded <span class="filled">LeadSaved()</span> method.</p>
+
+			<div class="code">
+			<div class="code__widgets">
+			<div class="code__top">
+			<div class="code__title"><span class="filled">LeadSaved()</span></div>
+			</div>
+
+			<div class="code__source">
+			<pre class="prettyprint">
+public override void LeadSaved() {
+    base.LeadSaved();
+    /* Check whether the reminder must be generated. */
+    if (!GenerateReminding) {
+        return;
+    }
+    DateTime remindTime = Entity.NextActualizationDate;
+    if (Entity.OwnerId.Equals(Guid.Empty) || remindTime.Equals(default(DateTime))) {
+        return;
+    }
+    /* Create an instance of the UsrLeadRemindingText class. */
+    IRemindingTextFormer textFormer = ClassFactory.Get&lt;UsrLeadRemindingText&gt;(new ConstructorArgument("userConnection", UserConnection));
+    /* Retrieve the lead name. */
+    string leadName = Entity.LeadName;
+    /* Retrieve the reminder text. */
+    string subjectCaption = textFormer.GetBody(new Dictionary&lt;string, object&gt; {
+        {"LeadName", leadName}
+    });
+    /* Retrieve the reminder caption. */
+    string popupTitle = textFormer.GetTitle(null);
+    /* Configure the reminder. */
+    var remindingConfig = new RemindingConfig(Entity);
+    /* Set the message author to the current contact. */
+    remindingConfig.AuthorId = UserConnection.CurrentUser.ContactId;
+    /* Set the target recipient to the lead owner. */
+    remindingConfig.ContactId = Entity.OwnerId;
+    /* Set the type to reminding. */
+    remindingConfig.NotificationTypeId = RemindingConsts.NotificationTypeRemindingId;
+    /* Set the date for sending a reminder to the opportunity update date in the lead. */
+    remindingConfig.RemindTime = remindTime;
+    /* Reminder text. */
+    remindingConfig.Description = subjectCaption;
+    /* Reminder caption. */
+    remindingConfig.PopupTitle = popupTitle;
+    /* Create a utility class of the reminder. */
+    var remindingUtilities = ClassFactory.Get&lt;RemindingUtilities&gt;();
+    /* Create a reminder. */
+    remindingUtilities.CreateReminding(UserConnection, remindingConfig);
+}
+</pre>
+			</div>
+			</div>
+			</div>
+
+			<p>The <span class="filled">RemindingConsts.NotificationTypeRemindingId</span> value of the <span class="filled">remindingConfig.NotificationTypeId</span> constant lets you display the notification on the reminder tab of the notification center. If you set the constant to <span class="filled">RemindingConsts.NotificationTypeNotificationId</span>, Creatio displays the reminder on the service message tab of the notification center.</p>
+			</li>
+			<li>
+			<p>Overload the <strong>method called before the object is saved</strong>. To do this, open the <span class="key">Methods</span> tab and add the source code of the overloaded <span class="filled">LeadSavingMethod()</span> method.</p>
+
+			<div class="code">
+			<div class="code__widgets">
+			<div class="code__top">
+			<div class="code__title"><span class="filled">LeadSavingMethod()</span></div>
+			</div>
+
+			<div class="code__source">
+			<pre class="prettyprint">
+public override void LeadSavingMethod() {
+    /* Call the base method implementation. */
+    base.LeadSavingMethod();
+    /* Retrieve the owner ID. */
+    var oldOwnerId = Entity.GetTypedOldColumnValue&lt;Guid&gt;("OwnerId");
+    /* Retrieve the date of the next update. */
+    DateTime oldRemindDate = Entity.GetTypedOldColumnValue&lt;DateTime&gt;("NextActualizationDate");
+    /* Compare the old and new owner IDs. */
+    bool ownerChanged = !Entity.OwnerId.Equals(oldOwnerId);
+    /* Compare the old and new update dates. */
+    bool remindDateChanged = !Entity.NextActualizationDate.Equals(oldRemindDate);
+    /* Set the GenerateReminding process parameter to true if the owner or date of the next update changed. */
+    GenerateReminding = ownerChanged || remindDateChanged;
+}
+</pre>
+			</div>
+			</div>
+			</div>
+			</li>
+		</ul>
+
+		<div class="block-collapse">
+		<div class="block-collapse__title block-collapse__title_mb-16 block-collapse__title_open">Complete source code of the object's embedded process</div>
+
+		<div class="block-collapse__content" style="display: none;">
+		<div class="code">
+		<div class="code__widgets">
+		<div class="code__top">
+		<div class="code__title"><span class="filled">Lead_sdkSendCustomNotificationPackageEventsProcess</span></div>
+		</div>
+
+		<div class="code__source">
+		<pre class="prettyprint">
+namespace Terrasoft.Configuration
+{
+
+    using DataContract = Terrasoft.Nui.ServiceModel.DataContract;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Linq;
+    using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Collections.Specialized;
+    using System.Data;
+    using System.Drawing;
+    using System.Globalization;
+    using System.IO;
+    using System.Linq;
+    using System.Web;
+    using Terrasoft.Common;
+    using Terrasoft.Common.Json;
+    using Terrasoft.Configuration.PRM;
+    using Terrasoft.Core;
+    using Terrasoft.Core.Configuration;
+    using Terrasoft.Core.DB;
+    using Terrasoft.Core.DcmProcess;
+    using Terrasoft.Core.Entities;
+    using Terrasoft.Core.Factories;
+    using Terrasoft.Core.Process;
+    using Terrasoft.Core.Process.Configuration;
+    using Terrasoft.GlobalSearch.Indexing;
+    using Terrasoft.UI.WebControls.Controls;
+    using Terrasoft.UI.WebControls.Utilities.Json.Converters;
+
+    #region Class: Lead_sdkSendCustomNotificationPackageEventsProcess
+
+    public partial class Lead_sdkSendCustomNotificationPackageEventsProcess&lt;TEntity&gt;
+    {
+
+        #region Methods: Public
+        
+            public override void LeadSaved() {
+                base.LeadSaved();
+                /* Check whether the reminder must be generated. */
+                if (!GenerateReminding) {
+                    return;
+                }
+                DateTime remindTime = Entity.NextActualizationDate;
+                if (Entity.OwnerId.Equals(Guid.Empty) || remindTime.Equals(default(DateTime))) {
+                    return;
+                }
+                /* Create an instance of the UsrLeadRemindingText class. */
+                IRemindingTextFormer textFormer = ClassFactory.Get&lt;UsrLeadRemindingText&gt;(new ConstructorArgument("userConnection", UserConnection));
+                /* Retrieve the lead name. */
+                string leadName = Entity.LeadName;
+                /* Retrieve the reminder text. */
+                string subjectCaption = textFormer.GetBody(new Dictionary&lt;string, object&gt; {
+                    {"LeadName", leadName}
+                });
+                /* Retrieve the reminder caption. */
+                string popupTitle = textFormer.GetTitle(null);
+                /* Configure the reminder. */
+                var remindingConfig = new RemindingConfig(Entity);
+                /* Set the message author to the current contact. */
+                remindingConfig.AuthorId = UserConnection.CurrentUser.ContactId;
+                /* Set the target recipient to the lead owner. */
+                remindingConfig.ContactId = Entity.OwnerId;
+                /* Set the type to reminding. */
+                remindingConfig.NotificationTypeId = RemindingConsts.NotificationTypeRemindingId;
+                /* Set the date for sending a reminder to the opportunity update date in the lead. */
+                remindingConfig.RemindTime = remindTime;
+                /* The reminder text. */
+                remindingConfig.Description = subjectCaption;
+                /* The reminder caption. */
+                remindingConfig.PopupTitle = popupTitle;
+                /* Create a utility class of the reminder. */
+                var remindingUtilities = ClassFactory.Get&lt;RemindingUtilities&gt;();
+                /* Create a reminder. */
+                remindingUtilities.CreateReminding(UserConnection, remindingConfig);
+            }
+
+            public override void LeadSavingMethod() {
+                /* Call the base method implementation. */
+                base.LeadSavingMethod();
+                /* Retrieve the owner ID. */
+                var oldOwnerId = Entity.GetTypedOldColumnValue&lt;Guid&gt;("OwnerId");
+                /* Retrieve the date of the next update. */
+                DateTime oldRemindDate = Entity.GetTypedOldColumnValue&lt;DateTime&gt;("NextActualizationDate");
+                /* Compare the old and new owner IDs. */
+                bool ownerChanged = !Entity.OwnerId.Equals(oldOwnerId);
+                /* Compare the old and new dates of the update. */
+                bool remindDateChanged = !Entity.NextActualizationDate.Equals(oldRemindDate);
+                /* Set the GenerateReminding process parameter to true if the owner or date of the next update changed. */
+                GenerateReminding = ownerChanged || remindDateChanged;
+            }
+        #endregion
+
+    }
+
+    #endregion
+
+}
+</pre>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</li>
+		<li>Click <span class="key">Save</span> then <span class="key">Publish</span> on the Object Designer's toolbar.</li>
+		<li>Click <span class="key">Cancel</span> on the Object Designer's toolbar.</li>
+	</ol>
+	</li>
+	<li>Click <span class="key">Publish</span> to create a corresponding database table.</li>
+</ol>
+
+<h2>3. Implement the mechanism that displays the reminder<a class="title-anchor" href="#title-3251-3" id="title-3251-3">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="https://academy.creatio.com/documents?id=15101&amp;anchor=title-1188-2">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="https://academy.creatio.com/documents?id=15121">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ClientModule/8.0/scr_add_replacing_view_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Select "<span class="consolas">ReminderNotificationsSchema</span>" in the <span class="key">Parent object</span> schema property of the Module Designer.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_ReminderNotificationsSchema_props.png"></div>
+	</div>
+
+	<p>Click <span class="key">Apply</span> to apply the properties.</p>
+	</li>
+	<li>
+	<p>Implement the <strong>mechanism that displays the reminder</strong>.</p>
+
+	<ol>
+		<li>
+		<p>Implement the following <strong>methods</strong> in the <span class="filled">methods</span> property:</p>
+
+		<ul>
+			<li><span class="filled">getIsLeadNotification()</span>. Determines whether the reminder is connected to the lead.</li>
+			<li><span class="filled">getNotificationSubjectCaption()</span>. Returns the reminder caption.</li>
+		</ul>
+		</li>
+		<li>
+		<p>Add <strong>configuration objects with the settings that determine layouts of the following elements</strong> to the <span class="filled">diff</span> array of modifications:</p>
+
+		<ul>
+			<li>container on the page</li>
+			<li>caption container</li>
+			<li>image</li>
+			<li>date</li>
+			<li>reminder text</li>
+		</ul>
+		</li>
+	</ol>
+
+	<p>View the source code of the replacing view model schema below.</p>
+
+	<div class="code">
+	<div class="code__widgets">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">ReminderNotificationsSchema</span></div>
+	</div>
+
+	<div class="code__source">
+	<pre class="prettyprint">
+define("ReminderNotificationsSchema", ["ReminderNotificationsSchemaResources"], function() {
+    return {
+        /* The name of the object schema. */
+        entitySchemaName: "Reminding",
+        /* The methods of the view model. */
+        methods: {
+            /* Determine whether the reminder is connected to the lead. */
+            getIsLeadNotification: function() {
+                return this.get("SchemaName") === "Lead";
+            },
+            /* Return the reminder caption. */
+            getNotificationSubjectCaption: function() {
+                var caption = this.get("Description");
+                return caption;
+            }
+        },
+        /* Display the reminder. */
+        diff: [
+            /* The metadata to add the container. */
+            {
+                /* Add the element to the page. */
+                "operation": "insert",
+                /* The meta name of the container to add. */
+                "name": "NotificationleadItemContainer",
+                /* The meta name of the parent container to add the current container. */
+                "parentName": "Notification",
+                /* Add the container to the parent element's collection of elements. */
+                "propertyName": "items",
+                /* The properties to pass to the element's constructor. */
+                "values": {
+                    "itemType": Terrasoft.ViewItemType.CONTAINER,
+                    "wrapClass": [
+                        "reminder-notification-item-container"
+                    ],
+                    /* Display only for leads. */
+                    "visible": {"bindTo": "getIsLeadNotification"},
+                    "items": []
+                }
+            },
+            /* The metadata to add the caption container. */
+            {
+                "operation": "insert",
+                "name": "NotificationItemleadTopContainer",
+                "parentName": "NotificationleadItemContainer",
+                "propertyName": "items",
+                "values": {
+                    "itemType": Terrasoft.ViewItemType.CONTAINER,
+                    "wrapClass": ["reminder-notification-item-top-container"],
+                    "items": []
+                }
+            },
+            /* The metadata to add the image. */
+            {
+                "operation": "insert",
+                "name": "NotificationleadImage",
+                "parentName": "NotificationItemleadTopContainer",
+                "propertyName": "items",
+                "values": {
+                    "itemType": Terrasoft.ViewItemType.BUTTON,
+                    "className": "Terrasoft.ImageView",
+                    "imageSrc": {"bindTo": "getNotificationImage"},
+                    "classes": {"wrapClass": ["reminder-notification-icon-class"]}
+                }
+            },
+            /* The metadata for the date. */
+            {
+                "operation": "insert",
+                "name": "NotificationDate",
+                "parentName": "NotificationItemleadTopContainer",
+                "propertyName": "items",
+                "values": {
+                    "itemType": Terrasoft.ViewItemType.LABEL,
+                    "caption": {"bindTo": "getNotificationDate"},
+                    "classes": {"labelClass": ["subject-text-labelClass"]}
+                }
+            },
+            /* The metadata for the reminder text. */
+            {
+                "operation": "insert",
+                "name": "NotificationleadSubject",
+                "parentName": "NotificationItemleadTopContainer",
+                "propertyName": "items",
+                "values": {
+                    "itemType": Terrasoft.ViewItemType.LABEL,
+                    "caption": {"bindTo": "getNotificationSubjectCaption"},
+                    "click": {"bindTo": "onNotificationSubjectClick"},
+                    "classes": {"labelClass": ["subject-text-labelClass", "label-link", "label-url"]}
+                }
+            }
+        ]
+    };
+});
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Module Designer's toolbar.</li>
+</ol>
+
+<h2>Outcome of the example<a class="title-anchor" href="#title-3251-4" id="title-3251-4">&nbsp;</a></h2>
+
+<p>To <strong>view the outcome of the example</strong>:</p>
+
+<ol>
+	<li>Refresh the <span class="key">Leads</span> section page.</li>
+	<li>Open the lead page → the <span class="key">Opportunity info</span> tab.</li>
+	<li>Select the needed date and time of the opportunity update in the <span class="key">Next actualization date</span> field.</li>
+	<li>Select your user contact in the <span class="key">Owner</span> field.</li>
+</ol>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_result.png"></div>
+</div>
+
+<p>As a result, Creatio will display the reminder for the opportunity update date in the lead on the reminder tab of the notification center.</p>
+
+<div class="media">
+<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SendCustomNotification/8.0/scr_result_1.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkHowToSendCustomNotifications_18.03.02_12.34.29.zip" target="_blank">Package with example implementation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+          </div>
+  
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+          </div>
+          
+        </div>
+
+                  <aside class="creatio-sidebar creatio-sidebar_first" role="complementary">
+              <div class="region region-sidebar-first">
+    <div id="block-documentationnaviagtion" class="block block-ts-nav block-ts-nav-doc-nav">
+  
+    
+      <div class="ts-nav-block"><a href="/docs/" class="ts-nav-block__link">Documentation</a><div class="ts-nav-block__title">Developer documentation</div>
+</div>
+<div class="ts-nav-container"><ul class="ts-nav-menu"><li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/getting_started" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Getting started&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Architecture&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/development_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Development tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/back_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Back-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/front_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Front-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/integrations_and_api" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Integrations & API&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements" class="ts-nav-menu__link ts-nav-menu__link_expanded ts-nav-menu__link_open" hreflang="en">Interface elements&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+      <ul class="ts-nav-menu__children">
+      <li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/main_menu" class="ts-nav-menu__link" hreflang="en">Main menu</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/section" class="ts-nav-menu__link" hreflang="en">Section</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/record_page" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Record page&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/detail" class="ts-nav-menu__link" hreflang="en">Detail</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/mini_page" class="ts-nav-menu__link" hreflang="en">Mini page</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/modal_window" class="ts-nav-menu__link" hreflang="en">Modal window</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/communication_panel" class="ts-nav-menu__link ts-nav-menu__link_open" hreflang="en">Communication panel</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/command_line" class="ts-nav-menu__link" hreflang="en">Command line</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/dashboard_widgets" class="ts-nav-menu__link" hreflang="en">Dashboard widgets</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/chats" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Chats&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/interface_control_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Interface control tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+
+    </ul>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/application_components" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Application components&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/mobile_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Mobile development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/marketplace_app_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Marketplace app development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+</ul>
+</div>
+
+  </div>
+
+  </div>
+
+            <div class="creatio-sidebar__toggle"></div>
+          </aside>
+        
+                  <aside class="creatio-sidebar creatio-sidebar_second" role="complementary">
+              <div class="region region-sidebar-second">
+    <div id="block-example" class="block block-ts-nav block-ts-nav-page-nav">
+  
+    
+      <div class="ts-nav-page">
+  </div>
+
+  </div>
+
+  </div>
+
+          </aside>
+              </main>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="creatio-region creatio-region_footer">
+      <div class="creatio-container">
+          <div class="region region-footer">
+    <div id="block-footer" class="block block-simple-block block-simple-blockfooter">
+  
+    
+      <div class="footer">
+<div class="footer-left">
+<ul class="footer-socials">
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_fb" href="https://www.facebook.com/CreatioCompany" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_in" href="https://www.linkedin.com/company/creatioglobal" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_yt" href="https://www.youtube.com/c/creatio" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_tw" href="https://www.twitter.com/Creatio_Global" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_ow" href="https://www.owler.com/company/Creatio" target="_blank">&nbsp;</a></li>
+</ul>
+</div>
+
+<div class="footer-contact">
+<div class="footer-title">Connect with us</div>
+
+<div class="footer-content">
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+16177657997">USA: +1 617 765 7997</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+442033840040">UK: +44 20 3384 0040</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+61261452888">Australia: +61 261 452 888</a></div>
+</div>
+
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:info@creatio.com">info@creatio.com</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:support@creatio.com">support@creatio.com</a></div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+    <div class="creatio-region creatio-region_bottom">
+      <div class="creatio-container">
+          <div class="region region-bottom">
+    <div id="block-allrightsreserved" class="block block-simple-block block-simple-blockfooter-bottom">
+  
+    
+      <p>© 2025 Creatio. All rights reserved.&nbsp; |&nbsp; <a href="https://www.creatio.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="creatio-bg"></div>
+
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/docs\/","pathPrefix":"","currentPath":"node\/1433","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"94c0ca72342e8e43fd5c70378d64533b2b6422845e0b3fd749b2ff1b4bd0b914"}}</script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery_3.7.1_jquery.min.js?v=3.7.1"></script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery-once-2.2.3/jquery.once.min.js?v=2.2.3"></script>
+<script src="/docs/core/misc/drupalSettingsLoader.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.init.js?v=10.4.1"></script>
+<script src="/docs/libraries/fancybox/jquery.fancybox.min.js?v=1"></script>
+<script src="/docs/themes/custom/creatio_academy/js/fancybox.js?v=1"></script>
+<script src="/docs/libraries/prettify/prettify.js?v=1"></script>
+<script src="/docs/libraries/slick/slick.js?v=1"></script>
+<script src="/docs/libraries/jquery.nice-select/jquery.nice-select.js?v=1"></script>
+<script src="https://libraries.creatio.com/drupal_fixed_tabs/tabs.js"></script>
+<script src="/docs/themes/custom/creatio_academy/js/creatio.js?v=1"></script>
+<script src="/docs/libraries/jquery.cookie/jquery.cookie.js?szsnyq"></script>
+<script src="/docs/themes/custom/creatio_academy/js/notification.js?szsnyq"></script>
+<script src="/docs/modules/marketplace/ts_datalayer/js/ts-datalayer.js?szsnyq"></script>
+<script src="/docs/libraries/select2/js/select2.js?v=1"></script>
+<script src="/docs/libraries/select2/js/select2.position.js?v=1"></script>
+<script src="/docs/libraries/jquery.scrollbar/jquery.scrollbar.js?v=1"></script>
+<script src="/docs/modules/academy/ts_doc/js/ts-doc-version.js?szsnyq"></script>
+<script src="https://libraries.creatio.com/ts_country/index.js"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-breadcrumb.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-doc-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-page-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-sdk-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_title_anchor/js/ts-title-anchor.js?szsnyq"></script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <g id="svg-copy" class="svg-icon svg-icon_copy">
+        <path d="M15.111,18H1.889A1.848,1.848,0,0,1,0,16.2V3.6A1.848,1.848,0,0,1,1.889,1.8H5.837a2.87,2.87,0,0,1,5.326,0h3.948A1.848,1.848,0,0,1,17,3.6V16.2A1.848,1.848,0,0,1,15.111,18ZM3.777,12.6v1.8h6.611V12.6Zm0-3.6v1.8h9.445V9Zm0-3.6V7.2h9.445V5.4ZM8.5,1.8a.924.924,0,0,0-.944.9.945.945,0,0,0,1.889,0A.924.924,0,0,0,8.5,1.8Z"/>
+      </g>
+
+      <g id="svg-prev" class="svg-icon svg-icon_arrow">
+        <path d="M5.488,12.779,0,6.39,5.488,0" transform="translate(1 0.652)"/>
+      </g>
+
+      <g id="svg-next" class="svg-icon svg-icon_arrow">
+        <path d="M0,12.779,5.488,6.39,0,0" transform="translate(0.759 0.652)"/>
+      </g>
+    </svg>
+  </body>
+</html>

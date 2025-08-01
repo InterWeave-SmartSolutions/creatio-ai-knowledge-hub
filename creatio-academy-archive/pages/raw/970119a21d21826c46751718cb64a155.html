@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LocalizableImage
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LocalizableImage
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.LocalizableImage">
+  
+  
+  <h1 id="Terrasoft_Common_LocalizableImage" data-uid="Terrasoft.Common.LocalizableImage" class="text-break">Class LocalizableImage
+  </h1>
+  <div class="markdown level0 summary"><p>Provides methods of working with localized image.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a></div>
+    <div class="level2"><a class="xref" href="Terrasoft.Common.LocalizableValue-1.html">LocalizableValue</a>&lt;<a class="xref" href="Terrasoft.Common.TerrasoftImage.html">TerrasoftImage</a>&gt;</div>
+    <div class="level3"><span class="xref">LocalizableImage</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_ResetCultureValues">LocalizableValue&lt;TerrasoftImage&gt;.ResetCultureValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_HasAnyValue">LocalizableValue&lt;TerrasoftImage&gt;.HasAnyValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_LoadCultureValues">LocalizableValue&lt;TerrasoftImage&gt;.LoadCultureValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_HasCultureValue_System_Globalization_CultureInfo_">LocalizableValue&lt;TerrasoftImage&gt;.HasCultureValue(CultureInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_SetCultureValue_System_Globalization_CultureInfo__0_">LocalizableValue&lt;TerrasoftImage&gt;.SetCultureValue(CultureInfo, TerrasoftImage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_GetCultureValue_System_Globalization_CultureInfo_System_Boolean_">LocalizableValue&lt;TerrasoftImage&gt;.GetCultureValue(CultureInfo, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_GetCultureValueWithFallback_System_Globalization_CultureInfo_System_Boolean_">LocalizableValue&lt;TerrasoftImage&gt;.GetCultureValueWithFallback(CultureInfo, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_ClearCultureValue_System_Globalization_CultureInfo_">LocalizableValue&lt;TerrasoftImage&gt;.ClearCultureValue(CultureInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_Value">LocalizableValue&lt;TerrasoftImage&gt;.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_HasValue">LocalizableValue&lt;TerrasoftImage&gt;.HasValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue-1.html#Terrasoft_Common_LocalizableValue_1_CultureValues">LocalizableValue&lt;TerrasoftImage&gt;.CultureValues</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue.html#Terrasoft_Common_LocalizableValue_SetResourceInfo_System_String_System_String_System_Boolean_">LocalizableValue.SetResourceInfo(String, String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue.html#Terrasoft_Common_LocalizableValue_SetResourceInfo_Terrasoft_Common_IResourceStorage_System_String_System_String_System_Boolean_">LocalizableValue.SetResourceInfo(IResourceStorage, String, String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue.html#Terrasoft_Common_LocalizableValue_Storage">LocalizableValue.Storage</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue.html#Terrasoft_Common_LocalizableValue_ResourceManager">LocalizableValue.ResourceManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue.html#Terrasoft_Common_LocalizableValue_ResourceManagerName">LocalizableValue.ResourceManagerName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Common.LocalizableValue.html#Terrasoft_Common_LocalizableValue_ResourceItemName">LocalizableValue.ResourceItemName</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.html">Terrasoft.Common</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_LocalizableImage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LocalizableImage : LocalizableValue&lt;TerrasoftImage&gt;, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage__ctor_" data-uid="Terrasoft.Common.LocalizableImage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage__ctor" data-uid="Terrasoft.Common.LocalizableImage.#ctor">LocalizableImage()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the class. <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableImage()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage__ctor_" data-uid="Terrasoft.Common.LocalizableImage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage__ctor_System_Byte___" data-uid="Terrasoft.Common.LocalizableImage.#ctor(System.Byte[])">LocalizableImage(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;7.15.0 | Method is not in use and will be removed in upcoming releases&quot;)]
+public LocalizableImage(byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage__ctor_" data-uid="Terrasoft.Common.LocalizableImage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage__ctor_System_String_System_String_" data-uid="Terrasoft.Common.LocalizableImage.#ctor(System.String,System.String)">LocalizableImage(String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> class using the specified resource manager and specified resource element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableImage(string resourceManagerName, string resourceItemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceManagerName</span></td>
+        <td><p>Resource manager name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceItemName</span></td>
+        <td><p>Name of the resource item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage__ctor_" data-uid="Terrasoft.Common.LocalizableImage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage__ctor_Terrasoft_Common_IResourceStorage_System_String_System_String_" data-uid="Terrasoft.Common.LocalizableImage.#ctor(Terrasoft.Common.IResourceStorage,System.String,System.String)">LocalizableImage(IResourceStorage, String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> class using the specified resource storage, resource manager and resource item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableImage(IResourceStorage storage, string resourceManagerName, string resourceItemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.IResourceStorage.html">IResourceStorage</a></td>
+        <td><span class="parametername">storage</span></td>
+        <td><p>Resource repository - a class that implements the <a class="xref" href="Terrasoft.Common.IResourceStorage.html">IResourceStorage</a> interface.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceManagerName</span></td>
+        <td><p>Resource manager name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceItemName</span></td>
+        <td><p>Name of the resource item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage__ctor_" data-uid="Terrasoft.Common.LocalizableImage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage__ctor_Terrasoft_Common_LocalizableImage_" data-uid="Terrasoft.Common.LocalizableImage.#ctor(Terrasoft.Common.LocalizableImage)">LocalizableImage(LocalizableImage)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> class using the specified localized image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableImage(LocalizableImage source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Localized image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_LocalizableImage__ctor_Terrasoft_Common_LocalizableImage__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The constructor creates a new object, which is a copy of <code data-dev-comment-type="paramref" class="paramref">source</code>.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage__ctor_" data-uid="Terrasoft.Common.LocalizableImage.#ctor*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage__ctor_Terrasoft_Common_TerrasoftImage_" data-uid="Terrasoft.Common.LocalizableImage.#ctor(Terrasoft.Common.TerrasoftImage)">LocalizableImage(TerrasoftImage)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> class using the specified image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableImage(TerrasoftImage value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.TerrasoftImage.html">TerrasoftImage</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Image for initialization of the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_Empty_" data-uid="Terrasoft.Common.LocalizableImage.Empty*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_Empty" data-uid="Terrasoft.Common.LocalizableImage.Empty">Empty</h4>
+  <div class="markdown level1 summary"><p>Gets an empty localized image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalizableImage Empty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_Clone_" data-uid="Terrasoft.Common.LocalizableImage.Clone*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_Clone" data-uid="Terrasoft.Common.LocalizableImage.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates the clone of the current <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A new <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance that represents the copy of the current instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Common.LocalizableValue.html#Terrasoft_Common_LocalizableValue_Clone">LocalizableValue.Clone()</a></div>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_Equals_" data-uid="Terrasoft.Common.LocalizableImage.Equals*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_Equals_System_Object_" data-uid="Terrasoft.Common.LocalizableImage.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the given <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance and the specified <span class="xref">System.Object</span> instance have the same values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The <span class="xref">System.Object</span> instance for comparing with the current instance <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code>, if the <code data-dev-comment-type="paramref" class="paramref">obj</code> is of the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> type and its value matches with the value of current instance <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a>, otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <h5 id="Terrasoft_Common_LocalizableImage_Equals_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_GetCultureValue_" data-uid="Terrasoft.Common.LocalizableImage.GetCultureValue*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_GetCultureValue_System_Globalization_CultureInfo_" data-uid="Terrasoft.Common.LocalizableImage.GetCultureValue(System.Globalization.CultureInfo)">GetCultureValue(CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Gets a value of the <span class="xref">System.Drawing.Image</span> type that corresponds to the current <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance in the specified culture or generates exception if the image does not exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TerrasoftImage GetCultureValue(CultureInfo culture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>Culture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.TerrasoftImage.html">TerrasoftImage</a></td>
+        <td><p>Image, localized according to the culture specified in the <code data-dev-comment-type="paramref" class="paramref">culture</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ItemNotFoundException.html">ItemNotFoundException</a></td>
+        <td><p>If an image is not available for the <code data-dev-comment-type="paramref" class="paramref">culture</code> culture in the current <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_GetFromResourceManager_" data-uid="Terrasoft.Common.LocalizableImage.GetFromResourceManager*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_GetFromResourceManager_System_Globalization_CultureInfo_System_String_" data-uid="Terrasoft.Common.LocalizableImage.GetFromResourceManager(System.Globalization.CultureInfo,System.String)">GetFromResourceManager(CultureInfo, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override TerrasoftImage GetFromResourceManager(CultureInfo culture, string itemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.TerrasoftImage.html">TerrasoftImage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Common.LocalizableValue&lt;Terrasoft.Common.TerrasoftImage&gt;.GetFromResourceManager(System.Globalization.CultureInfo, System.String)</span></div>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_GetFromResourceManagerWithCultureFallback_" data-uid="Terrasoft.Common.LocalizableImage.GetFromResourceManagerWithCultureFallback*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_GetFromResourceManagerWithCultureFallback_System_Globalization_CultureInfo_System_String_" data-uid="Terrasoft.Common.LocalizableImage.GetFromResourceManagerWithCultureFallback(System.Globalization.CultureInfo,System.String)">GetFromResourceManagerWithCultureFallback(CultureInfo, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override TerrasoftImage GetFromResourceManagerWithCultureFallback(CultureInfo culture, string itemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.TerrasoftImage.html">TerrasoftImage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Common.LocalizableValue&lt;Terrasoft.Common.TerrasoftImage&gt;.GetFromResourceManagerWithCultureFallback(System.Globalization.CultureInfo, System.String)</span></div>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_GetHashCode_" data-uid="Terrasoft.Common.LocalizableImage.GetHashCode*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_GetHashCode" data-uid="Terrasoft.Common.LocalizableImage.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets hash code for the current localized image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Hash code for current instance <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> in the form of 32-bit signed integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_Merge_" data-uid="Terrasoft.Common.LocalizableImage.Merge*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_Merge_Terrasoft_Common_LocalizableImage_Terrasoft_Common_LocalizableImage_" data-uid="Terrasoft.Common.LocalizableImage.Merge(Terrasoft.Common.LocalizableImage,Terrasoft.Common.LocalizableImage)">Merge(LocalizableImage, LocalizableImage)</h4>
+  <div class="markdown level1 summary"><p>Combines the specified localized values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalizableImage Merge(LocalizableImage target, LocalizableImage source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Localized image to combine with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Localized image, which is combined with <code data-dev-comment-type="paramref" class="paramref">target</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance that represents the result of merging two localized images <code data-dev-comment-type="paramref" class="paramref">target</code> and <code data-dev-comment-type="paramref" class="paramref">source</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_ToString_" data-uid="Terrasoft.Common.LocalizableImage.ToString*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_ToString" data-uid="Terrasoft.Common.LocalizableImage.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Performs implicit conversion of the current <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance to string type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_op_Implicit_" data-uid="Terrasoft.Common.LocalizableImage.op_Implicit*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_op_Implicit_System_String__Terrasoft_Common_LocalizableImage" data-uid="Terrasoft.Common.LocalizableImage.op_Implicit(System.String)~Terrasoft.Common.LocalizableImage">Implicit(String to LocalizableImage)</h4>
+  <div class="markdown level1 summary"><p>Performs an implicit conversion of the <span class="xref">System.String</span> type to the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator LocalizableImage(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The <span class="xref">System.String</span> instance for conversion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_op_Implicit_" data-uid="Terrasoft.Common.LocalizableImage.op_Implicit*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_op_Implicit_Terrasoft_Common_LocalizableImage__System_String" data-uid="Terrasoft.Common.LocalizableImage.op_Implicit(Terrasoft.Common.LocalizableImage)~System.String">Implicit(LocalizableImage to String)</h4>
+  <div class="markdown level1 summary"><p>Performs an implicit conversion of the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> type to the <span class="xref">System.String</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string (LocalizableImage localizableImage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td><span class="parametername">localizableImage</span></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance for conversion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_op_Implicit_" data-uid="Terrasoft.Common.LocalizableImage.op_Implicit*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_op_Implicit_Terrasoft_Common_LocalizableImage__Terrasoft_Common_TerrasoftImage" data-uid="Terrasoft.Common.LocalizableImage.op_Implicit(Terrasoft.Common.LocalizableImage)~Terrasoft.Common.TerrasoftImage">Implicit(LocalizableImage to TerrasoftImage)</h4>
+  <div class="markdown level1 summary"><p>Performs an implicit conversion of the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> type to the <span class="xref">System.Drawing.Image</span> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator TerrasoftImage(LocalizableImage localizableImage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td><span class="parametername">localizableImage</span></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance for conversion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.TerrasoftImage.html">TerrasoftImage</a></td>
+        <td><p>The <span class="xref">System.Drawing.Image</span> instance, equivalent to the localized <code data-dev-comment-type="paramref" class="paramref">localizableImage</code> image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_LocalizableImage_op_Implicit_" data-uid="Terrasoft.Common.LocalizableImage.op_Implicit*"></a>
+  <h4 id="Terrasoft_Common_LocalizableImage_op_Implicit_Terrasoft_Common_TerrasoftImage__Terrasoft_Common_LocalizableImage" data-uid="Terrasoft.Common.LocalizableImage.op_Implicit(Terrasoft.Common.TerrasoftImage)~Terrasoft.Common.LocalizableImage">Implicit(TerrasoftImage to LocalizableImage)</h4>
+  <div class="markdown level1 summary"><p>Performs an implicit conversion of the <span class="xref">System.Drawing.Image</span> type to the <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator LocalizableImage(TerrasoftImage value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.TerrasoftImage.html">TerrasoftImage</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The <span class="xref">System.Drawing.Image</span> instance for conversion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.LocalizableImage.html">LocalizableImage</a> instance, equivalent to the <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

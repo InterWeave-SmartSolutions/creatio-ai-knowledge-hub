@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs  
+dist/
+build/
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.pdb
+
+# IDE files
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+
+# Git
+.git/
+
+# Logs
+*.log
+Logs/
+logs/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Cache files
+.eslintcache
+.tsbuildinfo
+.nyc_output
+.grunt
+.cache
+.parcel-cache
+
+# Minified files
+*.min.js
+*.min.css
+
+# Generated files
+*.generated.*
+
+# Package files
+package-lock.json
+yarn.lock
+
+# Creatio specific
+packages/
+App_Data/
+
+# Config files with secrets
+config/
+backup/
+
+# Archive data
+creatio-academy-archive/
+transcriptions/
+ai_optimization/
+documentation/
+downloads/
+venv/
+
+# Configuration and data files
+*.json
+!.eslintrc.json
+!.prettierrc.json
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+
+# TypeScript definition files
+*.d.ts
+
+# Template files (not for linting)
+templates/
+
+# Python virtual environment
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Development files that should not be linted
+scripts/*.sh
+clio-scripts/

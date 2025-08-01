@@ -1,0 +1,60 @@
+{
+  "summary_id": "bacddf0bc1e2",
+  "content_id": "ce77ce58529f",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: page, schema, customization, integration, business process",
+  "key_points": [
+    "page",
+    "schema",
+    "customization",
+    "integration",
+    "business process"
+  ],
+  "keywords": [
+    "creation",
+    "file",
+    "windows",
+    "use",
+    "package",
+    "database",
+    "need",
+    "server",
+    "just",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 8,
+  "original_length": 16093,
+  "compression_ratio": 0.0004971105449574349,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:57:48.894510",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "page",
+        "schema",
+        "customization",
+        "integration",
+        "business process"
+      ],
+      "keywords": [
+        "creation",
+        "file",
+        "windows",
+        "use",
+        "package",
+        "database",
+        "need",
+        "server",
+        "just",
+        "like"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

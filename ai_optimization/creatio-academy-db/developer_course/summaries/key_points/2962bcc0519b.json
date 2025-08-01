@@ -1,0 +1,43 @@
+{
+  "summary_id": "2962bcc0519b",
+  "content_id": "d57347054e45",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: topic.\nINSTRUCTION: we can make an object named the same as this view and we will have the same columns in our object the same as available in view.\nINSTRUCTION: it will show you some interesting trick how you can use creation objects to read data from sources, not created by creation system.\nCONCEPT: page\nCONCEPT: schema\nCONCEPT: field\nNOTE: that you need some additional permissions.\nNOTE: property here.",
+  "key_points": [
+    "INSTRUCTION: topic.",
+    "INSTRUCTION: we can make an object named the same as this view and we will have the same columns in our object the same as available in view.",
+    "INSTRUCTION: it will show you some interesting trick how you can use creation objects to read data from sources, not created by creation system.",
+    "CONCEPT: page",
+    "CONCEPT: schema",
+    "CONCEPT: field",
+    "NOTE: that you need some additional permissions.",
+    "NOTE: property here."
+  ],
+  "keywords": [
+    "data",
+    "page",
+    "code",
+    "like",
+    "object",
+    "use",
+    "make",
+    "let",
+    "just",
+    "need"
+  ],
+  "topics": [],
+  "summary_length": 70,
+  "original_length": 17300,
+  "compression_ratio": 0.004046242774566474,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:57:16.173979",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

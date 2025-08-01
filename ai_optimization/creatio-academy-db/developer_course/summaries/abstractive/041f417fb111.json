@@ -1,0 +1,33 @@
+{
+  "summary_id": "041f417fb111",
+  "content_id": "ce77ce58529f",
+  "summary_type": "abstractive",
+  "summary_text": "Ten sessions are planned, each session will take from 2 to maybe 2.5 hours. Each session will be finished with the video reporting, so you will have videos that you can process. Then we will have individual sessions with some of you to check homework and run exam tests.",
+  "key_points": [
+    "Ten sessions are planned, each session will take from 2 to maybe 2.5 hours.",
+    "Each session will be finished with the video reporting, so you will have videos that you can process.",
+    "Then we will have individual sessions with some of you to check homework and run exam tests."
+  ],
+  "keywords": [
+    "creation",
+    "sessions",
+    "working",
+    "development",
+    "programming",
+    "ui",
+    "data",
+    "ll",
+    "making",
+    "sharp"
+  ],
+  "topics": [],
+  "summary_length": 49,
+  "original_length": 679,
+  "compression_ratio": 0.07216494845360824,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T17:00:49.649076",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

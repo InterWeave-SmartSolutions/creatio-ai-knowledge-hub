@@ -1,0 +1,265 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-8.0 docs-doc-page docs-doc-id-undefined" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.7.0"><title data-rh=true>Customize Word reports | Creatio Academy</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://academy.creatio.com/docs/8.x/dev/img/OG-Creatio-Docs.jpg><meta data-rh=true name=twitter:image content=https://academy.creatio.com/docs/8.x/dev/img/OG-Creatio-Docs.jpg><meta data-rh=true property=og:url content=https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/ms-word/overview><meta data-rh=true property=og:locale content=en><meta data-rh=true name=docusaurus_locale content=en><meta data-rh=true name=docsearch:language content=en><meta data-rh=true name=docusaurus_version content=8.0><meta data-rh=true name=docusaurus_tag content=docs-default-8.0><meta data-rh=true name=docsearch:version content=8.0><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-8.0><meta data-rh=true property=og:title content="Customize Word reports | Creatio Academy"><meta data-rh=true name=description content="A Word report (print-ready documents) is a document that is generated based on the records of Creatio sections as a \.docx file. For example, reports of the Contracts section let you print contracts, reports of the Activities* section let you print out emails, minutes of meetings, etc. Learn more: Print-ready reports (user documentation)."><meta data-rh=true property=og:description content="A Word report (print-ready documents) is a document that is generated based on the records of Creatio sections as a \.docx file. For example, reports of the Contracts section let you print contracts, reports of the Activities* section let you print out emails, minutes of meetings, etc. Learn more: Print-ready reports (user documentation)."><link data-rh=true rel=icon href=/docs/8.x/dev/img/favicon.ico><link data-rh=true rel=canonical href=https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/ms-word/overview><link data-rh=true rel=alternate href=https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/ms-word/overview hreflang=en><link data-rh=true rel=alternate href=https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/ms-word/overview hreflang=x-default><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-5C6KM9TP")</script><link rel=stylesheet href=/docs/8.x/dev/assets/css/styles.89ecc891.css><script src=/docs/8.x/dev/assets/js/runtime~main.1fca6f6f.js defer></script><script src=/docs/8.x/dev/assets/js/main.020f5612.js defer></script><body class=navigation-with-keyboard><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
+
+
+<script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:"light",document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/docs/8.x/dev/img/logo-white.svg><link rel=preload as=image href=/docs/8.x/dev/img/logo.svg><link rel=preload as=image href=/docs/8.x/dev/img/accelerate.svg><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><div class=navtop><div class=container-fluid><div class=navtop__content><div class=search><form method=get><input class=search__input type=text placeholder=Search name=search><input class=search__button type=submit value=Search></form><div class=search__toggle></div></div><ul class=sites><li class=sites__item><a href=https://www.creatio.com/ rel=nofollow target=_blank>Creatio</a><li class=sites__item><a href=https://community.creatio.com/ rel=nofollow target=_blank>Community</a><li class=sites__item><a href=https://marketplace.creatio.com/ rel=nofollow target=_blank>Marketplace</a><li class=sites__item><a href=https://knowledge-hub.creatio.com/ rel=nofollow target=_blank>Knowledge Hub</a></ul></div></div></div><nav aria-label=Main class="navbar navbar--fixed-top"><div class="navbar__inner container-fluid"><div class=navbar__items><div class=navbar__toggle><span></span></div><a class="navbar__brand navbar__brand_mobile" href=/><img src=/docs/8.x/dev/img/logo-white.svg alt="Creatio Academy"></a><a class=navbar__brand href=/><img src=/docs/8.x/dev/img/logo.svg alt="Creatio Academy"></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/8.x/dev/>Guides</a><a href=https://academy.creatio.com/e-learning target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">E-learning</a><a href=https://academy.creatio.com/training target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Training</a><a href=https://academy.creatio.com/certification target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Certification</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current=page class="navbar__link active" aria-haspopup=true aria-expanded=false role=button href=/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/ms-word/overview>8.0</a><ul class=dropdown__menu><li><a class=dropdown__link href=/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations>8.3</a><li><a class=dropdown__link href=/docs/8.x/dev/development-on-creatio-platform/8.2/getting-started/development-recommendations>8.2</a><li><a class=dropdown__link href=/docs/8.x/dev/development-on-creatio-platform/8.1/platform-customization/classic-ui/ms-word/overview>8.1</a><li><a aria-current=page class="dropdown__link dropdown__link--active" href=/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/ms-word/overview>8.0</a></ul></div></div><div class="navbar__items navbar__items--right"><div class=search><form method=get><input class=search__input type=text placeholder=Search name=search><input class=search__button type=submit value=Search></form><div class=search__toggle></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=container-fluid><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class="doc-menu sidebar_mhZE"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/getting-started>Getting started</a><button aria-label="Expand sidebar category 'Getting started'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/architecture>Architecture</a><button aria-label="Expand sidebar category 'Architecture'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/development-tools>Development tools</a><button aria-label="Expand sidebar category 'Development tools'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/back-end-development>Back-end development</a><button aria-label="Expand sidebar category 'Back-end development'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/front-end-development>Front-end development</a><button aria-label="Expand sidebar category 'Front-end development'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--active" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/platform-customization>Platform customization</a><button aria-label="Collapse sidebar category 'Platform customization'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/freedom-ui-1>Freedom UI</a><button aria-label="Expand sidebar category 'Freedom UI'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--active" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/classic-ui-1>Classic UI</a><button aria-label="Collapse sidebar category 'Classic UI'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/overview>Main menu</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/section>Section</a><button aria-label="Expand sidebar category 'Section'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/record-page>Record page</a><button aria-label="Expand sidebar category 'Record page'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/detail>Detail</a><button aria-label="Expand sidebar category 'Detail'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/mini-page>Mini page</a><button aria-label="Expand sidebar category 'Mini page'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/modal-window>Modal window</a><button aria-label="Expand sidebar category 'Modal window'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/communication-panel>Communication panel</a><button aria-label="Expand sidebar category 'Communication panel'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/command-line>Command line</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/dashboard-widgets>Dashboard widgets</a><button aria-label="Expand sidebar category 'Dashboard widgets'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/chats>Chats</a><button aria-label="Expand sidebar category 'Chats'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--active" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/word-reports>Word reports</a><button aria-label="Collapse sidebar category 'Word reports'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/ms-word/overview>Overview</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/ms-word-examples>Examples</a><button aria-label="Expand sidebar category 'Examples'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/word-report-references>References</a><button aria-label="Expand sidebar category 'References'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/marketing-campaigns>Marketing campaigns</a><button aria-label="Expand sidebar category 'Marketing campaigns'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/cases>Cases</a><button aria-label="Expand sidebar category 'Cases'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/portal>Portal</a><button aria-label="Expand sidebar category 'Portal'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/landings>Landings</a><button aria-label="Expand sidebar category 'Landings'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/telephony>Telephony</a><button aria-label="Expand sidebar category 'Telephony'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/machine-learning>Machine learning</a><button aria-label="Expand sidebar category 'Machine learning'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/emails>Emails</a><button aria-label="Expand sidebar category 'Emails'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/task-scheduler>Task scheduler</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/interface-control-tools>Interface control tools</a><button aria-label="Expand sidebar category 'Interface control tools'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/integrations-tools>Integrations tools</a><button aria-label="Expand sidebar category 'Integrations tools'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/mobile-app-development>Mobile app development</a><button aria-label="Expand sidebar category 'Mobile app development'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_z5aJ"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role=alert><div>This is documentation for Creatio <b>8.0</b>.</div><div class=margin-top--md>For up-to-date documentation, see the <b><a href=/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations>latest version</a></b> (<!-- -->8.3<!-- -->).</div></div><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs itemscope itemtype=https://schema.org/BreadcrumbList><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/docs/8.x/dev/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/platform-customization><span itemprop=name>Platform customization</span></a><meta itemprop=position content=1><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/classic-ui-1><span itemprop=name>Classic UI</span></a><meta itemprop=position content=2><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/word-reports><span itemprop=name>Word reports</span></a><meta itemprop=position content=3><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link itemprop=name>Overview</span><meta itemprop=position content=4></ul></nav><div class=creatio-tags><div class=creatio-tags__content><span class="theme-doc-version-badge badge badge--secondary">Version: 8.0</span></div></div><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_bxCs"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Customize Word reports</h1></header><div class=difficulty-level><span class=difficulty-level-beginner>Level: <!-- -->beginner</span></div>
+<p>A <strong>Word report (print-ready documents)</strong> is a document that is generated based on the records of Creatio sections as a *.docx file. For example, reports of the <strong>Contracts</strong> section let you print contracts, reports of the <strong>Activities</strong> section let you print out emails, minutes of meetings, etc. Learn more: <a href=https://academy.creatio.com/docs/8.x/no-code-customization/8.0/category/print-ready-reports target=_blank rel="noopener noreferrer">Print-ready reports</a> (user documentation).</p>
+<p>Creatio lets you use both basic and custom macros in Word reports. <strong>Macro</strong> is a tool that lets you convert data retrieved from Creatio into data suitable for a Word report. Depending on the usage of macros, Creatio lets you create the following types of Word reports:</p>
+<ul>
+<li><strong>Simple report</strong></li>
+<li><strong>Report that uses basic macros</strong></li>
+<li><strong>Report that uses custom macros</strong></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-1>Set up permissions to the Report setup section<a href=#title-1371-1 class=hash-link aria-label="Direct link to Set up permissions to the Report setup section" title="Direct link to Set up permissions to the Report setup section">​</a></h2>
+<p>You can set up permissions to the <strong>Report setup</strong> section on the system operation level. If a user lacks the permission to access the <strong>Report setup</strong> section, they receive a notification about the lack of permissions to execute an operation when trying to load the section. Out of the box, only Creatio administrators have access to key system operations. Creatio lets you configure access permissions to system operations for users or user groups. Learn more: <a href="https://academy.creatio.com/documents?ver=8.0&id=2000" target=_blank rel="noopener noreferrer">System operation permissions</a> (user documentation).</p>
+<p>To set up permissions to the <strong>Report setup</strong> section:</p>
+<ol>
+<li><strong>Open the Operation permissions section</strong>. To do this, click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/en/files/images/NoCodePlatform/Manage_Apps/btn_system_designer_8_shell.png alt="" class=img_ev3q> in the top right → <strong>Users and administration</strong> → <strong>Operation permissions</strong>.</li>
+<li><strong>Select the Access to "Report setup" section</strong> (<code>CanManageReports</code> code) <strong>system operation</strong>.</li>
+<li><strong>Set up the access to the Report setup section</strong>. To do this, click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/SectionConfigurationGeneralInfo/scr_add_button.png alt="" class=img_ev3q> and specify the user/role in the <strong>Operation permission</strong> detail.</li>
+</ol>
+<p><strong>As a result</strong>:</p>
+<ul>
+<li>The record will appear on the <strong>Operation permission</strong> detail.</li>
+<li>The <strong>Access level</strong> column of the record will be set to <strong>Yes</strong>.</li>
+<li>Users that have the specified role will have access to the <strong>Report setup</strong> section.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-2>General procedure<a href=#title-1371-2 class=hash-link aria-label="Direct link to General procedure" title="Direct link to General procedure">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-8>1. Implement custom macros (optional)<a href=#title-1371-8 class=hash-link aria-label="Direct link to 1. Implement custom macros (optional)" title="Direct link to 1. Implement custom macros (optional)">​</a></h3>
+<ol>
+<li>
+<p><strong>Open the needed app</strong> in the No-Code Designer.</p>
+</li>
+<li>
+<p><strong>Open the Advanced settings tab</strong> in the No-Code Designer. To do this, click <img decoding=async loading=lazy src=https://academy.creatio.com/docs/sites/en/files/images/NoCodePlatform/Manage_Apps/btn_system_designer_8_shell.png alt="" class=img_ev3q> in the top right → <strong>Application management</strong> → <strong>Application Hub</strong> → select the app → <strong>Advanced settings</strong>.</p>
+</li>
+<li>
+<p><strong>Create a user-made package</strong> to add the schema. To do this, click <img decoding=async loading=lazy src=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/CreateConfigurationWebService/8.1/btn_create_a_package.png alt="" class=img_ev3q> → <strong>Create new package</strong> → fill out the package properties → <strong>Save</strong>.</p>
+</li>
+<li>
+<p><strong>Add the package properties</strong>.</p>
+<ol>
+<li>Open the package properties. To do this, click <img decoding=async loading=lazy src=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/PopulateDeliveryType/8.1/scr_open_properties.png alt="" class=img_ev3q> → <strong>Properties</strong>. This opens the <strong>Dependencies</strong> tab on the <strong>Package properties</strong> page.</li>
+<li>Click <strong>Add</strong> in the <strong>Depends on Packages</strong> block. This opens the <strong>Select package</strong> window.</li>
+<li>Select the checkbox for the <code>CrtNUI</code> package. The <code>CrtNUI</code> package includes the <code>ExpressionConverterHelper</code> schema that implements the basic <code>IExpressionConverter</code> interface.</li>
+<li>Click <strong>Select</strong>.</li>
+<li>Apply the changes.</li>
+</ol>
+</li>
+<li>
+<p><strong>Change the current package</strong>. Instructions: <a href="https://academy.creatio.com/documents?ver=8.0&id=15072&anchor=change-the-current-package" target=_blank rel="noopener noreferrer">Change the current package</a>.</p>
+</li>
+<li>
+<p><strong>Create the source code schema</strong>. To do this, click <strong>Add</strong> → <strong>Source code</strong>.</p>
+</li>
+<li>
+<p><strong>Fill out the schema properties</strong>.</p>
+</li>
+<li>
+<p><strong>Apply the changes</strong>.</p>
+</li>
+<li>
+<p><strong>Add localizable strings</strong>. Instructions: <a href="https://academy.creatio.com/documents?ver=8.0&id=15272&anchor=title-2174-3" target=_blank rel="noopener noreferrer">Add a localizable string</a>.</p>
+</li>
+<li>
+<p><strong>Implement the business logic</strong>.</p>
+<ol>
+<li>
+<p>Add the <code>Terrasoft.Configuration</code> namespace or any of its nested namespaces in the Schema Designer.</p>
+</li>
+<li>
+<p>Add the namespaces the data types of which to utilize in the class using the <code>using</code> directive.</p>
+</li>
+<li>
+<p>Add the class name that matches the schema name (the <strong>Code</strong> property).</p>
+</li>
+<li>
+<p>Add an <code>ExpressionConverterAttribute</code> attribute that stores the macro tag. This macro can be added to a report column while setting up the report columns.</p>
+<p>View an example of the <code>ExpressionConverterAttribute</code> attribute that stores the <code>CurrentUser</code> macro tag below.</p>
+<div class="language-cs codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockTitle_P25_> Example of the ExpressionConverterAttribute attribute</div><div class=codeBlockContent_m3Ux><pre tabindex=0 class="prism-code language-cs codeBlock_qGQc thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_p187><span class=token-line style=color:#393A34><span class="token punctuation" style=color:#393A34>[</span><span class="token attribute class-name">ExpressionConverterAttribute</span><span class="token attribute attribute-arguments punctuation" style=color:#393A34>(</span><span class="token attribute attribute-arguments string" style=color:#e3116c>"CurrentUser"</span><span class="token attribute attribute-arguments punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>]</span><br></span></code></pre><div class=buttonGroup_6DOT><button type=button aria-label="Copy code to clipboard" title=Copy class=clean-btn><span class=copyButtonIcons_eSgA aria-hidden=true><svg viewBox="0 0 24 24" class=copyButtonIcon_y97N><path fill=currentColor d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg><svg viewBox="0 0 24 24" class=copyButtonSuccessIcon_LjdS><path fill=currentColor d=M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z /></svg></span></button></div></div></div>
+</li>
+<li>
+<p>Implement the <code>IExpressionConverter</code> interface in the class.</p>
+</li>
+<li>
+<p>Implement the <code>Evaluate(object value, string arguments = "")</code> interface method. The method receives a field value from a report template as a parameter. The method returns a value of the <code>string</code> type that replaces the corresponding column in the generated report.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Publish the schema</strong>.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-3>2. Create a report<a href=#title-1371-3 class=hash-link aria-label="Direct link to 2. Create a report" title="Direct link to 2. Create a report">​</a></h3>
+<ol>
+<li>
+<p><strong>Open the Report setup section</strong>. To do this, click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/en/files/images/NoCodePlatform/Manage_Apps/btn_system_designer_8_shell.png alt="" class=img_ev3q> in the top right → <strong>System setup</strong> → <strong>Report setup</strong>.</p>
+</li>
+<li>
+<p><strong>Click New report</strong>.</p>
+</li>
+<li>
+<p><strong>Fill out the report properties</strong>.</p>
+<table><tr><th><p>Property<th><p>Property description<tr><td><center><p>Report name</center><td><p>An arbitrary report name that is displayed on the toolbar. Required.<tr><td><center><p>Object</center><td><p>The section object for which Creatio will generate a report. For example, to generate a report for <strong>Accounts</strong> section, set the <strong>Object</strong> property to "Account." Required.<tr><td><center><p>Type</center><td><p>Report type. The property is populated automatically using the "MS Word" value and is non-editable. Required.<tr><td><center><p>Show in the list view</center><td><p>Select the checkbox to generate a report from the section if needed. For example, select the checkbox if you need to generate a report from the <strong>Accounts</strong> section whose object is selected in the <strong>Object</strong> property.<tr><td><center><p>Show in the record page</center><td><p>Select the checkbox to generate a report from the record page if needed . For example, select the checkbox if you need to generate a report from the account page whose object is selected in the <strong>Object</strong> property.</table>
+</li>
+<li>
+<p><strong>Apply the changes</strong>.</p>
+</li>
+</ol>
+<p><strong>As a result</strong>, Creatio will add the report to the <strong>Report setup</strong> section.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-4>3. Set up the report columns<a href=#title-1371-4 class=hash-link aria-label="Direct link to 3. Set up the report columns" title="Direct link to 3. Set up the report columns">​</a></h3>
+<ol>
+<li>
+<p><strong>Add the report columns</strong>.</p>
+<ol>
+<li>Go to the <strong>Set up report data</strong> block.</li>
+<li>Add the column of account name. To do this, click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/BasicMacros/scr_AddButton.png alt="" class=img_ev3q> → open the <strong>Column</strong> field → select the corresponding column → click <strong>Select</strong>.</li>
+</ol>
+<p>If you need to use custom macros, add the <strong>Id</strong> column.</p>
+</li>
+<li>
+<p><strong>Add the macro tag</strong> to the column if needed.</p>
+<ol>
+<li>
+<p>Open the setting page of the needed column. To do this, go to the <strong>Set up report data</strong> block and double-click the column or click <img decoding=async loading=lazy src=https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/BasicMacros/8.1/btn_edit.png alt="" class=img_ev3q> in the column row.</p>
+</li>
+<li>
+<p>Go to the <strong>Title</strong> property.</p>
+</li>
+<li>
+<p>Add the macro tag to the column. Creatio lets you add both basic and custom macros.</p>
+<p>View the structure of macro to use in Word reports below.</p>
+<div class="language-cli codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockTitle_P25_>Structure of macro in Word reports</div><div class=codeBlockContent_m3Ux><pre tabindex=0 class="prism-code language-cli codeBlock_qGQc thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_p187><span class=token-line style=color:#393A34><span class="token plain">ColumnName[#MacroTag|Parameters#]</span><br></span></code></pre><div class=buttonGroup_6DOT><button type=button aria-label="Copy code to clipboard" title=Copy class=clean-btn><span class=copyButtonIcons_eSgA aria-hidden=true><svg viewBox="0 0 24 24" class=copyButtonIcon_y97N><path fill=currentColor d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg><svg viewBox="0 0 24 24" class=copyButtonSuccessIcon_LjdS><path fill=currentColor d=M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z /></svg></span></button></div></div></div>
+<p>Creatio lets you add basic macros to different columns and custom macros to the <strong>Id</strong> column only. Learn more: <a href="https://academy.creatio.com/documents?ver=8.0&id=15139" target=_blank rel="noopener noreferrer">Basic macros to use in Word reports</a>.</p>
+</li>
+<li>
+<p>Save the changes.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Apply the changes</strong>.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-5>4. Set up the report template<a href=#title-1371-5 class=hash-link aria-label="Direct link to 4. Set up the report template" title="Direct link to 4. Set up the report template">​</a></h3>
+<ol>
+<li>
+<p><strong>Install the Creatio plug-in for MS Word</strong>. Instructions: <a href="https://academy.creatio.com/documents?ver=8.0&id=1412" target=_blank rel="noopener noreferrer">Install Creatio plug-in for MS Word</a> (user documentation). This is a one-time procedure.</p>
+</li>
+<li>
+<p><strong>Run the MS Word app</strong>.</p>
+</li>
+<li>
+<p><strong>Connect to the Creatio instance</strong> that includes the created report.</p>
+<ol>
+<li>
+<p>Open the <strong>Creatio</strong> tab.</p>
+</li>
+<li>
+<p>Click <strong>Connect</strong>. This opens the <strong>Login</strong> window.</p>
+</li>
+<li>
+<p>Enter the Creatio user credentials.</p>
+</li>
+<li>
+<p>Click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/BasicMacros/scr_PlusButton.png alt="" class=img_ev3q>. This opens the <strong>Available Servers</strong> window.</p>
+</li>
+<li>
+<p>Click <strong>New</strong>. This opens the <strong>Server Connection Setup</strong> window.</p>
+</li>
+<li>
+<p>Fill out the server properties.</p>
+<table><tr><th><p>Property<th><p>Property value<tr><td><center><p>Name</center><td><center><p>An arbitrary server name. For example, "Creatio."</center><tr><td><center><p>Link</center><td><center><p>URL of the Creatio instance that includes the created report. For example, <code>https://mycreatio.com/</code>.</center></table>
+</li>
+<li>
+<p>Click <strong>OK</strong>. This closes the <strong>Server Connection Setup</strong> window.</p>
+</li>
+<li>
+<p>Click <strong>OK</strong>. This closes the <strong>Available Servers</strong> window and adds the server name to the <strong>Server</strong> field of the <strong>Login</strong> window.</p>
+</li>
+<li>
+<p>Click <strong>OK</strong>. This closes the <strong>Login</strong> window and connects to the Creatio instance.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Select the report</strong> to set up the template.</p>
+<ol>
+<li>Open the <strong>Creatio</strong> tab.</li>
+<li>Click <strong>Select report</strong>. This opens the <strong>Creatio Word reports</strong> window.</li>
+<li>Select the corresponding report.</li>
+<li>Click <strong>OK</strong>. This closes the <strong>Creatio Word reports</strong> window and opens the <strong>Word report data</strong> panel that includes data of the report created in the Creatio instance.</li>
+</ol>
+</li>
+<li>
+<p><strong>Set up the template layout</strong> based on your business goals.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-6>5. Upload the file of report template to Creatio<a href=#title-1371-6 class=hash-link aria-label="Direct link to 5. Upload the file of report template to Creatio" title="Direct link to 5. Upload the file of report template to Creatio">​</a></h3>
+<ol>
+<li><strong>Open the Creatio tab</strong>.</li>
+<li><strong>Click Save to Creatio</strong>.</li>
+</ol>
+<p><strong>As a result</strong>, the template file of the corresponding report will be uploaded to the report page in Creatio.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-7>6. Set up how to display the report<a href=#title-1371-7 class=hash-link aria-label="Direct link to 6. Set up how to display the report" title="Direct link to 6. Set up how to display the report">​</a></h3>
+<ol>
+<li>
+<p><strong>Add the report to the section page</strong> if needed.</p>
+<ol>
+<li>
+<p>Open the <strong>list page</strong>. To do this, click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/en/files/images/NoCodePlatform/Manage_Apps/btn_system_designer_8_shell.png alt="" class=img_ev3q> in the top right → <strong>Application management</strong> → <strong>Application Hub</strong> → select the needed app → select the list page.</p>
+</li>
+<li>
+<p>Add a button that opens reports.</p>
+<ol>
+<li>
+<p>Add a <strong>Button</strong> type component to the toolbar of the Freedom UI Designer.</p>
+</li>
+<li>
+<p>Click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ClientModule/8.0/scr_Settings_button.png alt="" class=img_ev3q> and fill out the button properties.</p>
+<table><tr><th><p>Element<th><p>Property<th><p>Property value<tr><td rowspan=3><p>Button that opens reports<td><center><p>Title</center><td><center><p>Print report</center><tr><td><center><p>Action</center><td><center><p>Print report</center><tr><td><center><p>Which data to print?</center><td><center><p>Select needed data</center></table>
+</li>
+</ol>
+</li>
+<li>
+<p>Save the changes.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Add the report to the record page</strong> if needed.</p>
+<ol>
+<li>
+<p>Open the <strong>form page</strong>. To do this, click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/en/files/images/NoCodePlatform/Manage_Apps/btn_system_designer_8_shell.png alt="" class=img_ev3q> in the top right → <strong>Application management</strong> → <strong>Application Hub</strong> → select the needed app → select the form page.</p>
+</li>
+<li>
+<p>Add a button that opens reports.</p>
+<ol>
+<li>
+<p>Add a <strong>Button</strong> type component to the toolbar of the Freedom UI Designer.</p>
+</li>
+<li>
+<p>Click <img decoding=async loading=lazy src=https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ClientModule/8.0/scr_Settings_button.png alt="" class=img_ev3q> and fill out the button properties.</p>
+<table><tr><th><p>Element<th><p>Property<th><p>Property value<tr><td rowspan=3><p>Button that opens reports<td><center><p>Title</center><td><center><p>Print report</center><tr><td><center><p>Action</center><td><center><p>Print report</center><tr><td><center><p>Print settings</center><td><center><p>Select "Print report for the current record" or "Print report for the records list" depending on your business goals</center></table>
+</li>
+</ol>
+</li>
+<li>
+<p>Save the changes.</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><strong>As a result</strong>:</p>
+<ul>
+<li>Creatio will add the <strong>Print report</strong> button that lets you open reports from the section page.</li>
+<li>Creatio will add the <strong>Print report</strong> button that lets you open reports from the record page.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=title-1371-9>7. Bind the report to the package<a href=#title-1371-9 class=hash-link aria-label="Direct link to 7. Bind the report to the package" title="Direct link to 7. Bind the report to the package">​</a></h3>
+<p>Instructions: <a href="https://academy.creatio.com/documents?ver=8.0&id=15123&anchor=title-3927-17" target=_blank rel="noopener noreferrer">Manual data binding</a>.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=see-also>See also<a href=#see-also class=hash-link aria-label="Direct link to See also" title="Direct link to See also">​</a></h2>
+<p><a href=https://academy.creatio.com/docs/8.x/no-code-customization/8.0/category/print-ready-reports target=_blank rel="noopener noreferrer">Print-ready reports</a> (user documentation)</p>
+<p><a href="https://academy.creatio.com/documents?ver=8.0&id=2000" target=_blank rel="noopener noreferrer">System operation permissions</a> (user documentation)</p>
+<p><a href="https://academy.creatio.com/documents?ver=8.0&id=15072" target=_blank rel="noopener noreferrer">Simple package</a></p>
+<p><a href="https://academy.creatio.com/documents?ver=8.0&id=15272" target=_blank rel="noopener noreferrer">Operations with localizable resources</a></p>
+<p><a href="https://academy.creatio.com/documents?ver=8.0&id=15123" target=_blank rel="noopener noreferrer">Bind data to the package</a></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/8.x/dev/development-on-creatio-platform/8.0/category/word-reports><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Word reports</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/8.x/dev/development-on-creatio-platform/8.0/ms-word-examples><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Examples</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#title-1371-1 class="table-of-contents__link toc-highlight">Set up permissions to the Report setup section</a><li><a href=#title-1371-2 class="table-of-contents__link toc-highlight">General procedure</a><ul><li><a href=#title-1371-8 class="table-of-contents__link toc-highlight">1. Implement custom macros (optional)</a><li><a href=#title-1371-3 class="table-of-contents__link toc-highlight">2. Create a report</a><li><a href=#title-1371-4 class="table-of-contents__link toc-highlight">3. Set up the report columns</a><li><a href=#title-1371-5 class="table-of-contents__link toc-highlight">4. Set up the report template</a><li><a href=#title-1371-6 class="table-of-contents__link toc-highlight">5. Upload the file of report template to Creatio</a><li><a href=#title-1371-7 class="table-of-contents__link toc-highlight">6. Set up how to display the report</a><li><a href=#title-1371-9 class="table-of-contents__link toc-highlight">7. Bind the report to the package</a></ul><li><a href=#see-also class="table-of-contents__link toc-highlight">See also</a></ul></div></div></div></div></main></div></div></div></div><footer class=footer><div class=footer__top><div class="container container-fluid"><div class=footer__cont><div class=footer__logo><img src=/docs/8.x/dev/img/accelerate.svg alt="" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" width=271.4 height=38><img src=/docs/8.x/dev/img/accelerate.svg alt="" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" width=271.4 height=38></div><div class="row footer__links"><div class="col footer__col"><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.facebook.com/CreatioCompany target=_blank rel="noopener noreferrer" class=footer__link-item>Facebook<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://www.linkedin.com/company/creatioglobal target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://www.youtube.com/c/creatio target=_blank rel="noopener noreferrer" class=footer__link-item>YouTube<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://www.twitter.com/Creatio_Global target=_blank rel="noopener noreferrer" class=footer__link-item>Twitter<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://www.owler.com/company/Creatio target=_blank rel="noopener noreferrer" class=footer__link-item>Owler<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div><div class="col footer__col"><div class=footer__title>Connect with us</div><ul class="footer__items clean-list"><li class=footer__item><a href="tel:+1 617 765 7997" target=_blank rel="noopener noreferrer" class=footer__link-item>US: +1 617 765 7997</a><li class=footer__item><a href="tel:+44 20 3384 0040" target=_blank rel="noopener noreferrer" class=footer__link-item>UK: +44 20 3384 0040</a><li class=footer__item><a href="tel:+61 261 452 888" target=_blank rel="noopener noreferrer" class=footer__link-item>AU: +61 261 452 888</a></ul></div><div class="col footer__col"><div class=footer__title> </div><ul class="footer__items clean-list"><li class=footer__item><a href=mailto:info@creatio.com target=_blank rel="noopener noreferrer" class=footer__link-item>info@creatio.com</a><li class=footer__item><a href=mailto:info@creatio.com target=_blank rel="noopener noreferrer" class=footer__link-item>support@creatio.com</a></ul></div></div></div></div></div><div class=footer__bottom><div class="container container-fluid"><div class=footer__copyright>© 2025 Creatio. All rights reserved.  |  <a href=https://www.creatio.com/privacy-policy target=_blank>Privacy Policy</a></div></div></div></footer></div>

@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileUtilities
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileUtilities
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.FileUtilities">
+  
+  
+  <h1 id="Terrasoft_Common_FileUtilities" data-uid="Terrasoft.Common.FileUtilities" class="text-break">Class FileUtilities
+  </h1>
+  <div class="markdown level0 summary"><p>Provides methods of working with files.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FileUtilities</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.html">Terrasoft.Common</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_FileUtilities_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FileUtilities</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_CheckIsReadOnly_" data-uid="Terrasoft.Common.FileUtilities.CheckIsReadOnly*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_CheckIsReadOnly_System_String_" data-uid="Terrasoft.Common.FileUtilities.CheckIsReadOnly(System.String)">CheckIsReadOnly(String)</h4>
+  <div class="markdown level1 summary"><p>Verifies whether the specified file is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckIsReadOnly(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>The the specified <code data-dev-comment-type="paramref" class="paramref">fileName</code> file is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_CombineFileName_" data-uid="Terrasoft.Common.FileUtilities.CombineFileName*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_CombineFileName_System_String_System_String_" data-uid="Terrasoft.Common.FileUtilities.CombineFileName(System.String,System.String)">CombineFileName(String, String)</h4>
+  <div class="markdown level1 summary"><p>Forms the file name in the following format: [Path to folder][File name].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&#1052;&#1077;&#1090;&#1086;&#1076; &#1073;&#1091;&#1076;&#1077;&#1090; &#1091;&#1076;&#1072;&#1083;&#1077;&#1085;, &#1085;&#1077;&#1086;&#1073;&#1093;&#1086;&#1076;&#1080;&#1084;&#1086; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1100; &#1084;&#1077;&#1090;&#1086;&#1076; System.IO.Path.Combine&quot;)]
+public static string CombineFileName(string directoryPath, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directoryPath</span></td>
+        <td><p>The path to the folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string that represents the path to the file in the following format: [Path to folder][File name].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>When passing as a parameter <code data-dev-comment-type="paramref" class="paramref">fileName</code> of an empty string or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_CompleteDirectoryName_" data-uid="Terrasoft.Common.FileUtilities.CompleteDirectoryName*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_CompleteDirectoryName_System_String_" data-uid="Terrasoft.Common.FileUtilities.CompleteDirectoryName(System.String)">CompleteDirectoryName(String)</h4>
+  <div class="markdown level1 summary"><p>Forms the name of the specified folder in the following format: [Folder Name][Separator].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CompleteDirectoryName(string directoryName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directoryName</span></td>
+        <td><p>The name of the folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string that represents the name of the specified folder in the following format: [Folder Name][Separator].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_FileUtilities_CompleteDirectoryName_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>[Separator] - a symbol set by the platform (OS) for separating folder levels in the path string.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>When passing as a parameter <code data-dev-comment-type="paramref" class="paramref">directoryName</code> of an empty string or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_CreateDirectory_" data-uid="Terrasoft.Common.FileUtilities.CreateDirectory*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_CreateDirectory_System_IO_DirectoryInfo_" data-uid="Terrasoft.Common.FileUtilities.CreateDirectory(System.IO.DirectoryInfo)">CreateDirectory(DirectoryInfo)</h4>
+  <div class="markdown level1 summary"><p>Creates the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateDirectory(DirectoryInfo directory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The instance of the <span class="xref">System.IO.DirectoryInfo</span> class that represents the information about the created folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_CreateDirectoryByFilePath_" data-uid="Terrasoft.Common.FileUtilities.CreateDirectoryByFilePath*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_CreateDirectoryByFilePath_System_String_" data-uid="Terrasoft.Common.FileUtilities.CreateDirectoryByFilePath(System.String)">CreateDirectoryByFilePath(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a catalog under the specified file path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateDirectoryByFilePath(string filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_Delete_" data-uid="Terrasoft.Common.FileUtilities.Delete*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_Delete_System_String_" data-uid="Terrasoft.Common.FileUtilities.Delete(System.String)">Delete(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Delete(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code>, if the specified file has been successfully deleted; <code>false</code> if the specified file does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_DeleteDirectory_" data-uid="Terrasoft.Common.FileUtilities.DeleteDirectory*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_DeleteDirectory_System_String_System_Boolean_" data-uid="Terrasoft.Common.FileUtilities.DeleteDirectory(System.String,System.Boolean)">DeleteDirectory(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified existing directory and, if indicated, any subdirectories and files in the directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeleteDirectory(string directoryPath, bool isRecursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directoryPath</span></td>
+        <td><p>The name of the directory to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isRecursive</span></td>
+        <td><p><code>true</code> to remove directories, subdirectories, and files in path; otherwise, <code>false</code>. Default value: <code>false</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>In case if <code>null</code> or empty string passed as value of parameter <code data-dev-comment-type="paramref" class="paramref">directoryPath</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_GetCompleteParentDirectoryName_" data-uid="Terrasoft.Common.FileUtilities.GetCompleteParentDirectoryName*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_GetCompleteParentDirectoryName_System_String_" data-uid="Terrasoft.Common.FileUtilities.GetCompleteParentDirectoryName(System.String)">GetCompleteParentDirectoryName(String)</h4>
+  <div class="markdown level1 summary"><p>Gets full path string of the parent folder for the specified folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetCompleteParentDirectoryName(string directoryName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directoryName</span></td>
+        <td><p>The name of the folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string that represents the full path to the parent folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_GetFiles_" data-uid="Terrasoft.Common.FileUtilities.GetFiles*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_GetFiles_System_String_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="Terrasoft.Common.FileUtilities.GetFiles(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">GetFiles(String, String, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets file names from the specified directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; GetFiles(string directoryPath, string searchPattern, IEnumerable&lt;string&gt; skipPaths = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directoryPath</span></td>
+        <td><p>Path to the directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchPattern</span></td>
+        <td><p>File search filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">skipPaths</span></td>
+        <td><p>Enumerator of paths that must be excluded from the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>Enumerator of the file names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_GetIsPathValid_" data-uid="Terrasoft.Common.FileUtilities.GetIsPathValid*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_GetIsPathValid_System_String_" data-uid="Terrasoft.Common.FileUtilities.GetIsPathValid(System.String)">GetIsPathValid(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetIsPathValid(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_GetMD5Hash_" data-uid="Terrasoft.Common.FileUtilities.GetMD5Hash*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_GetMD5Hash_System_Byte___" data-uid="Terrasoft.Common.FileUtilities.GetMD5Hash(System.Byte[])">GetMD5Hash(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMD5Hash(byte[] source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_GetMD5Hash_" data-uid="Terrasoft.Common.FileUtilities.GetMD5Hash*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_GetMD5Hash_System_String_" data-uid="Terrasoft.Common.FileUtilities.GetMD5Hash(System.String)">GetMD5Hash(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMD5Hash(string sourceFileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_GetMD5HashFromString_" data-uid="Terrasoft.Common.FileUtilities.GetMD5HashFromString*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_GetMD5HashFromString_System_String_" data-uid="Terrasoft.Common.FileUtilities.GetMD5HashFromString(System.String)">GetMD5HashFromString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMD5HashFromString(string source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_GetUniqueFileName_" data-uid="Terrasoft.Common.FileUtilities.GetUniqueFileName*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_GetUniqueFileName_System_String_System_String_" data-uid="Terrasoft.Common.FileUtilities.GetUniqueFileName(System.String,System.String)">GetUniqueFileName(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetUniqueFileName(string directory, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_GetUniqueFileName_" data-uid="Terrasoft.Common.FileUtilities.GetUniqueFileName*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_GetUniqueFileName_System_String_System_String_System_String_" data-uid="Terrasoft.Common.FileUtilities.GetUniqueFileName(System.String,System.String,System.String)">GetUniqueFileName(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Forms the unique file name for the specified folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetUniqueFileName(string directory, string fileName, string fileExtension)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileExtension</span></td>
+        <td><p>The file extension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string that represents the unique file name for the specified <code data-dev-comment-type="paramref" class="paramref">directory</code> folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_IsLocked_" data-uid="Terrasoft.Common.FileUtilities.IsLocked*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_IsLocked_System_String_" data-uid="Terrasoft.Common.FileUtilities.IsLocked(System.String)">IsLocked(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified file is locked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLocked(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the parameter is locked; otherwise - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_IsReadOnly_" data-uid="Terrasoft.Common.FileUtilities.IsReadOnly*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_IsReadOnly_System_String_" data-uid="Terrasoft.Common.FileUtilities.IsReadOnly(System.String)">IsReadOnly(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified file is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsReadOnly(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the specified file is read only; otherwise - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_MakeAbsolutePath_" data-uid="Terrasoft.Common.FileUtilities.MakeAbsolutePath*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_MakeAbsolutePath_System_String_System_String_" data-uid="Terrasoft.Common.FileUtilities.MakeAbsolutePath(System.String,System.String)">MakeAbsolutePath(String, String)</h4>
+  <div class="markdown level1 summary"><p>Forms the absolute path to the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MakeAbsolutePath(string baseDirectoryPath, string relativeFilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">baseDirectoryPath</span></td>
+        <td><p>The base path to the folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativeFilePath</span></td>
+        <td><p>The relative path to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string that represents the absolute path to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_MakeRelativePath_" data-uid="Terrasoft.Common.FileUtilities.MakeRelativePath*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_MakeRelativePath_System_String_System_String_" data-uid="Terrasoft.Common.FileUtilities.MakeRelativePath(System.String,System.String)">MakeRelativePath(String, String)</h4>
+  <div class="markdown level1 summary"><p>Forms relative path to the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MakeRelativePath(string baseDirectoryPath, string absoluteFilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">baseDirectoryPath</span></td>
+        <td><p>The base path to the folder from which the path to the file is built.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">absoluteFilePath</span></td>
+        <td><p>The absolute path to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string that represents the path to the <code data-dev-comment-type="paramref" class="paramref">absoluteFilePath</code> file relatively to the <code data-dev-comment-type="paramref" class="paramref">baseDirectoryPath</code> folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>If an empty value or <code>null</code> is received as the <code data-dev-comment-type="paramref" class="paramref">baseDirectoryPath</code> or <code data-dev-comment-type="paramref" class="paramref">absoluteFilePath</code> parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_Replace_" data-uid="Terrasoft.Common.FileUtilities.Replace*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_Replace_System_String_System_String_System_Boolean_" data-uid="Terrasoft.Common.FileUtilities.Replace(System.String,System.String,System.Boolean)">Replace(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Replaces the specified file with a different file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Replace(string sourceFileName, string destinationFileName, bool deleteSourceFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFileName</span></td>
+        <td><p>The name of the replaced file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">destinationFileName</span></td>
+        <td><p>The name of the replacing file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">deleteSourceFile</span></td>
+        <td><p><code>true</code>, if replaced file must be deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code>, if replacement has been successful; <code>false</code> if the file to replace does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_Replace_" data-uid="Terrasoft.Common.FileUtilities.Replace*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_Replace_System_String_System_String_System_Boolean_System_Boolean_" data-uid="Terrasoft.Common.FileUtilities.Replace(System.String,System.String,System.Boolean,System.Boolean)">Replace(String, String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Replaces the specified file with a different file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Replace(string sourceFileName, string destinationFileName, bool deleteSourceFile, bool forceReplace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFileName</span></td>
+        <td><p>The name of the replaced file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">destinationFileName</span></td>
+        <td><p>The name of the replacing file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">deleteSourceFile</span></td>
+        <td><p><code>true</code>, if replaced file must be deleted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forceReplace</span></td>
+        <td><p><code>true</code>, if the replacement is done only for files with the &quot;Read-only&quot; attribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code>, if replacement has been successful; <code>false</code> if the file to replace does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_ResetAllAttributes_" data-uid="Terrasoft.Common.FileUtilities.ResetAllAttributes*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_ResetAllAttributes_System_String_" data-uid="Terrasoft.Common.FileUtilities.ResetAllAttributes(System.String)">ResetAllAttributes(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetAllAttributes(string directoryPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directoryPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_ResetReadOnlyAttribute_" data-uid="Terrasoft.Common.FileUtilities.ResetReadOnlyAttribute*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_ResetReadOnlyAttribute_System_String_" data-uid="Terrasoft.Common.FileUtilities.ResetReadOnlyAttribute(System.String)">ResetReadOnlyAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Resets the &quot;Read-only&quot; attribute for the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetReadOnlyAttribute(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_SetHiddenAttribute_" data-uid="Terrasoft.Common.FileUtilities.SetHiddenAttribute*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_SetHiddenAttribute_System_String_" data-uid="Terrasoft.Common.FileUtilities.SetHiddenAttribute(System.String)">SetHiddenAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the &quot;Hidden&quot; attribute for the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetHiddenAttribute(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>File name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_SetReadOnlyAttribute_" data-uid="Terrasoft.Common.FileUtilities.SetReadOnlyAttribute*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_SetReadOnlyAttribute_System_String_" data-uid="Terrasoft.Common.FileUtilities.SetReadOnlyAttribute(System.String)">SetReadOnlyAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the &quot;Read-only&quot; attribute for the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetReadOnlyAttribute(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_FileUtilities_WriteInFile_" data-uid="Terrasoft.Common.FileUtilities.WriteInFile*"></a>
+  <h4 id="Terrasoft_Common_FileUtilities_WriteInFile_System_String_System_String_System_Boolean_" data-uid="Terrasoft.Common.FileUtilities.WriteInFile(System.String,System.String,System.Boolean)">WriteInFile(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Writes to file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteInFile(string filePath, string text, bool useWriteLine = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useWriteLine</span></td>
+        <td><p><code>true</code>, if a text with the current row terminator is being written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

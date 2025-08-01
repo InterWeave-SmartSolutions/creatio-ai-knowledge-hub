@@ -1,0 +1,35 @@
+{
+  "summary_id": "91f27000ad70",
+  "content_id": "606ea808918e",
+  "summary_type": "abstractive",
+  "summary_text": "Creatio's Process Library is a special section also available in Studio Workplace. Tracing will help us to keep parameters values. We will be able to check how parameters are changed  through process steps.",
+  "key_points": [
+    "Creatio's Process Library is a special section also available in Studio Workplace.",
+    "Tracing will help us to keep parameters values.",
+    "We will be able to check how parameters are changed  through process steps."
+  ],
+  "keywords": [
+    "process",
+    "start",
+    "processes",
+    "library",
+    "process library",
+    "run",
+    "version",
+    "able",
+    "speaker",
+    "really"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 33,
+  "original_length": 652,
+  "compression_ratio": 0.05061349693251534,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:52:20.548160",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

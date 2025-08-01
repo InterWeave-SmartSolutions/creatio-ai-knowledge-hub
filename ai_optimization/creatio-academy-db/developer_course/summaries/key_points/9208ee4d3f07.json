@@ -1,0 +1,43 @@
+{
+  "summary_id": "9208ee4d3f07",
+  "content_id": "3ae506ca01ce",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: today is about details because this is a very important piece of creation configuration and you will face it almost everywhere.\nINSTRUCTION: we can open any account record.\nINSTRUCTION: we need to keep information for example about different types of addresses for our customer or different emails or maybe it's a simple list of context connected to this account.\nCONCEPT: server\nCONCEPT: database\nCONCEPT: data\nNOTE: piece of creation configuration and you will face it almost everywhere.\nNOTE: as knowledge, how to build sections.",
+  "key_points": [
+    "INSTRUCTION: today is about details because this is a very important piece of creation configuration and you will face it almost everywhere.",
+    "INSTRUCTION: we can open any account record.",
+    "INSTRUCTION: we need to keep information for example about different types of addresses for our customer or different emails or maybe it's a simple list of context connected to this account.",
+    "CONCEPT: server",
+    "CONCEPT: database",
+    "CONCEPT: data",
+    "NOTE: piece of creation configuration and you will face it almost everywhere.",
+    "NOTE: as knowledge, how to build sections."
+  ],
+  "keywords": [
+    "let",
+    "page",
+    "package",
+    "object",
+    "data",
+    "classic",
+    "ui",
+    "okay",
+    "like",
+    "need"
+  ],
+  "topics": [],
+  "summary_length": 85,
+  "original_length": 14013,
+  "compression_ratio": 0.006065796046528224,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T17:00:30.901973",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

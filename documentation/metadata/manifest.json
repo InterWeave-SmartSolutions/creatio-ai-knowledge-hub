@@ -1,0 +1,64 @@
+{
+  "name": "Documentation Manifest",
+  "path": "./documentation/",
+  "description": "Technical documentation organized by difficulty and topic",
+  "last_updated": "2024-01-01",
+  "categories": {
+    "getting-started": {
+      "path": "./getting-started/",
+      "description": "Beginner guides and introduction materials",
+      "target_audience": "New users and administrators",
+      "difficulty": "beginner",
+      "estimated_items": 0,
+      "topics": [
+        "platform-overview",
+        "initial-setup", 
+        "basic-navigation",
+        "first-tasks"
+      ]
+    },
+    "platform-basics": {
+      "path": "./platform-basics/",
+      "description": "Core platform concepts and functionality",
+      "target_audience": "Users familiar with basics",
+      "difficulty": "intermediate",
+      "estimated_items": 0,
+      "topics": [
+        "data-model",
+        "ui-components",
+        "business-processes",
+        "configuration",
+        "security",
+        "customization"
+      ]
+    },
+    "advanced-topics": {
+      "path": "./advanced-topics/",
+      "description": "Complex development and configuration topics",
+      "target_audience": "Experienced developers and administrators",
+      "difficulty": "advanced",
+      "estimated_items": 0,
+      "topics": [
+        "development",
+        "processes",
+        "integration", 
+        "configuration",
+        "performance",
+        "devops",
+        "architecture"
+      ]
+    }
+  },
+  "content_standards": {
+    "file_format": "markdown",
+    "metadata_required": true,
+    "code_examples_included": true,
+    "cross_references": true
+  },
+  "ai_features": {
+    "difficulty_progression": true,
+    "topic_clustering": true,
+    "prerequisite_tracking": true,
+    "learning_path_support": true
+  }
+}

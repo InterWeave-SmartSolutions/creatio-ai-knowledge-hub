@@ -1,0 +1,1394 @@
+{
+  "summary_id": "d48b11862f6c",
+  "content_id": "7c589e42742e",
+  "summary_type": "hierarchical",
+  "summary_text": "Document: Speaker 1\n\nMain Sections:\n• Speaker 1\n  - # Speaker 1\n\nSo today session number three of our development on creation platform guided learning.\n  - So we started \ndevelopment questions.\n• Speaker 1\n  - # Speaker 1\n\nIf you experience some problems with your app and if you start to get error messages about some files are not \ncannot be written or you have some file system access issues, especially you can face it during calculation, you can \ncreate separate setting and you can find your app folder Terrasoft web folder and add special role IIs underscore I \nusers and you should provide modified permission for this role for all of your application folder Javasoft web folder \nthis will grant unlimited file system access to create your application.\n  - So you will not have troubles with saving files.\n• Speaker 1\n  - # Speaker 1\n\nSo iis I users it's a local role which includes set of automatically created users made by creature.\n  - Sorry, made by IIS.\n• Speaker 1\n  - # Speaker 1\n\nBut currently my regular user has no such privilege because of corporate restrictions which I have with my \nenvironment.\n  - So let's move on.\n• Speaker 1\n  - # Speaker 1\n\nFor example we can make our own view in database, so we can use some SQL scripting and then we can make an \nobject named the same as this view and we will have the same columns in our object the same as available in view.\n  - And finally it will show you some interesting trick, how you can use creation objects to read data from sources not \ncreated by creation system.\n• Speaker 1\n  - # Speaker 1\n\nHere we used application hub and we installed it from marketplace.\n  - So this customer 360 was installed from \ncreation marketplace.\n• Speaker 1\n  - # Speaker 1\n\nWe want to calculate it in days.\n  - So just to see how many days certain person lived and what is its current age in \ndays.\n• Speaker 1\n  - # Speaker 1\n\nSo actually it's better to say difference between get date which represents current date and birth date.\n  - And it makes \na difference in days and shows us some integer value.\n• Speaker 1\n  - # Speaker 1\n\nAnd this is example of how we can do some special selection from the database which is not normally available if \nyou want to use just only creation tools.\n  - So creation supports three types of databases.\n• Speaker 1\n  - # Speaker 1\n\nSo I will share example of a script for creating Vue for SQL version and some of you are running postgres.\n  - For \nexample you may run postgres at cloud instances like demo websites or maybe trial websites.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 3 ---\n\nThat's how we go to configuration section, find our package that we decided to use.\n  - Add SQL script I can name my \nSQL script whatever I want.\n• Speaker 1\n  - # Speaker 1\n\nJust to make clear that your object is not a simple table, you plan to make a view.\n  - So this view name should be the \nsame as our future object that we will create.\n• Speaker 1\n  - # Speaker 1\n\nYou can save this SQL script.\n  - Obviously if you work with postgres database you should use postgres version for this.\n• Speaker 1\n  - # Speaker 1\n\nSo if I select successfully.\n  - Yes, now it looks like my view is present.\n• Speaker 1\n  - # Speaker 1\n\nSo now I will show you and explain some of behavior settings we must set up.\n  - Represents structure of database \nview this is very important property which tells creature that system should not try to create corresponding table or \nfind existing table.\n• Speaker 1\n  - # Speaker 1\n\nIt will try to do it and treat it as a table with a set of columns and columns information will be provided in this object, \nso it will try to use it as a regular object, but it will not try to modify its structure the database.\n  - This helps us to make \nanything at the database level, including views or self handmade tables.\n• Speaker 1\n  - # Speaker 1\n\nAll we have to do is set of columns which matches with set of columns of a real database view.\n  - First column is \nUSRiD and the type is unique identifier.\n• Speaker 1\n  - # Speaker 1\n\nSo our key column is id column we created especially it has Usrid code and it has id title.\n  - So this is the most \nimportant part and that's all we can save and publish our object.\n• Speaker 1\n  - # Speaker 1\n\nWe can register this object as a lookup.\n  - By the way, you probably noticed we have a new button here.\n• Speaker 1\n  - # Speaker 1\n\nYou can see we have name column, we have birthday and we have age in date.\n  - So you can see this calculation \nworks.\n• Speaker 1\n  - # Speaker 1\n\nThen you can create an object representing your data structure and with the same name and same columns set.\n  - And \nif you mark this object as represent structure database view system will not modify data tables.\n• Speaker 1\n  - # Speaker 1\n\nNow I will show you how we can do this.\n  - But first of all we need to modify our SQL script.\n• Speaker 1\n  - # Speaker 1\n\nWe will name it USR contact title can be contact and there are some architectural peculiarities.\n  - When we have a \ncode something then on database system works with code plus id suffix.\n• Speaker 1\n  - # Speaker 1\n\nWe have to specify lookup property.\n  - It will be a contact obviously it looks like that's it.\n• Speaker 1\n  - # Speaker 1\n\nSo let it be just maximum value for one contact.\n  - We always have just one data row in our connected entity.\n• Speaker 1\n  - # Speaker 1\n\nSo possibly this is not very difficult for you, and if you have more questions about it, just tell me.\n  - So it was an \nexample of how you can use additional tricks with objects and to connect it using database view.\n• Speaker 1\n  - # Speaker 1\n\nIf we will search in our configuration for objects, search for something with the name base, we'll find a lot of objects\n\n--- Page 6 ---\n\nlike base address, base entity, base folder and so on.\n  - I will open base lookup as example.\n• Speaker 1\n  - # Speaker 1\n\nAnd when we create new object inherited from base lookup, it will be a true new real object.\n  - But you will inherit a lot \nof properties and events, settings and behavior from base lookup.\n• Speaker 1\n  - # Speaker 1\n\nLet's check.\n  - I never faced it previously.\n• Speaker 1\n  - # Speaker 1\n\nAnd inside of the objects you can specify what columns will support this translation and what columns will not \nsupport translation.\n  - By default, name and description text columns are turned on with this option, localizable text.\n• Speaker 1\n  - # Speaker 1\n\nHere is probably what else, I don't know what is the language here?\n  - This seems to be italian, maybe Portugal and so \non.\n• Speaker 1\n  - # Speaker 1\n\nSo you can see translations of the same records that you get from your main table are saved into different \nlanguages and out of the box lookups.\n  - That is because name and description are supported with localizable text.\n• Speaker 1\n  - # Speaker 1\n\nYes, you see my table is empty because I did not provide any translation.\n  - But once you will support several \nlanguages and if you want to keep your lookups translated into other languages so you can start to use it.\n• Speaker 1\n  - # Speaker 1\n\nEverything should be saved on disk.\n  - Of course we will remember now about our visual studio code and git client to \nshare our settings with our imagined team members.\n• Speaker 1\n  - # Speaker 1\n\nWhat else I wanted to show you before we proceed is example of delivery because it will be important I think that \nyou are interested how we can transport our solution for test and production.\n  - You remember version control.\n• Speaker 1\n  - # Speaker 1\n\nInside of it we can find Gz archive and inside of it we can find a single file with metadata saved here and it's not so \nreadable.\n  - And this is a transportable format for creation packages.\n• Speaker 1\n  - # Speaker 1\n\nIt will take some ram, some cpu.\n  - You see my ram consumption is more than 11gb now, so I can start my second \nenvironment.\n• Speaker 1\n  - # Speaker 1\n\nSo we have to be a member of a sysadmin.\n  - Let me show you system users.\n• Speaker 1\n  - # Speaker 1\n\nLet's see what happened.\n  - So 13 seconds we started no visible errors and 31 finished.\n• Speaker 1\n  - # Speaker 1\n\nFor some reasons you can do this by unlock for hotfix temporary thing that helps you to make temporary make your \npackage temporary editable.\n  - If you forget to lock it again, system will do it according to the special timeout which \ncan be found in system settings.\n• Speaker 1\n  - # Speaker 1\n\nContact age in days as you can see according to my current data on test environment is calculated.\n  - Great.\n• Speaker 1\n  - # Speaker 1\n\nAnd today I plan to show you how to make a UI settings how to make new sections not with section wizard because \nit's classic UI, outdated stuff.\n  - I will show you how to make new sections, new bake applications made with \nautomations provided by application hub and Freedom UI.\n• Speaker 1\n  - # Speaker 1\n\nApplication appeared not so far ago, maybe just a couple of years, and packages were present for more than ten \nyears.\n  - So you see that application is generally relatively new to creation and previously we had only packages.\n• Speaker 1\n  - # Speaker 1\n\nAlso it has information about its developer.\n  - Terrasoft here means that it is a creation company.\n• Speaker 1\n  - # Speaker 1\n\nSuch items are data items created for some purpose.\n  - Data models means objects.\n• Speaker 1\n  - # Speaker 1\n\nThe system will revert and go back into its original state which was before installation of such tools.\n  - So finally, end \nuser system may include only solutions, only applications that user decides to run.\n• Speaker 1\n  - # Speaker 1\n\nSo it was not fully composable approach.\n  - And we had just simply hard coded part of the system which also was \ncustomizable, but it was not removable from the system.\n• Speaker 1\n  - # Speaker 1\n\nAnd this is pretty standard for creation.\n  - So you can use one zip file for many packages inside.\n• Speaker 1\n  - # Speaker 1\n\nSo ideally if you develop a very good app and then you remove it, you can take care for full recovery of your database \noriginal structure after your application was removed.\n  - And if really needed, you can create SQL scripts which will do \nthis.\n• Speaker 1\n  - # Speaker 1\n\nSo in real life when you remove your app, some traces may remain in the database and usually this is not critical for \napplication because logically such columns or some data leftovers will not be available to see easily unless you go \nto the SQL level, unless you start to make some special queries in order to find them.\n  - So in general, when you \nremove some app, it will be logically cleared so it will fully disappear from the system.\n• Speaker 1\n  - # Speaker 1\n\nSo in general, it was designed to make it easy to install some app and to remove some app.\n  - And ideally when app \nwas removed, no visible traces should remain.\n• Speaker 1\n  - # Speaker 1\n\nOur plan is to automate realty estate agency and we want to keep list of realty records in freedom UI application.\n  - We \nwill have a section for such list of realty records and we can use existing platform customization tools to make it as \nfast as possible, to make it quick and easy.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 11 ---\n\nIn our examples of sections are accounts or contacts and also we have set of system sections like lookups or users \nor system settings.\n  - So section in creature, it's like main big entity which usually has a lot of columns and usually has \nsome subordinate items called details.\n• Speaker 1\n  - # Speaker 1\n\nLet's change its color to something more like significant.\n  - And we can see, oh, we have some new icons here.\n• Speaker 1\n  - # Speaker 1\n\nYou will not be able to easily change it later.\n  - So it's important to provide it correctly from the first time.\n• Speaker 1\n  - # Speaker 1\n\nIt has its main name, version, default page, some description, date of creation developer.\n  - This is a string named \ncustomer.\n• Speaker 1\n  - # Speaker 1\n\nIt means such packages are read only.\n  - If you want to customize something in customer 360 app system will not be \nable to save anything into such read only packages.\n• Speaker 1\n  - # Speaker 1\n\nAnd as you can see it created seven data items representing inserts into some system tables that are necessary to \nmake our application work normally as a section.\n  - Let me show you where we can see it.\n• Speaker 1\n  - # Speaker 1\n\nSo this is just an example of a reality object that we plan to reality data that we plan to save.\n  - Such list and edit page \nwill be used to manually input data, to modify this data and to work with this data.\n• Speaker 1\n  - # Speaker 1\n\nThen you open edit page.\n  - You can also open edit page by clicking on this action, but it takes two clicks quite hard \nand we can just click on this hyperlink.\n• Speaker 1\n  - # Speaker 1\n\nSo I will do it quite fast.\n  - Please confirm.\n• Speaker 1\n  - # Speaker 1\n\nSo my plan is to extend a bit our settings and make it more useful.\n  - When I select any column we can look at its \nproperties settings.\n• Speaker 1\n  - # Speaker 1\n\nSimply drag and drop.\n  - You see several potential places to land our page.\n• Speaker 1\n  - # Speaker 1\n\nIn our case, code will be something like USR because we need prefix for our new columns and technical things, so it \nrequires prefix.\n  - USR price USD will be our code and we confirm.\n• Speaker 1\n  - # Speaker 1\n\nIt should be unique so we can name it the same as our own USR price USD and confirm.\n  - As you can see, \nconfirmation is provided for the most important properties and columns of our items.\n• Speaker 1\n  - # Speaker 1\n\nWe need type what is real t and I will use it based on drop down or lookup.\n  - Column drop down and lookup are very \nclose synonyms so it's almost the same.\n• Speaker 1\n  - # Speaker 1\n\nNo classic UI words here so it will be our freedom usage reality type, title and code are necessary because system \nwill use it to create new lookup object inherited from base lookup.\n  - It will also register it as lookup in lookups section.\n• Speaker 1\n  - # Speaker 1\n\nNo lookup for this so we can create one from scratch realty offer type I will do some poses for some of you like \nMonica or macho or rakhi who confirmed that you do it just along with me.\n  - Okay, save it.\n• Speaker 1\n  - # Speaker 1\n\nThis is just to make it more, let's say friendly when we will work with code part.\n  - Okay, so what else?\n• Speaker 1\n  - # Speaker 1\n\nGood, good option for this type of selection.\n  - And I can also make unique name here manager as a code.\n• Speaker 1\n  - # Speaker 1\n\nIt takes time because system saves client module.\n  - It saves changes to object, it publishes objects, so it takes some \nsignificant time and that's why it takes a while.\n• Speaker 1\n  - # Speaker 1\n\nSo you see that just from 20 minutes of our work we have a lot of items already created and including main entity, \nincluding some objects that are used for lookups.\n  - You can also check if you go to lookups section, you will see \nrecently registered lookups automatically.\n• Speaker 1\n  - # Speaker 1\n\nThe most commonly will be using sale offer type and another one will be rental.\n  - So we have only two offer types in \nour system and when we have data binding tool it will be extremely easy for us to save all data into our target \npackage.\n• Speaker 1\n  - # Speaker 1\n\nSo let's do one more column display id.\n  - Column.\n• Speaker 1\n  - # Speaker 1\n\nThen we go to another lookup realty tape for Freedom UI section.\n  - And just for demo purpose I will show you how we \ncan import this data from file.\n• Speaker 1\n  - # Speaker 1\n\nAnd if we import, we have to specify duplicate search rule.\n  - So what column will be used to check presence of data.\n• Speaker 1\n  - # Speaker 1\n\nNow we can do more steps with main object setting because I want to use some additional features available at \nobject model.\n  - Let's go to objects and I want to show you default values for our section.\n• Speaker 1\n  - # Speaker 1\n\nSo we can make default value for created reality records as a constant.\n  - And we can take constant from lookup to be \nhouse.\n• Speaker 1\n  - # Speaker 1\n\nSo we made our section and we can check how it works.\n  - Going to our realty section or going to my applications \nrealty and opening its page, you see previous data.\n• Speaker 1\n  - # Speaker 1\n\nHouse in Seattle was saved normally.\n  - Okay, we have some kind of basement for our future study.\n• Speaker 1\n  - # Speaker 1\n\nBut now I try to keep it simple, everything as is by default.\n  - So I only have some set of columns set by default.\n• Speaker 1\n  - # Speaker 1\n\nSo let's select our package, select only client modules and for example, let's try to open form page.\n  - If you click on the \nform page directly on its title, you will see page editor, not a program code.\n• Speaker 1\n  - # Speaker 1\n\nYou can go to write part.\n  - This is three dots button called actions.\n• Speaker 1\n  - # Speaker 1\n\nYou see a lot of divs, a lot of some layout settings, a lot of classes, and also you will see plenty of Ng names here \nstanding for angular.\n  - So in Freedom UI, its undercover framework which helps us to build and display components is \nangular.\n• Speaker 1\n  - # Speaker 1\n\nSo this is result of work of big number of JavaScript files and such.\n  - JavaScript files consume information about\n\n--- Page 17 ---\n\ncontrols, about settings, about what they have to build.\n• Speaker 1\n  - # Speaker 1\n\nHere you will see plenty of files and what is really frightening, then you will see a lot of configuration items here.\n  - So \nprobably several hundreds, maybe up to 1000.\n• Speaker 1\n  - # Speaker 1\n\nWe'll find some articles Academy AMD modules module overview yes probably this one is good article explaining \nthis, but also this concept can be found at some common sources like Wikipedia.\n  - So AMD stands for asynchronous \nmodule definition.\n• Speaker 1\n  - # Speaker 1\n\nQuite simple and very old framework require G's.\n  - You can read more about require G's, probably you can find it, \nrequiregs.org probably can find its original page, explain explanations and so on.\n• Speaker 1\n  - # Speaker 1\n\nBut when you open any page, system needs only some part from it.\n  - For example, it needs only 100 or maybe 200 \nmodules.\n• Speaker 1\n  - # Speaker 1\n\nAlso client module has its own schema properties, so properties of changeable item saved in creation configuration.\n  - --- Page 18 ---\n\nIt has its own code localizable title information about parent client module so it could be used for inheritance and \npackage where this client module is saved.\n• Speaker 1\n  - # Speaker 1\n\nThis function has a main purpose to return you some data object.\n  - As you can see it returns JavaScript object, \nincluding in our case six properties.\n• Speaker 1\n  - # Speaker 1\n\nConfig diff represents visual part of the page and physically this is an array in JavaScript and this array includes set \nof items.\n  - In each item represents one control on the page.\n• Speaker 1\n  - # Speaker 1\n\nWe have a label, we have some other properties, parent container, name and that's all.\n  - It's interesting to mention that \nhere we have some settings which represent connection between our control and physical data field connected and \nsaved in memory.\n• Speaker 1\n  - # Speaker 1\n\nFor example, if I accidentally do something like this, system will notice it and it will not show me where I have a \nmistake.\n  - So you should be very careful working with this part and 100% of such settings are now performed with the \npage editor so it's not so hard.\n• Speaker 1\n  - # Speaker 1\n\nFor page level they have special names generated by application automatically and once I tried to change them, it \nturned out to be hard coded each time you create them.\n  - So it's not a good idea to make them better.\n• Speaker 1\n  - # Speaker 1\n\nSo attributes are used to keep some data and connect with controls.\n  - Then finally we have model config which \nrepresents set of data objects used with our page.\n• Speaker 1\n  - # Speaker 1\n\nWe can do conversion between columns like recalculations, but personally I prefer to do it inside of handlers and \nvalidators are used to perform some checks at client side to ensure that values provided in the columns are correct \nand in case if they are not correct, it's possible to display error messages and prohibit saving of data.\n  - We will also do \nsuch examples later.\n• Speaker 1\n  - # Speaker 1\n\nPlease do not modify do not remove them because they are necessary for page editor it's unusual, but page editor \ndoesn't search for the name of the object here or name of the array.\n  - Page editor searches for such system \ncomments and then takes code between and analyzes it and representing page design for you.\n• Speaker 1\n  - # Speaker 1\n\nSome of you who studied somewhere at university or who studied yourself with the way how UI can be programmed \nprobably know about architectural patterns and maybe you know a pattern named MVC and here we have a pattern \nnamed Mvvm.\n  - Let me explain what it is we can study and we can find some simple articles at Wikipedia about it.\n• Speaker 1\n  - # Speaker 1\n\nAnd in MVVM pattern it's recommended to separate visual part and code view separately, store data values and call \nit model and also make a separate controller unit which is called view model.\n  - And Viewmodel has a lot of \ninformation about view.\n• Speaker 1\n  - # Speaker 1\n\nView config diff represents view structure and that's why it's called view config diff, not just diff.\n  - By the way, the word \ndiff here is probably shortage from a difference and means that it's information about only some changes.\n• Speaker 1\n  - # Speaker 1\n\nSo when client side modules will finally form final page structure, they will take base parent one, they will apply child \nitem like this setting, and finally they will analyze base diff child diff and they will make all of the components \naccording to parent and child items.\n  - Okay, so view config div represents visual part represents view in mvvm pattern \nmodel, config represents information about data entities used for our page and also view model config.\n• Speaker 1\n  - # Speaker 1\n\nIt looks like quite boring thing.\n  - So let's do some practical step for today and I will show you very simple hello world \ncomplexity level example.\n• Speaker 1\n  - # Speaker 1\n\nYou can make some kind of funny caption like push me and if you want you can translate this title into other \nsupported languages and by default, as you can see we have a lot of supported actions like open records, like saved \ndata, close page run business process and so on.\n  - Once I started to count I found 24 supported actions here.\n• Speaker 1\n  - # Speaker 1\n\nSo we have more than 60 supported icons here and okay, so and I also set some dummy action.\n  - I plan to change it \nlater.\n• Speaker 1\n  - # Speaker 1\n\nWe have caption, we have type and also we have clicked setting.\n  - Let's remember line number 52 and this is setting \nfor some tenders tender which is already programmed somewhere in parent templates, parent components and \nsystem knows how to implement this.\n• Speaker 1\n  - # Speaker 1\n\nBy the way, it looks like this editor was seriously changed because previously we had some unnecessary warnings \nrelated to new JavaScript comments and features and now it looks like in this editor there are significant \nimprovements related to the way how code is managed.\n  - So thanks developers.\n• Speaker 1\n  - # Speaker 1\n\nSo when you see Terasoft here, you should understand this is a JavaScript core framework, quite old but still \nsupported.\n  - You can use true information from it to show some pop up messages.\n• Speaker 1\n  - # Speaker 1\n\nRequest dollar context attribute name equals and then we will just take 20% of this price and save it again.\n  - We have \nto normally analyze our code inside of a synchronous function, allowing other potential handlers to be started.\n• Speaker 1\n  - # Speaker 1\n\nIn most of cases probably it makes sense to reward the page, but in most of cases browser cache doesn't really \nprevent us from working, so it will probably work normally even without revolting the page.\n  - So open it again.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 22 ---\n\nOkay, here in my button I have clicked property and I have to specify my own custom handler name here.\n  - That was \nmy mistake, I just missed it.\n• Speaker 1\n  - # Speaker 1\n\nSorry for safe I should use push me this one.\n  - Yes, you can see now price changed.\n• Speaker 1\n  - # Speaker 1\n\nIf you do not use await, you will have a bit different structure at the end and you will still have to dig into object that \nyou will get from it.\n  - So recommended option is like this, await request, doer context and then your attribute name.\n• Speaker 1\n  - # Speaker 1\n\nThis is exactly this API for this telescope framework.\n  - So you can use some search here for example, we used the \nmethod to show information.\n• Speaker 2\n  - # Speaker 2\n\nMaybe it's about my problem of performance of the application in my laptop.\n• Speaker 1\n  - # Speaker 1\n\nOh, yes, we can do this.\n  - Would you like to record this part also as part of our training or you prefer to keep it more \npersonal and private so we can start recording if you want.\n• Speaker 2\n  - # Speaker 2\n\n--- Page 23 ---\n\nYou can.\n  - I have no problem to me, no problem.\n• Speaker 1\n  - # Speaker 1\n\nOkay, so I will stop sharing.\n  - Our main part of the session is over.\n• Speaker 2\n  - # Speaker 2\n\nI share my screen with you?\n• Speaker 1\n  - # Speaker 1\n\nYes, yes, please.\n  - Thanks all of you, thanks for all information and your questions.\n• Speaker 2\n  - # Speaker 2\n\nYeah, sorry, I have two.\n• Speaker 1\n  - # Speaker 1\n\nYou can show only one, but I.\n  - Okay, green share screen button.\n• Speaker 2\n  - # Speaker 2\n\nIf I have two screens, so I disconnect one.\n• Speaker 1\n  - # Speaker 1\n\nYes, please select one.\n  - Okay, I can see a screen.\n• Speaker 2\n  - # Speaker 2\n\n--- Page 24 ---\n\nYes, it's chrome.\n  - Yes.\n• Speaker 1\n  - # Speaker 1\n\nOkay, you try to run it once again.\n• Speaker 2\n  - # Speaker 2\n\nYes, I restart in many occasions and don't work.\n  - Good.\n• Speaker 1\n  - # Speaker 1\n\nOkay, so are you using Windows Pro or Windows home?\n• Speaker 2\n  - # Speaker 2\n\nI have windows.\n• Speaker 1\n  - # Speaker 1\n\nYou can find system information?\n• Speaker 2\n  - # Speaker 2\n\nYes, Windows homes.\n• Speaker 1\n  - # Speaker 1\n\nYou will have significant issues.\n  - Let me show you how you can fix this.\n• Speaker 2\n  - # Speaker 2\n\n--- Page 25 ---\n\nI can see how you do that.\n  - You can repeat that, please just close.\n• Speaker 1\n  - # Speaker 1\n\nOther pages, that's the solution.\n  - So when you go to configuration section, you should close other main page.\n• Speaker 1\n  - # Speaker 1\n\nBut when you need to go back to your main configuration section, you will have to use tabs and you will have to \nclose other tabs.\n  - This is not comfortable.\n• Speaker 1\n  - # Speaker 1\n\nSo I recommend you to upgrade your windows to pro.\n  - In this case it will be.\n• Speaker 2\n  - # Speaker 2\n\nAndrea is my colleague, he takes the code the course too.\n  - So he asked me, okay, so I save, socially save, I cancel \nand I.\n• Speaker 1\n  - # Speaker 1\n\nYou can, you can just open another tab with your, you can recover previous page.\n  - Yes.\n• Speaker 2\n  - # Speaker 2\n\nSo it's work.\n  - Oh, it is so simple.\n• Speaker 1\n  - # Speaker 1\n\nYes.\n  - And it's.\n• Speaker 2\n  - # Speaker 2\n\nOkay, thank you.\n  - Thank you very much, Dmitry.\n• Speaker 1\n  - # Speaker 1\n\nThank you Karim.\n• Speaker 2\n  - # Speaker 2\n\nYou saved me.\n  - My boss is over me all day and it's difficult forwarding to the course.\n• Speaker 1\n  - # Speaker 1\n\nNo problem.\n  - Thank you, thank you.\n• Speaker 2\n  - # Speaker 2\n\nSee you tomorrow.\n• Speaker 1\n  - # Speaker 1\n\nYes, so our session is over.\n  - If any other questions?\n• Speaker 1\n  - # Speaker 1\n\nSo maybe you have just a bit older version than I do because I recently switched to the latest one and your version \nmaybe not the same latest, but this is not critical.\n  - So you can just see this compilation result.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 27 ---\n\nI believe it should only change some files on your windows and it will not be like clean environment.\n  - So you should \nhave the same IIs website, you should have the same stuff.\n\nKey Concepts: server, database, sql, data, package",
+  "key_points": [
+    "server",
+    "database",
+    "sql",
+    "data",
+    "package",
+    "api",
+    "field",
+    "configuration",
+    "detail",
+    "section"
+  ],
+  "keywords": [
+    "speaker",
+    "page",
+    "data",
+    "like",
+    "okay",
+    "object",
+    "let",
+    "code",
+    "make",
+    "use"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 5494,
+  "original_length": 17746,
+  "compression_ratio": 0.309590893722529,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T17:00:38.855687",
+  "metadata": {
+    "structure": {
+      "title": "Speaker 1",
+      "sections": [
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo today session number three of our development on creation platform guided learning.",
+            "So we started \ndevelopment questions.",
+            "We already set up our environment.",
+            "We did some simple changes there.",
+            "We practiced with \nobjects and with data items."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you experience some problems with your app and if you start to get error messages about some files are not \ncannot be written or you have some file system access issues, especially you can face it during calculation, you can \ncreate separate setting and you can find your app folder Terrasoft web folder and add special role IIs underscore I \nusers and you should provide modified permission for this role for all of your application folder Javasoft web folder \nthis will grant unlimited file system access to create your application.",
+            "So you will not have troubles with saving files."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo iis I users it's a local role which includes set of automatically created users made by creature.",
+            "Sorry, made by IIS.",
+            "When you create your application pool system makes automatic creation of application pool identity and such \nidentity.",
+            "Actually it's medically generated user.",
+            "I can show you something in my c users."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut currently my regular user has no such privilege because of corporate restrictions which I have with my \nenvironment.",
+            "So let's move on.",
+            "So this is something that may help you with troubleshooting of your access issues of \nyour application."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFor example we can make our own view in database, so we can use some SQL scripting and then we can make an \nobject named the same as this view and we will have the same columns in our object the same as available in view.",
+            "And finally it will show you some interesting trick, how you can use creation objects to read data from sources not \ncreated by creation system.",
+            "For example, such sources may be created by developer or can be used for integration \npurpose to connect with other systems.",
+            "So let me show you some simple example which implements this idea."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nHere we used application hub and we installed it from marketplace.",
+            "So this customer 360 was installed from \ncreation marketplace.",
+            "Customer 360 encodes contacts and accounts.",
+            "So now we have contacts section and what I \nwant to show you is that contact by default already has birth date column and also contact entity has integer age \ncolumn representing current age which is recalculated every day automatically according to birth date and current \ndate."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe want to calculate it in days.",
+            "So just to see how many days certain person lived and what is its current age in \ndays.",
+            "We can do it easily at the database level.",
+            "So let me show you, I already have some examples how we can do \nthis.",
+            "So I will do it quick and I will provide you necessary scripts for this SQL view."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo actually it's better to say difference between get date which represents current date and birth date.",
+            "And it makes \na difference in days and shows us some integer value.",
+            "So if we run such query we will see list of our contacts and \nwe will see age in days.",
+            "This is a very simple example."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd this is example of how we can do some special selection from the database which is not normally available if \nyou want to use just only creation tools.",
+            "So creation supports three types of databases.",
+            "It doesn't support some \nspecific database dependent features like date, d function.",
+            "And also we have not so much of flexibility building \nqueries in our creation.",
+            "So as we have flexibility to build queries directly from SQL."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I will share example of a script for creating Vue for SQL version and some of you are running postgres.",
+            "For \nexample you may run postgres at cloud instances like demo websites or maybe trial websites.",
+            "They are usually \nbased on cloud, on postgres.",
+            "So this is example of postgres for the same stuff.",
+            "Okay, so these such scripts of \ncourse obviously are database dependent."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 3 ---\n\nThat's how we go to configuration section, find our package that we decided to use.",
+            "Add SQL script I can name my \nSQL script whatever I want.",
+            "For example USR, create contact age, days view, something like this.",
+            "It could be \nanything."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nJust to make clear that your object is not a simple table, you plan to make a view.",
+            "So this view name should be the \nsame as our future object that we will create.",
+            "That's why this view has such a strange name."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can save this SQL script.",
+            "Obviously if you work with postgres database you should use postgres version for this.",
+            "When you create SQL script you can decide what type of database you are focusing.",
+            "So close it and we can also run \nthis script.",
+            "So of course I could run it in my SQL server management studio."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if I select successfully.",
+            "Yes, now it looks like my view is present.",
+            "It has four columns and my database level part \nis ready.",
+            "So I have database item as a view which returns some data if I select it.",
+            "If something is not clear, if \nsomething you do not fully understand why I'm doing this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now I will show you and explain some of behavior settings we must set up.",
+            "Represents structure of database \nview this is very important property which tells creature that system should not try to create corresponding table or \nfind existing table.",
+            "If we create an object with represent structure of database on it means developer took care about \ndatabase part themselves."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt will try to do it and treat it as a table with a set of columns and columns information will be provided in this object, \nso it will try to use it as a regular object, but it will not try to modify its structure the database.",
+            "This helps us to make \nanything at the database level, including views or self handmade tables."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAll we have to do is set of columns which matches with set of columns of a real database view.",
+            "First column is \nUSRiD and the type is unique identifier.",
+            "So we have to represent it.",
+            "Type is unique identifier, column code is Usrid and \ntitle could be just id.",
+            "Okay, this column is done."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo our key column is id column we created especially it has Usrid code and it has id title.",
+            "So this is the most \nimportant part and that's all we can save and publish our object.",
+            "As you remember, we can just click publish \nbecause it performs save anyway.",
+            "And luckily for us, publishing such object which is represented as a database view \ndoes not make any changes in the database."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe can register this object as a lookup.",
+            "By the way, you probably noticed we have a new button here.",
+            "Sorry for this \nalignment, but it's not a big deal.",
+            "This button appeared as a result of data binding tool and it helps us to automate \ncreating of data items and for many different scenarios.",
+            "In our case, we need data item for register object as a \nlookup."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can see we have name column, we have birthday and we have age in date.",
+            "So you can see this calculation \nworks.",
+            "There are some side effects because of this is editable list and our object is not inherited from base entity.",
+            "We have some side effects caused by it like this.",
+            "So you see it's not working fully as expected."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen you can create an object representing your data structure and with the same name and same columns set.",
+            "And \nif you mark this object as represent structure database view system will not modify data tables.",
+            "It will trust you and \nit will try to read data from sources that you specify.",
+            "So it will try to read data from the table or view with the same \nname as your code.",
+            "So this trick can be also useful."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow I will show you how we can do this.",
+            "But first of all we need to modify our SQL script.",
+            "Let's go to our SQL script \nand add one more column.",
+            "We can add one more column.",
+            "It will be id as contact id."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe will name it USR contact title can be contact and there are some architectural peculiarities.",
+            "When we have a \ncode something then on database system works with code plus id suffix.",
+            "So I named my column in the object level \nUSR contact and system will work with USR contact id when it reads data from the physical database.",
+            "This happens \nnot only for this object, it happens for all objects with lookups."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe have to specify lookup property.",
+            "It will be a contact obviously it looks like that's it.",
+            "We do not need anything else.",
+            "Let's save and publish.",
+            "Click publish, make saving and publishing."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let it be just maximum value for one contact.",
+            "We always have just one data row in our connected entity.",
+            "So \nmaximum will work for us.",
+            "And I can just name this column age in days.",
+            "No need to use any additional filters, save it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo possibly this is not very difficult for you, and if you have more questions about it, just tell me.",
+            "So it was an \nexample of how you can use additional tricks with objects and to connect it using database view.",
+            "There are some \nother properties here like virtual connected to the portal, wave update and so on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf we will search in our configuration for objects, search for something with the name base, we'll find a lot of objects\n\n--- Page 6 ---\n\nlike base address, base entity, base folder and so on.",
+            "I will open base lookup as example.",
+            "You will see this object is \nvirtual, so it has no its own table.",
+            "So you see object based lookup."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd when we create new object inherited from base lookup, it will be a true new real object.",
+            "But you will inherit a lot \nof properties and events, settings and behavior from base lookup.",
+            "And that's how this object can be really useful \nbecause you can.",
+            "So base architects can program lookups behavior.",
+            "Once in base lookup object, then you create \nyour own lookups inherited from it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet's check.",
+            "I never faced it previously.",
+            "Base value lookup let's see what.",
+            "So it's empty.",
+            "Translations are also empty."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd inside of the objects you can specify what columns will support this translation and what columns will not \nsupport translation.",
+            "By default, name and description text columns are turned on with this option, localizable text.",
+            "It \nmeans that if you want, you can save translations of name and description column into other languages.",
+            "And this \ntranslation was already done at base product lookups."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nHere is probably what else, I don't know what is the language here?",
+            "This seems to be italian, maybe Portugal and so \non.",
+            "Probably, I don't know, it's hard for me to guess.",
+            "I can join and so decode such cultures.",
+            "Okay, let's do this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you can see translations of the same records that you get from your main table are saved into different \nlanguages and out of the box lookups.",
+            "That is because name and description are supported with localizable text.",
+            "--- Page 7 ---\n\nYou can turn this option off if you don't like it or you can keep it on by default because it was inherited from base \nlookup.",
+            "It was inherited and that's why we did not change it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYes, you see my table is empty because I did not provide any translation.",
+            "But once you will support several \nlanguages and if you want to keep your lookups translated into other languages so you can start to use it.",
+            "And the \nbest way to transport and make such translation is to register one more user with another language and then log in \nat this user, go to lookups and when you will go to corresponding lookup then you will start to edit data."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nEverything should be saved on disk.",
+            "Of course we will remember now about our visual studio code and git client to \nshare our settings with our imagined team members.",
+            "Now you see some items created so we can commit \nsomething like contact age view example added.",
+            "This will be our comment for the commit that we do with these \nrecent changes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWhat else I wanted to show you before we proceed is example of delivery because it will be important I think that \nyou are interested how we can transport our solution for test and production.",
+            "You remember version control.",
+            "Working with git with bunch of files is not so efficient when you want to transport your solution for test and \nproduction.",
+            "This type of sharing with many files is good for developers and between developer environments in \norder to make delivery to your test and production."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nInside of it we can find Gz archive and inside of it we can find a single file with metadata saved here and it's not so \nreadable.",
+            "And this is a transportable format for creation packages.",
+            "Okay, so this is metadata of your package fully \nincluding all the package items, including all scripts, including processes, whatever we have and even more including \nfile system package contents from the files folder.",
+            "Let me show you telescope configuration ekg dev classic."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt will take some ram, some cpu.",
+            "You see my ram consumption is more than 11gb now, so I can start my second \nenvironment.",
+            "I will use it as a test environment to check how delivery works and to also make sure that I have no any \ntroubles with changes with transition of my settings between environments.",
+            "Sometimes it happens.",
+            "Now I started to \nreceive this attempt when I attempt to login."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we have to be a member of a sysadmin.",
+            "Let me show you system users.",
+            "My supervisor user is a member of \nsystem administrators role.",
+            "The only condition necessary for us to load packages and here is my application hub on \ntest environment and I can just install the application from file, select file from disk, go to downloads.",
+            "This is my dev \nclassic package saved several minutes ago."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet's see what happened.",
+            "So 13 seconds we started no visible errors and 31 finished.",
+            "It looks like maybe 18 seconds \nto install.",
+            "Very good, very good.",
+            "Okay, so you see some text, comments and details about installation of the package, \nbut now it's okay."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFor some reasons you can do this by unlock for hotfix temporary thing that helps you to make temporary make your \npackage temporary editable.",
+            "If you forget to lock it again, system will do it according to the special timeout which \ncan be found in system settings.",
+            "Now you can see my package was loaded.",
+            "You see status, no errors.",
+            "It means all \nSQL scripts or objects were applied successfully."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nContact age in days as you can see according to my current data on test environment is calculated.",
+            "Great.",
+            "So it \nlooks like everything I did was normally loaded and we can use this environment for future checks.",
+            "Now we can \ntemporarily disable it, but then later we will check our new environments.",
+            "We will check our new application which \nwe plan to do right now."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd today I plan to show you how to make a UI settings how to make new sections not with section wizard because \nit's classic UI, outdated stuff.",
+            "I will show you how to make new sections, new bake applications made with \nautomations provided by application hub and Freedom UI.",
+            "So we will focus mainly on Freedom UI.",
+            "But before doing \nthis I need to explain you what is application hub and how it's intended to be used.",
+            "So we go to settings, then we go \nto application hub section and open it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nApplication appeared not so far ago, maybe just a couple of years, and packages were present for more than ten \nyears.",
+            "So you see that application is generally relatively new to creation and previously we had only packages.",
+            "So \napplication is a new logical type of items and usually one application means one or several packages.",
+            "So application \nis a higher level logical setting and it may include so it must include at least one package.",
+            "But sometimes it can \ninclude more than one package."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAlso it has information about its developer.",
+            "Terrasoft here means that it is a creation company.",
+            "Terrasoft, as you \nremember from previous sessions is previous name of creature company and creature brand.",
+            "So application has its \nown properties.",
+            "Also application has color settings and application has icon."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSuch items are data items created for some purpose.",
+            "Data models means objects.",
+            "Business processes are like \nautomated business procedures implemented as diagrams.",
+            "So code in creation.",
+            "They are called business \nprocesses."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThe system will revert and go back into its original state which was before installation of such tools.",
+            "So finally, end \nuser system may include only solutions, only applications that user decides to run.",
+            "And that's why we can call this \nlogic composable app.",
+            "It's very close."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it was not fully composable approach.",
+            "And we had just simply hard coded part of the system which also was \ncustomizable, but it was not removable from the system.",
+            "Now developers decided to make constructor only and \nthen to install everything that you need on top of it.",
+            "And that's why they needed applications, because sometimes \nfunctionality that you want to add includes more than one package.",
+            "So developers needed applications because \nsome functions were designed as set of packages, not just one package."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd this is pretty standard for creation.",
+            "So you can use one zip file for many packages inside.",
+            "It was possible even \nbefore applications appeared.",
+            "So now developers just improved this idea and made a separate logical level code \napplication.",
+            "Okay, how safe is creatio?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo ideally if you develop a very good app and then you remove it, you can take care for full recovery of your database \noriginal structure after your application was removed.",
+            "And if really needed, you can create SQL scripts which will do \nthis.",
+            "Recovery and installation type will be uninstall app."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in real life when you remove your app, some traces may remain in the database and usually this is not critical for \napplication because logically such columns or some data leftovers will not be available to see easily unless you go \nto the SQL level, unless you start to make some special queries in order to find them.",
+            "So in general, when you \nremove some app, it will be logically cleared so it will fully disappear from the system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo in general, it was designed to make it easy to install some app and to remove some app.",
+            "And ideally when app \nwas removed, no visible traces should remain.",
+            "Beddy is it clear?",
+            "Brilliant.",
+            "Thanks million."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOur plan is to automate realty estate agency and we want to keep list of realty records in freedom UI application.",
+            "We \nwill have a section for such list of realty records and we can use existing platform customization tools to make it as \nfast as possible, to make it quick and easy.",
+            "So click new application.",
+            "We have several different templates here.",
+            "In my \ncase, probably the best option is records and business processes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 11 ---\n\nIn our examples of sections are accounts or contacts and also we have set of system sections like lookups or users \nor system settings.",
+            "So section in creature, it's like main big entity which usually has a lot of columns and usually has \nsome subordinate items called details.",
+            "We will study it, you will see.",
+            "And also if you're just more risky and you're \ninterested in AI tools, it's possible to make a section with the help of AI."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet's change its color to something more like significant.",
+            "And we can see, oh, we have some new icons here.",
+            "So I \nplan to create a real tea section.",
+            "So possibly I could find some icon representing a house or apartment.",
+            "Okay, let it be \nlike this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou will not be able to easily change it later.",
+            "So it's important to provide it correctly from the first time.",
+            "Also it's \npossible to link so simply to create rhythm UI section based on existing object.",
+            "But this option is really useful only in \ncase if you already have some created objects in your system.",
+            "And usually it happens when you already have classic \nUI solution and you want to migrate into freedom UI."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt has its main name, version, default page, some description, date of creation developer.",
+            "This is a string named \ncustomer.",
+            "If we change our system setting, named publisher to be possible to change developer of this package and \nthis app.",
+            "Okay, no changes in app properties.",
+            "We have pages part, we have list and form page, we have navigation \nand section."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt means such packages are read only.",
+            "If you want to customize something in customer 360 app system will not be \nable to save anything into such read only packages.",
+            "So this will automatically create new package for you."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd as you can see it created seven data items representing inserts into some system tables that are necessary to \nmake our application work normally as a section.",
+            "Let me show you where we can see it.",
+            "We can also run this app \nbut I prefer to work with main application window and in order to fight with any potential browser cache issues I\n\n--- Page 12 ---\n\nreloaded it.",
+            "Now we can go to studio and switch to my applications workplace or we can find all apps in all apps."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo this is just an example of a reality object that we plan to reality data that we plan to save.",
+            "Such list and edit page \nwill be used to manually input data, to modify this data and to work with this data.",
+            "Then of course we need to \ncustomize it to make more columns to make it more useful to work with.",
+            "But let's make a break and then we will \ncontinue because it looks like I just forgot to have a five minutes break."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen you open edit page.",
+            "You can also open edit page by clicking on this action, but it takes two clicks quite hard \nand we can just click on this hyperlink.",
+            "Okay, now we have a so called form page or edit page.",
+            "We can do \ncustomizations right from here with a small edit page button.",
+            "It will open corresponding page editor if you have."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I will do it quite fast.",
+            "Please confirm.",
+            "Do any of you reproduce the same steps just during the session or you just \nwatch and plan to do your own practical steps separately?",
+            "Watching videos so please type plus in our chat if you \nfollow me just during this section right now and do the same examples at your environment."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo my plan is to extend a bit our settings and make it more useful.",
+            "When I select any column we can look at its \nproperties settings.",
+            "We have some kind of object inspector for settings of a certain selected item.",
+            "In my case here is \ntitle code, data format, some settings and here I would like to make it copyable.",
+            "For some unknown reasons, \ndevelopers who made a template made name not copyable."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSimply drag and drop.",
+            "You see several potential places to land our page.",
+            "Our column I prefer to put it here nearby \nname.",
+            "I can name it price.",
+            "I can also specify the amount so maybe the currency of our price to make it more clear."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn our case, code will be something like USR because we need prefix for our new columns and technical things, so it \nrequires prefix.",
+            "USR price USD will be our code and we confirm.",
+            "Save this change.",
+            "Okay, the data format will be \ndecimal, two digits, no description, maybe not required and okay, if you want you can make it required."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt should be unique so we can name it the same as our own USR price USD and confirm.",
+            "As you can see, \nconfirmation is provided for the most important properties and columns of our items.",
+            "So element code seems to be \nimportant because we have this confirmation stuff.",
+            "Okay, did it.",
+            "So this is how we can make one more column."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe need type what is real t and I will use it based on drop down or lookup.",
+            "Column drop down and lookup are very \nclose synonyms so it's almost the same.",
+            "The title for our new lookup column will be type.",
+            "Inner code will be USR, \ntype and confirm.",
+            "But lookup is not present here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNo classic UI words here so it will be our freedom usage reality type, title and code are necessary because system \nwill use it to create new lookup object inherited from base lookup.",
+            "It will also register it as lookup in lookups section.",
+            "It will provide data items for this registering and the only missing part will be lookup contents.",
+            "We will do it later.",
+            "Okay, type is clear."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNo lookup for this so we can create one from scratch realty offer type I will do some poses for some of you like \nMonica or macho or rakhi who confirmed that you do it just along with me.",
+            "Okay, save it.",
+            "And I also just was quite \nquick.",
+            "Normally by default lookups will be shown as simple drop down list.",
+            "But in case if you select something \ncomplex like big entity like contacts or accounts, it may be useful to use full scale selection window for the offer \ntype."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is just to make it more, let's say friendly when we will work with code part.",
+            "Okay, so what else?",
+            "Maybe we can\n\n--- Page 14 ---\n\njust practice with a single text column and it will be just a comment 250.",
+            "Maybe it's enough for us.",
+            "Okay, checked \neverything."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nGood, good option for this type of selection.",
+            "And I can also make unique name here manager as a code.",
+            "Okay, so I \nonly usually set four parameters, title code, we specify lookup and element code.",
+            "Okay, for the very beginning this is \nenough.",
+            "We have some required columns, some not required columns."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt takes time because system saves client module.",
+            "It saves changes to object, it publishes objects, so it takes some \nsignificant time and that's why it takes a while.",
+            "Okay, everything was saved.",
+            "We can close this editor.",
+            "You can check \nwhat's happening with our new package."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you see that just from 20 minutes of our work we have a lot of items already created and including main entity, \nincluding some objects that are used for lookups.",
+            "You can also check if you go to lookups section, you will see \nrecently registered lookups automatically.",
+            "So system also made this registering as data items.",
+            "So it's quite smart.",
+            "And when you create lookups with the help of page editor, it will automatically create object for you."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThe most commonly will be using sale offer type and another one will be rental.",
+            "So we have only two offer types in \nour system and when we have data binding tool it will be extremely easy for us to save all data into our target \npackage.",
+            "And that's IT system creates thanks to data binding tool it creates corresponding data item automatically, \nhelping us to save our time and do not perform some boring work.",
+            "So here you can see all the records of our lookup \nwere saved as data item.",
+            "This is very efficient."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let's do one more column display id.",
+            "Column.",
+            "I want to display it.",
+            "I don't need description at all.",
+            "Okay, save such \ncolumn settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThen we go to another lookup realty tape for Freedom UI section.",
+            "And just for demo purpose I will show you how we \ncan import this data from file.",
+            "Data import target object is already selected.",
+            "We need to select file for our import.",
+            "We \nneed to match columns and provide such column settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd if we import, we have to specify duplicate search rule.",
+            "So what column will be used to check presence of data.",
+            "Okay, we can do it very technical way and check by id.",
+            "In real life, when you import data from excel, you may not have \nthis id.",
+            "You will need to select some, let's say reliable enough columns which should be quite unique."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow we can do more steps with main object setting because I want to use some additional features available at \nobject model.",
+            "Let's go to objects and I want to show you default values for our section.",
+            "Unfortunately we cannot set \nit from page editor, so we can go to object editor.",
+            "For example, for the manager we can set default value as a special \nsystem variable, current user contact.",
+            "So if a person creates some reality record, it will be considered, this person \nwill be considered as the manager."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we can make default value for created reality records as a constant.",
+            "And we can take constant from lookup to be \nhouse.",
+            "So this will be our house.",
+            "And when we create new record, this default setting will be done.",
+            "If we had some \nnumbering we can also use auto number feature, but for reality I just did not use it so far."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we made our section and we can check how it works.",
+            "Going to our realty section or going to my applications \nrealty and opening its page, you see previous data.",
+            "We have some price for department, some area, maybe it's in \nsquare feet.",
+            "So that's why we have such data.",
+            "It will be an apartment for sale and some default contact."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nHouse in Seattle was saved normally.",
+            "Okay, we have some kind of basement for our future study.",
+            "And now I need to \ntell you something that you will consider as boring.",
+            "So we need to go deeper.",
+            "Okay, a couple of words for list part \nbefore we go deeper."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut now I try to keep it simple, everything as is by default.",
+            "So I only have some set of columns set by default.",
+            "Reload \nthis page so you will see default column settings for me.",
+            "Okay, great.",
+            "Looks very good."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let's select our package, select only client modules and for example, let's try to open form page.",
+            "If you click on the \nform page directly on its title, you will see page editor, not a program code.",
+            "You can find program code part of it.",
+            "If \nyou click on this source code, don't save source code will be opened."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can go to write part.",
+            "This is three dots button called actions.",
+            "And then you can open source code directly \nwithout opening page editor.",
+            "So this is some kind of code."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou see a lot of divs, a lot of some layout settings, a lot of classes, and also you will see plenty of Ng names here \nstanding for angular.",
+            "So in Freedom UI, its undercover framework which helps us to build and display components is \nangular.",
+            "So if you have some angular knowledge and experience, you will find it easy to make your own new \ncomponents if you need it for your solution."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo this is result of work of big number of JavaScript files and such.",
+            "JavaScript files consume information about\n\n--- Page 17 ---\n\ncontrols, about settings, about what they have to build.",
+            "And thanks to base product architects, we do not need to \ntype or develop such code ourselves."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nHere you will see plenty of files and what is really frightening, then you will see a lot of configuration items here.",
+            "So \nprobably several hundreds, maybe up to 1000.",
+            "And it's important for you to understand that client side of creature \nconsists of big number of relatively small pieces of code.",
+            "So quite big number of JavaScript sources."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe'll find some articles Academy AMD modules module overview yes probably this one is good article explaining \nthis, but also this concept can be found at some common sources like Wikipedia.",
+            "So AMD stands for asynchronous \nmodule definition.",
+            "So this is an idea of splitting of all your JavaScript application into parts code modules and make \nsuch modules capable to be loaded separately from other modules and asynchronously."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nQuite simple and very old framework require G's.",
+            "You can read more about require G's, probably you can find it, \nrequiregs.org probably can find its original page, explain explanations and so on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut when you open any page, system needs only some part from it.",
+            "For example, it needs only 100 or maybe 200 \nmodules.",
+            "Required G's helps to load only necessary modules by the help of by the analyzing of definitions of such \nmodules and so generally required J's is main under cover framework for organizing of executable JavaScript code \nin creation client side and required J's has its own requirements for how such JavaScript code should look like and \nthat's why we are coming to answer of why our client module code looks like this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAlso client module has its own schema properties, so properties of changeable item saved in creation configuration.",
+            "--- Page 18 ---\n\nIt has its own code localizable title information about parent client module so it could be used for inheritance and \npackage where this client module is saved.",
+            "So code of your client module must be matched with the name of the \nclient module in your code.",
+            "If name will be not the same as code, this will not work.",
+            "So first argument here is our \nmodule name."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis function has a main purpose to return you some data object.",
+            "As you can see it returns JavaScript object, \nincluding in our case six properties.",
+            "This JavaScript object represents necessary information which system needs to \nknow about how to build our page.",
+            "And this information in general was created with the help of automation tools of \npage editor and that's why we did not program this code ourselves."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nConfig diff represents visual part of the page and physically this is an array in JavaScript and this array includes set \nof items.",
+            "In each item represents one control on the page.",
+            "Let me show you a simple example.",
+            "This is control for \nname column.",
+            "So here when we look at this name we have some title and we have input field."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe have a label, we have some other properties, parent container, name and that's all.",
+            "It's interesting to mention that \nhere we have some settings which represent connection between our control and physical data field connected and \nsaved in memory.",
+            "I will explain this a bit later.",
+            "Now you should remember that view config represents set of \ninformation set."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFor example, if I accidentally do something like this, system will notice it and it will not show me where I have a \nmistake.",
+            "So you should be very careful working with this part and 100% of such settings are now performed with the \npage editor so it's not so hard.",
+            "Not so difficult to do this customization with page editor and then looking at this \ncode.",
+            "Okay, in general, view config diff represents UI structure set of user interface items that you plan to see.",
+            "Okay \ngreat."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFor page level they have special names generated by application automatically and once I tried to change them, it \nturned out to be hard coded each time you create them.",
+            "So it's not a good idea to make them better.",
+            "If it looks a bit \nugly like this, you should not try to change it because it looks like page has also some metadata saved separately\n\n--- Page 19 ---\n\nwhich has corresponding names inside of it.",
+            "And if you start to beautify with no any part."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo attributes are used to keep some data and connect with controls.",
+            "Then finally we have model config which \nrepresents set of data objects used with our page.",
+            "In our case, only one data object is used.",
+            "Reality reality entity is \nused to work with our page."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe can do conversion between columns like recalculations, but personally I prefer to do it inside of handlers and \nvalidators are used to perform some checks at client side to ensure that values provided in the columns are correct \nand in case if they are not correct, it's possible to display error messages and prohibit saving of data.",
+            "We will also do \nsuch examples later.",
+            "So if you ask me about where we will program here, the most common answer will be we do \nour own handlers."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nPlease do not modify do not remove them because they are necessary for page editor it's unusual, but page editor \ndoesn't search for the name of the object here or name of the array.",
+            "Page editor searches for such system \ncomments and then takes code between and analyzes it and representing page design for you.",
+            "When finished and \ndata changes are saved, page editor creates new set of items like Div array for example and saves it into this code."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSome of you who studied somewhere at university or who studied yourself with the way how UI can be programmed \nprobably know about architectural patterns and maybe you know a pattern named MVC and here we have a pattern \nnamed Mvvm.",
+            "Let me explain what it is we can study and we can find some simple articles at Wikipedia about it.",
+            "So \nMvvm this is an architectural pattern."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd in MVVM pattern it's recommended to separate visual part and code view separately, store data values and call \nit model and also make a separate controller unit which is called view model.",
+            "And Viewmodel has a lot of \ninformation about view.",
+            "Viewmodel knows view structure and Viewmodel manages our view."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nView config diff represents view structure and that's why it's called view config diff, not just diff.",
+            "By the way, the word \ndiff here is probably shortage from a difference and means that it's information about only some changes.",
+            "And it \nmakes sense because our module is not made from scratch.",
+            "Our module was made as inherited item from some \ntabbed pages left area base platform client module."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo when client side modules will finally form final page structure, they will take base parent one, they will apply child \nitem like this setting, and finally they will analyze base diff child diff and they will make all of the components \naccording to parent and child items.",
+            "Okay, so view config div represents visual part represents view in mvvm pattern \nmodel, config represents information about data entities used for our page and also view model config.",
+            "I think partly \nalso works about the same because this is registering of available variables that we can use on the page and \nimplementation of handlers."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt looks like quite boring thing.",
+            "So let's do some practical step for today and I will show you very simple hello world \ncomplexity level example.",
+            "So let's do some simple example.",
+            "But first as we want to make a button, it's better to start \nmaking button with the help of editor."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can make some kind of funny caption like push me and if you want you can translate this title into other \nsupported languages and by default, as you can see we have a lot of supported actions like open records, like saved \ndata, close page run business process and so on.",
+            "Once I started to count I found 24 supported actions here.",
+            "So I will \njust randomly select some action and then I will replace it with something else.",
+            "By the way, what's happening here?",
+            "My title looks a bit strange."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we have more than 60 supported icons here and okay, so and I also set some dummy action.",
+            "I plan to change it \nlater.",
+            "I don't have any support.",
+            "Net menu.",
+            "No any special conditions."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe have caption, we have type and also we have clicked setting.",
+            "Let's remember line number 52 and this is setting \nfor some tenders tender which is already programmed somewhere in parent templates, parent components and \nsystem knows how to implement this.",
+            "Now we can go to handlers part and make our own handler.",
+            "I already have \nsome example because making it from scratch is a bit difficult."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBy the way, it looks like this editor was seriously changed because previously we had some unnecessary warnings \nrelated to new JavaScript comments and features and now it looks like in this editor there are significant \nimprovements related to the way how code is managed.",
+            "So thanks developers.",
+            "Version 813 now had a new type of \neditor here.",
+            "Okay, this is my handler physically is also JavaScript object with three."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo when you see Terasoft here, you should understand this is a JavaScript core framework, quite old but still \nsupported.",
+            "You can use true information from it to show some pop up messages.",
+            "And also I plan to show you how \nyou can manage data, read data and write data.",
+            "We have a special procedure to get attribute values.",
+            "Now let's \ncollapse view model con collapse diff part."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nRequest dollar context attribute name equals and then we will just take 20% of this price and save it again.",
+            "We have \nto normally analyze our code inside of a synchronous function, allowing other potential handlers to be started.",
+            "So \nthis is also very typical end of handler code.",
+            "In your case, you will have to change this line to find corresponding \nprice attribute and also to do it with setting value."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn most of cases probably it makes sense to reward the page, but in most of cases browser cache doesn't really \nprevent us from working, so it will probably work normally even without revolting the page.",
+            "So open it again.",
+            "Now we \nsee our button enable browser developer console f twelve or control shift I.",
+            "There are plenty of warnings, as you can \nsee here, they are minor warnings, and it's because freedom UI page is not ideal now, so system probably will be \nfixed later."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 22 ---\n\nOkay, here in my button I have clicked property and I have to specify my own custom handler name here.",
+            "That was \nmy mistake, I just missed it.",
+            "So I have to save and fix and save it.",
+            "I will also call copy this piece for you.",
+            "You config \nprobably I should not copy big part of it, so I only should do something like this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSorry for safe I should use push me this one.",
+            "Yes, you can see now price changed.",
+            "We have all the proofs here and \nno errors.",
+            "So it looks like everything works according to the plan.",
+            "This is example of hello world application."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you do not use await, you will have a bit different structure at the end and you will still have to dig into object that \nyou will get from it.",
+            "So recommended option is like this, await request, doer context and then your attribute name.",
+            "Okay, that's all for today.",
+            "We sat a bit longer than usual so our session is over."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is exactly this API for this telescope framework.",
+            "So you can use some search here for example, we used the \nmethod to show information.",
+            "So method show information.",
+            "We can search here, show information and you can see \nexamples of it, you can see source and you can see all the arguments.",
+            "Show information and probably it's not the \nbest example, but."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nMaybe it's about my problem of performance of the application in my laptop."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOh, yes, we can do this.",
+            "Would you like to record this part also as part of our training or you prefer to keep it more \npersonal and private so we can start recording if you want."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\n--- Page 23 ---\n\nYou can.",
+            "I have no problem to me, no problem."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, so I will stop sharing.",
+            "Our main part of the session is over.",
+            "Thanks all for your attention.",
+            "Today we will have \nsome small session, Carlos, to detect potential performance issue problems on their environments.",
+            "So thanks all for \ntoday's session."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nI share my screen with you?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYes, yes, please.",
+            "Thanks all of you, thanks for all information and your questions.",
+            "Yes, please show me your screen, \nplease."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nYeah, sorry, I have two."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can show only one, but I.",
+            "Okay, green share screen button."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nIf I have two screens, so I disconnect one."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYes, please select one.",
+            "Okay, I can see a screen.",
+            "Thank you.",
+            "Nice.",
+            "So please show me how your creature works and \nmaybe you can agree for request of remote control, so I can manage your screen more efficiently."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\n--- Page 24 ---\n\nYes, it's chrome.",
+            "Yes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, you try to run it once again."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nYes, I restart in many occasions and don't work.",
+            "Good.",
+            "So let me show you a little problem."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, so are you using Windows Pro or Windows home?"
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nI have windows."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can find system information?"
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nYes, Windows homes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou will have significant issues.",
+            "Let me show you how you can fix this.",
+            "But it will be not full fix, it will be just a \nworkaround which is not fully."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\n--- Page 25 ---\n\nI can see how you do that.",
+            "You can repeat that, please just close."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOther pages, that's the solution.",
+            "So when you go to configuration section, you should close other main page.",
+            "Creation will work normally.",
+            "So it cannot work normally on home actually, because we still will face some problems.",
+            "Even if you work with single page, but with for example setting business rules, you will face trouble."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut when you need to go back to your main configuration section, you will have to use tabs and you will have to \nclose other tabs.",
+            "This is not comfortable.",
+            "Okay, I understand this saving will work for you.",
+            "This works, but not so \nfast.",
+            "And as far as I know, the problem is number of available websockets."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I recommend you to upgrade your windows to pro.",
+            "In this case it will be.",
+            "In this case it will better."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nAndrea is my colleague, he takes the code the course too.",
+            "So he asked me, okay, so I save, socially save, I cancel \nand I."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can, you can just open another tab with your, you can recover previous page.",
+            "Yes.",
+            "Now you can see your process \nis saved and you can export, you can do everything."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nSo it's work.",
+            "Oh, it is so simple.",
+            "Yeah."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYes.",
+            "And it's."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nOkay, thank you.",
+            "Thank you very much, Dmitry."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThank you Karim."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nYou saved me.",
+            "My boss is over me all day and it's difficult forwarding to the course.",
+            "Thank you very much."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNo problem.",
+            "Thank you, thank you."
+          ]
+        },
+        {
+          "heading": "Speaker 2",
+          "key_points": [
+            "# Speaker 2\n\nSee you tomorrow."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYes, so our session is over.",
+            "If any other questions?",
+            "Hi, Vikrat Alpha is sorry.",
+            "Hi Dmitry.",
+            "Yes please."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo maybe you have just a bit older version than I do because I recently switched to the latest one and your version \nmaybe not the same latest, but this is not critical.",
+            "So you can just see this compilation result.",
+            "But I can complete.",
+            "Yeah, in general it's not ideal, but it's something that is satisfactory.",
+            "So you can continue your work."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 27 ---\n\nI believe it should only change some files on your windows and it will not be like clean environment.",
+            "So you should \nhave the same IIs website, you should have the same stuff.",
+            "And I did not check it by my own, so I have no \ninformation, no practical experience with it.",
+            "So my company gave me a laptop with Windows Pro and I never tried to \nrun on Windows home and upgrade it.",
+            "Yeah."
+          ]
+        }
+      ],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "server",
+        "database",
+        "sql",
+        "data",
+        "package",
+        "api",
+        "field",
+        "configuration",
+        "detail",
+        "section"
+      ],
+      "keywords": [
+        "speaker",
+        "page",
+        "data",
+        "like",
+        "okay",
+        "object",
+        "let",
+        "code",
+        "make",
+        "use"
+      ],
+      "topics": [
+        "speaker"
+      ]
+    },
+    "method": "hierarchical_structural"
+  }
+}

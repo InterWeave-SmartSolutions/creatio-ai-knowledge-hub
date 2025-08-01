@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReflectionUtilities
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReflectionUtilities
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.ReflectionUtilities">
+  
+  
+  <h1 id="Terrasoft_Common_ReflectionUtilities" data-uid="Terrasoft.Common.ReflectionUtilities" class="text-break">Class ReflectionUtilities
+  </h1>
+  <div class="markdown level0 summary"><p>Provides methods for working with class and type information at runtime.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ReflectionUtilities</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.html">Terrasoft.Common</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ReflectionUtilities</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_ApplyPropertyAction_" data-uid="Terrasoft.Common.ReflectionUtilities.ApplyPropertyAction*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_ApplyPropertyAction_System_Object_System_Type_System_Action_System_Object_System_Reflection_PropertyInfo__" data-uid="Terrasoft.Common.ReflectionUtilities.ApplyPropertyAction(System.Object,System.Type,System.Action{System.Object,System.Reflection.PropertyInfo})">ApplyPropertyAction(Object, Type, Action&lt;Object, PropertyInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Applies action for each property with given attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ApplyPropertyAction(object source, Type attributeType, Action&lt;object, PropertyInfo&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">attributeType</span></td>
+        <td><p>Type of attribute to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Object</span>, <span class="xref">System.Reflection.PropertyInfo</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute for found properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_FindTypeByShortName_" data-uid="Terrasoft.Common.ReflectionUtilities.FindTypeByShortName*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_FindTypeByShortName_System_Reflection_Assembly_System_String_" data-uid="Terrasoft.Common.ReflectionUtilities.FindTypeByShortName(System.Reflection.Assembly,System.String)">FindTypeByShortName(Assembly, String)</h4>
+  <div class="markdown level1 summary"><p>Searches type by specified short name in the specified assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type FindTypeByShortName(Assembly assembly, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>Assembly to search in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><p><code>true</code>, if assembly <code data-dev-comment-type="paramref" class="paramref">assembly</code> contains type with name <code data-dev-comment-type="paramref" class="paramref">name</code>; else - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_ForceGetValue_" data-uid="Terrasoft.Common.ReflectionUtilities.ForceGetValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_ForceGetValue_System_Reflection_PropertyInfo_System_Object_System_Object___" data-uid="Terrasoft.Common.ReflectionUtilities.ForceGetValue(System.Reflection.PropertyInfo,System.Object,System.Object[])">ForceGetValue(PropertyInfo, Object, Object[])</h4>
+  <div class="markdown level1 summary"><p>Gets the current property value or value of the get_<a href=""><code data-dev-comment-type="paramref" class="paramref">source</code> property name</a> of the specified <code data-dev-comment-type="paramref" class="paramref">obj</code> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object ForceGetValue(this PropertyInfo source, object obj, object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Attributes and meta data of the current property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Object whose value is returned if the <code data-dev-comment-type="paramref" class="paramref">source</code> property is write-only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Object that contains the property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_ForceGetValue_System_Reflection_PropertyInfo_System_Object_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The extension method for the <span class="xref">System.Reflection.PropertyInfo</span> class.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If <code>null</code> is passed as the <code data-dev-comment-type="paramref" class="paramref">obj</code> parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.InvalidObjectStateException.html">InvalidObjectStateException</a></td>
+        <td><p>If the <code data-dev-comment-type="paramref" class="paramref">obj</code> property is write-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetDefValue_" data-uid="Terrasoft.Common.ReflectionUtilities.GetDefValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetDefValue_System_Reflection_PropertyInfo_" data-uid="Terrasoft.Common.ReflectionUtilities.GetDefValue(System.Reflection.PropertyInfo)">GetDefValue(PropertyInfo)</h4>
+  <div class="markdown level1 summary"><p>Gets the property value by default for the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetDefValue(PropertyInfo property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Default value object for the <code data-dev-comment-type="paramref" class="paramref">property</code> property or empty string if</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetDefValue_" data-uid="Terrasoft.Common.ReflectionUtilities.GetDefValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetDefValue_System_Type_" data-uid="Terrasoft.Common.ReflectionUtilities.GetDefValue(System.Type)">GetDefValue(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the property value by default for the specified value type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetDefValue(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Value type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Default value object for the specified value type <code data-dev-comment-type="paramref" class="paramref">type</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetHierarchy_" data-uid="Terrasoft.Common.ReflectionUtilities.GetHierarchy*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetHierarchy_System_Type_System_Type_" data-uid="Terrasoft.Common.ReflectionUtilities.GetHierarchy(System.Type,System.Type)">GetHierarchy(Type, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets hierarchy of types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Type&gt; GetHierarchy(this Type source, Type to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type from to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>Type to check to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Type</span>&gt;</td>
+        <td><p>Hierarchy types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetInstanceFactory_" data-uid="Terrasoft.Common.ReflectionUtilities.GetInstanceFactory*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetInstanceFactory__1_System_Type_" data-uid="Terrasoft.Common.ReflectionUtilities.GetInstanceFactory``1(System.Type)">GetInstanceFactory&lt;TInstance&gt;(Type)</h4>
+  <div class="markdown level1 summary"><p>Returns delegate that create instance of specified type using public parameterless
+constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;TInstance&gt; GetInstanceFactory&lt;TInstance&gt;(Type instanceType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">instanceType</span></td>
+        <td><p>Type of the instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TInstance&gt;</td>
+        <td><p>Delegate that create instance of specified type if type has public parameterless
+constructor, otherwise <returns>null</returns>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TInstance</span></td>
+        <td><p>The type of the instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetIsOverriden_" data-uid="Terrasoft.Common.ReflectionUtilities.GetIsOverriden*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetIsOverriden_System_Type_System_Reflection_MethodInfo_" data-uid="Terrasoft.Common.ReflectionUtilities.GetIsOverriden(System.Type,System.Reflection.MethodInfo)">GetIsOverriden(Type, MethodInfo)</h4>
+  <div class="markdown level1 summary"><p>Gets the value indicating whether method have been overriden in the source type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetIsOverriden(this Type source, MethodInfo methodInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The property access expression.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.MethodInfo</span></td>
+        <td><span class="parametername">methodInfo</span></td>
+        <td><p>Method to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Property info instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetMethodInfo_" data-uid="Terrasoft.Common.ReflectionUtilities.GetMethodInfo*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetMethodInfo_System_Type_System_String_System_Reflection_BindingFlags_" data-uid="Terrasoft.Common.ReflectionUtilities.GetMethodInfo(System.Type,System.String,System.Reflection.BindingFlags)">GetMethodInfo(Type, String, BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MethodInfo GetMethodInfo(Type type, string methodName, BindingFlags bindingFlags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.BindingFlags</span></td>
+        <td><span class="parametername">bindingFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.MethodInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetPrivateFieldValue_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPrivateFieldValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetPrivateFieldValue_System_Object_System_String_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPrivateFieldValue(System.Object,System.String)">GetPrivateFieldValue(Object, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the value of a private field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetPrivateFieldValue(object instance, string fieldName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>Field name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetPrivateFieldValue_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPrivateFieldValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetPrivateFieldValue_System_Object_System_Type_System_String_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPrivateFieldValue(System.Object,System.Type,System.String)">GetPrivateFieldValue(Object, Type, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the value of a private field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetPrivateFieldValue(object instance, Type type, string fieldName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>Field name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetPrivatePropertyValue_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPrivatePropertyValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetPrivatePropertyValue_System_Object_System_Type_System_String_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPrivatePropertyValue(System.Object,System.Type,System.String)">GetPrivatePropertyValue(Object, Type, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the value of a private property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetPrivatePropertyValue(object instance, Type type, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyDefValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyDefValue(System.Object,System.String,System.Object)">GetPropertyDefValue(Object, String, Object)</h4>
+  <div class="markdown level1 summary"><p>Gets property value with the specified name or default value if the current type does not contain a property with such name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetPropertyDefValue(this object source, string propertyName, object defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Object that contains the property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>If the empty value or <code>null</code> value is passed as the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.InvalidObjectStateException.html">InvalidObjectStateException</a></td>
+        <td><p>If the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> property is write-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetPropertyInfo_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyInfo*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetPropertyInfo__2_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyInfo``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">GetPropertyInfo&lt;TSource, TValue&gt;(Expression&lt;Func&lt;TSource, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the expression property name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PropertyInfo GetPropertyInfo&lt;TSource, TValue&gt;(this Expression&lt;Func&lt;TSource, TValue&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TSource, TValue&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The property access expression.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+        <td><p>Property info instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The property owner type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>The property type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetPropertyValue_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyValue(System.Object,System.String)">GetPropertyValue(Object, String)</h4>
+  <div class="markdown level1 summary"><p>Gets property value with the specified name for the instance of the current type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetPropertyValue(this object source, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Object that contains the property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The extension method for the <span class="xref">System.Object</span> class.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>If the empty value or <code>null</code> value is passed as the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.InvalidObjectStateException.html">InvalidObjectStateException</a></td>
+        <td><p>If the instance of the current type does not contain a property with the name <code data-dev-comment-type="paramref" class="paramref">propertyName</code> or the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> property is record-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetPropertyValue_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyValue(System.Object,System.String,System.Reflection.BindingFlags)">GetPropertyValue(Object, String, BindingFlags)</h4>
+  <div class="markdown level1 summary"><p>Gets property value with the specified name or throws an exception if the current instance does not contain a property with such name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetPropertyValue(this object source, string propertyName, BindingFlags bindingFlags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.BindingFlags</span></td>
+        <td><span class="parametername">bindingFlags</span></td>
+        <td><p>Binding flags of the <span class="xref">System.Reflection.BindingFlags</span> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value of the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyValueByPath*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_" data-uid="Terrasoft.Common.ReflectionUtilities.GetPropertyValueByPath(System.Object,System.String)">GetPropertyValueByPath(Object, String)</h4>
+  <div class="markdown level1 summary"><p>Gets property value by the specified property path for the instance of the current type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetPropertyValueByPath(this object source, string propertyPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyPath</span></td>
+        <td><p>Path to the property in the following format: [Property name].[Nested property name].&lt;...&gt;.[Resulting property name].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value of the <code data-dev-comment-type="paramref" class="paramref">propertyPath</code> property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The extension method for the <span class="xref">System.Object</span> class.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_GetTypeNameWithoutAssemblyDetails_" data-uid="Terrasoft.Common.ReflectionUtilities.GetTypeNameWithoutAssemblyDetails*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_GetTypeNameWithoutAssemblyDetails_System_Type_" data-uid="Terrasoft.Common.ReflectionUtilities.GetTypeNameWithoutAssemblyDetails(System.Type)">GetTypeNameWithoutAssemblyDetails(Type)</h4>
+  <div class="markdown level1 summary"><p>Returns the assembly qualified type name without assembly details such as version or culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTypeNameWithoutAssemblyDetails(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_HasProperty_" data-uid="Terrasoft.Common.ReflectionUtilities.HasProperty*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_" data-uid="Terrasoft.Common.ReflectionUtilities.HasProperty(System.Object,System.String)">HasProperty(Object, String)</h4>
+  <div class="markdown level1 summary"><p>Indicates if object has property by the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasProperty(this object source, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Flag that indicates if object has property or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_IsTypeOf_" data-uid="Terrasoft.Common.ReflectionUtilities.IsTypeOf*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_IsTypeOf_System_Object_System_String_System_Boolean_" data-uid="Terrasoft.Common.ReflectionUtilities.IsTypeOf(System.Object,System.String,System.Boolean)">IsTypeOf(Object, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Checks if the current object is a type with specified full name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTypeOf(object obj, string typeFullName, bool shallow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Object to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">typeFullName</span></td>
+        <td><p>Full name of the type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shallow</span></td>
+        <td><p>Indicates that the check will be performed across all hierarchies.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <code data-dev-comment-type="paramref" class="paramref">obj</code> object is a <code data-dev-comment-type="paramref" class="paramref">typeFullName</code> type; else - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_IsTypeOf_System_Object_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_IsTypeOf_" data-uid="Terrasoft.Common.ReflectionUtilities.IsTypeOf*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_IsTypeOf_System_Object_System_Type_System_Boolean_" data-uid="Terrasoft.Common.ReflectionUtilities.IsTypeOf(System.Object,System.Type,System.Boolean)">IsTypeOf(Object, Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Checks if the specified object is the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTypeOf(object obj, Type type, bool shallow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Object to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type - reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shallow</span></td>
+        <td><p>Indicates that the check will be performed across all hierarchies.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <code data-dev-comment-type="paramref" class="paramref">obj</code> object is a <code data-dev-comment-type="paramref" class="paramref">type</code> type; else - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_SetPropertyValue_" data-uid="Terrasoft.Common.ReflectionUtilities.SetPropertyValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_" data-uid="Terrasoft.Common.ReflectionUtilities.SetPropertyValue(System.Object,System.String,System.Object)">SetPropertyValue(Object, String, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets property value with the specified name for the instance of the current type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPropertyValue(this object source, string propertyName, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The extension method for the <span class="xref">System.Object</span> class.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>If the empty value or <code>null</code> value is passed as the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.InvalidObjectStateException.html">InvalidObjectStateException</a></td>
+        <td><p>If the instance of the current type does not contain a property with the name <code data-dev-comment-type="paramref" class="paramref">propertyName</code> or the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> property is record-only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.InvalidTypeCastException.html">InvalidTypeCastException</a></td>
+        <td><p>If the property type with the name <code data-dev-comment-type="paramref" class="paramref">propertyName</code> is incompatible with the type of assigned <code data-dev-comment-type="paramref" class="paramref">value</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_SetStaticPropertyValue_" data-uid="Terrasoft.Common.ReflectionUtilities.SetStaticPropertyValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_SetStaticPropertyValue_System_Type_System_String_System_Object_" data-uid="Terrasoft.Common.ReflectionUtilities.SetStaticPropertyValue(System.Type,System.String,System.Object)">SetStaticPropertyValue(Type, String, Object)</h4>
+  <div class="markdown level1 summary"><p>Tries to set the value of a given static property of the type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStaticPropertyValue(this Type source, string propertyName, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_SetStaticPropertyValue_System_Type_System_String_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Extension method for <span class="xref">System.Type</span>.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_" data-uid="Terrasoft.Common.ReflectionUtilities.TryGetPropertyValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__" data-uid="Terrasoft.Common.ReflectionUtilities.TryGetPropertyValue(System.Object,System.String,System.Object@)">TryGetPropertyValue(Object, String, out Object)</h4>
+  <div class="markdown level1 summary"><p>Determines if a property value with the specified name can be obtained from the instance of the current type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetPropertyValue(this object source, string propertyName, out object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true,</code>, if a value has been received for the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> property; else - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The extension method for the <span class="xref">System.Object</span> class.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_" data-uid="Terrasoft.Common.ReflectionUtilities.TrySetPropertyValue*"></a>
+  <h4 id="Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_" data-uid="Terrasoft.Common.ReflectionUtilities.TrySetPropertyValue(System.Object,System.String,System.Object)">TrySetPropertyValue(Object, String, Object)</h4>
+  <div class="markdown level1 summary"><p>Attempts to set a value of the specified type for an instance of the current type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySetPropertyValue(this object source, string propertyName, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true,</code>, if value <code data-dev-comment-type="paramref" class="paramref">value</code> has been set for the <code data-dev-comment-type="paramref" class="paramref">propertyName</code> property; else - <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The extension method for the <span class="xref">System.Object</span> class.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

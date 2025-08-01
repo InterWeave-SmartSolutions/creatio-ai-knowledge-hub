@@ -1,0 +1,45 @@
+{
+  "summary_id": "ebefa743f0b0",
+  "content_id": "699402ad4f39",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: party web services with the help of no code \ntools, with the help of settings for web services and call web service item.\nINSTRUCTION: of all I need to show you general integration capabilities that we have on board.\nINSTRUCTION: party site in order to normally correctly call such service and \nto get response data parse such response.\nCONCEPT: entity\nCONCEPT: database\nCONCEPT: server\nNOTE: in this case our insert will work.\nNOTE: because if your task is to transport like 1 million of data rows, if you spend 300 milliseconds for \neach one, it means you will wait for several days and this speed probably will be not suitable for your customers.",
+  "key_points": [
+    "INSTRUCTION: party web services with the help of no code \ntools, with the help of settings for web services and call web service item.",
+    "INSTRUCTION: of all I need to show you general integration capabilities that we have on board.",
+    "INSTRUCTION: party site in order to normally correctly call such service and \nto get response data parse such response.",
+    "CONCEPT: entity",
+    "CONCEPT: database",
+    "CONCEPT: server",
+    "NOTE: in this case our insert will work.",
+    "NOTE: because if your task is to transport like 1 million of data rows, if you spend 300 milliseconds for \neach one, it means you will wait for several days and this speed probably will be not suitable for your customers."
+  ],
+  "keywords": [
+    "data",
+    "speaker",
+    "use",
+    "let",
+    "service",
+    "need",
+    "like",
+    "okay",
+    "web",
+    "clio"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 114,
+  "original_length": 16974,
+  "compression_ratio": 0.00671615411806292,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:51:17.364378",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "summary_id": "865b5d6d6986",
+  "content_id": "7ce29bfbf05e",
+  "summary_type": "abstractive",
+  "summary_text": "Creature Platform Guided Learning is a free, open-source, cloud-based learning platform. Creature is developing a version of its platform called Freedom ui. In this session, we will look at how to migrate from Classic UI to Freedom Ui. We will then switch to work  with server side.",
+  "key_points": [
+    "Creature Platform Guided Learning is a free, open-source, cloud-based learning platform.",
+    "Creature is developing a version of its platform called Freedom ui."
+  ],
+  "keywords": [
+    "ui",
+    "classic",
+    "classic ui",
+    "freedom",
+    "freedom ui",
+    "page",
+    "section",
+    "speaker",
+    "customer",
+    "like"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 47,
+  "original_length": 637,
+  "compression_ratio": 0.07378335949764521,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:52:34.209655",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

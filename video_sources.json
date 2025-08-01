@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "name": "Creatio Academy Main Channel",
+      "url": "https://www.youtube.com/@CreatioAcademy",
+      "type": "channel",
+      "category": "Main"
+    },
+    {
+      "name": "Creatio Academy Videos",
+      "url": "https://www.youtube.com/c/CreatioAcademy/videos",
+      "type": "channel_videos",
+      "category": "All Videos"
+    },
+    {
+      "name": "Creatio Academy Playlists",
+      "url": "https://www.youtube.com/c/CreatioAcademy/playlists",
+      "type": "channel_playlists",
+      "category": "Playlists"
+    },
+    {
+      "name": "Creatio Channel",
+      "url": "https://www.youtube.com/@creatio",
+      "type": "channel",
+      "category": "Creatio"
+    },
+    {
+      "name": "Creatio BPM",
+      "url": "https://www.youtube.com/@CreatioBPM",
+      "type": "channel",
+      "category": "BPM"
+    }
+  ],
+  "search_terms": ["Creatio tutorial", "Creatio Academy", "Creatio BPM", "Creatio CRM"],
+  "output_settings": {
+    "base_directory": "downloads",
+    "organize_by": "category",
+    "quality": "best[height<=1080]/best"
+  }
+}

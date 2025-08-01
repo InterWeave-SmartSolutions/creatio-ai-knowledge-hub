@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+          <!-- Google Tag Manager -->
+      <script nonce="f60516dacd62454070cb81ebac795fda">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+          n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5C6KM9TP');</script>
+      <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+<meta name="description" content="Dashboard widgets (analytic elements) are used for data analysis of sections. Go to the Dashboards view of the required section to work with its analytics. Use the Dashboards section to work with the entirety of Creatio section data analytics." />
+<link rel="canonical" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/dashboard_widgets/overview" />
+<meta property="og:url" content="https://academy.creatio.com/docs/7-18/developer/interface_elements/dashboard_widgets/overview" />
+<meta property="og:title" content="Dashboard widgets" />
+<meta property="og:description" content="Dashboard widgets (analytic elements) are used for data analysis of sections. Go to the Dashboards view of the required section to work with its analytics. Use the Dashboards section to work with the entirety of Creatio section data analytics." />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/docs/sites/academy_en/themes/creatio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/dashboard_widgets/overview" />
+
+    <title>Dashboard widgets | Creatio Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="https://libraries.creatio.com/drupal_fixed_tabs/tabs.css" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/align.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/fieldgroup.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/container-inline.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/clearfix.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/details.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/hidden.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/item-list.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/js.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/nowrap.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/position-container.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/reset-appearance.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/resize.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-counter.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-counters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-general-info.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/tablesort.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/modules/academy/ts_title_anchor/css/ts-title-anchor.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/core/modules/layout_discovery/layouts/onecol/onecol.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/assets/vendor/normalize-css/normalize.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/normalize-fixes.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/bootstrap4/css/bootstrap.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme-dark.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/slick/slick.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.nice-select/jquery.nice-select.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/base.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/elements.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/fonts.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.scrollbar/jquery.scrollbar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/select2/css/select2.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/layouts/layout.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/action-links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/breadcrumb.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/button.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/collapse-processed.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/container-inline.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/details.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/exposed-filters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/field.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/icons.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/inline-form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/item-list.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/menu.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/more-link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/pager.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabledrag.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tableselect.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tablesort.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabs.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/textarea.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/ui-dialog.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/node.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/fancybox/jquery.fancybox.min.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/fancybox.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/block.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/footer.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/header.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/sidebar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/notification.css?szsnyq" />
+<link rel="stylesheet" media="print" href="/docs/themes/custom/creatio_academy/css/theme/print.css?szsnyq" />
+
+    
+  </head>
+  <body class="path-node page-node-type-developer-documentation">
+          <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="creatio-page d-flex flex-column">
+        <div class="region region-informer">
+    <div id="block-notification-union" class="block block-simple-block block-simple-blocknotification-union">
+  
+    
+      <div id="union-notification">
+<div class="union-content notification-com">
+<p class="union-subtitle">This documentation is valid for Creatio version 7.17(7.18).</p>
+
+<p class="union-subtitle">We recommend using <a href="https://academy.creatio.com/docs/8.x/" target="_blank">the newest version of Creatio documentation</a>.</p>
+
+<!-- <div class="union-close">&nbsp;</div> -->
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+  <header role="banner">
+          <div class="creatio-region creatio-region_top">
+        <div class="creatio-container">
+            <div class="region region-top">
+    <div id="block-menutoggle" class="block block-simple-block block-simple-blockmenu-toggle">
+  
+    
+      <div class="menu-toggle"><span>&nbsp;</span></div>
+
+  </div>
+<div id="block-logowhite-2" class="block block-simple-block block-simple-blocklogo-white">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo-white.svg"></a></p>
+
+  </div>
+<div id="block-search" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-sites-menu" id="block-sites" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-usermenu" class="block block-ts-user block-ts-user-menu-block">
+  
+    
+      <ul class="user-menu">
+      <li class="user-menu__item">
+      <a class="user-menu__link" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/dashboard_widgets/overview">Log in</a>
+    </li>
+  </ul>
+
+  </div>
+<div id="block-usermenumobile" class="block block-ts-user block-ts-user-menu-mobile-block">
+  
+    
+      <ul class="user-menu-mobile">
+      <li class="user-menu-mobile__item">
+      <div class="user-menu-mobile__user user-menu-mobile__user_icon"></div>
+      <ul class="user-menu-mobile__submenu">
+        <li class="user-menu-mobile__subitem">
+          <a class="user-menu-mobile__sublink" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/dashboard_widgets/overview">Log in</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+              <div class="creatio-region creatio-region_header">
+        <div class="creatio-container">
+            <div class="region region-header">
+    <div id="block-logo" class="block block-simple-block block-simple-blocklogo">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo.svg"></a></p>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/docs/8.x">Guides</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/e-learning">E-learning</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/training">Training</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/certification">Certification</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-sites-2-menu" id="block-sites-2" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-2-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-search-2" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+      </header>
+
+      <div class="creatio-region creatio-region_breadcrumb">
+      <div class="creatio-container">
+          <div class="region region-breadcrumb">
+    <div id="block-breadcrumbnaviagtion" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  
+  <div class="creatio-region creatio-region_main">
+    <div class="creatio-container">
+                <div class="region region-breadcrumb-mobile">
+    <div id="block-breadcrumbnaviagtion-2" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      
+      <main class="creatio-main" role="main">
+                                                    
+        <div class="creatio-content creatio-content_small">
+          <div class="creatio-content__inner creatio-content__inner_bg">
+                            <div class="region region-messages">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            
+              <div class="region region-content">
+    <div id="block-creatio-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Dashboard widgets</span>
+</h1>
+
+
+  </div>
+<div id="block-creatio-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article data-history-node-id="1438" class="node node--type-developer-documentation node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-ts-nav block-ts-nav-sdk-navigation">
+  
+    
+      <div class="ts-nav-sdk">
+  <div class="ts-nav-sdk__container">
+    <div class="ts-nav-sdk__items">
+      <div class="ts-nav-sdk__item">
+        <a class="ts-nav-sdk__link ts-nav-sdk__link_active" href="#"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_guide"></span>Guide</a>
+      </div>
+    </div>
+  </div>
+      <div class="ts-nav-sdk__container">
+      <ul class="ts-nav-sdk__items">
+                                                            <li class="ts-nav-sdk__item ts-nav-sdk__item_expanded">
+          <a class="ts-nav-sdk__link ts-nav-sdk__link_expanded" data-id="1946" href="#case-1946"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_case"></span>Examples</a>
+                      <ul class="ts-nav-sdk__subitems">
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1946" href="#case-1946">Modify sales pipeline calculations</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1947" href="#case-1947">Enable additional filtering in a sales pipeline</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1948" href="#case-1948">Add a custom dashboard widget</a>
+                </li>
+                          </ul>
+                  </li>
+      </ul>
+    </div>
+        <div class="ts-nav-sdk__container">
+      <ul class="ts-nav-sdk__items">
+                                                            <li class="ts-nav-sdk__item ts-nav-sdk__item_expanded">
+          <a class="ts-nav-sdk__link ts-nav-sdk__link_expanded" data-id="1436" href="#reference-1436"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_reference" data-type="JS"></span>References</a>
+                      <ul class="ts-nav-sdk__subitems">
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1436" href="#reference-1436">BaseWidgetDesigner schema</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1437" href="#reference-1437">DashboardEnums enumeration</a>
+                </li>
+                          </ul>
+                  </li>
+      </ul>
+    </div>
+  </div>
+<div class="ts-nav-sdk-mobile">
+  <select class="ts-nav-sdk-mobile__select">
+    <option value="0">Guide</option>
+          <optgroup label="Cases">
+                  <option value="1946">Modify sales pipeline calculations</option>
+                  <option value="1947">Enable additional filtering in a sales pipeline</option>
+                  <option value="1948">Add a custom dashboard widget</option>
+              </optgroup>
+              <optgroup label="References">
+                  <option value="1436">BaseWidgetDesigner schema</option>
+                  <option value="1437">DashboardEnums enumeration</option>
+              </optgroup>
+      </select>
+</div>
+
+  </div>
+<div class="block block-ts-doc block-ts-doc-versions">
+  
+    
+        <div class="ts-doc-versions">
+    <select class="ts-doc-versions__select">
+                                                <option value="/docs/7-18/developer/interface_elements/dashboard_widgets/overview" selected>Version 7.18</option>
+                              <option value="/docs/7-17/developer/interface_elements/dashboard_widgets/overview">Version 7.17</option>
+                              <option value="/docs/7-16/developer/interface_elements/dashboard_widgets/overview">Version 7.16</option>
+          </select>
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationbody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a href="/docs/user/no-code_customization/analytics">Dashboard widgets</a> (analytic elements) are used for data analysis of sections. Go to the <span class="key">Dashboards</span>&nbsp;view of the required section to work with its analytics. Use the <span class="key">Dashboards</span> section to work with the entirety of Creatio section data analytics.</p>
+
+<h2>Data storage structure of dashboards<a class="title-anchor" href="#title-1438-1" id="title-1438-1">&nbsp;</a></h2>
+
+<p>The dashboards section is a user-defined set of tab elements. The mechanism for working with dashboards is implemented with the help of the <span class="filled">DashboardManager</span> dashboard client manager and the <span class="filled">DashboardManagerItem</span> element client manager, which represents the tabs. The <span class="filled">SysDashboard</span> object is responsible for dashboards in the system. The <span class="filled">SysDashboard</span> object properties are described in the table.</p>
+
+<div class="table">
+<div class="table__caption"><span class="filled">SysDashboard</span> object properties</div>
+
+<div class="table">
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Header</th>
+			<th scope="col">Type</th>
+			<th scope="col">Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="filled">Caption</span></td>
+			<td>Header</td>
+			<td>String</td>
+			<td>This information is displayed in the tab header.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Position</span></td>
+			<td>Position</td>
+			<td>Number</td>
+			<td>If a position is not specified, the elements are displayed in alphabetical order.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Section</span></td>
+			<td>Section</td>
+			<td>Lookup</td>
+			<td>System section.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">ViewConfig</span></td>
+			<td>Element (widget) view configuration</td>
+			<td>Array</td>
+			<td>
+			<div class="code">
+			<div class="code__widgets">
+			<div class="code__source">
+			<pre class="prettyprint">
+[{
+    //Element type (Terrasoft.ViewItemType).
+    itemType: "4",
+    // Element name.
+    name: "SomeInvoiceChart",
+    // View configuration.
+    layout: {
+        columns: 4,
+        rows: 4,
+        colspan: 4,
+        rowspan: 4
+    }
+},
+{...}]
+</pre>
+			</div>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td><span class="filled">Items</span></td>
+			<td>Element (widget) module configuration</td>
+			<td>JSON Object</td>
+			<td>
+			<div class="code">
+			<div class="code__widgets">
+			<div class="code__source">
+			<pre class="prettyprint">
+{
+    // The name of the element for which the module settings are defined.
+    "SomeInvoiceChart": {
+        // Name of the “DashboardItem” view element.
+        “widgetType”: "Chart",
+        // Parameters required to display data for a particular “DashboardItem” element.
+        “parameters”: {
+            “caption”: "some caption",
+            ...
+        },
+    },
+    {...}
+}
+</pre>
+			</div>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h2>Implementing functionality in the dashboards view mode<a class="title-anchor" href="#title-1438-2" id="title-1438-2">&nbsp;</a></h2>
+
+<p>The hierarchy of classes that implement functionality in the dashboards view mode:</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_dashboards_runtime.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/AnalyticsElements/scr_dashboards_runtime.png"></div>
+</div>
+
+<p>The <span class="filled">SectionDashboardModule</span> module:</p>
+
+<ul>
+	<li><span class="filled">SectionDashboardBuilder</span> encapsulates the view generation logic and view model class for the <span class="key">Dashboards</span> section module.</li>
+	<li><span class="filled">SectionDashboardsViewModel</span> – the model class of the <span class="key">Dashboards</span> section view model.</li>
+	<li><span class="filled">SectionDashboardsModule</span> – <span class="key">Dashboards</span> section class module.</li>
+</ul>
+
+<p>The <span class="filled">DashboardModule</span> module:</p>
+
+<ul>
+	<li><span class="filled">DashboardViewConfig</span> – a class that generates the view configuration for the dashboards page view module.</li>
+	<li><span class="filled">BaseDashboardViewModel</span> – a base class for the dashboards page view model.</li>
+	<li><span class="filled">DashboardModule</span> – a class that contains functionality for working with dashboard modules.</li>
+</ul>
+
+<p>The <span class="filled">DashboardBuilder</span> module:</p>
+
+<ul>
+	<li><span class="filled">DashboardsViewConfig</span> – a class that generates a dashboards module view configuration.</li>
+	<li><span class="filled">BaseDashboardsViewModel</span> – a base class of the dashboards section view model.</li>
+	<li><span class="filled">DashboardBuilder</span> – a class for dashboards module construction.</li>
+</ul>
+
+<h2>Implementing functionality in the dashboards view mode<a class="title-anchor" href="#title-1438-2" id="title-1438-2">&nbsp;</a></h2>
+
+<p>The hierarchy of classes that implement the functionality in the dashboards view mode:</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_dashboards_designtime.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/AnalyticsElements/scr_dashboards_designtime.png"></div>
+</div>
+
+<p>The <span class="filled">DashboardDesigner</span> module:</p>
+
+<ul>
+	<li><span class="filled">DashboardDesignerViewConfig</span> – a class that generates the view configuration for the dashboards designer module.</li>
+	<li><span class="filled">DashboardDesignerViewModel</span> – a class of the dashboards designer view model.</li>
+	<li><span class="filled">DashboardDesigner</span> – dashboard visual module class.</li>
+</ul>
+
+<h2>Base classes that implement widget functionality<a class="title-anchor" href="#title-1438-4" id="title-1438-4">&nbsp;</a></h2>
+
+<p><span class="filled">BaseWidgetViewModelClass</span> – a base class of the dashboards section view model. To use this class, register the following messages in the module:</p>
+
+<ul>
+	<li><span class="filled">GetHistoryState (publish; ptp)</span>;</li>
+	<li><span class="filled">ReplaceHistoryState (publish; broadcast)</span>;</li>
+	<li><span class="filled">HistoryStateChanged (subscribe; broadcast)</span>;</li>
+	<li><span class="filled">GetWidgetParameters (subscribe; ptp)</span>;</li>
+	<li><span class="filled">PushWidgetParameters (subscribe; ptp)</span> – if the parameters are drawn from modules (<span class="filled">useCustomParameterMethods = true</span>).</li>
+</ul>
+
+<p><span class="filled">BaseWidgetDesigner</span> – base widget settings view schema.</p>
+
+<p><span class="filled">BaseAggregationWidgetDesigner</span> – contains methods for working with aggregate columns and aggregation types.</p>
+
+<p><span class="filled">DashboardEnums</span> – contains an enumeration of widget properties.</p>
+
+<p><span class="filled">Terrasoft.DashboardEnums.WidgetType</span> – contains the widget view mode and design mode configuration of the dashboards.</p>
+
+<h2>Dashboard widget types<a class="title-anchor" href="#title-1438-5" id="title-1438-5">&nbsp;</a></h2>
+
+<h3>Chart<a class="title-anchor" href="#title-1438-6" id="title-1438-6">&nbsp;</a></h3>
+
+<p><a href="/node/184#title-184-1">Charts </a>display multiple system records in the form of diagrams of different types. For example, you can display a pie chart of accounts distributed by type. Charts display information in the form of different diagram types or in a data list form.&nbsp;</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_dashboards_chart.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots.en/AnalyticsElements/scr_dashboards_chart.png"></div>
+</div>
+
+<h4>Charts functionality implementation classes<a class="title-anchor" href="#title-1438-7" id="title-1438-7">&nbsp;</a></h4>
+
+<p><span class="filled">ChartViewModel</span> – chart view model.</p>
+
+<p><span class="filled">ChartViewConfig</span> – generates the chart view model.</p>
+
+<p><span class="filled">ChartModule</span> – a module designed to work with charts.</p>
+
+<p><span class="filled">ChartDesigner</span> – view model schema of a chart.</p>
+
+<p><span class="filled">ChartModuleHelper</span> – generates a query using the <span class="filled">Terrasoft.EntitySchemaQuery</span> object.</p>
+
+<p><span class="filled">ChartDrillDownProvider</span> – contains methods for working with the “Show data” function (used for working with chart series).</p>
+
+<h4>Chart setup parameters<a class="title-anchor" href="#title-1438-8" id="title-1438-8">&nbsp;</a></h4>
+
+<p>To configure a chart, you need to add the JSON configuration object with the chart properties to the widget module configuration. The widget module configuration is defined by the <span class="filled">Items</span> property of the <span class="filled">SysDashboard</span> object.&nbsp;</p>
+
+<p>Set the “Chart” value to the <span class="filled">widgetType</span> property in the JSON configuration object with widget settings. In addition, assign the <span class="filled">parameters</span> property to the object with necessary parameters. Possible chart parameters are listed in the table.</p>
+
+<div class="table">
+<div class="table__caption">Chart setup parameters</div>
+
+<div class="table">
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Type</th>
+			<th scope="col">Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="filled">seriesConfig</span></td>
+			<td><span class="filled">object</span></td>
+			<td>The settings of an embedded chart in a series.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">orderBy</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Sorting field.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">orderDirection</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Sorting direction.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">caption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Chart header.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionId</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section id.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">xAxisDefaultCaption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Default X-axis header.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">yAxisDefaultCaption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Default Y-axis header.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">primaryColumnName</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Name of initial column. The <span class="key">Id</span> column is the default one.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">yAxisConfig</span></td>
+			<td><span class="filled">object</span></td>
+			<td>Array of the Y-axis name settings.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">schemaName</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Chart object.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionBindingColumn</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section link column.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">func</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Aggregate function.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">type</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Chart type.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">XAxisCaption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>X-axis caption.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">YAxisCaption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Y-axis caption.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">xAxisColumn</span></td>
+			<td><span class="filled">string</span></td>
+			<td>The X-axis grouping column.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">yAxisColumn</span></td>
+			<td><span class="filled">string</span></td>
+			<td>The Y-axis grouping column.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">styleColor</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Chart color.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">filterData</span></td>
+			<td><span class="filled">object</span></td>
+			<td>Filter settings.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Metric<a class="title-anchor" href="#title-1438-9" id="title-1438-9">&nbsp;</a></h3>
+
+<p><a href="/node/184#title-184-4">The “Metric” dashboard </a>displays the number (or date) received by inquiring system data, for example, a total number of company’s employees.&nbsp;</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_dashboards_metric.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots.en/AnalyticsElements/scr_dashboards_metric.png"></div>
+</div>
+
+<h4>Functionality implementation classes of the “Metric” dashboard<a class="title-anchor" href="#title-1438-10" id="title-1438-10">&nbsp;</a></h4>
+
+<p><span class="filled">IndicatorViewModel</span> – metric view model.</p>
+
+<p><span class="filled">IndicatorViewConfig</span> – generates the configuration of the metric view model.</p>
+
+<p><span class="filled">IndicatorModule</span> – a module designed to work with metrics.</p>
+
+<p><span class="filled">IndicatorDesigner</span> – view model schema of the metric edit page.</p>
+
+<h4>Metric settings<a class="title-anchor" href="#title-1438-11" id="title-1438-11">&nbsp;</a></h4>
+
+<p>To configure a metric, you need to add the JSON configuration object with Metric properties to the widget module configuration. The widget module configuration is defined by the <span class="filled">Items</span> property of the <span class="filled">SysDashboard</span> object.&nbsp;</p>
+
+<p>Set the “Metric” value to the <span class="filled">widgetType</span> property in the JSON configuration object with widget settings. In addition, assign the <span class="filled">parameters</span> property to the object with necessary parameters. Possible metric parameters are listed in the table.</p>
+
+<div class="table">
+<div class="table__caption">Metric settings</div>
+
+<div class="table">
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Type</th>
+			<th scope="col">Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="filled">caption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Metric header.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionId</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section id.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">entitySchemaName</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Metric object.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionBindingColumn</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section link column.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">columnName</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Name of aggregating column.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">format</span></td>
+			<td><span class="filled">object</span></td>
+			<td>Metric format.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">filterData</span></td>
+			<td><span class="filled">object</span></td>
+			<td>Filter settings.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">aggregationType</span></td>
+			<td><span class="filled">number</span></td>
+			<td>Type of aggregating function.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">style</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Metric color.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h3>Gaude<a class="title-anchor" href="#title-1438-12" id="title-1438-12">&nbsp;</a></h3>
+
+<p><a href="/node/184#title-184-5">A gauge</a>&nbsp;dashboard element displays aggregate data from multiple system records in the form of a dial with green, yellow, and red areas on its scale. For example, you may use this dashboard to display a number of performed activities and compare it to a desired rate.&nbsp;</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_dashboards_speedometer.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots.en/AnalyticsElements/scr_dashboards_speedometer.png"></div>
+</div>
+
+<h4>Gauge functionality implementation classes<a class="title-anchor" href="#title-1438-13" id="title-1438-13">&nbsp;</a></h4>
+
+<p><span class="filled">GaugeViewModel</span> – gauge view model.</p>
+
+<p><span class="filled">GaugeViewConfig</span> – generates the gauge view model.</p>
+
+<p><span class="filled">GaugeModule</span> – module designed to work with gauges.</p>
+
+<p><span class="filled">GaugeChart</span> – implements a gauge chart component.</p>
+
+<p><span class="filled">GaugeDesigner</span> – view model schema of a gauge.</p>
+
+<h4>Gauge settings<a class="title-anchor" href="#title-1438-14" id="title-1438-14">&nbsp;</a></h4>
+
+<p>To configure a gauge, you need to add the JSON configuration object with the gauge properties to the widget module configuration. The widget module configuration is defined by the <span class="filled">Items</span> property of the <span class="filled">SysDashboard</span> object.&nbsp;</p>
+
+<p>Set the “Gauge” value to the <span class="filled">widgetType</span> property in the JSON configuration object with widget settings. In addition, assign the <span class="filled">parameters</span> property to the object with necessary parameters. Possible gauge parameters are listed in the table.</p>
+
+<div class="table">
+<div class="table__caption">Gauge settings</div>
+
+<div class="table">
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Type</th>
+			<th scope="col">Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="filled">caption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Gauge header.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionId</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section id.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">entitySchemaName</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Gauge object.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionBindingColumn</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section link column.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h3>List<a class="title-anchor" href="#title-1438-15" id="title-1438-15">&nbsp;</a></h3>
+
+<p><a href="/node/184#title-184-6">A list</a> displays multiple system records in a unified visual form. Lists enable you to limit the number of records displayed to create such dashboards as the “Top ten most productive managers by the number of closed deals”, for example.&nbsp;</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_dashboards_list.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots.en/AnalyticsElements/scr_dashboards_list.png"></div>
+</div>
+
+<h4>List functional classes<a class="title-anchor" href="#title-1438-16" id="title-1438-16">&nbsp;</a></h4>
+
+<p><span class="filled">DashboardGridViewModel</span> – list view model.</p>
+
+<p><span class="filled">DashboardGridViewConfig</span> – generates list view configuration.</p>
+
+<p><span class="filled">DashboardGridModule</span> – module designed to work with lists.</p>
+
+<p><span class="filled">DashboardGridDesigner</span> – list editing page schema.</p>
+
+<h4>List settings<a class="title-anchor" href="#title-1438-17" id="title-1438-17">&nbsp;</a></h4>
+
+<p>To configure a list, you need to add the JSON configuration object with list properties to the widget module configuration. The widget module configuration is defined by the <span class="filled">Items</span> property of the <span class="filled">SysDashboard</span> object.&nbsp;</p>
+
+<p>Set the “DashboardGrid” value to the <span class="filled">widgetType</span> property in the JSON configuration object with widget settings. In addition, assign the <span class="filled">parameters</span> property to the object with necessary parameters. Possible list parameters are listed in the table.</p>
+
+<div class="table">
+<div class="table__caption">List settings</div>
+
+<div class="table">
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Type</th>
+			<th scope="col">Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="filled">caption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>List header.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionBindingColumn</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section link column.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">filterData</span></td>
+			<td><span class="filled">object</span></td>
+			<td>Filter settings.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionId</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section id.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">entitySchemaName</span></td>
+			<td><span class="filled">string</span></td>
+			<td>List object.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">style</span></td>
+			<td><span class="filled">string</span></td>
+			<td>List color.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">orderDirection</span></td>
+			<td><span class="filled">number</span></td>
+			<td>Sorting options (1 - ascending, 2 - descending).</td>
+		</tr>
+		<tr>
+			<td><span class="filled">orderColumn</span></td>
+			<td><span class="filled">string</span></td>
+			<td>List sorting column.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">rowCount</span></td>
+			<td><span class="filled">number</span></td>
+			<td>The number of rows to display.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">gridConfig</span></td>
+			<td><span class="filled">object</span></td>
+			<td>List configuration.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h3>Web-page<a class="title-anchor" href="#title-1438-18" id="title-1438-18">&nbsp;</a></h3>
+
+<p><a href="/node/184#title-184-13">The web-page dashboard</a> is used to display web pages on the dashboard panel. It may be an online currency calculator, your corporate website, etc.&nbsp;</p>
+
+<h4>Web-page functionality implementation classes<a class="title-anchor" href="#title-1438-19" id="title-1438-19">&nbsp;</a></h4>
+
+<p><span class="filled">WebPageViewModel</span> – web-page view model.</p>
+
+<p><span class="filled">WebPageViewConfig</span> – generates the web-page view model configuration.</p>
+
+<p><span class="filled">WebPageModule</span> – module used to work with web pages.</p>
+
+<p><span class="filled">WebPageDesigner</span> – web-page widget view schema.</p>
+
+<h4>Web-page settings parameters<a class="title-anchor" href="#title-1438-20" id="title-1438-20">&nbsp;</a></h4>
+
+<p>To configure a web page, you need to add the JSON configuration object with web page properties to the widget module configuration. Widget module configuration is defined by the <span class="filled">Items</span> property of the <span class="filled">SysDashboard</span> object.&nbsp;</p>
+
+<p>Set the “WebPage” value to the <span class="filled">widgetType</span> property in the JSON configuration object with widget settings. In addition, assign the <span class="filled">parameters</span> property to the object with necessary parameters. Possible web-page parameters are listed in the table.</p>
+
+<div class="table">
+<div class="table__caption">Web-page settings</div>
+
+<div class="table">
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Type</th>
+			<th scope="col">Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="filled">caption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Web-page widget title.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionId</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section id.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">url</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Web-page link.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">style</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Web-page widget CSS-styles</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h3>Sales pipeline<a class="title-anchor" href="#title-1438-21" id="title-1438-21">&nbsp;</a></h3>
+
+<p><a href="/node/184#title-184-11">The “Sales pipeline” dashboard</a> is used to analyze sales dynamics by stages.</p>
+
+<h4>Sales pipeline functionality implementation classes<a class="title-anchor" href="#title-1438-22" id="title-1438-22">&nbsp;</a></h4>
+
+<p><span class="filled">OpportunityFunnelChart</span> – a class inherited from <span class="filled">Chart</span>.</p>
+
+<h4>Sales pipeline settings<a class="title-anchor" href="#title-1438-23" id="title-1438-23">&nbsp;</a></h4>
+
+<p>To configure a sales pipeline, you need to add the JSON configuration object with sales pipeline properties to the widget module configuration. Widget module configuration is defined by the <span class="filled">Items</span> property of the <span class="filled">SysDashboard</span> object.&nbsp;</p>
+
+<p>Set the “OpportunityFunnel” value to the <span class="filled">widgetType</span> property in the JSON configuration object with widget settings. In addition, assign the <span class="filled">parameters</span> property to the object with necessary parameters. Possible sales pipeline parameters are listed in the table.</p>
+
+<div class="table">
+<div class="table__caption">Sales pipeline settings</div>
+
+<div class="table">
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Type</th>
+			<th scope="col">Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="filled">caption</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Sales pipeline header.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionId</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section id.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">defPeriod</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Pipeline period (last week by default).</td>
+		</tr>
+		<tr>
+			<td><span class="filled">sectionBindingColumn</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Section link column.</td>
+		</tr>
+		<tr>
+			<td><span class="filled">type</span></td>
+			<td><span class="filled">string</span></td>
+			<td>Chart type (“funnel”).</td>
+		</tr>
+		<tr>
+			<td><span class="filled">filterData</span></td>
+			<td><span class="filled">object</span></td>
+			<td>Filter settings.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-cases">
+  
+    
+      
+      <div class="field field--name-field-cases field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="1946" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Modify sales pipeline calculations</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>You can modify the way values are calculated for the sales pipeline dashboard element in the <span class="key">Opportunities section</span>. To do this, you need to create a new module for calculations and replace the sales pipeline display client schema.</p>
+
+<h2>To modify the sales pipeline calculations:<a class="title-anchor" href="#title-1359-1" id="title-1359-1">&nbsp;</a></h2>
+
+<ol>
+	<li>Create a new class inherited from <span class="filled">FunnelBaseDataProvider</span> and specify the calculation logic.</li>
+	<li>Create a replacing <span class="filled">FunnelChartSchema</span> client schema and use the new calculation class in it.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h2>Example of modifying the calculations displayed in the "Number of opportunities" view of the sales pipeline<a class="title-anchor" href="#title-1359-2" id="title-1359-2">&nbsp;</a></h2>
+
+<h3>Case description<a class="title-anchor" href="#title-1359-3" id="title-1359-3">&nbsp;</a></h3>
+
+<p>Modify the sales pipeline calculation algorithms by replacing the number of opportunities with the number of products added to opportunities.</p>
+
+<h3>Case implementation algorithm<a class="title-anchor" href="#title-1359-4" id="title-1359-4">&nbsp;</a></h3>
+
+<h3>1. Create a new module in the custom package<a class="title-anchor" href="#title-1359-5" id="title-1359-5">&nbsp;</a></h3>
+
+<p>Create a new calculation provider client module in the custom package. <i>Calculation provider</i> is a class responsible for selecting, filtering and processing data for sales pipeline chart.</p>
+
+<p>Specify a name and caption for the new module, for example, <span class="filled">UsrFunnelByProductCountDataProvider</span> (Fig. 1).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 1. Calculation provider module properties</div>
+
+<div class="media__element"><img alt="scr_funnelchart_dataprovider.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/TypicalCustomizations/FunnelChart/scr_funnelchart_dataprovider.png"></div>
+</div>
+
+<h3>2. Add localizable strings<a class="title-anchor" href="#title-1359-6" id="title-1359-6">&nbsp;</a></h3>
+
+<p>Add a string with the <span class="filled">Number of products</span> value to the collection of localizable strings of the created module. To do this, right-click the <span class="key">LocalizableStrings</span> structure node and select <span class="key">Add</span> from the context menu. Set the properties for the new string as shown on Fig. 2.</p>
+
+<div class="media">
+<div class="media__caption">Fig. 2. Localizable string properties</div>
+
+<div class="media__element"><img alt="scr_funnelchart_products_caption.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/TypicalCustomizations/FunnelChart/scr_funnelchart_products_caption.png"></div>
+</div>
+
+<p>Add <span class="filled">CntOpportunity</span> localizable string with the <span class="filled">Number of opportunities</span> value in the similar way.</p>
+
+<h3>3. Add implementation to the provider module<a class="title-anchor" href="#title-1359-7" id="title-1359-7">&nbsp;</a></h3>
+
+<p>To modify sales pipeline calculations, override the following methods:</p>
+
+<ul>
+	<li><span class="filled">addQueryColumns</span> column generation method for data selection</li>
+	<li>methods for selection data processing.</li>
+</ul>
+
+<p>To process one record from the selection, define the <span class="filled">getSeriesDataConfigByItem</span> method. To process the whole collection, define the <span class="filled">prepareFunnelResponseCollection</span> method. To filter the records, define the <span class="filled">applyFunnelPeriodFilters</span> method.</p>
+
+<p>Below is the source code of the new calculation provider module for the sales pipeline.</p>
+
+<div class="code">
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+define(<span>"UsrFunnelByProductCountDataProvider"</span>, [<span>"ext-base"</span>, <span>"terrasoft"</span>, <span>"UsrFunnelByProductCountDataProviderResources"</span>,
+        <span>"FunnelBaseDataProvider"</span>],
+    <span>function</span>(Ext, Terrasoft, resources) {
+        <span>// Defining a new calculation provider.
+</span>        Ext.define(<span>"Terrasoft.configuration.UsrFunnelByProductCountDataProvider"</span>, {
+            <span>// Inheriting from the basic provider.
+</span>            extend: <span>"Terrasoft.FunnelBaseDataProvider"</span>,
+            <span>// New provider short name
+</span>            alternateClassName: <span>"Terrasoft.UsrFunnelByProductCountDataProvider"</span>,
+            <span>// Collection processing method
+</span>            prepareFunnelResponseCollection: <span>function</span>(collection) {
+                <span>this</span>.callParent(arguments);
+            },
+            <span>// Extending the FunnelBaseDataProvider base model method. 
+</span>            <span>// Sets the column number of products for data sampling
+</span>            addQueryColumns: <span>function</span>(entitySchemaQuery) {
+                <span>// Parent method calling
+</span>                <span>this</span>.callParent(arguments);
+                <span>// Adds the number of products column to the sample
+</span>                entitySchemaQuery.addAggregationSchemaColumn(<span>"[OpportunityProductInterest:Opportunity].Quantity"</span>,
+                        Terrasoft.AggregationType.SUM, <span>"ProductsAmount"</span>);
+            },
+            <span>// Extending the FunnelBaseDataProvider base class method.
+</span>            <span>// Sets sample filtration
+</span>            applyFunnelPeriodFilters: <span>function</span>(filterGroup) {
+                <span>// Parent method calling
+</span>                <span>this</span>.callParent(arguments);
+                <span>// Creates a filter group.
+</span>                <span>var</span> endStageFilterGroup = Terrasoft.createFilterGroup();
+                <span>// Sets the group operator type.
+</span>                endStageFilterGroup.logicalOperation = Terrasoft.LogicalOperatorType.OR;
+                <span>// Sets the filter that shows whether the sale stage is over yet.
+</span>                endStageFilterGroup.addItem(
+                    Terrasoft.createColumnIsNullFilter(<span>this</span>.getDetailColumnPath(<span>"DueDate"</span>)));
+                <span>// Sets the filter that shows whether the sale stage is final.
+</span>                endStageFilterGroup.addItem(
+                    Terrasoft.createColumnFilterWithParameter(Terrasoft.ComparisonType.EQUAL,
+                        <span>this</span>.getDetailColumnPath(<span>"Stage.End"</span>), <span>true</span>, Terrasoft.DataValueType.BOOLEAN));
+                filterGroup.addItem(endStageFilterGroup);
+            },
+            <span>// Extending the FunnelBaseDataProvider base model method. 
+</span>            <span>// Processes data for the stages in the pipeline.
+</span>            getSeriesDataConfigByItem: <span>function</span>(responseItem) {
+                <span>// Object that stores localizable strings.
+</span>                <span>var</span> lcz = resources.localizableStrings;
+                <span>// Receives a stage data object from the parent method.
+</span>                <span>var</span> config = <span>this</span>.callParent(arguments);
+                <span>// Receives data about the number of products in an opportunity from the sample result.
+</span>                <span>var</span> products = responseItem.get(<span>"ProductsAmount"</span>);
+                products = Ext.isNumber(products) ? products : 0;
+                <span>// Formats the strings.
+</span>                <span>var</span> name = Ext.String.format(<span>"{0}&lt;br/&gt;{1}: {2}&lt;br/&gt;{3}: {4}"</span>,
+                    config.menuHeaderValue, lcz.CntOpportunity, config.y, lcz.FunnelProductsCaption, products);
+                <span>var</span> displayValue = Ext.String.format(<span>"&lt;br/&gt;{0}: {1}"</span>, lcz.FunnelProductsCaption, products);
+                <span>// Installs new data in the data object and returns it. 
+</span>                <span>return</span> Ext.apply(config, {
+                    name: name,
+                    displayValue: displayValue
+                });
+            }
+        });
+    });
+</pre>
+</div>
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>4. Create a sales pipeline replacing schema<a class="title-anchor" href="#title-1359-8" id="title-1359-8">&nbsp;</a></h3>
+
+<p>To use the new provider module in the calculations, override the sales pipeline calculation provider generator method.</p>
+
+<p>To do this, create a replacing client module and specify <span class="filled">FunnelChartSchema</span> as a parent (Fig. 3).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 3. Properties of the replacing module</div>
+
+<div class="media__element"><img alt="scr_funnelchart_schema.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/TypicalCustomizations/FunnelChart/scr_funnelchart_schema.png"></div>
+</div>
+
+<p>Add the new calculation module to dependencies (the <span class="filled">Dependencies</span> section), by specifying its name in the <span class="key">Dependency</span> field and the <span class="filled">UsrFunnelByProductCountDataProvider</span> value in the <span class="key">Name</span> field (Fig. 4).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 4. Sales pipeline schema dependency properties</div>
+
+<div class="media__element"><img alt="scr_funnelchart_schema_dependencies.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/TypicalCustomizations/FunnelChart/scr_funnelchart_schema_dependencies.png"></div>
+</div>
+
+<h3>5. Specify the new calculation provider in the sales pipeline replacing schema<a class="title-anchor" href="#title-1359-9" id="title-1359-9">&nbsp;</a></h3>
+
+<p>To do this, override the getProvidersCollectionConfig method in the replacing schema that gets the configuration object with the collection of providers.</p>
+
+<div class="code">
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+define(<span>"FunnelChartSchema"</span>, [<span>"UsrFunnelByProductCountDataProvider"</span>],
+    <span>function</span>() {
+        <span>return</span> {
+            entitySchemaName: <span>"Opportunity"</span>,
+            methods: {
+                getProvidersCollectionConfig: <span>function</span>() {
+                    <span>// Calls parent method.
+</span>                    <span>// Gets array of providers.
+</span>                    <span>var</span> config = <span>this</span>.callParent();
+                    <span>// Searches data provider in the measurement by the number of opportunities.
+</span>                    <span>var</span> byCount = Terrasoft.findItem(config, {tag: <span>"byNumberConversion"</span>});
+                    <span>// Replaces with new class.
+</span>                    byCount.item.className = <span>"Terrasoft.UsrFunnelByProductCountDataProvider"</span>;
+                    <span>return</span> config;
+                }
+            }
+        };
+    });
+</pre>
+</div>
+</div>
+</div>
+
+<p>After saving the schema, the new calculation module will be used in the sales pipeline and the sales pipeline itself will display the total number of products by stages (Fig. 5).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 5. Sales pipeline displaying the number of products added to opportunities</div>
+
+<div class="media__element"><img alt="scr_funnelchart_graph.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/TypicalCustomizations/FunnelChart/scr_funnelchart_graph.png"></div>
+</div>
+</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1947" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Enable additional filtering in a sales pipeline</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>In Creatio, you can enable additional filtering for calculations in sales pipeline charts.</p>
+
+<p>To do it this:</p>
+
+<ol>
+	<li>Create a new class inherited from the calculation provider and implement the necessary filtering logic.</li>
+	<li>Create a replacing FunnelChartSchema client schema and use the new calculation class in it.</li>
+</ol>
+
+<h2>Case description<a class="title-anchor" href="#title-1360-2" id="title-1360-2">&nbsp;</a></h2>
+
+<p>Add filtering to sales pipeline calculations displayed in the “Number of opportunities” view for selecting the opportunities whose <span class="key">Customer</span> field is populated with an account.</p>
+
+<h2>Source code<a class="title-anchor" href="#title-1360-3" id="title-1360-3">&nbsp;</a></h2>
+
+<p>You can download the package with case implementation using the following <a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkFunnelChartSchemaFiltering_18.06.27_04.10.03.zip" target="_blank">link</a>.</p>
+
+<h2>Case implementation algorithm<a class="title-anchor" href="#title-1360-4" id="title-1360-4">&nbsp;</a></h2>
+
+<h3>1. Creating a new module in the custom package<a class="title-anchor" href="#title-1360-5" id="title-1360-5">&nbsp;</a></h3>
+
+<p>Create a new calculation provider client module in the custom package. <i>Calculation provider</i> is a class responsible for selecting, filtering and processing data for sales pipeline chart.</p>
+
+<p>Specify a name and caption for the new module, for example, <span class="filled">UsrFunnelByCountDataProvider</span> (fig. 1).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 1. Calculation provider module properties</div>
+
+<div class="media__element"><img alt="scr_funnelchart_filter_schema.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/TypicalCustomizations/FunnelChart/scr_funnelchart_filter_schema.png"></div>
+</div>
+
+<h3>2. Defining the new provider class and specifying the filtering logic<a class="title-anchor" href="#title-1360-6" id="title-1360-6">&nbsp;</a></h3>
+
+<p>Inherit the created class from the <span class="filled">FunnelByCountDataProvider</span> class and override the <span class="filled">getFunnelFixedFilters</span> method.</p>
+
+<p>The module source code:</p>
+
+<div class="code">
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+define(<span>"UsrFunnelByCountDataProvider"</span>, [<span>"ext-base"</span>,
+    <span>"terrasoft"</span>, <span>"UsrFunnelByCountDataProviderResources"</span>,
+    <span>"FunnelByCountDataProvider"</span>],
+    <span>function</span>(Ext, Terrasoft, resources) {
+        <span>// Defining the new calculation provider.
+</span>        Ext.define(<span>"Terrasoft.configuration.UsrFunnelByCountDataProvider"</span>, {
+            <span>// Inheritance from the provider "by number".
+</span>            extend: <span>"Terrasoft.FunnelByCountDataProvider"</span>,
+            <span>// Contracted name of the new provider.
+</span>            alternateClassName: <span>"Terrasoft.UsrFunnelByCountDataProvider"</span>,
+            <span>// Extending the FunnelByCountDataProvider base module method.
+</span>            <span>// Returns filter for selection.
+</span>            getFunnelFixedFilters: <span>function</span>() {
+                <span>// Calling the parent method.
+</span>                <span>var</span> esqFiltersGroup = <span>this</span>.callParent(arguments);
+                <span>// Adds filter specifying that the customer of an opportunity is an account.
+</span>                esqFiltersGroup.addItem(
+                    Terrasoft.createColumnIsNotNullFilter(<span>"Account"</span>));
+                <span>return</span> esqFiltersGroup;
+            }
+        });
+    });
+</pre>
+</div>
+</div>
+</div>
+
+<p>Save the module.</p>
+
+<h3>3. Implementing the pipeline chart module in custom package<a class="title-anchor" href="#title-1360-7" id="title-1360-7">&nbsp;</a></h3>
+
+<p>To use the new provider module in calculations, cerate a replacing client module and specify <span class="filled">FunnelChartSchema</span> from the <span class="filled">Opportunity</span> package as a parent schema (fig. 2).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 2. Properties of the replacing module</div>
+
+<div class="media__element"><img alt="scr_funnelchart_schema.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/TypicalCustomizations/FunnelChart/scr_funnelchart_schema.png"></div>
+</div>
+
+<h3>4. Specify the new calculation provider in the sales pipeline replacing schema<a class="title-anchor" href="#title-1360-8" id="title-1360-8">&nbsp;</a></h3>
+
+<p>Override the provider generator method of sales pipeline calculation in the replacing schema and specify the new provider class for calculations.</p>
+
+<p>The replacing schema source code is as follows:</p>
+
+<div class="code">
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+define(<span>"FunnelChartSchema"</span>, [<span>"UsrFunnelByCountDataProvider"</span>], <span>function</span>() {
+    <span>return</span> {
+        entitySchemaName: <span>"Opportunity"</span>,
+        methods: {
+            getProvidersCollectionConfig: <span>function</span>() {
+                <span>// Calls parent method returning the provider array.
+</span>                <span>var</span> config = <span>this</span>.callParent();
+                <span>// Searches for data provider for displaying in the “Number of opportunities” view.
+</span>                <span>var</span> byCount = Terrasoft.findItem(config, {tag: <span>"byNumberConversion"</span>});
+                <span>// Changes for a new class.
+</span>                byCount.item.className = <span>"Terrasoft.UsrFunnelByCountDataProvider"</span>;
+                <span>return</span> config;
+            }
+        }
+    };
+});
+</pre>
+</div>
+</div>
+</div>
+
+<p>After you save the schema, the new calculation module will be used in the sales pipeline. It will display the opportunities whose <span class="key">Customer</span> field is populated with an account.</p>
+</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1948" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Add a custom dashboard widget</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Dashboard widgets (analytic elements) are used for data analysis of sections. Go to the “Dashboards” view of the required section to work with its analytics. Use the <span class="key">Dashboards</span> section to work with the entirety of Creatio section data analytics.</p>
+
+<p>To learn more about Creatio dashboard widgets, please refer to the <a href="/node/185">View analytics</a> article.</p>
+
+<p>You can create custom dashboard widgets in Creatio.</p>
+
+<p>To create a custom widget you need to:</p>
+
+<ol>
+	<li>Create new or select the existing module. More information about dashboard widget modules can be found in the “<a data-auto-update-caption="true" href="/node/1438">Dashboard widgets</a>” article.</li>
+	<li>Custom module must be an inheritor of the <span class="filled">BaseNestedModule</span> module or one of its inheritors: <span class="filled">ChartModule</span>, <span class="filled">IndicatorModule</span>, <span class="filled">GaugeModule</span>, etc. Add the source code that implements the necessary functionality to the created module.</li>
+	<li>Specify the module dependency in the [Dependencies] block of the module properties. Add messages that are used.</li>
+	<li>Set the widget parameters in the [Module parameters] field when adding widgets on the dashboards panel. More information about parameters can be found in the “<a data-auto-update-caption="true" href="/node/1438">Dashboard widgets</a>” article.</li>
+</ol>
+
+<h2>Case description<a class="title-anchor" href="#title-1361-3" id="title-1361-3">&nbsp;</a></h2>
+
+<p>Create custom widget that shows currency exchange rate.</p>
+
+<h2>Source code<a class="title-anchor" href="#title-1361-4" id="title-1361-4">&nbsp;</a></h2>
+
+<p>Use this <a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkAddCustomWidget_19.04.25_02.36.43.zip" target="_blank">link</a> to download the case implementation package.</p>
+
+<h2>Case implementation algorithm<a class="title-anchor" href="#title-1361-5" id="title-1361-5">&nbsp;</a></h2>
+
+<h3>1. Create a currency indicator module.<a class="title-anchor" href="#title-1361-6" id="title-1361-6">&nbsp;</a></h3>
+
+<p>Go to the <span class="key">Configuration</span> section in the system designer and on the <span class="key">Schemas</span> tab, select <span class="key">Add</span> -&gt; <span class="key">Standard</span> -&gt; <span class="key">Module</span> command. For the created module specify (Fig. 1):</p>
+
+<ul>
+	<li>[Name] – “UsrCurrencyIndicatorModule”.</li>
+	<li>[Title] – “Currency Indicator Module”.</li>
+</ul>
+
+<div class="media">
+<div class="media__caption">Fig. 1. Currency indicator module properties</div>
+
+<div class="media__element"><img alt="scr_widget_add_module.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/AddCustomWidget/scr_widget_add_module.png"></div>
+</div>
+
+<h3>2. Add the source code<a class="title-anchor" href="#title-1361-7" id="title-1361-7">&nbsp;</a></h3>
+
+<p>The module source code:</p>
+
+<div class="code">
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+define(<span>"UsrCurrencyIndicatorModule"</span>, [<span>"UsrCurrencyIndicatorModuleResources"</span>, <span>"IndicatorModule"</span>], <span>function</span>() {
+
+    <span>// Class that generates the configuration of the currency indicator module view..
+</span>    Ext.define(<span>"Terrasoft.configuration.CurrencyIndicatorViewConfig"</span>, {
+        extend: <span>"Terrasoft.BaseModel"</span>,
+        alternateClassName: <span>"Terrasoft.CurrencyIndicatorViewConfig"</span>,
+        <span>// Generates the configuration of the currency indicator module view.
+</span>        generate: <span>function</span>(config) {
+            <span>var</span> style = config.style || <span>""</span>;
+            <span>var</span> fontStyle = config.fontStyle || <span>""</span>;
+            <span>var</span> wrapClassName = Ext.String.format(<span>"{0}"</span>, style);
+            <span>var</span> id = Terrasoft.Component.generateId();
+            <span>// The returned configuration view object.
+</span>            <span>var</span> result = {
+                <span>"name"</span>: id,
+                <span>"itemType"</span>: Terrasoft.ViewItemType.CONTAINER,
+                <span>"classes"</span>: {wrapClassName: [wrapClassName, <span>"indicator-module-wrapper"</span>]},
+                <span>"styles"</span>: {
+                    <span>"display"</span>: <span>"table"</span>,
+                    <span>"width"</span>: <span>"100%"</span>,
+                    <span>"height"</span>: <span>"100%"</span>
+                },
+                <span>"items"</span>: [
+                    {
+                        <span>"name"</span>: id + <span>"-wrap"</span>,
+                        <span>"itemType"</span>: Terrasoft.ViewItemType.CONTAINER,
+                        <span>"styles"</span>: {
+                            <span>"display"</span>: <span>"table-cell"</span>,
+                            <span>"vertical-align"</span>: <span>"middle"</span>
+                        },
+                        <span>"classes"</span>: {wrapClassName: [<span>"indicator-wrap"</span>]},
+                        <span>"items"</span>: [
+                            <span>// Display the name of the currency.
+</span>                            {
+                                <span>"name"</span>: <span>"indicator-caption"</span> + id,
+                                <span>"itemType"</span>: Terrasoft.ViewItemType.LABEL,
+                                <span>"caption"</span>: {<span>"bindTo"</span>: <span>"CurrencyName"</span>},
+                                <span>"classes"</span>: {<span>"labelClass"</span>: [<span>"indicator-caption"</span>]}
+                            },
+                            <span>// Display the currency exchange rate.
+</span>                            {
+                                <span>"name"</span>: <span>"indicator-value"</span> + id,
+                                <span>"itemType"</span>: Terrasoft.ViewItemType.LABEL,
+                                <span>"caption"</span>: {
+                                    <span>"bindTo"</span>: <span>"CurrencyValue"</span>
+                                },
+                                <span>"classes"</span>: {<span>"labelClass"</span>: [<span>"indicator-value "</span> + fontStyle]}
+                            }
+                        ]
+                    }
+                ]
+            };
+            <span>return</span> result;
+        }
+    });
+
+    <span>// Class of the view model of the currency indicator module.
+</span>    Ext.define(<span>"Terrasoft.configuration.CurrencyIndicatorViewModel"</span>, {
+        extend: <span>"Terrasoft.BaseModel"</span>,
+        alternateClassName: <span>"Terrasoft.CurrencyIndicatorViewModel"</span>,
+        Ext: <span>null</span>,
+        Terrasoft: <span>null</span>,
+        sandbox: <span>null</span>,
+        columns: {
+            <span>// Currency name.
+</span>            CurrencyName: {
+                type: Terrasoft.core.enums.ViewModelSchemaItem.ATTRIBUTE,
+                dataValueType: Terrasoft.DataValueType.TEXT,
+                value: <span>null</span>
+            },
+            <span>// Currency value.
+</span>            CurrencyValue: {
+                type: Terrasoft.core.enums.ViewModelSchemaItem.ATTRIBUTE,
+                dataValueType: Terrasoft.DataValueType.FLOAT,
+                value: <span>null</span>
+            }
+        },
+        onRender: Ext.emptyFn,
+        <span>// Returns the currency value, depending on the name. This method is given as an example.
+</span>        <span>// For each specific task, you should select an individual method to obtain data,
+</span>        <span>// for example REST API, database query, etc.
+</span>        getCurrencyValue: <span>function</span>(currencyName, callback, scope) {
+            <span>var</span> result = 0;
+            <span>if</span> (currencyName === <span>"USD"</span>) {
+                result = 26;
+            }
+            <span>if</span> (currencyName === <span>"EUR"</span>) {
+                result = 32.3;
+            }
+            <span>if</span> (currencyName === <span>"RUB"</span>) {
+                result = 0.45;
+            }
+            callback.call(scope || <span>this</span>, result);
+        },
+        <span>// Gets the data and displays them on the widget.
+</span>        prepareIndicator: <span>function</span>(callback, scope) {
+            <span>this</span>.getCurrencyValue(<span>this</span>.get(<span>"CurrencyName"</span>), <span>function</span>(currencyValue) {
+                <span>this</span>.set(<span>"CurrencyValue"</span>, currencyValue);
+                callback.call(scope);
+            }, <span>this</span>);
+        },
+        <span>// Initializes the widget.
+</span>        init: <span>function</span>(callback, scope) {
+            <span>this</span>.prepareIndicator(callback, scope);
+        }
+    });
+
+    <span>// Widget module class.
+</span>    Ext.define(<span>"Terrasoft.configuration.CurrencyIndicatorModule"</span>, {
+        extend: <span>"Terrasoft.IndicatorModule"</span>,
+        alternateClassName: <span>"Terrasoft.CurrencyIndicatorModule"</span>,
+        <span>// The name of the wdget view model class.
+</span>        viewModelClassName: <span>"Terrasoft.CurrencyIndicatorViewModel"</span>,
+        <span>// The name of the view configuration generating class.
+</span>        viewConfigClassName: <span>"Terrasoft.CurrencyIndicatorViewConfig"</span>,
+        <span>// Subscribing to messages from third-party modules.
+</span>        subscribeMessages: <span>function</span>() {
+            <span>this</span>.sandbox.subscribe(<span>"GenerateIndicator"</span>, <span>this</span>.onGenerateIndicator, <span>this</span>, [<span>this</span>.sandbox.id]);
+        }
+    });
+
+    <span>return</span> Terrasoft.CurrencyIndicatorModule;
+});
+</pre>
+</div>
+</div>
+</div>
+
+<h3>3. Add a style to the LESS tab<a class="title-anchor" href="#title-1361-8" id="title-1361-8">&nbsp;</a></h3>
+
+<p>To display the widget text at the center, add the following style to the LESS tab of the module:</p>
+
+<div class="code">
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+<span>.indicator-module-wrapper </span>{
+    <span>text-align</span><span>: center;</span>
+}
+</pre>
+</div>
+</div>
+</div>
+
+<h3>3. Add the dependencies and messages<a class="title-anchor" href="#title-1361-9" id="title-1361-9">&nbsp;</a></h3>
+
+<p>The dependencies and messages of parent module should automatically display in the created module (Fig. 2).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 2. Dependencies and messages of created module</div>
+
+<div class="media__element"><img alt="scr_widget_add_dependency_and_messages.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/AddCustomWidget/scr_widget_add_dependency_and_messages.png"></div>
+</div>
+
+<p>If it doesn’t happen, add them manually:</p>
+
+<ul>
+	<li>Add a parent module to the [Dependencies] block</li>
+	<li>Add the <span class="filled">GetIndicatorConfig</span> message to the [Messages] block. Sett the “Publish” direction for the message and the <span class="filled">GenerateIndicator</span> as address message with the “Follow” direction.</li>
+</ul>
+
+<p>Save the new module.</p>
+
+<h3>5. Add the widget to the dashboard panel and set its parameters<a class="title-anchor" href="#title-1361-10" id="title-1361-10">&nbsp;</a></h3>
+
+<p>To display the widget, add it to the dashboard panel (Fig. 3).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 3. Adding the widget to the dashboard panel</div>
+
+<div class="media__element"><img alt="scr_widget_adding.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/AddCustomWidget/scr_widget_adding.png"></div>
+</div>
+
+<p>In addition, you need to set the parameters of the module bound to the widget (Fig. 4).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 4. Configuration of the added widget module</div>
+
+<div class="media__element"><img alt="scr_widget_adding_params.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/AddCustomWidget/scr_widget_adding_params.png"></div>
+</div>
+
+<p>To bind the module to the added widget, add the “Currency Indicator Module” value in the <span class="key">Module</span> field and add the configuration JSON object with the required parameters to the <span class="key">Module parameters</span> field.</p>
+
+<div class="code">
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+{
+    <span>"parameters"</span>: {
+        <span>"CurrencyName"</span>: <span>"USD"</span>,
+        <span>"style"</span>: <span>"widget-blue"</span>
+    },
+    <span>"configurationMessage"</span>: <span>"GetIndicatorConfig"</span>
+}
+</pre>
+</div>
+</div>
+</div>
+
+<p>A “<span class="filled">CurrencyName</span>” parameter sets the currency for which the exchange rate is displayed. A “<span class="filled">style</span>” parameter sets the widget style and “<span class="filled">configurationMessage</span>” parameter sets the message name that will be used to transfer the configuration object.</p>
+
+<p>You can set up any of Creatio system colors in the <span class="filled">style</span> parameter as widget color (Fig. 5).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 5. Style types of the widget</div>
+
+<div class="media__element"><img alt="scr_widget_styles.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/AddCustomWidget/scr_widget_styles.png"></div>
+</div>
+
+<p>After saving the created widget and refreshing the page, the custom widget will be displayed on the dashboards panel (Fig. 6).</p>
+
+<div class="media">
+<div class="media__caption">Fig. 6. Currency exchange rate widget</div>
+
+<div class="media__element"><img alt="scr_widget_result.png" border="0" src="/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/AddCustomWidget/scr_widget_result.png"></div>
+</div>
+</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+          </div>
+  
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-references">
+  
+    
+      
+      <div class="field field--name-field-references field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="1436" class="node node--type-reference node--view-mode-tab">
+
+  
+                        <div class="title-h1" data-type="JS"><span class="field field--name-title field--type-string field--label-hidden">BaseWidgetDesigner schema</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodereferencefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodereferencebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><span class="filled">BaseWidgetDesigner</span> – base widget settings view schema.</p>
+
+<div class="block-collapse">
+<h2 class="block-collapse__title">Methods<a class="title-anchor" href="#title-1436-2" id="title-1436-2">&nbsp;</a></h2>
+
+<div class="block-collapse__content">
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+getWidgetConfig()
+</pre>
+</div>
+</div>
+</div>
+
+<p>returns the current widget settings object.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+getWidgetConfigMessage()
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns the name of the message used for getting widget module settings.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+getWidgetModuleName()
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns the name of the widget module.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+getWidgetRefreshMessage()
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns the name of the widget update message.&lt;</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+getWidgetModulePropertiesTranslator()
+</pre>
+</div>
+</div>
+</div>
+
+<p>Returns the connecting object of widget module properties and widget module settings.</p>
+</div>
+</div>
+</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1437" class="node node--type-reference node--view-mode-tab">
+
+  
+                        <div class="title-h1" data-type="JS"><span class="field field--name-title field--type-string field--label-hidden">DashboardEnums enumeration</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodereferencefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodereferencebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><span class="filled">DashboardEnums</span> – contains an enumeration of widget properties.</p>
+
+<p><span class="filled">Terrasoft.DashboardEnums.WidgetType</span> – contains the widget view mode and design mode configuration of the dashboards.</p>
+
+<div class="block-collapse">
+<h2 class="block-collapse__title">Properties<a class="title-anchor" href="#title-1437-2" id="title-1437-2">&nbsp;</a></h2>
+
+<div class="block-collapse__content">
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+moduleName
+</pre>
+</div>
+</div>
+</div>
+
+<p>Widget module name.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+configurationMessage
+</pre>
+</div>
+</div>
+</div>
+
+<p>The name of the module settings receiving message.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+resultMessage
+</pre>
+</div>
+</div>
+</div>
+
+<p>The name of the message that returns widget designer module settings.</p>
+
+<div class="code code_mb-small">
+<div class="code__widgets code__widgets_no-bg">
+<div class="code__source" data-copy="false">
+<pre class="prettyprint">
+stateConfig (stateObj)
+</pre>
+</div>
+</div>
+</div>
+
+<p>Widget designer schema name.</p>
+</div>
+</div>
+</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+          </div>
+  
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+          </div>
+          
+        </div>
+
+                  <aside class="creatio-sidebar creatio-sidebar_first" role="complementary">
+              <div class="region region-sidebar-first">
+    <div id="block-documentationnaviagtion" class="block block-ts-nav block-ts-nav-doc-nav">
+  
+    
+      <div class="ts-nav-block"><a href="/docs/" class="ts-nav-block__link">Documentation</a><div class="ts-nav-block__title">Developer documentation</div>
+</div>
+<div class="ts-nav-container"><ul class="ts-nav-menu"><li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/getting_started" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Getting started&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Architecture&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/development_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Development tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/back_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Back-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/front_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Front-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/integrations_and_api" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Integrations & API&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements" class="ts-nav-menu__link ts-nav-menu__link_expanded ts-nav-menu__link_open" hreflang="en">Interface elements&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+      <ul class="ts-nav-menu__children">
+      <li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/main_menu" class="ts-nav-menu__link" hreflang="en">Main menu</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/section" class="ts-nav-menu__link" hreflang="en">Section</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/record_page" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Record page&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/detail" class="ts-nav-menu__link" hreflang="en">Detail</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/mini_page" class="ts-nav-menu__link" hreflang="en">Mini page</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/modal_window" class="ts-nav-menu__link" hreflang="en">Modal window</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/communication_panel" class="ts-nav-menu__link" hreflang="en">Communication panel</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/command_line" class="ts-nav-menu__link" hreflang="en">Command line</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/dashboard_widgets" class="ts-nav-menu__link ts-nav-menu__link_open" hreflang="en">Dashboard widgets</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/chats" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Chats&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/interface_control_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Interface control tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+
+    </ul>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/application_components" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Application components&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/mobile_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Mobile development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/marketplace_app_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Marketplace app development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+</ul>
+</div>
+
+  </div>
+
+  </div>
+
+            <div class="creatio-sidebar__toggle"></div>
+          </aside>
+        
+                  <aside class="creatio-sidebar creatio-sidebar_second" role="complementary">
+              <div class="region region-sidebar-second">
+    <div id="block-example" class="block block-ts-nav block-ts-nav-page-nav">
+  
+    
+      <div class="ts-nav-page">
+  </div>
+
+  </div>
+
+  </div>
+
+          </aside>
+              </main>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="creatio-region creatio-region_footer">
+      <div class="creatio-container">
+          <div class="region region-footer">
+    <div id="block-footer" class="block block-simple-block block-simple-blockfooter">
+  
+    
+      <div class="footer">
+<div class="footer-left">
+<ul class="footer-socials">
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_fb" href="https://www.facebook.com/CreatioCompany" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_in" href="https://www.linkedin.com/company/creatioglobal" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_yt" href="https://www.youtube.com/c/creatio" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_tw" href="https://www.twitter.com/Creatio_Global" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_ow" href="https://www.owler.com/company/Creatio" target="_blank">&nbsp;</a></li>
+</ul>
+</div>
+
+<div class="footer-contact">
+<div class="footer-title">Connect with us</div>
+
+<div class="footer-content">
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+16177657997">USA: +1 617 765 7997</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+442033840040">UK: +44 20 3384 0040</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+61261452888">Australia: +61 261 452 888</a></div>
+</div>
+
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:info@creatio.com">info@creatio.com</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:support@creatio.com">support@creatio.com</a></div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+    <div class="creatio-region creatio-region_bottom">
+      <div class="creatio-container">
+          <div class="region region-bottom">
+    <div id="block-allrightsreserved" class="block block-simple-block block-simple-blockfooter-bottom">
+  
+    
+      <p>© 2025 Creatio. All rights reserved.&nbsp; |&nbsp; <a href="https://www.creatio.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="creatio-bg"></div>
+
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/docs\/","pathPrefix":"","currentPath":"node\/1438","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"94c0ca72342e8e43fd5c70378d64533b2b6422845e0b3fd749b2ff1b4bd0b914"}}</script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery_3.7.1_jquery.min.js?v=3.7.1"></script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery-once-2.2.3/jquery.once.min.js?v=2.2.3"></script>
+<script src="/docs/core/misc/drupalSettingsLoader.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.init.js?v=10.4.1"></script>
+<script src="/docs/libraries/fancybox/jquery.fancybox.min.js?v=1"></script>
+<script src="/docs/themes/custom/creatio_academy/js/fancybox.js?v=1"></script>
+<script src="/docs/libraries/prettify/prettify.js?v=1"></script>
+<script src="/docs/libraries/slick/slick.js?v=1"></script>
+<script src="/docs/libraries/jquery.nice-select/jquery.nice-select.js?v=1"></script>
+<script src="https://libraries.creatio.com/drupal_fixed_tabs/tabs.js"></script>
+<script src="/docs/themes/custom/creatio_academy/js/creatio.js?v=1"></script>
+<script src="/docs/libraries/jquery.cookie/jquery.cookie.js?szsnyq"></script>
+<script src="/docs/themes/custom/creatio_academy/js/notification.js?szsnyq"></script>
+<script src="/docs/modules/marketplace/ts_datalayer/js/ts-datalayer.js?szsnyq"></script>
+<script src="/docs/libraries/select2/js/select2.js?v=1"></script>
+<script src="/docs/libraries/select2/js/select2.position.js?v=1"></script>
+<script src="/docs/libraries/jquery.scrollbar/jquery.scrollbar.js?v=1"></script>
+<script src="/docs/modules/academy/ts_doc/js/ts-doc-version.js?szsnyq"></script>
+<script src="https://libraries.creatio.com/ts_country/index.js"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-breadcrumb.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-doc-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-page-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-sdk-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_title_anchor/js/ts-title-anchor.js?szsnyq"></script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <g id="svg-copy" class="svg-icon svg-icon_copy">
+        <path d="M15.111,18H1.889A1.848,1.848,0,0,1,0,16.2V3.6A1.848,1.848,0,0,1,1.889,1.8H5.837a2.87,2.87,0,0,1,5.326,0h3.948A1.848,1.848,0,0,1,17,3.6V16.2A1.848,1.848,0,0,1,15.111,18ZM3.777,12.6v1.8h6.611V12.6Zm0-3.6v1.8h9.445V9Zm0-3.6V7.2h9.445V5.4ZM8.5,1.8a.924.924,0,0,0-.944.9.945.945,0,0,0,1.889,0A.924.924,0,0,0,8.5,1.8Z"/>
+      </g>
+
+      <g id="svg-prev" class="svg-icon svg-icon_arrow">
+        <path d="M5.488,12.779,0,6.39,5.488,0" transform="translate(1 0.652)"/>
+      </g>
+
+      <g id="svg-next" class="svg-icon svg-icon_arrow">
+        <path d="M0,12.779,5.488,6.39,0,0" transform="translate(0.759 0.652)"/>
+      </g>
+    </svg>
+  </body>
+</html>

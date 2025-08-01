@@ -1,0 +1,1080 @@
+--- Page 1 ---
+
+ 
+  
+  
+Speaker 1
+ 
+ Foreign session number 10 of our development on creation platform Guided Learning. Today we will prepare with 
+the to prepare for the certification for the development exam. And this is an optional thing. So if you want, if you feel 
+yourself ready for this, you can apply for this type of check certification. And as you are members of our guided 
+learning, so you can run fast track certification for free. And I will explain what certification is, how it's held and what 
+you should do for it, how to prepare. So all the certification steps we will discuss today and I hope it will be clear. So 
+in general, the main purpose what is certification? This is a test. It's a check of your knowledge and skills. And we 
+have some certification basics displayed at academy.academy.creation.com Go to certification if you're interested in 
+development certification.  
+  
+  
+Speaker 1
+ 
+ So you see that we check some major creation development skills related to some C sharp programming, JavaScript 
+programming, understanding of general architecture, understanding of packages, some little SQL experience and 
+integrations questions. So certification is like part of your path. And if you pass certification, you will get your 
+certification certificate which issued for two years. And being a certified creation developer gives you some 
+advantages. One of the obvious advantage is that you can ask for help at support team at creation support team 
+with the questions related to development like how can I do something like this if you have no your own certificate 
+Developer certificate support team will reject you on such questions. But if you are certified developer and you 
+represent company with a paid support plan, so your company should pay some money to support for support.  
+  
+  
+Speaker 1
+ 
+ In this case you'll be able to ask questions about development and improvements and support team will help will 
+have to help you. So now you are somewhere here. You now started our customization and development already 
+finished development course. And then the next step is to prepare for the exam and then pass this exam. This is 
+optional so it's not mandatory. And if you do not feel yourself ready for this, you may do it later. You can also apply 
+for certification at Academy website. But in this case there are a bit different rules and a bit different complexity. So 
+at Academy you can register for an exam and if you are a partner, such exam is free. But if you are a customer, so 
+member of a customer company, in this case certification is paid.  
+  
+  
+Speaker 1
+ 
+ So if you are a customer and attended our guided learning session, obviously it makes sense to apply for a free fast 
+track certification. RAK is telling that going to do the same step. So same step. Yep. Next price web service working 
+parameters are not showing not passing. So it looks like Raki you need some help in your Environment and 
+development and maybe debugging. Yes. So it's about the question how something is not working well and you need 
+some assistance. Yes, am I. He's showing a screenshot. Let me show it for you. So it looks like your code is not 
+working properly and possibly you should just check. Let me show you. I believe as you use the name of the 
+Freedom UI section. So we should go to Freedom UI package. We should go to find form page source.  
+  
+  
+Speaker 1
+ 
+ I will show you, Rakhi, how you get such data. Here you see handlers. Here you see your button handler and you take 
+type object. You should check that this is your attribute displayed in view, model, config and this attribute. So for 
+offer type. Sorry, type. Here you should copy this attribute. For author type, you should copy this attribute and use it 
+in your code. If you do it incorrectly, of course it will not work for you. So such value here should represent type 
+column and here should represent offer type. It looks like your code is not failing, but probably you just do not 
+operate with these names correctly. So you should get it. If it's not empty, you will get value. Value here means id. 
+You also may find display value, which is a display text you can see in lookup columns.  
+ 
+
+--- Page 2 ---
+
+ 
+  
+Speaker 1
+ 
+ Yes, thank you Rakhi for telling this telling me about this trouble. So let's move on with the certification. So this is 
+kind of Excel and this exam is free if you are participant of our guided learning session. But it has some timeout so it 
+will be not forever free for you. And Fast Track certification is available for three weeks after the end of our training. 
+So three weeks from today. I think it's quite fair. And you can easily make your homework and prepare for the test. If 
+you would like to run your certification for example, two months later, somewhere in August 2024, then you can 
+apply for this exam just from Academy website and register for the exam at Academy. But currently the best way for 
+you is to apply for an exam as a member of our guided learning.  
+  
+  
+Speaker 1
+ 
+ So today I will send you the homework and if you respond me on this proposal to pass the exam. And we will 
+organize individual sessions with those of you who would like to run this exam. And in order to apply for Fast Track 
+certification, I will ask you to respond on my email. So don't forget if you want to register, please respond on email. I 
+have a question. Yes, please. And we have already applied for the certification later this June, like becoming June. 
+So can we cancel that slot and apply for the Fast Track certification which you have just discussed? Yes, yes. You 
+can. So please write me an email because today's Friday and it's a bit hard for me to remember everything in my 
+mind. So it will be much easier for me to have this task for rescheduling noted somewhere.  
+  
+  
+Speaker 1
+ 
+ So please send me a message about it, I will process it properly and we can run Fast Track certification with you or 
+with someone with your team. Thanks. Okay. Thank you. Okay, and let's move on. So what certification includes? We 
+have some kind of general policy explaining here. So this is a link at our certification tab about the general policy. It's 
+a PDF file. You can also read it, but I will explain you in several words. So certification includes homework. It's also 
+known as practical assignment and online test, which is our online session with the trainer. This online session will 
+be up to one hour and your homework may take a lot of time or not so many, not so much time depending on your 
+skills.  
+  
+  
+Speaker 1
+ 
+ So all of you will receive your homework today with the final email with all the video recording sessions list and so 
+on. So you will receive your homework and you will have some time. I think that one week will be probably fully 
+enough for you to make your homework or adjust your current environment according to the homework assignment. 
+And the homework is designed so you can use your current Freedom UI section that we designed to implement your 
+homework. Because the same section, the same page, the same business logic, just slight changes in calculations 
+and so on.  
+  
+  
+Speaker 1
+ 
+ So if you spend your time, if you already spent your time on making all our training session examples, it will be very 
+easy for you to make your homework because it's also very similar and that's how you can get benefits from your 
+everyday activity during the session. So let me explain what will include, what will be included into your homework. I 
+will show you an example right now. Just a moment here. Fast Track certification and you will see the document. 
+Yes, here. Okay, so this is fast Track certification. I will provide a better, more modern link or download the very late 
+the latest version of creation for you. So the Latest one is 813 and the homework includes very simple tasks like 
+create new section, provide its columns new detail.  
+  
+  
+Speaker 1
+ 
+ And also it includes some examples which will require coding and validate coding samples for you in JavaScript and 
+
+--- Page 3 ---
+
+in C. So validation should include coding at client side. We already discussed how to do this. Just to remind you, this 
+is about checks of your data and in our case we checked that negative prices cannot be edited, cannot be added. So 
+you see, price can't be less than 50 bucks, so we cannot save such data and area also is checked there so validation 
+also checks. So you should do the same at your environment where you present your homework.  
+  
+  
+Speaker 1
+ 
+ So validation we already discussed you may watch our previous videos if you skipped it and you will know how to do 
+this calculation is about edit page online let's say runtime calculation that we did also in JavaScript and we made the 
+calculation of commission depending on price and offer type. Let me show you we did it. So if price changed, you 
+see for each typing and each change of the price we have called commission recalculated and offer type. If it 
+changes, you see commission is recalculated. We also covered such example fully during our session, including 
+even potential issues that you may face when you add new columns to your lookups. So you can just follow the 
+same approach and make it work just as we did.  
+  
+  
+Speaker 1
+ 
+ Please note we have a bit different percentage of prices and for center for rentals and for sales, so take care to 
+provide correct values here. So this is important and we will check it the next task is about C Sharp programming 
+make your own back service club. It will do some calculation of price minimum price. In our example we made a 
+maximum price so it's very easy to change but it will require your own programming. It will require your 
+understanding of a C sharp script tasks or sorry C sharp source codes. So here's your package. Here is our web 
+service so you should present something like this during your exam. Of course it must be compilable and it must 
+work normally. In my example we use max price calculation.  
+  
+  
+Speaker 1
+ 
+ In your homework exam it will be minimum price calculation so they're easy to change but you have to perform this 
+stuff in and that's why your homework sorry that's why your everyday work and your results of work at our sessions 
+will be important and it's so it will be useful for your exam and we already discussed how you can write such code. 
+We used Visual Studio to facilitate our development and make it really easy with the help of background syntax 
+check, intellisense, autocomplete coloring and also if you're interested, you can study the structure of this project 
+and understand a bit more how it was done and generally project files and all the preparations made by creation. We 
+only make our own part of it as a C Sharp source code.  
+  
+  
+Speaker 1
+ 
+ Of course you may use so it's expected that you will use your local instance if you have no any conditions to run 
+local instance. You can use cloud one trial environment or dedicated demo environment if you have so you can do 
+this in any kind of environments and it will work for you. Of course your system must be compilable so you should 
+not get such compilation errors as I do here. In my case it looks like I had an issue compiling my environment 
+because of the same process did not allow system to replace some libraries. We will try to compile today just to get 
+rid of this error message. Previously we had no troubles with it. So your homework includes also some server side 
+checks and if you do five tasks of your homework you can apply for a basic action.  
+  
+  
+Speaker 1
+ 
+ Also we have a task number six which is a bit additional one. It's about business processes. So generally it's 
+expected to make you using business process, but you can make it with another tools if you want. For example, you 
+can create your own web service. You can run your web service from client side using your code like we did running 
+of a client side web service method that we made in task number five. So if you want to apply for advanced level, you 
+can make task number six and prepare for the advanced test. We have two levels of certification, Basic and 
+advanced. They have the same legal like power. So if you apply for help at support team, any type of certificate will 
+be working for you. So basic or advanced works the same.  
+
+--- Page 4 ---
+
+  
+  
+Speaker 1
+ 
+ And also I didn't tell you important thing that if you are a member of a partner company it makes big sense to get 
+many certified professionals at your partner company because it impacts on your partnership level. And partnership 
+level is something about margins, about deals and money sharing between partner company and creation company. 
+The reason is quite clear. If a partner has a lot of professional experts then there is a lower chance that creature will 
+have to support and like uphold the partner in case of some complex situations with real customers. So if partner is 
+really expert and professional then it's possible to provide better margin and simply speaking to share more money 
+with partner and less money to creature when signing some deals with real customers.  
+  
+  
+Speaker 1
+ 
+ So if partner has not so many experts and certified professionals then such partner will have less partnership level. 
+And probably this is more risky for creature when any kind of agreement will be signed with a real customer 
+including partner part of work. And that's why any partner is interested in having as many as possible of certified 
+experts, certified analysts or developers at Valer stuff. So it makes sense for partnership level. Okay, so task number 
+six is about some automation of adding data to the detail. The easiest way to implement is use of business process 
+and then we can add so you can easily make a button or action that will do some insert some data and also there is 
+a task to Refresh list. So update number so list of records.  
+  
+  
+Speaker 1
+ 
+ After you add this data, let me show you and remind you how we can do this. So it will be very quick and easy. And 
+currently when we add. Okay, let's see. So when we add new data to our reality section, you remember we already 
+made some automatic insert of data house for sale. So we made automatic insert of data into realty visits detail. 
+Yes, this one. But we can make the same process or make a similar process, but it's better to make the same 
+process operational. And also that can be called from some action. I will show it how we can do this for you. I can 
+find the corresponding process. I prefer to work with processes from configuration section because it makes it 
+easier for me and harder to miss and auto add reality visits process.  
+  
+  
+Speaker 1
+ 
+ We already used this process to add data. When new record was added, we used start signal item for it. And it was 
+also an example of entity event handling with the easiest possible way using start signals at server side. So it was 
+one of the examples of entity events for objects. I will show you how we can do it in a bit different way. And for this 
+let's imagine we can start this process not only by adding new reality data, but also let's imagine we can start this 
+process manually. We will need parent realty ID in order to transfer this data as an argument to this process. So let's 
+go to parameters add new GUID or unique identifier parameter and we can call it realty. This doesn't require any 
+programming for us to be okay bidirectional.  
+  
+  
+Speaker 1
+ 
+ So we can register such parameter as you remember, parameters are like variables at our process. And in case if we 
+start our process manually so we can call it manual start, if we do it manually, then we expect that this parameter 
+will be filled in and then we can just move on to our step where we add data and then we can replace here parent 
+realty not from signal but from this parameter. So we can replace process parameter and put realty ID parameter 
+here. So now if manual start is performed, we do not use background here, then we will use this reality ID and 
+everything will work. Of course, in case of started by signal, we need to prepare this reality ID and we will easily take 
+it from the signal. I will use formula for this.  
+   
+Speaker 1
+
+--- Page 5 ---
+
+  
+ You can see it's not so hard and it's very important for you to become familiar and to feel some confidence when you 
+work with processes because this is like a brick game, like a Lego, which you can use for much more complicated 
+Processes and business logic. If you understand well how such tools work, if you make your own simple examples 
+and understand it clearly, then you can use it for much more complicated things and you can use it quite efficiently. 
+So in my case I'm using formula to assign parameter value. Formula is assigning operator in creature. So we set the 
+value to target parameter realty ID and formula value is our expression that we save here as expression we will just 
+simply take our signal. You see corresponding icon representing this signal.  
+  
+  
+Speaker 1
+ 
+ So we can look at its title or at icon type that will help us to get it. And the only suitable parameter from a signal is 
+unique identifier of record double click and that's how we will get this data and save it as formula value. So if our 
+process started as is driven by signal so if our process started as event handling or insert, then our formula will set 
+reality ID ROM signal and then we will run our insert operation based on reality ID parameter. In case of manual start, 
+we are expecting to get this reality ID as input data and then we will do our inserts and everything will work. So this 
+is a single process that serves for us into two different situations. In a case when we add data, when we add new 
+reality or in case if reality already exists.  
+  
+  
+Speaker 1
+ 
+ But we can start this process manually. So of course we have to save it. Okay, and then we can register this process 
+somewhere, for example as action to our page. Let's go to the edit page button, find corresponding action. Here we 
+have one more action and we can call it add visits action which will run business process. What process to run Add 
+realty visits and we will select it for the select page process parameter where the record is passed realty id finally in 
+this version you see that this list of parameters is filtered. In some previous version like 8.1.1 we had a big list of 
+parameters here even not suitable not guids. Now developers finally improved this part. So thanks developers to 
+make it correctly and we also can use some icon would be fun. Nice to see how we can add some data.  
+  
+  
+Speaker 1
+ 
+ Okay, little bit plus will be a good example and add visits menu item will be our unique element code. This will help 
+us to easily find this item in view config diff part of the JavaScript code for our client module. Okay, looks good. We 
+made it. We have to save as you can see, I'm very stick to no code approach and no code tools if it's possible 
+because it helps it to get your results very quickly and efficiently. So you spend just a little time and you get 
+something that works quite well even in case if I really like to develop something to write some code. But if you can 
+avoid this and use no code. So in general it's an advantage for you. Let's try to test how it works. Open any existing 
+data, find our action, add visits and icon.  
+  
+  
+Speaker 1
+ 
+ As you can see it works, so let's try to run it. Process successfully started. And also you may find that our task our 
+part of our task. As a result of running the action, the list of the reality visit detail must be updated automatically to 
+display new records. And also you can use Enable Live Update. This is a no code option to make this update quite 
+easily and with no need to program in and send in messages using WebSocket. So let's try this simple approach 
+first. This simple approach. So now you see we have no automatic update. Let's try to reward refresh date. Now you 
+see we have some data here. So it looks like data was added correctly, but automatic update was not done because 
+we did not care about this option. Okay, let's make this live update.  
+  
+  
+Speaker 1
+ 
+ I will explain how you can do this so we can close unnecessary tabs. Let's go to search for objects and find reality 
+Visit object. We did not use this feature so far, but I will explain. So in Behavior settings there is a very important and 
+quite new feature which appeared only in version 8. This version, this feature is called Enable Live Update. Live Data 
+
+--- Page 6 ---
+
+Update. What does it mean in case if your page is shown for a user? So we have a currently alive user session. This 
+user opened some page where this object was used. So in case user opened it and the same data is changed at 
+server side. For example, you changed and recalculated some column like you recalculated some amount or status 
+or whatever. Then system is capable to automatically refresh corresponding column at client side for you.  
+  
+  
+Speaker 1
+ 
+ So it was generally intended to be used for updates. Situation when you have a record it was already opened at client 
+side and you change the data columns of the record at server side. So I believe it was initially designed for updates, 
+but it also turned out that it works well for inserts and if we have a detail with a list, so we have a list of some detail 
+and data was added at server side. This detail list is updated at client side in case if Enable Live Update option is on. 
+So let's test and check how it works. Enable this option, publish our object and now you will see the difference. So 
+you will see that system will automatically so it will automatically update corresponding data if it was added at the 
+detail. Okay, so we can close it. Go to the page.  
+  
+  
+Speaker 1
+ 
+ We need to use some good examples. So let's delete all the data records. Also, possibly we can face some cache 
+issues. Let's reward the page just to avoid any potential threat of browser caching. Okay, open it, look at detail. Now 
+add visits. And our reality visit object is now enabled its Live update feature. Now you see that it looks like data was 
+added. Sometimes it has a glitch and sometimes you see not all of the data records, but actually you see something 
+changed here. If you reload, you can see all three data records. Okay, let's remove them and try to run it once again. 
+Now you see it works well, sometimes it works, sometimes not so good. But in general data is updated.  
+  
+  
+Speaker 1
+ 
+ So if you do something like this and your end user will see the detailed data changed, so it will be quite good enough 
+to display that data was modified and you see how it works. So also it's interesting to mention that it works for 
+insert, it works for updates, but unfortunately for some unknown reason it doesn't work for delete. If we make a 
+delete at somewhere at server side, this will be not represented, not automatically updated in the list shown in client 
+side. But the lead situation is not so common, so possibly we can live with it. So if you do something like this at your 
+exam, it will be enough and you can do it as is.  
+  
+  
+Speaker 1
+ 
+ If you want to display and demonstrate more skills, you can also try to use a bit more complicated approach with the 
+web sockets with messaging from server side to the client side. I can quickly explain you how you can do this. If 
+you're really interested, we can try to make working sample of it. And let me show you how we can find it. Creation 
+websocket socket freedom UI and why Russian? I don't know. Okay, customer ethics. So we have a partner 
+customerethics.com and this partner. So this guy is Ryan Farley. It's a creation expert and a partner for many years. 
+He likes to write such articles explaining for beginners some interesting aspects of creation. So they have their own 
+like set of articles kind of knowledge base about different aspects of creation. And sometimes such articles are 
+even better than in academy.  
+  
+  
+Speaker 1
+ 
+ So we can use it for free. And the main idea is that we can. By the way, it looks like this is a classic UI stuff. No, in 
+creation. No, it's okay. Your model config and in each request we can subscribe for websocket messages and we 
+have to unsubscribe when page is destroyed. Okay, great. And here we can do something to refresh our list and so 
+on. Okay, so if interested, you can implement something like this if you have enough time today. If you're very 
+interested, we can also try this example and to make it work at our environment. But this is not so mandatory for 
+your homework. I need to explain you some words about WebSockets messaging. So in general, WebSocket in 
+creation is used as one so as alternative channel of communication between server side and client side.  
+ 
+
+--- Page 7 ---
+
+ 
+  
+Speaker 1
+ 
+ Let me show you when page of creature is opened. You can also see we have some WebSocket hard beat and it's 
+used to check that WebSocket connection is alive or not. WebSocket is the dual directional channel between client 
+side and server side. We can use this channel to send the messages from client side to the server side and from 
+server side to the client side. This option to send messages from server to client is extremely helpful because this is 
+the only way how server side of creation can tell to the client side that something is not good or something should 
+be changed or something should be displayed. For example, when we do running of some business processes like 
+calculating average price business process, you probably remember. Then server side sends messages to the client 
+side.  
+  
+  
+Speaker 1
+ 
+ And one of the specific message tells client side that we have to show some specific process driven page. So 
+system should show another page instead of current one. Let me show you how we can track this. We can go to. 
+Okay, let me show you can open again and our page we can check network filters ws, which stands for websocket. 
+So we will filter only websocket messages. But it looks like I have to reward this list. Okay, let's clear the root. So I 
+will show you how we can track websocket messages at our browser client side. Let's imagine we open some edit 
+page probably this one first one and let's check messages. Yes, we already got some websocket message sent from 
+server side to the client side. And also I expect let's check do we have something here? No.  
+  
+  
+Speaker 1
+ 
+ Okay, this one probably will better. So let me explain how it can be useful. Generally, creation uses such a socket for 
+sending messages from creation server side to the client side. For example, when we run a process calculate 
+average price. But it looks like possibly I did not see what I need here. You see. Oh, there are many. I just can't see 
+anything of everything. So yes, unavailable list license common service body. Okay, let's clear this information save 
+you see some websocket Messaging was done and it was related to process engine and let's try to run it again. Yes. 
+So now you see that one server side tells client side to show some page physically this information is sent with the 
+help of WebSocket message and it is being sent from server side to the client side.  
+  
+  
+Speaker 1
+ 
+ It has some corresponding data parameters which will be enough for client side to understand what it talks about. 
+And as you can see, we have some values here that are enough. And client side understand that if sender is 
+processed dashboard, if it has some id, then client side should search and find corresponding task to be executed. 
+You can see it here. Notification panel, business process task. This one. So client side knows that this one should be 
+shown and if we close it system returns back to previous page and so on. So this is example of how WebSockets is 
+used at creation. But also it has more different examples of implementation. So I know for sure it's used when we 
+start. For example, when we start page editor. Let me show you what happens if we start page editor we can go to 
+see.  
+  
+  
+Speaker 1
+ 
+ Oh, you don't see it here easily because we opened browser developer to wait. Okay, let's open it again. Revote. Yes, 
+now you will see that we have some websocket messaging processed here. When we do designing of our page and 
+especially when we do designing of business rules, it's also used. And now you see one more connection for 
+WebSocket was issued was initialized. So it's interesting that in Windows 10 Home Edition and Windows 11 Home 
+Edition there are some limitations in IIS on number of WebSocket channels that can be opened. And that's why you 
+have some significant limitations in working with creatio. So it only works when one page is open of creature. So it's 
+connected with WebSocket connections and also even when you work with single page.  
+   
+
+--- Page 8 ---
+
+ Speaker 1
+ 
+ But when you start to design business rules, I faced situation when managing business rules requires additional 
+websocket connections and it also failed in Windows Home version. So that's how you can track WebSocket 
+messages. You can use some filters here. You can type some messages in order to filter because you may have 
+plenty of different WebSocket messages and you may need to filter only necessary ones. And can we get the link? 
+Oh yeah, sorry. This is the link. Yes, thank you, Patty. Here is the link. And probably I I have to implement this 
+example, but maybe a bit later, because in this example we need some additional code to run Reloading of a list. I 
+have this example, but I need to check it to make sure that everything works well to provide good looking and good 
+working code.  
+  
+  
+Speaker 1
+ 
+ But this is like a technical possibility for you to listen for this websocket at client side. You also need to know how to 
+send messages at server side to the client side. Here is the link that shows how you can do this, because first you 
+will do server side sending message. By the way, this example is not perfect because here Ryan sends message to 
+all users and this is not perfect. Post message to all means it will search for all active user sessions and will try to 
+send to their user session to the browser such messages. So I recommend to use post message. It will send only to 
+current user.  
+  
+  
+Speaker 1
+ 
+ So I think it's more efficient, it's more correct and like more fair to send messages only for current user because 
+usually you need to do in like connection exactly to current user, not to anyone. And if you imagine working with 
+thousands of end users, so it will be really noisy for them to see such messages that are not intended. So server 
+side in C sharp we will use MSG channel utilities special class and run its post message method and there are some 
+arguments. I already have some example for this websocket messaging, but this example is for classic UI so we can 
+see post message. Let me show you MSG 10 utilities and you should remember that this is inside of configuration 
+namespace so you have to provide user connection as argument.  
+  
+  
+Speaker 1
+ 
+ Sender is a text MSG body as a text and such command will It's a C sharp and it will send the websocket message 
+from server side to the client side. In the client side you can subscribe for it and this is classic UI example. Here is 
+Freedom UI example and subscribing for it means that you may run some certain code in case if such message will 
+be catched at client side. This is more complicated scenario than you probably would want to do. So if you need just 
+to make it work, I think that using live update will be enough for the exam.  
+  
+  
+Speaker 1
+ 
+ This type of messaging can be important in case if you don't really need live update or if you want to make some 
+significant changes to server side and then run your necessary comments to update client side only once, which 
+means to be a bit more correct to do. For example, if you add 100 records at server side, then you ask client side to 
+update once, which will be definitely better than asking client side to update hundred of times because of live update 
+option. But it's up to you so you can go through it if necessary, if interested and make it work. You need also to find 
+example of code to refresh, to run certain handler to refresh data. If you will be really interested in it, just send me a 
+message. I will try to find good examples and prepare for you.  
+  
+  
+Speaker 1
+ 
+ Okay, let's go back to our general certification. So it was just about this advanced part of the homework. But if you 
+do just basic part of the homework, it will be also good enough. When you finish this, please keep your environment 
+on. It means that when you will start your exam, we have to look at your environment and we have to check that your 
+
+--- Page 9 ---
+
+system, your setting is working, your settings are working correctly. So at the exam session, I expect to see your 
+working environment and then we go to the test part of the session. Test part of the exam. So homework should be 
+performed before your exam starts. And the test will start at online session with the trainer. And of course you have 
+to prepare for this test.  
+  
+  
+Speaker 1
+ 
+ And before we continue, possibly let's make it five or up to 10 minutes break today. Today's Friday, all of you are a bit 
+tired. So let's make a short break and then I will explain how to prepare for the exam. Test. So we'll work with self 
+assessment tests. And it's not so easy as it may seem. So. So I will explain how to find answers, we will go through 
+test examples and I will explain how you can prepare for it. Okay, let's make a break. Quick short break. Let's move 
+on. So now we talk about how to prepare for the exam. Test. So I need to explain that our real exam includes 
+homework and test. And your own total score will be based on your homework. So you will have up to 50 marks from 
+100 for your homework. Just try to draw something.  
+  
+  
+Speaker 1
+ 
+ So 50 for the homework and also 50 for your test. Depending on the type of the test, there are different number of 
+questions. So let's talk about basic exam. And you will have 25 test questions. So it means each question gives you 
+approximately 2 marks. And in total you may have up to 100 marks. When you run the self assessment test, you will 
+have no homework part. And if you run the same self assessment test for basic exam, it includes 25 questions. But 
+this calculation logic will finally treat your results from 100 to. So from 0 to 100, it means that 25 questions will give 
+you up to 100 in this test. And it means one mistake will cost you four marks in self assessment test.  
+  
+  
+Speaker 1
+ 
+ So I'm trying to explain that in your self assessment test you will have slightly different so different results from the 
+same answers if you do it on the exam. And self assessment test is harder and real exam is easier. So in real exam 
+you may do up to seven mistakes from 25 or 28 questions. Let me show you how you can prepare for the exam. So 
+exam for developer includes. So we have two levels, basic or advanced. Let's look at advanced part because it will 
+show you some additional categories which are not shown in basic excel. So advanced level includes 28 theoretical 
+questions. We can start this test and let's click Begin test. You will see questions with multiple choice. They are 
+shown with square options.  
+  
+  
+Speaker 1
+ 
+ And also you will face questions with single choice like radio button with circles on the letters not squares. And we 
+have to answer this test properly and correctly. And please note test self assessment test questions will be similar 
+to the same questions that you will get during real exam, but they will be not identical. So you should expect. You 
+should see that such tests are not identical and you should be very careful. Okay, let's try to follow this test so you 
+will see how you can do it. Purpose of the DB attribute for the redis section of connection strings. Let me show you 
+where we are about it. So here when we set up our local system, we had redis section and DB section. Now the 
+question is about redis section and DB parameter. So redis section DB parameter.  
+  
+  
+Speaker 1
+ 
+ So this is about this setting and what are the purpose? So this purpose is a redis database number. Yes, this is 
+correct. But this is multiple choice. So we must select at least one more item. Must be unique to each application 
+environment connected to the same redis server. Yes, and indicates SQL database. No, it's not true. Optional. No, it's 
+not true. It's mandatory. So now you see we have all answers. Let's go next. How users with system administrative 
+privileges are different from regular users. Data access restrictions do not apply. Yes, no difference. No, it's not 
+correct. And if this is multiple choice, so we have to select at least one, this is also correct. Can view all data and no 
+restrictions. Yes. Let's move on what system settings should be created to implement standard odd numbering.  
+ 
+
+--- Page 10 ---
+
+ 
+  
+Speaker 1
+ 
+ This is about very old times when you can use such system setting. And I can show you examples. We will see what 
+it is about. Let's go to system settings. Let's search system setting which is the last number. Oh, we probably don't 
+have system settings related to business sections code. Okay, let's try last number. Oh, accountless number, 
+Knowledge base Last number. So we still have some examples of numbering but with very old approach where we 
+have something like entity last number and entity code mask. Code mask. Yeah, we have for account coding mask 
+and count last number. So the correct answer here for this test is something called mask something last number 
+this one. And this set of system settings was used years before. We had auto numbering feature as a default value 
+at object properties.  
+  
+  
+Speaker 1
+ 
+ Now we use the sum default values for real t classic types. So we used it here columns code autonumber and we 
+use the auto number prefix number of digits and that's how this numbering can be implemented now in current 
+environment version. But for previous versions it was a bit different and we had to use couple of system settings 
+and special code that should be used to generate number. So we have to answer this. Okay, which tools could be 
+used for proper transfer of configuration modifications between environments? So in order to test and to run at 
+production. Tushar, thank you. Thank you. You will receive all video recording homework and all necessary 
+references and messages. No worries Tushar, thank you. And also you will receive proposal to pass our feedback. 
+So to provide some feedback from your side, it will be really important.  
+  
+  
+Speaker 1
+ 
+ Thank you to. Okay, so proper transfer of changes target database. No, no, we can't replace the database. Replace 
+executable files. No, we can't do this. Export in configuration section. Let me show you what it is about. Here is 
+configuration section. Here is export action. Okay, this is a valid way to export your package, especially for classic ui. 
+It's totally correct. Workspace console quite old utility but still working. So. Yes. And in real exam you will also face 
+clio utility option here. So this is also correct. Clio is correct way to export and import section settings between 
+packages. So we practiced with it yesterday. Install from file in application hub. Yes, it is also correct. We used it to 
+demonstrate how you can manually load your packages to some test environment. So this is correct.  
+  
+  
+Speaker 1
+ 
+ I have a quick question about the multiple choice questions, if that's okay. Yes, yes, please. So is it basically all or 
+nothing? So say if it's a Multiple choice of 5. Say for. For this example here, say if we only pick two, does that just 
+count as being incorrect or is it somehow weighted? Do you need all three? If that makes sense. If in this question 
+you pick only two, it will be treated as incorrect, unfortunately. Okay, perfect. You have to select all correct options, 
+otherwise question will be treated as answered with mistake. Yes, I agree it's a bit tricky, but there are not so many 
+questions where you will face so big amount of options. So let's move on. Two developers Work with the same 
+creation.  
+  
+  
+Speaker 1
+ 
+ In general, it's not so good and it's not recommended because they can temporarily do some violation like you made 
+start to compile and another developer will see hanging of the website. So this is something that it's better to avoid 
+and interfere with other developers. So this is correct Option is not recommended. So not recommended Other 
+options like submitting changes of svn, it's also not true. And to publish and develop an environment Interfere can 
+work when publishing users will not interfere. No, this is not true. So let's move on. I need to tell you that in total now 
+we have the test which includes different categories. Here you can see name of the category and different 
+categories have different number of questions. So in total our test has more than 120 different questions.  
+   
+
+--- Page 11 ---
+
+ Speaker 1
+ 
+ But for this test you will always get random 28 questions from different categories. It means that if you want to 
+prepare better, you need to run this test more than once. I recommend you to start it five or 10 times. So you will feel 
+much more confident when you will see all different questions and when you will know for sure and you will practice 
+with answers. So it will take some time, but this is how you can prepare better for the test for the exam. So this is a 
+question about SQL and in our certification we think that SQL knowledge is also important to be a good creation 
+expert. That's why we ask something like this. So what are the difference between truncate, table and delete from? 
+So truncate is used for triggering delete ignores. No, it's not true. There is no difference.  
+  
+  
+Speaker 1
+ 
+ No, it's not true. When truncate is called table is completely cleared and deletes every record separately row by row. 
+Yes, this is true. This is difference here. Let's move on. Object should be used as parent object. So any virtual it's not 
+true. Not recommended to specify parent not true Base object and some of its child items. Yes, this is true. So main 
+idea why we use inheritance is to get parent object structure and event handling so behavior. And that's why we 
+almost always use inheritance from base object because of getting standard columns and standard behavior. So 
+let's go on. This question is about package architecture, not a package component. This is about knowledge of what 
+is part of a package and what is not part of package. So definitely not a package component is embedded package.  
+  
+  
+Speaker 1
+ 
+ The reason is that packages cannot be embedded into each other. So packages cannot be included into another 
+package and embedded packages are not allowed. Not a package component. Schemas means objects, client 
+modules, processes they are package components. So not correct. Data not correct. Scripts not correct. External 
+libraries not correct. Change log files correct. It's not a package component. In real exam, your question will be 
+opposite, so you should be careful with opposite questions. So you should read it. Answer exactly of the question. 
+Purpose of SQL scripts from package architecture we discussed it. We made a couple of scripts ourselves and you 
+see we have a delete script for example create a view script, for example. So we already have some experience. 
+Lookup records. No basic configurable items, no arbitrary scripts for some changes in the database. Yes. Let's move 
+on.  
+  
+  
+Speaker 1
+ 
+ One more package architecture question. If you do not specify dependency in the package, what will happen? 
+Package cannot be fixed in version control. No, it's not true. Functionality will be available. Parent first version of the 
+product will not be available in this package. Yes. Configuration items cannot be created. No, it's not true. If your 
+package has no dependencies, you can create some items inside, but you will not be able to use parent base product 
+functionality. So dependencies are about this base product functionality. Okay, let's move on. Next, what is the 
+purpose of data binding tool? We studied it, we installed this data binding tool so we already know how to use it. And 
+of course it's not complete queries in the cloud. It's not updating data uploading, no. Data binding elements in the 
+packages. Yes. Printables? No. Let's move on.  
+  
+  
+Speaker 1
+ 
+ This question is about Marketplace applications and this category is on the for advanced level. So we already 
+studied almost all of proposed marketplace applications. So maintenance tools for creation. We installed it on our 
+environment. Remember here. Here we have for clearing Redis for a start app. So this is example of Marketplace 
+maintenance tools and of course it's restart web application and clear redis this one. Not data items, not deleting, 
+not reading logs standard web services quite hard category because we did not study it so deep and you need to 
+maybe dig a bit deeper into creation documentation. So what permissions to work with odata? Oh, I should tell it for 
+you. So in order to enable odata we should go to special setting of system called operation permissions. We have 
+different set of operation permissions enabling functionality for different logic for different users.  
+ 
+
+--- Page 12 ---
+
+ 
+  
+Speaker 1
+ 
+ And we can search functionality for all data access to all data. By default it's provided for all administrators. So 
+system administrators, yes, you can see single users by default cannot operate without data, so you should provide 
+access for them. And of course we need to use can use our data service operation. And this is not correct. Another 
+is not correct. Additional question about standard web services which web service you can use to launch 
+processes? You already remember we used it when we started our sections and when we started calculations 
+calculate average price. I can show it for you. Let's select some data clear filter all. Now you see here is process 
+engine service. As we see this is business process which starts this web service starts business processes. So 
+process engine service not only from third party application but also from inside of creation.  
+  
+  
+Speaker 1
+ 
+ How do you use custom types? This is about data contract and data member. We discussed it when we build our 
+web service and when you need to transfer additional data so large big data arguments. You should use special data 
+contract class for this. This is correct answer other is incorrect can't use types this is not true Implement custom 
+type class connect namespace no any word about data contract so this is not true A is True Moving one more 
+standard Web Services question HTTP for OData to create new record we used it in our postman Here is my 
+postman and here is example of a post query to create new data record. So the answer is post Obviously this one 
+when you will run the same query I would say let me show you back and forth. Next you will see that list of answers.  
+  
+  
+Speaker 1
+ 
+ Now you cannot see it, but usually it's randomized. So in order to make it hard to remember, you see that when you 
+open same question next time it shows you randomized options randomized positions of options. So now post is on 
+the third place and previously it was on fourth place. But it remembers your answers. So if you want to go back, you 
+can see your answers that you provided. If you want to go further, you can switch to any question you worked on. 
+Yes okay, let's click next. Server side development this category is about some server side settings and 
+programming and disable file system development mode we need to make filesys file design mode False we need to 
+set this one.  
+  
+  
+Speaker 1
+ 
+ Please be careful Disable file design False Enable file design True you should not mix it this one is correct Entity 
+schema query you remember this class? We used it for server side calculations and operating with data Also similar 
+approach with client side Entity schema query can be used at JavaScript part with the client side code it can also 
+work if you're interested, you can find other examples. So entity schema query has some features Access rights 
+restriction yes Additional setup of queries like hierarchical queries and paging yes and caching yes so everything is 
+true here. One more server side question a DB executor so DBexecutor is a Class that is very close for data 
+operations and data selection. We used some example of it when I showed you how to use class. Select class to 
+read data from the database directly.  
+  
+  
+Speaker 1
+ 
+ So how to properly use it? This is about protection from memory leakage, you remember? So we have to use dispose 
+if you do not use using yes or you can use using operator yes in single thread, yes, but now the documentation tells 
+that you already can use multiple threads, but I would not recommend you to apply it widely. So I'm still thinking that 
+using multiple threads here may cause some memory leakage. So single thread is still correct. Answer in this test 
+Documentation says that you can use multiple threads, but it's up to you. So up to your consideration in this test, C is 
+correct. Single class Single thread instance usage how to add data to cache storage Multiple choice question this 
+and this are correct answers. First two options are incorrect. More server side questions. Method must be called to 
+apply changes.  
+ 
+
+--- Page 13 ---
+
+ 
+  
+Speaker 1
+ 
+ We did not actually study the entity class and you can study it yourself. You can find a lot of examples like this. I will 
+show you. Go to terrasoftware Web Teresa configuration, Search through all C sharp files for a sample where we 
+have save method. You will find many different examples of working with entity. So I will show you how. In general it 
+looks like you create an entity instance here. Then you do some of its settings like setting column values, setting 
+default values, maybe saving some parameters. And then finally you do save. In this case, system will perform 
+insert. If you use class entity to select some existing data and then provide its columns, then you may run an update. 
+Let me show you some examples for each. No. Yeah, this is example.  
+  
+  
+Speaker 1
+ 
+ So when you use entity is an instance of an object so in memory and you can use it for data management. But one 
+entity may operate only with one data row at a moment. Then you can construct some filters and search for a 
+corresponding record. If you did not find it, then you can do insert. If you find it, you can just provide column values 
+and save will mean update. So depending on the status of your class, I mean depending on the state of your class, 
+it's possible to run the same method to make insert or update and save. An entity is quite useful class because it 
+supports events, it supports entity events. And if you have something like listening class or you have a start signal, 
+working with entity means that it will be triggered properly.  
+  
+  
+Speaker 1
+ 
+ So here we have a question about how to apply changes. Working with entity Obviously this is running of the save 
+network. Okay, let's move on features. Working with data using entity of course it offers all possibilities to read, add, 
+edit and delete. So Entity class can be used for creating records or updating records for selection and for delete. You 
+may find all four examples in Base product configuration using search and File system. What properties can be used 
+for only in edit page? This is for Classic UI and the correct answer is Rules and details. This is about Classic UI so 
+we can go to some Classic UI sample this one client module Classic Page and rules and details. So we have 
+methods now it's called business rules. Rules are outdated.  
+  
+  
+Speaker 1
+ 
+ So rules and details are supported in Classic UI edit pages only and not supported in list pages or they are called 
+section pages. In section pages, rules and details are not present. Oh, details are here. Funny stuff. Oh my question 
+has to be updated. Yes, it looks like system change from this moment, but this question still thinks that details and 
+rules so this is correct answer for this question is outdated. We have to fix this entity schema name Also for Classic 
+UI stuff. This one is about object name that is used for current page. So of course the name of the object entity 
+schema used for this module trigger field validation in edit pages Multiple choice at least two answers.  
+  
+  
+Speaker 1
+ 
+ So when we save yes, validation will be triggered when opening page for insert no, but currently we have to review 
+this because when Freedom UI page opens, it also triggers for validation delete no switching focus from field to 
+field. Yes, we are almost at the end and schema must be used as parent for a section schema. So how we can know 
+this? You can go to Classic ui, look at the properties of client module and find Parent object base section V2 this is 
+correct answer why you need to know this. In some complex cases for Classic UI it makes sense to manually 
+provide parent item and that's why so previously it was important to know such items. Now in Freedom UI it's not so 
+necessary and the question is a bit outdated.  
+  
+  
+Speaker 1
+ 
+ But for those who work with Classic UI this knowledge I think it's quite actual. So this section V2 is correct here. One 
+
+--- Page 14 ---
+
+more question. Schema must be used as a parent. So this is a client side question Parent for section page which 
+means edit page. Let's go to our example of Classic UI section page open it. Let's look at its parent base module 
+page v2 is used as a template for all edit pages for sections in classic UI. So we have to find here base module page 
+V2. This is a parent page for all creation base for all creature Classic UI section edit pages and it was very important 
+in Classic UI programming Especially when you manually do some changes in your client modules for Classic ui. 
+Okay, one of the last questions here for client side, how to add styles.  
+  
+  
+Speaker 1
+ 
+ We did not study this. In Classic UI it makes more sense. And in Freedom UI it's also possible but not so practical. So 
+let's imagine if you create new module, it's possible to set styles in less tab. So you can see we have a Special less 
+tab, JavaScript tab and less tab. And the answer is that in the client schema, set module styles and less tab. This 
+one we don't have a CSS tab, we don't have less property, so we have less step over module. This is correct answer. 
+Now we can finish. Let's see how good we are. Yes, excellent result. It means no mistakes. But when you will prepare 
+for the test, you will have many mistakes. Maybe half of the questions will be mistakes and you will have 50% only 
+from 100.  
+  
+  
+Speaker 1
+ 
+ So don't be so upset because each mistakes, each mistake takes 4% from your score. And when you run self 
+assessment test you need to only to see different questions, potential possible answers and practice with it. So don't 
+be so focused on final results. And when you're running self assessment tests, you need to see all variety of existing 
+test questions. Finally, you will get better and better with this test. And in real exam you need to earn at least 85 and 
+each mistake costs you just 2%. So if you do seven mistakes you will lose 14% and you will finally get 86 which is 
+still enough to get certified. So in real exam you may do up to seven mistakes. So it's quite fair.  
+  
+  
+Speaker 1
+ 
+ If you do seven mistakes in this self assessment test, you will lose 28 marks and your final score will be 72. But don't 
+worry because your score in self assessment is not so important as your knowledge of answers of and your 
+knowledge of existing questions. So that's how you can prepare. Of course you will need to run this test not that one 
+or two times. I recommend you to run it maybe five or ten times. So you will become better at this test. And finally 
+you will feel more confident and you'll be ready for the exam. So now our session comes to an end. If you have any 
+questions, please ask me and your Rakhi asked questions. Yes please. We have time today so let's. Let's look at the 
+questions from our participant.  
+  
+  
+Speaker 1
+ 
+ And here is what this is a question from Rakhi and this is about client side programming and we did not study this 
+part. It's about send box Messaging. I can show you where you can find answers about this. I'm sure you'll find it 
+quite boring because such messaging made sense in Classic UI and not so practical in Freedom ui. Let me explain 
+development Front end Classic UI send box messaging so we have two types of client side messaging. Websocket 
+messaging, mainly used from server to client, and sandbox messaging which is used only between client side 
+modules. In Classic UI there are a lot of separate modules that know almost nothing about each other and they have 
+no reference to each other. There are many situations where such modules need to exchange data between them.  
+  
+  
+Speaker 1
+ 
+ And for such purpose, messaging mechanism was designed and this is sandbox messaging mechanism which is 
+only working at client side between modules. Between client side modules. There are some technical details about 
+it. So just for your reference I will answer. I will provide you the link. But let's go closer to the question. So there are 
+different types of client side sandbox messages. Point to point messages which are designed to be triggered and 
+then processed and broadcast messages which can be triggered and then processed in many places. In general, 
+message means some piece of information that is submitted from one module and then possibly can be like 
+
+--- Page 15 ---
+
+processed or taken by other modules. Modules have no information between each other about each other. And there 
+is a central dispatcher called Sandbox which is capable to handle such messages and properly dispatch them.  
+  
+  
+Speaker 1
+ 
+ So messages, they have different types and correct answers. Here are point to point message returns an object 
+broadcast messages does not. Yes, this is true. Probably I have to show it as a green color. Yeah, so this is true. And 
+subscribing broadcast message without channel only once. If no, no, no. Find point to point message without a 
+channel and subscriber will get replaced. So this is about point to point messages. This is also true. Broadcast 
+returns an object point to point. No, this is not true. So this is definitely not true. And this is also not true. So we have 
+only two correct answers here, A and C. So Raki, I hope it's clear A C are correct. You can read more about such 
+messages at Academy. This is about Classic UI programming.  
+  
+  
+Speaker 1
+ 
+ I can quickly show you examples of how it can look like and example of sandbox messaging. So in such messaging 
+we have an initializer. So kind of a person who can initiate this message. It's called publisher. So a person. So in our 
+case it's a module which like Start asks system to run some particular functionality and it means publishing a 
+message. Message can be correctly described in the body of client module. And we have methods to register and 
+then to publish it. So it's like initialize initiated and ask system to run it. We ask Sandbox. Here you can see Sandbox 
+is a central dispatcher who is in charge for processing of such messages. The party who will be responsible for 
+processing this message is called Subscriber.  
+  
+  
+Speaker 1
+ 
+ Subscriber is a party, so it's a module which declares that it can process certain messages and it also should 
+register them and then this module must subscribe. Message has its own identifier. This is a text code and message 
+when subscribed may have a method which will be actually used for getting message data and do something useful. 
+So publisher initiates a message thanks to Sandbox, Subscriber knows about it and gets corresponding arguments 
+and performs useful logic. The main reason of such messaging mechanism is that modules are independent from 
+each other. They do not know any reference from each other and that's why such mechanism was necessary to keep 
+and maintain independence, but make possible interaction between modules Another image from Rakhi how to 
+define which properties events? It's very old question and you can easily guess it.  
+  
+  
+Speaker 1
+ 
+ I think we have to remove this question from the test because it was from very early version 7 settings and it's about 
+bind config for properties events for events. So A is correct here, but we will remove this question soon. So this 
+question does not teach you anything because now it's totally not practical, neither in classic UI nor in Freedom UI. 
+So old, very old question for 7.2 or something like this and A is correct, you can guess by events for events you can 
+guess the answer. Thank you Rakhi for your interest, for your efforts for preparing for the exam. So you will have 
+three weeks in total. You may run your exam earlier if you want. So for example, if you're really ready with the 
+homework, maybe you can run your exam even at the end of next week.  
+  
+  
+Speaker 1
+ 
+ So just make sure your homework looks good, run tests several times and then for example, some of you may apply 
+for the exam and run it next week. But in general, usually participants need from two till three weeks and this is time 
+quite fair which will be totally comfortable for you to prepare for your exam and then run it today you will receive your 
+homework file and please respond at Please respond on my email with your confirmation that you are ready to or 
+you plan to pass FastTrack certification and I will provide you individual date and time of course, taken into 
+consideration your time zone. So you will get something suitable to your time zone, of course, and each of you who 
+apply for this will get your homework and individual date and time for the exam session and Zoom link.  
+ 
+
+--- Page 16 ---
+
+ 
+  
+Speaker 1
+ 
+ So you will receive everything necessary in email. And when the proper date will come, I will wait for you in Zoom 
+session when you will finally proceed with your test. With your exam test, you will receive your certificate which will 
+be available for you always at the Academy. Okay, here is my academy, here is my profile. So you will find your 
+certificate when finished. Of course you will find your certificate in your certificates and badges section. You'll be 
+able to download results of your test and get the PDF version of your certificate as downloaded file if you want. And 
+that's how our session, that's how your certification will be finished. So, and then this certificate is valid for two 
+years.  
+  
+  
+Speaker 1
+ 
+ At the end of this period, while your certificate is still valid, you will be able to run recertification, which means 
+getting new certificate by running test only with no homework. So if you want, when you have current certificate, 
+you'll be able to get new one with a simplified procedure. So that's all for today. I thank you for your time. If you have 
+any questions, any more questions, please tell me. Yeah, I have another one, if that's okay. Yes, please. It's about the. 
+So it's about the exam. I just. If you wouldn't mind clarifying the difference between Basic and the Advanced. I think 
+you said there's more questions and the weighting of answering incorrectly is different. Yes, the main difference 
+between Basic and Advanced is that advanced has one more homework task.  
+  
+  
+Speaker 1
+ 
+ Yeah, and advanced has 28 theoretical questions, while basic has only 25 theoretical questions. So Advanced is a 
+bit. Is a bit harder to prepare because of more question categories. But in general they are like similar. So if you 
+spend enough time, you will be able to pass Basic or Advanced with the same level of errors, I think. So maybe it's 
+better to apply for Advanced. Yeah, you can apply for Advanced just from the beginning with so like skipping base 
+part. So you can apply for. For Advanced just. Just with the first attempt. Okay. What? There was something else? 
+Sorry. Now, so how to start an exam, you will get the link and this is a one time link which you will be provided during 
+the online session. So when you will connect to Zoom, we generate one time link for you.  
+  
+  
+Speaker 1
+ 
+ And unfortunately such links work only once and that's why we have to generate it each time when participants 
+wants to pass an exam. Oh yes, sorry. So the. The exam and the going over the homework, there are two separate 
+occasions, are they? So one time we'll have a meeting to go over the assignment. Or the homework. And then 
+sometime a different time. Then will be when we set for the actual exam. Is that correct? You will receive email with 
+the homework. If you agree to pass FastTrack certification. You just have to respond that okay, I'm planning to pass 
+an exam. Please provide me exam date. And from this moment you can start doing your homework. And you can do 
+it fully offline. So no any connection with the team trainer. At the real exam, you will have to show your results.  
+  
+  
+Speaker 1
+ 
+ When we will have online session, you will show your homework. We will see if it's working. Actually, do we have 
+some serious errors there. And at the same time, after checking the homework, which will take just 10 minutes, then 
+you will run your test, which will take all rest time. But usually time is not a problem. And one hour will be totally 
+enough to check your homework and run your test. Okay, that's brilliant. Thanks. Thank you. Paddy. I saw one more 
+question here from. From chat. Maybe microphones. Any. Any questions? Hi, Dimitri. Yes, Tezo, please. My question 
+about the previous lecture. It about the action. We made it to calculate average price. The average is calculate price 
+divided by area, right? Oh yes, exactly. Okay, but when I do the action, the result is not. Not exactly true. All right.  
+   
+Speaker 1
+
+--- Page 17 ---
+
+  
+ Oh, so you are worried about the business sense of this time, of this type of cultivation. Or you have some errors in 
+execution? No, no, the execution is right. But the result, the number, it's not like when I calculate it in phone. You can 
+check. You can debug and check. Let me show you. So normally, let's imagine we have some houses for sale. They 
+all have different prices, all have different areas. So we select any house for sale. Maybe let's fix this some stuff so it 
+should not corrupt our results. Okay, so we have a lot of houses for sale. We can run process for calculation average 
+price. Then we have average price value. But this price is result of summarizing all prices for corresponding type of 
+reality. And the same offer type divided by all area of all the objects.  
+  
+  
+Speaker 1
+ 
+ So in general, it looks like we have 300 bucks. 311 bucks per square foot. So it means we divide it and this number 
+represents value per square foot, but not per realty item. So not per a house. And you if you see something totally 
+different here, or if you see nothing, you can check how your calculation went on. And you can go to process log if 
+you have. Okay, let me show you. Process library. Calculate average price process. You can enable trace. We already 
+enabled it Trace. Then you can go to process log. So if you Started your process with enabled trace you can open it, 
+you can see how your calculation finished and you can show trace data after your script task part here. Show show 
+trace data will show you all your parameters including your results of calculation.  
+  
+  
+Speaker 1
+ 
+ So it looks like this data was the result of our calculation and it looks like more or less close to reality $300 per 
+square foot according to our current prices and areas. So area is used here in this calculation. And also if you're not 
+happy with this number, you can try to do debugging of server side code like we did with Visual Studio Opening 
+correspondent average price calculation script here methods wrapper so you remember we did it. And you also can 
+put breakpoint and restart your app. Attach your visual Studio to your worker process. We did it during our sessions 
+so you can handle and run your code line by line. You can see what actual values are used into this calculation, what 
+actual result was obtained. So you can find explanations for everything related to this calculation procedure. Is it 
+clear? Basil?  
+  
+  
+Speaker 1
+ 
+ Yeah, yeah. Thank you. So if you have zero it's very oh so it's quite often happens that you have just small mistake in 
+your process. So if you find that you have just zero there you can go to your average price calculation. And I also 
+sometimes do this mistake. So it's quite common I think when you have final show results pre configured page you 
+may just forget to set corresponding parameter here. This average price is a page parameter and AVG price is our 
+process parameter. So we transfer our process parameter to the page. If you forget to do this you will constantly get 
+zero because no data is coming to your page parameter. Such process parameter AVG calculation was generated 
+here and this is our line of code where we saved it. Then it is kept in process memory here.  
+  
+  
+Speaker 1
+ 
+ Then at next step it will go to page parameter here if you do something so if you lost your data something on the 
+way so you will see zero and you should debug your process, you should debug your script task. And we already 
+discussed how to do this. Rakhi is asking Rakhi yes, you can reply on Monday or whenever it will be suitable. But of 
+course it makes sense to not take too much time because in total we have up to three weeks of a deadline for fast 
+track certification. If you are not ready for such a quick start and you need much more time then you can apply for a 
+regular certification at Academy website. Regular certification has a bit different homework. It also includes creating 
+sections, details, business logic and some server side web service.  
+  
+  
+Speaker 1
+ 
+ But I think that regular Certification is a bit more harder and it has different variants. There are different subjects, not 
+just one realty, there are different subjects. So you will probably take more time to do regular certification. So that's 
+
+--- Page 18 ---
+
+all for today. I thank you for your time. If you will find some more questions that you forgot to ask now, please use 
+your my email. I will be happy to answer Today I will send you final email with all fast track certification with all video 
+recordings. And please remember video recordings at Zoom will stay only for 20 days. So if you want to download 
+them, please hurry up because Zoom videos for our first session will expire very soon and each video will expire in 
+20 days after the moment of creating. So of course I will save them separately in another location.  
+  
+  
+Speaker 1
+ 
+ But now you have automation with Zoom and with already prepared links for download. So probably it makes sense 
+to use existing links without waiting for me to host the same video somewhere else. And that's why it makes sense 
+to download it today. And Basil, if you fail the exam, yes you can take it again. So we can support some like rational 
+number of attempts, like maybe up to three attempts to run your fast track exam and it's not really hard thing. So if 
+you fail it once, no problem. Usually participants do quite well with their homework and test becomes a bit more 
+surprisingly complex for them. So if you do your homework well and then fail with your test, then you can apply next 
+time maybe in several days running test only.  
+  
+  
+Speaker 1
+ 
+ So your homework, if you do it well, no need to do it again for the next exam, yes you can take it again. Thank you 
+Basic for your question. So if any other questions please tell me. I will do my some final preparation step to 
+download everything to file system to submit to version control. And thank you very much for your time. Yes thank 
+you Andres for your feedback and also so I will wait for your answers for your response on proposal to start fast 
+track certification. Thanks a lot for your time for your dedication and efforts with studying the platform. It was my 
+pleasure to provide such training sessions for you. Hope to see someone from you at our exams. Have a great 
+weekend. It was hard two weeks for you to study abroad. So thank you very much for your time.  
+  
+  
+Speaker 1
+ 
+ Our session is over. Thank you and goodbye. It.

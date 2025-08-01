@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDataWriter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDataWriter
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Common.Data.IDataWriter">
+  
+  
+  <h1 id="Terrasoft_Common_Data_IDataWriter" data-uid="Terrasoft.Common.Data.IDataWriter" class="text-break">Interface IDataWriter
+  </h1>
+  <div class="markdown level0 summary"><p>The base interface for classes that implements sequential data writing.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Common.Data.html">Terrasoft.Common.Data</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Common.dll</h6>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDataWriter : IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_Close_" data-uid="Terrasoft.Common.Data.IDataWriter.Close*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_Close" data-uid="Terrasoft.Common.Data.IDataWriter.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Closes the current instance <a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Close()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteFinishCollection_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteFinishCollection*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteFinishCollection" data-uid="Terrasoft.Common.Data.IDataWriter.WriteFinishCollection">WriteFinishCollection()</h4>
+  <div class="markdown level1 summary"><p>Ends recording the current collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteFinishCollection()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteFinishObject_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteFinishObject*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteFinishObject" data-uid="Terrasoft.Common.Data.IDataWriter.WriteFinishObject">WriteFinishObject()</h4>
+  <div class="markdown level1 summary"><p>Finishes writing the item to the output stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteFinishObject()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteSerializableObjectValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteSerializableObjectValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteSerializableObjectValue_System_String_System_Object_System_Object_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteSerializableObjectValue(System.String,System.Object,System.Object)">WriteSerializableObjectValue(String, Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes and writes a given object as value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteSerializableObjectValue(string name, object value, object defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>Default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteStartCollection_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteStartCollection*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteStartCollection_System_String_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteStartCollection(System.String)">WriteStartCollection(String)</h4>
+  <div class="markdown level1 summary"><p>Starts recording the collection with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteStartCollection(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteStartObject_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteStartObject*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteStartObject" data-uid="Terrasoft.Common.Data.IDataWriter.WriteStartObject">WriteStartObject()</h4>
+  <div class="markdown level1 summary"><p>Writes the root element to the output stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteStartObject()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteStartObject_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteStartObject*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteStartObject_System_String_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteStartObject(System.String)">WriteStartObject(String)</h4>
+  <div class="markdown level1 summary"><p>Writes the root element with the specified name to the output stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteStartObject(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the root element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_Object___" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.Object[])">WriteValue(Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes a given array of values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(params object[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>An array of values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Boolean_System_Boolean_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.Boolean,System.Boolean)">WriteValue(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for boolean values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, bool value, bool defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">System.bool</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Boolean_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_DateTime_System_DateTime_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.DateTime,System.DateTime)">WriteValue(String, DateTime, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for DateTime values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, DateTime value, DateTime defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">System.DateTime</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_DateTime_System_DateTime__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Decimal_System_Decimal_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.Decimal,System.Decimal)">WriteValue(String, Decimal, Decimal)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for decimal values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, decimal value, decimal defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">System.decimal</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Decimal_System_Decimal__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Double_System_Double_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.Double,System.Double)">WriteValue(String, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for double values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, double value, double defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">System.double</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Enum_System_Enum_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.Enum,System.Enum)">WriteValue(String, Enum, Enum)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for enum values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, Enum value, Enum defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Enum</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">System.Enum</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Enum</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Enum_System_Enum__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Guid_System_Guid_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.Guid,System.Guid)">WriteValue(String, Guid, Guid)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for guid values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, Guid value, Guid defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">System.Guid</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Guid_System_Guid__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Int32_System_Int32_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.Int32,System.Int32)">WriteValue(String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for int values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, int value, int defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">System.Int32</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_IO_Stream_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.IO.Stream)">WriteValue(String, Stream)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of the element with the given name and the values ​​from the specified stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, Stream value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The stream from which the recording is made.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_IO_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_String_System_String_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.String,System.String)">WriteValue(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for string values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, string value, string defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Type_System_Object_System_Object_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,System.Type,System.Object,System.Object)">WriteValue(String, Type, Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value, converted
+to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, Type valueType, object value, object defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">valueType</span></td>
+        <td><p>Value type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>Default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_System_Type_System_Object_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_Terrasoft_Common_DataConverter_System_Object_System_Object_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,Terrasoft.Common.DataConverter,System.Object,System.Object)">WriteValue(String, DataConverter, Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value, transformed
+in accordance with the specified type of transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, DataConverter converter, object value, object defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataConverter.html">DataConverter</a></td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>Transformation type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>Default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_Terrasoft_Common_DataConverter_System_Object_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Common_Data_IDataWriter_WriteValue_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue*"></a>
+  <h4 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_Terrasoft_Common_LocalizableString_Terrasoft_Common_LocalizableString_" data-uid="Terrasoft.Common.Data.IDataWriter.WriteValue(System.String,Terrasoft.Common.LocalizableString,Terrasoft.Common.LocalizableString)">WriteValue(String, LocalizableString, LocalizableString)</h4>
+  <div class="markdown level1 summary"><p>Writes the value of an element with a given name and a given default value (for localizable string values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteValue(string name, LocalizableString value, LocalizableString defValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableString.html">LocalizableString</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of an element of type <span class="xref">Terrasoft.LocalizableString</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableString.html">LocalizableString</a></td>
+        <td><span class="parametername">defValue</span></td>
+        <td><p>The default value for the item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Common_Data_IDataWriter_WriteValue_System_String_Terrasoft_Common_LocalizableString_Terrasoft_Common_LocalizableString__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.Process.DataWriterUtils.html#Terrasoft_Core_Process_DataWriterUtils_Write_Terrasoft_Common_Data_IDataWriter_System_String_System_String_">DataWriterUtils.Write(IDataWriter, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.Process.DataWriterUtils.html#Terrasoft_Core_Process_DataWriterUtils_Write_Terrasoft_Common_Data_IDataWriter_System_String_System_Guid_">DataWriterUtils.Write(IDataWriter, String, Guid)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.Process.DataWriterUtils.html#Terrasoft_Core_Process_DataWriterUtils_Write_Terrasoft_Common_Data_IDataWriter_System_String_System_Int32_">DataWriterUtils.Write(IDataWriter, String, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.Process.DataWriterUtils.html#Terrasoft_Core_Process_DataWriterUtils_Write_Terrasoft_Common_Data_IDataWriter_System_String_System_Boolean_">DataWriterUtils.Write(IDataWriter, String, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

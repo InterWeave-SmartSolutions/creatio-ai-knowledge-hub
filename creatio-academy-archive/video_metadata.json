@@ -1,0 +1,127 @@
+{
+  "extraction_date": "2025-07-22T12:13:53.985280",
+  "total_urls_found": 14,
+  "total_videos_downloaded": 10,
+  "videos": [
+    {
+      "title": "Tech Hour - Request management using Creatio Portal",
+      "duration": 3165,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20210324",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=DGz8SFw0fjs",
+      "download_date": "2025-07-22T12:08:10.069010",
+      "local_file": "videos/general/video_1_Tech Hour - Request management using Creatio Portal.mp4"
+    },
+    {
+      "title": "UI/ UX Building pages in Freedom UI designer",
+      "duration": 3565,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20230810",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=qyqnRbUHnjQ",
+      "download_date": "2025-07-22T12:08:36.025738",
+      "local_file": "videos/general/video_2_UI⧸ UX Building pages in Freedom UI designer.mp4"
+    },
+    {
+      "title": "Tech Hour - Docker for Creatio",
+      "duration": 3901,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20210401",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=cwTI8pIa_5g",
+      "download_date": "2025-07-22T12:09:15.933815",
+      "local_file": "videos/general/video_4_Tech Hour - Docker for Creatio.mp4"
+    },
+    {
+      "title": "Set up integration with Google services, MS Exchange and MS Office.",
+      "duration": 3250,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20220930",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=8AmvgePAPAE",
+      "download_date": "2025-07-22T12:09:49.311643",
+      "local_file": "videos/general/video_5_Set up integration with Google services, MS Exchange and MS Office..mp4"
+    },
+    {
+      "title": "Tech Hour - Marketplace Apps: Editor Picks",
+      "duration": 4360,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20210617",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=kZJe7CwHUXk",
+      "download_date": "2025-07-22T12:11:13.933156",
+      "local_file": "videos/general/video_9_Tech Hour - Marketplace Apps： Editor Picks.mp4"
+    },
+    {
+      "title": "Tech Hour - Integrate like a boss",
+      "duration": 2974,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20210518",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=mHaGY1DxETw",
+      "download_date": "2025-07-22T12:11:39.480399",
+      "local_file": "videos/general/video_10_Tech Hour - Integrate like a boss.mp4"
+    },
+    {
+      "title": "Tech Hour - W5H of teamwork - Git and Creatio",
+      "duration": 4065,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20210325",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=Qy7BsGrxbB0",
+      "download_date": "2025-07-22T12:12:11.424766",
+      "local_file": "videos/general/video_11_Tech Hour - W5H of teamwork - Git and Creatio.mp4"
+    },
+    {
+      "title": "Tech Hour - Integrate like a boss with Creatio, part 2 (Odata)",
+      "duration": 2900,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20210513",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=ehjfcBxpLsQ",
+      "download_date": "2025-07-22T12:12:47.426873",
+      "local_file": "videos/general/video_12_Tech Hour - Integrate like a boss with Creatio, part 2 (Odata).mp4"
+    },
+    {
+      "title": "Tech Hour - HOW TO USE BUTTONS AND ACTIONS TO EMPOWER CREATIO PAGES",
+      "duration": 3470,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20210415",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=a5zefAhN3fk",
+      "download_date": "2025-07-22T12:13:18.408903",
+      "local_file": "videos/general/video_13_Tech Hour - HOW TO USE BUTTONS AND ACTIONS TO EMPOWER CREATIO PAGES.mp4"
+    },
+    {
+      "title": "UI/ UX Best practices in Creatio",
+      "duration": 3946,
+      "resolution": "640x360",
+      "format": "mp4",
+      "filesize": null,
+      "upload_date": "20230727",
+      "uploader": "Creatio",
+      "source_url": "https://www.youtube.com/watch?v=BdoiOu9ncmw",
+      "download_date": "2025-07-22T12:13:53.985044",
+      "local_file": "videos/general/video_14_UI⧸ UX Best practices in Creatio.mp4"
+    }
+  ]
+}

@@ -7,42 +7,185 @@ __pycache__/
 venv/
 ENV/
 env/
+.venv/
+.env/
 .env
 
-# IDE
-.vscode/
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.pdb
+
+# IDE files
+.vscode/settings.json
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 .idea/
 *.swp
 *.swo
 
-# OS
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Logs
 *.log
+Logs/
 logs/
 
-# Large files
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Creatio specific
+# packages/ - now tracking this
+App_Data/
+WorkspaceConsole/
+Bin/
+Files/
+Resources/
+Terrasoft.WebApp/
+
+# Database files
+*.mdf
+*.ldf
+*.bak
+*.db
+*.sqlite
+*.sqlite3
+knowledge_hub.db
+
+# Configuration files with sensitive data
+ConnectionStrings.config
+web.config.user
+credentials.json
+secrets.json
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.cache
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Large media files
+*.wav
 *.mp4
 *.avi
 *.mov
 *.webm
 *.mkv
+*.gif
 
-# Temporary files
-*.tmp
-*.bak
-*.cache
+# Video files in videos directory (too large for GitHub)
+videos/**/*.mp4
 
-# Credentials (if any)
-credentials.json
-secrets.json
+# Large data directories - exclude video content but keep scripts
+ai_optimization/creatio-academy-db/developer_course/videos/
+ai_optimization/__pycache__/
 
 # Installation files
 creatio_installer*
-*.tar.gz
-*.zip
-
-# Exclude venv directory completely
-venv/

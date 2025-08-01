@@ -1,0 +1,87 @@
+{
+  "name": "Creatio Academy Knowledge Database",
+  "version": "1.0.0",
+  "description": "Comprehensive knowledge base of Creatio Academy content optimized for AI accessibility",
+  "created": "2024-01-01",
+  "last_updated": "2024-01-01",
+  "content_types": [
+    "documentation",
+    "videos",
+    "code-examples",
+    "api-references"
+  ],
+  "structure": {
+    "documentation": {
+      "path": "./documentation/",
+      "description": "Technical documentation and guides",
+      "subcategories": [
+        "getting-started",
+        "platform-basics", 
+        "advanced-topics"
+      ]
+    },
+    "videos": {
+      "path": "./videos/",
+      "description": "Video content with transcripts and summaries",
+      "subcategories": [
+        "transcripts",
+        "summaries",
+        "metadata"
+      ]
+    },
+    "code-examples": {
+      "path": "./code-examples/",
+      "description": "Code samples and implementation examples", 
+      "subcategories": [
+        "by-language",
+        "by-feature"
+      ]
+    },
+    "api": {
+      "path": "./api/",
+      "description": "API documentation and references",
+      "subcategories": [
+        "rest",
+        "javascript",
+        "integration",
+        "configuration"
+      ]
+    },
+    "search-index": {
+      "path": "./search-index/",
+      "description": "Search indexes and metadata for content discovery",
+      "subcategories": [
+        "full-text",
+        "semantic",
+        "metadata",
+        "configuration"
+      ]
+    }
+  },
+  "metadata_standards": {
+    "naming_convention": "{topic}_{type}_{version}.{ext}",
+    "date_format": "YYYY-MM-DD",
+    "version_format": "semantic versioning (major.minor.patch)"
+  },
+  "ai_optimization": {
+    "hierarchical_structure": true,
+    "cross_references": true,
+    "semantic_tagging": true,
+    "difficulty_levels": true,
+    "learning_paths": true
+  },
+  "maintenance": {
+    "automated_updates": true,
+    "content_validation": true,
+    "cross_reference_verification": true,
+    "search_index_updates": true
+  },
+  "statistics": {
+    "total_documents": 0,
+    "total_videos": 1,
+    "total_code_examples": 0,
+    "total_api_references": 0,
+    "content_languages": ["en"],
+    "supported_versions": ["8.0", "8.1", "8.2"]
+  }
+}

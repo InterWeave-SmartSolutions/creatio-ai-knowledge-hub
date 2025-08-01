@@ -1,0 +1,45 @@
+{
+  "summary_id": "703b0a367023",
+  "content_id": "606ea808918e",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: of all I wanted to tell you about tracing.\nINSTRUCTION: you start to develop version two of your process.\nINSTRUCTION: when you save a process you can make, \nyou can run an action set.\nCONCEPT: page\nCONCEPT: schema\nCONCEPT: field\nNOTE: message that tells us about performance impact.\nNOTE: information, especially when you develop and debug your process.",
+  "key_points": [
+    "INSTRUCTION: of all I wanted to tell you about tracing.",
+    "INSTRUCTION: you start to develop version two of your process.",
+    "INSTRUCTION: when you save a process you can make, \nyou can run an action set.",
+    "CONCEPT: page",
+    "CONCEPT: schema",
+    "CONCEPT: field",
+    "NOTE: message that tells us about performance impact.",
+    "NOTE: information, especially when you develop and debug your process."
+  ],
+  "keywords": [
+    "process",
+    "speaker",
+    "page",
+    "data",
+    "let",
+    "okay",
+    "code",
+    "use",
+    "user",
+    "make"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 59,
+  "original_length": 14870,
+  "compression_ratio": 0.0039677202420981845,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:55:58.992159",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

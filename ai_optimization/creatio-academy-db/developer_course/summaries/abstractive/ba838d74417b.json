@@ -1,0 +1,33 @@
+{
+  "summary_id": "ba838d74417b",
+  "content_id": "f74604cafd68",
+  "summary_type": "abstractive",
+  "summary_text": "Today is session number six of our development on creation platform guided learning. Today I want you to see some additional materials related to classic UI and freedom UI and migration. And then we will fully switch to work with server side.",
+  "key_points": [
+    "Today is session number six of our development on creation platform guided learning.",
+    "Today I want you to see some additional materials related to classic UI and freedom UI and migration.",
+    "And then we will fully switch to work with server side."
+  ],
+  "keywords": [
+    "ui",
+    "classic",
+    "classic ui",
+    "freedom",
+    "freedom ui",
+    "section",
+    "page",
+    "example",
+    "like",
+    "customer"
+  ],
+  "topics": [],
+  "summary_length": 42,
+  "original_length": 706,
+  "compression_ratio": 0.059490084985835696,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:54:39.641615",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

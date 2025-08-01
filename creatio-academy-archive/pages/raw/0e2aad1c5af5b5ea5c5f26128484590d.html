@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ClientUnitSchemaManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ClientUnitSchemaManager
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Core.ClientUnitSchemaManager">
+  
+  
+  <h1 id="Terrasoft_Core_ClientUnitSchemaManager" data-uid="Terrasoft.Core.ClientUnitSchemaManager" class="text-break">Class ClientUnitSchemaManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Terrasoft.Core.Manager-2.html">Manager</a>&lt;<a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;, <a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Terrasoft.Core.SchemaManager-1.html">SchemaManager</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html">FileSystemEnabledSchemaManager</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</div>
+    <div class="level4"><span class="xref">ClientUnitSchemaManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Terrasoft.Core.IManager-2.html">IManager</a>&lt;<a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;, <a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</div>
+    <div><a class="xref" href="Terrasoft.Core.ISchemaManager.html">ISchemaManager</a></div>
+    <div><a class="xref" href="Terrasoft.Core.IManager.html">IManager</a></div>
+    <div><a class="xref" href="Terrasoft.Core.ISourceCodeSchemaManager.html">ISourceCodeSchemaManager</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_SaveMetaData_System_IO_MemoryStream_Terrasoft_Core_Configuration_SysSchema_Terrasoft_Core_ISchemaManagerItem_">FileSystemEnabledSchemaManager&lt;ClientUnitSchema&gt;.SaveMetaData(MemoryStream, SysSchema, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_SaveExtraProperties_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_">FileSystemEnabledSchemaManager&lt;ClientUnitSchema&gt;.SaveExtraProperties(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_SaveItem_Terrasoft_Core_Configuration_SysSchema_Terrasoft_Core_ISchemaManagerItem__0__">FileSystemEnabledSchemaManager&lt;ClientUnitSchema&gt;.SaveItem(SysSchema, ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_Initialize_Terrasoft_Core_SchemaManagerProvider_Terrasoft_Core_SchemaManagerProviderConfigurationElement_">FileSystemEnabledSchemaManager&lt;ClientUnitSchema&gt;.Initialize(SchemaManagerProvider, SchemaManagerProviderConfigurationElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_IsResolveAssemblyFromStandalonePackage">FileSystemEnabledSchemaManager&lt;ClientUnitSchema&gt;.IsResolveAssemblyFromStandalonePackage</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.FileSystemEnabledSchemaManager-1.html#Terrasoft_Core_FileSystemEnabledSchemaManager_1_ResourceManagerName">FileSystemEnabledSchemaManager&lt;ClientUnitSchema&gt;.ResourceManagerName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DifferencePackagePrefix">SchemaManager&lt;ClientUnitSchema&gt;.DifferencePackagePrefix</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemAdding_Terrasoft_Core_SchemaManagerItemBeforeAddEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.OnItemAdding(SchemaManagerItemBeforeAddEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemAdded_Terrasoft_Core_SchemaManagerItemAfterAddEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.OnItemAdded(SchemaManagerItemAfterAddEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemRemoving_Terrasoft_Core_SchemaManagerItemBeforeRemoveEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.OnItemRemoving(SchemaManagerItemBeforeRemoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemRemoved_Terrasoft_Core_SchemaManagerItemAfterRemoveEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.OnItemRemoved(SchemaManagerItemAfterRemoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemSaving_Terrasoft_Core_SchemaManagerItemBeforeSaveEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.OnItemSaving(SchemaManagerItemBeforeSaveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_OnItemSaved_Terrasoft_Core_SchemaManagerItemAfterSaveEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.OnItemSaved(SchemaManagerItemAfterSaveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDataReaderAsGuid_System_Data_IDataReader_System_Int32_">SchemaManager&lt;ClientUnitSchema&gt;.GetDataReaderAsGuid(IDataReader, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateItemCollection">SchemaManager&lt;ClientUnitSchema&gt;.CreateItemCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ClearItems_System_Object_System_EventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.ClearItems(Object, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeInstance_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;ClientUnitSchema&gt;.InitializeInstance(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSafeInstance_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;ClientUnitSchema&gt;.InitializeSafeInstance(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateReferenceSchemaSources_System_Collections_Generic_IEnumerable_System_Guid__Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GenerateReferenceSchemaSources(IEnumerable&lt;Guid&gt;, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetItemReferenceSchemaUIds_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetItemReferenceSchemaUIds(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SetCustomProperties_Terrasoft_Core_Configuration_SysSchema__0_">SchemaManager&lt;ClientUnitSchema&gt;.SetCustomProperties(SysSchema, ClientUnitSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SelectCustomProperties_Terrasoft_Core_DB_Select_">SchemaManager&lt;ClientUnitSchema&gt;.SelectCustomProperties(Select)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SetCustomProperties_Terrasoft_Core_ISchemaManagerItem__0__System_Data_IDataReader_">SchemaManager&lt;ClientUnitSchema&gt;.SetCustomProperties(ISchemaManagerItem&lt;ClientUnitSchema&gt;, IDataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SetCustomProperties_Terrasoft_Core_ISchemaManagerItem__0___0_">SchemaManager&lt;ClientUnitSchema&gt;.SetCustomProperties(ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveMetaData__0_Terrasoft_Core_Configuration_SysSchema_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.SaveMetaData(ClientUnitSchema, SysSchema, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaItem_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaItem(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid, Boolean, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveMetaDataDifferencePackage__0_Terrasoft_Core_Configuration_SysSchema_System_String_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveMetaDataDifferencePackage(ClientUnitSchema, SysSchema, String, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveMetaDataDifferencePackage__0_Terrasoft_Core_Configuration_SysSchema_System_String_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveMetaDataDifferencePackage(ClientUnitSchema, SysSchema, String, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchemaInDB_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalSaveSchemaInDB(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchemaInDB_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalSaveSchemaInDB(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchema_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalSaveSchema(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid, Boolean, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchema_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalSaveSchema(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalSaveSchema_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalSaveSchema(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetGeneratedItemPrefix_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.GetGeneratedItemPrefix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeUserPropertiesForAllItems_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.InitializeUserPropertiesForAllItems(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeUserPropertiesForItem_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;ClientUnitSchema&gt;.InitializeUserPropertiesForItem(ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeItemsCaption_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.InitializeItemsCaption(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeItemsCaption_System_Collections_Generic_IEnumerable_System_Guid__">SchemaManager&lt;ClientUnitSchema&gt;.InitializeItemsCaption(IEnumerable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeItems">SchemaManager&lt;ClientUnitSchema&gt;.InitializeItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalCreateSchema_System_String__0_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalCreateSchema(String, ClientUnitSchema, UserConnection, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_LoadLocalizableValues__0_">SchemaManager&lt;ClientUnitSchema&gt;.LoadLocalizableValues(ClientUnitSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ModifyMetaDataProperty_Terrasoft_Common_JsonDataDifferencePackage__0_">SchemaManager&lt;ClientUnitSchema&gt;.ModifyMetaDataProperty(JsonDataDifferencePackage, ClientUnitSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ModifyMetaDataProperty_Terrasoft_Common_JsonDataDifferencePackage__0_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.ModifyMetaDataProperty(JsonDataDifferencePackage, ClientUnitSchema, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ForceGetCustomPackageUId_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.ForceGetCustomPackageUId(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemAdditionalData_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.SaveDesignedItemAdditionalData(UserConnection, ISchemaManagerItem, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DeriveSchemaManagerItem_Terrasoft_Core_UserConnection_Terrasoft_Core_Entities_EntityCollection_">SchemaManager&lt;ClientUnitSchema&gt;.DeriveSchemaManagerItem(UserConnection, EntityCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ReInitializeSchemaLocalizableValues_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem__0__Terrasoft_Core_HierarchySchemaInfo_">SchemaManager&lt;ClientUnitSchema&gt;.ReInitializeSchemaLocalizableValues(UserConnection, ISchemaManagerItem&lt;ClientUnitSchema&gt;, HierarchySchemaInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchemaInstance_Terrasoft_Core_ISchemaManagerItem_System_Reflection_Assembly_">SchemaManager&lt;ClientUnitSchema&gt;.CreateSchemaInstance(ISchemaManagerItem, Assembly)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaIdBySchemaUId_System_Guid_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaIdBySchemaUId(Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalCreateSchema_System_Guid_System_Guid_System_Guid_System_String__0_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalCreateSchema(Guid, Guid, Guid, String, ClientUnitSchema, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalCreateSchema_System_String_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalCreateSchema(String, ISchemaManagerItem, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalCreateSchema_System_String__0_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.InternalCreateSchema(String, ClientUnitSchema, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InternalDesignSchema_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.InternalDesignSchema(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaResourcesInDB_Terrasoft_Core_ISchemaManagerItem__0__System_Collections_Generic_Dictionary_System_String_Terrasoft_Common_LocalizableValueCollection__System_Guid_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaResourcesInDB(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Dictionary&lt;String, LocalizableValueCollection&gt;, Guid, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ReleaseResourcesManagers_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.ReleaseResourcesManagers(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaSources__0_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaSources(ClientUnitSchema, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_LoadManagerResources_Terrasoft_Core_SchemaResourceManager_System_Collections_Generic_Dictionary_System_String_System_String__">SchemaManager&lt;ClientUnitSchema&gt;.LoadManagerResources(SchemaResourceManager, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetResourcesFromData_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.GetResourcesFromData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_UpdateResourceManager_Terrasoft_Core_UserConnection_System_String_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.UpdateResourceManager(UserConnection, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSchemaProperties__0_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;ClientUnitSchema&gt;.InitializeSchemaProperties(ClientUnitSchema, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaResourcesForSave_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaResourcesForSave(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemasMetaData_System_Collections_Generic_IEnumerable_System_Guid__Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemasMetaData(IEnumerable&lt;Guid&gt;, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaResources__0_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaResources(ClientUnitSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetParentSchemaLocalizableValues__0_">SchemaManager&lt;ClientUnitSchema&gt;.GetParentSchemaLocalizableValues(ClientUnitSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DeserializeSchemaManagerItem_System_IO_Stream_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.DeserializeSchemaManagerItem(Stream, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSchemaExtraProperties__0_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;ClientUnitSchema&gt;.InitializeSchemaExtraProperties(ClientUnitSchema, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSchemaUserProperties__0_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;ClientUnitSchema&gt;.InitializeSchemaUserProperties(ClientUnitSchema, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DoItemAdding_System_Object_Terrasoft_Core_SchemaManagerItemBeforeAddEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.DoItemAdding(Object, SchemaManagerItemBeforeAddEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DoItemAdded_System_Object_Terrasoft_Core_SchemaManagerItemAfterAddEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.DoItemAdded(Object, SchemaManagerItemAfterAddEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DoItemRemoving_System_Object_Terrasoft_Core_SchemaManagerItemBeforeRemoveEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.DoItemRemoving(Object, SchemaManagerItemBeforeRemoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DoItemRemoved_System_Object_Terrasoft_Core_SchemaManagerItemAfterRemoveEventArgs_">SchemaManager&lt;ClientUnitSchema&gt;.DoItemRemoved(Object, SchemaManagerItemAfterRemoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SetMetaItemsCreatedInPackage__0_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.SetMetaItemsCreatedInPackage(ClientUnitSchema, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetFullItemHierarchy_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetFullItemHierarchy(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateRuntimeSchemaFromMetaData_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.CreateRuntimeSchemaFromMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateRuntimeSchemaFromMetaData_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.CreateRuntimeSchemaFromMetaData(Guid, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_TryGetMetaDataInstanceFromCache_System_Guid_System_Guid__0__System_Nullable_System_Guid__">SchemaManager&lt;ClientUnitSchema&gt;.TryGetMetaDataInstanceFromCache(Guid, Guid, ClientUnitSchema, Nullable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddMetaDataInstanceToCache_System_Guid_System_Guid_System_Nullable_System_Guid___0_">SchemaManager&lt;ClientUnitSchema&gt;.AddMetaDataInstanceToCache(Guid, Guid, Nullable&lt;Guid&gt;, ClientUnitSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchemaItem_System_Guid_System_String__0_System_Boolean_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.CreateSchemaItem(Guid, String, ClientUnitSchema, Boolean, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedDataToSession_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem__0__System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.SaveDesignedDataToSession(UserConnection, ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddEmptyDefaultEventsProcess_Terrasoft_Core_Process_ProcessBasedSchema_">SchemaManager&lt;ClientUnitSchema&gt;.AddEmptyDefaultEventsProcess(ProcessBasedSchema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ReInitializeRuntimeSchemaResourceManager_System_String_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.ReInitializeRuntimeSchemaResourceManager(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetTextFromStream_System_IO_Stream_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.GetTextFromStream(Stream, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveItem_Terrasoft_Core_ISchemaManagerItem__0__Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.RemoveItem(ISchemaManagerItem&lt;ClientUnitSchema&gt;, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ActualizeSchemaMetaData_Terrasoft_Core_Entities_EntityCollection_">SchemaManager&lt;ClientUnitSchema&gt;.ActualizeSchemaMetaData(EntityCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CheckOperationUserRights_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.CheckOperationUserRights(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveSchemaFromMetaDataCache_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;ClientUnitSchema&gt;.RemoveSchemaFromMetaDataCache(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaMetaData__0_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaMetaData(ClientUnitSchema, Guid, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaMetaData__0_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaMetaData(ClientUnitSchema, Guid, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetItems">SchemaManager&lt;ClientUnitSchema&gt;.GetItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Clear">SchemaManager&lt;ClientUnitSchema&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveItemByUId_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.RemoveItemByUId(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveItemByName_System_Guid_System_String_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.RemoveItemByName(Guid, String, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindInstanceFromMetaDataByPackageUId_System_Guid_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.FindInstanceFromMetaDataByPackageUId(Guid, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetAllParents_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;ClientUnitSchema&gt;.GetAllParents(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetProcessSchemaGenerator_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetProcessSchemaGenerator(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetMetaDataSerializer_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetMetaDataSerializer(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DesignItem_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.DesignItem(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetItemFromMetaData_System_Guid_Terrasoft_Core_UserConnection_System_Nullable_System_Guid__">SchemaManager&lt;ClientUnitSchema&gt;.GetItemFromMetaData(Guid, UserConnection, Nullable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RefreshItems">SchemaManager&lt;ClientUnitSchema&gt;.RefreshItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RefreshItems_System_Collections_Generic_IEnumerable_System_Guid__">SchemaManager&lt;ClientUnitSchema&gt;.RefreshItems(IEnumerable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_SetProvider_Terrasoft_Core_SchemaManagerProvider_">SchemaManager&lt;ClientUnitSchema&gt;.ISchemaManager.SetProvider(SchemaManagerProvider)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DesignItemInCustomPackage_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.DesignItemInCustomPackage(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetItemIdByUId_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetItemIdByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeItem_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.InitializeItem(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_InitializeSafeSchema_Terrasoft_Core_ISchemaManagerItem_System_Reflection_Assembly_">SchemaManager&lt;ClientUnitSchema&gt;.InitializeSafeSchema(ISchemaManagerItem, Assembly)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FillSourceCollection_System_Collections_ObjectModel_Collection_Terrasoft_Core_ISchemaManagerItem__Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;ClientUnitSchema&gt;.FillSourceCollection(Collection&lt;ISchemaManagerItem&gt;, ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FillSourceCollection_System_Collections_ObjectModel_Collection_Terrasoft_Core_ISchemaManagerItem__System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.FillSourceCollection(Collection&lt;ISchemaManagerItem&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddCoreSchema_System_Guid_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.AddCoreSchema(Guid, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddCoreSchema_System_Guid_System_String_System_Guid_System_Guid___">SchemaManager&lt;ClientUnitSchema&gt;.AddCoreSchema(Guid, String, Guid, Guid[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AddSchema_System_Guid_System_String_Terrasoft_Common_LocalizableString_Terrasoft_Common_LocalizableString_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.AddSchema(Guid, String, LocalizableString, LocalizableString, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveSchema_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.RemoveSchema(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_CreateSchema_System_String_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.ISchemaManager.CreateSchema(String, ISchemaManagerItem, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_CreateSchema_System_String_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.ISchemaManager.CreateSchema(String, ISchemaManagerItem, UserConnection, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchema_System_String__0_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.CreateSchema(String, ClientUnitSchema, UserConnection, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchema_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.CreateSchema(UserConnection, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CreateSchema_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.CreateSchema(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_CreateDesignSchema_Terrasoft_Core_UserConnection_System_Guid_System_Guid_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.ISchemaManager.CreateDesignSchema(UserConnection, Guid, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DesignSchema_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.DesignSchema(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchema_System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchema(Guid, Boolean, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchema_Terrasoft_Core_ISchemaManagerItem__0__Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchema(ISchemaManagerItem&lt;ClientUnitSchema&gt;, UserConnection, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchema_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchema(Guid, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaInCustomPackage_System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaInCustomPackage(Guid, Boolean, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaInCustomPackage_System_Guid_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaInCustomPackage(Guid, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaSource_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaSource(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaMetaDataDifferencePackage_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaMetaDataDifferencePackage(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaMetaData_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaMetaDataText_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaMetaDataText(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDefSchemaUId">SchemaManager&lt;ClientUnitSchema&gt;.GetDefSchemaUId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateItemUniqueName_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.GenerateItemUniqueName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateItemUniqueCaption_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.GenerateItemUniqueCaption(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaData_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetReadableSchemaMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaData_Terrasoft_Core_MetaSchema_Terrasoft_Core_UserConnection_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.GetReadableSchemaMetaData(MetaSchema, UserConnection, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaDataText_Terrasoft_Core_MetaSchema_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.GetReadableSchemaMetaDataText(MetaSchema, UserConnection, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaDataText_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetReadableSchemaMetaDataText(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetReadableSchemaMetaData_Terrasoft_Core_MetaSchema_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GetReadableSchemaMetaData(MetaSchema, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaSources_Terrasoft_Core_Entities_EntityCollection_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaSources(EntityCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaSources_System_Guid_System_Guid_Terrasoft_Core_UserConnection_System_String__">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaSources(Guid, Guid, UserConnection, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DropInstances">SchemaManager&lt;ClientUnitSchema&gt;.DropInstances()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaHierarchy_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaHierarchy(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaHierarchyByName_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaHierarchyByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindDesignItem_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.FindDesignItem(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignItem_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetDesignItem(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindDesignInstance_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.FindDesignInstance(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignInstance_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetDesignInstance(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindRuntimeInstanceByUId_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.FindRuntimeInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindRuntimeInstanceByName_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.FindRuntimeInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetSchemaDesignItem_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetSchemaDesignItem(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemInSessionData_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;ClientUnitSchema&gt;.SaveDesignedItemInSessionData(ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemInSessionData_Terrasoft_Core_ISchemaManagerItem__0__">SchemaManager&lt;ClientUnitSchema&gt;.SaveDesignedItemInSessionData(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemInSessionData_Terrasoft_Core_UserConnection_Terrasoft_Core_MetaSchema_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.SaveDesignedItemInSessionData(UserConnection, MetaSchema, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemFolderIdInSessionData_Terrasoft_Core_UserConnection_System_Guid_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.SaveDesignedItemFolderIdInSessionData(UserConnection, Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemIdInSessionData_Terrasoft_Core_UserConnection_System_Guid_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.SaveDesignedItemIdInSessionData(UserConnection, Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveDesignedItemPackageUIdInSessionData_Terrasoft_Core_UserConnection_System_Guid_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.SaveDesignedItemPackageUIdInSessionData(UserConnection, Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignedItemFolderIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetDesignedItemFolderIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignedItemIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetDesignedItemIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetDesignedItemPackageUIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetDesignedItemPackageUIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveDesignedItemFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.RemoveDesignedItemFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveDesignedItemFromSessionData_Terrasoft_Core_ISchemaManagerItem_">SchemaManager&lt;ClientUnitSchema&gt;.RemoveDesignedItemFromSessionData(ISchemaManagerItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveDesignedItemIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.RemoveDesignedItemIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_RemoveDesignedItemPackageUIdFromSessionData_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.RemoveDesignedItemPackageUIdFromSessionData(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GenerateSchemaSources_System_Guid_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.GenerateSchemaSources(Guid, ISchemaManagerItem, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_TryGenerateSchemaSources_System_Guid_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.TryGenerateSchemaSources(Guid, ISchemaManagerItem, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_GetItemFromMetaData_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.ISchemaManager.GetItemFromMetaData(Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Terrasoft_Core_ISchemaManager_GetItemFromMetaData_System_Guid_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.ISchemaManager.GetItemFromMetaData(Guid, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaMetaData_Terrasoft_Core_ISchemaManagerItem_System_Guid_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaMetaData(ISchemaManagerItem, Guid, UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CanEditSchema_Terrasoft_Core_UserConnection_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.CanEditSchema(UserConnection, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetHash">SchemaManager&lt;ClientUnitSchema&gt;.GetHash()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInheritedFrom_System_Guid_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.IsInheritedFrom(Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CheckUserPropertyRights_Terrasoft_Core_UserConnection_">SchemaManager&lt;ClientUnitSchema&gt;.CheckUserPropertyRights(UserConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_MoveSchemas_System_Collections_Generic_IEnumerable_System_Guid__System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.MoveSchemas(IEnumerable&lt;Guid&gt;, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_MoveSchema_System_Guid_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.MoveSchema(Guid, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SaveSchemaPackageDifference_Terrasoft_Core_UserConnection_Terrasoft_Core_Packages_PackageElementInfo_System_String_">SchemaManager&lt;ClientUnitSchema&gt;.SaveSchemaPackageDifference(UserConnection, PackageElementInfo, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetPackageItems_System_Collections_Generic_IEnumerable_System_Guid__">SchemaManager&lt;ClientUnitSchema&gt;.GetPackageItems(IEnumerable&lt;Guid&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_UpdatePackagePosition_Terrasoft_Core_UserConnection_Terrasoft_Core_ISchemaManagerItem_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.UpdatePackagePosition(UserConnection, ISchemaManagerItem, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetParentSchemaUIds_Terrasoft_Core_UserConnection_System_Guid_System_String_System_Guid_System_Boolean_">SchemaManager&lt;ClientUnitSchema&gt;.GetParentSchemaUIds(UserConnection, Guid, String, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_FindRuntimeInstanceFromMetadata_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.FindRuntimeInstanceFromMetadata(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_GetRuntimeInstanceFromMetadata_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.GetRuntimeInstanceFromMetadata(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DeleteSchemaSource_System_Guid_">SchemaManager&lt;ClientUnitSchema&gt;.DeleteSchemaSource(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsItemsInitialized">SchemaManager&lt;ClientUnitSchema&gt;.IsItemsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Items">SchemaManager&lt;ClientUnitSchema&gt;.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_MetaDataInstances">SchemaManager&lt;ClientUnitSchema&gt;.MetaDataInstances</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CanUseUserProperties">SchemaManager&lt;ClientUnitSchema&gt;.CanUseUserProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Workspace">SchemaManager&lt;ClientUnitSchema&gt;.Workspace</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SchemaManagerItems">SchemaManager&lt;ClientUnitSchema&gt;.SchemaManagerItems</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_MetaItems">SchemaManager&lt;ClientUnitSchema&gt;.MetaItems</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SystemUserConnection">SchemaManager&lt;ClientUnitSchema&gt;.SystemUserConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SysSchemaUserPropertyRightsOperations">SchemaManager&lt;ClientUnitSchema&gt;.SysSchemaUserPropertyRightsOperations</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemName">SchemaManager&lt;ClientUnitSchema&gt;.ItemName</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SchemaManagerProvider">SchemaManager&lt;ClientUnitSchema&gt;.SchemaManagerProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_CompileDependencies">SchemaManager&lt;ClientUnitSchema&gt;.CompileDependencies</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_AppConnection">SchemaManager&lt;ClientUnitSchema&gt;.AppConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Namespace">SchemaManager&lt;ClientUnitSchema&gt;.Namespace</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ProcessSchemaManager">SchemaManager&lt;ClientUnitSchema&gt;.ProcessSchemaManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_DefSchema">SchemaManager&lt;ClientUnitSchema&gt;.DefSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_SupportsProfiles">SchemaManager&lt;ClientUnitSchema&gt;.SupportsProfiles</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemAdding">SchemaManager&lt;ClientUnitSchema&gt;.IsInItemAdding</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemAdded">SchemaManager&lt;ClientUnitSchema&gt;.IsInItemAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemRemoving">SchemaManager&lt;ClientUnitSchema&gt;.IsInItemRemoving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemRemoved">SchemaManager&lt;ClientUnitSchema&gt;.IsInItemRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemSaving">SchemaManager&lt;ClientUnitSchema&gt;.IsInItemSaving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_IsInItemSaved">SchemaManager&lt;ClientUnitSchema&gt;.IsInItemSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemAdding">SchemaManager&lt;ClientUnitSchema&gt;.ItemAdding</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemAdded">SchemaManager&lt;ClientUnitSchema&gt;.ItemAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemRemoving">SchemaManager&lt;ClientUnitSchema&gt;.ItemRemoving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_Changed">SchemaManager&lt;ClientUnitSchema&gt;.Changed</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemRemoved">SchemaManager&lt;ClientUnitSchema&gt;.ItemRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemSaving">SchemaManager&lt;ClientUnitSchema&gt;.ItemSaving</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.SchemaManager-1.html#Terrasoft_Core_SchemaManager_1_ItemSaved">SchemaManager&lt;ClientUnitSchema&gt;.ItemSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_CreateItemCollection">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.CreateItemCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeInstance__0_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.InitializeInstance(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeSafeInstance__0_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.InitializeSafeInstance(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_InitializeAllItemCollection_Terrasoft_Core_IManagerItemCollection_Terrasoft_Core_IManagerItem__">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.InitializeAllItemCollection(IManagerItemCollection&lt;IManagerItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_ClearItems_System_Object_System_EventArgs_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.ClearItems(Object, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Initialize_Terrasoft_Core_ManagerProvider_Terrasoft_Core_ManagerProviderConfigurationElement_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.Initialize(ManagerProvider, ManagerProviderConfigurationElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItem_System_Predicate__0__">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.FindItem(Predicate&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.FindItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.FindItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.GetItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItemByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.GetItemByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByRealUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.FindItemByRealUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByRealUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.GetItemByRealUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByName_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.FindItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindItemByName_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.FindItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItemByName_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.GetItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItemByName_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.GetItemByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindInstanceByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.FindInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindInstanceByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.FindInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetInstanceByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.GetInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetInstanceByUId_System_Guid_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.GetInstanceByUId(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindInstanceByName_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.FindInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_FindInstanceByName_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.FindInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetInstanceByName_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.GetInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetInstanceByName_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.GetInstanceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_FindItemByCaption_System_String_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.FindItemByCaption(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Terrasoft_Core_IManager_GetItems">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.IManager.GetItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItems_System_Predicate_Terrasoft_Core_IManagerItem__">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.GetItems(Predicate&lt;IManagerItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_GetItems">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.GetItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Add__0_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.Add(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Remove__0_">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.Remove(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Clear">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Items">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Name">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_Provider">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.Provider</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.Manager-2.html#Terrasoft_Core_Manager_2_ItemCount">Manager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;.ItemCount</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Core.html">Terrasoft.Core</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Core.dll</h6>
+  <h5 id="Terrasoft_Core_ClientUnitSchemaManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ClientUnitSchemaManager : FileSystemEnabledSchemaManager&lt;ClientUnitSchema&gt;, IManager&lt;ISchemaManagerItem&lt;ClientUnitSchema&gt;, ClientUnitSchema&gt;, IInternalSchemaManager, ISchemaManager, IManager, ISourceCodeSchemaManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager__ctor_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.#ctor*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager__ctor" data-uid="Terrasoft.Core.ClientUnitSchemaManager.#ctor">ClientUnitSchemaManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientUnitSchemaManager()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_HashFunc_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.HashFunc*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_HashFunc" data-uid="Terrasoft.Core.ClientUnitSchemaManager.HashFunc">HashFunc</h4>
+  <div class="markdown level1 summary"><p>Hashing function. By default - MD5.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;byte[], string&gt; HashFunc { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Byte</span>[], <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></td>
+        <td><p>If the set value is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_ItemCaption_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.ItemCaption*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_ItemCaption" data-uid="Terrasoft.Core.ClientUnitSchemaManager.ItemCaption">ItemCaption</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ItemCaption { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.ItemCaption</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_ItemTypeName_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.ItemTypeName*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_ItemTypeName" data-uid="Terrasoft.Core.ClientUnitSchemaManager.ItemTypeName">ItemTypeName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string ItemTypeName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.ItemTypeName</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_ActualizeItemDescriptor_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.ActualizeItemDescriptor*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_ActualizeItemDescriptor_Terrasoft_Core_ISchemaManagerItem_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.ActualizeItemDescriptor(Terrasoft.Core.ISchemaManagerItem)">ActualizeItemDescriptor(ISchemaManagerItem)</h4>
+  <div class="markdown level1 summary"><p>Actualizes the descriptor of the schema manager item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ActualizeItemDescriptor(ISchemaManagerItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem.html">ISchemaManagerItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Manager item whose descriptor must be actualized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.ActualizeItemDescriptor(Terrasoft.Core.ISchemaManagerItem)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_ActualizeSchemaDifferencePackage_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.ActualizeSchemaDifferencePackage*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_ActualizeSchemaDifferencePackage_Terrasoft_Common_JsonDataDifferencePackage_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.ActualizeSchemaDifferencePackage(Terrasoft.Common.JsonDataDifferencePackage)">ActualizeSchemaDifferencePackage(JsonDataDifferencePackage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ActualizeSchemaDifferencePackage(JsonDataDifferencePackage differencePackage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.JsonDataDifferencePackage.html">JsonDataDifferencePackage</a></td>
+        <td><span class="parametername">differencePackage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.ActualizeSchemaDifferencePackage(Terrasoft.Common.JsonDataDifferencePackage)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_AddSchemaParentUIdItem_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.AddSchemaParentUIdItem*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_AddSchemaParentUIdItem_Terrasoft_Common_JsonDataDifferencePackage_System_Guid_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.AddSchemaParentUIdItem(Terrasoft.Common.JsonDataDifferencePackage,System.Guid)">AddSchemaParentUIdItem(JsonDataDifferencePackage, Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void AddSchemaParentUIdItem(JsonDataDifferencePackage package, Guid parentSchemaUId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.JsonDataDifferencePackage.html">JsonDataDifferencePackage</a></td>
+        <td><span class="parametername">package</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">parentSchemaUId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.AddSchemaParentUIdItem(Terrasoft.Common.JsonDataDifferencePackage, System.Guid)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_CreateDesignSchema_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.CreateDesignSchema*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_CreateDesignSchema_Terrasoft_Core_UserConnection_System_Guid_System_Boolean_Terrasoft_Core_ClientUnitSchemaType_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.CreateDesignSchema(Terrasoft.Core.UserConnection,System.Guid,System.Boolean,Terrasoft.Core.ClientUnitSchemaType)">CreateDesignSchema(UserConnection, Guid, Boolean, ClientUnitSchemaType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISchemaManagerItem&lt;ClientUnitSchema&gt; CreateDesignSchema(UserConnection userConnection, Guid packageUId, bool extendParent, ClientUnitSchemaType schemaType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">packageUId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">extendParent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ClientUnitSchemaType.html">ClientUnitSchemaType</a></td>
+        <td><span class="parametername">schemaType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_CreateDesignSchema_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.CreateDesignSchema*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_CreateDesignSchema_Terrasoft_Core_UserConnection_System_Guid_System_Guid_System_Boolean_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.CreateDesignSchema(Terrasoft.Core.UserConnection,System.Guid,System.Guid,System.Boolean)">CreateDesignSchema(UserConnection, Guid, Guid, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ISchemaManagerItem&lt;ClientUnitSchema&gt; CreateDesignSchema(UserConnection userConnection, Guid parentSchemaUId, Guid packageUId, bool extendParent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">parentSchemaUId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">packageUId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">extendParent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.CreateDesignSchema(Terrasoft.Core.UserConnection, System.Guid, System.Guid, System.Boolean)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_CreateItem_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.CreateItem*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_CreateItem" data-uid="Terrasoft.Core.ClientUnitSchemaManager.CreateItem">CreateItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ISchemaManagerItem&lt;ClientUnitSchema&gt; CreateItem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.CreateItem()</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_FindInstanceByName_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.FindInstanceByName*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_FindInstanceByName_System_String_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.FindInstanceByName(System.String)">FindInstanceByName(String)</h4>
+  <div class="markdown level1 summary"><p>Searches for the instance of the manager item with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ClientUnitSchema FindInstanceByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the manager item instance to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a></td>
+        <td><p>The instance of the manager item with the <code data-dev-comment-type="paramref" class="paramref">name</code> name.
+If a manager item instance with the <code data-dev-comment-type="paramref" class="paramref">name</code>
+name is not found, returns <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.ISchemaManagerItem&lt;Terrasoft.Core.ClientUnitSchema&gt;, Terrasoft.Core.ClientUnitSchema&gt;.FindInstanceByName(System.String)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_FindInstanceByUId_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.FindInstanceByUId*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_FindInstanceByUId_System_Guid_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.FindInstanceByUId(System.Guid)">FindInstanceByUId(Guid)</h4>
+  <div class="markdown level1 summary"><p>Searches for the instance of the manager item by the specified unique identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ClientUnitSchema FindInstanceByUId(Guid uid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">uid</span></td>
+        <td><p>UId of the manager item instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a></td>
+        <td><p>The instance of the manager item with the specified <code data-dev-comment-type="paramref" class="paramref">uid</code>
+unique Id. If a manager item with the <code data-dev-comment-type="paramref" class="paramref">uid</code>
+unique Id is not found, returns <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.ISchemaManagerItem&lt;Terrasoft.Core.ClientUnitSchema&gt;, Terrasoft.Core.ClientUnitSchema&gt;.FindInstanceByUId(System.Guid)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_GenerateSchemaSources_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.GenerateSchemaSources*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_GenerateSchemaSources_Terrasoft_Core_ClientUnitSchema_System_Guid_Terrasoft_Core_UserConnection_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.GenerateSchemaSources(Terrasoft.Core.ClientUnitSchema,System.Guid,Terrasoft.Core.UserConnection)">GenerateSchemaSources(ClientUnitSchema, Guid, UserConnection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool GenerateSchemaSources(ClientUnitSchema schema, Guid schemaId, UserConnection userConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">schemaId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.GenerateSchemaSources(Terrasoft.Core.ClientUnitSchema, System.Guid, Terrasoft.Core.UserConnection)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_GetGenerator_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.GetGenerator*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_GetGenerator_Terrasoft_Core_UserConnection_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.GetGenerator(Terrasoft.Core.UserConnection)">GetGenerator(UserConnection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SchemaCodeGenerator&lt;ClientUnitSchema&gt; GetGenerator(UserConnection userConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.CodeGeneration.SchemaCodeGenerator-1.html">SchemaCodeGenerator</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.GetGenerator(Terrasoft.Core.UserConnection)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_GetInstanceByName_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.GetInstanceByName*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_GetInstanceByName_System_String_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.GetInstanceByName(System.String)">GetInstanceByName(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the instance of the manager item with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ClientUnitSchema GetInstanceByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the manager item instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a></td>
+        <td><p>The instance of the manager item with the <code data-dev-comment-type="paramref" class="paramref">name</code> name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.ISchemaManagerItem&lt;Terrasoft.Core.ClientUnitSchema&gt;, Terrasoft.Core.ClientUnitSchema&gt;.GetInstanceByName(System.String)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_GetInstanceByUId_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.GetInstanceByUId*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_GetInstanceByUId_System_Guid_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.GetInstanceByUId(System.Guid)">GetInstanceByUId(Guid)</h4>
+  <div class="markdown level1 summary"><p>Returns the instance of the manager item with the specified UId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ClientUnitSchema GetInstanceByUId(Guid uid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">uid</span></td>
+        <td><p>Unique identifier of the manager item instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a></td>
+        <td><p>The instance of the manager item with the specified <code data-dev-comment-type="paramref" class="paramref">uid</code>
+identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.Manager&lt;Terrasoft.Core.ISchemaManagerItem&lt;Terrasoft.Core.ClientUnitSchema&gt;, Terrasoft.Core.ClientUnitSchema&gt;.GetInstanceByUId(System.Guid)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_InitializeDefSchema_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InitializeDefSchema*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_InitializeDefSchema" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InitializeDefSchema">InitializeDefSchema()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ClientUnitSchema InitializeDefSchema()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.InitializeDefSchema()</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_InitializeItems_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InitializeItems*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_InitializeItems_System_Collections_Generic_IEnumerable_System_Guid__" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InitializeItems(System.Collections.Generic.IEnumerable{System.Guid})">InitializeItems(IEnumerable&lt;Guid&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InitializeItems(IEnumerable&lt;Guid&gt; itemUIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><span class="parametername">itemUIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.InitializeItems(System.Collections.Generic.IEnumerable&lt;System.Guid&gt;)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_InitializeItems_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InitializeItems*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_InitializeItems_System_Guid_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InitializeItems(System.Guid)">InitializeItems(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InitializeItems(Guid itemUId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">itemUId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.InitializeItems(System.Guid)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_InitializeSchema_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InitializeSchema*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_InitializeSchema_Terrasoft_Core_ISchemaManagerItem_System_Reflection_Assembly_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InitializeSchema(Terrasoft.Core.ISchemaManagerItem,System.Reflection.Assembly)">InitializeSchema(ISchemaManagerItem, Assembly)</h4>
+  <div class="markdown level1 summary"><p>Creates an instance of the <a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a> type schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IManagerItemInstance InitializeSchema(ISchemaManagerItem schemaManagerItem, Assembly assembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem.html">ISchemaManagerItem</a></td>
+        <td><span class="parametername">schemaManagerItem</span></td>
+        <td><p>Item of manager.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>An assembly that contains the type of the schema that is being created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IManagerItemInstance.html">IManagerItemInstance</a></td>
+        <td><p>The initialized instance of the schema.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.InitializeSchema(Terrasoft.Core.ISchemaManagerItem, System.Reflection.Assembly)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_InternalSaveSchema_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InternalSaveSchema*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_InternalSaveSchema_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_ClientUnitSchema__System_Guid_System_Boolean_Terrasoft_Core_UserConnection_System_Boolean_System_Boolean_System_Boolean_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.InternalSaveSchema(Terrasoft.Core.ISchemaManagerItem{Terrasoft.Core.ClientUnitSchema},System.Guid,System.Boolean,Terrasoft.Core.UserConnection,System.Boolean,System.Boolean,System.Boolean)">InternalSaveSchema(ISchemaManagerItem&lt;ClientUnitSchema&gt;, Guid, Boolean, UserConnection, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InternalSaveSchema(ISchemaManagerItem&lt;ClientUnitSchema&gt; designItem, Guid packageUId, bool removeDesignItem, UserConnection userConnection, bool generateBundles, bool validateNamePrefixes = true, bool lockSchemaInSourceControlStorage = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td><span class="parametername">designItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">packageUId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeDesignItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td><span class="parametername">userConnection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">generateBundles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">validateNamePrefixes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">lockSchemaInSourceControlStorage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.InternalSaveSchema(Terrasoft.Core.ISchemaManagerItem&lt;Terrasoft.Core.ClientUnitSchema&gt;, System.Guid, System.Boolean, Terrasoft.Core.UserConnection, System.Boolean, System.Boolean, System.Boolean)</span></div>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_SaveDependencies_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.SaveDependencies*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_SaveDependencies_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_ClientUnitSchema__" data-uid="Terrasoft.Core.ClientUnitSchemaManager.SaveDependencies(Terrasoft.Core.ISchemaManagerItem{Terrasoft.Core.ClientUnitSchema})">SaveDependencies(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SaveDependencies(ISchemaManagerItem&lt;ClientUnitSchema&gt; designItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td><span class="parametername">designItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_SaveJs_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.SaveJs*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_SaveJs_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_ClientUnitSchema__Terrasoft_Core_DesignMode_ItemDescriptor_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.SaveJs(Terrasoft.Core.ISchemaManagerItem{Terrasoft.Core.ClientUnitSchema},Terrasoft.Core.DesignMode.ItemDescriptor)">SaveJs(ISchemaManagerItem&lt;ClientUnitSchema&gt;, ItemDescriptor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SaveJs(ISchemaManagerItem&lt;ClientUnitSchema&gt; designItem, ItemDescriptor item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td><span class="parametername">designItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DesignMode.ItemDescriptor.html">ItemDescriptor</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_SaveLess_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.SaveLess*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_SaveLess_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_ClientUnitSchema__Terrasoft_Core_DesignMode_ItemDescriptor_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.SaveLess(Terrasoft.Core.ISchemaManagerItem{Terrasoft.Core.ClientUnitSchema},Terrasoft.Core.DesignMode.ItemDescriptor)">SaveLess(ISchemaManagerItem&lt;ClientUnitSchema&gt;, ItemDescriptor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SaveLess(ISchemaManagerItem&lt;ClientUnitSchema&gt; designItem, ItemDescriptor item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td><span class="parametername">designItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DesignMode.ItemDescriptor.html">ItemDescriptor</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_ClientUnitSchemaManager_SaveSchemaContent_" data-uid="Terrasoft.Core.ClientUnitSchemaManager.SaveSchemaContent*"></a>
+  <h4 id="Terrasoft_Core_ClientUnitSchemaManager_SaveSchemaContent_Terrasoft_Core_ISchemaManagerItem_Terrasoft_Core_ClientUnitSchema__" data-uid="Terrasoft.Core.ClientUnitSchemaManager.SaveSchemaContent(Terrasoft.Core.ISchemaManagerItem{Terrasoft.Core.ClientUnitSchema})">SaveSchemaContent(ISchemaManagerItem&lt;ClientUnitSchema&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SaveSchemaContent(ISchemaManagerItem&lt;ClientUnitSchema&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem-1.html">ISchemaManagerItem</a>&lt;<a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a>&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Terrasoft.Core.SchemaManager&lt;Terrasoft.Core.ClientUnitSchema&gt;.SaveSchemaContent(Terrasoft.Core.ISchemaManagerItem&lt;Terrasoft.Core.ClientUnitSchema&gt;)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IManager-2.html">IManager&lt;TItem, TInstance&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.ISchemaManager.html">ISchemaManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IManager.html">IManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.ISourceCodeSchemaManager.html">ISourceCodeSchemaManager</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_SetupSchemaManagerProvider__1_Terrasoft_Core_SchemaManager___0__Terrasoft_Core_AppConnection_">SubstituteUtilities.SetupSchemaManagerProvider&lt;T&gt;(SchemaManager&lt;T&gt;, AppConnection)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

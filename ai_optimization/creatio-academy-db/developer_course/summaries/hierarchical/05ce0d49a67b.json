@@ -1,0 +1,60 @@
+{
+  "summary_id": "05ce0d49a67b",
+  "content_id": "c73636779bcc",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: server, database, sql, api, package",
+  "key_points": [
+    "server",
+    "database",
+    "sql",
+    "api",
+    "package"
+  ],
+  "keywords": [
+    "service",
+    "data",
+    "web",
+    "code",
+    "let",
+    "use",
+    "need",
+    "okay",
+    "method",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 14700,
+  "compression_ratio": 0.0004761904761904762,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:59:56.136075",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "server",
+        "database",
+        "sql",
+        "api",
+        "package"
+      ],
+      "keywords": [
+        "service",
+        "data",
+        "web",
+        "code",
+        "let",
+        "use",
+        "need",
+        "okay",
+        "method",
+        "like"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

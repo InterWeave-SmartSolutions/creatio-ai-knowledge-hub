@@ -1,0 +1,45 @@
+{
+  "summary_id": "1e2b7e71a6b8",
+  "content_id": "81ddf5a48985",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: the next step is to prepare for the exam and then pass this exam.\nINSTRUCTION: price web service working \nparameters are not showing not passing.\nINSTRUCTION: you can \napply for this exam just from Academy website and register for the exam at Academy.\nCONCEPT: module\nCONCEPT: entity\nCONCEPT: web service\nNOTE: we have a bit different percentage of prices and for center for rentals and for sales, so take care to \nprovide correct values here.\nNOTE: and we will check it the next task is about C Sharp programming \nmake your own back service club.",
+  "key_points": [
+    "INSTRUCTION: the next step is to prepare for the exam and then pass this exam.",
+    "INSTRUCTION: price web service working \nparameters are not showing not passing.",
+    "INSTRUCTION: you can \napply for this exam just from Academy website and register for the exam at Academy.",
+    "CONCEPT: module",
+    "CONCEPT: entity",
+    "CONCEPT: web service",
+    "NOTE: we have a bit different percentage of prices and for center for rentals and for sales, so take care to \nprovide correct values here.",
+    "NOTE: and we will check it the next task is about C Sharp programming \nmake your own back service club."
+  ],
+  "keywords": [
+    "speaker",
+    "let",
+    "data",
+    "like",
+    "page",
+    "test",
+    "exam",
+    "client",
+    "use",
+    "yes"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 96,
+  "original_length": 13179,
+  "compression_ratio": 0.007284315957204644,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:52:40.782722",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

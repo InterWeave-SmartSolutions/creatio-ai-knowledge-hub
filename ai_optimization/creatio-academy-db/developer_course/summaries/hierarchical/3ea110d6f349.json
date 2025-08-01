@@ -1,0 +1,60 @@
+{
+  "summary_id": "3ea110d6f349",
+  "content_id": "ce77ce58529f",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: server, database, sql, api, package",
+  "key_points": [
+    "server",
+    "database",
+    "sql",
+    "api",
+    "package"
+  ],
+  "keywords": [
+    "creation",
+    "file",
+    "windows",
+    "use",
+    "package",
+    "database",
+    "need",
+    "server",
+    "just",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 16093,
+  "compression_ratio": 0.00043497172683775554,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T17:00:49.659356",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "server",
+        "database",
+        "sql",
+        "api",
+        "package"
+      ],
+      "keywords": [
+        "creation",
+        "file",
+        "windows",
+        "use",
+        "package",
+        "database",
+        "need",
+        "server",
+        "just",
+        "like"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

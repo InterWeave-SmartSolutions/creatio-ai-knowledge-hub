@@ -1,0 +1,2093 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Schema
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Schema
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Terrasoft.Core.Schema">
+  
+  
+  <h1 id="Terrasoft_Core_Schema" data-uid="Terrasoft.Core.Schema" class="text-break">Class Schema
+  </h1>
+  <div class="markdown level0 summary"><p>Base class of the schema.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Terrasoft.Core.MetaItem.html">MetaItem</a></div>
+    <div class="level2"><a class="xref" href="Terrasoft.Core.MetaSchema.html">MetaSchema</a></div>
+    <div class="level3"><span class="xref">Schema</span></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Core.Addons.AddonSchema.html">AddonSchema</a></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Core.ClientUnitSchema.html">ClientUnitSchema</a></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Core.ImageListSchema.html">ImageListSchema</a></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Core.Process.BaseProcessUserTaskSchema.html">BaseProcessUserTaskSchema</a></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Core.Process.ProcessBasedSchema.html">ProcessBasedSchema</a></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Core.SourceCodeSchema.html">SourceCodeSchema</a></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Core.ValueListSchema.html">ValueListSchema</a></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Reports.ReportSchema.html">ReportSchema</a></div>
+      <div class="level4"><a class="xref" href="Terrasoft.Services.ServiceSchema.html">ServiceSchema</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Terrasoft.Common.IMetaDataSerializable.html">IMetaDataSerializable</a></div>
+    <div><span class="xref">System.ICloneable</span></div>
+    <div><a class="xref" href="Terrasoft.Core.IMetaSchema.html">IMetaSchema</a></div>
+    <div><a class="xref" href="Terrasoft.Core.IMetaItem.html">IMetaItem</a></div>
+    <div><a class="xref" href="Terrasoft.Core.IManagerItemInstance.html">IManagerItemInstance</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaSchema.html#Terrasoft_Core_MetaSchema_InitializeCreatedInSchemaUId">MetaSchema.InitializeCreatedInSchemaUId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaSchema.html#Terrasoft_Core_MetaSchema_InitializeModifiedInSchemaUId">MetaSchema.InitializeModifiedInSchemaUId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaSchema.html#Terrasoft_Core_MetaSchema_Manager">MetaSchema.Manager</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaSchema.html#Terrasoft_Core_MetaSchema_IsCreatedInSchemaUIdInitialized">MetaSchema.IsCreatedInSchemaUIdInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaSchema.html#Terrasoft_Core_MetaSchema_IsModifiedInSchemaUIdInitialized">MetaSchema.IsModifiedInSchemaUIdInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_ApplyTemplateDataValue_Terrasoft_Common_DataReader_">MetaItem.ApplyTemplateDataValue(DataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_CompleteApplyingTemplateDataValues">MetaItem.CompleteApplyingTemplateDataValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_CompleteApplyingMetaDataValues">MetaItem.CompleteApplyingMetaDataValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_CheckIsNameValidIdentifier_System_String_">MetaItem.CheckIsNameValidIdentifier(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_Clone">MetaItem.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_ReadMetaData_Terrasoft_Common_DataReader_">MetaItem.ReadMetaData(DataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_WriteTemplateData_Terrasoft_Common_DataWriter_">MetaItem.WriteTemplateData(DataWriter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_ReadTemplateData_Terrasoft_Common_DataReader_">MetaItem.ReadTemplateData(DataReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_Id">MetaItem.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_UId">MetaItem.UId</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_RealUId">MetaItem.RealUId</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_Name">MetaItem.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_CreatedInSchemaUId">MetaItem.CreatedInSchemaUId</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_ModifiedInSchemaUId">MetaItem.ModifiedInSchemaUId</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_ParentMetaSchema">MetaItem.ParentMetaSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_CreatedInPackageId">MetaItem.CreatedInPackageId</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_IsDeserializedFromMetaData">MetaItem.IsDeserializedFromMetaData</a>
+    </div>
+    <div>
+      <a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_NamePrefix">MetaItem.NamePrefix</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Terrasoft.Core.html">Terrasoft.Core</a></h6>
+  <h6><strong>Assembly</strong>: Terrasoft.Core.dll</h6>
+  <h5 id="Terrasoft_Core_Schema_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaType(&quot;{3D13F030-6745-4f00-A7DB-07D3823B6A03}&quot;)]
+[DesignModeProperty(Name = &quot;Caption&quot;, FormatType = DesignModePropertyScriptFormatType.SetMethod, MetaPropertyName = &quot;B4&quot;, ValuesProvider = &quot;LocalizableStringProvider&quot;, Editor = &quot;xtype=localizabletextedit&quot;, ForeignPackageEditMode = ForeignPackageEditMode.Edit, IsRequired = true)]
+[DesignModeProperty(Name = &quot;Description&quot;, UsageType = DesignModeUsageType.Advanced, MetaPropertyName = &quot;B5&quot;, ValuesProvider = &quot;LocalizableStringProvider&quot;, Editor = &quot;xtype=localizabletextedit&quot;)]
+[DesignModeProperty(Name = &quot;Methods&quot;, UsageType = DesignModeUsageType.None, MetaPropertyName = &quot;B1&quot;, ForeignPackageEditMode = ForeignPackageEditMode.ItemsAdd | ForeignPackageEditMode.ItemsMove)]
+[DesignModeProperty(Name = &quot;LocalizableStrings&quot;, UsageType = DesignModeUsageType.None, MetaPropertyName = &quot;B2&quot;, ForeignPackageEditMode = ForeignPackageEditMode.ItemsAdd | ForeignPackageEditMode.ItemsMove)]
+[DesignModeProperty(Name = &quot;Usings&quot;, UsageType = DesignModeUsageType.None, MetaPropertyName = &quot;B3&quot;, ForeignPackageEditMode = ForeignPackageEditMode.ItemsAdd | ForeignPackageEditMode.ItemsMove)]
+[DesignModeProperty(Name = &quot;DenyExtending&quot;, MetaPropertyName = &quot;B9&quot;)]
+[DesignModeProperty(Name = &quot;ExtendParent&quot;, MetaPropertyName = &quot;B7&quot;, IsReadOnly = true)]
+[DesignModeProperty(Name = &quot;PackageUId&quot;, UsageType = DesignModeUsageType.General, IsRequired = true, MetaPropertyName = &quot;B6&quot;, ValuesProvider = &quot;PackageUIdValuesProvider&quot;)]
+[DesignModeProperty(Name = &quot;CreatedInVersion&quot;, MetaPropertyName = &quot;B8&quot;, IsReadOnly = true, UsageType = DesignModeUsageType.None)]
+public abstract class Schema : MetaSchema, IMetaDataSerializable, ICloneable, IMetaSchema, IMetaItem, IManagerItemInstance</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_Schema__ctor_" data-uid="Terrasoft.Core.Schema.#ctor*"></a>
+  <h4 id="Terrasoft_Core_Schema__ctor_Terrasoft_Core_ISchemaManager_" data-uid="Terrasoft.Core.Schema.#ctor(Terrasoft.Core.ISchemaManager)">Schema(ISchemaManager)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="Terrasoft.Core.Schema.html">Schema</a> instance with the specified schema manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Schema(ISchemaManager schemaManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManager.html">ISchemaManager</a></td>
+        <td><span class="parametername">schemaManager</span></td>
+        <td><p>Schema manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If <code>null</code> is passed as the <code data-dev-comment-type="paramref" class="paramref">schemaManager</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema__ctor_" data-uid="Terrasoft.Core.Schema.#ctor*"></a>
+  <h4 id="Terrasoft_Core_Schema__ctor_Terrasoft_Core_Schema_" data-uid="Terrasoft.Core.Schema.#ctor(Terrasoft.Core.Schema)">Schema(Schema)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Terrasoft.Core.Schema.html">Schema</a> that is a clone of the given schema <code data-dev-comment-type="paramref" class="paramref">source</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Schema(Schema source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Schema.html">Schema</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Schema, which clone is created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_Schema_AppManagerProvider_" data-uid="Terrasoft.Core.Schema.AppManagerProvider*"></a>
+  <h4 id="Terrasoft_Core_Schema_AppManagerProvider" data-uid="Terrasoft.Core.Schema.AppManagerProvider">AppManagerProvider</h4>
+  <div class="markdown level1 summary"><p>Provider of application-level schema manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagerProvider AppManagerProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ManagerProvider.html">ManagerProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_Caption_" data-uid="Terrasoft.Core.Schema.Caption*"></a>
+  <h4 id="Terrasoft_Core_Schema_Caption" data-uid="Terrasoft.Core.Schema.Caption">Caption</h4>
+  <div class="markdown level1 summary"><p>Schema header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DBMetaTypeProperty(DBMetaInfoItemType.Schema, typeof(LocalizableStringDBMetaTypeConverter))]
+[MetaTypeProperty(&quot;{C71EEECC-9C0D-4fe6-9401-44E3BBF10493}&quot;, &quot;Terrasoft.Core&quot;, &quot;Schema.Caption&quot;)]
+public LocalizableString Caption { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableString.html">LocalizableString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_CreatedInVersion_" data-uid="Terrasoft.Core.Schema.CreatedInVersion*"></a>
+  <h4 id="Terrasoft_Core_Schema_CreatedInVersion" data-uid="Terrasoft.Core.Schema.CreatedInVersion">CreatedInVersion</h4>
+  <div class="markdown level1 summary"><p>Created in the product version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaTypeProperty(&quot;{A4E12596-007E-4B27-9460-AAB24E2D876D}&quot;, DefValue = &quot;&quot;, IsExtraProperty = true)]
+public string CreatedInVersion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_DenyExtending_" data-uid="Terrasoft.Core.Schema.DenyExtending*"></a>
+  <h4 id="Terrasoft_Core_Schema_DenyExtending" data-uid="Terrasoft.Core.Schema.DenyExtending">DenyExtending</h4>
+  <div class="markdown level1 summary"><p>Forbid the substitution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DenyExtending { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_Description_" data-uid="Terrasoft.Core.Schema.Description*"></a>
+  <h4 id="Terrasoft_Core_Schema_Description" data-uid="Terrasoft.Core.Schema.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Description of the schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableString Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableString.html">LocalizableString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_ExtendParent_" data-uid="Terrasoft.Core.Schema.ExtendParent*"></a>
+  <h4 id="Terrasoft_Core_Schema_ExtendParent" data-uid="Terrasoft.Core.Schema.ExtendParent">ExtendParent</h4>
+  <div class="markdown level1 summary"><p>Flag indicates whether current schema extend its parent schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ExtendParent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_HasMethods_" data-uid="Terrasoft.Core.Schema.HasMethods*"></a>
+  <h4 id="Terrasoft_Core_Schema_HasMethods" data-uid="Terrasoft.Core.Schema.HasMethods">HasMethods</h4>
+  <div class="markdown level1 summary"><p>A sign that the schema has methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMethods { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_IsAggregated_" data-uid="Terrasoft.Core.Schema.IsAggregated*"></a>
+  <h4 id="Terrasoft_Core_Schema_IsAggregated" data-uid="Terrasoft.Core.Schema.IsAggregated">IsAggregated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAggregated { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_IsCoreSchema_" data-uid="Terrasoft.Core.Schema.IsCoreSchema*"></a>
+  <h4 id="Terrasoft_Core_Schema_IsCoreSchema" data-uid="Terrasoft.Core.Schema.IsCoreSchema">IsCoreSchema</h4>
+  <div class="markdown level1 summary"><p>Flag if the schema is a system schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCoreSchema { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_IsInitialized_" data-uid="Terrasoft.Core.Schema.IsInitialized*"></a>
+  <h4 id="Terrasoft_Core_Schema_IsInitialized" data-uid="Terrasoft.Core.Schema.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"><p>Determines if the schema is initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_IsStaticContentNotGenerated_" data-uid="Terrasoft.Core.Schema.IsStaticContentNotGenerated*"></a>
+  <h4 id="Terrasoft_Core_Schema_IsStaticContentNotGenerated" data-uid="Terrasoft.Core.Schema.IsStaticContentNotGenerated">IsStaticContentNotGenerated</h4>
+  <div class="markdown level1 summary"><p>Indicates that static content was not generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStaticContentNotGenerated { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_ItemsSequentiallyNumbered_" data-uid="Terrasoft.Core.Schema.ItemsSequentiallyNumbered*"></a>
+  <h4 id="Terrasoft_Core_Schema_ItemsSequentiallyNumbered" data-uid="Terrasoft.Core.Schema.ItemsSequentiallyNumbered">ItemsSequentiallyNumbered</h4>
+  <div class="markdown level1 summary"><p>Flag of generation a sequential schema name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ItemsSequentiallyNumbered { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_LocalizableStrings_" data-uid="Terrasoft.Core.Schema.LocalizableStrings*"></a>
+  <h4 id="Terrasoft_Core_Schema_LocalizableStrings" data-uid="Terrasoft.Core.Schema.LocalizableStrings">LocalizableStrings</h4>
+  <div class="markdown level1 summary"><p>Collection of localizable schema strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaTypeProperty(&quot;{53B29047-2FA9-4009-BF8C-113B7EA1F2E5}&quot;)]
+public SchemaLocalizableStringCollection LocalizableStrings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.SchemaLocalizableStringCollection.html">SchemaLocalizableStringCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_ManagerItem_" data-uid="Terrasoft.Core.Schema.ManagerItem*"></a>
+  <h4 id="Terrasoft_Core_Schema_ManagerItem" data-uid="Terrasoft.Core.Schema.ManagerItem">ManagerItem</h4>
+  <div class="markdown level1 summary"><p>Schema view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IManagerItem ManagerItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IManagerItem.html">IManagerItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_Methods_" data-uid="Terrasoft.Core.Schema.Methods*"></a>
+  <h4 id="Terrasoft_Core_Schema_Methods" data-uid="Terrasoft.Core.Schema.Methods">Methods</h4>
+  <div class="markdown level1 summary"><p>Collection of methods of the schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaTypeProperty(&quot;{CF300D60-27A1-4C44-BF0D-AE2C3372EF2E}&quot;)]
+public SchemaMethodCollection Methods { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.SchemaMethodCollection.html">SchemaMethodCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_PackageUId_" data-uid="Terrasoft.Core.Schema.PackageUId*"></a>
+  <h4 id="Terrasoft_Core_Schema_PackageUId" data-uid="Terrasoft.Core.Schema.PackageUId">PackageUId</h4>
+  <div class="markdown level1 summary"><p>Unique identifier of a package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid PackageUId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_ReferenceSchemaUIds_" data-uid="Terrasoft.Core.Schema.ReferenceSchemaUIds*"></a>
+  <h4 id="Terrasoft_Core_Schema_ReferenceSchemaUIds" data-uid="Terrasoft.Core.Schema.ReferenceSchemaUIds">ReferenceSchemaUIds</h4>
+  <div class="markdown level1 summary"><p>A collection of schema identifiers referenced by the schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;Guid&gt; ReferenceSchemaUIds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_ResourceManager_" data-uid="Terrasoft.Core.Schema.ResourceManager*"></a>
+  <h4 id="Terrasoft_Core_Schema_ResourceManager" data-uid="Terrasoft.Core.Schema.ResourceManager">ResourceManager</h4>
+  <div class="markdown level1 summary"><p>Schema resource manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResourceManager ResourceManager { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.IResourceManager.html">IResourceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_SchemaManager_" data-uid="Terrasoft.Core.Schema.SchemaManager*"></a>
+  <h4 id="Terrasoft_Core_Schema_SchemaManager" data-uid="Terrasoft.Core.Schema.SchemaManager">SchemaManager</h4>
+  <div class="markdown level1 summary"><p>Schema manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISchemaManager SchemaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManager.html">ISchemaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_SchemaManagerItem_" data-uid="Terrasoft.Core.Schema.SchemaManagerItem*"></a>
+  <h4 id="Terrasoft_Core_Schema_SchemaManagerItem" data-uid="Terrasoft.Core.Schema.SchemaManagerItem">SchemaManagerItem</h4>
+  <div class="markdown level1 summary"><p>Schema view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISchemaManagerItem SchemaManagerItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.ISchemaManagerItem.html">ISchemaManagerItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_SchemaManagerProvider_" data-uid="Terrasoft.Core.Schema.SchemaManagerProvider*"></a>
+  <h4 id="Terrasoft_Core_Schema_SchemaManagerProvider" data-uid="Terrasoft.Core.Schema.SchemaManagerProvider">SchemaManagerProvider</h4>
+  <div class="markdown level1 summary"><p>The provider of the configuration level schema manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SchemaManagerProvider SchemaManagerProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.SchemaManagerProvider.html">SchemaManagerProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_SchemaNamePrefix_" data-uid="Terrasoft.Core.Schema.SchemaNamePrefix*"></a>
+  <h4 id="Terrasoft_Core_Schema_SchemaNamePrefix" data-uid="Terrasoft.Core.Schema.SchemaNamePrefix">SchemaNamePrefix</h4>
+  <div class="markdown level1 summary"><p>The prefix of the name of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SchemaNamePrefix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_Storage_" data-uid="Terrasoft.Core.Schema.Storage*"></a>
+  <h4 id="Terrasoft_Core_Schema_Storage" data-uid="Terrasoft.Core.Schema.Storage">Storage</h4>
+  <div class="markdown level1 summary"><p>Schema resource store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResourceStorage Storage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.IResourceStorage.html">IResourceStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_SystemUserConnection_" data-uid="Terrasoft.Core.Schema.SystemUserConnection*"></a>
+  <h4 id="Terrasoft_Core_Schema_SystemUserConnection" data-uid="Terrasoft.Core.Schema.SystemUserConnection">SystemUserConnection</h4>
+  <div class="markdown level1 summary"><p>System user connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserConnection SystemUserConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.UserConnection.html">UserConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_Usings_" data-uid="Terrasoft.Core.Schema.Usings*"></a>
+  <h4 id="Terrasoft_Core_Schema_Usings" data-uid="Terrasoft.Core.Schema.Usings">Usings</h4>
+  <div class="markdown level1 summary"><p>Collection of namespaces used by schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MetaTypeProperty(&quot;{CAF30A49-B813-43FD-8D7F-0C46E72FA2D3}&quot;)]
+public SchemaUsingCollection Usings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.SchemaUsingCollection.html">SchemaUsingCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_Workspace_" data-uid="Terrasoft.Core.Schema.Workspace*"></a>
+  <h4 id="Terrasoft_Core_Schema_Workspace" data-uid="Terrasoft.Core.Schema.Workspace">Workspace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SysWorkspace Workspace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.Configuration.SysWorkspace.html">SysWorkspace</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Terrasoft_Core_Schema_ApplyMetaDataValue_" data-uid="Terrasoft.Core.Schema.ApplyMetaDataValue*"></a>
+  <h4 id="Terrasoft_Core_Schema_ApplyMetaDataValue_Terrasoft_Common_DataReader_" data-uid="Terrasoft.Core.Schema.ApplyMetaDataValue(Terrasoft.Common.DataReader)">ApplyMetaDataValue(DataReader)</h4>
+  <div class="markdown level1 summary"><p>Proofreading the values of the schema properties from the metadata using the specified <a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ApplyMetaDataValue(DataReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.DataReader.html">DataReader</a> instance  that provides metadata proofreading.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_ApplyMetaDataValue_Terrasoft_Common_DataReader_">MetaItem.ApplyMetaDataValue(DataReader)</a></div>
+  
+  
+  <a id="Terrasoft_Core_Schema_FindItem_" data-uid="Terrasoft.Core.Schema.FindItem*"></a>
+  <h4 id="Terrasoft_Core_Schema_FindItem__1___0_System_Collections_Generic_IEnumerable_System_Func___0_Terrasoft_Core_MetaItem___" data-uid="Terrasoft.Core.Schema.FindItem``1(``0,System.Collections.Generic.IEnumerable{System.Func{``0,Terrasoft.Core.MetaItem}})">FindItem&lt;T&gt;(T, IEnumerable&lt;Func&lt;T, MetaItem&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static MetaItem FindItem&lt;T&gt;(T arg, IEnumerable&lt;Func&lt;T, MetaItem&gt;&gt; methods)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Func</span>&lt;T, <a class="xref" href="Terrasoft.Core.MetaItem.html">MetaItem</a>&gt;&gt;</td>
+        <td><span class="parametername">methods</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.MetaItem.html">MetaItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GenerateItemCaption_" data-uid="Terrasoft.Core.Schema.GenerateItemCaption*"></a>
+  <h4 id="Terrasoft_Core_Schema_GenerateItemCaption_Terrasoft_Core_DesignModeClassDescriptor_System_Int32_" data-uid="Terrasoft.Core.Schema.GenerateItemCaption(Terrasoft.Core.DesignModeClassDescriptor,System.Int32)">GenerateItemCaption(DesignModeClassDescriptor, Int32)</h4>
+  <div class="markdown level1 summary"><p>Generates a sequential schema header using the specified index and the class definition of the development time object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableString GenerateItemCaption(DesignModeClassDescriptor classDescriptor, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DesignModeClassDescriptor.html">DesignModeClassDescriptor</a></td>
+        <td><span class="parametername">classDescriptor</span></td>
+        <td><p>Description of the class of the development time object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Schema index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.LocalizableString.html">LocalizableString</a></td>
+        <td><p>Localizable string of the schema caption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GenerateItemNamePrefix_" data-uid="Terrasoft.Core.Schema.GenerateItemNamePrefix*"></a>
+  <h4 id="Terrasoft_Core_Schema_GenerateItemNamePrefix_Terrasoft_Core_IDesignItem_Terrasoft_Core_DesignModeClassDescriptor_" data-uid="Terrasoft.Core.Schema.GenerateItemNamePrefix(Terrasoft.Core.IDesignItem,Terrasoft.Core.DesignModeClassDescriptor)">GenerateItemNamePrefix(IDesignItem, DesignModeClassDescriptor)</h4>
+  <div class="markdown level1 summary"><p>A prefix is generated for a given development time element, using the specified description of the class of the development time object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GenerateItemNamePrefix(IDesignItem item, DesignModeClassDescriptor classDescriptor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IDesignItem.html">IDesignItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The development time element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DesignModeClassDescriptor.html">DesignModeClassDescriptor</a></td>
+        <td><span class="parametername">classDescriptor</span></td>
+        <td><p>Description of the class of the development time object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Generated prefix for the <code data-dev-comment-type="paramref" class="paramref">item</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GenerateItemUniqueIndex_" data-uid="Terrasoft.Core.Schema.GenerateItemUniqueIndex*"></a>
+  <h4 id="Terrasoft_Core_Schema_GenerateItemUniqueIndex_System_String_" data-uid="Terrasoft.Core.Schema.GenerateItemUniqueIndex(System.String)">GenerateItemUniqueIndex(String)</h4>
+  <div class="markdown level1 summary"><p>Generates the unique index of the item for the specified prefix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GenerateItemUniqueIndex(string prefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>Prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Unique index of the item for the <code data-dev-comment-type="paramref" class="paramref">prefix</code> prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Core_Schema_GenerateItemUniqueIndex_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method is not implemented.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetIsNamePrefixValid_" data-uid="Terrasoft.Core.Schema.GetIsNamePrefixValid*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetIsNamePrefixValid_System_String_" data-uid="Terrasoft.Core.Schema.GetIsNamePrefixValid(System.String)">GetIsNamePrefixValid(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if the prefix of the object name matches the prefix specified in the &quot;Prefix for object name” system setting .</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GetIsNamePrefixValid(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Object name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>True</code> if the prefix of the <code data-dev-comment-type="paramref" class="paramref">name</code> object name matches the prefix specified in the &quot;Prefix for object name” system setting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetIsPrefixRequired_" data-uid="Terrasoft.Core.Schema.GetIsPrefixRequired*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetIsPrefixRequired" data-uid="Terrasoft.Core.Schema.GetIsPrefixRequired">GetIsPrefixRequired()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool GetIsPrefixRequired()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetLocalizableValues_" data-uid="Terrasoft.Core.Schema.GetLocalizableValues*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetLocalizableValues_System_Collections_Generic_ICollection_Terrasoft_Common_LocalizableValue__" data-uid="Terrasoft.Core.Schema.GetLocalizableValues(System.Collections.Generic.ICollection{Terrasoft.Common.LocalizableValue})">GetLocalizableValues(ICollection&lt;LocalizableValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Loads the localized values of the schema into the specified collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetLocalizableValues(ICollection&lt;LocalizableValue&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>A collection of returned localizable schema values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetLocalizableValues_" data-uid="Terrasoft.Core.Schema.GetLocalizableValues*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetLocalizableValues_System_Collections_Generic_ICollection_Terrasoft_Common_LocalizableValue__System_Boolean_" data-uid="Terrasoft.Core.Schema.GetLocalizableValues(System.Collections.Generic.ICollection{Terrasoft.Common.LocalizableValue},System.Boolean)">GetLocalizableValues(ICollection&lt;LocalizableValue&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads the localized values of the schema into the specified collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetLocalizableValues(ICollection&lt;LocalizableValue&gt; values, bool includeInherited)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Terrasoft.Common.LocalizableValue.html">LocalizableValue</a>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>A collection of returned localizable schema values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeInherited</span></td>
+        <td><p>Whether to include properties in the collection of returned localizable values inherited (“no” by default).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetMetaItems_" data-uid="Terrasoft.Core.Schema.GetMetaItems*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetMetaItems_System_Collections_Generic_ICollection_Terrasoft_Core_IMetaItem__" data-uid="Terrasoft.Core.Schema.GetMetaItems(System.Collections.Generic.ICollection{Terrasoft.Core.IMetaItem})">GetMetaItems(ICollection&lt;IMetaItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fills the passed collection with meta items of the current schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetMetaItems(ICollection&lt;IMetaItem&gt; metaItems)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Terrasoft.Core.IMetaItem.html">IMetaItem</a>&gt;</td>
+        <td><span class="parametername">metaItems</span></td>
+        <td><p>Collection that is populated with meta items of the current schema.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetParentRealUIds_" data-uid="Terrasoft.Core.Schema.GetParentRealUIds*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetParentRealUIds_System_Collections_ObjectModel_Collection_System_Guid__" data-uid="Terrasoft.Core.Schema.GetParentRealUIds(System.Collections.ObjectModel.Collection{System.Guid})">GetParentRealUIds(Collection&lt;Guid&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetParentRealUIds(Collection&lt;Guid&gt; realUIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><span class="parametername">realUIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetResourceManagerName_" data-uid="Terrasoft.Core.Schema.GetResourceManagerName*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetResourceManagerName" data-uid="Terrasoft.Core.Schema.GetResourceManagerName">GetResourceManagerName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetResourceManagerName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_GetResourceManagerName">MetaItem.GetResourceManagerName()</a></div>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetSchemaReferences_" data-uid="Terrasoft.Core.Schema.GetSchemaReferences*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetSchemaReferences" data-uid="Terrasoft.Core.Schema.GetSchemaReferences">GetSchemaReferences()</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of references to assemblies that are required to compile the schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CodeCompilerReferenceCollection GetSchemaReferences()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.CodeGeneration.CodeCompilerReferenceCollection.html">CodeCompilerReferenceCollection</a></td>
+        <td><p>Collection of references to the assembly that are needed to compile the schema. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_GetShemaResourceManagerName_" data-uid="Terrasoft.Core.Schema.GetShemaResourceManagerName*"></a>
+  <h4 id="Terrasoft_Core_Schema_GetShemaResourceManagerName_System_Guid_" data-uid="Terrasoft.Core.Schema.GetShemaResourceManagerName(System.Guid)">GetShemaResourceManagerName(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetShemaResourceManagerName(Guid schemaRealUId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">schemaRealUId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_HandleNameChanging_" data-uid="Terrasoft.Core.Schema.HandleNameChanging*"></a>
+  <h4 id="Terrasoft_Core_Schema_HandleNameChanging_System_String_" data-uid="Terrasoft.Core.Schema.HandleNameChanging(System.String)">HandleNameChanging(String)</h4>
+  <div class="markdown level1 summary"><p>Updates the names of all localizable properties of the schema when it is renamed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void HandleNameChanging(string oldName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>Schema old name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_HandleNameChanging_System_String_">MetaItem.HandleNameChanging(String)</a></div>
+  
+  
+  <a id="Terrasoft_Core_Schema_InitializeLocalizableStrings_" data-uid="Terrasoft.Core.Schema.InitializeLocalizableStrings*"></a>
+  <h4 id="Terrasoft_Core_Schema_InitializeLocalizableStrings" data-uid="Terrasoft.Core.Schema.InitializeLocalizableStrings">InitializeLocalizableStrings()</h4>
+  <div class="markdown level1 summary"><p>Initialization of localized schema lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeLocalizableStrings()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_InitializeLocalizableValues_" data-uid="Terrasoft.Core.Schema.InitializeLocalizableValues*"></a>
+  <h4 id="Terrasoft_Core_Schema_InitializeLocalizableValues" data-uid="Terrasoft.Core.Schema.InitializeLocalizableValues">InitializeLocalizableValues()</h4>
+  <div class="markdown level1 summary"><p>Initializes the localized values of the schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeLocalizableValues()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_InitializeLocalizableValues_" data-uid="Terrasoft.Core.Schema.InitializeLocalizableValues*"></a>
+  <h4 id="Terrasoft_Core_Schema_InitializeLocalizableValues_System_String_" data-uid="Terrasoft.Core.Schema.InitializeLocalizableValues(System.String)">InitializeLocalizableValues(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes schema localizable values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitializeLocalizableValues(string resourceManagerName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceManagerName</span></td>
+        <td><p>Resource manager name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_InitializeLocalizableValues_" data-uid="Terrasoft.Core.Schema.InitializeLocalizableValues*"></a>
+  <h4 id="Terrasoft_Core_Schema_InitializeLocalizableValues_System_String_System_String_" data-uid="Terrasoft.Core.Schema.InitializeLocalizableValues(System.String,System.String)">InitializeLocalizableValues(String, String)</h4>
+  <div class="markdown level1 summary"><p>Performs initialization of localized schema values from the specified group of the specified resource manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitializeLocalizableValues(string resourceManagerName, string resourceGroupName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceManagerName</span></td>
+        <td><p>Name of a resource manager.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceGroupName</span></td>
+        <td><p>Resource group name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_InitializeMethods_" data-uid="Terrasoft.Core.Schema.InitializeMethods*"></a>
+  <h4 id="Terrasoft_Core_Schema_InitializeMethods" data-uid="Terrasoft.Core.Schema.InitializeMethods">InitializeMethods()</h4>
+  <div class="markdown level1 summary"><p>Initialization of the schema methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeMethods()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_InitializePrimaryInfo_" data-uid="Terrasoft.Core.Schema.InitializePrimaryInfo*"></a>
+  <h4 id="Terrasoft_Core_Schema_InitializePrimaryInfo" data-uid="Terrasoft.Core.Schema.InitializePrimaryInfo">InitializePrimaryInfo()</h4>
+  <div class="markdown level1 summary"><p>Initializes primary properties of the schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitializePrimaryInfo()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_InitializeUsings_" data-uid="Terrasoft.Core.Schema.InitializeUsings*"></a>
+  <h4 id="Terrasoft_Core_Schema_InitializeUsings" data-uid="Terrasoft.Core.Schema.InitializeUsings">InitializeUsings()</h4>
+  <div class="markdown level1 summary"><p>Initialization of the namespace collections used by the schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeUsings()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_LoadLocalizableValues_" data-uid="Terrasoft.Core.Schema.LoadLocalizableValues*"></a>
+  <h4 id="Terrasoft_Core_Schema_LoadLocalizableValues" data-uid="Terrasoft.Core.Schema.LoadLocalizableValues">LoadLocalizableValues()</h4>
+  <div class="markdown level1 summary"><p>Loads values for localized schema elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoadLocalizableValues()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_ReInitializeLocalizableValues_" data-uid="Terrasoft.Core.Schema.ReInitializeLocalizableValues*"></a>
+  <h4 id="Terrasoft_Core_Schema_ReInitializeLocalizableValues_System_String_System_String_" data-uid="Terrasoft.Core.Schema.ReInitializeLocalizableValues(System.String,System.String)">ReInitializeLocalizableValues(String, String)</h4>
+  <div class="markdown level1 summary"><p>Performs reinitialization of localized schema values from the specified group of the specified resource manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReInitializeLocalizableValues(string resourceManagerName, string resourceGroupName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceManagerName</span></td>
+        <td><p>Resource manager name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceGroupName</span></td>
+        <td><p>Resource group name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_RenameLocalizedProperty_" data-uid="Terrasoft.Core.Schema.RenameLocalizedProperty*"></a>
+  <h4 id="Terrasoft_Core_Schema_RenameLocalizedProperty_System_String_Terrasoft_Core_IMetaItem_" data-uid="Terrasoft.Core.Schema.RenameLocalizedProperty(System.String,Terrasoft.Core.IMetaItem)">RenameLocalizedProperty(String, IMetaItem)</h4>
+  <div class="markdown level1 summary"><p>Updates the name of the specified localizable schema property when the schema is renamed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameLocalizedProperty(string oldName, IMetaItem childProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>The old schema name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IMetaItem.html">IMetaItem</a></td>
+        <td><span class="parametername">childProperty</span></td>
+        <td><p>A localizable schema property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_SetDefInheritance_" data-uid="Terrasoft.Core.Schema.SetDefInheritance*"></a>
+  <h4 id="Terrasoft_Core_Schema_SetDefInheritance" data-uid="Terrasoft.Core.Schema.SetDefInheritance">SetDefInheritance()</h4>
+  <div class="markdown level1 summary"><p>Sets the current schema identifier as the parent for all schema elements that do not have a parent schema identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDefInheritance()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_SetLocalizableStringsDefInheritance_" data-uid="Terrasoft.Core.Schema.SetLocalizableStringsDefInheritance*"></a>
+  <h4 id="Terrasoft_Core_Schema_SetLocalizableStringsDefInheritance" data-uid="Terrasoft.Core.Schema.SetLocalizableStringsDefInheritance">SetLocalizableStringsDefInheritance()</h4>
+  <div class="markdown level1 summary"><p>The schema sets inheritance properties for localized strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetLocalizableStringsDefInheritance()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_SetLocalizedPropertyValue_" data-uid="Terrasoft.Core.Schema.SetLocalizedPropertyValue*"></a>
+  <h4 id="Terrasoft_Core_Schema_SetLocalizedPropertyValue_System_String_Terrasoft_Core_IMetaItem_System_String_System_String_" data-uid="Terrasoft.Core.Schema.SetLocalizedPropertyValue(System.String,Terrasoft.Core.IMetaItem,System.String,System.String)">SetLocalizedPropertyValue(String, IMetaItem, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalizedPropertyValue(string culture, IMetaItem childProperty, string propertyName, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IMetaItem.html">IMetaItem</a></td>
+        <td><span class="parametername">childProperty</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Terrasoft_Core_Schema_SetMethodsDefInheritance_" data-uid="Terrasoft.Core.Schema.SetMethodsDefInheritance*"></a>
+  <h4 id="Terrasoft_Core_Schema_SetMethodsDefInheritance" data-uid="Terrasoft.Core.Schema.SetMethodsDefInheritance">SetMethodsDefInheritance()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetMethodsDefInheritance()</code></pre>
+  </div>
+  
+  
+  <a id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem_" data-uid="Terrasoft.Core.Schema.SetUniqueNameAndCaptionForItem*"></a>
+  <h4 id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem_Terrasoft_Core_IDesignItem_" data-uid="Terrasoft.Core.Schema.SetUniqueNameAndCaptionForItem(Terrasoft.Core.IDesignItem)">SetUniqueNameAndCaptionForItem(IDesignItem)</h4>
+  <div class="markdown level1 summary"><p>Sets a unique name and a title for a given development time element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniqueNameAndCaptionForItem(IDesignItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IDesignItem.html">IDesignItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The development time element, to which the name and title are set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem_Terrasoft_Core_IDesignItem__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem_" data-uid="Terrasoft.Core.Schema.SetUniqueNameAndCaptionForItem*"></a>
+  <h4 id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem_Terrasoft_Core_IDesignItem_Terrasoft_Core_DesignModeClassDescriptor_System_Int32_" data-uid="Terrasoft.Core.Schema.SetUniqueNameAndCaptionForItem(Terrasoft.Core.IDesignItem,Terrasoft.Core.DesignModeClassDescriptor,System.Int32)">SetUniqueNameAndCaptionForItem(IDesignItem, DesignModeClassDescriptor, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets a unique name and header for a given development time element, with the specified index and a description of the development time object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetUniqueNameAndCaptionForItem(IDesignItem item, DesignModeClassDescriptor classDescriptor, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.IDesignItem.html">IDesignItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The development time element, to which the name and title are set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.DesignModeClassDescriptor.html">DesignModeClassDescriptor</a></td>
+        <td><span class="parametername">classDescriptor</span></td>
+        <td><p>Description of the class of the development time object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Element index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem_Terrasoft_Core_IDesignItem_Terrasoft_Core_DesignModeClassDescriptor_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem_" data-uid="Terrasoft.Core.Schema.SetUniqueNameAndCaptionForItem*"></a>
+  <h4 id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem__1___0_Terrasoft_Core_MetaItemCollection___0__" data-uid="Terrasoft.Core.Schema.SetUniqueNameAndCaptionForItem``1(``0,Terrasoft.Core.MetaItemCollection{``0})">SetUniqueNameAndCaptionForItem&lt;TItemType&gt;(TItemType, MetaItemCollection&lt;TItemType&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets a unique name and a title for a development time element of a specified type, from the passed collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniqueNameAndCaptionForItem&lt;TItemType&gt;(TItemType item, MetaItemCollection&lt;TItemType&gt; items)
+
+    where TItemType : class, IMetaItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TItemType</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The development time element, to which the name and title are set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Core.MetaItemCollection-1.html">MetaItemCollection</a>&lt;TItemType&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>A collection of design-time elements to which the <code data-dev-comment-type="paramref" class="paramref">item</code> belongs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TItemType</span></td>
+        <td><p>The type of the development time element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Terrasoft_Core_Schema_SetUniqueNameAndCaptionForItem__1___0_Terrasoft_Core_MetaItemCollection___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Overloaded method.</p>
+</div>
+  
+  
+  <a id="Terrasoft_Core_Schema_WriteMetaData_" data-uid="Terrasoft.Core.Schema.WriteMetaData*"></a>
+  <h4 id="Terrasoft_Core_Schema_WriteMetaData_Terrasoft_Common_DataWriter_" data-uid="Terrasoft.Core.Schema.WriteMetaData(Terrasoft.Common.DataWriter)">WriteMetaData(DataWriter)</h4>
+  <div class="markdown level1 summary"><p>Records schema metadata using the <a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteMetaData(DataWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The <a class="xref" href="Terrasoft.Common.DataWriter.html">DataWriter</a> instance that writes schema metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Terrasoft.Core.MetaItem.html#Terrasoft_Core_MetaItem_WriteMetaData_Terrasoft_Common_DataWriter_">MetaItem.WriteMetaData(DataWriter)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.IMetaDataSerializable.html">IMetaDataSerializable</a>
+  </div>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IMetaSchema.html">IMetaSchema</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IMetaItem.html">IMetaItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Core.IManagerItemInstance.html">IManagerItemInstance</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_">ReflectionUtilities.GetPropertyValue(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyDefValue_System_Object_System_String_System_Object_">ReflectionUtilities.GetPropertyDefValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TryGetPropertyValue_System_Object_System_String_System_Object__">ReflectionUtilities.TryGetPropertyValue(Object, String, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_HasProperty_System_Object_System_String_">ReflectionUtilities.HasProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValue_System_Object_System_String_System_Reflection_BindingFlags_">ReflectionUtilities.GetPropertyValue(Object, String, BindingFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_GetPropertyValueByPath_System_Object_System_String_">ReflectionUtilities.GetPropertyValueByPath(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_SetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.SetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ReflectionUtilities.html#Terrasoft_Common_ReflectionUtilities_TrySetPropertyValue_System_Object_System_String_System_Object_">ReflectionUtilities.TrySetPropertyValue(Object, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckArgumentNull_System_Object_System_String_">ValidateUtilities.CheckArgumentNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_CheckDependencyNull_System_Object_System_String_">ValidateUtilities.CheckDependencyNull(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.Common.ValidateUtilities.html#Terrasoft_Common_ValidateUtilities_EnsureDependencyNotNull__1___0_System_String_">ValidateUtilities.EnsureDependencyNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_CloneSchema__1___0_System_Object___">MetaDataTestUtils.CloneSchema&lt;TItem&gt;(TItem, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_CloneAbstractMetaItem__1___0_">MetaDataTestUtils.CloneAbstractMetaItem&lt;TItem&gt;(TItem)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_MetaPropertiesShouldNotHaveDefValue__1___0_System_Boolean_">MetaDataTestUtils.MetaPropertiesShouldNotHaveDefValue&lt;TInstance&gt;(TInstance, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.MetaDataTestUtils.html#Terrasoft_TestFramework_MetaDataTestUtils_GetMetaData_Terrasoft_Common_IMetaDataSerializable_">MetaDataTestUtils.GetMetaData(IMetaDataSerializable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Object___">NSubstituteExtension.Protected(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_Protected_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.Protected(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedGeneric__1_System_Object_System_String_System_Boolean_System_Object___">NSubstituteExtension.ProtectedGeneric&lt;T&gt;(Object, String, Boolean, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_ProtectedProperty_System_Object_System_String_">NSubstituteExtension.ProtectedProperty(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.NSubstituteExtension.html#Terrasoft_TestFramework_NSubstituteExtension_MatchInstance__1___0_">NSubstituteExtension.MatchInstance&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_GetIsSubstituteObject_System_Object_">SubstituteUtilities.GetIsSubstituteObject(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Terrasoft.TestFramework.SubstituteUtilities.html#Terrasoft_TestFramework_SubstituteUtilities_Instead__2___0_System_Func___0___1__">SubstituteUtilities.Instead&lt;TInstance, TValue&gt;(TInstance, Func&lt;TInstance, TValue&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

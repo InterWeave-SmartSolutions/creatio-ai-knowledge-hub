@@ -1,0 +1,32 @@
+{
+  "summary_id": "0016b267465b",
+  "content_id": "d57347054e45",
+  "summary_type": "abstractive",
+  "summary_text": "So today's session number three of our development on creation platform guided learning. We already set up our environment. We need some simple changes there. We practice with objects and with data items. I just forgot to note that you need some additional permissions.",
+  "key_points": [
+    "So today's session number three of our development on creation platform guided learning.",
+    "We already set up our environment."
+  ],
+  "keywords": [
+    "application",
+    "creation",
+    "created",
+    "need",
+    "users",
+    "data",
+    "database",
+    "let",
+    "objects",
+    "folder"
+  ],
+  "topics": [],
+  "summary_length": 44,
+  "original_length": 708,
+  "compression_ratio": 0.062146892655367235,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:57:16.109870",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

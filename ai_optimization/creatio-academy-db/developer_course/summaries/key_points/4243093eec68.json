@@ -1,0 +1,43 @@
+{
+  "summary_id": "4243093eec68",
+  "content_id": "c7028f12cf1e",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: steps on CREATION platform as developers.\nINSTRUCTION: of all, thank you for seeing this.\nINSTRUCTION: of all, you need to look at your connection strings config to make sure that you have a correct host setting and DB number.\nCONCEPT: module\nCONCEPT: entity\nCONCEPT: json\nNOTE: this big star nearby the item name.\nNOTE: and helpful because it shows us that something was changed and not fully saved on disk.",
+  "key_points": [
+    "INSTRUCTION: steps on CREATION platform as developers.",
+    "INSTRUCTION: of all, thank you for seeing this.",
+    "INSTRUCTION: of all, you need to look at your connection strings config to make sure that you have a correct host setting and DB number.",
+    "CONCEPT: module",
+    "CONCEPT: entity",
+    "CONCEPT: json",
+    "NOTE: this big star nearby the item name.",
+    "NOTE: and helpful because it shows us that something was changed and not fully saved on disk."
+  ],
+  "keywords": [
+    "data",
+    "git",
+    "need",
+    "package",
+    "object",
+    "like",
+    "repository",
+    "file",
+    "changes",
+    "make"
+  ],
+  "topics": [],
+  "summary_length": 71,
+  "original_length": 17806,
+  "compression_ratio": 0.003987419970796361,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:54:27.245777",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

@@ -1,0 +1,15 @@
+# Monitoring and Performance
+prometheus-client==0.17.1
+psutil==5.9.5
+
+# Logging
+python-json-logger==2.0.7
+
+# Optional: Additional monitoring tools
+# grafana-client==3.5.0
+# elasticsearch==8.10.0
+# redis==4.6.0
+
+# Health checks and metrics collection
+requests==2.31.0
+asyncio-mqtt==0.13.0

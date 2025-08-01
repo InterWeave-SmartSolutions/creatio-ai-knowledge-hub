@@ -1,0 +1,60 @@
+{
+  "summary_id": "f24fa53c5c6e",
+  "content_id": "3ae506ca01ce",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: page, field, customization, integration, package",
+  "key_points": [
+    "page",
+    "field",
+    "customization",
+    "integration",
+    "package"
+  ],
+  "keywords": [
+    "let",
+    "page",
+    "package",
+    "object",
+    "data",
+    "classic",
+    "ui",
+    "okay",
+    "like",
+    "need"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 14013,
+  "compression_ratio": 0.0004995361450082067,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:57:29.822605",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "page",
+        "field",
+        "customization",
+        "integration",
+        "package"
+      ],
+      "keywords": [
+        "let",
+        "page",
+        "package",
+        "object",
+        "data",
+        "classic",
+        "ui",
+        "okay",
+        "like",
+        "need"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

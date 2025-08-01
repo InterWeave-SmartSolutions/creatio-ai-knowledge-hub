@@ -1,0 +1,60 @@
+{
+  "summary_id": "6686df24f4b1",
+  "content_id": "c73636779bcc",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: module, entity, json, web service, schema",
+  "key_points": [
+    "module",
+    "entity",
+    "json",
+    "web service",
+    "schema"
+  ],
+  "keywords": [
+    "service",
+    "data",
+    "web",
+    "code",
+    "let",
+    "use",
+    "need",
+    "okay",
+    "method",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 8,
+  "original_length": 14700,
+  "compression_ratio": 0.0005442176870748299,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:53:15.179618",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "module",
+        "entity",
+        "json",
+        "web service",
+        "schema"
+      ],
+      "keywords": [
+        "service",
+        "data",
+        "web",
+        "code",
+        "let",
+        "use",
+        "need",
+        "okay",
+        "method",
+        "like"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

@@ -1,0 +1,2324 @@
+[
+  {
+    "chunk_id": "0d4da3e7baa306d4b7fcabbf0d6ae37b",
+    "document_id": "e936e7320501",
+    "content": "--- Page 1 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 0,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 4,
+    "token_count": 5,
+    "context": {
+      "heading": null,
+      "paragraph_count": 1,
+      "position_in_document": 0
+    }
+  },
+  {
+    "chunk_id": "06b506be9d5020d3a080ff59ec055cb2",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nToday is session number two and we will continue to do our first steps on creature platform. As developers, we \nworked with our environment. We made our package recently and today we will continue with git with doing other \npreparations. I will explain how to operate with packages, how to integrate with git and we will work with objects and \ndata. I will show you how to build data items, why we need them, how to transport solutions. So you will see how it \nworks in general. I hope it will be clear for you. Okay, so in case of any questions, feel free to ask. I'll be really happy \nto answer your questions. As usual, video recording is being performed. I hope that. So you downloaded video files \nfrom our yesterday session. I hope you made your homework and prepared your environment.",
+    "chunk_type": "paragraph",
+    "chunk_index": 1,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 146,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 1
+    }
+  },
+  {
+    "chunk_id": "808a3aed2054a7979034f2c177acb27b",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo now you are fully ready to continue. If you have any questions, feel free to ask Tushar any questions we have. Is \nthere some issue during installation of the local environment? I'm getting this one error. Please type in the chat. It's \nrelated to some redis server. This is where so you posted the text. So it was failed to connect to the redis and so it's \nsomething like it was not possible to connect to radius server right now and it was multiplexer train board \nconnection. So first of all, thank you for saying this. So first of all you need to look at your connection strings config \nto make sure that you have a correct host setting and db number. Also you must make sure that your regis is \nrunning. You can check it by running your windows services. I already checked.",
+    "chunk_type": "paragraph",
+    "chunk_index": 2,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 148,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 2
+    }
+  },
+  {
+    "chunk_id": "b52d8dd01b63ab1686d88f482af5df8f",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nMy port number is different like your. You should find your Regis service running. If it's running, it means it should be \nokay. You can also look at Regis logs. Maybe it will be more clear for you and which version of Regis are you \nrunning? You can. You can get this information. If you go to C program files Redis, you can run this special app \ncalled Redis Cli. Then you will see something like this. You can type info command. You will see a lot of technical \ninformation like version number, amount of ram used, a lot of system parameters, and also you will see set of used \nkey spaces. So it's a database numbers used by your redis where I can find the version number in this information.",
+    "chunk_type": "paragraph",
+    "chunk_index": 3,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 134,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 3
+    }
+  },
+  {
+    "chunk_id": "d9a641d0c6365242196309711df02f04",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nC program files regis usually if you installed regis for Windows, you will find it here and then you can just run regis Cli \nexec file. It will be a command line utility for redis. So you can run different commands like select number of \ndatabase db size. You can see size of the database that you selected. You can also use some dangerous commands \nlike flashdb for clearing of your current database or even flash all for clearing of your all redis server storage. So \nsometimes it's necessary in rare cases where your redis already has some previous old date and you would like to \nstart from scratch. So removing of all previously saved values. Normally creation manages redis by its own so you \ndo not need any kind of assistance.",
+    "chunk_type": "paragraph",
+    "chunk_index": 4,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 135,
+    "token_count": 157,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 4
+    }
+  },
+  {
+    "chunk_id": "94630d598d440cc4118852d9339938e1",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd usually creation is caring about redis itself only in some rare cases you will need something like this, like flush \nall in order to reset your redis to clear everything and that's all. But it looks like you have a connectivity issue. So \nquestion about network name or question about port number or something like this. So is it possible to run your \nredis CLI and make connection to your redis? Yeah, I'm doing that. So when I started Radis Cli you can just type the \ncomment flush all which will clear full regis and it will clear all the previously saved settings. And if you have \ndifferent attempts to install creature, there is some slight chance that existing redis data may prevent you from \nnormal start. So you can try to run flush all command.",
+    "chunk_type": "paragraph",
+    "chunk_index": 5,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 140,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 5
+    }
+  },
+  {
+    "chunk_id": "7906fa5ea04a5626292658aa6a87822a",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\n--- Page 2 ---\n\nI would also type it in our chat so this may help you to normalize your redis operations. But the most common \nreason I think is about connection strings. So you should take care about the host and database number. You can try \nto choose another database number, maybe you have some other apps using the same number and you may try to \nrun another one. I'm able to log in. Did it help to fix? Yeah, yeah. Okay great. Thank you Tushar for your question. I \nhope it was not so boring for others to hear it, especially if you if others will also experience same difficulties, it will \nbe really helpful. So let's move on with today topics. If any other questions appears, feel free to ask at any moment \nof time.",
+    "chunk_type": "paragraph",
+    "chunk_index": 6,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 141,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 6
+    }
+  },
+  {
+    "chunk_id": "4a4b49dcd75a405c641a26a1d8b2f3b8",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo it will give me a bit more entertainment because so once you have a question, I will be happy to answer. Today \nwe'll continue with git, with package management, and also with working with objects in general and using data \nitems. And possibly I will show you some advanced example with connecting database views and objects. So today \nwe will mainly focus on general stuff like git and object and data management. First of all, let's remember where we \nfinished last time. Last time we manually created new package. As I told you, the scenario for manual package \ncreation will be necessary in examples where you do some classic UI customization. In general you can create \npackages and then you can use it for freedom UI apps, but it's not so common because when you create freedom UI \napp, system automatically creates a package for you.",
+    "chunk_type": "paragraph",
+    "chunk_index": 7,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 150,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 7
+    }
+  },
+  {
+    "chunk_id": "69665de6119a12c99a73a5a61e28c032",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo creating package manually usually means that you are planning to do some classic UI stuff. Just to remind you, \nclassic UI is a special old type of user interface which you can still find in many system sections like system users, \nlike system settings, like web services. You will see some specifics and no possibility to shrink columns easily. And \na bit later I will show you examples of Freedom UI and you will see how you can use such tools, how it will look like. \nSo we have two different types of user interface. They have a totally different undercover frameworks inside and \nthat's why it's so different and we make such difference between different types of creature pages. Okay, so dev \nclassic will be intended to use for some classic UI stuff. I need some dummy example to be put into my package.",
+    "chunk_type": "paragraph",
+    "chunk_index": 8,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 149,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 8
+    }
+  },
+  {
+    "chunk_id": "813b750ffab528e0e7d0b7d866110199",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nCurrently you can see that we can select all packages. As you remember we have 141. Now let me check number of \npackages at our d one database. Now we have 141. So one package was added because we added it manually. And \nif you select all packages you see contents of all your all system. You can use some search. You can use by search, \nby title or by code. You can use with different search condition and you can also make filtering by configurable item \ntype that you can add to your package. In my case, if you select any package you will see its current contents, \nespecially if you clear search bar. So you will see current contents. And when I select my package, by default it's \nempty.",
+    "chunk_type": "paragraph",
+    "chunk_index": 9,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 134,
+    "token_count": 161,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 9
+    }
+  },
+  {
+    "chunk_id": "289246562879ad19817858f933b51c55",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nWe can create some dummy stuff here just to demonstrate something that is not empty inside of our package. So \nlet me show you what it will be. For example, we can make a test process, business process. It's a type of \nconfigurable item designed for automation of some business actions in our creation system. So now I need it only \nas a template done stuff just to make it to make my package not empty. When I design my items I must provide \ncode and by default system expects me to provide some prefix for this code. This prefix can be also set at system \nsettings. You can search for prefix for schemas and packages name. You can open it. You can see default prefix is \nUSR.",
+    "chunk_type": "paragraph",
+    "chunk_index": 10,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 131,
+    "token_count": 153,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 10
+    }
+  },
+  {
+    "chunk_id": "f09cbaba57ab8042cf4f2c46006950b6",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nYou can change this prefix at the beginning of your project or you can even remove it if you do not like. So \nsupporting prefixes. In my case I do not need to disable it. So let it be as is. Prefix usually helps me to detect my\n\n--- Page 3 ---\n\ncustom changes and differ them from base product stuff. So anything which has my prefix will be definitely made as \npart of my customization. So in general I consider prefix as useful thing. But in some projects developers decide not \nto support prefixes because they just tired of making them. So in my case, when I create a process, I must use this \nprefix the same as my system setting us our test process. We can name this stuff as test process. I need it only as a \ndummy stuff.",
+    "chunk_type": "paragraph",
+    "chunk_index": 11,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 145,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 11
+    }
+  },
+  {
+    "chunk_id": "386a18446d3be34b3092605d4b2fd5d6",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo I do not really plan to make some business logic here. So my test process includes some start simple event and \nthen terminate event. So this process, it's just doing nothing. I have no parameters, no special settings, I only have \ncode and title. Then I can save this sample diagram. It will be saved into my package, as you can see here. So I can \nclose it. Now my package is not empty. And you see this item added to this package. You may note this big star \nnearby the item name. And this star tells us that our change is performed and not fully properly saved. In case if we \nwork in this creation. No, no external ID mode or it's also called file system development mode. It's kind of a long \nname for this. So file system mode.",
+    "chunk_type": "paragraph",
+    "chunk_index": 12,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 145,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 12
+    }
+  },
+  {
+    "chunk_id": "e02fbf146387da4ea5c2d6b98c82a0d2",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIn the case if we work in this mode, this star is really important and helpful because it shows us that something was \nchanged and not fully saved on disk. But if you will turn back to creature ide, this star will be almost useless because \nit will represent that your changes are not submitted to the SVN. And if you do not support SVN, so you will always \nhave big set of such items with stars and it will not help you to detect some recent changes. So in our case, working \nwith file system star means item was not fully saved on disk. Why we need to save it? Because creature shows us \nsome changes and they must be submitted properly in order to make correct set of steps. Make correct \ndevelopment approach so we can submit everything to file system.",
+    "chunk_type": "paragraph",
+    "chunk_index": 13,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 146,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 13
+    }
+  },
+  {
+    "chunk_id": "538283f1443955316f38737e0e7cff11",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nDownload packages to file system the reason why we have to do this is that some changes when we do them at \nconfiguration section are not initially and fully saved on disk. They are still created and saved in database first, \nbecause it was historically and originally the first storage place of creation items in database. And only several years \nlater possibility to save items on disk was added. And that's why we have some kind of legacy and historical stuff. \nAnd when you develop some items, they are anyway created in database first. Okay, so we can run this action \ndownload packages to file system. It will include all our editable packages, all the contents, and save a set of files \nand folders on disk. When it finishes it will show us some report what have been done and you will see this report \neasily.",
+    "chunk_type": "paragraph",
+    "chunk_index": 14,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 149,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 14
+    }
+  },
+  {
+    "chunk_id": "b16273789f58b8bdc45ab2669c53eda7",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd also this star nearby. The item name will disappear. Meanwhile you can see the type of the item. It was a \nbusiness process. Now you can see this small report includes text that this USR process was modified on this so it \nwas fully saved. Now you see the star disappeared. We can go to file system. Here is our app file system. Go to \nTailsoft, the web Terrasoft configuration PKG. Then we will find our dev classic package. And now you will see that \nit's not empty. You see schemas. Now we have some special folder. We see some set of files. It's not so easy to read \nsuch files and luckily we will not need to modify them using external editors. This is special set of settings called \nmetadata.",
+    "chunk_type": "paragraph",
+    "chunk_index": 15,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 135,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 15
+    }
+  },
+  {
+    "chunk_id": "67fef70e03c0d7dc83eb403bd5c65ccd",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nMetadata is information about our configurable items stored in a special system inner format in a JSON string with \na big number of different properties and values. And luckily we should not look here constantly. So just something \nthat you need to know that it exists. So metadata represents in the structure of the item and for some types of \nconfigurable items it's not really designed to be edited out of creation. So only creature editor should be used for \nthis. This metadata represents full structure of what we designed and we can now have this stuff saved on disk. The\n\n--- Page 4 ---\n\nreason why we saved it on disk is our attempt to organize a teamwork. So we want to make some changes then to \nmake a common repository, save our changes there in order for our team members to make them possible to get \nour changes from common repository.",
+    "chunk_type": "paragraph",
+    "chunk_index": 16,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 156,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 16
+    }
+  },
+  {
+    "chunk_id": "e81ba8f6b7e82aebe47878cc6735fa8c",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd that's how we will exchange settings between different developer environments within one development team \ndoing the same project. So now as you can see, we're going closer to file system and to understanding how we can \nexchange settings between developers. I need to tell you that creation has two different flows of changes, two \ndifferent, let's say directions of how you can transport changes. First and the most necessary to know is delivery. So \nwhen you do some your solution or you have an existing solution and you want to save it and then import it \nsomewhere else in order to test or to run in production, you can just export this package into file. You can export any \npackage you see system will produce zip archive file. And this zip archive file can be found on disk here like this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 17,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 145,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 17
+    }
+  },
+  {
+    "chunk_id": "fd4de184cb2e84b27224972138411499",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd this zip archive file can be also uploaded on some other environments. Such uploading can be done with the \nsettings. Then you go to application hub and then it's possible to add new application with install from file option. So \nthat's how you can get it from file and load it. If you do it many times, you will install form file many times and \npackage will overwrite previous package settings so you can do it multiple times if necessary. But this is delivery \nprocedure which is designed to be used only for test and production purpose. But if your task is to share settings \nbetween developers, this export and import approach is not good because when you import such package at your \nanother developer environment, you will see this package will be read only and also when it's imported it fully \noverwrites your contents.",
+    "chunk_type": "paragraph",
+    "chunk_index": 18,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 149,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 18
+    }
+  },
+  {
+    "chunk_id": "28f76a1d352a96bbda1b075a1b932ca5",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo it will be really hard to operate as a team where each team member can do his own, let's say contribution to the \ncommon repository. So such export and import is not designed for sharing settings between developers. We have to \nuse a bit more sophisticated approach and that's why we turned our environment into a file system development \nmode. So the step one is to make sure everything from your changes is saved on disk and step two is to use any \nkind of version control systems to operate with set of your files and folders from your disk in order to deliver \nchanges. In order to transport your changes from files and folders to some common repository and then other team \nmembers. Other developer environments can take such settings from common repository from other from common \nrepository to another developer environments.",
+    "chunk_type": "paragraph",
+    "chunk_index": 19,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 147,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 19
+    }
+  },
+  {
+    "chunk_id": "81301a9a77323fad4ee47d51dd9631cc",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo that's how it can be organized as a team. And now I will show you. I will use git as a version control system, the \nmost popular for now. And in order to run git I need some kind of good git client. I prefer to use visual studio code as \na git client. So it started visual studio code. Luckily it's free of charge so you can use it freely. Here is my visual \nstudio code. Probably I need to close everything close folder so I need to make just from scratch and what I need to \ndo.",
+    "chunk_type": "paragraph",
+    "chunk_index": 20,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 103,
+    "token_count": 121,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 20
+    }
+  },
+  {
+    "chunk_id": "f59513c9377fb2acabb7a7419a88be4b",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo first before you enable any folders, before you operate with your git, if you don't have git client, you should click on \nthis button source control in order if you so if you don't have any git client installed, you will see only one button here \nto be called something like oh we have to update. Okay, maybe later one single button will be install git client. In this \ncase you have to run your visual studio as administrator when you click on this button to automatically download \nand install official git client and after this you will see the same settings as I do. Also you probably will need to run a \ncouple of commands related to your client username and email. But this is something very common.\n\n--- Page 5 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 21,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 137,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 21
+    }
+  },
+  {
+    "chunk_id": "c98a0cfb8a27d0debe04da6e05fa310d",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nI think you can easily fix it if you face this difficulty with new terminal window and a bit of googling will tell you how \nto make full setup of your git client. In my case, this git client was already set so I already have git client normally \nworking so I can now open folder and initialize repository in it. This is very important to understand how you should \nmanage folders. So here we have a our application Terrasoft web app terrasoft configuration PkG folder and we \nhave a lot of subordinate subfolders here. What are they? I will explain a bit later, but now you need to remember and \nunderstand that currently I have only one package, but very soon I will have more than one packages in my solution.",
+    "chunk_type": "paragraph",
+    "chunk_index": 22,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 135,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 22
+    }
+  },
+  {
+    "chunk_id": "069f07c1a9d4a1d38de676f447d00b56",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo if I decide to make a repository root folder somewhere inside of my folder representing a package, then it will be \nreally hard for me to add any other packages here. So I will need to keep several repositories for several packages \nwhich is also not so good. So possibly we can select upper level folder. This PkG folder will be my root working copy \ncatalog working copy directory on my disk and then as many packages as I need I will be able to use inside of one \nsingle git repository and also we will have to take care to remove from the repository. So do not version a lot of other \nfiles here which are not so intended to be changed and they are not part of my solution. So I plan to use a PkG folder \nas a working copy root folder for my solution.",
+    "chunk_type": "paragraph",
+    "chunk_index": 23,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 152,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 23
+    }
+  },
+  {
+    "chunk_id": "e8fcc052557fc9b2ec39ccf14228564b",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nI will do this with visual studio code and in Explorer tab I'll just click open folder. I need to find the corresponding \nfolder from my disk. And now probably it's time to explain why we have so many files and folders inside of TKG. So \nwhen opened you will see a lot of subordinate. Yes, I trust the authors, but you will see a lot of subordinate files and \nfolders here. So the answer of what it is quite complicated, especially as you are beginners. So probably you will \nneed to watch this part of recording a couple of times to understand fully. First of all, you may notice that folder \nnames here represent some packages names from your configuration. Let's go. Let's look here. Let's search \ncalendar base. Can we find it here? Yes, here is calendar base. Okay, next one. Content builder.",
+    "chunk_type": "paragraph",
+    "chunk_index": 24,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 148,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 24
+    }
+  },
+  {
+    "chunk_id": "65003f0463b1ad73f1b3cbd85f94d2dc",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nContent builder is also representing a page. Okay. CRT analytics dashboard okay, let's find it. Yes, you can see it, but \ntotal number of such folders is much less than 140. So it looks like such folders appear here as a result of presence. \nSome packages in configuration. But for some reasons not all the packages from our configuration form their own \nfolders on disk. So the answer of what it is a bit complicated and it's called file contents. Let me explain what it is. \nSo generally any package in creatio may include unlimited number of items with different types like objects. We will \nstudy them today. C sharp sources several site programmed code in C hash language a lot of JavaScript client \nmodules representing page settings.",
+    "chunk_type": "paragraph",
+    "chunk_index": 25,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 131,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 25
+    }
+  },
+  {
+    "chunk_id": "28538708c509115591e87d6e08a38a17",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nFor client side we have some data items, we will discuss them and they are used to keep some data records in your \nsystem, business processes and some other types of items. So in general any package may include unlimited \nnumber of different configurable items. That's okay. But also developers decided and architects of creature decided \nit would be nice to make possibility to add some additional file system stored functionality connected to the \npackage and they decided to make so called file contents. So if you have a package, any package may have its own \nfile contents and this file contents should be saved in PkG folder. Then in folder name inside of it which is the same \nas package name, and inside of it we have files folder and it may include some DLL's, it may include some additional \nfiles and bin folder which usually includes DLL's.",
+    "chunk_type": "paragraph",
+    "chunk_index": 26,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 152,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 26
+    }
+  },
+  {
+    "chunk_id": "5791bca177f96c3eef607a1786b9ac6f",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd this file contents is usually having two types of files. It usually has some DLL's as a result of compilation and for\n\n--- Page 6 ---\n\nsome cases it may include some JavaScript stuff, JavaScript components. So generally the answer is that in PKG \nfolder we have file contents which is a legal valid part of some packages saved on disk and we should treat it as \nread only stuff. We should not remove or modify any part of base product packages file content. So we should just \nsimply ignore all of this stuff. So now we are going one step closer. You already know that we are interested only in \npackages that we design, ignoring everything else that we can see in PKG folder. Okay, now it's clear. So let's go to \nour visual studio code which will work for us as a git client.",
+    "chunk_type": "paragraph",
+    "chunk_index": 27,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 150,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 27
+    }
+  },
+  {
+    "chunk_id": "c5e6711305e7f460bebbab4b5eeeb46e",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nNow we only opened some folder with big number of files. We are really interested only in some part of such files, \nbut we are not interested in all the contents. So let's go to source control tab and now it's time for us to make a git \ninit comment. So some of you already have some experience with git, you already know what it means. So we need \nto initialize a local repository to operate with git. This is a necessary so it's like mandatory step if you want to use git \nwe need to initialize repository I prefer to use as much as possible of graphical user interface to operate with git \nbecause it's easier, it makes less chance of mistakes and much more visual. So we can see what's happening here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 28,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 137,
+    "token_count": 159,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 28
+    }
+  },
+  {
+    "chunk_id": "dfcfc345940077638498da6f7d4afdc4",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo I will run initializerepository which is the same as git init command and it will initialize my git local repository in \nPkG folder. So I just click this, it performs some steps and now we can see that at this source control tab our git \nclient detects huge number of modifications. Of course most of them are at base product packages. So we do not \nplan to version such base product file content. We do not plan to submit it to version control system repository. So \nwe need some tool to ignore this big part of PKG folder and we only need to keep and take care about packages that \nwe decide to create ourselves. Now we have only one package that we are really interested in submitting. This \npackage is called dev. Let me show you dev classic package.",
+    "chunk_type": "paragraph",
+    "chunk_index": 29,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 29
+    }
+  },
+  {
+    "chunk_id": "be90cac75425ecb2adbbce397e4f19ba",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo this is our package that we plan to operate. We want to ignore everything else. Custom package is also editable, \nbut we agreed that it's not a good idea to use custom package for big project development. So I prefer to ignore \ncustom package as well and keep it empty or only with some temporary stuff which will be not submitted to version \ncontrol and will be not shared with any other developers. So I have simply only one package here so far, but soon I \nwill have more packages. I need to ignore everything else and from my previous experience I already have two for \nthis. If you have no previous experience, you probably know that in git you can ignore some parts of your working \ncopy folder by use of Gitignore tool. And I can find good example of Gitignore tool at my GitHub repository.",
+    "chunk_type": "paragraph",
+    "chunk_index": 30,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 30
+    }
+  },
+  {
+    "chunk_id": "1f9cfa2b64003619acf10d58a88db941",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo let's go to GitHub.com. I need to sign in. I use my Microsoft authenticator for this. Just a second. Authenticator \nhelps me GitHub yeah. Oh, sorry, change number. Okay. Okay, this one. Okay. Successfully confirmed my person \naccessing GitHub. I recommend you also to register your account at GitHub. So what I need here is my repository. \nConfirm your account recovery. No no no, later. It's okay. So I have a lot of repositories at my account. Probably you \ncan find it here. My repositories and what I need here, I need some example of a recent Gitignore file. Originally I had \nno examples, some of my colleagues proposed an example of Gitignore file originally made for visual studio, but \nnow I have a better example so I will have less time to update it. So I already have some example of gitignore file.",
+    "chunk_type": "paragraph",
+    "chunk_index": 31,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 148,
+    "token_count": 193,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 31
+    }
+  },
+  {
+    "chunk_id": "316d53c11588f2507a2d9e81b95d1046",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nOf course I will share it with you. Gitignore file is a file with empty name and gitignore extension. And the main \nreason of this file is to provide set of macros or a set of text templates which will be used to find and exclude from \nthe contents all stuff which we consider as not necessary. Usually it's designed to exclude log files, some settings \nfiles, some technical files generated by your integrated development environment, temporary files, project files, \nsometimes executables if you do not need them, debug files and so on. In my case, we will use this Gitignore file to \nkeep set of base product packages names, to exclude our to exclude them from our versioned contents. So we'll\n\n--- Page 7 ---\n\nsimply copy all of this code. I will make my own a new gitignore file inside of Pkg folder. The name of the file is \nGitignore.",
+    "chunk_type": "paragraph",
+    "chunk_index": 32,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 155,
+    "token_count": 193,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 32
+    }
+  },
+  {
+    "chunk_id": "536049b9b400c065a6b67c14bed87503",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIf you will do this with your Windows Explorer, make sure you set for display of the full file names with extensions. In \nthis case you will not fail and you will not create a gitignore txt file. So I will create new gitignore file, paste this stuff \nthere and save it. Now you will see immediate change happening in my repository, in my working copy source \ncontrol tab. Now you see gitignore file. Okay great. We can still. We can also edit it here if necessary. And we still \nhave some packages appeared here. The reason is that my Gitignore example was from version 812. Currently we \nare running already new version. This version is eight one three, the latest available released version and in this 813 \nversion some new changes and new file content appeared for base product packages.",
+    "chunk_type": "paragraph",
+    "chunk_index": 33,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 33
+    }
+  },
+  {
+    "chunk_id": "81dc820796e54f2f7273727988bdc3f9",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAs you can see CrT omnichannel appear it here and I can add it to gitignore. Let me show you what happened and \nalso I do not need to put all of the files here, so package name is enough and CrT security so I can type it manually \nCrT security and save it. Now you will see I cleared my versioned stuff. I only have my dev classic package here. I \nuse the gitignore to remove big set of base product packages and base product file contents from versioned stuff. \nSo Gitignore helps me to do with this. I have a small poll for you, could you please confirm do you have any \nexperience with git and if yes please type plus in our chat or if you don't have any experience with git and you do it \nfirst time, then please type minus in our chat.",
+    "chunk_type": "paragraph",
+    "chunk_index": 34,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 34
+    }
+  },
+  {
+    "chunk_id": "c1cbf22342d52aee497fd7a4a4943c11",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo it will help me to understand your current level of skills and knowledge about version control. Because today \ndeveloper I think must have some say basic experiences version control tools because it's quite inevitable to operate \nas a team. So thanks for all of you who replied you have some experiences git. Those who do not reply and please \ndon't be shy understand that no one knows everything from the beginning, so everyone is studying every day. So \nsome years before I also was not knowing about git at all. So this is something that you can learn and my task is to \nhelp you with it. So now we have settings for our git client to include only necessary parts of our code and we \nexcluded everything else using gitignore.",
+    "chunk_type": "paragraph",
+    "chunk_index": 35,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 135,
+    "token_count": 155,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 35
+    }
+  },
+  {
+    "chunk_id": "506be0f24cda5f5d162202d6d6e9b9a8",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAlso I wanted to show you in file system once we initialize git repository, you will see that new folder appeared on my \ndisk folder name is git and this folder is hidden. As you can see the file attributes here show us it's hidden. So \npossibly I will not see this folder easily in my Windows Explorer, but here I already saw set show hidden items and \nalso already set for showing file name extensions. Just not to be tricked by windows. So now you can see hidden \nfolder dot git even in Windows Explorer. And dot Gitignore file has a dot gitignore extension, not text extension. So it \nis also important. Okay, so this is my local git repository. I did not perform any comments to it, so I did not submit \nany changes there. So it's time to make my first commitment. Let's do this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 36,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 36
+    }
+  },
+  {
+    "chunk_id": "d4bb2ed2ac2d117cf6e94503edb9b397",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nMy first commit ever. So it's just something fun. Text and text for your commits is important to describe your \nchanges in general. Like you did some new section, you did improvements integrations or you made some data fixes \nor anything else. So your commit text should help you to track history of your changes in future. And it also will help \nothers in your team to understand what actually you are changing and what is the sense of your changes or why you \nsubmit some new changes. So when I do commit, it will run git commit action and it will save changes in my files \ninto my local repository. My local repository now became a bit bigger, so it has a bit more files and folders now. You \ncan track it if interested, but the inner stuff here is really hard to read.\n\n--- Page 8 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 37,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 152,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 37
+    }
+  },
+  {
+    "chunk_id": "a61a1fa38dbc1e2dcf3740f63ccbd55a",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo it's about some git secrets, how it saves your comments, your changes and so on my git repository is still local so \nI did not share anything with my imagined team members. I need now I need remote global git repository that will be \navailable for my team members. I will use GitHub.com as a central git repository host so it will be my git server and I \ncan create new repository. I will have a lot of repositories here and I can easily create new one more new repository \nfor our training session stuff. Oh have some followers. Nice. And it will be a public repository so anyone can take \ninformation from it. So you can also read this repository, you can use its contents, you can save it at your own and \nsee what happens if you add your files to creation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 38,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 148,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 38
+    }
+  },
+  {
+    "chunk_id": "4c095166bbd9f70629b2402ceffee9e7",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo I need this common repository to organize sharing of settings with my colleagues. This is very easy. I will also I \nalso avoid using commons. I user interface because it's easier and quite straightforward. I will create new repository \nto be something like guided dev May 2024 let it be so this name was not used inside of my account and no \ndescription public repository, no readme file. I'm too lazy for this. I already have gitignore so no need to add it once \nmore and no license. So anyone can do anything with my code. Simply create repository. After doing this, it's time to \nthink about some git commands to connect my remote repository with my local one. And we have set of commands \nthat will help us to do this. So first comment is git remote add origin.",
+    "chunk_type": "paragraph",
+    "chunk_index": 39,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 39
+    }
+  },
+  {
+    "chunk_id": "da774afb5ad24bf42192bb567a0cbc3e",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo I will connect remote repository to my local git client and my local git repository. I can do it with a terminal \nwindow. Actually I can run any command line on my PC, but I prefer to do it here just to be a bit more consistent and \nto show you what happens directly not far from my visual studio code. So I just paste this code git remote add origin \nand as you can see my remote repository had this URL. Okay, let's do this. Then we have a set. Next comment, select \na main branch on my local one. Git branch m main okay. And the most important command is git push which will \ntransport changes from my local repository. So tools transport my commits from local repository to this global one \nso it will become publicly available. Git push it usually needs some Internet resource.",
+    "chunk_type": "paragraph",
+    "chunk_index": 40,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 152,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 40
+    }
+  },
+  {
+    "chunk_id": "6faa0802edd2c24246d72e030ea0df52",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nYou see, compressing was used here. And finally my remote repository was updated by set of commits by stuff that \nI committed from my local one. We can check it out. So now my repository is ready. You can see some files and \nfolders here. If you go inside you will see that git keeps only files, only folders which are not empty. If we compare \nwith our physical file system, you see for example data folder which is empty and it's not present here because git is \nstill not supporting empty folders. But it's okay, so it's not a big trouble. If you really need empty folders, you can use \nsome placeholder files. Creature is not sensitive for this. So even if we submit to version control, only meaningful \npart excluding empty folders, system will still be okay with it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 41,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 41
+    }
+  },
+  {
+    "chunk_id": "a4e56ed4d231a8b6cef3f025e006cdec",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd now we have some stuff from our package which is not empty. So we have some files and folders committed to \nlocal git repository and then to common repository. So now it's globally available and I can share my repository link \nfor you. So you can also check it out if you have any git account and know any restrictions to access GitHub.com \nfrom your PC. So this is my repository and what the reason why I made a repository based on PkG folder. Now I have \nonly one package and you can see this is a subordinate folder inside of my repository. If I have two more packages, \nit will be two more folders on this level. So having this kind of repositories helps you to keep minimum number of \nrepositories and maximum number of packages inside.",
+    "chunk_type": "paragraph",
+    "chunk_index": 42,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 142,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 42
+    }
+  },
+  {
+    "chunk_id": "f19797683bc508885e85bada0a9defe1",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo I can easily add more packages to my solution and it will still be located at one repository. You can also see all\n\n--- Page 9 ---\n\nthe history of my comments. You can see changes there. So we will work with it a bit later. Now I will demonstrate \nwhat usually developers do when they operate with git and how their, let's say set of steps should look like we are \nstarting some steps at our development. For example, we open some configurable items, we do something very \nimportant. Okay, I'm not so lazy today. Let's do some read data. Let's say we will do some dummy thing. Read data \nfrom a contact object where name, full name for example equals to some value. No problem. Let's compare its value \nlike supervisor. This is just something that is a demo setting, so I do not actually need it so much.",
+    "chunk_type": "paragraph",
+    "chunk_index": 43,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 155,
+    "token_count": 189,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 43
+    }
+  },
+  {
+    "chunk_id": "499b880f63120f65cc9cbe7aa31f837b",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nBut this is something that and I will read only one column 80 okay, so this is just example read contact. An example \nof what we can do as business logic automation inside of a process. Let's imagine we did something useful, \nsomething very important for us, and then we save our customization. This is an example. In real life, your package \nwill include tens or even hundreds of items. You do some steps in your development. Finally you decide that some \npart of your solution is ready so you can save everything. Then you go to your configuration section and download all \nthe packages to file system. The main reason is to get rid of this star and make sure that all of your recent changes \nare properly saved on disk and represented at file system level.",
+    "chunk_type": "paragraph",
+    "chunk_index": 44,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 141,
+    "token_count": 164,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 44
+    }
+  },
+  {
+    "chunk_id": "22cb0f5aa1f34b2524f80512ed70d03c",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nOriginally when you do customizations they are saved in database and only if you download on disk it will be \nproperly and fully saved on disk. Some items are also saved on disk while you edit them. But this download action \nensures that everything is properly saved. So you must do this action when finished. Some development steps. Okay, \nI have some changes now on disk star disappeared so everything is properly saved. Let's go to visual studio code \nand let's see what's changed here you see we have some changes in descriptor for our process. Something like date \nof modification changed. You can see changes in metadata. We have some new item added, we have some titles \nchanged, some position changed. It's really hard for processes to detect changes like this, but this is something that \nwe do. Just an example of some customization made.",
+    "chunk_type": "paragraph",
+    "chunk_index": 45,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 149,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 45
+    }
+  },
+  {
+    "chunk_id": "fb80b91d9dee891c4e934ebb0a221ee4",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAlso we have some new items appeared here probably because of our titles added to the process pieces. But okay \nso we have test process and so on. So we have set of file changes. We can commit it as a commit example one and \nwe can do git commit into our local repository. Great. Now we have no changes. So we have some pending stuff that \nshould be pushed to global repository. So we can again run this command git push or which is easier I think is to \nclick on sync button which means pull and push. Pull and push. In my case it's like valid set of steps. So I prefer to \ndo this pull and push and that's how system will automatically perform the same git push to my common git \nrepository.",
+    "chunk_type": "paragraph",
+    "chunk_index": 46,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 139,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 46
+    }
+  },
+  {
+    "chunk_id": "5aefa6a1d9c6a063b011d11e76b835fc",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nNow we can go to git repository loaded and you see some history of changes. So we have two commits. Here is my \ncommit history. You can, you can see and compare changes. Let me show you here you can compare changes in \neach file, in each separate file. What was changed there? I agree. Sometimes it's really hard to perform this type of \ncomparison and it's because of the metadata stuff here. But anyway, technically you have tools to perform such \ncomparison. You have tools to track changes and you can see what is changing, what is happening in your \nrepository. You will see all users committing, you will see all history of commits. You will understand pretty much \neverything what happens with your package on file system level. And this storage now is a common repository. So \nlet's imagine we have another developer.",
+    "chunk_type": "paragraph",
+    "chunk_index": 47,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 148,
+    "token_count": 179,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 47
+    }
+  },
+  {
+    "chunk_id": "4385b07d230b1382190adb49ec490acb",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnother developer originally has no own package at all. Another developer just installed new environment and they \nhave no package at all. So only one single developer should create a package, should commit it to file system and \nthen to version control repository. Another developer should go to this common repository, another developer should\n\n--- Page 10 ---\n\norganize their local git repository in TKG folder and finally pull changes from this common repository. You can also \nmake some clone, but I think it's something that probably will be a bit more tricky because you will have to do it in a \nproper place on your disk. So finally, task for second developer will be to operate with their own PKG folder, to make \ntheir own local git repository there and then to get this folder out from git to local file system.",
+    "chunk_type": "paragraph",
+    "chunk_index": 48,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 146,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 48
+    }
+  },
+  {
+    "chunk_id": "63203ace2d7381616f33b85f56134a3d",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nThey can do it with git pull comments or git clone comments, whatever works better. And finally, creature is \ninterested only in PKG folder and the contents here. So finally you will get this folder from git repository to some \nanother developer environment. After you do this, you will have file system stuff like this. You probably will have \nempty folders for items that were not used so far, like SQL scripts and data will be empty for some time. Then \nsecond developer must tell creature that PKG folder file system has something new. Creature will not detect it \nautomatically, so you need to push it. You need to like make a punch for your creation with the command update \npackages from file system.",
+    "chunk_type": "paragraph",
+    "chunk_index": 49,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 127,
+    "token_count": 151,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 49
+    }
+  },
+  {
+    "chunk_id": "53808e2b1f29dd1dc8faf22a215047ed",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo second developer will perform this operation and second developer will see results that some new files, new \nfolders appeared and even new package will appear at second developer environment. So that's how your package \nchanges may travel from one environment to another. I mean from one developer environment to another developer \nenvironment. This is very important to mention we are talking about developer environments working with version \ncontrol. Let's imagine another developer environment opens some changes or creates new items, finally saves on \ndisk, then commits everything to file system, then performs git commit at GitHub client or sorry, at git client. \nProbably it's a visual studio code. And then perform Gil git pull and git push in order to update central repository \nafter this repository was updated, first developer may also perform git pull and git push.",
+    "chunk_type": "paragraph",
+    "chunk_index": 50,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 142,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 50
+    }
+  },
+  {
+    "chunk_id": "51e6e9a7bc5d30683f57fb9f6f1b1913",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd that's how first developer will receive all changes in the package files. And then first developer must run the \nseparation update packages from file system. So that's how you can exchange settings between developer \nenvironments. And as you can see, it's fully 100% based only on files and folders. So no any special magic or special \ncalls or special web services are involved into this. Only files and folders are enough to save changes to extend to \nexchange your solutions between developer environments. As you can see, it includes plenty of files. Let me show \nyou, 30 files are here. In big projects you will have hundreds or even thousands of files, so it's much easier to miss \nsomething. But it offers you possibility of teamwork. You can change only some part of it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 51,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 138,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 51
+    }
+  },
+  {
+    "chunk_id": "d06a59309b550f559a9732b57ebb3a1f",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nYou will commit only changed items, changed parts to common repositories and everyone else can do the same. So \nthat's how you can easily, let's say, modify two different items of the same package and work as a team. There are \nsome warnings about this. Some items, like processes and also objects are not designed to be simultaneously \nedited by different developers at the same time. So you should avoid situations where you have two different \nmetadata files and you should avoid situations when you will have to merge them into one. So here you will see the \nmain metadata file, which is really hard to read and it's probably not so practical. You should not try to make any \nmanual changes here, even in case if you got this situation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 52,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 134,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 52
+    }
+  },
+  {
+    "chunk_id": "fcc25dfe2620ee8e4801af49aa57c311",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nWhen two developers made changes to the same item, I think the best way is to sacrifice changes from one of the \nside and submit another side changes into repository and then ask first side to check out it and make changes \nagain. So merge of metadata is not designed and probably will not be successful. So you should not try and it's \nbetter to avoid this. So you may communicate with your team members and organize your work so they will not \ninterfere into each other settings. But in one package, as you already remember, you may have hundreds of items. So \nif developer one modifies item one, if developer two modifies item two, there will be no conflict. They will\n\n--- Page 11 ---\n\nsuccessfully and happily work with the same package. So you should be just worried about simultaneous access \nwith the same item for different users, different developers.",
+    "chunk_type": "paragraph",
+    "chunk_index": 53,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 155,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 53
+    }
+  },
+  {
+    "chunk_id": "69028dad9018a8b7a351c8c3322216d1",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIf you have any questions about it, any other ideas, feel free to ask. I'll be happy to explain. So in general, now we \nmade all major settings and you see how you can set up your common repository. Now you see how you can submit \nchanges to this repository and we can move on with next topics probably before moving on, I offer you just five \nminutes break for coffee and then we will move on with working with objects topic and managing data. So we \nfinished with the question of git integration and it's time for us to think about working with objects and working in \ngeneral with creature data model. So what you need to know about it is that the basis of all creation data model is a \nconfigurable item called object.",
+    "chunk_type": "paragraph",
+    "chunk_index": 54,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 139,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 54
+    }
+  },
+  {
+    "chunk_id": "db22998e5d6328b4b93dcddf9ba5aa66",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nYou can easily create objects in your configuration and also when you do customization using no code tools. For \nexample when you operate with application hub or with section wizard, system is capable to create number of \nobjects automatically. But in order to study it, you need to make some examples manually. You understand it better \nif you do it like by hands. And creature has a lot of out of the box existing objects, so maybe a couple of hundreds \nhere. And a lot of them represent simple entities called lookups. Let's go to lookups and let's see what they are. So \ngo to lookups. For example, we can sort. Okay, I prefer to look here. Select fields to display, switch to list view and it \nwas originally entire view, so I plan to look at list view.",
+    "chunk_type": "paragraph",
+    "chunk_index": 55,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 142,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 55
+    }
+  },
+  {
+    "chunk_id": "6e69eecec0e4554c72dcd2365ba847ee",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd also I need created on column just to make more comfortable sort in this list so I can sort by name. For \nexample, we can find a lookup called address types. So it's something simple, address types, you can open it and we \nwill see set of records representing types of addresses in creature, like home address, business address, actual or \nlingo address, and so on. We have six records here. Such records are physically saved in the database and we can \ngo to the database using our database management tool. Make new query, select everything from address type. You \ncan see we have the same name of the database table working with it. So now you can see the same set of \naddresses stored in the database. And some additional options are also supported here. So what do you need to \nknow?",
+    "chunk_type": "paragraph",
+    "chunk_index": 56,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 147,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 56
+    }
+  },
+  {
+    "chunk_id": "8250be66c18f1810b664a61f64c94990",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIs any object created in creation will finally turn into a table in database. So now we talk about general objects \nwithout special chemistry, without any tricks. So in general, if you create an object, it will have its own database \nrepresentation as a table. One object means one table. Sometimes participants ask me, participants are asking me \nabout is it possible to have one object for many tables at a time? So normally not. It's not designed to be so. If you \nneed to operate many tables and to get some aggregated data from them, you may use database views and then \nyou will use a specially designed object for it. But in general, when you create in one object and everything as usual \nsystem will create and manage one database table. We can find this database table by name and this is address \ntype.",
+    "chunk_type": "paragraph",
+    "chunk_index": 57,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 149,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 57
+    }
+  },
+  {
+    "chunk_id": "b84868a63481f4897b54628b1803a4e3",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nLet me find this one. So you can see table structure, all the columns, you can see it's key field, you can see primary \ndisplayed text field and some others. We have a lot of base product lookups. You can see how many we have if you \ngo to view in your lookup section, view summaries set up summaries, display number of records and now you see \nwe have 120 lookups, an out of the box studio product. If you work with more complicated solutions like sales, \nservice or marketing, you will have even more lookups. And also we can easily create our own lookups and we will \nneed them for our future settings. Lookups are generally used at the contents of data when you have a lookup \ncolumn and you need to select some values from it.\n\n--- Page 12 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 58,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 145,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 58
+    }
+  },
+  {
+    "chunk_id": "95c466e650ea686a1589a2e95f63773c",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo building more complex solutions usually starts from making your lookups and that's why we will do some. Now I \nplan to do some changes in my package and it will be necessary for my future solution in classic UI. So this will be \njust an example for you and I will show you how to create new object from scratch. And business sense of it will be \nsome lookup for our future section that we will design. So let's imagine in future we plan to make a new section to \nkeep some reality data, information about houses and apartments for sale and for rental. And obviously we need \nsome lookups for them. For example, we will keep realty records and we need to know information about type with \nrealty. So it will be lookup.",
+    "chunk_type": "paragraph",
+    "chunk_index": 59,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 138,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 59
+    }
+  },
+  {
+    "chunk_id": "12e1282253d13420af413ae2a6553f39",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nWe can call it real to type and I will show you how to create it from scratch. So select our package add object when \nyou create new object, it means you are creating new entity in our system. New database table will be created. \nWorking with replacing object will be covered a bit later. So now let's make new object. When creating new object, \nwe can provide some properties for it. First of all we should take care about its code. As you can see, system tries to \navoid duplicates and that's why it generates some unique name for our object. Of course it's not good name. We \nwould like to make its name by our own. We still have to use prefix because we did not reject to do or to work with \nprefixes.",
+    "chunk_type": "paragraph",
+    "chunk_index": 60,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 139,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 60
+    }
+  },
+  {
+    "chunk_id": "9ec761f2c51c9038f84080aeed8b7ca8",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd we will have this prefix USR and then we can provide code for our new object. It will be real t type. And also I \nplan to make two different solutions, one for classic UI, another for freedom UI. So for classic UI I will have a suffix \nclassic. So let it be reality type classic. I do not want to share any lookups between two different solutions, so that's \nwhy I will make it fully separated and that's why all the lookups for classic part will be fully separated from lookups \nfrom freedom UI part. So this is our code. Code is very important. It must be made only of latin characters and \nunderscore. And sometimes you may also use digits but I recommend you to use only latin characters and it must \nstart from character. And code will be used to create database table.",
+    "chunk_type": "paragraph",
+    "chunk_index": 61,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 150,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 61
+    }
+  },
+  {
+    "chunk_id": "222c1f2c05197f863b4621303dcd5559",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo system is capable to make set of theories to the database like create table, alter table and add columns and so \non. So we only provide some necessary properties and system will take care about database storage itself. This is \nalso very important so code will turn into database table title it could be anything and even more it can be translated \ninto other languages. Currently in my environment there are two active languages so I can easily set values here. But \nin total we have probably 21 supported language. Let me quickly check. This is very interesting. CIS culture is a \nspecial object that keeps information about languages supported for translation into our system and it looks like we \nhave now 23 languages. Sorry, let's see the most recently added ones. So wow.",
+    "chunk_type": "paragraph",
+    "chunk_index": 62,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 138,
+    "token_count": 161,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 62
+    }
+  },
+  {
+    "chunk_id": "ac7b2e0941df70b7d1b4f401f503603b",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIt's interesting because previously I only remember added Japanese at the beginning of 2024 and now we have \nsome very recently added languages. Hungarian language was added recently. So greetings to Hungary and croatian \nlanguage looks like Hr, it's probably Croatian Hr. Hr yes, it's croatian language. So you see more and more, let's say \nnational languages are added here and now we have 23 supported languages in our system. Some of them may be \ndisabled, others are active and if you want to use a certain language, you should activate it. The reason of activation \nand deactivation is saving system resources. If you do not need all 23 languages, it's better to keep most all of them \nas inactive. System will save system resources for not necessary languages. So that's why we have active option \nand you can manage active or inactive language in settings.",
+    "chunk_type": "paragraph",
+    "chunk_index": 63,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 149,
+    "token_count": 192,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 63
+    }
+  },
+  {
+    "chunk_id": "bffe68433d4a2ad20edeb658e6c9414f",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\n--- Page 13 ---\n\nThen you can find languages part and now you can see 23 languages and you can activate language if necessary by \nopening it, setting active and then save. But please. So this is a warning for you. If you activate the language, it will \nconsume system resources and usually activation takes some time, maybe up to five minutes. So please be very \ncareful with it. Now you see recently added croatian language and hungarian language. So this is something that is \ninteresting and it's new for this version. Okay, let's go back. So if support of multiple languages is important for you, I \nrecommend you to enable necessary languages and each time you develop some items, instantly provide \ncorresponding translations for your items. In this case, it will be hard to forget and hard to miss something that must \nbe translated into other languages.",
+    "chunk_type": "paragraph",
+    "chunk_index": 64,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 188,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 64
+    }
+  },
+  {
+    "chunk_id": "dd801655dd39e133451ece0d50e29920",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nWe have also an alternative way to support multiple languages with the translation section, but I do not recommend \nyou to work with it because when you initially go to translation section, it will take probably 15 minutes of time for \ninitial preparation, so it's not so comfortable. And I think it's much easier to provide correct translations just while \nyou develop it. So in my case it will be realty type classic UI. It will be my title if I want. I can support translations into \nother languages if necessary for my project. So code and title, they are important. Parentheses object is not \nmandatory, but it's also very important, especially if you make lookups. Inheritance helps us to get standard \nstructure for objects, especially if we need some typical use of our object in our future.",
+    "chunk_type": "paragraph",
+    "chunk_index": 65,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 141,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 65
+    }
+  },
+  {
+    "chunk_id": "32f8c7a0431d3509abad818f30c84fe0",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nWe plan to use reality type classic as a lookup so we can inherit structure for our object from some base objects. \nThat can be helpful. In our case, the most commonly used Bayes object is base entity. It helps to inherit key field, \nhistorical columns and some behavior setting, some event handling that is necessary to operate in some lists and \nsome cases. So base entities like common parent item for all creation objects, but also we have base lookup. Base \nlookup is used specially when you need to create new lookups, and that's why such two most commonly used items \nare displayed at the top and all others are shown in alphabetic order. So base entity and base lookup, the most \nrequested, the most frequently used, are shown at the top. Okay, I need base lookup for this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 66,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 143,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 66
+    }
+  },
+  {
+    "chunk_id": "35b211e71ba0837dbfbbb5708be78602",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nI have to confirm my change, and once I do this now you see I have new inherited columns list. I have eight inherited \ncolumns. The most interesting is probably id as a key field. Its data type is unique identifier. You already saw \nexamples of such unique identifiers in many creation tables. So such a hexadecimal big bar, big line of code is \nexample of a grid globally unique identifier. Physically it's saved as a 16 bytes integer. So such data needs 16 bytes \nin memory to be saved. But it's very common for creature. So all creature objects are based on unique identifier key \nfields usually named as id. Also we have name as a text as it used as a primary displayed column name is \nmandatory. You can see required. Yes, the data type is text 250, which is very typical.",
+    "chunk_type": "paragraph",
+    "chunk_index": 67,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 147,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 67
+    }
+  },
+  {
+    "chunk_id": "cc2852365a3ab90d1f255ef699554cfd",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd you should know that creature uses Unicode strings anywhere. So every text column you will find in creation is \nbased on Unicode text. It means you can simply save any national characters there. Any kind of arabic letters, \nchinese letters, or even emoji can be saved into such text fields. So Unicode is supported. Also, we have so called \nhistorical columns created on the date of creation, which is date time date of creation of the record and created by. \nThis is a reference to a contact. So this is a lookup column pointing to a contact of user who created the record \nmodified on or performed last. So the time when last modification of the record was performed and modified by is \ncolumn representing who what user contact performed modification.",
+    "chunk_type": "paragraph",
+    "chunk_index": 68,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 135,
+    "token_count": 159,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 68
+    }
+  },
+  {
+    "chunk_id": "d80fe38ca4644e1003d50311b5840b16",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\n--- Page 14 ---\n\nSo we have description name and description are business columns, all others are system columns and process \nlisteners is an integer column for a very rare cases when record level event handling is used in business processes. \nSo what do you need to know? Inheriting from base lookup gets access and we get structure. So we inherit structure \nof system columns. The most important columns are id as a key column and name is primary displayed column and \nthey are important to work with lookups. Also you can find in main object that some inherited properties are shown \nhere id property which means key field. So this is not perfect title of the property. It should be named key field and id \nis used as a key field and displayed value is also not a perfect title. Previously it was called primary displayed value.",
+    "chunk_type": "paragraph",
+    "chunk_index": 69,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 69
+    }
+  },
+  {
+    "chunk_id": "aa29c53495260416b0ff2720f712528d",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo the main text column which is shown in drop down list of lookups. So name will be used for this purpose but you \ncan change if you want nor any other special properties. We have some event handling made for this and inherited \nfrom parent one. We will study event handling a bit later. So what you need to know now when you do inheritance \nfrom Bayes lookup you automatically receive legacy of all columns that are intended to be used inside of lookups \nand usually it's enough. So usually you can create just code title inherit from base lookup and then save and publish \nand your object is ready. In my case I want to present and show you some additional features that could be \ninteresting and also examples of how you can make your own custom columns in creation.",
+    "chunk_type": "paragraph",
+    "chunk_index": 70,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 145,
+    "token_count": 164,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 70
+    }
+  },
+  {
+    "chunk_id": "fdc7abb9ee25a6b3066045cc5e09564b",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo we'll go to columns list and obviously we can add our own columns to the object. We have plenty of options for \ndifferent database types, a lot of text options. The minimum supported is text 50 characters, then we have 200 \n5500. We have unlimited length. We have rich text which supports fonts, colors and styles like italic, underscore and \nso on. We have special texts for phone numbers, for web links, emails and URL's and we have encrypted strings to \nkeep passwords safely which will be not displayed as a text, to be always displayed as a set of stars and very rarely \nused CRC type which physically is an integer and it's used for checks. So it's like checksum column. I never faced a \nworking example how we can actually use it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 71,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 138,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 71
+    }
+  },
+  {
+    "chunk_id": "b7c2d4fcd3a873c5b8c26f30c2354ba3",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo just something like bizarre thing that possibly you will never use in your practice. So number is obviously integer \nand several types of decimals. Currency is also decimal with two digits after decimal point. The difference from \nstandard decimal is that standard decimal is 18 digits and two after decimal point. Currency is 20 digits and two \nafter decimal point. So 20 in total, two after decimal point. That's why we have so different. But you see we can \nchoose any necessary precision for your solutions. Okay, date and time quite of those we have date time value \nseparately, date separately, time some other types like boolean like unique identifiers like image link or color \nselection column file can be saved and lookups. Lookups are mainly so they are generally used and based on unique \nidentifiers. But lookups also keep referential integrity.",
+    "chunk_type": "paragraph",
+    "chunk_index": 72,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 146,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 72
+    }
+  },
+  {
+    "chunk_id": "96f66d9e6beaa219bf26f68ab81b4335",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo when you have a lookup column system creates foreign key for you. So it keeps referential integrity which will not \nallow you to save into lookup column any value which is not faced in your lookup table. So we can try to make some \nexamples like make a new text column named code title can be code text is 250. And as example I can show you \nhow default values can work for us, especially how we can make autonumbering. So we can search for default value \nand we can set autonumber option. We can say prefix like cd which stands for code and number of digits would be \ntwo. First one will be cd zero one, cd zero two and up to CD 99 and then we will have the next number. So x CD 100 \nand so on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 73,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 73
+    }
+  },
+  {
+    "chunk_id": "574843f500b01ee000c83dd3bab19538",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nThis is auto numbering which works pretty well and it doesn't require any programming. So this is a no code tool to \nmake automatic numbering in your lines when you, when user import adds data. That's how we can do this and if\n\n--- Page 15 ---\n\nnecessary can use custom indexing. You can also make your own custom indexes and even complex indexes. \nUnique indexes can be added, but generally creature takes care about indexing by its own quite well. It automatically \ncreates indexes for lookup columns. So you probably will not face any significant performance issues in objects and \ndata tables made by creation. So once we finished setup of our object, we have to save it. Save means saving only \nmetadata. So inner data format to keep information about our configurable item.",
+    "chunk_type": "paragraph",
+    "chunk_index": 74,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 138,
+    "token_count": 163,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 74
+    }
+  },
+  {
+    "chunk_id": "fe0532be3d1d79470813e970c838e722",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nThis type of item is also inherited from schema, but the word scheme I think it's hard to understand. So let's say \nconfigurable item which will be closer to its meaning and I think it's easier for you. So when we saved this item, it will \nbe shown in our package contents. Now you can see database update required so object can be applied to the \ndatabase but it's not performed each time you save, only when you click publish. Publish means apply changes to \ncurrent application server and current database. In our case, apply changes means create new table with \ncorresponding set of columns and provide necessary column settings and everything should be well done at the \ndatabase to make our object fully operational. If we do not publish our object, we will not be able to use this object in \nour system.",
+    "chunk_type": "paragraph",
+    "chunk_index": 75,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 147,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 75
+    }
+  },
+  {
+    "chunk_id": "cd8c8b82dd03eb73fb51d5a36aa6b749",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo publish is necessary to make our object operational and useful for us. Let's do this. Some years ago publish took \na lot of time. It may took up to 1 minute of time. Now this operation is well automated and now we have no serious \nreasons to separate save and publish operation. Also when you click publish, save is performed automatically. So \nyou may just use publish button. Forget about Save button and it will work for you because publish now works really \nfast. Okay, so when we finished with it we can close our page. By the way, this page is called object editor or object \ndesigner and now we have our object status is okay. So you see it's applied to the database level. We still have a sys \nwhich means not everything was saved on disk.",
+    "chunk_type": "paragraph",
+    "chunk_index": 76,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 143,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 76
+    }
+  },
+  {
+    "chunk_id": "84f6743ea69ddbbfb05b7d0e566f5498",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nBut at this moment our object is already working so it can be used for us and we can try to use it in our environment. \nLet me show you how we can use it. We can go to studio workplace find lookups section. As you can see we have \n120 existing lookups. One of the recent one. You can see something strange with no name here, but if we sort by \ndate of creation. So this is list of registered lookups and we can see what recent registerings were done like white \nlist of pages, opening restrictions, access to tag guarantees, or something like base product functionality recently \nadded here. So we can register our object that we created as lookup in order to make it easily managed. And we can \nlook at it and we can even fill it with some data.",
+    "chunk_type": "paragraph",
+    "chunk_index": 77,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 147,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 77
+    }
+  },
+  {
+    "chunk_id": "8c6dece30af310625a66c21b1fed372f",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo when we click new lookup, it doesn't create new table. New lookup means register existing object as lookup. Our \nobject is called realty type. We can name customers, we can provide custom title of this lookup. So name is separate \nfrom object as you can see, and we can save it. So this operation is just for registering object as lookup. Once we did \nit, we can click open content and that's how we can manage our lookup contents. The easiest way to manage object \ndata is to register any object as a lookup. Then you will be able to see its contents. So we can create new record \nhere and we can manually type some data like first one realty type which we work with. It will be probably house. So \nit's mean private house. We can save it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 78,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 78
+    }
+  },
+  {
+    "chunk_id": "c9b6fbb11423085d9ccff91ce65a6721",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nThis is so called editable list and we are not using any separate edit page for it. So we just manage data directly in \nthis list. Another one will be apartment. As you can see, numbering works for us automatically. The no code tool. \nThanks developers for this. You can also use description if you want, but I'm not really needed. So we can also add \nmore reality types. What else? It could be office space, it could be parking lot. And something very unusual like a \ncastle. It's just an example. And I also wanted to show you some additional behavior here with the numbering. So\n\n--- Page 16 ---\n\nlet's imagine you try to create new one, but then no data or something else. So you think that, oh, you don't want to \ncreate it. You see the code was generated, but then you just cancel.",
+    "chunk_type": "paragraph",
+    "chunk_index": 79,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 188,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 79
+    }
+  },
+  {
+    "chunk_id": "6c338770bc361bda5322fa275c48bb67",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nOkay, if you create one more, you see the number goes on, you cancel. If you create one more, you see numbering is \ngoing on and it will be not rolled back. The reason of why it performs. So when it generates system does not know \nare you planning to save it or not. So it generates new number, keeps currently created number somewhere in the \ndatabase, in so called sequence in the database structure. And then we have no option to roll it back. Because while \nwe are inputting such data, someone else also may create new records. So if system is expected to be used by \nthousands of users, we have no option to easily roll back such numbers. But it's not a big problem. Even if you have \nsome gaps and missing numbers, it's not a problem with it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 80,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 145,
+    "token_count": 176,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 80
+    }
+  },
+  {
+    "chunk_id": "21bec4e41d93a365ec8064448a5240b3",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo you see that numbering is generated using database tools. This is extremely reliable and physically sequence \ndatabase object is used for it. Bas is telling us and about appointment and we watch the video. Thank you Bas. See \nyou tomorrow. Thank you for your message. Any other questions please? You're welcome at any time. So now you \nunderstand, we input some data here. This data is physically saved in our realm database. Let me show it for you \nexample. Select id name from USR realty type classic. This is the name of my object. I expect to see the name the \nsame name of my data table. Now you can see the same five records with some ids are created. I can also search \nfor like created on and also USR code. So here are my columns. You can see you can select all of the data.",
+    "chunk_type": "paragraph",
+    "chunk_index": 81,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 183,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 81
+    }
+  },
+  {
+    "chunk_id": "a8a1834beebcf3b4582cae2204c0d024",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo this is physical data saved in my database. It's pretty simple. And of course, when you develop your big project, \nyou will not pay so much attention to every single lookup. You will do it in much more automated way. But this is an \nexample which will let you understand and will make you better feeling of what object is and how it works. That's \nwhy we discuss it in so technical details. If you need to change something in your object, you can open it for editing. \nYou can find corresponding property and change it easily. If necessary, you can customize your columns. You may \nrename some columns. You can add new columns. For existing columns you can slightly change their properties. It \nwill be not possible to change the column code, but you can change column title if you want.",
+    "chunk_type": "paragraph",
+    "chunk_index": 82,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 146,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 82
+    }
+  },
+  {
+    "chunk_id": "b0d86045ad482ac83c0526c05a4e6dae",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo for inherited columns, there are some limitations on what is available for you for change. So generally speaking \nyou can manage your object, you can change them, then you can save and publish. That's how it will be applied in \nbig scale solutions. You will create tens of different lookups and creation is capable to help you with it with \nautomation of lookup creation, using application hub tools or using section wizard for classic UI. So it will be not so \nboring each time when you create new object. This is technical right now just because we need some practice, we \nneed to look at object structure. So okay, we have our object ready. We have some data here, so how we can share it \nwith our team members or how we can deliver it to test environment.",
+    "chunk_type": "paragraph",
+    "chunk_index": 83,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 142,
+    "token_count": 168,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 83
+    }
+  },
+  {
+    "chunk_id": "57c40d99a2bc5bd25939a871f7fc16a9",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nOf course we need to download packages to file system if we want to submit everything to repository. But here is \nvery frequent mistake that a lot of beginners usually do. This will be about data part, so saving anything to disk here \nis okay. And in our package we only have test dummy process and we have our object. If we submit these contents \nto version control repository, it will mean that our package only includes structure. So it will be including this object \nand some tests process. If other developers install our changes, they will not see contents of lookups and they will \nnot see registered object as a lookup. So this is a very typical mistake of beginners.",
+    "chunk_type": "paragraph",
+    "chunk_index": 84,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 124,
+    "token_count": 143,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 84
+    }
+  },
+  {
+    "chunk_id": "b5c44c2976b7b8506d64ccf246942918",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\n--- Page 17 ---\n\nThey see their environment, they fill in with data, they think that everything looks okay and then they just export their \npackage install for example in test environment and then they realize they miss lookup contents and they also miss \nlookup registering data. So we have technically only two options how we can transport such data. The most \nrecommended option is item called Data item is a special part of the package and second option which is also \nsupported but it's harder to use is SQL script. SQL script can be used for any kind of data changes or any kind of SQL \noperations that you want to run. When your package is installed on some target environment is much harder to \nmanage and in general it's much more powerful and much more dangerous.",
+    "chunk_type": "paragraph",
+    "chunk_index": 85,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 141,
+    "token_count": 160,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 85
+    }
+  },
+  {
+    "chunk_id": "678f7d83130c15abe7b6071569ae3607",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo you should only use SQL script if you have enough SQL experience and I always recommend you to check your \ncode with someone else who also have experience in SQL just to make sure you will not do anything dangerous in \nyour database. SQL script can be easily used for permanent serious damage for your system, so your creation will \nnot work anymore if you do intentionally some delete of system data. So two options to transport data items or SQL \nscripts. I recommend you to use data items as much as possible and when you create data item this tool actually is \na snapshot of some data records taken from your source developer environment. Obviously we need to specify what \nsource object will be used for it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 86,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 132,
+    "token_count": 146,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 86
+    }
+  },
+  {
+    "chunk_id": "5f10389216e2d5d0791fc4a6fb1538cf",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIn my case, I should select for my object code which I recently used to register my lookup in lookup section. \nUnfortunately, you have to remember this code name by heart and this object is called lookup. This lookup object \nincludes a list of registered objects in our lookup section and in general we have 121 records here. 121 records and \neach single record in the lookups section represents registering of the object as lookup. We need it because \nprobably we would like to be able to go to this lookup section to find corresponding object to open its contents on \ntest environment just to check out that we have everything correctly here. So this registering was done at developer \nenvironment and it makes sense to transport it as part of our solution to test and production. Such data is saved in a \nsystem object named lookup.",
+    "chunk_type": "paragraph",
+    "chunk_index": 87,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 150,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 87
+    }
+  },
+  {
+    "chunk_id": "d70690d7777c378a0299b6eea9e10c35",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nThat's why we go and search for the object named lookup. We can find it by name, by code and we can also provide \nsome unique name here. For example, we can add something useful, reality type, classic, something like this. I do it \njust to make it unique and good looking and self explanatory. So it will be easy to understand why we created this \ndata item. As you can see, system offered a set of columns, but we can also add a couple of more columns here. I'm \ninterested in date of creation created on column here in the list of saved columns, data item is a snapshot of data, \nso we will take this data from our source database and save it as part of our package.",
+    "chunk_type": "paragraph",
+    "chunk_index": 88,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 133,
+    "token_count": 158,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 88
+    }
+  },
+  {
+    "chunk_id": "4be75c0bc3e2745b73503d0af75ff6d4",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nBound data tabs represent exact records which will be saved into our data item so we can manually add such \nrecords. In total we have 121 records but most of them are base product contents so we do not need to transport \nbase product stuff. We expect it to be present at our target place target database. So we do not need all of them. We \ncan use our created on date column to sort and easily find without user filters. You can also use filters, but I prefer to \nmake it as easy as possible. So we can sort by descending order by date of creation all registered lookups and that's \nhow we can easily find our reality types single record this is registering of the reality type object as a lookup.",
+    "chunk_type": "paragraph",
+    "chunk_index": 89,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 136,
+    "token_count": 154,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 89
+    }
+  },
+  {
+    "chunk_id": "70fd247f1be4343a09b0e090faab5b62",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nWe can only select this data select button and that's how we saved only one data row in this data object. Then we \njust click save and our snapshot of data which includes only one data row will be saved into our package. Now you\n\n--- Page 18 ---\n\nsee data item is created. This is only registering of an object that's not the contents. So for the contents of the \nobject when we open it, we have five records here. This is our contents. We need to make one more data item. This \nis quite easy. Add again data and we select an object. We have to specify object code. Here are things developers \nbecause code is unique USR realty type classic, you can easily find it.",
+    "chunk_type": "paragraph",
+    "chunk_index": 90,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 131,
+    "token_count": 157,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 90
+    }
+  },
+  {
+    "chunk_id": "33c5ad8e17cd90ae35af4fb1308f809c",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nI prefer to use codes because they are always unique and system keeps this uniqueness and titles sometimes are a \nbit ambitious, especially if you use non english language. So you may struggle with finding some corresponding title \nand I prefer to use codes. Okay, we can provide some common suffix just to make sure what we are doing here. If \nnecessary we can add more columns, but the most important of course is bound data. And we can select all the \nrecords. All the records we have from source environment will be saved into our package as a special part, as a data \nitem and we save it. And now our data item becomes part of our package. Now you see stars here which means our \nitems are not fully saved. So we have to perform download packages to file system action in order to save our stuff.",
+    "chunk_type": "paragraph",
+    "chunk_index": 91,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 152,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 91
+    }
+  },
+  {
+    "chunk_id": "bc713d2f12b2075a5321551466e30f9d",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nNo need to use camera styler because it will be recorded. I will stop it. Okay, so changes were saved on disk, stars \ndisappeared. We can find all the items in our package here, including data part. Now you see some data records are \nsaved as a JSON data values and you can see translations into all our supported 23 languages here. So data items \nalso include translations and it fully says on disk everything is correct. And now we have object and couple of data \nitems representing registering of object as lookup and representing contents our object.",
+    "chunk_type": "paragraph",
+    "chunk_index": 92,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 101,
+    "token_count": 120,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 92
+    }
+  },
+  {
+    "chunk_id": "90922648255c0c1c402cd031a604fb52",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo now our solution is full and if we export this package as Zip archive then if we import it somewhere on test \nenvironment to work and user will be able to find our new lookup in lookup section, user will be able to find its \ncontents and user will see such data. Maybe it's time to practice with git and let's make one more commitment. Now \nyou can see a lot of changes, 80 different changes. Mainly this is our data parts. Also we have new object here and \nphysically it means big set of files and folders used inside of package folder. So we can name something like realty \ntype classic lookup added. This is the sense of our change. We perform git commit to our local repository. Then we \ndo git pull and push to submit our changes to the common repository.",
+    "chunk_type": "paragraph",
+    "chunk_index": 93,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 148,
+    "token_count": 173,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 93
+    }
+  },
+  {
+    "chunk_id": "2827f65b3d922615490fe3b29af92cd1",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nGreat, everything is done now common repository also felt such changes. You see three commits and you can see \ncomment history if interesting. Now you can see all the changes here. So it will be easy to check previous values, \ncurrent values and so on. So what I need to tell you about data items. In addition, what you know now, data items \ncan be used not only for inserts, they are also used for updates. Let me explain what I'm talking about. So originally \nwe have five records for our data and let's imagine we already exported our change. We imported it somewhere to \ntest and production and everything is okay. So our solution was successfully delivered to test and production and \nour users are happy. But sometimes later probably analysts or business owners decided to do some changes.",
+    "chunk_type": "paragraph",
+    "chunk_index": 94,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 143,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 94
+    }
+  },
+  {
+    "chunk_id": "3391a2d86b5ff2c19fba9c2d4e324276",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nFor example, they decided to rename office space into just office. And we can do this only at developer environment \nbecause we need to share all such changes to all other environments including test and production. So such \nchanges should be started from developer environment first and then someone decided to rename parking lot into \njust parking. So now we have some changes made at developer environment and we need to populate them to all \nother systems. Data items can help us with it, but you need to know how to properly set it up. Let's open this data \nitem for the contents of our lookup. You can also sort by date of modification to see the most recently updated \nitems first. So we can see this one, the most recent. Let's open it now I will tell you a bit more about how system \noperates with data.\n\n--- Page 19 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 95,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 155,
+    "token_count": 180,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 95
+    }
+  },
+  {
+    "chunk_id": "40695b24930606f2d2c2ae0d8d5b4bad",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo let's imagine such data items are so such data items is being loaded at target environment. System is capable to \nprevent duplicates and it uses key columns to detect presence of the record which is being processed right now. As \nyou can see we have key for id. So id column is set as key and when system will load within the procedure of loading \nyour package, it will take first row, it will take this id and then it will check do we have such data record at our target \ndatabase or not? If not, yeah, it's okay, it will just insert all the columns that we have for this data record and it's not a \nbig deal, not a problem.",
+    "chunk_type": "paragraph",
+    "chunk_index": 96,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 126,
+    "token_count": 147,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 96
+    }
+  },
+  {
+    "chunk_id": "5c9c73b91d4c8912fd1aba4160747f2e",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nBut if record exists system is capable to update existing record and here you will face something which is a bit tricky \nand you may fail for the first time. And you will have to look carefully at the settings of your columns because \nsystem will perform update only for columns marked with the first update option and by default as you can see no \nupdates are asked here. So when record will be found system will just skip it because no columns should be \nupdated. So if you changed names right here and you know that such data was already traveled somewhere and you \nneed to update it. So you go to your correspond data item, you make sure you set forced update option for columns \nthat you need to update.",
+    "chunk_type": "paragraph",
+    "chunk_index": 97,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 135,
+    "token_count": 149,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 97
+    }
+  },
+  {
+    "chunk_id": "72a7f1d0c741425d26b967436a0f9ad5",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAlso you may check some other columns if you're not sure and you also want to update so you know the source of \ntruth is your developer environment. So if something else was changed at your target system then you have to \nupdate it anyway. So first update is not set by default. If you expect to perform update operation you should take \ncare about it and once you do this your update will work. Also I need to tell you that in our real database now we \nhave office and parking and if you carefully look here you will see that we still have old values here. This is a proof of \nthis concept, what I told you previously. That data item is a snapshot of your database contents taken at a certain \nmoment of time. So when this data item was created we had older values here.",
+    "chunk_type": "paragraph",
+    "chunk_index": 98,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 152,
+    "token_count": 170,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 98
+    }
+  },
+  {
+    "chunk_id": "32c4c7affa7c0decbb57e16042f0e68c",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nThat's why we can see it here. If you want to actualize it, to make it actual and read it from your database, you can \njust click actualize data. When you do, this system will refresh data item contents and now you see office and \nparking exactly as in our database. Now let's check column settings correct. And now we can save it. So if you \ncreate your data item like this and if you took care about the first update option, then you changed some source data \nrecords. In your source database you should actualize data, make sure your data records are fully properly updated \nand then just save it in your package. Of course your date and time of the item will be changed.",
+    "chunk_type": "paragraph",
+    "chunk_index": 99,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 129,
+    "token_count": 155,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 99
+    }
+  },
+  {
+    "chunk_id": "d502e2658243f4cad786bc85f4ea8c10",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd next time when you export your package and import in some target environment because of change the date of \nmodification, this item will be processed and corresponding updates will be performed. The same happens with our \nsystems shared with a git. So we need to save everything in file system. Then we will commit our changes to our \ncommon repository and it will be an example of how we can do some updates in data and populate it on other \nenvironments. Now you can see we have only small part of changes here. So we have only some data changes but \nthey are present. So it will be lookup data updates. Or maybe it's better to say realty type data updates. Okay, so we \ncan commit it, pull and push and that's how our changes will be correctly saved. And it's about updates.",
+    "chunk_type": "paragraph",
+    "chunk_index": 100,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 147,
+    "token_count": 172,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 100
+    }
+  },
+  {
+    "chunk_id": "e88372a3b3cf6c811360ce8e155140c5",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nYou may ask me about the delete scenario, what happens if in our source database we finally realize that castle will \nbe never used and should be deleted from developer environment and for test and production. Unfortunately data\n\n--- Page 20 ---\n\nitems cannot help us to delete such data. So if you really need to remove your data from target environments, you \nhave the only way for this. This is SQL script. So as example I will show you how we can write such script. We can \nuse search by name or by id and we can create this SQL script in our package. Add SQL script, you should be really \nextremely careful with it. We'll provide its name like Usr Del Castle realty type.",
+    "chunk_type": "paragraph",
+    "chunk_index": 101,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 129,
+    "token_count": 153,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 101
+    }
+  },
+  {
+    "chunk_id": "bd3601d66e27c1f726698b813a76a7af",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nOf course in real life you probably never use this, but this is some like a training example for you so you can create \nSQL scripts for some specific needs. Installation type determines the way the moment of time when your script will \nbe executed in the scope of package loading procedure. Before package is at the very beginning. After package \nmeans after new tables will be created and processed. After schema data, it's after package data was loaded and \nuninstall app is the very rare case when you will need to run some scripts when your application is removed from the \nsystem. So whether it be at the very end after schema data. We're not using backward compatibility because there \nare so strict conditions. So it makes your SQL scripts almost useless and backward compatible with just an \ninformational property. So we can just keep it off.",
+    "chunk_type": "paragraph",
+    "chunk_index": 102,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 175,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 102
+    }
+  },
+  {
+    "chunk_id": "927858d19a2344217250512aec307f08",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo I will write some script like delete from USR realty type classic. This is our name of the object and then where \nname equals something like this. So this is an example of a script which intentionally removes some data and this \nscript will remove nothing if no data found. This is easy example. I do not use id and I'm using this free name just to \nmake it simple and easy to understand. Such scripts are dangerous so you should be very careful when doing such \nthings. You can validate it, you can check okay, no problems. You can save such script and also which is interesting. \nYou can even run such scripts on your environment. As you can see status needs to be installed in database means \nthat this script was not executed at this database.",
+    "chunk_type": "paragraph",
+    "chunk_index": 103,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 142,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 103
+    }
+  },
+  {
+    "chunk_id": "209a228785b57bf235d6fa9aac160445",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo if we run it now, you can go to actions in write part here, then install, which means run SQL script, you can do it \ncarefully and if script finishes with an error it still will have status and also you will see its properties and last error \nmessage text will show you last error which happened with running the script. In my case it was successful, so my \nscript executed with no errors. And now we can check our lookup columns, lookup contents. Now you see Castle \ndisappeared, so it was physically removed from our source database. And also when this script will go to our \npackage and will be executed on some target environments, also the script will remove necessary records from our \ntarget environments.",
+    "chunk_type": "paragraph",
+    "chunk_index": 104,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 131,
+    "token_count": 154,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 104
+    }
+  },
+  {
+    "chunk_id": "2a00238ccc807c29f7decb0bcda12f3e",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nYou should be careful because if someone already started to use such data that you plan to remove, you will have \nsome cascade problems with it. So you will have referential integrity exceptions. You will need to look at connected \ndata and ideally you should think of it in your script, you should process such scenarios and you should think of what \nto do with connected data entities. And also the script is not saved on disk, so if I will click download packages to \nthe file system, I will have everything saved on disk. Our session comes to an end today and it looks like we have no \nenough time to work with a complex example of virtual objects. And I will show it a bit later, but today I plan to make \ncouple of more preparational steps for us.",
+    "chunk_type": "paragraph",
+    "chunk_index": 105,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 105
+    }
+  },
+  {
+    "chunk_id": "25b8d03398c990b4456d669488f6964e",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo now we saved everything on disk and later we will start with the building of our new applications and we will need \nsome base product parts which are very common to be used. I'm talking about contacts and accounts and also \nneed some additional tools. So my plan is at the end of today's session to show you how you can add some \nnecessary frequently used marketplace add ons that will really help us to operate in future. Here my example with \nthe lookup is almost done, and also when we removed some data from the lookup, you see our snapshot still keeps \nthis castle. So this castle is no longer present in our database and it makes sense to actualize data now. You see, I\n\n--- Page 21 ---\n\nremoved it even though if I do not remove it, my item was not changed, so it's not correct.",
+    "chunk_type": "paragraph",
+    "chunk_index": 106,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 153,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 106
+    }
+  },
+  {
+    "chunk_id": "8d23dfb71346c7a5e4b8bebba5afefff",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nI think that if I keep some data here which is not present in real database, this is mistake, so I should avoid such \nmistakes. I should actualize data, not to keep any non existent records in my contents of the package. So actualized \ndata saved it. Now everything is consistent. So my castle fully disappeared from my conscience here and we can \nalso save it again to disk. So my plan for today's session and is to show you how to install some necessary \nmarketplace add ons into your environment. We will need it later so I have opportunity to show you. Let's go to \nsettings, then go to application hub. This is a special part of managing our system with so called applications. I will \ndiscuss and explain what application is tomorrow.",
+    "chunk_type": "paragraph",
+    "chunk_index": 107,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 137,
+    "token_count": 167,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 107
+    }
+  },
+  {
+    "chunk_id": "ff8369cca4adf7f810ca0725dd57b67a",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nCurrently we will use this application hub only for inserts so only to add some useful items into our environment. So \nadd new application marketplace powered so we can find a lot of application there. And also we have some base \nproduct tools made by creation. Now I need customer 360 because it enables contacts and accounts section in my \nsystem. So simply speaking, when you install customer 360 you will have new sections in your system. You will have \naccounts and contacts designed in freedom UI. This is very useful, very commonly used. Almost any project \nimplementation on creature uses context and accounts, so we will definitely need it out of the box stuff of our studio \nsystem does not include this. I will explain why a bit later when we talk about composable apps. So let's install \ncustomer 360.",
+    "chunk_type": "paragraph",
+    "chunk_index": 108,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 108
+    }
+  },
+  {
+    "chunk_id": "97ec55f6e501bbb54a26717c07e7e6d3",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nThere is a high degree of integration and seamless connection between my local website and marketplace dot \ncreation.com. So I just click install. You see some automation works. It asks me to confirm. Okay, no worries, \nconfirm one more confirmation about app that I plan to install anyway. Confirm. Let it be. So it will take just several \nseconds, possibly up to 30 seconds to install this app and as a result expect to see accounts and contacts sections \nadded to my system. They will be displayed in Freedom UI. So you will see the first Freedom UI page at our sessions \ntoday and main reason why I do this is I need contacts and accounts in my future. Examples when you added \nsomething to your app it makes sense to download installation logs. This includes a lot of technical information, but \nsometimes it could be really helpful.",
+    "chunk_type": "paragraph",
+    "chunk_index": 109,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 151,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 109
+    }
+  },
+  {
+    "chunk_id": "22752d1c221f7ee796ce5c55d9b9ba9f",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd this installation logs can be kept for some time on your disk just for future reference. Because even in case of \nsuccessful installation, sometimes you may face situations where you see something that you do not expect and \nworking with such logs can be efficient to check it out and to see some technical details about your installation. At \nleast we can see how much time it took. So 1437 till 1510 it looks like 33 seconds. So it took only 33 seconds to \ninstall this app. And all the technical steps that were done here are listed. So if interested you can see and find no \nwarnings, no errors. You can see even some SQL scripts were installed. And also I just forgot to say that SQL script \nis database dependent. So when I created my own script.",
+    "chunk_type": "paragraph",
+    "chunk_index": 110,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 143,
+    "token_count": 169,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 110
+    }
+  },
+  {
+    "chunk_id": "8101cb93aab25ea9d90cb4ccaeb91bad",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIt was only for let me show you properties here. It only for Microsoft SQL type of the database if you need a similar \nscript for postgres, you have to create another SQL script. That's why base creature product if you will filter by SQL \nscript only. It always includes three types of SQL scripts for each business action that we need. For example, let me \nscroll down and find any kind of procedures like create omniscient tables for postgres, separately for Oracle, \nseparately for Microsoft SQL. Three different SQL syntaxes are supported. And that's why if your solution is intended \nto be supporting several different database engines, you have to make several scripts for it. But mainly when you \ndevelop your projects, you will know for sure target database type. So you only you can focus only on corresponding \nfocus corresponding target database type.\n\n--- Page 22 ---",
+    "chunk_type": "paragraph",
+    "chunk_index": 111,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 152,
+    "token_count": 184,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 111
+    }
+  },
+  {
+    "chunk_id": "8fa5545d170f5f0a7ef969491ffc6be9",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIt could be most frequently it could be Microsoft SQL or postgres. If you expect to deploy your solution in creature \ncloud, it's highly likely that you will have PostgreSQL in the cloud condition. So it makes sense to use the same type \nof the database for your own local development. But it's not mandatory. If you develop on Microsoft SQL and then \ndeploy your solution on postgres, it will also work if you support all necessary database dependent settings like \nnecessary scripts. Also for postgres, not only for Microsoft SQL. Main part of configuration is not database specific. \nSo when you develop an object, it will normally work in any type of supported databases. Okay, it was just a \ndistraction. So let's go back to our logs. Now you see it took only 33 seconds to install. It's interesting to see results.",
+    "chunk_type": "paragraph",
+    "chunk_index": 112,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 146,
+    "token_count": 177,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 112
+    }
+  },
+  {
+    "chunk_id": "fdf89a32d82ff4f4e847db2011118e96",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nProbably we will need to reload main page just to suppress any kind of browser cache issues that possibly can \nappear. So now we can see a bit more workplaces. Originally we had only one studio. Now we have all apps \nworkplace studio and we have new one which is called customer 360. We have context Freedom UI section here you \ncan easily check if the section is Freedom UI or not because only Freedom UI section offer you, they offers you. So \nto shrink list columns easily in classic UI you cannot do this. So let's go for example into lookup section. You can't do \nthis. You only can shrink columns by going to set up summaries, no, to set up columns that field to display. And \nthat's how you can do such shrink manually. In freedom UI you can do it easily.",
+    "chunk_type": "paragraph",
+    "chunk_index": 113,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 147,
+    "token_count": 174,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 113
+    }
+  },
+  {
+    "chunk_id": "8249220b7f463a6c4636867e6e8650ad",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo that's how you can easily detect which type of UI you are working with. But also you can remember position of \nbuttons. In freedom UI, managing buttons are usually the right part and fonts are different. The style of the list is a \nbit different functionality of buttons in list and you can see you can hide and freeze buttons, freeze columns in lists. \nSo freedom UI is much more rich with UI capabilities and it's considered as a future of creature. And classic UI is \nnow considered as a legacy which has a lot of implementations. So probably thousands or even tens of thousands \ndifferent solutions are currently running all over the world in classic UI. And so creature supports both types of Ui so \nfar. This is example of a classic UI, sorry, freedom Ui list.",
+    "chunk_type": "paragraph",
+    "chunk_index": 114,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 142,
+    "token_count": 165,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 114
+    }
+  },
+  {
+    "chunk_id": "32e8c310ca58c5658cbacd44eabeae21",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nYou can open edit page, you will see page reach of controls with oh no, no. This is a classic UI stuff. So this is still \nexample of it's not a glitch, it's kind of behavior connected with a cache and server side. So we have to log out. We \nwill need to log in. Trying to use my name. What's happened with my saved users? Yeah, supervisor okay, I want to \nuse this. Okay probably developers changed some behavior and login page which now made a bit harder to use \nsaved passwords in browser. Okay, so I logged in again. Contact section. Now you will see edit page with no any \ncache issue. This is example of a freedom UI edit page. You still see some freedom UI capture like possibility to \nshrink lists more rich components with colors, customizations and so on.",
+    "chunk_type": "paragraph",
+    "chunk_index": 115,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 147,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 115
+    }
+  },
+  {
+    "chunk_id": "79db62e395866d6636c59d57e1581781",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nBut so we will study how to build such pages. You will know and if some one of you already passed our \ncustomization course, you already know how to do such things. So this is example of a freedom UI user interface \naccounts also shown as a list and edit page. So contacts represent physical persons with names, emails, addresses \nand so on. Accounts represent companies like Samsung, like Tesla, like others. So some companies that you may \nwork with and you need to keep information about them in your system. This was example of customer 360 installed \ninto our app. Into our system. I have a couple more tools to be installed. Let me quickly show it for you. It would be \nend of today's session, so not so hard.",
+    "chunk_type": "paragraph",
+    "chunk_index": 116,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 134,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 116
+    }
+  },
+  {
+    "chunk_id": "a032f82622105ef1ca2d83be13dc838b",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\n--- Page 23 ---\n\nIt's still a bit strange that application hub is empty here, let me reload this page because something unusual. Yes, \nnow it's better. Now you see customer 360 is already installed and we will study what an application is, how it works. \nNow we will just install a couple more apps from our marketplace because we will need them in future examples. So \nmarketplace powered. Here I need tool named data binding. I will search by the word bind easily finding this data \nbinding tool. Select it, click install button. Thanks for automation. Here confirm and install. This installation will take \na bit longer because it will need to compile my environment during this installation process. So this takes a bit \nlonger but it's still okay. And I need this data binding tool because it helps to create data items easily.",
+    "chunk_type": "paragraph",
+    "chunk_index": 117,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 148,
+    "token_count": 181,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 2,
+      "position_in_document": 117
+    }
+  },
+  {
+    "chunk_id": "b116b8a92ea5ff5c53e7bebae9b65ad6",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo data items can be automated and you can create them with several clicks. And it's easier than to make everything \nmanually. So data binding tool takes some time to install. It's pretty awesome. Old tool, I think it exists maybe for five \nyears and it's designed for an older version of creature and it also has a lot of support in classic UI. But now mainly \nwe needed to support our creating of data items and this help. So this tool helps to save our time and to reduce \nboring part of the work. You can download installation log to see how long it took to load this. Let's check it out. Our \nsession is almost over, so now you see 20 415, then 20 516. It looks like 1 minute and 1 second and like 61 seconds \ntook to install this solution. No errors, no.",
+    "chunk_type": "paragraph",
+    "chunk_index": 118,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 150,
+    "token_count": 187,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 118
+    }
+  },
+  {
+    "chunk_id": "e31024560cf5f0cbd3b010d8da299c61",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAny warnings here? Perfect. Everything is okay. Everything is okay. So our app was installed and one more final thing \nso we can reward this. And you see data binding item, one more item which I want to install from Marketplace is a \nspecial tool called maintenance tools for creation maintenance. This maintenance tools was made by partner which \npreviously was named Siso. You probably saw its icon, now it's named neo technologies from Switzerland, and they \nuse just a standard creature API. And this tool has two major functions, clear redis cache. But you don't really need it \noften. But the most important and useful feature is restart the app restart application. Unfortunately, creature \ndoesn't have this function out of the box available in user interface. And partners from Neo technologies decided to \nfix this issue and they just made a UI button to do this.",
+    "chunk_type": "paragraph",
+    "chunk_index": 119,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 150,
+    "token_count": 182,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 119
+    }
+  },
+  {
+    "chunk_id": "c55948910ebc89b3af115ec517ce5b2d",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo this app simply adds a couple of buttons into our creation user interface to make it easy to restart the app or to \nclear redis cache. I will use this restart app, we will need it, we cannot avoid it unfortunately. And in our examples \nyou will see it. So you see 2708 started, 20 718 finished. So it took only 10 seconds for installation. You probably will \nask me about why am I so obsessed with installation time? This is important because this is 10 seconds of \ndowntime for your system. If you do some kind of installations on your production, your end users will not be able to \noperate with your system during these installation procedures. So we still have non zero downtime.",
+    "chunk_type": "paragraph",
+    "chunk_index": 120,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 129,
+    "token_count": 157,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 120
+    }
+  },
+  {
+    "chunk_id": "b53800ab13b2bb1a60583a3164fec7fb",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nAnd this is important to track how long it took for creation to install something, especially if you do it in the middle of \nworking hours. So my installation was successful. We can also go back again to application hub. Now you see one \nmore app, maintenance tools and I can show you where this maintenance tools can be found. It will be into our \nsettings page. Physically it's called system designer, but now developers decided just to call it settings. At the end of \nthis page you will see new buttons. Originally we had only advanced settings, but also now we have clear redis and \nrestart application. We will need restart application later and unfortunately some, let's say study like learning \nexamples will require this restart application action and we cannot avoid it. In some cases you will see it later and \ntoday's session is over.",
+    "chunk_type": "paragraph",
+    "chunk_index": 121,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 150,
+    "token_count": 178,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 121
+    }
+  },
+  {
+    "chunk_id": "d7117ed55e76bb9b0ad1c79f63025622",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nThank you for your time. Today we moved forward with working with objects. We discussed how to build data items, \nhow to operate with lookups. We also worked with Git. And tomorrow I plan to show you one more example with\n\n--- Page 24 ---\n\ndatabase view and we will move on with building user interface. I plan to focus on Freedom UI, mainly on freedom UI \nand if we will have some significant demand on Quest AQI stuff. For example, you expect to work or support existing \nQuest AQI solutions. We will have to take time also to discuss some classic UI tools, but mainly my focus will be on \nFreedom UI and programming inside of it. So thank you for your time. Today our session is over in case if you have \nany questions, feel free to ask.",
+    "chunk_type": "paragraph",
+    "chunk_index": 122,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 143,
+    "token_count": 171,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 122
+    }
+  },
+  {
+    "chunk_id": "2c0baafa50a9906bfc52f0b7f54eb874",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nNow your homework, as usual, is to watch this video to represent all the steps or produce all the steps for today's \nsession. Working with your package, creating new lookup, new object, register it as lookup and practice with data \nitems. So this will be your homework and tomorrow we will continue doing more complicated things. Thank you. \nThank you for your time. Questions, paddy? Yeah, yeah, I do. Just with the apps installed. Are they installed then \nsimilar to how you would set up a packet on the backend? Oh yes. Physically they represent as packages. If you \nreload our configuration section, you will see that we have a couple of more packages here. And for example, the \npackage named GLB data binding represents our data binding tool and maintenance tools. Let me find it. It's called \nCSL maintenance tools.",
+    "chunk_type": "paragraph",
+    "chunk_index": 123,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 144,
+    "token_count": 184,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 123
+    }
+  },
+  {
+    "chunk_id": "a6450bf94c2cb2313f88eb9ea95f81c8",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nIs changes customizations in our settings page to enable couple of buttons. Yeah. And customer 360 c 3300 okay. \nCRT customers, it's surprisingly low. I need a bit more. Okay, let's search just for 360. Yeah. Customer 360 represents \nthree packages in one archive. So we will study how application works, how it is created and what is inside. \nTomorrow you will see that application finally keeps some packages behind it and when we load such applications, \nphysically will load one or several packages. Here you see customers 360. It includes several packages. So that's \nhow it works. And physically application is a bit artificial thing. Physically we operate with packages. So anyway you \ncan see everything which was customized here as a package and the package contents inside of configuration \nsection. Thanks. Thank you. Any other questions please? Yes basil, thank you.",
+    "chunk_type": "paragraph",
+    "chunk_index": 124,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 146,
+    "token_count": 192,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 124
+    }
+  },
+  {
+    "chunk_id": "fe828eb7a39b29e234f77774562f35d5",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nWhen I am going to advanced setting, the configuration page doesn't work, it just reload. It's because you're probably \nusing Windows home. If you windows home you have to close previous page. In this case, configuration page will be \nworking normally. Yeah. Let me, I have no options how to make it better, unfortunately. Probably you can consider \nyou can upgrade to Pro Windows Pro version. In this case you will have no such issue. Sure. This is kind of limitation \nconnected with WebSocket and this is something that makes home different from pro and it's not so comfortable. I \nagree. Thank you. Thank you. Okay, and it looks like Tushar had a question. Yes tushar please.",
+    "chunk_type": "paragraph",
+    "chunk_index": 125,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 120,
+    "token_count": 156,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 125
+    }
+  },
+  {
+    "chunk_id": "5300c88a5c4cdede90274f22c187971e",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nMy question is like if we have a new lookup, like if we have two, three more lookups and we want how we can then \nupdate it and like a system designer, do we have to create the data file again? Or we can update in the existing data \nfile which you already showed. So probably you are talking about new data records added to existing lookups table, \nam I right? No. Like if you suppose if total number of lookups are 121 right now, if we add like five new lookups, then \nhow we can bind those? Oh, if you have five new lookups, you have finally to create ten new data items or maybe \nless than ten because one data item for lookups can include many records for registering.",
+    "chunk_type": "paragraph",
+    "chunk_index": 126,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 134,
+    "token_count": 162,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 126
+    }
+  },
+  {
+    "chunk_id": "8fdd6cc2a6d9251dd7a502d5a701a232",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo the minimum amount of data items in your case will be six, one for five lookup records and five others for each \nseparate data contents of your lookups. So simply speaking, any lookup should include data item for registering of \nthe lookup and data item for the contents of the lookup. In this case it will be the most comfortable for your end \nusers because they will always find all your lookups in production and lookups section and they will be able to open \nit to see their contents normally and data items guarantee such transport of records. Okay, thanks. Thank you \nTashar. And that's all for today. If you will have more questions. I understand that probably questions will appear\n\n--- Page 25 ---\n\nlater when you try to practice. So you may use my email. Please send messages. I will try to find time to answer you.",
+    "chunk_type": "paragraph",
+    "chunk_index": 127,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 153,
+    "token_count": 184,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 3,
+      "position_in_document": 127
+    }
+  },
+  {
+    "chunk_id": "3ce00b838c05d349936fbf6631e23e98",
+    "document_id": "e936e7320501",
+    "content": "# Speaker 1\n\nSo our tomorrow session will be as usual and we will continue working with objects and we will start to work with \nuser interface programming. Thank you very much for your time. See you tomorrow. Bye. Good luck. See you \ntomorrow. Bye. Thank you. Tomorrow. Thank you. Bye.",
+    "chunk_type": "paragraph",
+    "chunk_index": 128,
+    "metadata": {
+      "source_type": "pdf_transcript",
+      "pdf_file": "Creatio-Developer-2.pdf"
+    },
+    "word_count": 51,
+    "token_count": 67,
+    "context": {
+      "heading": "Speaker 1",
+      "paragraph_count": 1,
+      "position_in_document": 128
+    }
+  }
+]

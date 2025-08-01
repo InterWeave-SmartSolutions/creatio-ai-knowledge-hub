@@ -1,0 +1,1257 @@
+{
+  "summary_id": "daf985d0654e",
+  "content_id": "e936e7320501",
+  "summary_type": "hierarchical",
+  "summary_text": "Document: Speaker 1\n\nMain Sections:\n• Speaker 1\n  - # Speaker 1\n\nToday is session number two and we will continue to do our first steps on creature platform.\n  - As developers, we \nworked with our environment.\n• Speaker 1\n  - # Speaker 1\n\nSo now you are fully ready to continue.\n  - If you have any questions, feel free to ask Tushar any questions we have.\n• Speaker 1\n  - # Speaker 1\n\nMy port number is different like your.\n  - You should find your Regis service running.\n• Speaker 1\n  - # Speaker 1\n\nC program files regis usually if you installed regis for Windows, you will find it here and then you can just run regis Cli \nexec file.\n  - It will be a command line utility for redis.\n• Speaker 1\n  - # Speaker 1\n\nAnd usually creation is caring about redis itself only in some rare cases you will need something like this, like flush \nall in order to reset your redis to clear everything and that's all.\n  - But it looks like you have a connectivity issue.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 2 ---\n\nI would also type it in our chat so this may help you to normalize your redis operations.\n  - But the most common \nreason I think is about connection strings.\n• Speaker 1\n  - # Speaker 1\n\nSo it will give me a bit more entertainment because so once you have a question, I will be happy to answer.\n  - Today \nwe'll continue with git, with package management, and also with working with objects in general and using data \nitems.\n• Speaker 1\n  - # Speaker 1\n\nSo creating package manually usually means that you are planning to do some classic UI stuff.\n  - Just to remind you, \nclassic UI is a special old type of user interface which you can still find in many system sections like system users, \nlike system settings, like web services.\n• Speaker 1\n  - # Speaker 1\n\nCurrently you can see that we can select all packages.\n  - As you remember we have 141.\n• Speaker 1\n  - # Speaker 1\n\nWe can create some dummy stuff here just to demonstrate something that is not empty inside of our package.\n  - So \nlet me show you what it will be.\n• Speaker 1\n  - # Speaker 1\n\nYou can change this prefix at the beginning of your project or you can even remove it if you do not like.\n  - So \nsupporting prefixes.\n• Speaker 1\n  - # Speaker 1\n\nSo I do not really plan to make some business logic here.\n  - So my test process includes some start simple event and \nthen terminate event.\n• Speaker 1\n  - # Speaker 1\n\nIn the case if we work in this mode, this star is really important and helpful because it shows us that something was \nchanged and not fully saved on disk.\n  - But if you will turn back to creature ide, this star will be almost useless because \nit will represent that your changes are not submitted to the SVN.\n• Speaker 1\n  - # Speaker 1\n\nDownload packages to file system the reason why we have to do this is that some changes when we do them at \nconfiguration section are not initially and fully saved on disk.\n  - They are still created and saved in database first, \nbecause it was historically and originally the first storage place of creation items in database.\n• Speaker 1\n  - # Speaker 1\n\nAnd also this star nearby.\n  - The item name will disappear.\n• Speaker 1\n  - # Speaker 1\n\nMetadata is information about our configurable items stored in a special system inner format in a JSON string with \na big number of different properties and values.\n  - And luckily we should not look here constantly.\n• Speaker 1\n  - # Speaker 1\n\nAnd that's how we will exchange settings between different developer environments within one development team \ndoing the same project.\n  - So now as you can see, we're going closer to file system and to understanding how we can \nexchange settings between developers.\n• Speaker 1\n  - # Speaker 1\n\nAnd this zip archive file can be also uploaded on some other environments.\n  - Such uploading can be done with the \nsettings.\n• Speaker 1\n  - # Speaker 1\n\nSo it will be really hard to operate as a team where each team member can do his own, let's say contribution to the \ncommon repository.\n  - So such export and import is not designed for sharing settings between developers.\n• Speaker 1\n  - # Speaker 1\n\nSo that's how it can be organized as a team.\n  - And now I will show you.\n• Speaker 1\n  - # Speaker 1\n\nSo first before you enable any folders, before you operate with your git, if you don't have git client, you should click on \nthis button source control in order if you so if you don't have any git client installed, you will see only one button here \nto be called something like oh we have to update.\n  - Okay, maybe later one single button will be install git client.\n• Speaker 1\n  - # Speaker 1\n\nI think you can easily fix it if you face this difficulty with new terminal window and a bit of googling will tell you how \nto make full setup of your git client.\n  - In my case, this git client was already set so I already have git client normally \nworking so I can now open folder and initialize repository in it.\n• Speaker 1\n  - # Speaker 1\n\nSo if I decide to make a repository root folder somewhere inside of my folder representing a package, then it will be \nreally hard for me to add any other packages here.\n  - So I will need to keep several repositories for several packages \nwhich is also not so good.\n• Speaker 1\n  - # Speaker 1\n\nI will do this with visual studio code and in Explorer tab I'll just click open folder.\n  - I need to find the corresponding \nfolder from my disk.\n• Speaker 1\n  - # Speaker 1\n\nContent builder is also representing a page.\n  - Okay.\n• Speaker 1\n  - # Speaker 1\n\nFor client side we have some data items, we will discuss them and they are used to keep some data records in your \nsystem, business processes and some other types of items.\n  - So in general any package may include unlimited \nnumber of different configurable items.\n• Speaker 1\n  - # Speaker 1\n\nAnd this file contents is usually having two types of files.\n  - It usually has some DLL's as a result of compilation and for\n\n--- Page 6 ---\n\nsome cases it may include some JavaScript stuff, JavaScript components.\n• Speaker 1\n  - # Speaker 1\n\nNow we only opened some folder with big number of files.\n  - We are really interested only in some part of such files, \nbut we are not interested in all the contents.\n• Speaker 1\n  - # Speaker 1\n\nSo I will run initializerepository which is the same as git init command and it will initialize my git local repository in \nPkG folder.\n  - So I just click this, it performs some steps and now we can see that at this source control tab our git \nclient detects huge number of modifications.\n• Speaker 1\n  - # Speaker 1\n\nSo this is our package that we plan to operate.\n  - We want to ignore everything else.\n• Speaker 1\n  - # Speaker 1\n\nSo let's go to GitHub.com.\n  - I need to sign in.\n• Speaker 1\n  - # Speaker 1\n\nOf course I will share it with you.\n  - Gitignore file is a file with empty name and gitignore extension.\n• Speaker 1\n  - # Speaker 1\n\nIf you will do this with your Windows Explorer, make sure you set for display of the full file names with extensions.\n  - In \nthis case you will not fail and you will not create a gitignore txt file.\n• Speaker 1\n  - # Speaker 1\n\nAs you can see CrT omnichannel appear it here and I can add it to gitignore.\n  - Let me show you what happened and \nalso I do not need to put all of the files here, so package name is enough and CrT security so I can type it manually \nCrT security and save it.\n• Speaker 1\n  - # Speaker 1\n\nSo it will help me to understand your current level of skills and knowledge about version control.\n  - Because today \ndeveloper I think must have some say basic experiences version control tools because it's quite inevitable to operate \nas a team.\n• Speaker 1\n  - # Speaker 1\n\nAlso I wanted to show you in file system once we initialize git repository, you will see that new folder appeared on my \ndisk folder name is git and this folder is hidden.\n  - As you can see the file attributes here show us it's hidden.\n• Speaker 1\n  - # Speaker 1\n\nMy first commit ever.\n  - So it's just something fun.\n• Speaker 1\n  - # Speaker 1\n\nSo it's about some git secrets, how it saves your comments, your changes and so on my git repository is still local so \nI did not share anything with my imagined team members.\n  - I need now I need remote global git repository that will be \navailable for my team members.\n• Speaker 1\n  - # Speaker 1\n\nSo I need this common repository to organize sharing of settings with my colleagues.\n  - This is very easy.\n• Speaker 1\n  - # Speaker 1\n\nSo I will connect remote repository to my local git client and my local git repository.\n  - I can do it with a terminal \nwindow.\n• Speaker 1\n  - # Speaker 1\n\nYou see, compressing was used here.\n  - And finally my remote repository was updated by set of commits by stuff that \nI committed from my local one.\n• Speaker 1\n  - # Speaker 1\n\nAnd now we have some stuff from our package which is not empty.\n  - So we have some files and folders committed to \nlocal git repository and then to common repository.\n• Speaker 1\n  - # Speaker 1\n\nSo I can easily add more packages to my solution and it will still be located at one repository.\n  - You can also see all\n\n--- Page 9 ---\n\nthe history of my comments.\n• Speaker 1\n  - # Speaker 1\n\nBut this is something that and I will read only one column 80 okay, so this is just example read contact.\n  - An example \nof what we can do as business logic automation inside of a process.\n• Speaker 1\n  - # Speaker 1\n\nOriginally when you do customizations they are saved in database and only if you download on disk it will be \nproperly and fully saved on disk.\n  - Some items are also saved on disk while you edit them.\n• Speaker 1\n  - # Speaker 1\n\nAlso we have some new items appeared here probably because of our titles added to the process pieces.\n  - But okay \nso we have test process and so on.\n• Speaker 1\n  - # Speaker 1\n\nNow we can go to git repository loaded and you see some history of changes.\n  - So we have two commits.\n• Speaker 1\n  - # Speaker 1\n\nAnother developer originally has no own package at all.\n  - Another developer just installed new environment and they \nhave no package at all.\n• Speaker 1\n  - # Speaker 1\n\nThey can do it with git pull comments or git clone comments, whatever works better.\n  - And finally, creature is \ninterested only in PKG folder and the contents here.\n• Speaker 1\n  - # Speaker 1\n\nSo second developer will perform this operation and second developer will see results that some new files, new \nfolders appeared and even new package will appear at second developer environment.\n  - So that's how your package \nchanges may travel from one environment to another.\n• Speaker 1\n  - # Speaker 1\n\nAnd that's how first developer will receive all changes in the package files.\n  - And then first developer must run the \nseparation update packages from file system.\n• Speaker 1\n  - # Speaker 1\n\nYou will commit only changed items, changed parts to common repositories and everyone else can do the same.\n  - So \nthat's how you can easily, let's say, modify two different items of the same package and work as a team.\n• Speaker 1\n  - # Speaker 1\n\nWhen two developers made changes to the same item, I think the best way is to sacrifice changes from one of the \nside and submit another side changes into repository and then ask first side to check out it and make changes \nagain.\n  - So merge of metadata is not designed and probably will not be successful.\n• Speaker 1\n  - # Speaker 1\n\nIf you have any questions about it, any other ideas, feel free to ask.\n  - I'll be happy to explain.\n• Speaker 1\n  - # Speaker 1\n\nYou can easily create objects in your configuration and also when you do customization using no code tools.\n  - For \nexample when you operate with application hub or with section wizard, system is capable to create number of \nobjects automatically.\n• Speaker 1\n  - # Speaker 1\n\nAnd also I need created on column just to make more comfortable sort in this list so I can sort by name.\n  - For \nexample, we can find a lookup called address types.\n• Speaker 1\n  - # Speaker 1\n\nIs any object created in creation will finally turn into a table in database.\n  - So now we talk about general objects \nwithout special chemistry, without any tricks.\n• Speaker 1\n  - # Speaker 1\n\nLet me find this one.\n  - So you can see table structure, all the columns, you can see it's key field, you can see primary \ndisplayed text field and some others.\n• Speaker 1\n  - # Speaker 1\n\nSo building more complex solutions usually starts from making your lookups and that's why we will do some.\n  - Now I \nplan to do some changes in my package and it will be necessary for my future solution in classic UI.\n• Speaker 1\n  - # Speaker 1\n\nWe can call it real to type and I will show you how to create it from scratch.\n  - So select our package add object when \nyou create new object, it means you are creating new entity in our system.\n• Speaker 1\n  - # Speaker 1\n\nAnd we will have this prefix USR and then we can provide code for our new object.\n  - It will be real t type.\n• Speaker 1\n  - # Speaker 1\n\nSo system is capable to make set of theories to the database like create table, alter table and add columns and so \non.\n  - So we only provide some necessary properties and system will take care about database storage itself.\n• Speaker 1\n  - # Speaker 1\n\nIt's interesting because previously I only remember added Japanese at the beginning of 2024 and now we have \nsome very recently added languages.\n  - Hungarian language was added recently.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 13 ---\n\nThen you can find languages part and now you can see 23 languages and you can activate language if necessary by \nopening it, setting active and then save.\n  - But please.\n• Speaker 1\n  - # Speaker 1\n\nWe have also an alternative way to support multiple languages with the translation section, but I do not recommend \nyou to work with it because when you initially go to translation section, it will take probably 15 minutes of time for \ninitial preparation, so it's not so comfortable.\n  - And I think it's much easier to provide correct translations just while \nyou develop it.\n• Speaker 1\n  - # Speaker 1\n\nWe plan to use reality type classic as a lookup so we can inherit structure for our object from some base objects.\n  - That can be helpful.\n• Speaker 1\n  - # Speaker 1\n\nI have to confirm my change, and once I do this now you see I have new inherited columns list.\n  - I have eight inherited \ncolumns.\n• Speaker 1\n  - # Speaker 1\n\nAnd you should know that creature uses Unicode strings anywhere.\n  - So every text column you will find in creation is \nbased on Unicode text.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 14 ---\n\nSo we have description name and description are business columns, all others are system columns and process \nlisteners is an integer column for a very rare cases when record level event handling is used in business processes.\n  - So what do you need to know?\n• Speaker 1\n  - # Speaker 1\n\nSo the main text column which is shown in drop down list of lookups.\n  - So name will be used for this purpose but you \ncan change if you want nor any other special properties.\n• Speaker 1\n  - # Speaker 1\n\nSo we'll go to columns list and obviously we can add our own columns to the object.\n  - We have plenty of options for \ndifferent database types, a lot of text options.\n• Speaker 1\n  - # Speaker 1\n\nSo just something like bizarre thing that possibly you will never use in your practice.\n  - So number is obviously integer \nand several types of decimals.\n• Speaker 1\n  - # Speaker 1\n\nSo when you have a lookup column system creates foreign key for you.\n  - So it keeps referential integrity which will not \nallow you to save into lookup column any value which is not faced in your lookup table.\n• Speaker 1\n  - # Speaker 1\n\nThis is auto numbering which works pretty well and it doesn't require any programming.\n  - So this is a no code tool to \nmake automatic numbering in your lines when you, when user import adds data.\n• Speaker 1\n  - # Speaker 1\n\nThis type of item is also inherited from schema, but the word scheme I think it's hard to understand.\n  - So let's say \nconfigurable item which will be closer to its meaning and I think it's easier for you.\n• Speaker 1\n  - # Speaker 1\n\nSo publish is necessary to make our object operational and useful for us.\n  - Let's do this.\n• Speaker 1\n  - # Speaker 1\n\nBut at this moment our object is already working so it can be used for us and we can try to use it in our environment.\n  - Let me show you how we can use it.\n• Speaker 1\n  - # Speaker 1\n\nSo when we click new lookup, it doesn't create new table.\n  - New lookup means register existing object as lookup.\n• Speaker 1\n  - # Speaker 1\n\nThis is so called editable list and we are not using any separate edit page for it.\n  - So we just manage data directly in \nthis list.\n• Speaker 1\n  - # Speaker 1\n\nOkay, if you create one more, you see the number goes on, you cancel.\n  - If you create one more, you see numbering is \ngoing on and it will be not rolled back.\n• Speaker 1\n  - # Speaker 1\n\nSo you see that numbering is generated using database tools.\n  - This is extremely reliable and physically sequence \ndatabase object is used for it.\n• Speaker 1\n  - # Speaker 1\n\nSo this is physical data saved in my database.\n  - It's pretty simple.\n• Speaker 1\n  - # Speaker 1\n\nSo for inherited columns, there are some limitations on what is available for you for change.\n  - So generally speaking \nyou can manage your object, you can change them, then you can save and publish.\n• Speaker 1\n  - # Speaker 1\n\nOf course we need to download packages to file system if we want to submit everything to repository.\n  - But here is \nvery frequent mistake that a lot of beginners usually do.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 17 ---\n\nThey see their environment, they fill in with data, they think that everything looks okay and then they just export their \npackage install for example in test environment and then they realize they miss lookup contents and they also miss \nlookup registering data.\n  - So we have technically only two options how we can transport such data.\n• Speaker 1\n  - # Speaker 1\n\nSo you should only use SQL script if you have enough SQL experience and I always recommend you to check your \ncode with someone else who also have experience in SQL just to make sure you will not do anything dangerous in \nyour database.\n  - SQL script can be easily used for permanent serious damage for your system, so your creation will \nnot work anymore if you do intentionally some delete of system data.\n• Speaker 1\n  - # Speaker 1\n\nIn my case, I should select for my object code which I recently used to register my lookup in lookup section.\n  - Unfortunately, you have to remember this code name by heart and this object is called lookup.\n• Speaker 1\n  - # Speaker 1\n\nThat's why we go and search for the object named lookup.\n  - We can find it by name, by code and we can also provide \nsome unique name here.\n• Speaker 1\n  - # Speaker 1\n\nBound data tabs represent exact records which will be saved into our data item so we can manually add such \nrecords.\n  - In total we have 121 records but most of them are base product contents so we do not need to transport \nbase product stuff.\n• Speaker 1\n  - # Speaker 1\n\nWe can only select this data select button and that's how we saved only one data row in this data object.\n  - Then we \njust click save and our snapshot of data which includes only one data row will be saved into our package.\n• Speaker 1\n  - # Speaker 1\n\nI prefer to use codes because they are always unique and system keeps this uniqueness and titles sometimes are a \nbit ambitious, especially if you use non english language.\n  - So you may struggle with finding some corresponding title \nand I prefer to use codes.\n• Speaker 1\n  - # Speaker 1\n\nNo need to use camera styler because it will be recorded.\n  - I will stop it.\n• Speaker 1\n  - # Speaker 1\n\nSo now our solution is full and if we export this package as Zip archive then if we import it somewhere on test \nenvironment to work and user will be able to find our new lookup in lookup section, user will be able to find its \ncontents and user will see such data.\n  - Maybe it's time to practice with git and let's make one more commitment.\n• Speaker 1\n  - # Speaker 1\n\nGreat, everything is done now common repository also felt such changes.\n  - You see three commits and you can see \ncomment history if interesting.\n• Speaker 1\n  - # Speaker 1\n\nFor example, they decided to rename office space into just office.\n  - And we can do this only at developer environment \nbecause we need to share all such changes to all other environments including test and production.\n• Speaker 1\n  - # Speaker 1\n\nSo let's imagine such data items are so such data items is being loaded at target environment.\n  - System is capable to \nprevent duplicates and it uses key columns to detect presence of the record which is being processed right now.\n• Speaker 1\n  - # Speaker 1\n\nBut if record exists system is capable to update existing record and here you will face something which is a bit tricky \nand you may fail for the first time.\n  - And you will have to look carefully at the settings of your columns because \nsystem will perform update only for columns marked with the first update option and by default as you can see no \nupdates are asked here.\n• Speaker 1\n  - # Speaker 1\n\nAlso you may check some other columns if you're not sure and you also want to update so you know the source of \ntruth is your developer environment.\n  - So if something else was changed at your target system then you have to \nupdate it anyway.\n• Speaker 1\n  - # Speaker 1\n\nThat's why we can see it here.\n  - If you want to actualize it, to make it actual and read it from your database, you can \njust click actualize data.\n• Speaker 1\n  - # Speaker 1\n\nAnd next time when you export your package and import in some target environment because of change the date of \nmodification, this item will be processed and corresponding updates will be performed.\n  - The same happens with our \nsystems shared with a git.\n• Speaker 1\n  - # Speaker 1\n\nYou may ask me about the delete scenario, what happens if in our source database we finally realize that castle will \nbe never used and should be deleted from developer environment and for test and production.\n  - Unfortunately data\n\n--- Page 20 ---\n\nitems cannot help us to delete such data.\n• Speaker 1\n  - # Speaker 1\n\nOf course in real life you probably never use this, but this is some like a training example for you so you can create \nSQL scripts for some specific needs.\n  - Installation type determines the way the moment of time when your script will \nbe executed in the scope of package loading procedure.\n• Speaker 1\n  - # Speaker 1\n\nSo I will write some script like delete from USR realty type classic.\n  - This is our name of the object and then where \nname equals something like this.\n• Speaker 1\n  - # Speaker 1\n\nSo if we run it now, you can go to actions in write part here, then install, which means run SQL script, you can do it \ncarefully and if script finishes with an error it still will have status and also you will see its properties and last error \nmessage text will show you last error which happened with running the script.\n  - In my case it was successful, so my \nscript executed with no errors.\n• Speaker 1\n  - # Speaker 1\n\nYou should be careful because if someone already started to use such data that you plan to remove, you will have \nsome cascade problems with it.\n  - So you will have referential integrity exceptions.\n• Speaker 1\n  - # Speaker 1\n\nSo now we saved everything on disk and later we will start with the building of our new applications and we will need \nsome base product parts which are very common to be used.\n  - I'm talking about contacts and accounts and also \nneed some additional tools.\n• Speaker 1\n  - # Speaker 1\n\nI think that if I keep some data here which is not present in real database, this is mistake, so I should avoid such \nmistakes.\n  - I should actualize data, not to keep any non existent records in my contents of the package.\n• Speaker 1\n  - # Speaker 1\n\nCurrently we will use this application hub only for inserts so only to add some useful items into our environment.\n  - So \nadd new application marketplace powered so we can find a lot of application there.\n• Speaker 1\n  - # Speaker 1\n\nThere is a high degree of integration and seamless connection between my local website and marketplace dot \ncreation.com.\n  - So I just click install.\n• Speaker 1\n  - # Speaker 1\n\nAnd this installation logs can be kept for some time on your disk just for future reference.\n  - Because even in case of \nsuccessful installation, sometimes you may face situations where you see something that you do not expect and \nworking with such logs can be efficient to check it out and to see some technical details about your installation.\n• Speaker 1\n  - # Speaker 1\n\nIt was only for let me show you properties here.\n  - It only for Microsoft SQL type of the database if you need a similar \nscript for postgres, you have to create another SQL script.\n• Speaker 1\n  - # Speaker 1\n\nIt could be most frequently it could be Microsoft SQL or postgres.\n  - If you expect to deploy your solution in creature \ncloud, it's highly likely that you will have PostgreSQL in the cloud condition.\n• Speaker 1\n  - # Speaker 1\n\nProbably we will need to reload main page just to suppress any kind of browser cache issues that possibly can \nappear.\n  - So now we can see a bit more workplaces.\n• Speaker 1\n  - # Speaker 1\n\nSo that's how you can easily detect which type of UI you are working with.\n  - But also you can remember position of \nbuttons.\n• Speaker 1\n  - # Speaker 1\n\nYou can open edit page, you will see page reach of controls with oh no, no.\n  - This is a classic UI stuff.\n• Speaker 1\n  - # Speaker 1\n\nBut so we will study how to build such pages.\n  - You will know and if some one of you already passed our \ncustomization course, you already know how to do such things.\n• Speaker 1\n  - # Speaker 1\n\n--- Page 23 ---\n\nIt's still a bit strange that application hub is empty here, let me reload this page because something unusual.\n  - Yes, \nnow it's better.\n• Speaker 1\n  - # Speaker 1\n\nSo data items can be automated and you can create them with several clicks.\n  - And it's easier than to make everything \nmanually.\n• Speaker 1\n  - # Speaker 1\n\nAny warnings here?\n  - Perfect.\n• Speaker 1\n  - # Speaker 1\n\nSo this app simply adds a couple of buttons into our creation user interface to make it easy to restart the app or to \nclear redis cache.\n  - I will use this restart app, we will need it, we cannot avoid it unfortunately.\n• Speaker 1\n  - # Speaker 1\n\nAnd this is important to track how long it took for creation to install something, especially if you do it in the middle of \nworking hours.\n  - So my installation was successful.\n• Speaker 1\n  - # Speaker 1\n\nThank you for your time.\n  - Today we moved forward with working with objects.\n• Speaker 1\n  - # Speaker 1\n\nNow your homework, as usual, is to watch this video to represent all the steps or produce all the steps for today's \nsession.\n  - Working with your package, creating new lookup, new object, register it as lookup and practice with data \nitems.\n• Speaker 1\n  - # Speaker 1\n\nIs changes customizations in our settings page to enable couple of buttons.\n  - Yeah.\n• Speaker 1\n  - # Speaker 1\n\nWhen I am going to advanced setting, the configuration page doesn't work, it just reload.\n  - It's because you're probably \nusing Windows home.\n• Speaker 1\n  - # Speaker 1\n\nMy question is like if we have a new lookup, like if we have two, three more lookups and we want how we can then \nupdate it and like a system designer, do we have to create the data file again?\n  - Or we can update in the existing data \nfile which you already showed.\n• Speaker 1\n  - # Speaker 1\n\nSo the minimum amount of data items in your case will be six, one for five lookup records and five others for each \nseparate data contents of your lookups.\n  - So simply speaking, any lookup should include data item for registering of \nthe lookup and data item for the contents of the lookup.\n• Speaker 1\n  - # Speaker 1\n\nSo our tomorrow session will be as usual and we will continue working with objects and we will start to work with \nuser interface programming.\n  - Thank you very much for your time.\n\nKey Concepts: entity, database, server, record, section",
+  "key_points": [
+    "entity",
+    "database",
+    "server",
+    "record",
+    "section",
+    "lookup",
+    "schema",
+    "page",
+    "json",
+    "field"
+  ],
+  "keywords": [
+    "data",
+    "speaker",
+    "need",
+    "package",
+    "like",
+    "git",
+    "object",
+    "repository",
+    "file",
+    "let"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 5423,
+  "original_length": 18186,
+  "compression_ratio": 0.29819641482459036,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:51:18.336675",
+  "metadata": {
+    "structure": {
+      "title": "Speaker 1",
+      "sections": [
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nToday is session number two and we will continue to do our first steps on creature platform.",
+            "As developers, we \nworked with our environment.",
+            "We made our package recently and today we will continue with git with doing other \npreparations.",
+            "I will explain how to operate with packages, how to integrate with git and we will work with objects and \ndata.",
+            "I will show you how to build data items, why we need them, how to transport solutions."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now you are fully ready to continue.",
+            "If you have any questions, feel free to ask Tushar any questions we have.",
+            "Is \nthere some issue during installation of the local environment?",
+            "I'm getting this one error.",
+            "Please type in the chat."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nMy port number is different like your.",
+            "You should find your Regis service running.",
+            "If it's running, it means it should be \nokay.",
+            "You can also look at Regis logs.",
+            "Maybe it will be more clear for you and which version of Regis are you \nrunning?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nC program files regis usually if you installed regis for Windows, you will find it here and then you can just run regis Cli \nexec file.",
+            "It will be a command line utility for redis.",
+            "So you can run different commands like select number of \ndatabase db size.",
+            "You can see size of the database that you selected."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd usually creation is caring about redis itself only in some rare cases you will need something like this, like flush \nall in order to reset your redis to clear everything and that's all.",
+            "But it looks like you have a connectivity issue.",
+            "So \nquestion about network name or question about port number or something like this.",
+            "So is it possible to run your \nredis CLI and make connection to your redis?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 2 ---\n\nI would also type it in our chat so this may help you to normalize your redis operations.",
+            "But the most common \nreason I think is about connection strings.",
+            "So you should take care about the host and database number.",
+            "You can try \nto choose another database number, maybe you have some other apps using the same number and you may try to \nrun another one.",
+            "I'm able to log in."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it will give me a bit more entertainment because so once you have a question, I will be happy to answer.",
+            "Today \nwe'll continue with git, with package management, and also with working with objects in general and using data \nitems.",
+            "And possibly I will show you some advanced example with connecting database views and objects.",
+            "So today \nwe will mainly focus on general stuff like git and object and data management."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo creating package manually usually means that you are planning to do some classic UI stuff.",
+            "Just to remind you, \nclassic UI is a special old type of user interface which you can still find in many system sections like system users, \nlike system settings, like web services.",
+            "You will see some specifics and no possibility to shrink columns easily.",
+            "And \na bit later I will show you examples of Freedom UI and you will see how you can use such tools, how it will look like."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nCurrently you can see that we can select all packages.",
+            "As you remember we have 141.",
+            "Now let me check number of \npackages at our d one database.",
+            "Now we have 141.",
+            "So one package was added because we added it manually."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe can create some dummy stuff here just to demonstrate something that is not empty inside of our package.",
+            "So \nlet me show you what it will be.",
+            "For example, we can make a test process, business process.",
+            "It's a type of \nconfigurable item designed for automation of some business actions in our creation system.",
+            "So now I need it only \nas a template done stuff just to make it to make my package not empty."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can change this prefix at the beginning of your project or you can even remove it if you do not like.",
+            "So \nsupporting prefixes.",
+            "In my case I do not need to disable it.",
+            "So let it be as is.",
+            "Prefix usually helps me to detect my\n\n--- Page 3 ---\n\ncustom changes and differ them from base product stuff."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I do not really plan to make some business logic here.",
+            "So my test process includes some start simple event and \nthen terminate event.",
+            "So this process, it's just doing nothing.",
+            "I have no parameters, no special settings, I only have \ncode and title.",
+            "Then I can save this sample diagram."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn the case if we work in this mode, this star is really important and helpful because it shows us that something was \nchanged and not fully saved on disk.",
+            "But if you will turn back to creature ide, this star will be almost useless because \nit will represent that your changes are not submitted to the SVN.",
+            "And if you do not support SVN, so you will always \nhave big set of such items with stars and it will not help you to detect some recent changes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nDownload packages to file system the reason why we have to do this is that some changes when we do them at \nconfiguration section are not initially and fully saved on disk.",
+            "They are still created and saved in database first, \nbecause it was historically and originally the first storage place of creation items in database.",
+            "And only several years \nlater possibility to save items on disk was added.",
+            "And that's why we have some kind of legacy and historical stuff."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd also this star nearby.",
+            "The item name will disappear.",
+            "Meanwhile you can see the type of the item.",
+            "It was a \nbusiness process.",
+            "Now you can see this small report includes text that this USR process was modified on this so it \nwas fully saved."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nMetadata is information about our configurable items stored in a special system inner format in a JSON string with \na big number of different properties and values.",
+            "And luckily we should not look here constantly.",
+            "So just something \nthat you need to know that it exists.",
+            "So metadata represents in the structure of the item and for some types of \nconfigurable items it's not really designed to be edited out of creation."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd that's how we will exchange settings between different developer environments within one development team \ndoing the same project.",
+            "So now as you can see, we're going closer to file system and to understanding how we can \nexchange settings between developers.",
+            "I need to tell you that creation has two different flows of changes, two \ndifferent, let's say directions of how you can transport changes."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd this zip archive file can be also uploaded on some other environments.",
+            "Such uploading can be done with the \nsettings.",
+            "Then you go to application hub and then it's possible to add new application with install from file option."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it will be really hard to operate as a team where each team member can do his own, let's say contribution to the \ncommon repository.",
+            "So such export and import is not designed for sharing settings between developers.",
+            "We have to \nuse a bit more sophisticated approach and that's why we turned our environment into a file system development \nmode."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo that's how it can be organized as a team.",
+            "And now I will show you.",
+            "I will use git as a version control system, the \nmost popular for now.",
+            "And in order to run git I need some kind of good git client."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo first before you enable any folders, before you operate with your git, if you don't have git client, you should click on \nthis button source control in order if you so if you don't have any git client installed, you will see only one button here \nto be called something like oh we have to update.",
+            "Okay, maybe later one single button will be install git client.",
+            "In this \ncase you have to run your visual studio as administrator when you click on this button to automatically download \nand install official git client and after this you will see the same settings as I do."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI think you can easily fix it if you face this difficulty with new terminal window and a bit of googling will tell you how \nto make full setup of your git client.",
+            "In my case, this git client was already set so I already have git client normally \nworking so I can now open folder and initialize repository in it.",
+            "This is very important to understand how you should \nmanage folders."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if I decide to make a repository root folder somewhere inside of my folder representing a package, then it will be \nreally hard for me to add any other packages here.",
+            "So I will need to keep several repositories for several packages \nwhich is also not so good.",
+            "So possibly we can select upper level folder."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI will do this with visual studio code and in Explorer tab I'll just click open folder.",
+            "I need to find the corresponding \nfolder from my disk.",
+            "And now probably it's time to explain why we have so many files and folders inside of TKG.",
+            "So \nwhen opened you will see a lot of subordinate.",
+            "Yes, I trust the authors, but you will see a lot of subordinate files and \nfolders here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nContent builder is also representing a page.",
+            "Okay.",
+            "CRT analytics dashboard okay, let's find it.",
+            "Yes, you can see it, but \ntotal number of such folders is much less than 140.",
+            "So it looks like such folders appear here as a result of presence."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFor client side we have some data items, we will discuss them and they are used to keep some data records in your \nsystem, business processes and some other types of items.",
+            "So in general any package may include unlimited \nnumber of different configurable items.",
+            "That's okay."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd this file contents is usually having two types of files.",
+            "It usually has some DLL's as a result of compilation and for\n\n--- Page 6 ---\n\nsome cases it may include some JavaScript stuff, JavaScript components.",
+            "So generally the answer is that in PKG \nfolder we have file contents which is a legal valid part of some packages saved on disk and we should treat it as \nread only stuff.",
+            "We should not remove or modify any part of base product packages file content."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow we only opened some folder with big number of files.",
+            "We are really interested only in some part of such files, \nbut we are not interested in all the contents.",
+            "So let's go to source control tab and now it's time for us to make a git \ninit comment."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I will run initializerepository which is the same as git init command and it will initialize my git local repository in \nPkG folder.",
+            "So I just click this, it performs some steps and now we can see that at this source control tab our git \nclient detects huge number of modifications.",
+            "Of course most of them are at base product packages.",
+            "So we do not \nplan to version such base product file content."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo this is our package that we plan to operate.",
+            "We want to ignore everything else.",
+            "Custom package is also editable, \nbut we agreed that it's not a good idea to use custom package for big project development.",
+            "So I prefer to ignore \ncustom package as well and keep it empty or only with some temporary stuff which will be not submitted to version \ncontrol and will be not shared with any other developers."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let's go to GitHub.com.",
+            "I need to sign in.",
+            "I use my Microsoft authenticator for this.",
+            "Just a second.",
+            "Authenticator \nhelps me GitHub yeah."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOf course I will share it with you.",
+            "Gitignore file is a file with empty name and gitignore extension.",
+            "And the main \nreason of this file is to provide set of macros or a set of text templates which will be used to find and exclude from \nthe contents all stuff which we consider as not necessary.",
+            "Usually it's designed to exclude log files, some settings \nfiles, some technical files generated by your integrated development environment, temporary files, project files, \nsometimes executables if you do not need them, debug files and so on."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you will do this with your Windows Explorer, make sure you set for display of the full file names with extensions.",
+            "In \nthis case you will not fail and you will not create a gitignore txt file.",
+            "So I will create new gitignore file, paste this stuff \nthere and save it.",
+            "Now you will see immediate change happening in my repository, in my working copy source \ncontrol tab.",
+            "Now you see gitignore file."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAs you can see CrT omnichannel appear it here and I can add it to gitignore.",
+            "Let me show you what happened and \nalso I do not need to put all of the files here, so package name is enough and CrT security so I can type it manually \nCrT security and save it.",
+            "Now you will see I cleared my versioned stuff."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it will help me to understand your current level of skills and knowledge about version control.",
+            "Because today \ndeveloper I think must have some say basic experiences version control tools because it's quite inevitable to operate \nas a team.",
+            "So thanks for all of you who replied you have some experiences git."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAlso I wanted to show you in file system once we initialize git repository, you will see that new folder appeared on my \ndisk folder name is git and this folder is hidden.",
+            "As you can see the file attributes here show us it's hidden.",
+            "So \npossibly I will not see this folder easily in my Windows Explorer, but here I already saw set show hidden items and \nalso already set for showing file name extensions.",
+            "Just not to be tricked by windows.",
+            "So now you can see hidden \nfolder dot git even in Windows Explorer."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nMy first commit ever.",
+            "So it's just something fun.",
+            "Text and text for your commits is important to describe your \nchanges in general.",
+            "Like you did some new section, you did improvements integrations or you made some data fixes \nor anything else.",
+            "So your commit text should help you to track history of your changes in future."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo it's about some git secrets, how it saves your comments, your changes and so on my git repository is still local so \nI did not share anything with my imagined team members.",
+            "I need now I need remote global git repository that will be \navailable for my team members.",
+            "I will use GitHub.com as a central git repository host so it will be my git server and I \ncan create new repository.",
+            "I will have a lot of repositories here and I can easily create new one more new repository \nfor our training session stuff."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I need this common repository to organize sharing of settings with my colleagues.",
+            "This is very easy.",
+            "I will also I \nalso avoid using commons.",
+            "I user interface because it's easier and quite straightforward.",
+            "I will create new repository \nto be something like guided dev May 2024 let it be so this name was not used inside of my account and no \ndescription public repository, no readme file."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I will connect remote repository to my local git client and my local git repository.",
+            "I can do it with a terminal \nwindow.",
+            "Actually I can run any command line on my PC, but I prefer to do it here just to be a bit more consistent and \nto show you what happens directly not far from my visual studio code.",
+            "So I just paste this code git remote add origin \nand as you can see my remote repository had this URL.",
+            "Okay, let's do this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou see, compressing was used here.",
+            "And finally my remote repository was updated by set of commits by stuff that \nI committed from my local one.",
+            "We can check it out.",
+            "So now my repository is ready.",
+            "You can see some files and \nfolders here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd now we have some stuff from our package which is not empty.",
+            "So we have some files and folders committed to \nlocal git repository and then to common repository.",
+            "So now it's globally available and I can share my repository link \nfor you.",
+            "So you can also check it out if you have any git account and know any restrictions to access GitHub.com \nfrom your PC."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I can easily add more packages to my solution and it will still be located at one repository.",
+            "You can also see all\n\n--- Page 9 ---\n\nthe history of my comments.",
+            "You can see changes there.",
+            "So we will work with it a bit later.",
+            "Now I will demonstrate \nwhat usually developers do when they operate with git and how their, let's say set of steps should look like we are \nstarting some steps at our development."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut this is something that and I will read only one column 80 okay, so this is just example read contact.",
+            "An example \nof what we can do as business logic automation inside of a process.",
+            "Let's imagine we did something useful, \nsomething very important for us, and then we save our customization.",
+            "This is an example."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOriginally when you do customizations they are saved in database and only if you download on disk it will be \nproperly and fully saved on disk.",
+            "Some items are also saved on disk while you edit them.",
+            "But this download action \nensures that everything is properly saved.",
+            "So you must do this action when finished.",
+            "Some development steps."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAlso we have some new items appeared here probably because of our titles added to the process pieces.",
+            "But okay \nso we have test process and so on.",
+            "So we have set of file changes.",
+            "We can commit it as a commit example one and \nwe can do git commit into our local repository.",
+            "Great."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow we can go to git repository loaded and you see some history of changes.",
+            "So we have two commits.",
+            "Here is my \ncommit history.",
+            "You can, you can see and compare changes.",
+            "Let me show you here you can compare changes in \neach file, in each separate file."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnother developer originally has no own package at all.",
+            "Another developer just installed new environment and they \nhave no package at all.",
+            "So only one single developer should create a package, should commit it to file system and \nthen to version control repository."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThey can do it with git pull comments or git clone comments, whatever works better.",
+            "And finally, creature is \ninterested only in PKG folder and the contents here.",
+            "So finally you will get this folder from git repository to some \nanother developer environment.",
+            "After you do this, you will have file system stuff like this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo second developer will perform this operation and second developer will see results that some new files, new \nfolders appeared and even new package will appear at second developer environment.",
+            "So that's how your package \nchanges may travel from one environment to another.",
+            "I mean from one developer environment to another developer \nenvironment."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd that's how first developer will receive all changes in the package files.",
+            "And then first developer must run the \nseparation update packages from file system.",
+            "So that's how you can exchange settings between developer \nenvironments.",
+            "And as you can see, it's fully 100% based only on files and folders.",
+            "So no any special magic or special \ncalls or special web services are involved into this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou will commit only changed items, changed parts to common repositories and everyone else can do the same.",
+            "So \nthat's how you can easily, let's say, modify two different items of the same package and work as a team.",
+            "There are \nsome warnings about this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWhen two developers made changes to the same item, I think the best way is to sacrifice changes from one of the \nside and submit another side changes into repository and then ask first side to check out it and make changes \nagain.",
+            "So merge of metadata is not designed and probably will not be successful.",
+            "So you should not try and it's \nbetter to avoid this.",
+            "So you may communicate with your team members and organize your work so they will not \ninterfere into each other settings."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIf you have any questions about it, any other ideas, feel free to ask.",
+            "I'll be happy to explain.",
+            "So in general, now we \nmade all major settings and you see how you can set up your common repository."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can easily create objects in your configuration and also when you do customization using no code tools.",
+            "For \nexample when you operate with application hub or with section wizard, system is capable to create number of \nobjects automatically.",
+            "But in order to study it, you need to make some examples manually.",
+            "You understand it better \nif you do it like by hands.",
+            "And creature has a lot of out of the box existing objects, so maybe a couple of hundreds \nhere."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd also I need created on column just to make more comfortable sort in this list so I can sort by name.",
+            "For \nexample, we can find a lookup called address types.",
+            "So it's something simple, address types, you can open it and we \nwill see set of records representing types of addresses in creature, like home address, business address, actual or \nlingo address, and so on.",
+            "We have six records here.",
+            "Such records are physically saved in the database and we can \ngo to the database using our database management tool."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIs any object created in creation will finally turn into a table in database.",
+            "So now we talk about general objects \nwithout special chemistry, without any tricks.",
+            "So in general, if you create an object, it will have its own database \nrepresentation as a table.",
+            "One object means one table.",
+            "Sometimes participants ask me, participants are asking me \nabout is it possible to have one object for many tables at a time?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nLet me find this one.",
+            "So you can see table structure, all the columns, you can see it's key field, you can see primary \ndisplayed text field and some others.",
+            "We have a lot of base product lookups.",
+            "You can see how many we have if you \ngo to view in your lookup section, view summaries set up summaries, display number of records and now you see \nwe have 120 lookups, an out of the box studio product."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo building more complex solutions usually starts from making your lookups and that's why we will do some.",
+            "Now I \nplan to do some changes in my package and it will be necessary for my future solution in classic UI.",
+            "So this will be \njust an example for you and I will show you how to create new object from scratch.",
+            "And business sense of it will be \nsome lookup for our future section that we will design."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe can call it real to type and I will show you how to create it from scratch.",
+            "So select our package add object when \nyou create new object, it means you are creating new entity in our system.",
+            "New database table will be created.",
+            "Working with replacing object will be covered a bit later.",
+            "So now let's make new object."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd we will have this prefix USR and then we can provide code for our new object.",
+            "It will be real t type.",
+            "And also I \nplan to make two different solutions, one for classic UI, another for freedom UI.",
+            "So for classic UI I will have a suffix \nclassic.",
+            "So let it be reality type classic."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo system is capable to make set of theories to the database like create table, alter table and add columns and so \non.",
+            "So we only provide some necessary properties and system will take care about database storage itself.",
+            "This is \nalso very important so code will turn into database table title it could be anything and even more it can be translated \ninto other languages.",
+            "Currently in my environment there are two active languages so I can easily set values here.",
+            "But \nin total we have probably 21 supported language."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt's interesting because previously I only remember added Japanese at the beginning of 2024 and now we have \nsome very recently added languages.",
+            "Hungarian language was added recently.",
+            "So greetings to Hungary and croatian \nlanguage looks like Hr, it's probably Croatian Hr.",
+            "Hr yes, it's croatian language.",
+            "So you see more and more, let's say \nnational languages are added here and now we have 23 supported languages in our system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 13 ---\n\nThen you can find languages part and now you can see 23 languages and you can activate language if necessary by \nopening it, setting active and then save.",
+            "But please.",
+            "So this is a warning for you.",
+            "If you activate the language, it will \nconsume system resources and usually activation takes some time, maybe up to five minutes.",
+            "So please be very \ncareful with it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe have also an alternative way to support multiple languages with the translation section, but I do not recommend \nyou to work with it because when you initially go to translation section, it will take probably 15 minutes of time for \ninitial preparation, so it's not so comfortable.",
+            "And I think it's much easier to provide correct translations just while \nyou develop it.",
+            "So in my case it will be realty type classic UI.",
+            "It will be my title if I want."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe plan to use reality type classic as a lookup so we can inherit structure for our object from some base objects.",
+            "That can be helpful.",
+            "In our case, the most commonly used Bayes object is base entity.",
+            "It helps to inherit key field, \nhistorical columns and some behavior setting, some event handling that is necessary to operate in some lists and \nsome cases."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI have to confirm my change, and once I do this now you see I have new inherited columns list.",
+            "I have eight inherited \ncolumns.",
+            "The most interesting is probably id as a key field.",
+            "Its data type is unique identifier.",
+            "You already saw \nexamples of such unique identifiers in many creation tables."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd you should know that creature uses Unicode strings anywhere.",
+            "So every text column you will find in creation is \nbased on Unicode text.",
+            "It means you can simply save any national characters there.",
+            "Any kind of arabic letters, \nchinese letters, or even emoji can be saved into such text fields."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 14 ---\n\nSo we have description name and description are business columns, all others are system columns and process \nlisteners is an integer column for a very rare cases when record level event handling is used in business processes.",
+            "So what do you need to know?",
+            "Inheriting from base lookup gets access and we get structure.",
+            "So we inherit structure \nof system columns."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo the main text column which is shown in drop down list of lookups.",
+            "So name will be used for this purpose but you \ncan change if you want nor any other special properties.",
+            "We have some event handling made for this and inherited \nfrom parent one."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo we'll go to columns list and obviously we can add our own columns to the object.",
+            "We have plenty of options for \ndifferent database types, a lot of text options.",
+            "The minimum supported is text 50 characters, then we have 200 \n5500.",
+            "We have unlimited length."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo just something like bizarre thing that possibly you will never use in your practice.",
+            "So number is obviously integer \nand several types of decimals.",
+            "Currency is also decimal with two digits after decimal point.",
+            "The difference from \nstandard decimal is that standard decimal is 18 digits and two after decimal point.",
+            "Currency is 20 digits and two \nafter decimal point."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo when you have a lookup column system creates foreign key for you.",
+            "So it keeps referential integrity which will not \nallow you to save into lookup column any value which is not faced in your lookup table.",
+            "So we can try to make some \nexamples like make a new text column named code title can be code text is 250.",
+            "And as example I can show you \nhow default values can work for us, especially how we can make autonumbering."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is auto numbering which works pretty well and it doesn't require any programming.",
+            "So this is a no code tool to \nmake automatic numbering in your lines when you, when user import adds data.",
+            "That's how we can do this and if\n\n--- Page 15 ---\n\nnecessary can use custom indexing.",
+            "You can also make your own custom indexes and even complex indexes.",
+            "Unique indexes can be added, but generally creature takes care about indexing by its own quite well."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis type of item is also inherited from schema, but the word scheme I think it's hard to understand.",
+            "So let's say \nconfigurable item which will be closer to its meaning and I think it's easier for you.",
+            "So when we saved this item, it will \nbe shown in our package contents."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo publish is necessary to make our object operational and useful for us.",
+            "Let's do this.",
+            "Some years ago publish took \na lot of time.",
+            "It may took up to 1 minute of time.",
+            "Now this operation is well automated and now we have no serious \nreasons to separate save and publish operation."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut at this moment our object is already working so it can be used for us and we can try to use it in our environment.",
+            "Let me show you how we can use it.",
+            "We can go to studio workplace find lookups section.",
+            "As you can see we have \n120 existing lookups."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo when we click new lookup, it doesn't create new table.",
+            "New lookup means register existing object as lookup.",
+            "Our \nobject is called realty type.",
+            "We can name customers, we can provide custom title of this lookup.",
+            "So name is separate \nfrom object as you can see, and we can save it."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThis is so called editable list and we are not using any separate edit page for it.",
+            "So we just manage data directly in \nthis list.",
+            "Another one will be apartment.",
+            "As you can see, numbering works for us automatically.",
+            "The no code tool."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOkay, if you create one more, you see the number goes on, you cancel.",
+            "If you create one more, you see numbering is \ngoing on and it will be not rolled back.",
+            "The reason of why it performs.",
+            "So when it generates system does not know \nare you planning to save it or not.",
+            "So it generates new number, keeps currently created number somewhere in the \ndatabase, in so called sequence in the database structure."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you see that numbering is generated using database tools.",
+            "This is extremely reliable and physically sequence \ndatabase object is used for it.",
+            "Bas is telling us and about appointment and we watch the video.",
+            "Thank you Bas.",
+            "See \nyou tomorrow."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo this is physical data saved in my database.",
+            "It's pretty simple.",
+            "And of course, when you develop your big project, \nyou will not pay so much attention to every single lookup.",
+            "You will do it in much more automated way.",
+            "But this is an \nexample which will let you understand and will make you better feeling of what object is and how it works."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo for inherited columns, there are some limitations on what is available for you for change.",
+            "So generally speaking \nyou can manage your object, you can change them, then you can save and publish.",
+            "That's how it will be applied in \nbig scale solutions.",
+            "You will create tens of different lookups and creation is capable to help you with it with \nautomation of lookup creation, using application hub tools or using section wizard for classic UI."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOf course we need to download packages to file system if we want to submit everything to repository.",
+            "But here is \nvery frequent mistake that a lot of beginners usually do.",
+            "This will be about data part, so saving anything to disk here \nis okay.",
+            "And in our package we only have test dummy process and we have our object."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 17 ---\n\nThey see their environment, they fill in with data, they think that everything looks okay and then they just export their \npackage install for example in test environment and then they realize they miss lookup contents and they also miss \nlookup registering data.",
+            "So we have technically only two options how we can transport such data."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo you should only use SQL script if you have enough SQL experience and I always recommend you to check your \ncode with someone else who also have experience in SQL just to make sure you will not do anything dangerous in \nyour database.",
+            "SQL script can be easily used for permanent serious damage for your system, so your creation will \nnot work anymore if you do intentionally some delete of system data."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIn my case, I should select for my object code which I recently used to register my lookup in lookup section.",
+            "Unfortunately, you have to remember this code name by heart and this object is called lookup.",
+            "This lookup object \nincludes a list of registered objects in our lookup section and in general we have 121 records here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThat's why we go and search for the object named lookup.",
+            "We can find it by name, by code and we can also provide \nsome unique name here.",
+            "For example, we can add something useful, reality type, classic, something like this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBound data tabs represent exact records which will be saved into our data item so we can manually add such \nrecords.",
+            "In total we have 121 records but most of them are base product contents so we do not need to transport \nbase product stuff.",
+            "We expect it to be present at our target place target database."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWe can only select this data select button and that's how we saved only one data row in this data object.",
+            "Then we \njust click save and our snapshot of data which includes only one data row will be saved into our package.",
+            "Now you\n\n--- Page 18 ---\n\nsee data item is created.",
+            "This is only registering of an object that's not the contents.",
+            "So for the contents of the \nobject when we open it, we have five records here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI prefer to use codes because they are always unique and system keeps this uniqueness and titles sometimes are a \nbit ambitious, especially if you use non english language.",
+            "So you may struggle with finding some corresponding title \nand I prefer to use codes.",
+            "Okay, we can provide some common suffix just to make sure what we are doing here.",
+            "If \nnecessary we can add more columns, but the most important of course is bound data."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNo need to use camera styler because it will be recorded.",
+            "I will stop it.",
+            "Okay, so changes were saved on disk, stars \ndisappeared."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now our solution is full and if we export this package as Zip archive then if we import it somewhere on test \nenvironment to work and user will be able to find our new lookup in lookup section, user will be able to find its \ncontents and user will see such data.",
+            "Maybe it's time to practice with git and let's make one more commitment.",
+            "Now \nyou can see a lot of changes, 80 different changes.",
+            "Mainly this is our data parts."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nGreat, everything is done now common repository also felt such changes.",
+            "You see three commits and you can see \ncomment history if interesting.",
+            "Now you can see all the changes here.",
+            "So it will be easy to check previous values, \ncurrent values and so on.",
+            "So what I need to tell you about data items."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nFor example, they decided to rename office space into just office.",
+            "And we can do this only at developer environment \nbecause we need to share all such changes to all other environments including test and production.",
+            "So such \nchanges should be started from developer environment first and then someone decided to rename parking lot into \njust parking.",
+            "So now we have some changes made at developer environment and we need to populate them to all \nother systems.",
+            "Data items can help us with it, but you need to know how to properly set it up."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo let's imagine such data items are so such data items is being loaded at target environment.",
+            "System is capable to \nprevent duplicates and it uses key columns to detect presence of the record which is being processed right now."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut if record exists system is capable to update existing record and here you will face something which is a bit tricky \nand you may fail for the first time.",
+            "And you will have to look carefully at the settings of your columns because \nsystem will perform update only for columns marked with the first update option and by default as you can see no \nupdates are asked here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAlso you may check some other columns if you're not sure and you also want to update so you know the source of \ntruth is your developer environment.",
+            "So if something else was changed at your target system then you have to \nupdate it anyway.",
+            "So first update is not set by default.",
+            "If you expect to perform update operation you should take \ncare about it and once you do this your update will work."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThat's why we can see it here.",
+            "If you want to actualize it, to make it actual and read it from your database, you can \njust click actualize data.",
+            "When you do, this system will refresh data item contents and now you see office and \nparking exactly as in our database.",
+            "Now let's check column settings correct."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd next time when you export your package and import in some target environment because of change the date of \nmodification, this item will be processed and corresponding updates will be performed.",
+            "The same happens with our \nsystems shared with a git.",
+            "So we need to save everything in file system.",
+            "Then we will commit our changes to our \ncommon repository and it will be an example of how we can do some updates in data and populate it on other \nenvironments.",
+            "Now you can see we have only small part of changes here."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou may ask me about the delete scenario, what happens if in our source database we finally realize that castle will \nbe never used and should be deleted from developer environment and for test and production.",
+            "Unfortunately data\n\n--- Page 20 ---\n\nitems cannot help us to delete such data.",
+            "So if you really need to remove your data from target environments, you \nhave the only way for this.",
+            "This is SQL script."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nOf course in real life you probably never use this, but this is some like a training example for you so you can create \nSQL scripts for some specific needs.",
+            "Installation type determines the way the moment of time when your script will \nbe executed in the scope of package loading procedure.",
+            "Before package is at the very beginning.",
+            "After package \nmeans after new tables will be created and processed."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo I will write some script like delete from USR realty type classic.",
+            "This is our name of the object and then where \nname equals something like this.",
+            "So this is an example of a script which intentionally removes some data and this \nscript will remove nothing if no data found.",
+            "This is easy example.",
+            "I do not use id and I'm using this free name just to \nmake it simple and easy to understand."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo if we run it now, you can go to actions in write part here, then install, which means run SQL script, you can do it \ncarefully and if script finishes with an error it still will have status and also you will see its properties and last error \nmessage text will show you last error which happened with running the script.",
+            "In my case it was successful, so my \nscript executed with no errors."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou should be careful because if someone already started to use such data that you plan to remove, you will have \nsome cascade problems with it.",
+            "So you will have referential integrity exceptions.",
+            "You will need to look at connected \ndata and ideally you should think of it in your script, you should process such scenarios and you should think of what \nto do with connected data entities."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo now we saved everything on disk and later we will start with the building of our new applications and we will need \nsome base product parts which are very common to be used.",
+            "I'm talking about contacts and accounts and also \nneed some additional tools.",
+            "So my plan is at the end of today's session to show you how you can add some \nnecessary frequently used marketplace add ons that will really help us to operate in future."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nI think that if I keep some data here which is not present in real database, this is mistake, so I should avoid such \nmistakes.",
+            "I should actualize data, not to keep any non existent records in my contents of the package.",
+            "So actualized \ndata saved it.",
+            "Now everything is consistent.",
+            "So my castle fully disappeared from my conscience here and we can \nalso save it again to disk."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nCurrently we will use this application hub only for inserts so only to add some useful items into our environment.",
+            "So \nadd new application marketplace powered so we can find a lot of application there.",
+            "And also we have some base \nproduct tools made by creation.",
+            "Now I need customer 360 because it enables contacts and accounts section in my \nsystem.",
+            "So simply speaking, when you install customer 360 you will have new sections in your system."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThere is a high degree of integration and seamless connection between my local website and marketplace dot \ncreation.com.",
+            "So I just click install.",
+            "You see some automation works.",
+            "It asks me to confirm.",
+            "Okay, no worries, \nconfirm one more confirmation about app that I plan to install anyway."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd this installation logs can be kept for some time on your disk just for future reference.",
+            "Because even in case of \nsuccessful installation, sometimes you may face situations where you see something that you do not expect and \nworking with such logs can be efficient to check it out and to see some technical details about your installation.",
+            "At \nleast we can see how much time it took.",
+            "So 1437 till 1510 it looks like 33 seconds.",
+            "So it took only 33 seconds to \ninstall this app."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt was only for let me show you properties here.",
+            "It only for Microsoft SQL type of the database if you need a similar \nscript for postgres, you have to create another SQL script.",
+            "That's why base creature product if you will filter by SQL \nscript only.",
+            "It always includes three types of SQL scripts for each business action that we need.",
+            "For example, let me \nscroll down and find any kind of procedures like create omniscient tables for postgres, separately for Oracle, \nseparately for Microsoft SQL."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIt could be most frequently it could be Microsoft SQL or postgres.",
+            "If you expect to deploy your solution in creature \ncloud, it's highly likely that you will have PostgreSQL in the cloud condition.",
+            "So it makes sense to use the same type \nof the database for your own local development.",
+            "But it's not mandatory.",
+            "If you develop on Microsoft SQL and then \ndeploy your solution on postgres, it will also work if you support all necessary database dependent settings like \nnecessary scripts."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nProbably we will need to reload main page just to suppress any kind of browser cache issues that possibly can \nappear.",
+            "So now we can see a bit more workplaces.",
+            "Originally we had only one studio.",
+            "Now we have all apps \nworkplace studio and we have new one which is called customer 360.",
+            "We have context Freedom UI section here you \ncan easily check if the section is Freedom UI or not because only Freedom UI section offer you, they offers you."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo that's how you can easily detect which type of UI you are working with.",
+            "But also you can remember position of \nbuttons.",
+            "In freedom UI, managing buttons are usually the right part and fonts are different.",
+            "The style of the list is a \nbit different functionality of buttons in list and you can see you can hide and freeze buttons, freeze columns in lists."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nYou can open edit page, you will see page reach of controls with oh no, no.",
+            "This is a classic UI stuff.",
+            "So this is still \nexample of it's not a glitch, it's kind of behavior connected with a cache and server side.",
+            "So we have to log out.",
+            "We \nwill need to log in."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nBut so we will study how to build such pages.",
+            "You will know and if some one of you already passed our \ncustomization course, you already know how to do such things.",
+            "So this is example of a freedom UI user interface \naccounts also shown as a list and edit page.",
+            "So contacts represent physical persons with names, emails, addresses \nand so on.",
+            "Accounts represent companies like Samsung, like Tesla, like others."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\n--- Page 23 ---\n\nIt's still a bit strange that application hub is empty here, let me reload this page because something unusual.",
+            "Yes, \nnow it's better.",
+            "Now you see customer 360 is already installed and we will study what an application is, how it works.",
+            "Now we will just install a couple more apps from our marketplace because we will need them in future examples.",
+            "So \nmarketplace powered."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo data items can be automated and you can create them with several clicks.",
+            "And it's easier than to make everything \nmanually.",
+            "So data binding tool takes some time to install.",
+            "It's pretty awesome.",
+            "Old tool, I think it exists maybe for five \nyears and it's designed for an older version of creature and it also has a lot of support in classic UI."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAny warnings here?",
+            "Perfect.",
+            "Everything is okay.",
+            "Everything is okay.",
+            "So our app was installed and one more final thing \nso we can reward this."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo this app simply adds a couple of buttons into our creation user interface to make it easy to restart the app or to \nclear redis cache.",
+            "I will use this restart app, we will need it, we cannot avoid it unfortunately.",
+            "And in our examples \nyou will see it.",
+            "So you see 2708 started, 20 718 finished."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nAnd this is important to track how long it took for creation to install something, especially if you do it in the middle of \nworking hours.",
+            "So my installation was successful.",
+            "We can also go back again to application hub.",
+            "Now you see one \nmore app, maintenance tools and I can show you where this maintenance tools can be found.",
+            "It will be into our \nsettings page."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nThank you for your time.",
+            "Today we moved forward with working with objects.",
+            "We discussed how to build data items, \nhow to operate with lookups.",
+            "We also worked with Git.",
+            "And tomorrow I plan to show you one more example with\n\n--- Page 24 ---\n\ndatabase view and we will move on with building user interface."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nNow your homework, as usual, is to watch this video to represent all the steps or produce all the steps for today's \nsession.",
+            "Working with your package, creating new lookup, new object, register it as lookup and practice with data \nitems.",
+            "So this will be your homework and tomorrow we will continue doing more complicated things.",
+            "Thank you.",
+            "Thank you for your time."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nIs changes customizations in our settings page to enable couple of buttons.",
+            "Yeah.",
+            "And customer 360 c 3300 okay.",
+            "CRT customers, it's surprisingly low.",
+            "I need a bit more."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nWhen I am going to advanced setting, the configuration page doesn't work, it just reload.",
+            "It's because you're probably \nusing Windows home.",
+            "If you windows home you have to close previous page.",
+            "In this case, configuration page will be \nworking normally.",
+            "Yeah."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nMy question is like if we have a new lookup, like if we have two, three more lookups and we want how we can then \nupdate it and like a system designer, do we have to create the data file again?",
+            "Or we can update in the existing data \nfile which you already showed.",
+            "So probably you are talking about new data records added to existing lookups table, \nam I right?"
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo the minimum amount of data items in your case will be six, one for five lookup records and five others for each \nseparate data contents of your lookups.",
+            "So simply speaking, any lookup should include data item for registering of \nthe lookup and data item for the contents of the lookup.",
+            "In this case it will be the most comfortable for your end \nusers because they will always find all your lookups in production and lookups section and they will be able to open \nit to see their contents normally and data items guarantee such transport of records.",
+            "Okay, thanks.",
+            "Thank you \nTashar."
+          ]
+        },
+        {
+          "heading": "Speaker 1",
+          "key_points": [
+            "# Speaker 1\n\nSo our tomorrow session will be as usual and we will continue working with objects and we will start to work with \nuser interface programming.",
+            "Thank you very much for your time.",
+            "See you tomorrow.",
+            "Bye.",
+            "Good luck."
+          ]
+        }
+      ],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "entity",
+        "database",
+        "server",
+        "record",
+        "section",
+        "lookup",
+        "schema",
+        "page",
+        "json",
+        "field"
+      ],
+      "keywords": [
+        "data",
+        "speaker",
+        "need",
+        "package",
+        "like",
+        "git",
+        "object",
+        "repository",
+        "file",
+        "let"
+      ],
+      "topics": [
+        "speaker"
+      ]
+    },
+    "method": "hierarchical_structural"
+  }
+}

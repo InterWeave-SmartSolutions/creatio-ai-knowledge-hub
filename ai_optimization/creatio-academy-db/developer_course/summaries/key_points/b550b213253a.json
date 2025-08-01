@@ -1,0 +1,45 @@
+{
+  "summary_id": "b550b213253a",
+  "content_id": "e936e7320501",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: steps on creature platform.\nINSTRUCTION: of all, thank you for saying this.\nINSTRUCTION: of all you need to look at your connection strings config \nto make sure that you have a correct host setting and db number.\nCONCEPT: server\nCONCEPT: database\nCONCEPT: sql\nNOTE: this big star \nnearby the item name.\nNOTE: and helpful because it shows us that something was \nchanged and not fully saved on disk.",
+  "key_points": [
+    "INSTRUCTION: steps on creature platform.",
+    "INSTRUCTION: of all, thank you for saying this.",
+    "INSTRUCTION: of all you need to look at your connection strings config \nto make sure that you have a correct host setting and db number.",
+    "CONCEPT: server",
+    "CONCEPT: database",
+    "CONCEPT: sql",
+    "NOTE: this big star \nnearby the item name.",
+    "NOTE: and helpful because it shows us that something was \nchanged and not fully saved on disk."
+  ],
+  "keywords": [
+    "data",
+    "speaker",
+    "need",
+    "package",
+    "like",
+    "git",
+    "object",
+    "repository",
+    "file",
+    "let"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 69,
+  "original_length": 18186,
+  "compression_ratio": 0.003794127350709337,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T17:00:01.243041",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

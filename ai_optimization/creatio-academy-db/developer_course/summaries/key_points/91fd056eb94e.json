@@ -1,0 +1,43 @@
+{
+  "summary_id": "91fd056eb94e",
+  "content_id": "c73636779bcc",
+  "summary_type": "key_points",
+  "summary_text": "INSTRUCTION: party applications.\nINSTRUCTION: getting some responses at client side.\nINSTRUCTION: and will be processed absolutely the same way.\nCONCEPT: entity\nCONCEPT: database\nCONCEPT: server\nNOTE: you need to remember that web service is a special piece of functionality that was specially designed to be called from client side.\nNOTE: to have a corresponding data type spread.",
+  "key_points": [
+    "INSTRUCTION: party applications.",
+    "INSTRUCTION: getting some responses at client side.",
+    "INSTRUCTION: and will be processed absolutely the same way.",
+    "CONCEPT: entity",
+    "CONCEPT: database",
+    "CONCEPT: server",
+    "NOTE: you need to remember that web service is a special piece of functionality that was specially designed to be called from client side.",
+    "NOTE: to have a corresponding data type spread."
+  ],
+  "keywords": [
+    "service",
+    "data",
+    "web",
+    "code",
+    "let",
+    "use",
+    "need",
+    "okay",
+    "method",
+    "like"
+  ],
+  "topics": [],
+  "summary_length": 57,
+  "original_length": 14700,
+  "compression_ratio": 0.0038775510204081634,
+  "confidence_score": 0.85,
+  "created_timestamp": "2025-07-23T16:51:18.209320",
+  "metadata": {
+    "point_types": [
+      "instructions",
+      "concepts",
+      "code",
+      "warnings"
+    ],
+    "method": "key_points_extraction"
+  }
+}

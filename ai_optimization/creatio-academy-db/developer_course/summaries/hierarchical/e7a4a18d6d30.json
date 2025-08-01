@@ -1,0 +1,60 @@
+{
+  "summary_id": "e7a4a18d6d30",
+  "content_id": "c326b609b172",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: detail, module, entity, web service, schema",
+  "key_points": [
+    "detail",
+    "module",
+    "entity",
+    "web service",
+    "schema"
+  ],
+  "keywords": [
+    "data",
+    "let",
+    "test",
+    "like",
+    "exam",
+    "use",
+    "client",
+    "process",
+    "yes",
+    "homework"
+  ],
+  "topics": [],
+  "summary_length": 8,
+  "original_length": 12853,
+  "compression_ratio": 0.0006224227806737727,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:55:09.596750",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "detail",
+        "module",
+        "entity",
+        "web service",
+        "schema"
+      ],
+      "keywords": [
+        "data",
+        "let",
+        "test",
+        "like",
+        "exam",
+        "use",
+        "client",
+        "process",
+        "yes",
+        "homework"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

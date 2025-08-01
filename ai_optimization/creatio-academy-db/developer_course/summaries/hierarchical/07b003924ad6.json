@@ -1,0 +1,60 @@
+{
+  "summary_id": "07b003924ad6",
+  "content_id": "d57347054e45",
+  "summary_type": "hierarchical",
+  "summary_text": "\nKey Concepts: detail, module, entity, integration, schema",
+  "key_points": [
+    "detail",
+    "module",
+    "entity",
+    "integration",
+    "schema"
+  ],
+  "keywords": [
+    "data",
+    "page",
+    "code",
+    "like",
+    "object",
+    "use",
+    "make",
+    "let",
+    "just",
+    "need"
+  ],
+  "topics": [],
+  "summary_length": 7,
+  "original_length": 17300,
+  "compression_ratio": 0.0004046242774566474,
+  "confidence_score": 0.9,
+  "created_timestamp": "2025-07-23T16:53:41.671042",
+  "metadata": {
+    "structure": {
+      "title": "",
+      "sections": [],
+      "code_sections": [],
+      "languages": [],
+      "key_concepts": [
+        "detail",
+        "module",
+        "entity",
+        "integration",
+        "schema"
+      ],
+      "keywords": [
+        "data",
+        "page",
+        "code",
+        "like",
+        "object",
+        "use",
+        "make",
+        "let",
+        "just",
+        "need"
+      ],
+      "topics": []
+    },
+    "method": "hierarchical_structural"
+  }
+}

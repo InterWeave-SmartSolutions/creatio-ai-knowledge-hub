@@ -1,0 +1,38 @@
+{
+  "summary_id": "b3058380b306",
+  "content_id": "64b48b00fe9b",
+  "summary_type": "extractive",
+  "summary_text": "--- Page 1 ---\n\n# Speaker 1\n\nSo today's day five of our development on Creature platform guided learning and we continue to work with some \nparts of Creature user interface slightly moving forward to so to study some server side items. # Speaker 1\n\nWe can call it like parent reality we can name it parent realty so title to be lookup based on reality from freedom UI \nUSR realty and we can make it column required because it's not good idea to keep it empty if we create any valid \nvisit so this colon will be required. # Speaker 1\n\n--- Page 3 ---\n\nSo here our reality visit is something that is not very important in case if we delete parent reality so we can set \ndelete records from current object it means when parent reality is deleted, all connected visits will be removed \nautomatically physically. We can make some default value just to make it easier to set up new values \nand will be system variable current time and date Default value will be provided in case if you try to add the new \nrecord. # Speaker 1\n\nSo such a column is usually not edited by end customer and it means that we have pretty no serious reasons to \ncontrol it with the help of foreign keys only in case if you try to remove corresponding contact then such created by \nor modified by columns should prevent this data from Removal. So developers also realized that \nif we have no such option and let's imagine we have probably thousand of out of the box objects for our big base \nproduct like sales, service and marketing. --- Page 5 ---\n\n# Speaker 1\n\nThe answer is that in case of detail management, when we add new data from the main edit page from main realty \npage, our parent realty will be already known and we should not allow to change it for user and we should probably \nshould not even show it for a user. So now we are going very close to understand what is \nreplacing object and why it is different from regular object and what is replacing view module or simply speaking \nreplacing client module from any previously known and studied types of client modules. # Speaker 1\n\nIn total we have record level access rights where some records can be editable and others will be protected and will \nbe read only and some other records maybe will be only hidden and shown only for developers and also for some \nrare cases you can also use column level protection of data where some columns are shown and other columns are \nhidden and other columns are read only. Of course it's not recommended way of customizing creation by \nchanging of its core files, but physically you can try to replace this file with something else and check it out how it \nworks at your environment and then you can, if it's on site, you can also get this file to the other, let's say test and \nproduction environment, so it may work for you.",
+  "key_points": [
+    "--- Page 1 ---\n\n# Speaker 1\n\nSo today's day five of our development on Creature platform guided learning and we continue to work with some \nparts of Creature user interface slightly moving forward to so to study some server side items.",
+    "# Speaker 1\n\nWe can call it like parent reality we can name it parent realty so title to be lookup based on reality from freedom UI \nUSR realty and we can make it column required because it's not good idea to keep it empty if we create any valid \nvisit so this colon will be required.",
+    "# Speaker 1\n\n--- Page 3 ---\n\nSo here our reality visit is something that is not very important in case if we delete parent reality so we can set \ndelete records from current object it means when parent reality is deleted, all connected visits will be removed \nautomatically physically.",
+    "We can make some default value just to make it easier to set up new values \nand will be system variable current time and date Default value will be provided in case if you try to add the new \nrecord.",
+    "# Speaker 1\n\nSo such a column is usually not edited by end customer and it means that we have pretty no serious reasons to \ncontrol it with the help of foreign keys only in case if you try to remove corresponding contact then such created by \nor modified by columns should prevent this data from Removal."
+  ],
+  "keywords": [
+    "speaker",
+    "page",
+    "let",
+    "package",
+    "object",
+    "classic",
+    "data",
+    "ui",
+    "okay",
+    "like"
+  ],
+  "topics": [
+    "speaker"
+  ],
+  "summary_length": 520,
+  "original_length": 14308,
+  "compression_ratio": 0.0363433044450657,
+  "confidence_score": 1.0,
+  "created_timestamp": "2025-07-23T16:53:41.735164",
+  "metadata": {
+    "selected_sentence_count": 10,
+    "total_sentence_count": 1080,
+    "method": "tfidf_position_ranking"
+  }
+}

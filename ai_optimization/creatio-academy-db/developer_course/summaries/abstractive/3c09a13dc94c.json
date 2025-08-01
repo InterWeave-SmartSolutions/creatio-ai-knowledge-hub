@@ -1,0 +1,33 @@
+{
+  "summary_id": "3c09a13dc94c",
+  "content_id": "f80956f90642",
+  "summary_type": "abstractive",
+  "summary_text": "Today is session number four of our development on creation platform, guided learning, set of practical sessions that we do for developing different features and functionality that require some programming. Today I will show you a bit more complicated examples of how you can do some programming and coding. Also we will discuss the bugging, so you will see how it's possible to stop execution of your code and make it executed Y by line, line by line and to see all the variables.",
+  "key_points": [
+    "Today is session number four of our development on creation platform, guided learning, set of practical sessions that we do for developing different features and functionality that require some programming.",
+    "Today I will show you a bit more complicated examples of how you can do some programming and coding.",
+    "Also we will discuss the bugging, so you will see how it's possible to stop execution of your code and make it executed Y by line, line by line and to see all the variables."
+  ],
+  "keywords": [
+    "workplace",
+    "sections",
+    "like",
+    "position",
+    "section",
+    "list",
+    "make",
+    "set",
+    "studio",
+    "today"
+  ],
+  "topics": [],
+  "summary_length": 84,
+  "original_length": 716,
+  "compression_ratio": 0.11731843575418995,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:57:09.568174",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

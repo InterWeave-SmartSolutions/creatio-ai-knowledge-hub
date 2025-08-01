@@ -1,0 +1,33 @@
+{
+  "summary_id": "7c1ab4735030",
+  "content_id": "c326b609b172",
+  "summary_type": "abstractive",
+  "summary_text": "certification is a test of your knowledge and skills. If you pass certification, you will get your certification certificate, which is issued for two years. Being a certified creation developer gives you some advantages.",
+  "key_points": [
+    "certification is a test of your knowledge and skills.",
+    "If you pass certification, you will get your certification certificate, which is issued for two years.",
+    "Being a certified creation developer gives you some advantages."
+  ],
+  "keywords": [
+    "certification",
+    "development",
+    "support",
+    "type",
+    "like",
+    "creation",
+    "attribute",
+    "exam",
+    "support team",
+    "team"
+  ],
+  "topics": [],
+  "summary_length": 34,
+  "original_length": 682,
+  "compression_ratio": 0.04985337243401759,
+  "confidence_score": 0.8,
+  "created_timestamp": "2025-07-23T16:58:41.657304",
+  "metadata": {
+    "model_name": "facebook/bart-large-cnn",
+    "method": "transformer_abstractive"
+  }
+}

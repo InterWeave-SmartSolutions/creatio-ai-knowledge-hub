@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+          <!-- Google Tag Manager -->
+      <script nonce="12472ace768d02391e8ffd38839aecee">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+          n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5C6KM9TP');</script>
+      <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+<meta name="description" content="A mini page is a short version of a record page with a limited number of fields. Use mini pages to view or edit the record data quickly without opening the full page. The purpose of a mini page is to streamline adding, editing, and viewing records. The set of fields is configured separately and therefore is different for each mini page type." />
+<link rel="canonical" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/mini_page/overview" />
+<meta property="og:url" content="https://academy.creatio.com/docs/7-18/developer/interface_elements/mini_page/overview" />
+<meta property="og:title" content="Mini page" />
+<meta property="og:description" content="A mini page is a short version of a record page with a limited number of fields. Use mini pages to view or edit the record data quickly without opening the full page. The purpose of a mini page is to streamline adding, editing, and viewing records. The set of fields is configured separately and therefore is different for each mini page type." />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/docs/sites/academy_en/themes/creatio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://academy.creatio.com/docs/7-18/developer/interface_elements/mini_page/overview" />
+
+    <title>Mini page | Creatio Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="https://libraries.creatio.com/drupal_fixed_tabs/tabs.css" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/align.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/fieldgroup.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/container-inline.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/clearfix.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/details.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/hidden.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/item-list.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/js.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/nowrap.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/position-container.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/reset-appearance.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/resize.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-counter.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-counters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/system-status-report-general-info.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/system/components/tablesort.module.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/modules/academy/ts_title_anchor/css/ts-title-anchor.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/core/modules/layout_discovery/layouts/onecol/onecol.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/assets/vendor/normalize-css/normalize.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/stable/css/core/normalize-fixes.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/bootstrap4/css/bootstrap.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/prettify/prettify-theme-dark.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/slick/slick.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.nice-select/jquery.nice-select.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/base.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/elements.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/base/fonts.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/jquery.scrollbar/jquery.scrollbar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/select2/css/select2.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/layouts/layout.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/action-links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/breadcrumb.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/button.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/collapse-processed.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/container-inline.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/details.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/exposed-filters.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/field.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/icons.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/inline-form.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/item-list.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/links.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/menu.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/more-link.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/pager.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabledrag.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tableselect.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tablesort.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/tabs.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/textarea.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/ui-dialog.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/contrib/classy/css/components/node.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/libraries/fancybox/jquery.fancybox.min.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/fancybox.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/block.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/footer.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/header.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/messages.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/sidebar.css?szsnyq" />
+<link rel="stylesheet" media="all" href="/docs/themes/custom/creatio_academy/css/components/notification.css?szsnyq" />
+<link rel="stylesheet" media="print" href="/docs/themes/custom/creatio_academy/css/theme/print.css?szsnyq" />
+
+    
+  </head>
+  <body class="path-node page-node-type-developer-documentation">
+          <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6KM9TP"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="creatio-page d-flex flex-column">
+        <div class="region region-informer">
+    <div id="block-notification-union" class="block block-simple-block block-simple-blocknotification-union">
+  
+    
+      <div id="union-notification">
+<div class="union-content notification-com">
+<p class="union-subtitle">This documentation is valid for Creatio version 7.17(7.18).</p>
+
+<p class="union-subtitle">We recommend using <a href="https://academy.creatio.com/docs/8.x/" target="_blank">the newest version of Creatio documentation</a>.</p>
+
+<!-- <div class="union-close">&nbsp;</div> -->
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+  <header role="banner">
+          <div class="creatio-region creatio-region_top">
+        <div class="creatio-container">
+            <div class="region region-top">
+    <div id="block-menutoggle" class="block block-simple-block block-simple-blockmenu-toggle">
+  
+    
+      <div class="menu-toggle"><span>&nbsp;</span></div>
+
+  </div>
+<div id="block-logowhite-2" class="block block-simple-block block-simple-blocklogo-white">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo-white.svg"></a></p>
+
+  </div>
+<div id="block-search" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-sites-menu" id="block-sites" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-usermenu" class="block block-ts-user block-ts-user-menu-block">
+  
+    
+      <ul class="user-menu">
+      <li class="user-menu__item">
+      <a class="user-menu__link" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/mini_page/overview">Log in</a>
+    </li>
+  </ul>
+
+  </div>
+<div id="block-usermenumobile" class="block block-ts-user block-ts-user-menu-mobile-block">
+  
+    
+      <ul class="user-menu-mobile">
+      <li class="user-menu-mobile__item">
+      <div class="user-menu-mobile__user user-menu-mobile__user_icon"></div>
+      <ul class="user-menu-mobile__submenu">
+        <li class="user-menu-mobile__subitem">
+          <a class="user-menu-mobile__sublink" href="/docs/user/login?destination=/docs/7-18/developer/interface_elements/mini_page/overview">Log in</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+              <div class="creatio-region creatio-region_header">
+        <div class="creatio-container">
+            <div class="region region-header">
+    <div id="block-logo" class="block block-simple-block block-simple-blocklogo">
+  
+    
+      <p><a class="site-logo" href="/" rel="home"><img src="/docs/themes/custom/creatio_academy/logo.svg"></a></p>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/docs/8.x">Guides</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/e-learning">E-learning</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/training">Training</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://academy.creatio.com/certification">Certification</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-sites-2-menu" id="block-sites-2" class="block block-menu navigation menu--sites">
+            
+  <h2 class="visually-hidden" id="block-sites-2-menu">Sites</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.creatio.com/" rel="nofollow" target="_blank">Creatio</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.creatio.com" rel="nofollow" target="_blank">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://marketplace.creatio.com" rel="nofollow" target="_blank">Marketplace</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://knowledge-hub.creatio.com/">Knowledge Hub</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-search-2" class="block block-simple-block block-simple-blocksearch">
+  
+    
+      <div class="search">
+<form action="/search" class="search-form" method="get"><input class="search-form__input" name="search" placeholder="Search" type="search"> <input class="search-form__button" type="submit" value="Search">&nbsp;</form>
+
+<div class="search-toggle">&nbsp;</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+      </header>
+
+      <div class="creatio-region creatio-region_breadcrumb">
+      <div class="creatio-container">
+          <div class="region region-breadcrumb">
+    <div id="block-breadcrumbnaviagtion" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  
+  <div class="creatio-region creatio-region_main">
+    <div class="creatio-container">
+                <div class="region region-breadcrumb-mobile">
+    <div id="block-breadcrumbnaviagtion-2" class="block block-ts-nav block-ts-nav-bread">
+  
+    
+      <nav class="breadcrumb"><ol class="ts-nav-breadcrumb__list"><li class="ts-nav-breadcrumb__item"><a href="/docs/" class="ts-nav-breadcrumb__link" title="Documentation">Documentation</a></li>
+<li class="ts-nav-breadcrumb__item"><a href="/docs/?vid_1=2" class="ts-nav-breadcrumb__link" title="Developer documentation">Developer documentation</a></li>
+<li class="ts-nav-breadcrumb__item ts-nav-breadcrumb__item_mobile"><a href="/docs/7-18/developer/interface_elements" class="ts-nav-breadcrumb__link" title="Interface elements" hreflang="en">Interface elements</a></li>
+<li class="ts-nav-breadcrumb__item"><span class="ts-nav-breadcrumb__link ts-nav-breadcrumb__link_current" title="Overview">Overview</span></li>
+</ol>
+</nav>
+
+  </div>
+
+  </div>
+
+      
+      <main class="creatio-main" role="main">
+                                                    
+        <div class="creatio-content creatio-content_small">
+          <div class="creatio-content__inner creatio-content__inner_bg">
+                            <div class="region region-messages">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            
+              <div class="region region-content">
+    <div id="block-creatio-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Mini page</span>
+</h1>
+
+
+  </div>
+<div id="block-creatio-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article data-history-node-id="1431" class="node node--type-developer-documentation node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-ts-nav block-ts-nav-sdk-navigation">
+  
+    
+      <div class="ts-nav-sdk">
+  <div class="ts-nav-sdk__container">
+    <div class="ts-nav-sdk__items">
+      <div class="ts-nav-sdk__item">
+        <a class="ts-nav-sdk__link ts-nav-sdk__link_active" href="#"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_guide"></span>Guide</a>
+      </div>
+    </div>
+  </div>
+      <div class="ts-nav-sdk__container">
+      <ul class="ts-nav-sdk__items">
+                                                            <li class="ts-nav-sdk__item ts-nav-sdk__item_expanded">
+          <a class="ts-nav-sdk__link ts-nav-sdk__link_expanded" data-id="1937" href="#case-1937"><span class="ts-nav-sdk__icon ts-nav-sdk__icon_case"></span>Examples</a>
+                      <ul class="ts-nav-sdk__subitems">
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1937" href="#case-1937">Create a custom mini page</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1944" href="#case-1944">Create a mini page that adds records</a>
+                </li>
+                              <li class="ts-nav-sdk__subitem">
+                  <a class="ts-nav-sdk__sublink" data-id="1940" href="#case-1940">Add a mini page to a module</a>
+                </li>
+                          </ul>
+                  </li>
+      </ul>
+    </div>
+    </div>
+<div class="ts-nav-sdk-mobile">
+  <select class="ts-nav-sdk-mobile__select">
+    <option value="0">Guide</option>
+          <optgroup label="Cases">
+                  <option value="1937">Create a custom mini page</option>
+                  <option value="1944">Create a mini page that adds records</option>
+                  <option value="1940">Add a mini page to a module</option>
+              </optgroup>
+          </select>
+</div>
+
+  </div>
+<div class="block block-ts-doc block-ts-doc-versions">
+  
+    
+        <div class="ts-doc-versions">
+    <select class="ts-doc-versions__select">
+                                                <option value="/docs/7-18/developer/interface_elements/mini_page/overview" selected>Version 7.18</option>
+                              <option value="/docs/7-17/developer/interface_elements/mini_page/overview">Version 7.17</option>
+                              <option value="/docs/7-16/developer/interface_elements/mini_page/overview">Version 7.16</option>
+          </select>
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-121" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/beginner.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Beginner</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationbody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>A <strong>mini page</strong> is a short version of a record page with a limited number of fields. Use mini pages to view or edit the record data quickly without opening the full page. The <strong>purpose</strong> of a mini page is to streamline adding, editing, and viewing records. The set of fields is configured separately and therefore is different for each mini page type.</p>
+
+<div class="media">
+<div class="media__caption">The contact mini page</div>
+
+<div class="media__element"><img alt="scr_intro_ui_minipage_contact.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/BasicUIElements/MiniPage/7.18/scr_intro_ui_minipage_contact.png"></div>
+</div>
+
+<p>You can create a mini page for any Creatio object.</p>
+
+<p>Learn more about working with mini pages in user documentation: <a href="/node/757">Work with mini pages</a>.</p>
+
+<h2>View model schema of a mini page<a class="title-anchor" href="#title-1431-1" id="title-1431-1">&nbsp;</a></h2>
+
+<p>Creato IDE uses <a href="/node/2123#title-2123-3">view model schemas</a> to implement mini pages.</p>
+
+<p>The view model schema of a mini page <strong>lets you set up</strong>:</p>
+
+<ul>
+	<li>the content of the mini page</li>
+	<li>the position of the mini page's UI elements</li>
+	<li>the behavior of the mini page's UI elements</li>
+</ul>
+
+<p>For example, the <span class="filled">ContactMiniPage</span> schema configures the contact mini page and the <span class="filled">AccountMiniPage</span> schema configures the account mini page. The mini page schemas inherit from the <span class="filled">BaseMiniPage</span> schema of the <span class="filled">NUI</span> package.</p>
+
+<p>The structure of the mini page's view model schema is the same as the general structure of the <a href="https://academy.creatio.com/docs/developer/front-end_development/331">client view model schema</a>.</p>
+
+<p>The <strong>required properties</strong> of the mini page schema structure include:</p>
+
+<ul>
+	<li><span class="filled">entitySchemaName</span>, the name of the object schema to bind the mini page</li>
+	<li><span class="filled">diff</span>, the array of mini page's visual element modifications</li>
+</ul>
+
+<p>The <strong>optional properties</strong> of the mini page schema structure include:</p>
+
+<ul>
+	<li><span class="filled">attributes</span>, schema attributes</li>
+	<li><span class="filled">methods</span>, schema methods</li>
+	<li><span class="filled">mixins</span>, schema mixins</li>
+	<li><span class="filled">messages</span>, schema messages</li>
+</ul>
+
+<p>The optional properties <strong>let you</strong>:</p>
+
+<ul>
+	<li>add custom management elements</li>
+	<li>register messages</li>
+	<li>set up the mini page business logic</li>
+</ul>
+
+<p>You can use custom styles to modify the appearance of mini page visual elements.</p>
+
+<div class="message message_warning">
+<p><span class="message__bold message__bold_warning">Attention.</span> Mini page business logic cannot be set up using business rules.</p>
+</div>
+
+<h2>Mini page operations<a class="title-anchor" href="#title-1431-7" id="title-1431-7">&nbsp;</a></h2>
+
+<h3>Add a mini page to a section<a class="title-anchor" href="#title-1431-2" id="title-1431-2">&nbsp;</a></h3>
+
+<ol>
+	<li>Add the <a href="/node/2123#title-2123-3">view model schema</a> of a page to a custom <a href="/node/2147">package</a>.</li>
+	<li>Select the <span class="filled">BaseMiniPage</span> schema as a parent object.</li>
+	<li>Add the needed mini page functionality to the schema source code. Make sure to specify the name of the object schema to bind the mini page in the <span class="filled">entitySchemaName</span> element and perform at least one modification in the <span class="filled">diff</span> array.</li>
+	<li>Modify the <span class="filled">[SysModuleEdit]</span> system database table via an SQL query.</li>
+	<li>Add the <span class="filled">[HasSectionCodeMiniPageAddMode]</span> system setting. Learn more about adding system settings in user documentation: <a href="/node/286">Manage system settings</a>.</li>
+</ol>
+
+<div class="message message_warning">
+<p><span class="message__bold message__bold_warning">Attention.</span> The execution of an erroneous SQL query may corrupt existing data and render Creatio inoperable.</p>
+</div>
+
+<h3>Add a mini page to a module<a class="title-anchor" href="#title-1431-5" id="title-1431-5">&nbsp;</a></h3>
+
+<p>You might need to connect a mini page to a Creatio module to solve a business problem. <strong>Modules</strong> let you create links to specific Creatio objects. As such, a mini page connected to a module enables users to view the object data without opening the object section.</p>
+
+<p>The following Creatio modules are connected to mini pages out-of-the-box:</p>
+
+<ul>
+	<li>telephony in the communication panel</li>
+	<li>email in the communication panel</li>
+	<li>notification center in the communication panel</li>
+	<li>the <span class="key">Feed</span> section in the communication panel</li>
+	<li>list in the dashboards section</li>
+</ul>
+
+<p>To <strong>add a mini page to a module</strong>:</p>
+
+<ol>
+	<li>Create a module schema.</li>
+	<li>Create a module view and view model. Enable the <span class="filled">Terrasoft.MiniPageUtilities</span> utility class in the <span class="filled">mixins</span> view model property. The class lets you use the mini page call methods.</li>
+	<li>Add the module styles.</li>
+	<li>Create a container to display the module view.</li>
+</ol>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-linked">
+  
+    
+      
+  <div class="field field--name-field-linked field--type-entity-reference field--label-above">
+    <div class="field__label">See also</div>
+          <div class="field__items">
+              <div class="field__item"><a href="/docs/7-18/user/platform_basics/user_interface/mini_pages_shortcut/mini_pages" hreflang="en">Work with mini pages</a></div>
+          <div class="field__item"><a href="/docs/7-18/developer/development_tools/creatio_ide/develop_configuration_elements/overview" hreflang="en">Develop configuration elements</a></div>
+          <div class="field__item"><a href="/docs/7-18/developer/development_tools/packages/packages_basics/overview" hreflang="en">Packages basics</a></div>
+          <div class="field__item"><a href="/docs/7-18/user/setup_and_administration/system_settings_and_lookups/manage_system_settings_shortcut/manage_system_settings" hreflang="en">Manage system settings</a></div>
+              </div>
+      </div>
+
+  </div>
+<div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/docs/developer/front-end_development/331">Client schema Creatio documentation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodedeveloper-documentationfield-cases">
+  
+    
+      
+      <div class="field field--name-field-cases field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="1937" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Create a custom mini page</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Create a custom mini page for the <span class="key">Knowledge base</span> section. The mini page must contain the base set of <span class="key">Name</span> and <span class="key">Tags</span> fields and let you download attachments.</p>
+</div>
+
+<h2>1. Create a view model schema of the mini page<a class="title-anchor" href="#title-1937-1" id="title-1937-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="/node/1188#title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="/node/2147">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Page view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating(7.17)/scr_minicard_creating_1.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the schema properties in the Schema Designer:</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">UsrKnowledgeBaseArticleMiniPage</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">KnowledgeBase Mini Page</span>."</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">BaseMiniPage</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating(7.17)/scr_minicard_creating_2.png"></div>
+	</div>
+
+	<p>Click <span class="key">Apply</span> to apply the properties.</p>
+	</li>
+</ol>
+
+<h2>2. Display the fields of the primary object<a class="title-anchor" href="#title-1937-2" id="title-1937-2">&nbsp;</a></h2>
+
+<p>Add the needed source code in the Schema Designer.</p>
+
+<ol>
+	<li>Specify the <span class="filled">KnowledgeBase</span> schema as the object schema.</li>
+	<li>
+	<p>Add the needed modifications to the <span class="filled">diff</span> array of view model modifications.</p>
+
+	<p>The <strong>view model elements</strong> of the base mini page are as follows:</p>
+
+	<ul>
+		<li><span class="filled">MiniPage</span> is the page field.</li>
+		<li><span class="filled">HeaderContainer</span> is the page heading. By default, the mini page places it in the first row of the field.</li>
+	</ul>
+
+	<p>In this example, the <span class="filled">diff</span> modification array contains two new objects that configure the <span class="key">Name</span> and <span class="key">Keywords</span> fields.</p>
+	</li>
+</ol>
+
+<p>View the source code of the view model schema below.</p>
+
+<div class="code">
+<div class="code__top">
+<div class="code__title"><span class="filled">UsrKnowledgeBaseArticleMiniPage.js</span></div>
+</div>
+
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+define("UsrKnowledgeBaseArticleMiniPage", [], function() {
+    return {
+        entitySchemaName: "KnowledgeBase",
+        attributes: {
+            "MiniPageModes": {
+                "value": [this.Terrasoft.ConfigurationEnums.CardOperation.VIEW]
+            }
+        },
+        diff: /**SCHEMA_DIFF*/[
+            {
+                "operation": "insert",
+                "name": "Name",
+                "parentName": "HeaderContainer",
+                "propertyName": "items",
+                "index": 0,
+                "values": {
+                    "labelConfig": {
+                        "visible": false
+                    },
+                    "isMiniPageModelItem": true
+                }
+            },
+            {
+                "operation": "insert",
+                "name": "Keywords",
+                "parentName": "MiniPage",
+                "propertyName": "items",
+                "values": {
+                    "labelConfig": {
+                        "visible": false
+                    },
+                    "isMiniPageModelItem": true,
+                    "layout": {
+                        "column": 0,
+                        "row": 1,
+                        "colSpan": 24
+                    }
+                }
+            }
+        ]/**SCHEMA_DIFF*/
+    };
+});</pre>
+</div>
+</div>
+</div>
+
+<h2>3. Add a functional button to the mini page<a class="title-anchor" href="#title-1937-3" id="title-1937-3">&nbsp;</a></h2>
+
+<p>As per the example conditions, the mini page must let you download the files bound to the knowledge base article.</p>
+
+<p>To implement the management of additional data, display the data as a drop-down list of a preconfigured button.</p>
+
+<p>Modify the source code of the view model in the Schema Designer.</p>
+
+<p>To <strong>add a button</strong> that selects the files of the knowledge base article:</p>
+
+<ol>
+	<li>Add the <span class="filled">FilesButton</span> element, which is the button's description, to the <span class="filled">diff</span> array.</li>
+	<li>Add the <span class="filled">Article</span> virtual column that connects the main and additional records to the <span class="filled">attributes</span> property.</li>
+	<li>Add the <span class="filled">MiniPageModes</span> attribute that represents the array of the needed mini page operations to the <span class="filled">attributes</span> property.</li>
+	<li>Add the button image to schema resources. For example, use the following image: <img alt="AddButtonImage.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating/AddButtonImage.png">. Learn more about adding images to resources in a separate article: <a href="/node/1902#case-1914">Add a field with an image</a>.</li>
+	<li>Add methods that manage the drop-down list of the file selection button to the <span class="filled">methods</span> property:
+	<ul>
+		<li><span class="filled">init()</span> is an overridden base method.</li>
+		<li><span class="filled">onEntityInitialized()</span> is an overridden base method.</li>
+		<li><span class="filled">setArticleInfo()</span> sets the value of the <span class="filled">Article</span> attribute.</li>
+		<li><span class="filled">getFiles(callback, scope)</span> retrieves the data about the files of the current knowledge base article.</li>
+		<li><span class="filled">initFilesMenu(files)</span> populates the collection of the file selection button's drop-down list.</li>
+		<li><span class="filled">fillFilesExtendedMenuData()</span> initiates the upload of files and the addition of them to the file selection button's drop-down list.</li>
+		<li><span class="filled">downloadFile()</span> initiates the download of the selected file.</li>
+	</ul>
+	</li>
+</ol>
+
+<p>View the view model schema's source code that adds the functional button below.</p>
+
+<div class="code">
+<div class="code__top">
+<div class="code__title"><span class="filled">UsrKnowledgeBaseArticleMiniPage.js</span></div>
+</div>
+
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+define("UsrKnowledgeBaseArticleMiniPage",
+["terrasoft", "KnowledgeBaseFile", "ConfigurationConstants"],
+    function(Terrasoft, KnowledgeBaseFile, ConfigurationConstants) {
+        return {
+            entitySchemaName: "KnowledgeBase",
+            attributes: {
+                "MiniPageModes": {
+                    "value": [this.Terrasoft.ConfigurationEnums.CardOperation.VIEW]
+                },
+                "Article": {
+                    "type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+                    "referenceSchemaName": "KnowledgeBase"
+                }
+            },
+            methods: {
+                /* Initialize the collection of the file selection button's dropdown list.*/
+                init: function() {
+                    this.callParent(arguments);
+                    this.initExtendedMenuButtonCollections("File", ["Article"], this.close);
+                },
+                /* Initialize the value of the attribute that binds the main and additional records. 
+				Populate the collection of the file selection button's drop-down list.*/
+                onEntityInitialized: function() {
+                    this.callParent(arguments);
+                    this.setArticleInfo();
+                    this.fillFilesExtendedMenuData();
+                },
+                /* Initiate the upload of files and the addition of them to the file selection button's drop-down list.*/
+                fillFilesExtendedMenuData: function() {
+                    this.getFiles(this.initFilesMenu, this);
+                },
+                /* Set the value of the attribute that binds the main and additional records.*/
+                setArticleInfo: function() {
+                    this.set("Article", {
+                        value: this.get(this.primaryColumnName),
+                        displayValue: this.get(this.primaryDisplayColumnName)
+                    });
+                },
+                /* Retrieve the data about the files of the current knowledge base article.*/
+                getFiles: function(callback, scope) {
+                    var esq = this.Ext.create("Terrasoft.EntitySchemaQuery", {
+                        rootSchema: KnowledgeBaseFile
+                    });
+                    esq.addColumn("Name");
+                    var articleFilter = &gt;this.Terrasoft.createColumnFilterWithParameter(
+                        this.Terrasoft.ComparisonType.EQUAL, "KnowledgeBase", this.get(this.primaryColumnName));
+                    var typeFilter = this.Terrasoft.createColumnFilterWithParameter(
+                        this.Terrasoft.ComparisonType.EQUAL, "Type", ConfigurationConstants.FileType.File);
+                    esq.filters.addItem(articleFilter);
+                    esq.filters.addItem(typeFilter);
+                    esq.getEntityCollection(function(response) {
+                        if (!response.success) {
+                            return;
+                        }
+                        callback.call(scope, response.collection);
+                    }, this);
+                },
+                /* Populate the collection of the file selection button's drop-down list.*/
+                initFilesMenu: function(files) {
+                    if (files.isEmpty()) {
+                        return;
+                    }
+                    var data = [];
+                    files.each(function(file) {
+                        data.push({
+                            caption: file.get("Name"),
+                            tag: file.get("Id")
+                        });
+                    }, this);
+                    var recipientInfo = this.fillExtendedMenuItems("File", ["Article"]);
+                    this.fillExtendedMenuData(data, recipientInfo, this.downloadFile);
+                },
+                /* Initiate the download of the selected file.*/
+                downloadFile: function(id) {
+                    var element = document.createElement("a");
+                    element.href = "../rest/FileService/GetFile/" + KnowledgeBaseFile.uId + "/" + id;
+                    document.body.appendChild(element);
+                    element.click();
+                    document.body.removeChild(element);
+                }
+            },
+            diff: /**SCHEMA_DIFF*/[
+                {
+                    "operation": "insert",
+                    "name": "Name",
+                    "parentName": "HeaderContainer",
+                    "propertyName": "items",
+                    "index": 0,
+                    "values": {
+                        "labelConfig": {
+                            "visible": true
+                        },
+                        "isMiniPageModelItem": true
+                    }
+                },
+                {
+                    "operation": "insert",
+                    "name": "Keywords",
+                    "parentName": "MiniPage",
+                    "propertyName": "items",
+                    "values": {
+                        "labelConfig": {
+                            "visible": true
+                        },
+                        "isMiniPageModelItem": true,
+                        "layout": {
+                            "column": 0,
+                            "row": 1,
+                            "colSpan": 24
+                        }
+                    }
+                },
+                {
+                    "operation": "insert",
+                    "parentName": "HeaderContainer",
+                    "propertyName": "items",
+                    "name": "FilesButton",
+                    "values": {
+                        "itemType": Terrasoft.ViewItemType.BUTTON,
+                        /* Set up the button image.*/
+                        "imageConfig": {
+                            /* Add the image to the mini page resources before you run the code.*/
+                            "bindTo": "Resources.Images.FilesImage"
+                        },
+                        /* Set up the drop-down list.*/
+                        "extendedMenu": {
+                            /* The name of the drop-down list element.*/
+                            "Name": "File",
+                            /* The name of the mini page attribute that binds the main and additional records.*/
+                            "PropertyName": "Article",
+                            /* Set up the button click processor.*/
+                            "Click": {
+                                "bindTo": "fillFilesExtendedMenuData"
+                            }
+                        }
+                    },
+                    "index": 1
+                }
+            ]/**SCHEMA_DIFF*/
+        };
+    });</pre>
+</div>
+</div>
+</div>
+
+<h2>4. Apply styles to the mini page<a class="title-anchor" href="#title-1937-4" id="title-1937-4">&nbsp;</a></h2>
+
+<p>To add styles to the view model, create an individual style module and enable it in the view model schema.</p>
+
+<ol>
+	<li><a href="/node/1188#title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="/node/2147">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Module</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating(7.17)/scr_minicard_creating_6.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the schema properties in the Schema Designer:</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">UsrKnowledgeBaseArticleMiniPageCss</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Knowledge base minipage styles</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating(7.17)/scr_minicard_creating_5.png"></div>
+	</div>
+
+	<p>Click <span class="key">Apply</span> to apply the properties.</p>
+	</li>
+	<li>
+	<p>Specify the needed styles in the context menu of the LESS node.</p>
+
+	<div class="code">
+	<div class="code__top">
+	<div class="code__title"><span class="filled"><span class="consolas">UsrKnowledgeBaseArticleMiniPageCss.js</span></span></div>
+	</div>
+
+	<div class="code__widgets">
+	<div class="code__source">
+	<pre class="prettyprint">
+div[data-item-marker="UsrKnowledgeBaseArticleMiniPageContainer"] &gt; div {
+width: 250px;
+}</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>
+	<p>Add the module loading to the source code of the view model schema in the Schema Designer.</p>
+
+	<p>View the full source code of the mini page below:</p>
+
+	<div class="code">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">UsrKnowledgeBaseArticleMiniPage.js</span></div>
+	</div>
+
+	<div class="code__widgets">
+	<div class="code__source">
+	<pre class="prettyprint">
+define("UsrKnowledgeBaseArticleMiniPage",
+["terrasoft", "KnowledgeBaseFile", "ConfigurationConstants", "css!UsrKnowledgeBaseArticleMiniPageCss"],
+    function(Terrasoft, KnowledgeBaseFile, ConfigurationConstants) {
+        return {
+            entitySchemaName: "KnowledgeBase",
+            attributes: {
+                "MiniPageModes": {
+                    "value": [this.Terrasoft.ConfigurationEnums.CardOperation.VIEW]
+                },
+                "Article": {
+                    "type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+                    "referenceSchemaName": "KnowledgeBase"
+                }
+            },
+            methods: {
+                init: function() {
+                    this.callParent(arguments);
+                    this.initExtendedMenuButtonCollections("File", ["Article"], this.close);
+                },
+                onEntityInitialized: function() {
+                    this.callParent(arguments);
+                    this.setArticleInfo();
+                    this.fillFilesExtendedMenuData();
+                },
+                fillFilesExtendedMenuData: function() {
+                    this.getFiles(this.initFilesMenu, this);
+                },
+                setArticleInfo: function() {
+                    this.set("Article", {
+                        value: this.get(this.primaryColumnName),
+                        displayValue: this.get(this.primaryDisplayColumnName)
+                    });
+                },
+                getFiles: function(callback, scope) {
+                    var esq = this.Ext.create("Terrasoft.EntitySchemaQuery", {
+                        rootSchema: KnowledgeBaseFile
+                    });
+                    esq.addColumn("Name");
+                    var articleFilter = this.Terrasoft.createColumnFilterWithParameter(
+                        this.Terrasoft.ComparisonType.EQUAL, "KnowledgeBase", this.get(this.primaryColumnName));
+                    var typeFilter = this.Terrasoft.createColumnFilterWithParameter(
+                        this.Terrasoft.ComparisonType.EQUAL, "Type", ConfigurationConstants.FileType.File);
+                    esq.filters.addItem(articleFilter);
+                    esq.filters.addItem(typeFilter);
+                    esq.getEntityCollection(function(response) {
+                        if (!response.success) {
+                            return;
+                        }
+                        callback.call(scope, response.collection);
+                    }, this);
+                },
+                initFilesMenu: function(files) {
+                    if (files.isEmpty()) {
+                        return;
+                    }
+                    var data = [];
+                    files.each(function(file) {
+                        data.push({
+                            caption: file.get("Name"),
+                            tag: file.get("Id")
+                        });
+                    }, this);
+                    var recipientInfo = this.fillExtendedMenuItems("File", ["Article"]);
+                    this.fillExtendedMenuData(data, recipientInfo, this.downloadFile);
+                },
+                downloadFile: function(id) {
+                    var element = document.createElement("a");
+                    element.href = "../rest/FileService/GetFile/" + KnowledgeBaseFile.uId + "/" + id;
+                    document.body.appendChild(element);
+                    element.click();
+                    document.body.removeChild(element);
+                }
+            },
+            diff: /**SCHEMA_DIFF*/[
+                {
+                    "operation": "insert",
+                    "name": "Name",
+                    "parentName": "HeaderContainer",
+                    "propertyName": "items",
+                    "index": 0,
+                    "values": {
+                        "labelConfig": {
+                            "visible": true
+                        },
+                        "isMiniPageModelItem": true
+                    }
+                },
+                {
+                    "operation": "insert",
+                    "name": "Keywords",
+                    "parentName": "MiniPage",
+                    "propertyName": "items",
+                    "values": {
+                        "labelConfig": {
+                            "visible": true
+                        },
+                        "isMiniPageModelItem": true,
+                        "layout": {
+                            "column": 0,
+                            "row": 1,
+                            "colSpan": 24
+                        }
+                    }
+                },
+                {
+                    "operation": "insert",
+                    "parentName": "HeaderContainer",
+                    "propertyName": "items",
+                    "name": "FilesButton",
+                    "values": {
+                        "itemType": Terrasoft.ViewItemType.BUTTON,
+                        "imageConfig": {
+                            "bindTo": "Resources.Images.FilesImage"
+                        },
+                        "extendedMenu": {
+                            "Name": "File",
+                            "PropertyName": "Article",
+                            "Click": {
+                                "bindTo": "fillFilesExtendedMenuData"
+                            }
+                        }
+                    },
+                    "index": 1
+                }
+            ]/**SCHEMA_DIFF*/
+        };
+    });
+</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+</ol>
+
+<h2>5. Register the mini page in the database<a class="title-anchor" href="#title-1937-5" id="title-1937-5">&nbsp;</a></h2>
+
+<p>You must register new mini pages in the database. Run the following SQL query to modify the database:</p>
+
+<div class="code">
+<div class="code__top">
+<div class="code__title">Query to create a mini page</div>
+</div>
+
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+DECLARE 
+    -- The name of the mini page view schema.
+    @ClientUnitSchemaName NVARCHAR(100) = 'UsrKnowledgeBaseArticleMiniPage',
+    -- The name of the object schema to bind the mini page.
+    @EntitySchemaName NVARCHAR(100) = 'KnowledgeBase'
+
+UPDATE SysModuleEdit
+SET MiniPageSchemaUId = (
+    SELECT TOP 1 UId
+    FROM SysSchema
+    WHERE Name = @ClientUnitSchemaName
+)
+WHERE SysModuleEntityId = (
+    SELECT TOP 1 Id
+    FROM SysModuleEntity
+    WHERE SysEntitySchemaUId = (
+        SELECT TOP 1 UId
+        FROM SysSchema
+        WHERE Name = @EntitySchemaName
+            AND ExtendParent = 0
+    )
+);</pre>
+</div>
+</div>
+</div>
+
+<p>As a result of the query, Creatio will add a unique mini page identifier to the <span class="filled">[MiniPageSchemaUId]</span> field of the <span class="filled">[SysModuleEdit]</span> table record that corresponds to the <span class="key">Knowledge base</span> section.</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_minicard_creating_3.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating/scr_minicard_creating_3.png"></div>
+</div>
+
+<h2>6. Add the system setting<a class="title-anchor" href="#title-1937-6" id="title-1937-6">&nbsp;</a></h2>
+
+<p>Add the system setting that has the following properties to the <span class="key">System settings</span> section of the System Designer:</p>
+
+<ul>
+	<li>Set <span class="key">Name</span> to "<span class="consolas">HasKnowledgeBaseMiniPageAddMode</span>."</li>
+	<li>Set <span class="key">Code</span> to "<span class="consolas">HasKnowledgeBaseMiniPageAddMode</span>."</li>
+	<li>Set <span class="key">Type</span> to "<span class="consolas">Boolean</span>."</li>
+	<li>Set <span class="key">Default value</span> to selected checkbox.</li>
+</ul>
+
+<div class="media">
+<div class="media__element"><img alt="scr_minicard_creating_system_setting.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating/scr_minicard_creating_system_setting.png"></div>
+</div>
+
+<h2>Outcome of the example<a class="title-anchor" href="#title-1937-7" id="title-1937-7">&nbsp;</a></h2>
+
+<p>After you save the schema and refresh the Creatio web page, hover over the article name in the <span class="key">Knowledge base</span> section to bring up a custom mini page that displays the files bound to the record. You will be able to download the files.</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_minicard_creating_4.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating/scr_minicard_creating_4.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkMiniCardCreating_18.04.22_02.56.16.zip" target="_blank">Package with example implementation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1944" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Create a mini page that adds records</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Create a custom mini page that adds a new record to the <span class="key">Products</span> section. The mini page must contain the base set of <span class="key">Name</span> and <span class="key">Code</span> fields.</p>
+</div>
+
+<h2>1. Create a view model schema of the mini page<a class="title-anchor" href="#title-1944-1" id="title-1944-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="/node/1188#title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="/node/2147">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Page view model</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating(7.17)/scr_minicard_creating_1.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the schema properties in the Schema Designer:</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">UsrProductMiniPage</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Product Mini Page</span>."</li>
+		<li>Set <span class="key">Parent object</span> to "<span class="consolas">BaseMiniPage</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardAdding(7.17)/scr_props.png"></div>
+	</div>
+
+	<p>Click <span class="key">Apply</span> to apply the properties.</p>
+	</li>
+</ol>
+
+<h2>2. Display the fields of the primary object<a class="title-anchor" href="#title-1944-2" id="title-1944-2">&nbsp;</a></h2>
+
+<p>Add the needed source code in the Schema Designer.</p>
+
+<ol>
+	<li>Specify the <span class="filled">Product</span> schema as the object schema.</li>
+	<li>
+	<p>Declare the <span class="filled">MiniPageModes</span> attribute. Assign the array that has the collection of the needed mini page operations to the attribute.</p>
+
+	<div class="message">
+	<p><span class="message__bold">Note.</span> If you also need to display the mini page on the section page (see <a href="/node/1431#case-1937" target="_blank">Create a custom mini page</a>), add <span class="filled">this.Terrasoft.ConfigurationEnums.CardOperation.VIEW</span> to the array assigned to the <span class="filled">MiniPageModes</span> attribute</p>
+	</div>
+	</li>
+	<li>
+	<p>Add the needed modifications to the <span class="filled">diff</span> array of view model modifications.</p>
+
+	<p>The <strong>view model elements</strong> of the base mini page are as follows:</p>
+
+	<ul>
+		<li><span class="filled">MiniPage</span> is the page field.</li>
+		<li><span class="filled">HeaderContainer</span> is the page heading. By default, the mini page places it in the first row of the field.</li>
+	</ul>
+
+	<p>In this example, the <span class="filled">diff</span> modification array contains two new objects that configure the <span class="key">Name</span> and <span class="key">Code</span> fields.</p>
+	</li>
+</ol>
+
+<p>View the source code of the view model schema below.</p>
+
+<div class="code">
+<div class="code__top">
+<div class="code__title"><span class="filled"><span class="consolas">UsrProductMiniPage</span>.js</span> file that displays the object fields</div>
+</div>
+
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+define("UsrProductMiniPage", ["UsrProductMiniPageResources"],
+    function(resources) {
+        return {
+            entitySchemaName: "Product",
+            details: /**SCHEMA_DETAILS*/{}/**SCHEMA_DETAILS*/,
+            attributes: {
+                "MiniPageModes": {
+                    "value": [this.Terrasoft.ConfigurationEnums.CardOperation.ADD]
+                }
+            },
+            diff: /**SCHEMA_DIFF*/[
+                {
+                    "operation": "insert",
+                    "parentName": "MiniPage",
+                    "propertyName": "items",
+                    "name": "Name",
+                    "values": {
+                        "isMiniPageModelItem": true,
+                        "layout": {
+                            "column": 0,
+                            "row": 1,
+                            "colSpan": 24
+                        },
+                        "controlConfig": {
+                            "focused": true
+                        }
+                    }
+                },
+                {
+                    "operation": "insert",
+                    "parentName": "MiniPage",
+                    "propertyName": "items",
+                    "name": "Code",
+                    "values": {
+                        "isMiniPageModelItem": true,
+                        "layout": {
+                            "column": 0,
+                            "row": 2,
+                            "colSpan": 24
+                        }
+                    }
+                }
+            ]/**SCHEMA_DIFF*/
+        };
+    });</pre>
+</div>
+</div>
+</div>
+
+<h2>3. Register the mini page in the database<a class="title-anchor" href="#title-1944-3" id="title-1944-3">&nbsp;</a></h2>
+
+<p>Register new mini pages in the database. Run the following SQL query to do that.</p>
+
+<div class="code">
+<div class="code__top">
+<div class="code__title">Query to create a mini page</div>
+</div>
+
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+DECLARE 
+    -- The name of the mini page view schema.
+@ClientUnitSchemaName NVARCHAR(100) = 'UsrProductMiniPage',
+    -- The name of the object schema to bind the mini page.
+@EntitySchemaName NVARCHAR(100) = 'Product'
+
+UPDATE SysModuleEdit
+SET MiniPageSchemaUId = (
+    SELECT TOP 1 UId
+    FROM SysSchema
+    WHERE Name = @ClientUnitSchemaName
+)
+WHERE SysModuleEntityId = (
+    SELECT TOP 1 Id
+    FROM SysModuleEntity
+    WHERE SysEntitySchemaUId = (
+        SELECT TOP 1 UId
+        FROM SysSchema
+        WHERE Name = @EntitySchemaName
+            AND ExtendParent = 0
+    )
+);</pre>
+</div>
+</div>
+</div>
+
+<p>As a result of the query, Creatio will add the unique mini page identifier to the <span class="filled">[MiniPageSchemaUId]</span> field of the <span class="filled">[SysModuleEdit]</span> table record that corresponds to the <span class="key">Products</span> section.</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_table.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardAdding/scr_table.png"></div>
+</div>
+
+<h2>4. Add the system setting<a class="title-anchor" href="#title-1944-4" id="title-1944-4">&nbsp;</a></h2>
+
+<p>Add the system setting that has the following properties to the <span class="key">System settings</span> section of the System Designer:</p>
+
+<ul>
+	<li>Set <span class="key">Name</span> to "<span class="consolas">HasProductMiniPageAddMode</span>."</li>
+	<li>Set <span class="key">Code</span> to "<span class="consolas">HasProductMiniPageAddMode</span>."</li>
+	<li>Set <span class="key">Type</span> to "<span class="consolas">Boolean</span>."</li>
+	<li>Set <span class="key">Default value</span> to selected checkbox.</li>
+</ul>
+
+<div class="media">
+<div class="media__element"><img alt="scr_syssetting.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardAdding/scr_syssetting.png"></div>
+</div>
+
+<h2>Outcome of the example<a class="title-anchor" href="#title-1944-5" id="title-1944-5">&nbsp;</a></h2>
+
+<p>As a result, Creatio will display the mini page with two fields when you add a new product.</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_result-01.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardAdding/scr_result-01.png"></div>
+</div>
+
+<p>After you save the mini page, the corresponding record will appear in the section list.</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_result-02.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardAdding/scr_result-02.png"></div>
+</div>
+
+<div class="message message_warning">
+<p><span class="message__bold message__bold_warning">Attention.</span> Creatio will display the record in the section list only after you refresh the browser page. If you want Creatio to display the record immediately after you save the mini page, add the corresponding functionality to the mini page and section page schemas via the message mechanism. Learn more in a separate article: <a href="/node/1279">Module message exchange</a>.</p>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkMiniCardAdding_18.02.05_17.42.48.zip" target="_blank">Package example implementation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="1940" class="node node--type-case node--view-mode-tab">
+
+  
+              <div class="title-h1"><span class="field field--name-title field--type-string field--label-hidden">Add a mini page to a module</span>
+</div>
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodecasefield-difficulty">
+  
+    
+      
+            <div class="field field--name-field-difficulty field--type-entity-reference field--label-hidden field__item"><div id="taxonomy-term-169" class="taxonomy-term vocabulary-difficulty">
+  
+  
+  <div class="content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyfield-icon">
+  
+    
+      
+            <div class="field field--name-field-icon field--type-image field--label-hidden field__item">  <img loading="lazy" src="https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/difficulty/advanced.svg" alt="" />
+
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocktaxonomy-termdifficultyname">
+  
+    
+      
+            <div class="field field--name-name field--type-string field--label-hidden field__item">Advanced</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="message message_example">
+<p><span class="message__bold message__bold_example">Example.</span> Display the current user in the top right of Creatio next to the profile icon. Hover over the link to the current user to open the mini page.</p>
+</div>
+
+<h2>1. Create a module schema<a class="title-anchor" href="#title-1940-1" id="title-1940-1">&nbsp;</a></h2>
+
+<ol>
+	<li><a href="/node/1188#title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="/node/2147">package</a> to add the schema.</li>
+	<li>
+	<p>Click <span class="key">Add</span> → <span class="key">Module</span> on the section list toolbar.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniCardCreating(7.17)/scr_minicard_creating_6.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Fill out the schema properties in the Schema Designer:</p>
+
+	<ul>
+		<li>Set <span class="key">Code</span> to "<span class="consolas">UsrCurrentUserModule</span>."</li>
+		<li>Set <span class="key">Title</span> to "<span class="consolas">Current user module</span>."</li>
+	</ul>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniPageAnyModule(7.17)/scr_minipage_anymodule_module_props.png"></div>
+	</div>
+
+	<p>Click <span class="key">Apply</span> to apply the properties.</p>
+	</li>
+</ol>
+
+<h2>2. Create a view and view model of the module<a class="title-anchor" href="#title-1940-2" id="title-1940-2">&nbsp;</a></h2>
+
+<p>Add the source code to the <span class="filled">UsrCurrentUserModule</span> module in the Schema Designer.</p>
+
+<ol>
+	<li>Implement the class inherited from <span class="filled">Terrasoft.BaseViewModel</span> to create a view model.</li>
+	<li>Enable the <span class="filled">Terrasoft.MiniPageUtilities</span> utility class in the <span class="filled">mixins</span> property of the view model. The class lets you use the mini page call methods.</li>
+	<li>Implement the class inherited from <span class="filled">Terrasoft.BaseModule</span> to create a view.</li>
+	<li>Override the following methods of the <span class="filled">Terrasoft.BaseModule</span> class in the new class:
+	<ul>
+		<li><span class="filled">init()</span> initializes the view model of the module.</li>
+		<li><span class="filled">render()</span> binds the view model to the container view display passed in the <span class="filled">renderTo</span> parameter.</li>
+		<li><span class="filled">getViewModel()</span> creates the view model.</li>
+		<li><span class="filled">getView()</span> retrieves the view to display it. The view must contain the full name of the current user and a hyperlink to the contact page. Define the hover event handler when creating the hyperlink.</li>
+	</ul>
+	</li>
+	<li>Define the <span class="filled">viewModel</span> property that stores the link to the retrieved view model.</li>
+</ol>
+
+<p>View the source code of the module below.</p>
+
+<div class="code">
+<div class="code__top">
+<div class="code__title"><span class="filled">UsrCurrentUserModule.js</span></div>
+</div>
+
+<div class="code__widgets">
+<div class="code__source">
+<pre class="prettyprint">
+/* Define the module. */
+define("UsrCurrentUserModule", ["MiniPageUtilities"], function() {
+    /* Define the CurrentUserViewModel class. */
+    Ext.define("Terrasoft.configuration.CurrentUserViewModel", {
+        /* The parent class name. */
+        extend: "Terrasoft.BaseViewModel",
+        /* The shortened class name. */
+        alternateClassName: "Terrasoft.CurrentUserViewModel",
+        /* The mixins used. */
+        mixins: {
+            MiniPageUtilitiesMixin: "Terrasoft.MiniPageUtilities"
+        }
+    });
+    /* Define the UsrCurrentUserModule class. */
+    Ext.define("Terrasoft.configuration.UsrCurrentUserModule", {
+        /* The shortened class name. */
+        alternateClassName: "Terrasoft.UsrCurrentUserModule",
+        /* The parent class name. */
+        extend: "Terrasoft.BaseModule",
+        /* The Ext object. */
+        Ext: null,
+        /* The sandbox object. */
+        sandbox: null,
+        /* The Terrasoft object. */
+        Terrasoft: null,
+        /* The view model. */
+        viewModel: null, 
+        /* Create the module views. */
+        getView: function() {
+            /* Retrieve the current user contact. */
+            var currentUser = Terrasoft.SysValue.CURRENT_USER_CONTACT;
+            /* The view that represents the Terrasoft.Hyperlink class instance. */
+            return Ext.create("Terrasoft.Hyperlink", {
+                /* Populate the link anchor text using the contact name. */
+                "caption": currentUser.displayValue,
+                /* The link hover event handler. */
+                "linkMouseOver": {"bindTo": "linkMouseOver"},
+                /* The property that contains the additional object parameters. */
+                "tag": {
+                    /* The ID of the current user. */
+                    "recordId": currentUser.value,
+                    /* The object schema name. */
+                    "referenceSchemaName": "Contact"
+                }
+            });
+        },
+        /* Create the view model of the module. */
+        getViewModel: function() {
+            return Ext.create("Terrasoft.CurrentUserViewModel");
+        },
+        /* Initialize the module. */
+        init: function() {
+            this.viewModel = this.getViewModel();
+        },
+        /* Display the module view. */
+        render: function(renderTo) {
+            /* Retrieve the view object. */
+            var view = this.getView();
+            /* Bind the view to the view model. */
+            view.bind(this.viewModel);
+            /* Display the view in the renderTo element. */
+            view.render(renderTo);
+        }
+    });
+    return Terrasoft.UsrCurrentUserModule;
+});</pre>
+</div>
+</div>
+</div>
+
+<h2>3. Add the module styles<a class="title-anchor" href="#title-1940-3" id="title-1940-3">&nbsp;</a></h2>
+
+<p>Add styles to the module to customize the appearance of the hyperlink.</p>
+
+<p>To <strong>add the module styles</strong>:</p>
+
+<ol>
+	<li>Select the <span class="key">LESS</span> node in the Schema Designer.</li>
+	<li>
+	<p>Add the following source code.</p>
+
+	<div class="code">
+	<div class="code__top">
+	<div class="code__title">Module styles</div>
+	</div>
+
+	<div class="code__widgets">
+	<div class="code__source">
+	<pre class="prettyprint">
+.current-user-class a {
+    font-weight: bold;
+    font-size: 2.0em;
+    margin: 6px 20px;
+}
+
+.current-user-class a:hover {
+    text-decoration: none;
+}</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+</ol>
+
+<p>Save the module.</p>
+
+<h2>4. Create the view display container<a class="title-anchor" href="#title-1940-4" id="title-1940-4">&nbsp;</a></h2>
+
+<p>To display a link to the user profile in the top right of Creatio, place the container and upload the view of the module to the container.</p>
+
+<p>To do this, create the schema of the replacing view model that expands the functionality of the <span class="filled">MainHeaderSchema</span> schema.</p>
+
+<ol>
+	<li><a href="/node/1188#title-1188-1">Go to the <span class="key">Configuration</span> section</a> and select a custom <a href="/node/2147">package</a> to add the schema.</li>
+	<li>Click <span class="key">Add</span> → <span class="key">Replacing view model</span> on the section list toolbar.
+	<div class="media">
+	<div class="media__element"><img alt="scr_add_replacing_module.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreateClientSchema(7.17)/scr_add_replacing_module.png"></div>
+	</div>
+	</li>
+	<li>
+	<p>Select the <span class="filled">MainHeaderSchema</span> parent object in the Module Designer.</p>
+
+	<p>After you confirm the parent object, Creatio will populate the other properties.</p>
+
+	<div class="media">
+	<div class="media__element"><img src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniPageAnyModule(7.17)/scr_minipage_anymodule_page_props.png"></div>
+	</div>
+
+	<p>Click <span class="key">Apply</span> to apply the properties.</p>
+	</li>
+	<li>
+	<p>Add the source code in the Module Designer.</p>
+
+	<p>Use the <span class="filled">diff</span> property to display the view in the source code of the replacing view model schema. Set the <span class="filled">RightHeaderContainer</span> element as a parent element of the container to display the container in the top right of the page. Then, override the <span class="filled">onRender()</span> method and implement the upload of the created module in the method.</p>
+
+	<p>View the source code of the replacing view model schema below.</p>
+
+	<div class="code">
+	<div class="code__top">
+	<div class="code__title"><span class="filled">MainHeaderSchema.js</span></div>
+	</div>
+
+	<div class="code__widgets">
+	<div class="code__source">
+	<pre class="prettyprint">
+/* Define the module. */
+define("MainHeaderSchema", [], function() {
+    return {
+        methods: {
+            /* Execute the actions after displaying the view. */
+            onRender: function() {
+                /* Call the parent method. */
+                this.callParent(arguments);
+                /* Load the module of the current user. */
+                this.loadCurrentUserModule();
+            },
+            /* Load the module of the current user. */
+            loadCurrentUserModule: function() {
+                /* Retrieve the container to upload the module. */
+                var currentUserContainer = this.Ext.getCmp("current-user-container");
+                /* Check if the container exists. */
+                if (currentUserContainer &amp;&amp; currentUserContainer.rendered) {
+                    /* Upload the module to the container. */
+                    this.sandbox.loadModule("UsrCurrentUserModule", {
+                        /* The container name. */
+                        renderTo: "current-user-container"
+                    });
+                }
+            }
+        },
+        diff: [
+            {
+                /* The element insert operation. */
+                "operation": "insert",
+                /* The element name. */
+                "name": "CurrentUserContainer",
+                /* The parent container name. */
+                "parentName": "RightHeaderContainer",
+                /* The property name. */
+                "propertyName": "items",
+                /* The element values. */
+                "values": {
+                    /* The container ID. */
+                    "id": "current-user-container",
+                    /* The element type. */
+                    "itemType": Terrasoft.ViewItemType.CONTAINER,
+                    /* The container classes. */
+                    "wrapClass": ["current-user-class"],
+                    /* The container items. */
+                    "items": []
+                }
+            }
+        ]
+    };
+});</pre>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li>Click <span class="key">Save</span> on the Module Designer's toolbar.</li>
+</ol>
+
+<h2>Outcome of the example<a class="title-anchor" href="#title-1940-5" id="title-1940-5">&nbsp;</a></h2>
+
+<p>After you refresh the web page, Creatio will display the full name of the current user and a hyperlink to their contact page. Hover over the link to bring up the mini page that contains the data of the current user.</p>
+
+<div class="media">
+<div class="media__element"><img alt="scr_minipage_anymodule_result.png" border="0" src="/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/MiniPageAnyModule/scr_minipage_anymodule_result.png"></div>
+</div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknodecasefield-resources">
+  
+    
+      
+  <div class="field field--name-field-resources field--type-link field--label-above">
+    <div class="field__label">Resources</div>
+          <div class="field__items">
+              <div class="field__item"><a href="https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/sdkMiniPageAnyModule_18.06.22_02.30.14.zip" target="_blank">Package with example implementation</a></div>
+              </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+</div>
+          </div>
+  
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+          </div>
+          
+        </div>
+
+                  <aside class="creatio-sidebar creatio-sidebar_first" role="complementary">
+              <div class="region region-sidebar-first">
+    <div id="block-documentationnaviagtion" class="block block-ts-nav block-ts-nav-doc-nav">
+  
+    
+      <div class="ts-nav-block"><a href="/docs/" class="ts-nav-block__link">Documentation</a><div class="ts-nav-block__title">Developer documentation</div>
+</div>
+<div class="ts-nav-container"><ul class="ts-nav-menu"><li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/getting_started" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Getting started&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/architecture" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Architecture&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/development_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Development tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/back_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Back-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/front_end_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Front-end development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/integrations_and_api" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Integrations & API&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements" class="ts-nav-menu__link ts-nav-menu__link_expanded ts-nav-menu__link_open" hreflang="en">Interface elements&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+      <ul class="ts-nav-menu__children">
+      <li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/main_menu" class="ts-nav-menu__link" hreflang="en">Main menu</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/section" class="ts-nav-menu__link" hreflang="en">Section</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/record_page" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Record page&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/detail" class="ts-nav-menu__link" hreflang="en">Detail</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/mini_page" class="ts-nav-menu__link ts-nav-menu__link_open" hreflang="en">Mini page</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/modal_window" class="ts-nav-menu__link" hreflang="en">Modal window</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/communication_panel" class="ts-nav-menu__link" hreflang="en">Communication panel</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/command_line" class="ts-nav-menu__link" hreflang="en">Command line</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/dashboard_widgets" class="ts-nav-menu__link" hreflang="en">Dashboard widgets</a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/chats" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Chats&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/interface_elements/interface_control_tools" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Interface control tools&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+
+    </ul>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/application_components" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Application components&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/mobile_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Mobile development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+<li class="ts-nav-menu__item">
+  <a href="/docs/7-18/developer/marketplace_app_development" class="ts-nav-menu__link ts-nav-menu__link_expanded" hreflang="en">Marketplace app development&nbsp;<span class="ts-nav-menu__link__arrow"></span></a>
+  </li>
+</ul>
+</div>
+
+  </div>
+
+  </div>
+
+            <div class="creatio-sidebar__toggle"></div>
+          </aside>
+        
+                  <aside class="creatio-sidebar creatio-sidebar_second" role="complementary">
+              <div class="region region-sidebar-second">
+    <div id="block-example" class="block block-ts-nav block-ts-nav-page-nav">
+  
+    
+      <div class="ts-nav-page">
+  </div>
+
+  </div>
+
+  </div>
+
+          </aside>
+              </main>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="creatio-region creatio-region_footer">
+      <div class="creatio-container">
+          <div class="region region-footer">
+    <div id="block-footer" class="block block-simple-block block-simple-blockfooter">
+  
+    
+      <div class="footer">
+<div class="footer-left">
+<ul class="footer-socials">
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_fb" href="https://www.facebook.com/CreatioCompany" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_in" href="https://www.linkedin.com/company/creatioglobal" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_yt" href="https://www.youtube.com/c/creatio" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_tw" href="https://www.twitter.com/Creatio_Global" target="_blank">&nbsp;</a></li>
+	<li class="footer-socials__item"><a class="footer-socials__link footer-socials__link_ow" href="https://www.owler.com/company/Creatio" target="_blank">&nbsp;</a></li>
+</ul>
+</div>
+
+<div class="footer-contact">
+<div class="footer-title">Connect with us</div>
+
+<div class="footer-content">
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+16177657997">USA: +1 617 765 7997</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+442033840040">UK: +44 20 3384 0040</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_phone" href="tel:+61261452888">Australia: +61 261 452 888</a></div>
+</div>
+
+<div class="footer-items">
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:info@creatio.com">info@creatio.com</a></div>
+
+<div class="footer-item"><a class="footer__link footer__link_email" href="mailto:support@creatio.com">support@creatio.com</a></div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+    <div class="creatio-region creatio-region_bottom">
+      <div class="creatio-container">
+          <div class="region region-bottom">
+    <div id="block-allrightsreserved" class="block block-simple-block block-simple-blockfooter-bottom">
+  
+    
+      <p>© 2025 Creatio. All rights reserved.&nbsp; |&nbsp; <a href="https://www.creatio.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="creatio-bg"></div>
+
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/docs\/","pathPrefix":"","currentPath":"node\/1431","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"94c0ca72342e8e43fd5c70378d64533b2b6422845e0b3fd749b2ff1b4bd0b914"}}</script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery_3.7.1_jquery.min.js?v=3.7.1"></script>
+<script src="/docs/modules/contrib/jquery_once/lib/jquery-once-2.2.3/jquery.once.min.js?v=2.2.3"></script>
+<script src="/docs/core/misc/drupalSettingsLoader.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.js?v=10.4.1"></script>
+<script src="/docs/core/misc/drupal.init.js?v=10.4.1"></script>
+<script src="/docs/libraries/fancybox/jquery.fancybox.min.js?v=1"></script>
+<script src="/docs/themes/custom/creatio_academy/js/fancybox.js?v=1"></script>
+<script src="/docs/libraries/prettify/prettify.js?v=1"></script>
+<script src="/docs/libraries/slick/slick.js?v=1"></script>
+<script src="/docs/libraries/jquery.nice-select/jquery.nice-select.js?v=1"></script>
+<script src="https://libraries.creatio.com/drupal_fixed_tabs/tabs.js"></script>
+<script src="/docs/themes/custom/creatio_academy/js/creatio.js?v=1"></script>
+<script src="/docs/libraries/jquery.cookie/jquery.cookie.js?szsnyq"></script>
+<script src="/docs/themes/custom/creatio_academy/js/notification.js?szsnyq"></script>
+<script src="/docs/modules/marketplace/ts_datalayer/js/ts-datalayer.js?szsnyq"></script>
+<script src="/docs/libraries/select2/js/select2.js?v=1"></script>
+<script src="/docs/libraries/select2/js/select2.position.js?v=1"></script>
+<script src="/docs/libraries/jquery.scrollbar/jquery.scrollbar.js?v=1"></script>
+<script src="/docs/modules/academy/ts_doc/js/ts-doc-version.js?szsnyq"></script>
+<script src="https://libraries.creatio.com/ts_country/index.js"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-breadcrumb.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-doc-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-page-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_nav/js/ts-sdk-nav.js?szsnyq"></script>
+<script src="/docs/modules/academy/ts_title_anchor/js/ts-title-anchor.js?szsnyq"></script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <g id="svg-copy" class="svg-icon svg-icon_copy">
+        <path d="M15.111,18H1.889A1.848,1.848,0,0,1,0,16.2V3.6A1.848,1.848,0,0,1,1.889,1.8H5.837a2.87,2.87,0,0,1,5.326,0h3.948A1.848,1.848,0,0,1,17,3.6V16.2A1.848,1.848,0,0,1,15.111,18ZM3.777,12.6v1.8h6.611V12.6Zm0-3.6v1.8h9.445V9Zm0-3.6V7.2h9.445V5.4ZM8.5,1.8a.924.924,0,0,0-.944.9.945.945,0,0,0,1.889,0A.924.924,0,0,0,8.5,1.8Z"/>
+      </g>
+
+      <g id="svg-prev" class="svg-icon svg-icon_arrow">
+        <path d="M5.488,12.779,0,6.39,5.488,0" transform="translate(1 0.652)"/>
+      </g>
+
+      <g id="svg-next" class="svg-icon svg-icon_arrow">
+        <path d="M0,12.779,5.488,6.39,0,0" transform="translate(0.759 0.652)"/>
+      </g>
+    </svg>
+  </body>
+</html>
