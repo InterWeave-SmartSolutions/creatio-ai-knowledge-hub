@@ -1,0 +1,873 @@
+{
+  "User Guide": {
+    "Intermediate": [
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Forgot your password?",
+          "url": "https://academy.creatio.com/user/password?destination=academy/com",
+          "section": "User Documentation",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:03:56.254028"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "or create an account",
+          "url": "https://academy.creatio.com/user/register?destination=academy/com",
+          "section": "User Documentation",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:03:56.254095"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Log in",
+          "url": "https://academy.creatio.com/docs/user/login?destination=/docs/user/platform_basics",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475112"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Log in",
+          "url": "https://academy.creatio.com/docs/user/login?destination=/docs/user/platform_basics",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475128"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Guides",
+          "url": "https://academy.creatio.com/docs/8.x",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475145"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "User documentation",
+          "url": "https://academy.creatio.com/docs/?vid_1=1",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475295"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "User documentation",
+          "url": "https://academy.creatio.com/docs/?vid_1=1",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475319"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Classic UI",
+          "url": "https://academy.creatio.com/docs/user/platform_basics/user_interface",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475338"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Business data",
+          "url": "https://academy.creatio.com/docs/user/platform_basics/business_data",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475370"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Communications",
+          "url": "https://academy.creatio.com/docs/user/platform_basics/communications",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475401"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Mobile app",
+          "url": "https://academy.creatio.com/docs/user/mobile_app",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475417"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Running business processes",
+          "url": "https://academy.creatio.com/docs/user/platform_basics/running_business_processes",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475432"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "No-code platform",
+          "url": "https://academy.creatio.com/docs/user/nocode_platform",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475462"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Classic UI",
+          "url": "https://academy.creatio.com/docs/user/platform_basics/user_interface",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475497"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Business data",
+          "url": "https://academy.creatio.com/docs/user/platform_basics/business_data",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475525"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Communications",
+          "url": "https://academy.creatio.com/docs/user/platform_basics/communications",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475555"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Mobile app",
+          "url": "https://academy.creatio.com/docs/user/mobile_app",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475585"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Running business processes",
+          "url": "https://academy.creatio.com/docs/user/platform_basics/running_business_processes",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475623"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "CRM tools",
+          "url": "https://academy.creatio.com/docs/user/crm_tools",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475640"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Customization tools",
+          "url": "https://academy.creatio.com/docs/user/customization_tools",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475654"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "BPM tools",
+          "url": "https://academy.creatio.com/docs/user/bpm_tools",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475667"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Marketing tools",
+          "url": "https://academy.creatio.com/docs/user/marketing_tools",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475680"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Sales tools",
+          "url": "https://academy.creatio.com/docs/user/sales_tools",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475692"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Service tools",
+          "url": "https://academy.creatio.com/docs/user/service_tools",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475703"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "On-site deployment",
+          "url": "https://academy.creatio.com/docs/user/on_site_deployment",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475745"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "More apps",
+          "url": "https://academy.creatio.com/docs/user/more_apps",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475775"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Finance and banking",
+          "url": "https://academy.creatio.com/docs/user/finance_and_banking",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475807"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Guides",
+          "url": "https://academy.creatio.com/docs/8.x/dev/",
+          "section": "Developer Guide 8.x",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:05.251396"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Guides",
+          "url": "https://academy.creatio.com/docs/8.x",
+          "section": "Getting Started",
+          "topic": "User Guide",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369308"
+        }
+      }
+    ],
+    "Beginner": [
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Platform basics",
+          "url": "https://academy.creatio.com/docs/user/platform_basics",
+          "section": "Platform Basics",
+          "topic": "User Guide",
+          "difficulty": "Beginner",
+          "scraped_at": "2025-08-01T16:04:00.475473"
+        }
+      }
+    ]
+  },
+  "Release Notes": {
+    "Intermediate": [
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "the newest version of Creatio documentation",
+          "url": "https://academy.creatio.com/docs/8.x/",
+          "section": "Platform Basics",
+          "topic": "Release Notes",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475024"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "the newest version of Creatio documentation",
+          "url": "https://academy.creatio.com/docs/8.x/",
+          "section": "Getting Started",
+          "topic": "Release Notes",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369206"
+        }
+      }
+    ]
+  },
+  "General": {
+    "Intermediate": [
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "E-learning",
+          "url": "https://academy.creatio.com/e-learning",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475163"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Training",
+          "url": "https://academy.creatio.com/training",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475199"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Certification",
+          "url": "https://academy.creatio.com/certification",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475247"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Documentation",
+          "url": "https://academy.creatio.com/docs/",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475271"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Documentation",
+          "url": "https://academy.creatio.com/docs/",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475308"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Documentation",
+          "url": "https://academy.creatio.com/docs/",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475448"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "USA: +1 617 765 7997",
+          "url": "tel:+16177657997",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475841"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "UK: +44 20 3384 0040",
+          "url": "tel:+442033840040",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475857"
+        }
+      },
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Australia: +61 261 452 888",
+          "url": "tel:+61261452888",
+          "section": "Platform Basics",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475873"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "E-learning",
+          "url": "https://academy.creatio.com/e-learning",
+          "section": "Developer Guide 8.x",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:05.251460"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Training",
+          "url": "https://academy.creatio.com/training",
+          "section": "Developer Guide 8.x",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:05.251477"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Certification",
+          "url": "https://academy.creatio.com/certification",
+          "section": "Developer Guide 8.x",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:05.251490"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "US: +1 617 765 7997",
+          "url": "tel:+1 617 765 7997",
+          "section": "Developer Guide 8.x",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:05.251516"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "UK: +44 20 3384 0040",
+          "url": "tel:+44 20 3384 0040",
+          "section": "Developer Guide 8.x",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:05.251530"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "AU: +61 261 452 888",
+          "url": "tel:+61 261 452 888",
+          "section": "Developer Guide 8.x",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:05.251542"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "E-learning",
+          "url": "https://academy.creatio.com/e-learning",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369321"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Training",
+          "url": "https://academy.creatio.com/training",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369332"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Certification",
+          "url": "https://academy.creatio.com/certification",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369344"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Documentation",
+          "url": "https://academy.creatio.com/docs/",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369385"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Documentation",
+          "url": "https://academy.creatio.com/docs/",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369431"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Documentation",
+          "url": "https://academy.creatio.com/docs/",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369491"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "USA: +1 617 765 7997",
+          "url": "tel:+16177657997",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369718"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "UK: +44 20 3384 0040",
+          "url": "tel:+442033840040",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369745"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Australia: +61 261 452 888",
+          "url": "tel:+61261452888",
+          "section": "Getting Started",
+          "topic": "General",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369759"
+        }
+      }
+    ]
+  },
+  "Administration": {
+    "Intermediate": [
+      {
+        "type": "user_docs",
+        "resource": {
+          "title": "Administration",
+          "url": "https://academy.creatio.com/docs/user/setup_and_administration",
+          "section": "Platform Basics",
+          "topic": "Administration",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:00.475714"
+        }
+      }
+    ]
+  },
+  "Development": {
+    "Intermediate": [
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Log in",
+          "url": "https://academy.creatio.com/docs/user/login?destination=/docs/developer/getting_started",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369279"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Log in",
+          "url": "https://academy.creatio.com/docs/user/login?destination=/docs/developer/getting_started",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369294"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Developer documentation",
+          "url": "https://academy.creatio.com/docs/?vid_1=2",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369414"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Developer documentation",
+          "url": "https://academy.creatio.com/docs/?vid_1=2",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369441"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Development recommendations",
+          "url": "https://academy.creatio.com/docs/developer/getting_started/development_recommendations",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369455"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Develop application",
+          "url": "https://academy.creatio.com/docs/developer/getting_started/develop_application",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369469"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Transfer application",
+          "url": "https://academy.creatio.com/docs/developer/getting_started/transfer_application",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369479"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Development recommendations",
+          "url": "https://academy.creatio.com/docs/developer/getting_started/development_recommendations",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369528"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Develop application",
+          "url": "https://academy.creatio.com/docs/developer/getting_started/develop_application",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369554"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Transfer application",
+          "url": "https://academy.creatio.com/docs/developer/getting_started/transfer_application",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369566"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Architecture",
+          "url": "https://academy.creatio.com/docs/developer/architecture",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369582"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Development tools",
+          "url": "https://academy.creatio.com/docs/developer/development_tools",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369595"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Back-end development",
+          "url": "https://academy.creatio.com/docs/developer/back_end_development",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369606"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Front-end development",
+          "url": "https://academy.creatio.com/docs/developer/front_end_development",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369616"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Integrations & API",
+          "url": "https://academy.creatio.com/docs/developer/integrations_and_api",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369625"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Interface elements",
+          "url": "https://academy.creatio.com/docs/developer/interface_elements",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369634"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Application components",
+          "url": "https://academy.creatio.com/docs/developer/application_components",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369660"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Mobile development",
+          "url": "https://academy.creatio.com/docs/developer/mobile_development",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369688"
+        }
+      },
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Marketplace app development",
+          "url": "https://academy.creatio.com/docs/developer/marketplace_app_development",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Intermediate",
+          "scraped_at": "2025-08-01T16:04:07.369702"
+        }
+      }
+    ],
+    "Beginner": [
+      {
+        "type": "developer_docs",
+        "resource": {
+          "title": "Getting started",
+          "url": "https://academy.creatio.com/docs/developer/getting_started",
+          "section": "Getting Started",
+          "topic": "Development",
+          "difficulty": "Beginner",
+          "scraped_at": "2025-08-01T16:04:07.369501"
+        }
+      }
+    ]
+  }
+}

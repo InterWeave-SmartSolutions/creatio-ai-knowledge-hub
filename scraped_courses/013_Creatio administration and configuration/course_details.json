@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-0",
+  "scraped_at": "2025-08-01T15:28:06.285112",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "Creatio administration and configuration"
+  },
+  "course_title": "Creatio administration and configuration"
+}

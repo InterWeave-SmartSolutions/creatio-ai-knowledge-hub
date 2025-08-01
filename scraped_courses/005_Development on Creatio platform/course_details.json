@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/training/development-creatio-platform-4",
+  "scraped_at": "2025-08-01T15:27:44.670871",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "Development on Creatio platform"
+  },
+  "course_title": "Development on Creatio platform"
+}

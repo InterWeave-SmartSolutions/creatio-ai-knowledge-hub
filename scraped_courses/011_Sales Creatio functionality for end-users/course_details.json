@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/training/sales-creatio-functionality-end-users",
+  "scraped_at": "2025-08-01T15:28:00.593475",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "Sales Creatio functionality for end-users"
+  },
+  "course_title": "Sales Creatio functionality for end-users"
+}
