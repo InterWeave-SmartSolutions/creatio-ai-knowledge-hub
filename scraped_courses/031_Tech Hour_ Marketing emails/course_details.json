@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/e-learning/tech-hour-marketing-emails",
+  "scraped_at": "2025-08-01T15:28:54.337251",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "Tech Hour: Marketing emails"
+  },
+  "course_title": "Tech Hour: Marketing emails"
+}

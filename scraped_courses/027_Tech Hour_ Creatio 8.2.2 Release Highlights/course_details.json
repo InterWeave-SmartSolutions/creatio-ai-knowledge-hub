@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-822-release-highlights",
+  "scraped_at": "2025-08-01T15:28:43.889052",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "Tech Hour: Creatio 8.2.2 Release Highlights"
+  },
+  "course_title": "Tech Hour: Creatio 8.2.2 Release Highlights"
+}

@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/e-learning/no-code-playbook-creator",
+  "scraped_at": "2025-08-01T15:28:08.945212",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "NO-CODE PLAYBOOK: Creator"
+  },
+  "course_title": "NO-CODE PLAYBOOK: Creator"
+}

@@ -1,0 +1,7 @@
+Video URLs for Tech Hour: Creatio 8.2.3 Release Highlights
+==================================================
+
+1. Video Link
+   URL: https://www.youtube.com/c/creatio
+   Type: link
+

@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Large files
+*.mp4
+*.avi
+*.mov
+*.webm
+*.mkv
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Credentials (if any)
+credentials.json
+secrets.json
+
+# Installation files
+creatio_installer*
+*.tar.gz
+*.zip
+
+# Exclude venv directory completely
+venv/

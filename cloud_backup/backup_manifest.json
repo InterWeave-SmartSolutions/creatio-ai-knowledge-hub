@@ -1,0 +1,332 @@
+{
+  "backup_date": "2025-08-01T16:09:35.510721",
+  "project": "Creatio Training Courses Scraper",
+  "files": [
+    {
+      "path": "creatio_courses.json",
+      "size": 22420,
+      "modified": "2025-08-01T15:46:12.374096",
+      "hash": "1a1d03c19646581cac83c49f0b219e6d952d9cad6a0c3d2610b25944f73aa437"
+    },
+    {
+      "path": "creatio_courses.csv",
+      "size": 5560,
+      "modified": "2025-08-01T15:46:12.374096",
+      "hash": "d833744b2a0d7c3ff7421fa7762c09433fc8bb40dfdc020e4dadaf7919649b9b"
+    },
+    {
+      "path": "course_page_raw.html",
+      "size": 26185,
+      "modified": "2025-08-01T15:30:12.431036",
+      "hash": "9c34537134570f7bdb86656409aac7c29ee647e9fb74b1331f81f967750b57f9"
+    },
+    {
+      "path": "creatio_main_page.html",
+      "size": 5000,
+      "modified": "2025-08-01T15:21:17.127618",
+      "hash": "5fbdc9ebe9b034e0a13a5df30424c31a2acec04e6d30f5cadc5533e3af528766"
+    },
+    {
+      "path": "creatio_training_page.html",
+      "size": 5004,
+      "modified": "2025-08-01T15:21:17.135618",
+      "hash": "103a9ce94323ff483ea2c078ee8c08ce636e5ed8b3a2a2a897289d0ee713149d"
+    },
+    {
+      "path": "process_data.py",
+      "size": 12066,
+      "modified": "2025-08-01T16:07:14.921170",
+      "hash": "c5682e542a0db0c0a1b5880f201e6176f4baf670f595d1a47ea7a1d74b68d89c"
+    },
+    {
+      "path": "html_to_markdown.py",
+      "size": 2917,
+      "modified": "2025-08-01T16:08:14.181128",
+      "hash": "2d25b4508af7e9f19bcc255a5b0a585e33dc378d27ba1e5477c90a90e73b1047"
+    },
+    {
+      "path": "processed_data/cleaned_data.json",
+      "size": 22810,
+      "modified": "2025-08-01T16:07:23.833155",
+      "hash": "8a3cfc9f36e1023886ece78b917b33945b87ba6f9a3f230959d70537d75c9ada"
+    },
+    {
+      "path": "processed_data/cleaned_data.csv",
+      "size": 5526,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "be1fe7ba4260c2392e4f8629afbef2d0ae7abdb00ae9ede53fc9e165e06d1097"
+    },
+    {
+      "path": "processed_data/original_data_backup.json",
+      "size": 22420,
+      "modified": "2025-08-01T15:46:12.374096",
+      "hash": "1a1d03c19646581cac83c49f0b219e6d952d9cad6a0c3d2610b25944f73aa437"
+    },
+    {
+      "path": "processed_data/markdown/025_Tech_Hour_Building_Landing_Pages_with_Creatio.md",
+      "size": 361,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "4fe0722497dc20d7bad758203d879fe4ac58a4bd0cb2fdd9eb4c3298f5ca03ee"
+    },
+    {
+      "path": "processed_data/markdown/014_NO-CODE_PLAYBOOK_Creator.md",
+      "size": 309,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "324485cf64ef69fca886e2af984b49bc5e53d9dfb2db15d916c9be11cc1a131f"
+    },
+    {
+      "path": "processed_data/markdown/015_No-code_Playbook_Leader.md",
+      "size": 328,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "181feec89a0539ea26599da545d774cf682b68dbff301ac0a646bf8cec0161ae"
+    },
+    {
+      "path": "processed_data/markdown/020_SERVICE_TOOLS.md",
+      "size": 275,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "7e2cc2555dfdf68faed425759db005d266afc4d8cedb99703643c63ba6337499"
+    },
+    {
+      "path": "processed_data/markdown/021_SETUP_AND_ADMINISTRATION.md",
+      "size": 308,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "a7be0638ccbd8307a268c0eb1bb5890fb039ea3d6e51652535e2af5d0578521f"
+    },
+    {
+      "path": "processed_data/markdown/017_COMMON_FEATURES.md",
+      "size": 280,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "fa1a2ff0a1091c0288aec498f4866c72a8ba094b3d136ec30f22ea67a9dc2502"
+    },
+    {
+      "path": "processed_data/markdown/019_SALES_TOOLS.md",
+      "size": 269,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "3441956d0bfcc4e59f1d9ff172fd2b7ac6b84015e1b334048d20809f4a074aa0"
+    },
+    {
+      "path": "processed_data/markdown/003_Creatio_administration_and_configuration_US.md",
+      "size": 381,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "2dca093848f2a88bae0f883e2cc61d278c1cccee8cf4587b48891fbf4eb34e77"
+    },
+    {
+      "path": "processed_data/markdown/031_Tech_Hour_Marketing_emails.md",
+      "size": 314,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "ee3547024a3b986728b9f0f6a6f26aa875ecad579e912cfab3ddfd04a65f1208"
+    },
+    {
+      "path": "processed_data/markdown/007_Creatio_administration_and_configuration.md",
+      "size": 370,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "0608e9da22961ba16a3f4f0cc088a408c7f2f620794622a7bd25de404e7bbeba"
+    },
+    {
+      "path": "processed_data/markdown/016_PLATFORM.md",
+      "size": 259,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "54f50649829805a7695005fe3ee215a71ee4da98fb1dc660da3d39cf0a7c0731"
+    },
+    {
+      "path": "processed_data/markdown/005_Development_on_Creatio_platform.md",
+      "size": 359,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "b0cab5875a62325e4ea46513520bb84ed9881d9fa5fa921c48390bf48d658730"
+    },
+    {
+      "path": "processed_data/markdown/010_Full_CRM_bundle_functionality_for_end-users.md",
+      "size": 386,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "757de8e15292d67496787f5de293fd0e2c3f490f5eeebd55ae0c4d21cbc24732"
+    },
+    {
+      "path": "processed_data/markdown/002_Creatio_administration_and_configuration_AUS.md",
+      "size": 380,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "77af3249b8cc0c3fa2a5313ad48f8c02d1b09f5fea034022ae3d4e46fe83a6a3"
+    },
+    {
+      "path": "processed_data/markdown/009_Marketing_Creatio_functionality_for_end-users.md",
+      "size": 392,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "78d66879d26018b4f3af876880bc7e732a1341a928d49cf9bde29a6f371aedb6"
+    },
+    {
+      "path": "processed_data/markdown/013_Creatio_administration_and_configuration.md",
+      "size": 390,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "aa13c6f75b40b9361e2d10cdefa8b2920201be914613dff9c4d278d3b0c6e35c"
+    },
+    {
+      "path": "processed_data/markdown/012_Development_on_Creatio_platform.md",
+      "size": 357,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "418809c99bcd718bc98690c9bda374ec196457e20005d649329ecf1120a74500"
+    },
+    {
+      "path": "processed_data/markdown/029_Tech_Hour_Creatio_AI.md",
+      "size": 296,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "37ba3117e9bbc663ddfe185bc4f3e3fd01a9e473526dfb6024301b772cf709d8"
+    },
+    {
+      "path": "processed_data/markdown/026_Tech_Hour_Creatio_823_Release_Highlights.md",
+      "size": 358,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "e9af1e1e98e24d524fb3a7c2303c714a0629bb9df998975881ac676425810917"
+    },
+    {
+      "path": "processed_data/markdown/022_DEVELOPMENT_ON_CREATIO_PLATFORM.md",
+      "size": 323,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "c6d405f9ef50434ea4a315f3ec3f41032f1429834913c713e54a216d600b94b1"
+    },
+    {
+      "path": "processed_data/markdown/008_Service_Creatio_functionality_for_end-users.md",
+      "size": 386,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "50aaa30d1363d4c0e0e92a035a6eba19f2181cda3a43a611a9258724510c33cb"
+    },
+    {
+      "path": "processed_data/markdown/006_Creatio_administration_and_configuration_US.md",
+      "size": 377,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "7aa6ba60fd5f86a92f21f7c4308b80b876149c7c999204b7bd88e2f30ce80b20"
+    },
+    {
+      "path": "processed_data/markdown/018_MARKETING_TOOLS.md",
+      "size": 281,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "dadcd43564a589e78bdcc42b045041c58f943287b5030c825dc93eb6d6f53e1e"
+    },
+    {
+      "path": "processed_data/markdown/023_BPM_TOOLS.md",
+      "size": 263,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "ea6fa779e482a75cc7961fc6bd26a65c344a05c5a8f95ac0507979d0d66aabc3"
+    },
+    {
+      "path": "processed_data/markdown/001_Development_on_Creatio_platform.md",
+      "size": 359,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "f23b95d2c38e4345d33da88b2ead410af7e88e656abb96e2f687eaa27c0805e3"
+    },
+    {
+      "path": "processed_data/markdown/028_Tech_Hour_Email_Marketing__Mastering_the_New_Email_Designer.md",
+      "size": 406,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "d4a8623a17f1e7878abec3c63bd136b3564d3cd9446636387618063fe422f516"
+    },
+    {
+      "path": "processed_data/markdown/030_Tech_Hour_Creatio_82_Energy_Release_Highlights.md",
+      "size": 375,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "4877f98419ca608347f6af463d28a54181847a8c5df8cfc10f16c47e486fdfbc"
+    },
+    {
+      "path": "processed_data/markdown/032_Tech_Hour_Creatio_814_Release_Highlights.md",
+      "size": 358,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "18eaafbc0b12eda7f6e0a798afea778dc1b5c5fb68ab505cc41f55dd1bcbac7f"
+    },
+    {
+      "path": "processed_data/markdown/004_Creatioai.md",
+      "size": 277,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "1ec8cd39a0043bd66c1b88473094d06e6cd8ad2afa0aeb83b71ea79ac0181919"
+    },
+    {
+      "path": "processed_data/markdown/024_Tech_Hour_Creatio_83_Twin_Release_Highlights.md",
+      "size": 370,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "a24327ff50fa9e47e8e1ef2bf2a95ec55363c8b2503626cb13ffddf970995171"
+    },
+    {
+      "path": "processed_data/markdown/033_Tech_Hour_812_release_highlights.md",
+      "size": 334,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "677baa0f8f0f72b339d794ffa63ddfb560a23c0e20d0b92e9d755011864f9da4"
+    },
+    {
+      "path": "processed_data/markdown/011_Sales_Creatio_functionality_for_end-users.md",
+      "size": 380,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "a0ceb16816523b283d9cc473f9e94d38b671cd7b5f22a56ef49eec5e60460fb3"
+    },
+    {
+      "path": "processed_data/markdown/027_Tech_Hour_Creatio_822_Release_Highlights.md",
+      "size": 358,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "cb2111e9aef9e3860f653ce53714c7e970d8cab5ce2af3a0ae6200e1bcd2b756"
+    },
+    {
+      "path": "processed_data/summaries/E-Learning_summary.md",
+      "size": 1540,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "8864a84614da5590703ef99c277094c6e1fdd0c9d93e71c2fee1a0a38534d5e1"
+    },
+    {
+      "path": "processed_data/summaries/Instructor-led_Training_summary.md",
+      "size": 1346,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "33f80e17bd7ae01f086b006ae413476b0389ca07b29f98a90ed520f3ee7586fa"
+    },
+    {
+      "path": "processed_data/indexes/category_index.md",
+      "size": 5227,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "8e579874d5a45203c5742ed46f6f4862c602a4c5da059c96932cb25ee5617d31"
+    },
+    {
+      "path": "processed_data/indexes/master_index.md",
+      "size": 890,
+      "modified": "2025-08-01T16:07:23.837155",
+      "hash": "f658f93e2788c5e727ad60059bf98e1a2e0d1ce7f00606b21bfd8045169f0651"
+    },
+    {
+      "path": "processed_data/html_markdown/creatio_main_page.md",
+      "size": 69,
+      "modified": "2025-08-01T16:08:42.945107",
+      "hash": "057cfc114594406a4c4177fee513e71a56012cdb2bc2b8a1b50f0b98c6f912b5"
+    },
+    {
+      "path": "processed_data/html_markdown/course_page_raw.md",
+      "size": 1743,
+      "modified": "2025-08-01T16:08:42.945107",
+      "hash": "a7dd60f620930ee4135df23984a6bc691d2897511df91a8023982356b5838bac"
+    },
+    {
+      "path": "processed_data/html_markdown/creatio_training_page.md",
+      "size": 77,
+      "modified": "2025-08-01T16:08:42.949107",
+      "hash": "7c1aa8bfe637823b121df83d25c2236ec95e07f0f916fad795e6cba6c8bcf728"
+    },
+    {
+      "path": "backups/20250801_160658_creatio_courses.json",
+      "size": 22420,
+      "modified": "2025-08-01T15:46:12.374096",
+      "hash": "1a1d03c19646581cac83c49f0b219e6d952d9cad6a0c3d2610b25944f73aa437"
+    },
+    {
+      "path": "backups/20250801_160723_creatio_courses.json",
+      "size": 22420,
+      "modified": "2025-08-01T15:46:12.374096",
+      "hash": "1a1d03c19646581cac83c49f0b219e6d952d9cad6a0c3d2610b25944f73aa437"
+    },
+    {
+      "path": "backups/20250801_160723_creatio_courses.csv",
+      "size": 5560,
+      "modified": "2025-08-01T15:46:12.374096",
+      "hash": "d833744b2a0d7c3ff7421fa7762c09433fc8bb40dfdc020e4dadaf7919649b9b"
+    },
+    {
+      "path": "backups/20250801_160658_creatio_courses.csv",
+      "size": 5560,
+      "modified": "2025-08-01T15:46:12.374096",
+      "hash": "d833744b2a0d7c3ff7421fa7762c09433fc8bb40dfdc020e4dadaf7919649b9b"
+    }
+  ],
+  "total_files": 54,
+  "total_size": 207979
+}

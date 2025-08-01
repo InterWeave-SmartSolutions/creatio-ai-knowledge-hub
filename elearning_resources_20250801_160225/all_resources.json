@@ -1,0 +1,32 @@
+{
+  "tutorials": [],
+  "guides": [
+    {
+      "title": "Guides",
+      "url": "https://academy.creatio.com/docs/8.x",
+      "type": "guide",
+      "topic": "UI/UX",
+      "difficulty": "General",
+      "scraped_at": "2025-08-01T16:01:49.656127"
+    },
+    {
+      "title": "Getting started",
+      "url": "https://academy.creatio.com/docs/developer/getting_started",
+      "type": "guide",
+      "topic": "General",
+      "difficulty": "Beginner",
+      "scraped_at": "2025-08-01T16:01:49.656261"
+    },
+    {
+      "title": "Getting started",
+      "url": "https://academy.creatio.com/docs/getting_started",
+      "type": "guide",
+      "topic": "General",
+      "difficulty": "Beginner",
+      "scraped_at": "2025-08-01T16:01:49.656321"
+    }
+  ],
+  "best_practices": [],
+  "code_examples": [],
+  "forum_threads": []
+}

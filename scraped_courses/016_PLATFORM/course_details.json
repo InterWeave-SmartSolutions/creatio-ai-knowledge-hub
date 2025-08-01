@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/e-learning/platform",
+  "scraped_at": "2025-08-01T15:28:14.440645",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "PLATFORM"
+  },
+  "course_title": "PLATFORM"
+}

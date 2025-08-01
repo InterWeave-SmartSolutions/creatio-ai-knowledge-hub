@@ -1,0 +1,689 @@
+{
+  "scraped_at": "2025-08-01T15:46:12.374794",
+  "total_courses": 33,
+  "academy_url": "https://academy.creatio.com",
+  "courses": [
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Development on Creatio platform",
+      "url": "https://academy.creatio.com/training/development-creatio-platform-5",
+      "description": null,
+      "duration": "25 hours",
+      "level": "Beginner",
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:44:51.316975"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Creatio administration and configuration (AUS)",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-aus",
+      "description": null,
+      "duration": "27 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:44:53.732301"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Creatio administration and configuration (US)",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-us-0",
+      "description": null,
+      "duration": "27 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:44:56.189579"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Creatio.ai",
+      "url": "https://academy.creatio.com/training/creatioai-1",
+      "description": null,
+      "duration": "6 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:44:58.651443"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Development on Creatio platform",
+      "url": "https://academy.creatio.com/training/development-creatio-platform-4",
+      "description": null,
+      "duration": "25 hours",
+      "level": "Beginner",
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:01.154821"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Creatio administration and configuration (US)",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-us",
+      "description": null,
+      "duration": "27 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:03.599942"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Creatio administration and configuration",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-3",
+      "description": null,
+      "duration": "27 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:06.022086"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Service Creatio functionality for end-users",
+      "url": "https://academy.creatio.com/training/service-creatio-functionality-end-users",
+      "description": null,
+      "duration": "4 days",
+      "level": null,
+      "format": "Online",
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:08.372678"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Marketing Creatio functionality for end-users",
+      "url": "https://academy.creatio.com/training/marketing-creatio-functionality-end-users",
+      "description": null,
+      "duration": "4 days",
+      "level": null,
+      "format": "Online",
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:10.838092"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Full CRM bundle functionality for end-users",
+      "url": "https://academy.creatio.com/training/full-crm-bundle-functionality-end-users",
+      "description": null,
+      "duration": "8 days",
+      "level": null,
+      "format": "Online",
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:13.391257"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Sales Creatio functionality for end-users",
+      "url": "https://academy.creatio.com/training/sales-creatio-functionality-end-users",
+      "description": null,
+      "duration": "4 days",
+      "level": null,
+      "format": "Online",
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:15.866141"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Development on Creatio platform",
+      "url": "https://academy.creatio.com/training/development-creatio-platform-0",
+      "description": null,
+      "duration": "10 days",
+      "level": null,
+      "format": "Online",
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:18.521954"
+    },
+    {
+      "category": "Instructor-led Training",
+      "subcategory": null,
+      "title": "Creatio administration and configuration",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-0",
+      "description": null,
+      "duration": "10 days",
+      "level": null,
+      "format": "Online",
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:20.900453"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "NO-CODE PLAYBOOK: Creator",
+      "url": "https://academy.creatio.com/e-learning/no-code-playbook-creator",
+      "description": null,
+      "duration": "4 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:26.191248"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "No-code Playbook: Leader",
+      "url": "https://academy.creatio.com/e-learning/no-code-playbook-leader",
+      "description": null,
+      "duration": "4 hours",
+      "level": "Advanced",
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:28.754777"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "PLATFORM",
+      "url": "https://academy.creatio.com/e-learning/platform",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:31.209110"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "COMMON FEATURES",
+      "url": "https://academy.creatio.com/e-learning/common-features",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:33.533765"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "MARKETING TOOLS",
+      "url": "https://academy.creatio.com/e-learning/marketing-tools",
+      "description": null,
+      "duration": "2 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:35.919866"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "SALES TOOLS",
+      "url": "https://academy.creatio.com/e-learning/sales-tools",
+      "description": null,
+      "duration": "2 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:38.273453"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "SERVICE TOOLS",
+      "url": "https://academy.creatio.com/e-learning/service-tools",
+      "description": null,
+      "duration": "2 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:40.593000"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "SETUP AND ADMINISTRATION",
+      "url": "https://academy.creatio.com/e-learning/setup-and-administration",
+      "description": null,
+      "duration": "2 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:43.104602"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "DEVELOPMENT ON CREATIO PLATFORM",
+      "url": "https://academy.creatio.com/e-learning/development-creatio-platform",
+      "description": null,
+      "duration": "2 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:45.561291"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "BPM TOOLS",
+      "url": "https://academy.creatio.com/e-learning/bpm-tools",
+      "description": null,
+      "duration": "2 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:48.107617"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Creatio 8.3 Twin Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-83-twin-release-highlights",
+      "description": null,
+      "duration": "2 hours",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:50.460283"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Building Landing Pages with Creatio",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-building-landing-pages-creatio",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:52.816532"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Creatio 8.2.3 Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-823-release-highlights",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:55.180323"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Creatio 8.2.2 Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-822-release-highlights",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:57.529087"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Email Marketing – Mastering the New Email Designer",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-email-marketing-mastering-new-email-designer",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:45:59.883467"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Creatio AI",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-ai",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:46:02.409748"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Creatio 8.2 Energy Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-82-energy-release-highlights",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:46:04.798584"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Marketing emails",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-marketing-emails",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:46:07.363315"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: Creatio 8.1.4 Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-814-release-highlights",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:46:09.916895"
+    },
+    {
+      "category": "E-Learning",
+      "subcategory": null,
+      "title": "Tech Hour: 8.1.2 release highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-812-release-highlights",
+      "description": null,
+      "duration": "1 hour",
+      "level": null,
+      "format": null,
+      "price": null,
+      "language": "en",
+      "scraped_at": "2025-08-01T15:46:12.374072"
+    }
+  ],
+  "sitemap": {
+    "url": "https://academy.creatio.com",
+    "title": "Creatio Academy",
+    "total_courses": 33,
+    "last_updated": "2025-08-01T15:46:12.374774",
+    "categories": {
+      "Instructor-led Training": {
+        "title": "Instructor-led Training",
+        "course_count": 13,
+        "courses": [
+          {
+            "title": "Development on Creatio platform",
+            "url": "https://academy.creatio.com/training/development-creatio-platform-5",
+            "level": "Beginner",
+            "duration": "25 hours",
+            "format": ""
+          },
+          {
+            "title": "Creatio administration and configuration (AUS)",
+            "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-aus",
+            "level": "",
+            "duration": "27 hours",
+            "format": ""
+          },
+          {
+            "title": "Creatio administration and configuration (US)",
+            "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-us-0",
+            "level": "",
+            "duration": "27 hours",
+            "format": ""
+          },
+          {
+            "title": "Creatio.ai",
+            "url": "https://academy.creatio.com/training/creatioai-1",
+            "level": "",
+            "duration": "6 hours",
+            "format": ""
+          },
+          {
+            "title": "Development on Creatio platform",
+            "url": "https://academy.creatio.com/training/development-creatio-platform-4",
+            "level": "Beginner",
+            "duration": "25 hours",
+            "format": ""
+          },
+          {
+            "title": "Creatio administration and configuration (US)",
+            "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-us",
+            "level": "",
+            "duration": "27 hours",
+            "format": ""
+          },
+          {
+            "title": "Creatio administration and configuration",
+            "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-3",
+            "level": "",
+            "duration": "27 hours",
+            "format": ""
+          },
+          {
+            "title": "Service Creatio functionality for end-users",
+            "url": "https://academy.creatio.com/training/service-creatio-functionality-end-users",
+            "level": "",
+            "duration": "4 days",
+            "format": "Online"
+          },
+          {
+            "title": "Marketing Creatio functionality for end-users",
+            "url": "https://academy.creatio.com/training/marketing-creatio-functionality-end-users",
+            "level": "",
+            "duration": "4 days",
+            "format": "Online"
+          },
+          {
+            "title": "Full CRM bundle functionality for end-users",
+            "url": "https://academy.creatio.com/training/full-crm-bundle-functionality-end-users",
+            "level": "",
+            "duration": "8 days",
+            "format": "Online"
+          },
+          {
+            "title": "Sales Creatio functionality for end-users",
+            "url": "https://academy.creatio.com/training/sales-creatio-functionality-end-users",
+            "level": "",
+            "duration": "4 days",
+            "format": "Online"
+          },
+          {
+            "title": "Development on Creatio platform",
+            "url": "https://academy.creatio.com/training/development-creatio-platform-0",
+            "level": "",
+            "duration": "10 days",
+            "format": "Online"
+          },
+          {
+            "title": "Creatio administration and configuration",
+            "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-0",
+            "level": "",
+            "duration": "10 days",
+            "format": "Online"
+          }
+        ]
+      },
+      "E-Learning": {
+        "title": "E-Learning",
+        "course_count": 20,
+        "courses": [
+          {
+            "title": "NO-CODE PLAYBOOK: Creator",
+            "url": "https://academy.creatio.com/e-learning/no-code-playbook-creator",
+            "level": "",
+            "duration": "4 hours",
+            "format": ""
+          },
+          {
+            "title": "No-code Playbook: Leader",
+            "url": "https://academy.creatio.com/e-learning/no-code-playbook-leader",
+            "level": "Advanced",
+            "duration": "4 hours",
+            "format": ""
+          },
+          {
+            "title": "PLATFORM",
+            "url": "https://academy.creatio.com/e-learning/platform",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "COMMON FEATURES",
+            "url": "https://academy.creatio.com/e-learning/common-features",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "MARKETING TOOLS",
+            "url": "https://academy.creatio.com/e-learning/marketing-tools",
+            "level": "",
+            "duration": "2 hours",
+            "format": ""
+          },
+          {
+            "title": "SALES TOOLS",
+            "url": "https://academy.creatio.com/e-learning/sales-tools",
+            "level": "",
+            "duration": "2 hours",
+            "format": ""
+          },
+          {
+            "title": "SERVICE TOOLS",
+            "url": "https://academy.creatio.com/e-learning/service-tools",
+            "level": "",
+            "duration": "2 hours",
+            "format": ""
+          },
+          {
+            "title": "SETUP AND ADMINISTRATION",
+            "url": "https://academy.creatio.com/e-learning/setup-and-administration",
+            "level": "",
+            "duration": "2 hours",
+            "format": ""
+          },
+          {
+            "title": "DEVELOPMENT ON CREATIO PLATFORM",
+            "url": "https://academy.creatio.com/e-learning/development-creatio-platform",
+            "level": "",
+            "duration": "2 hours",
+            "format": ""
+          },
+          {
+            "title": "BPM TOOLS",
+            "url": "https://academy.creatio.com/e-learning/bpm-tools",
+            "level": "",
+            "duration": "2 hours",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Creatio 8.3 Twin Release Highlights",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-83-twin-release-highlights",
+            "level": "",
+            "duration": "2 hours",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Building Landing Pages with Creatio",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-building-landing-pages-creatio",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Creatio 8.2.3 Release Highlights",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-823-release-highlights",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Creatio 8.2.2 Release Highlights",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-822-release-highlights",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Email Marketing – Mastering the New Email Designer",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-email-marketing-mastering-new-email-designer",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Creatio AI",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-ai",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Creatio 8.2 Energy Release Highlights",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-82-energy-release-highlights",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Marketing emails",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-marketing-emails",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: Creatio 8.1.4 Release Highlights",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-814-release-highlights",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          },
+          {
+            "title": "Tech Hour: 8.1.2 release highlights",
+            "url": "https://academy.creatio.com/e-learning/tech-hour-812-release-highlights",
+            "level": "",
+            "duration": "1 hour",
+            "format": ""
+          }
+        ]
+      }
+    }
+  },
+  "processing_date": "2025-08-01T16:07:23.837391",
+  "duplicates_removed": 0
+}

@@ -1,0 +1,18 @@
+{
+  "scraped_at": "2025-08-01T16:04:31.656565",
+  "total_resources": 77,
+  "breakdown": {
+    "user_docs": 39,
+    "developer_docs": 38,
+    "api_references": 0,
+    "release_notes": 0,
+    "best_practices": 0
+  },
+  "topics": [
+    "User Guide",
+    "Release Notes",
+    "General",
+    "Administration",
+    "Development"
+  ]
+}

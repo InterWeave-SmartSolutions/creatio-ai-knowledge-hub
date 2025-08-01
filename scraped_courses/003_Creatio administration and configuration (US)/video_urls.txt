@@ -1,0 +1,7 @@
+Video URLs for Creatio administration and configuration (US)
+==================================================
+
+1. Video Link
+   URL: https://www.youtube.com/c/creatio
+   Type: link
+

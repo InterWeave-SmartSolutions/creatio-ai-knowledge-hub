@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/e-learning/tech-hour-812-release-highlights",
+  "scraped_at": "2025-08-01T15:28:59.412963",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "Tech Hour: 8.1.2 release highlights"
+  },
+  "course_title": "Tech Hour: 8.1.2 release highlights"
+}
