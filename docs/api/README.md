@@ -1,6 +1,16 @@
+---
+title: 'API Reference'
+tags: [docs, api]
+description:
+  'Auto-generated front matter for AI indexing. Improve this description.'
+source_path: 'docs/api/README.md'
+last_updated: '2025-08-06'
+---
+
 # API Reference
 
-Complete API reference for the Creatio AI Knowledge Hub MCP Server and related services.
+Complete API reference for the Creatio AI Knowledge Hub MCP Server and related
+services.
 
 ## Base Information
 
@@ -12,11 +22,13 @@ Complete API reference for the Creatio AI Knowledge Hub MCP Server and related s
 ## Authentication
 
 ### API Key Authentication
+
 ```http
 Authorization: Bearer your_api_key_here
 ```
 
 ### Session-based Authentication
+
 ```http
 Cookie: session_id=your_session_id
 ```
@@ -30,6 +42,7 @@ Cookie: session_id=your_session_id
 Check server status and basic system information.
 
 **Response:**
+
 ```json
 {
   "status": "healthy",
@@ -51,18 +64,22 @@ Check server status and basic system information.
 Search across all indexed content.
 
 **Parameters:**
+
 - `q` (string, required): Search query
-- `type` (string, optional): Content type filter (`documentation`, `video`, `pdf`, `all`)
+- `type` (string, optional): Content type filter (`documentation`, `video`,
+  `pdf`, `all`)
 - `limit` (integer, optional): Maximum results (default: 10, max: 100)
 - `offset` (integer, optional): Result offset for pagination
 - `sort` (string, optional): Sort order (`relevance`, `date`, `title`)
 
 **Example:**
+
 ```bash
 curl "http://localhost:8000/mcp/search?q=Creatio%20installation&type=video&limit=5"
 ```
 
 **Response:**
+
 ```json
 {
   "query": "Creatio installation",
@@ -94,6 +111,7 @@ curl "http://localhost:8000/mcp/search?q=Creatio%20installation&type=video&limit
 Advanced search with complex filtering and facets.
 
 **Request Body:**
+
 ```json
 {
   "query": "Creatio workflow configuration",
@@ -107,8 +125,8 @@ Advanced search with complex filtering and facets.
     "difficulty": ["beginner", "intermediate"]
   },
   "sort": [
-    {"field": "relevance", "order": "desc"},
-    {"field": "date", "order": "desc"}
+    { "field": "relevance", "order": "desc" },
+    { "field": "date", "order": "desc" }
   ],
   "facets": ["type", "tags", "difficulty", "source"],
   "highlight": {
@@ -127,11 +145,13 @@ Advanced search with complex filtering and facets.
 Retrieve full content details by ID.
 
 **Parameters:**
+
 - `content_id` (string, required): Unique content identifier
 - `include_related` (boolean, optional): Include related content
 - `format` (string, optional): Response format (`json`, `text`, `markdown`)
 
 **Response:**
+
 ```json
 {
   "id": "lf-yWsJ4p0Q",
@@ -176,6 +196,7 @@ Retrieve full content details by ID.
 Retrieve multiple content items in a single request.
 
 **Request Body:**
+
 ```json
 {
   "ids": ["lf-yWsJ4p0Q", "abc123", "def456"],
@@ -191,6 +212,7 @@ Retrieve multiple content items in a single request.
 Submit a video for processing.
 
 **Request Body:**
+
 ```json
 {
   "url": "https://youtube.com/watch?v=VIDEO_ID",
@@ -206,6 +228,7 @@ Submit a video for processing.
 ```
 
 **Response:**
+
 ```json
 {
   "task_id": "task_12345",
@@ -220,6 +243,7 @@ Submit a video for processing.
 Check processing status.
 
 **Response:**
+
 ```json
 {
   "task_id": "task_12345",
@@ -239,6 +263,7 @@ Check processing status.
 Get system statistics and usage metrics.
 
 **Response:**
+
 ```json
 {
   "content_stats": {
@@ -297,6 +322,7 @@ All WebSocket messages use JSON format:
 #### Search Streaming
 
 **Client → Server:**
+
 ```json
 {
   "type": "search_stream",
@@ -309,6 +335,7 @@ All WebSocket messages use JSON format:
 ```
 
 **Server → Client:**
+
 ```json
 {
   "type": "search_result",
@@ -327,6 +354,7 @@ All WebSocket messages use JSON format:
 #### Processing Updates
 
 **Server → Client:**
+
 ```json
 {
   "type": "processing_update",
@@ -342,6 +370,7 @@ All WebSocket messages use JSON format:
 #### System Notifications
 
 **Server → Client:**
+
 ```json
 {
   "type": "system_notification",
@@ -375,27 +404,27 @@ All WebSocket messages use JSON format:
 
 ### Common Error Codes
 
-| Code | HTTP Status | Description |
-|------|-------------|-------------|
-| `INVALID_QUERY` | 400 | Search query is invalid or malformed |
-| `CONTENT_NOT_FOUND` | 404 | Requested content ID does not exist |
-| `RATE_LIMIT_EXCEEDED` | 429 | API rate limit exceeded |
-| `PROCESSING_FAILED` | 422 | Content processing failed |
-| `UNAUTHORIZED` | 401 | Invalid or missing authentication |
-| `FORBIDDEN` | 403 | Insufficient permissions |
-| `INTERNAL_ERROR` | 500 | Server internal error |
-| `SERVICE_UNAVAILABLE` | 503 | Service temporarily unavailable |
+| Code                  | HTTP Status | Description                          |
+| --------------------- | ----------- | ------------------------------------ |
+| `INVALID_QUERY`       | 400         | Search query is invalid or malformed |
+| `CONTENT_NOT_FOUND`   | 404         | Requested content ID does not exist  |
+| `RATE_LIMIT_EXCEEDED` | 429         | API rate limit exceeded              |
+| `PROCESSING_FAILED`   | 422         | Content processing failed            |
+| `UNAUTHORIZED`        | 401         | Invalid or missing authentication    |
+| `FORBIDDEN`           | 403         | Insufficient permissions             |
+| `INTERNAL_ERROR`      | 500         | Server internal error                |
+| `SERVICE_UNAVAILABLE` | 503         | Service temporarily unavailable      |
 
 ## Rate Limiting
 
 ### Limits
 
 | Endpoint Category | Requests per Minute | Authenticated | Anonymous |
-|------------------|-------------------|---------------|-----------|
-| Search API | 100 | 1000 | 60 |
-| Content API | 200 | 2000 | 100 |
-| Processing API | 20 | 100 | 10 |
-| Analytics API | 60 | 300 | 30 |
+| ----------------- | ------------------- | ------------- | --------- |
+| Search API        | 100                 | 1000          | 60        |
+| Content API       | 200                 | 2000          | 100       |
+| Processing API    | 20                  | 100           | 10        |
+| Analytics API     | 60                  | 300           | 30        |
 
 ### Rate Limit Headers
 
@@ -445,19 +474,19 @@ import { MCPClient } from '@creatio/ai-hub-sdk';
 
 const client = new MCPClient({
   baseUrl: 'http://localhost:8000',
-  apiKey: 'your_api_key'
+  apiKey: 'your_api_key',
 });
 
 // Search with async/await
 const results = await client.search({
   query: 'Creatio installation',
   type: 'video',
-  limit: 10
+  limit: 10,
 });
 
 // WebSocket streaming
 const stream = client.createSearchStream();
-stream.on('result', (result) => {
+stream.on('result', result => {
   console.log('New result:', result);
 });
 stream.search('Creatio configuration');
@@ -466,6 +495,7 @@ stream.search('Creatio configuration');
 ### cURL Examples
 
 **Basic Search:**
+
 ```bash
 curl -X GET \
   "http://localhost:8000/mcp/search?q=Creatio%20installation&limit=5" \
@@ -473,6 +503,7 @@ curl -X GET \
 ```
 
 **Advanced Search:**
+
 ```bash
 curl -X POST \
   "http://localhost:8000/mcp/search/advanced" \
@@ -486,6 +517,7 @@ curl -X POST \
 ```
 
 **Process Video:**
+
 ```bash
 curl -X POST \
   "http://localhost:8000/mcp/process/video" \
@@ -500,6 +532,7 @@ curl -X POST \
 ## OpenAPI Specification
 
 The complete OpenAPI 3.0 specification is available at:
+
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 - **OpenAPI JSON**: http://localhost:8000/openapi.json
@@ -507,12 +540,14 @@ The complete OpenAPI 3.0 specification is available at:
 ## Changelog
 
 ### v1.0.0 (2025-01-27)
+
 - Initial API release
 - Search, content, and processing endpoints
 - WebSocket support for real-time updates
 - Authentication and rate limiting
 
 ### v1.1.0 (Planned)
+
 - Batch processing endpoints
 - Enhanced analytics
 - GraphQL support
@@ -520,4 +555,5 @@ The complete OpenAPI 3.0 specification is available at:
 
 ---
 
-For more examples and detailed integration guides, see the [Integration Examples](../examples/) section.
+For more examples and detailed integration guides, see the
+[Integration Examples](../examples/) section.

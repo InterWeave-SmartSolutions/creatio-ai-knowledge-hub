@@ -1,10 +1,22 @@
+---
+title: 'Video Processing Component'
+tags: [docs, components]
+description:
+  'Auto-generated front matter for AI indexing. Improve this description.'
+source_path: 'docs/components/video-processing.md'
+last_updated: '2025-08-06'
+---
+
 # Video Processing Component
 
-The Video Processing Component handles comprehensive video content management including download, transcription, analysis, and integration with the knowledge base.
+The Video Processing Component handles comprehensive video content management
+including download, transcription, analysis, and integration with the knowledge
+base.
 
 ## Overview
 
 This component provides:
+
 - Automated video discovery and download
 - AI-powered transcription using OpenAI Whisper
 - Video content analysis and summarization
@@ -22,7 +34,7 @@ graph TD
     E --> F[Content Analyzer]
     F --> G[Metadata Generator]
     G --> H[Knowledge Database]
-    
+
     I[YouTube API] --> B
     J[Direct URLs] --> B
     K[Embedded Content] --> B
@@ -33,12 +45,14 @@ graph TD
 ### 1. Video Discovery
 
 **Supported Sources:**
+
 - YouTube videos (embedded and direct)
 - Vimeo content
 - Direct video file URLs (.mp4, .webm, .mov)
 - iFrame embedded videos
 
 **Discovery Process:**
+
 ```python
 # Automatic video discovery from web pages
 from video_processing import VideoDiscoverer
@@ -50,6 +64,7 @@ videos = discoverer.discover_from_url('https://academy.creatio.com')
 ### 2. Download Management
 
 **Features:**
+
 - Concurrent downloading with rate limiting
 - Resume interrupted downloads
 - Quality selection and format preferences
@@ -57,6 +72,7 @@ videos = discoverer.discover_from_url('https://academy.creatio.com')
 - Thumbnail extraction
 
 **Download Configuration:**
+
 ```json
 {
   "download_settings": {
@@ -72,6 +88,7 @@ videos = discoverer.discover_from_url('https://academy.creatio.com')
 ### 3. Transcription Engine
 
 **Using OpenAI Whisper:**
+
 ```python
 from transcription_processor import TranscriptionProcessor
 
@@ -80,6 +97,7 @@ transcript = processor.transcribe_video('video.mp4')
 ```
 
 **Output Formats:**
+
 - Plain text transcription
 - Timestamped JSON format
 - WebVTT subtitle files
@@ -88,6 +106,7 @@ transcript = processor.transcribe_video('video.mp4')
 ### 4. Content Analysis
 
 **AI-Powered Analysis:**
+
 - Topic extraction and categorization
 - Key concept identification
 - Complexity assessment
@@ -97,6 +116,7 @@ transcript = processor.transcribe_video('video.mp4')
 ## File Organization
 
 ### Directory Structure
+
 ```
 videos/
 ├── tech-hour/
@@ -119,6 +139,7 @@ videos/
 ### Metadata Format
 
 **Video Information (video.info.json):**
+
 ```json
 {
   "id": "lf-yWsJ4p0Q",
@@ -136,6 +157,7 @@ videos/
 ```
 
 **Transcript Format (transcript_detailed.json):**
+
 ```json
 {
   "segments": [
@@ -222,12 +244,12 @@ video_processing:
     concurrent_limit: 3
     retry_attempts: 3
     timeout_seconds: 300
-    
+
   transcription:
-    model: "large-v2"
-    language: "auto"
+    model: 'large-v2'
+    language: 'auto'
     chunk_length: 30
-    
+
   analysis:
     extract_topics: true
     generate_summaries: true
@@ -391,6 +413,7 @@ python -m video_processing.report --period last_week
 ### Common Issues
 
 **Download failures:**
+
 ```bash
 # Check network connectivity
 ping youtube.com
@@ -403,6 +426,7 @@ pip install --upgrade yt-dlp
 ```
 
 **Transcription errors:**
+
 ```bash
 # Check audio extraction
 ffmpeg -i video.mp4 -vn -acodec pcm_s16le audio.wav
@@ -412,6 +436,7 @@ whisper audio.wav --model large-v2
 ```
 
 **Memory issues during processing:**
+
 ```python
 # Reduce batch size
 processor = TranscriptionProcessor(
@@ -450,13 +475,13 @@ except AnalysisError as e:
 class VideoProcessor:
     def __init__(self, config_path='config/video_processing.yaml'):
         """Initialize video processor with configuration."""
-        
+
     def process_video(self, url: str, output_dir: str = None) -> dict:
         """Process a single video from URL."""
-        
+
     def process_batch(self, urls: List[str], concurrent: int = 2) -> List[dict]:
         """Process multiple videos concurrently."""
-        
+
     def get_processing_status(self, video_id: str) -> dict:
         """Get processing status for a video."""
 ```
@@ -467,10 +492,10 @@ class VideoProcessor:
 class TranscriptionProcessor:
     def transcribe_video(self, video_path: str, model: str = 'large-v2') -> dict:
         """Transcribe video using Whisper."""
-        
+
     def transcribe_audio(self, audio_path: str) -> dict:
         """Transcribe audio file directly."""
-        
+
     def batch_transcribe(self, file_list: List[str]) -> List[dict]:
         """Batch transcribe multiple files."""
 ```
@@ -516,6 +541,7 @@ processor = VideoProcessor(content_filter=ContentFilter(filter_config))
 ---
 
 **Next Steps:**
+
 - Review [Content Processing Component](content-processing.md)
 - Explore [Search System](search-system.md)
 - Check [Troubleshooting Guide](../setup/troubleshooting.md)

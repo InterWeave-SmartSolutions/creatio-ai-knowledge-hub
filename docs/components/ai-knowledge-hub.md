@@ -1,10 +1,22 @@
+---
+title: 'AI Knowledge Hub Component'
+tags: [docs, components]
+description:
+  'Auto-generated front matter for AI indexing. Improve this description.'
+source_path: 'docs/components/ai-knowledge-hub.md'
+last_updated: '2025-08-06'
+---
+
 # AI Knowledge Hub Component
 
-The AI Knowledge Hub is the central processing engine that orchestrates content processing, indexing, and provides the MCP (Model Context Protocol) server interface for AI agents.
+The AI Knowledge Hub is the central processing engine that orchestrates content
+processing, indexing, and provides the MCP (Model Context Protocol) server
+interface for AI agents.
 
 ## Overview
 
 The AI Knowledge Hub serves as the main coordination layer for:
+
 - Content ingestion from multiple sources
 - AI-powered content processing and analysis
 - Knowledge base management and indexing
@@ -22,7 +34,7 @@ graph TD
     E --> F[Search Index]
     F --> G[MCP Server]
     G --> H[AI Agents]
-    
+
     I[Web Interface] --> G
     J[API Clients] --> G
 ```
@@ -34,6 +46,7 @@ graph TD
 The enhanced MCP server provides advanced capabilities for AI agent interaction:
 
 **Features:**
+
 - WebSocket and HTTP support
 - Real-time content streaming
 - Advanced query processing
@@ -41,6 +54,7 @@ The enhanced MCP server provides advanced capabilities for AI agent interaction:
 - Rate limiting and authentication
 
 **Key Endpoints:**
+
 ```python
 # Real-time search
 GET /mcp/search?q={query}&type={content_type}
@@ -55,6 +69,7 @@ POST /mcp/knowledge
 ### 2. Knowledge Database Integration
 
 **Database Structure:**
+
 ```
 ai_knowledge_hub/
 ├── knowledge_hub.db          # Main SQLite database
@@ -64,6 +79,7 @@ ai_knowledge_hub/
 ```
 
 **Key Features:**
+
 - Document embedding and vectorization
 - Semantic search capabilities
 - Content relationship mapping
@@ -72,6 +88,7 @@ ai_knowledge_hub/
 ### 3. Content Processing Pipeline
 
 **Processing Stages:**
+
 1. **Ingestion**: Content discovery and collection
 2. **Analysis**: AI-powered content analysis
 3. **Extraction**: Key information extraction
@@ -104,6 +121,7 @@ ai_knowledge_hub/
 ### Environment Variables
 
 Required environment variables:
+
 ```bash
 # OpenAI Configuration
 OPENAI_API_KEY=your_api_key_here
@@ -131,6 +149,7 @@ python ai_knowledge_hub/enhanced_mcp_server.py
 ### Query Examples
 
 **Search for content:**
+
 ```python
 import requests
 
@@ -145,23 +164,28 @@ response = requests.get(
 ```
 
 **Real-time content streaming:**
+
 ```javascript
 const ws = new WebSocket('ws://localhost:8001/mcp/stream');
-ws.send(JSON.stringify({
+ws.send(
+  JSON.stringify({
     action: 'search',
-    query: 'business process configuration'
-}));
+    query: 'business process configuration',
+  })
+);
 ```
 
 ## Performance Metrics
 
 ### Processing Capabilities
+
 - **Content Processing**: 1000+ documents/hour
 - **Search Response**: <100ms average
 - **Concurrent Users**: 50+ simultaneous connections
 - **Database Size**: 1.4GB+ indexed content
 
 ### Resource Usage
+
 - **Memory**: 512MB-2GB depending on workload
 - **CPU**: Multi-core processing for embeddings
 - **Disk**: SSD recommended for search performance
@@ -170,6 +194,7 @@ ws.send(JSON.stringify({
 ## Monitoring and Logging
 
 ### Log Files
+
 ```
 ai_knowledge_hub/
 ├── logs/
@@ -231,6 +256,7 @@ processor.process(
 ### Common Issues
 
 **Server won't start:**
+
 ```bash
 # Check port availability
 lsof -i :8000
@@ -240,6 +266,7 @@ python -c "import json; print(json.load(open('mcp_server_config.json')))"
 ```
 
 **Database connection errors:**
+
 ```bash
 # Check database file permissions
 ls -la knowledge_hub.db
@@ -249,6 +276,7 @@ python -c "from ai_knowledge_hub import rebuild_database; rebuild_database()"
 ```
 
 **Search performance issues:**
+
 ```bash
 # Rebuild search indexes
 python -c "from ai_knowledge_hub import rebuild_indexes; rebuild_indexes()"
@@ -264,12 +292,14 @@ du -sh search_index/
 **Endpoint:** `GET /mcp/search`
 
 **Parameters:**
+
 - `q` (string): Search query
 - `type` (string): Content type filter
 - `limit` (int): Maximum results
 - `offset` (int): Result offset
 
 **Response:**
+
 ```json
 {
   "results": [
@@ -292,6 +322,7 @@ du -sh search_index/
 **Endpoint:** `POST /mcp/knowledge`
 
 **Request Body:**
+
 ```json
 {
   "content_id": "doc_123",
@@ -301,6 +332,7 @@ du -sh search_index/
 ```
 
 **Response:**
+
 ```json
 {
   "content": {
@@ -318,6 +350,7 @@ du -sh search_index/
 ### Adding New Content Sources
 
 1. Create source configuration:
+
 ```python
 source_config = {
     'name': 'custom_source',
@@ -331,6 +364,7 @@ source_config = {
 ```
 
 2. Register with processor:
+
 ```python
 processor.register_source(source_config)
 ```
@@ -344,7 +378,7 @@ class CustomProcessor(BaseProcessor):
     def process_content(self, content):
         # Custom processing logic
         return processed_content
-    
+
     def extract_metadata(self, content):
         # Custom metadata extraction
         return metadata
@@ -377,6 +411,7 @@ headers = {
 ---
 
 **Next Steps:**
+
 - Review [Video Processing Component](video-processing.md)
 - Explore [Search System](search-system.md)
 - Check [API Reference](../api/README.md)

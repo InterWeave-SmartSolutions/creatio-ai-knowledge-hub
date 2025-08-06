@@ -1,6 +1,16 @@
+---
+title: 'Troubleshooting Guide'
+tags: [docs, setup]
+description:
+  'Auto-generated front matter for AI indexing. Improve this description.'
+source_path: 'docs/setup/troubleshooting.md'
+last_updated: '2025-08-06'
+---
+
 # Troubleshooting Guide
 
-Comprehensive troubleshooting guide with decision trees and step-by-step solutions.
+Comprehensive troubleshooting guide with decision trees and step-by-step
+solutions.
 
 ## 🔍 Quick Diagnosis
 
@@ -17,19 +27,19 @@ graph TD
     F -->|Yes| H{Performance problems?}
     H -->|Yes| I[Performance Issues]
     H -->|No| J[Check Configuration]
-    
+
     C --> C1[Server Startup Problems]
     C --> C2[Port/Network Issues]
     C --> C3[Database Connection]
-    
+
     E --> E1[Search Index Issues]
     E --> E2[API Response Errors]
     E --> E3[Empty Results]
-    
+
     G --> G1[Video Processing]
     G --> G2[Content Ingestion]
     G --> G3[Transcription Failures]
-    
+
     I --> I1[Memory Issues]
     I --> I2[CPU Performance]
     I --> I3[Storage Problems]
@@ -40,11 +50,13 @@ graph TD
 ### Server Won't Start
 
 #### Symptoms
+
 - `Connection refused` errors
 - Server process doesn't start
 - Port binding errors
 
 #### Decision Tree
+
 ```mermaid
 graph TD
     A[Server Won't Start] --> B{Check port availability}
@@ -61,6 +73,7 @@ graph TD
 #### Step-by-Step Solutions
 
 **1. Port Already in Use**
+
 ```bash
 # Check what's using the port
 lsof -i :8000
@@ -75,6 +88,7 @@ python ai_knowledge_hub/enhanced_mcp_server.py
 ```
 
 **2. Python Environment Issues**
+
 ```bash
 # Verify Python version
 python --version  # Should be 3.8+
@@ -88,6 +102,7 @@ source venv/bin/activate
 ```
 
 **3. Missing Dependencies**
+
 ```bash
 # Reinstall all dependencies
 pip install --upgrade -r requirements.txt
@@ -103,6 +118,7 @@ brew install python ffmpeg
 ```
 
 **4. Configuration Errors**
+
 ```bash
 # Check configuration syntax
 python -c "
@@ -122,6 +138,7 @@ cp config/mcp_server_config.default.json ai_knowledge_hub/mcp_server_config.json
 ### Database Connection Issues
 
 #### Symptoms
+
 - Database locked errors
 - SQLite connection failures
 - Data not persisting
@@ -129,6 +146,7 @@ cp config/mcp_server_config.default.json ai_knowledge_hub/mcp_server_config.json
 #### Solutions
 
 **1. Database File Permissions**
+
 ```bash
 # Check database file
 ls -la ai_knowledge_hub/knowledge_hub.db
@@ -139,6 +157,7 @@ chown $USER:$USER ai_knowledge_hub/knowledge_hub.db
 ```
 
 **2. Database Corruption**
+
 ```bash
 # Test database integrity
 sqlite3 ai_knowledge_hub/knowledge_hub.db "PRAGMA integrity_check;"
@@ -149,6 +168,7 @@ python -m ai_knowledge_hub.setup --reset-db
 ```
 
 **3. Multiple Connections**
+
 ```bash
 # Check for stuck connections
 lsof ai_knowledge_hub/knowledge_hub.db
@@ -162,6 +182,7 @@ ps aux | grep python | grep mcp_server
 ### No Search Results
 
 #### Decision Tree
+
 ```mermaid
 graph TD
     A[No Search Results] --> B{Is search index built?}
@@ -176,6 +197,7 @@ graph TD
 #### Solutions
 
 **1. Missing Search Index**
+
 ```bash
 # Check if index exists
 ls -la ai_knowledge_hub/search_index/
@@ -189,6 +211,7 @@ indexer.build_indexes()
 ```
 
 **2. Empty Database**
+
 ```bash
 # Check database content
 sqlite3 ai_knowledge_hub/knowledge_hub.db "SELECT COUNT(*) FROM content;"
@@ -198,6 +221,7 @@ sqlite3 ai_knowledge_hub/knowledge_hub.db "SELECT COUNT(*) FROM content;"
 ```
 
 **3. Search Query Issues**
+
 ```bash
 # Test different query types
 curl "http://localhost:8000/mcp/search?q=creatio"
@@ -207,6 +231,7 @@ curl "http://localhost:8000/mcp/search?q=installation&type=documentation"
 ### Search Performance Issues
 
 #### Symptoms
+
 - Slow search responses (>5 seconds)
 - Memory spikes during search
 - Search timeouts
@@ -214,6 +239,7 @@ curl "http://localhost:8000/mcp/search?q=installation&type=documentation"
 #### Solutions
 
 **1. Index Optimization**
+
 ```bash
 # Rebuild optimized indexes
 python -c "
@@ -224,6 +250,7 @@ indexer.optimize_indexes()
 ```
 
 **2. Memory Management**
+
 ```bash
 # Check memory usage
 ps aux | grep python | grep mcp_server
@@ -237,6 +264,7 @@ curl "http://localhost:8000/mcp/search?q=creatio&limit=10"
 ### Video Download Failures
 
 #### Decision Tree
+
 ```mermaid
 graph TD
     A[Video Download Failed] --> B{Check URL validity}
@@ -253,6 +281,7 @@ graph TD
 #### Solutions
 
 **1. Update Video Downloader**
+
 ```bash
 # Update yt-dlp
 pip install --upgrade yt-dlp
@@ -263,6 +292,7 @@ yt-dlp "https://youtube.com/watch?v=VIDEO_ID" -F
 ```
 
 **2. Network Connectivity**
+
 ```bash
 # Test network
 ping youtube.com
@@ -273,6 +303,7 @@ export https_proxy=http://proxy:port
 ```
 
 **3. Storage and Permissions**
+
 ```bash
 # Check disk space
 df -h .
@@ -288,6 +319,7 @@ mkdir -p videos/tech-hour/
 ### Transcription Failures
 
 #### Symptoms
+
 - Whisper fails to start
 - Audio extraction errors
 - Out of memory errors
@@ -295,6 +327,7 @@ mkdir -p videos/tech-hour/
 #### Solutions
 
 **1. Whisper Installation**
+
 ```bash
 # Reinstall Whisper
 pip uninstall openai-whisper
@@ -305,6 +338,7 @@ whisper --help
 ```
 
 **2. Audio Extraction**
+
 ```bash
 # Test ffmpeg
 ffmpeg -version
@@ -314,6 +348,7 @@ ffmpeg -i video.mp4 -vn -acodec pcm_s16le audio.wav
 ```
 
 **3. Memory Management**
+
 ```bash
 # Use smaller Whisper model
 export WHISPER_MODEL=base
@@ -330,6 +365,7 @@ processor = TranscriptionProcessor(chunk_length=30)
 ### High Memory Usage
 
 #### Diagnostic Commands
+
 ```bash
 # Monitor memory usage
 top -p $(pgrep -f mcp_server)
@@ -346,6 +382,7 @@ print(f'Memory: {process.memory_info().rss / 1024 / 1024:.1f} MB')
 #### Solutions
 
 **1. Reduce Memory Footprint**
+
 ```bash
 # Limit concurrent processes
 export MAX_CONCURRENT_PROCESSES=1
@@ -356,6 +393,7 @@ export EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 ```
 
 **2. Optimize Database Queries**
+
 ```bash
 # Add database indexes
 sqlite3 ai_knowledge_hub/knowledge_hub.db "
@@ -367,6 +405,7 @@ CREATE INDEX IF NOT EXISTS idx_content_source ON content(source);
 ### Slow Processing
 
 #### Decision Tree
+
 ```mermaid
 graph TD
     A[Slow Processing] --> B{Check CPU usage}
@@ -381,6 +420,7 @@ graph TD
 #### Solutions
 
 **1. CPU Optimization**
+
 ```bash
 # Check CPU cores
 nproc
@@ -390,6 +430,7 @@ export MAX_WORKERS=$(nproc)
 ```
 
 **2. Disk I/O Optimization**
+
 ```bash
 # Check disk usage
 iostat -x 1 5
@@ -404,6 +445,7 @@ sqlite3 ai_knowledge_hub/knowledge_hub.db "PRAGMA journal_mode=WAL;"
 ### Environment Variables
 
 #### Check Current Configuration
+
 ```bash
 # Display current environment
 python -c "
@@ -415,6 +457,7 @@ print('OPENAI_API_KEY:', 'Set' if os.getenv('OPENAI_API_KEY') else 'Not set')
 ```
 
 #### Fix Common Issues
+
 ```bash
 # Create .env file if missing
 cat > .env << EOF
@@ -432,6 +475,7 @@ source .env
 ### JSON Configuration Errors
 
 #### Validate Configuration
+
 ```bash
 # Check JSON syntax
 python -m json.tool ai_knowledge_hub/mcp_server_config.json
@@ -523,12 +567,14 @@ if __name__ == "__main__":
 ### Log Analysis
 
 **Server Logs:**
+
 ```bash
 tail -f logs/mcp_server.log
 grep ERROR logs/mcp_server.log
 ```
 
 **Processing Logs:**
+
 ```bash
 tail -f logs/processing.log
 grep -i "failed\|error" logs/processing.log
@@ -537,12 +583,14 @@ grep -i "failed\|error" logs/processing.log
 ### Debug Mode
 
 **Start server in debug mode:**
+
 ```bash
 export DEBUG=1
 python ai_knowledge_hub/enhanced_mcp_server.py
 ```
 
 **Enable verbose logging:**
+
 ```bash
 export LOG_LEVEL=DEBUG
 python ai_knowledge_hub/enhanced_mcp_server.py
@@ -551,6 +599,7 @@ python ai_knowledge_hub/enhanced_mcp_server.py
 ### Reset Everything
 
 **Complete system reset:**
+
 ```bash
 #!/bin/bash
 # save as reset_system.sh
@@ -578,20 +627,27 @@ echo "System reset complete!"
 ## Common Error Messages
 
 ### `ModuleNotFoundError: No module named 'ai_knowledge_hub'`
-**Solution:** Activate virtual environment and ensure you're in the project directory
+
+**Solution:** Activate virtual environment and ensure you're in the project
+directory
 
 ### `sqlite3.OperationalError: database is locked`
+
 **Solution:** Close all connections and restart the server
 
 ### `ConnectionError: Connection refused`
+
 **Solution:** Check if server is running and port is correct
 
 ### `FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'`
+
 **Solution:** Install ffmpeg system package
 
 ### `RuntimeError: Model 'large-v2' not found`
+
 **Solution:** Use a smaller model like 'base' or ensure enough memory
 
 ---
 
-**Still having issues?** Check the [FAQ](faq.md) or create an issue in the repository.
+**Still having issues?** Check the [FAQ](faq.md) or create an issue in the
+repository.

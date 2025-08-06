@@ -1,3 +1,12 @@
+---
+title: 'Documentation Directory'
+tags: [documentation, metadata]
+description:
+  'Auto-generated front matter for AI indexing. Improve this description.'
+source_path: 'documentation/metadata/README.md'
+last_updated: '2025-08-06'
+---
+
 # Documentation Directory
 
 ## Overview
