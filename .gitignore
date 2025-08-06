@@ -229,3 +229,20 @@ ai_optimization/__pycache__/
 # Installation files
 creatio_installer*
 >>>>>>> origin/main
+
+# Ignore raw URL lists to prevent uploading actual URLs
+scraped_courses/*/video_urls.txt
+**/*_urls.txt
+**/*_urls.csv
+**/*_urls.json
+**/url_list.txt
+**/url_list.csv
+**/url_list.json
+
+# Backups containing course URL data
+backups/*_*_creatio_courses.csv
+backups/*_*_creatio_courses.json
+
+# Cloud backup raw URL data
+cloud_backup/data/json/creatio_courses.json
+cloud_backup/data/csv/creatio_courses.csv
