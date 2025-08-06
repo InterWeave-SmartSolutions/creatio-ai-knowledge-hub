@@ -13,9 +13,14 @@ echo "[INFO] Using config: $ROOT_DIR/config.yaml" | tee -a "$LOG"
 # Example steps (idempotent; skip if outputs exist)
 # Idempotence guards: skip steps if outputs present
 set -x
+# Academy docs scraper
 [ -d "$OUT_DIR/academy_docs" ] || python3 "$ROOT_DIR/academy_docs_scraper.py" --config "$ROOT_DIR/config.yaml" --out "$OUT_DIR/academy_docs" 2>&1 | tee -a "$LOG" || true
+# Public structure analyzer (consumes academy_docs)
 [ -d "$OUT_DIR/structure" ] || python3 "$ROOT_DIR/analyze_creatio_structure.py" --config "$ROOT_DIR/config.yaml" --in "$OUT_DIR/academy_docs" --out "$OUT_DIR/structure" 2>&1 | tee -a "$LOG" || true
+# Public solutions scraper
 [ -d "$OUT_DIR/solutions" ] || python3 "$ROOT_DIR/comprehensive_solutions_scraper.py" --config "$ROOT_DIR/config.yaml" --out "$OUT_DIR/solutions" 2>&1 | tee -a "$LOG" || true
+# Authenticated knowledge hub scraper
+[ -d "$OUT_DIR/authenticated" ] || python3 "$ROOT_DIR/authenticated_knowledge_hub_scraper.py" --config "$ROOT_DIR/config.yaml" --out "$OUT_DIR/authenticated" 2>&1 | tee -a "$LOG" || true
 set +x
 
 echo "[INFO] Pipeline complete" | tee -a "$LOG"
