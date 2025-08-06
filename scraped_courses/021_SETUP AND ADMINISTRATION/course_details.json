@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/e-learning/setup-and-administration",
+  "scraped_at": "2025-08-01T15:28:28.063109",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "SETUP AND ADMINISTRATION"
+  },
+  "course_title": "SETUP AND ADMINISTRATION"
+}

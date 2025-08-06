@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/e-learning/tech-hour-building-landing-pages-creatio",
+  "scraped_at": "2025-08-01T15:28:38.614845",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "Tech Hour: Building Landing Pages with Creatio"
+  },
+  "course_title": "Tech Hour: Building Landing Pages with Creatio"
+}

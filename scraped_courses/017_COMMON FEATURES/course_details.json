@@ -1,0 +1,20 @@
+{
+  "url": "https://academy.creatio.com/e-learning/common-features",
+  "scraped_at": "2025-08-01T15:28:17.013104",
+  "description": "",
+  "prerequisites": [],
+  "objectives": [],
+  "materials": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/c/creatio",
+      "type": "link",
+      "title": "Video Link"
+    }
+  ],
+  "slides": [],
+  "additional_info": {
+    "title": "COMMON FEATURES"
+  },
+  "course_title": "COMMON FEATURES"
+}

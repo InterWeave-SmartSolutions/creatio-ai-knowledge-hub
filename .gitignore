@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+.env/
+.env
+
+>>>>>>> origin/main
 # Dependencies
 node_modules/
 npm-debug.log*
@@ -22,6 +38,11 @@ out/
 *.userosscache
 *.sln.docstates
 .idea/
+<<<<<<< HEAD
+=======
+*.swp
+*.swo
+>>>>>>> origin/main
 
 # OS generated files
 .DS_Store
@@ -116,9 +137,14 @@ jspm_packages/
 .tern-port
 
 # Creatio specific
+<<<<<<< HEAD
 packages/
 App_Data/
 Logs/
+=======
+# packages/ - now tracking this
+App_Data/
+>>>>>>> origin/main
 WorkspaceConsole/
 Bin/
 Files/
@@ -129,15 +155,31 @@ Terrasoft.WebApp/
 *.mdf
 *.ldf
 *.bak
+<<<<<<< HEAD
+=======
+*.db
+*.sqlite
+*.sqlite3
+knowledge_hub.db
+>>>>>>> origin/main
 
 # Configuration files with sensitive data
 ConnectionStrings.config
 web.config.user
+<<<<<<< HEAD
+=======
+credentials.json
+secrets.json
+>>>>>>> origin/main
 
 # Temporary files
 *.tmp
 *.temp
 *~
+<<<<<<< HEAD
+=======
+*.cache
+>>>>>>> origin/main
 
 # Backup files
 *.backup
@@ -150,6 +192,7 @@ web.config.user
 *.7z
 *.tar.gz
 
+<<<<<<< HEAD
 # Virtual environments
 venv/
 env/
@@ -166,3 +209,23 @@ creatio-academy-archive/
 *.sqlite
 *.sqlite3
 knowledge_hub.db
+=======
+# Large media files
+*.wav
+*.mp4
+*.avi
+*.mov
+*.webm
+*.mkv
+*.gif
+
+# Video files in videos directory (too large for GitHub)
+videos/**/*.mp4
+
+# Large data directories - exclude video content but keep scripts
+ai_optimization/creatio-academy-db/developer_course/videos/
+ai_optimization/__pycache__/
+
+# Installation files
+creatio_installer*
+>>>>>>> origin/main

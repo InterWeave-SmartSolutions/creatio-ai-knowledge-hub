@@ -1,0 +1,274 @@
+{
+  "start_time": "2025-08-01T15:27:32.278390",
+  "total_courses": 33,
+  "successful": 33,
+  "failed": 0,
+  "courses_processed": [
+    {
+      "index": 1,
+      "title": "Development on Creatio platform",
+      "url": "https://academy.creatio.com/training/development-creatio-platform-5",
+      "directory": "001_Development on Creatio platform",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:33.372226"
+    },
+    {
+      "index": 2,
+      "title": "Creatio administration and configuration (AUS)",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-aus",
+      "directory": "002_Creatio administration and configuration (AUS)",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:36.278379"
+    },
+    {
+      "index": 3,
+      "title": "Creatio administration and configuration (US)",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-us-0",
+      "directory": "003_Creatio administration and configuration (US)",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:38.983638"
+    },
+    {
+      "index": 4,
+      "title": "Creatio.ai",
+      "url": "https://academy.creatio.com/training/creatioai-1",
+      "directory": "004_Creatio.ai",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:41.948689"
+    },
+    {
+      "index": 5,
+      "title": "Development on Creatio platform",
+      "url": "https://academy.creatio.com/training/development-creatio-platform-4",
+      "directory": "005_Development on Creatio platform",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:44.694425"
+    },
+    {
+      "index": 6,
+      "title": "Creatio administration and configuration (US)",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-us",
+      "directory": "006_Creatio administration and configuration (US)",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:47.383435"
+    },
+    {
+      "index": 7,
+      "title": "Creatio administration and configuration",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-3",
+      "directory": "007_Creatio administration and configuration",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:50.007177"
+    },
+    {
+      "index": 8,
+      "title": "Service Creatio functionality for end-users",
+      "url": "https://academy.creatio.com/training/service-creatio-functionality-end-users",
+      "directory": "008_Service Creatio functionality for end-users",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:52.563200"
+    },
+    {
+      "index": 9,
+      "title": "Marketing Creatio functionality for end-users",
+      "url": "https://academy.creatio.com/training/marketing-creatio-functionality-end-users",
+      "directory": "009_Marketing Creatio functionality for end-users",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:55.361892"
+    },
+    {
+      "index": 10,
+      "title": "Full CRM bundle functionality for end-users",
+      "url": "https://academy.creatio.com/training/full-crm-bundle-functionality-end-users",
+      "directory": "010_Full CRM bundle functionality for end-users",
+      "success": true,
+      "timestamp": "2025-08-01T15:27:57.977949"
+    },
+    {
+      "index": 11,
+      "title": "Sales Creatio functionality for end-users",
+      "url": "https://academy.creatio.com/training/sales-creatio-functionality-end-users",
+      "directory": "011_Sales Creatio functionality for end-users",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:00.609862"
+    },
+    {
+      "index": 12,
+      "title": "Development on Creatio platform",
+      "url": "https://academy.creatio.com/training/development-creatio-platform-0",
+      "directory": "012_Development on Creatio platform",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:03.680439"
+    },
+    {
+      "index": 13,
+      "title": "Creatio administration and configuration",
+      "url": "https://academy.creatio.com/training/creatio-administration-and-configuration-0",
+      "directory": "013_Creatio administration and configuration",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:06.301494"
+    },
+    {
+      "index": 14,
+      "title": "NO-CODE PLAYBOOK: Creator",
+      "url": "https://academy.creatio.com/e-learning/no-code-playbook-creator",
+      "directory": "014_NO-CODE PLAYBOOK_ Creator",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:08.954867"
+    },
+    {
+      "index": 15,
+      "title": "No-code Playbook: Leader",
+      "url": "https://academy.creatio.com/e-learning/no-code-playbook-leader",
+      "directory": "015_No-code Playbook_ Leader",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:11.845447"
+    },
+    {
+      "index": 16,
+      "title": "PLATFORM",
+      "url": "https://academy.creatio.com/e-learning/platform",
+      "directory": "016_PLATFORM",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:14.451258"
+    },
+    {
+      "index": 17,
+      "title": "COMMON FEATURES",
+      "url": "https://academy.creatio.com/e-learning/common-features",
+      "directory": "017_COMMON FEATURES",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:17.023138"
+    },
+    {
+      "index": 18,
+      "title": "MARKETING TOOLS",
+      "url": "https://academy.creatio.com/e-learning/marketing-tools",
+      "directory": "018_MARKETING TOOLS",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:19.675396"
+    },
+    {
+      "index": 19,
+      "title": "SALES TOOLS",
+      "url": "https://academy.creatio.com/e-learning/sales-tools",
+      "directory": "019_SALES TOOLS",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:22.405414"
+    },
+    {
+      "index": 20,
+      "title": "SERVICE TOOLS",
+      "url": "https://academy.creatio.com/e-learning/service-tools",
+      "directory": "020_SERVICE TOOLS",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:24.995627"
+    },
+    {
+      "index": 21,
+      "title": "SETUP AND ADMINISTRATION",
+      "url": "https://academy.creatio.com/e-learning/setup-and-administration",
+      "directory": "021_SETUP AND ADMINISTRATION",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:28.072813"
+    },
+    {
+      "index": 22,
+      "title": "DEVELOPMENT ON CREATIO PLATFORM",
+      "url": "https://academy.creatio.com/e-learning/development-creatio-platform",
+      "directory": "022_DEVELOPMENT ON CREATIO PLATFORM",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:30.797292"
+    },
+    {
+      "index": 23,
+      "title": "BPM TOOLS",
+      "url": "https://academy.creatio.com/e-learning/bpm-tools",
+      "directory": "023_BPM TOOLS",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:33.574799"
+    },
+    {
+      "index": 24,
+      "title": "Tech Hour: Creatio 8.3 Twin Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-83-twin-release-highlights",
+      "directory": "024_Tech Hour_ Creatio 8.3 Twin Release Highlights",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:36.116909"
+    },
+    {
+      "index": 25,
+      "title": "Tech Hour: Building Landing Pages with Creatio",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-building-landing-pages-creatio",
+      "directory": "025_Tech Hour_ Building Landing Pages with Creatio",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:38.624925"
+    },
+    {
+      "index": 26,
+      "title": "Tech Hour: Creatio 8.2.3 Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-823-release-highlights",
+      "directory": "026_Tech Hour_ Creatio 8.2.3 Release Highlights",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:41.154652"
+    },
+    {
+      "index": 27,
+      "title": "Tech Hour: Creatio 8.2.2 Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-822-release-highlights",
+      "directory": "027_Tech Hour_ Creatio 8.2.2 Release Highlights",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:43.903143"
+    },
+    {
+      "index": 28,
+      "title": "Tech Hour: Email Marketing – Mastering the New Email Designer",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-email-marketing-mastering-new-email-designer",
+      "directory": "028_Tech Hour_ Email Marketing – Mastering the New Email Designer",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:46.459148"
+    },
+    {
+      "index": 29,
+      "title": "Tech Hour: Creatio AI",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-ai",
+      "directory": "029_Tech Hour_ Creatio AI",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:48.973256"
+    },
+    {
+      "index": 30,
+      "title": "Tech Hour: Creatio 8.2 Energy Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-82-energy-release-highlights",
+      "directory": "030_Tech Hour_ Creatio 8.2 Energy Release Highlights",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:51.500086"
+    },
+    {
+      "index": 31,
+      "title": "Tech Hour: Marketing emails",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-marketing-emails",
+      "directory": "031_Tech Hour_ Marketing emails",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:54.347450"
+    },
+    {
+      "index": 32,
+      "title": "Tech Hour: Creatio 8.1.4 Release Highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-creatio-814-release-highlights",
+      "directory": "032_Tech Hour_ Creatio 8.1.4 Release Highlights",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:56.859844"
+    },
+    {
+      "index": 33,
+      "title": "Tech Hour: 8.1.2 release highlights",
+      "url": "https://academy.creatio.com/e-learning/tech-hour-812-release-highlights",
+      "directory": "033_Tech Hour_ 8.1.2 release highlights",
+      "success": true,
+      "timestamp": "2025-08-01T15:28:59.423127"
+    }
+  ],
+  "last_updated": "2025-08-01T15:28:59.423147",
+  "end_time": "2025-08-01T15:29:01.424064"
+}
