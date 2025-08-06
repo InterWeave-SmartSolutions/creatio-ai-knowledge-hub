@@ -1,14 +1,26 @@
+---
+title: '🔧 Troubleshooting FAQ'
+tags: [docs]
+description:
+  'Auto-generated front matter for AI indexing. Improve this description.'
+source_path: 'docs/TROUBLESHOOTING_FAQ.md'
+last_updated: '2025-08-06'
+---
+
 # 🔧 Troubleshooting FAQ
 
-Comprehensive troubleshooting guide with solutions for common issues in the Creatio AI Knowledge Hub.
+Comprehensive troubleshooting guide with solutions for common issues in the
+Creatio AI Knowledge Hub.
 
 ## 🚨 Critical Issues
 
 ### Q: Server won't start - "Address already in use" error
 
-**Symptoms**: `OSError: [Errno 98] Address already in use` when starting the server
+**Symptoms**: `OSError: [Errno 98] Address already in use` when starting the
+server
 
 **Solutions**:
+
 ```bash
 # Method 1: Find and kill the process using port 8000
 lsof -i :8000
@@ -21,7 +33,8 @@ python -m uvicorn ai_knowledge_hub.enhanced_mcp_server:app --port 8001
 pkill -f python
 ```
 
-**Prevention**: Always stop the server properly with `Ctrl+C` instead of closing the terminal.
+**Prevention**: Always stop the server properly with `Ctrl+C` instead of closing
+the terminal.
 
 ---
 
@@ -30,6 +43,7 @@ pkill -f python
 **Symptoms**: `sqlite3.OperationalError: database is locked`
 
 **Solutions**:
+
 ```bash
 # Method 1: Check for open connections
 lsof ai_knowledge_hub/knowledge_hub.db
@@ -42,7 +56,8 @@ kill -9 <PID>
 sudo reboot
 ```
 
-**Root Cause**: Multiple processes trying to access SQLite database simultaneously.
+**Root Cause**: Multiple processes trying to access SQLite database
+simultaneously.
 
 ---
 
@@ -51,6 +66,7 @@ sudo reboot
 **Symptoms**: `ModuleNotFoundError: No module named 'fastapi'`
 
 **Solutions**:
+
 ```bash
 # Check if virtual environment is activated
 which python  # Should show path to venv/bin/python
@@ -78,6 +94,7 @@ python -c "import fastapi; print('✅ FastAPI installed')"
 **Symptoms**: `sqlite3.OperationalError: unable to open database file`
 
 **Solutions**:
+
 ```bash
 # Check if database file exists
 ls -la ai_knowledge_hub/knowledge_hub.db
@@ -105,6 +122,7 @@ print('✅ Database created')
 **Symptoms**: `sqlite3.DatabaseError: database disk image is malformed`
 
 **Solutions**:
+
 ```bash
 # Check database integrity
 sqlite3 ai_knowledge_hub/knowledge_hub.db "PRAGMA integrity_check;"
@@ -122,6 +140,7 @@ mv new_database.db ai_knowledge_hub/knowledge_hub.db
 **Symptoms**: API returns empty results even for broad searches
 
 **Solutions**:
+
 ```bash
 # Check if database has content
 sqlite3 ai_knowledge_hub/knowledge_hub.db "SELECT COUNT(*) FROM content;"
@@ -149,6 +168,7 @@ indexer.build_indexes()
 **Symptoms**: All API calls return HTTP 500 status
 
 **Diagnostic Steps**:
+
 ```bash
 # Check server logs
 tail -f logs/mcp_server.log
@@ -161,6 +181,7 @@ curl -v http://localhost:8000/health
 ```
 
 **Common Causes & Solutions**:
+
 - **Database connection**: Restart server after database is available
 - **Missing dependencies**: `pip install -r requirements.txt`
 - **Configuration error**: Check `ai_knowledge_hub/mcp_server_config.json`
@@ -172,6 +193,7 @@ curl -v http://localhost:8000/health
 **Symptoms**: `Access-Control-Allow-Origin` errors when accessing from web app
 
 **Solution**:
+
 ```python
 # Add to enhanced_mcp_server.py
 from fastapi.middleware.cors import CORSMiddleware
@@ -192,6 +214,7 @@ app.add_middleware(
 **Symptoms**: API calls take >10 seconds to respond
 
 **Performance Optimization**:
+
 ```bash
 # Check database size
 du -h ai_knowledge_hub/knowledge_hub.db
@@ -218,6 +241,7 @@ top -p $(pgrep -f mcp_server)
 **Symptoms**: `SyntaxError` or features not working as expected
 
 **Solutions**:
+
 ```bash
 # Check Python version
 python --version  # Should be 3.8+
@@ -239,6 +263,7 @@ source venv39/bin/activate
 **Symptoms**: Packages installed globally instead of in venv
 
 **Solutions**:
+
 ```bash
 # Check if venv is activated (should show (venv) in prompt)
 echo $VIRTUAL_ENV
@@ -258,6 +283,7 @@ pip install -r requirements.txt
 **Symptoms**: `PermissionError` when running scripts or accessing files
 
 **Solutions**:
+
 ```bash
 # Fix script permissions
 chmod +x scripts/*.sh
@@ -276,11 +302,13 @@ sudo chown -R $USER:$USER .
 
 ### Q: pip install fails with compiler errors
 
-**Symptoms**: `error: Microsoft Visual C++ 14.0 is required` (Windows) or `gcc` errors (Linux)
+**Symptoms**: `error: Microsoft Visual C++ 14.0 is required` (Windows) or `gcc`
+errors (Linux)
 
 **Solutions**:
 
 **Windows**:
+
 ```bash
 # Install Visual Studio Build Tools
 # Download from: https://visualstudio.microsoft.com/visual-cpp-build-tools/
@@ -290,6 +318,7 @@ pip install --only-binary=all package_name
 ```
 
 **Linux/Mac**:
+
 ```bash
 # Install build tools
 # Ubuntu/Debian:
@@ -310,6 +339,7 @@ xcode-select --install
 **Symptoms**: Docker commands fail or containers won't start
 
 **Solutions**:
+
 ```bash
 # Check Docker daemon is running
 docker --version
@@ -335,6 +365,7 @@ docker build --no-cache -t creatio-ai-hub .
 **Symptoms**: Search queries return unrelated content
 
 **Solutions**:
+
 ```bash
 # Check search index status
 python -c "
@@ -362,6 +393,7 @@ indexer.rebuild_with_optimization()
 **Symptoms**: Video transcription or processing errors
 
 **Solutions**:
+
 ```bash
 # Check ffmpeg installation
 ffmpeg -version
@@ -392,6 +424,7 @@ print('✅ FFmpeg available' if result.returncode == 0 else '❌ FFmpeg missing'
 **Symptoms**: App uses default values instead of configured values
 
 **Solutions**:
+
 ```bash
 # Check if .env file exists
 ls -la .env
@@ -421,6 +454,7 @@ print('Debug:', os.getenv('DEBUG', 'Not set'))
 **Symptoms**: `JSONDecodeError` when loading configuration
 
 **Solutions**:
+
 ```bash
 # Validate JSON syntax
 python -m json.tool ai_knowledge_hub/mcp_server_config.json
@@ -443,6 +477,7 @@ cp config/defaults/mcp_server_config.json ai_knowledge_hub/
 **Common Causes & Solutions**:
 
 **1. Environment Differences**:
+
 ```bash
 # Use consistent Python version
 python --version
@@ -453,6 +488,7 @@ pip freeze > local_requirements.txt
 ```
 
 **2. Time-dependent tests**:
+
 ```python
 # Use fixed timestamps in tests
 from freezegun import freeze_time
@@ -463,6 +499,7 @@ def test_time_dependent_function():
 ```
 
 **3. Race conditions**:
+
 ```python
 # Add proper test isolation
 import pytest
@@ -481,6 +518,7 @@ def cleanup():
 **Symptoms**: Tests timeout or fail performance thresholds
 
 **Solutions**:
+
 ```bash
 # Run performance tests locally
 ./scripts/run-tests.sh performance
@@ -633,6 +671,7 @@ echo "Diagnosis saved to diagnosis.txt"
 ## 🔄 Maintenance Commands
 
 ### Weekly Maintenance
+
 ```bash
 #!/bin/bash
 # Weekly maintenance script
@@ -658,6 +697,7 @@ echo "✅ Maintenance complete"
 ```
 
 ### System Reset (Nuclear Option)
+
 ```bash
 #!/bin/bash
 # Complete system reset - use only when everything else fails
@@ -668,18 +708,18 @@ read -p "Are you sure? (type 'yes'): " confirm
 if [ "$confirm" = "yes" ]; then
     echo "Backing up database..."
     cp ai_knowledge_hub/knowledge_hub.db backup_before_reset.db 2>/dev/null
-    
+
     echo "Resetting environment..."
     deactivate 2>/dev/null
     rm -rf venv/
     rm -rf __pycache__/
     rm -rf ai_knowledge_hub/__pycache__/
-    
+
     echo "Recreating environment..."
     python -m venv venv
     source venv/bin/activate
     pip install fastapi uvicorn sqlite3
-    
+
     echo "✅ Nuclear reset complete. Database backed up as backup_before_reset.db"
 else
     echo "Reset cancelled."
@@ -689,9 +729,12 @@ fi
 ---
 
 **💡 Pro Tip**: Most issues can be resolved by:
+
 1. Ensuring virtual environment is activated
 2. Checking the database file exists and is accessible
 3. Verifying no other process is using port 8000
 4. Installing missing dependencies
 
-For issues not covered here, check the [main troubleshooting guide](setup/troubleshooting.md) or create an issue in the repository.
+For issues not covered here, check the
+[main troubleshooting guide](setup/troubleshooting.md) or create an issue in the
+repository.

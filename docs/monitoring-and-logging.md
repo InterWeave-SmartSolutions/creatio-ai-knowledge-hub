@@ -1,10 +1,21 @@
+---
+title: 'Monitoring and Logging Setup Guide'
+tags: [docs]
+description:
+  'Auto-generated front matter for AI indexing. Improve this description.'
+source_path: 'docs/monitoring-and-logging.md'
+last_updated: '2025-08-06'
+---
+
 # Monitoring and Logging Setup Guide
 
-This document provides comprehensive information about the monitoring and logging infrastructure for the Creatio AI Knowledge Hub.
+This document provides comprehensive information about the monitoring and
+logging infrastructure for the Creatio AI Knowledge Hub.
 
 ## Overview
 
 The monitoring system consists of:
+
 - **Application Performance Monitoring (APM)** with Prometheus metrics
 - **Centralized Logging** with structured JSON logs and log aggregation
 - **Health Check Endpoints** for service health monitoring
@@ -18,6 +29,7 @@ The monitoring system consists of:
 **Location**: `monitoring/monitoring.py`
 
 #### Features:
+
 - Real-time performance metrics collection
 - Request duration and rate tracking
 - Database query performance monitoring
@@ -26,6 +38,7 @@ The monitoring system consists of:
 - Custom Prometheus metrics
 
 #### Key Metrics:
+
 - `app_requests_total` - Total HTTP requests by method, endpoint, and status
 - `app_request_duration_seconds` - Request duration histogram
 - `app_active_connections` - Current active connections
@@ -40,13 +53,16 @@ The monitoring system consists of:
 **Location**: `monitoring/logging_config.py`
 
 #### Log Types:
+
 - **Application Logs** (`logs/application.json`) - Structured JSON logs
 - **Error Logs** (`logs/errors.log`) - Error-specific logs with stack traces
-- **Performance Logs** (`logs/performance.log`) - Performance metrics and timings
+- **Performance Logs** (`logs/performance.log`) - Performance metrics and
+  timings
 - **Access Logs** (`logs/access.log`) - HTTP request logs
 - **Security Logs** (`logs/security.log`) - Security-related events
 
 #### Features:
+
 - Rotating log files with automatic cleanup
 - Colored console output for development
 - Structured JSON logging for production
@@ -58,24 +74,26 @@ The monitoring system consists of:
 #### Available Endpoints:
 
 **Basic Health Check**: `GET /api/v1/health`
+
 ```json
 {
   "status": "healthy",
   "timestamp": "2024-01-15T10:30:00Z",
   "checks": {
-    "database": {"status": "healthy", "response_time_ms": 5},
+    "database": { "status": "healthy", "response_time_ms": 5 },
     "system": {
       "status": "healthy",
       "cpu_percent": 25.3,
       "memory_percent": 45.2,
       "disk_percent": 62.1
     },
-    "search_index": {"status": "healthy"}
+    "search_index": { "status": "healthy" }
   }
 }
 ```
 
 **Deep Health Check**: `GET /api/v1/health/deep`
+
 ```json
 {
   "health": {...},
@@ -97,6 +115,7 @@ The monitoring system consists of:
 ```
 
 **Prometheus Metrics**: `GET /metrics`
+
 - Standard Prometheus format metrics endpoint
 - Used by Prometheus for scraping metrics
 
@@ -105,6 +124,7 @@ The monitoring system consists of:
 **Location**: `monitoring/grafana/dashboards/creatio-knowledge-hub.json`
 
 #### Dashboard Panels:
+
 1. **Application Health Status** - Real-time service status
 2. **Request Rate** - HTTP requests per second
 3. **Response Time (95th Percentile)** - Performance metrics
@@ -123,26 +143,31 @@ The monitoring system consists of:
 #### Alert Groups:
 
 **Application Alerts:**
+
 - High Error Rate (>10% for 5 minutes)
 - High Response Time (>2s p95 for 5 minutes)
 - Low Request Rate (<0.1 req/s for 10 minutes)
 - Application Down (service unavailable)
 
 **System Alerts:**
+
 - High CPU Usage (>80% for 5 minutes)
 - High Memory Usage (>3GB for 5 minutes)
 - Disk Space Low (>20GB usage)
 
 **Database Alerts:**
+
 - Database Connections High (>50 connections)
 - Database Slow Queries (>1s average)
 - Database Unavailable
 
 **Search Alerts:**
+
 - Search Slow Queries (>2s average)
 - Search High Error Rate (>10 errors in 5 minutes)
 
 **Infrastructure Alerts:**
+
 - Redis Down
 - Redis High Memory Usage (>90%)
 - Nginx Down
@@ -158,13 +183,15 @@ pip install -r requirements-monitoring.txt
 
 ### 2. Environment Setup
 
-The monitoring system is integrated into the existing Docker Compose setup. Enable monitoring with:
+The monitoring system is integrated into the existing Docker Compose setup.
+Enable monitoring with:
 
 ```bash
 docker-compose --profile monitoring up -d
 ```
 
 This starts:
+
 - Prometheus (port 9090)
 - Grafana (port 3000)
 - Application with metrics enabled
@@ -179,11 +206,14 @@ This starts:
 ### 4. Configuration
 
 #### Grafana Configuration:
+
 1. Login to Grafana (admin/admin)
-2. Import the dashboard from `monitoring/grafana/dashboards/creatio-knowledge-hub.json`
+2. Import the dashboard from
+   `monitoring/grafana/dashboards/creatio-knowledge-hub.json`
 3. Configure data sources (automatically provisioned)
 
 #### Prometheus Configuration:
+
 - Configuration file: `monitoring/prometheus.yml`
 - Alert rules: `monitoring/alert_rules.yml`
 - Automatically discovers application metrics endpoint
@@ -193,7 +223,7 @@ This starts:
 ### Monitoring Application Performance
 
 1. **View Real-time Metrics**: Access Grafana dashboard at http://localhost:3000
-2. **Check Health Status**: 
+2. **Check Health Status**:
    ```bash
    curl http://localhost:8001/api/v1/health
    ```
@@ -205,6 +235,7 @@ This starts:
 ### Analyzing Logs
 
 #### View Recent Errors:
+
 ```python
 from monitoring.logging_config import log_aggregator
 errors = log_aggregator.get_recent_errors(hours=24)
@@ -212,12 +243,14 @@ print(errors)
 ```
 
 #### Performance Summary:
+
 ```python
 perf_summary = log_aggregator.get_performance_summary(hours=24)
 print(f"Average operation time: {perf_summary['avg_duration']:.3f}s")
 ```
 
 #### Log File Statistics:
+
 ```python
 stats = log_aggregator.get_log_stats()
 for filename, info in stats.items():
@@ -227,6 +260,7 @@ for filename, info in stats.items():
 ### Custom Monitoring
 
 #### Adding Custom Metrics:
+
 ```python
 from monitoring.monitoring import monitor
 from prometheus_client import Counter
@@ -239,6 +273,7 @@ CUSTOM_COUNTER.inc()
 ```
 
 #### Performance Monitoring Decorator:
+
 ```python
 @monitor.monitor_database_query('user_search')
 def search_users(query):
@@ -289,22 +324,26 @@ def search_users(query):
 ## Production Considerations
 
 ### Security:
+
 - Change default Grafana credentials
 - Configure proper authentication for Prometheus
 - Secure metrics endpoints in production
 - Use HTTPS for all monitoring interfaces
 
 ### Scalability:
+
 - Consider using external time-series databases for large deployments
 - Implement log forwarding to centralized logging systems
 - Use load balancers for high-availability monitoring
 
 ### Backup:
+
 - Regular backup of Grafana dashboards and configurations
 - Archive historical metrics data
 - Backup monitoring configurations and alert rules
 
 ### Compliance:
+
 - Ensure log retention meets regulatory requirements
 - Implement log anonymization for sensitive data
 - Configure audit trails for monitoring system access
@@ -314,6 +353,7 @@ def search_users(query):
 ### Setting Up Notifications:
 
 1. **Email Notifications**:
+
    ```yaml
    # In alertmanager.yml
    route:
@@ -344,13 +384,14 @@ def search_users(query):
   labels:
     severity: warning
   annotations:
-    summary: "Custom metric is high"
-    description: "Custom metric value is {{ $value }}"
+    summary: 'Custom metric is high'
+    description: 'Custom metric value is {{ $value }}'
 ```
 
 ## Maintenance
 
 ### Regular Tasks:
+
 - Review and update alert thresholds
 - Clean up old log files
 - Update monitoring dashboards
@@ -359,6 +400,7 @@ def search_users(query):
 - Review and optimize slow queries
 
 ### Monitoring System Health:
+
 - Set up monitoring for the monitoring system itself
 - Create alerts for Prometheus/Grafana downtime
 - Monitor disk space for metrics storage

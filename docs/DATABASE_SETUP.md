@@ -1,3 +1,12 @@
+---
+title: 'Creatio Database Environment Setup'
+tags: [docs]
+description:
+  'Auto-generated front matter for AI indexing. Improve this description.'
+source_path: 'docs/DATABASE_SETUP.md'
+last_updated: '2025-08-06'
+---
+
 # Creatio Database Environment Setup
 
 This document outlines the database environment setup for local Creatio
