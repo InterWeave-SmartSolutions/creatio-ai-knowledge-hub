@@ -1,14 +1,19 @@
 # Course Scraping Report - Creatio Academy
 
 ## Summary
+
 - **Date**: August 1, 2025
 - **Total Courses Processed**: 33 courses (all courses from the initial catalog)
-- **Status**: All courses successfully scraped, but limited content available without login
+- **Status**: All courses successfully scraped, but limited content available
+  without login
 
 ## Key Findings
 
 ### Access Limitations
-The Creatio Academy platform requires user authentication to access detailed course content including:
+
+The Creatio Academy platform requires user authentication to access detailed
+course content including:
+
 - Course descriptions
 - Prerequisites
 - Learning objectives
@@ -18,7 +23,9 @@ The Creatio Academy platform requires user authentication to access detailed cou
 ### Data Collected
 
 #### 1. Course Metadata
+
 For each course, we successfully extracted:
+
 - Course title
 - Course URL
 - Category (Instructor-led Training vs E-Learning)
@@ -27,11 +34,13 @@ For each course, we successfully extracted:
 - Format (Online, etc.)
 
 #### 2. Page Structure
+
 - Basic page HTML structure
 - Navigation elements
 - Limited publicly available content
 
 #### 3. Video Links
+
 - Found YouTube channel links (https://www.youtube.com/c/creatio)
 - No embedded course-specific videos accessible without login
 
@@ -53,6 +62,7 @@ scraped_courses/
 ## Technical Details
 
 ### Scraping Approach
+
 1. Used BeautifulSoup for HTML parsing
 2. Implemented robust error handling
 3. Created organized folder structure for each course
@@ -65,31 +75,42 @@ scraped_courses/
    - Slide presentations
 
 ### Challenges Encountered
+
 1. **Authentication Wall**: Most course content is behind a login requirement
-2. **Limited Public Content**: Only basic course information is publicly accessible
-3. **No Direct Downloads**: No PDFs, slides, or other materials were publicly available
+2. **Limited Public Content**: Only basic course information is publicly
+   accessible
+3. **No Direct Downloads**: No PDFs, slides, or other materials were publicly
+   available
 
 ## Recommendations
 
 ### For Complete Content Access
+
 1. **Create Account**: Register for a Creatio Academy account
 2. **Authentication Integration**: Implement login functionality in the scraper
-3. **Session Management**: Handle cookies and session tokens for authenticated requests
+3. **Session Management**: Handle cookies and session tokens for authenticated
+   requests
 
 ### Alternative Approaches
-1. **Public Resources**: Focus on Creatio's public documentation and YouTube channel
-2. **Community Content**: Explore Creatio Community forums for publicly available materials
+
+1. **Public Resources**: Focus on Creatio's public documentation and YouTube
+   channel
+2. **Community Content**: Explore Creatio Community forums for publicly
+   available materials
 3. **API Access**: Check if Creatio offers an API for accessing course content
 
 ## Data Files Created
 
 1. **scraping_summary.json**: Complete log of all scraping activities
-2. **course_details.json**: Individual JSON files for each course with available metadata
-3. **video_urls.txt**: Links to general Creatio YouTube channel (no course-specific videos found)
+2. **course_details.json**: Individual JSON files for each course with available
+   metadata
+3. **video_urls.txt**: Links to general Creatio YouTube channel (no
+   course-specific videos found)
 
 ## Next Steps
 
 To access the full course content, you would need to:
+
 1. Create a Creatio Academy account
 2. Modify the scraper to handle authentication
 3. Re-run the scraping process with authenticated sessions
@@ -97,4 +118,7 @@ To access the full course content, you would need to:
 
 ## Conclusion
 
-While we successfully created a comprehensive scraping infrastructure and processed all 33 courses, the actual content extraction was limited due to authentication requirements. The scraper is fully functional and ready to extract detailed content once authentication is implemented.
+While we successfully created a comprehensive scraping infrastructure and
+processed all 33 courses, the actual content extraction was limited due to
+authentication requirements. The scraper is fully functional and ready to
+extract detailed content once authentication is implemented.

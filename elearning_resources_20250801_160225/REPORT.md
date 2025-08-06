@@ -29,4 +29,3 @@
 
 - **[Guides]** Guides
   - URL: https://academy.creatio.com/docs/8.x
-

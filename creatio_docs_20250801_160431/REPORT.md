@@ -30,10 +30,12 @@
 #### Intermediate (19 resources)
 
 - Log in
-  - URL: https://academy.creatio.com/docs/user/login?destination=/docs/developer/getting_started
+  - URL:
+    https://academy.creatio.com/docs/user/login?destination=/docs/developer/getting_started
 
 - Log in
-  - URL: https://academy.creatio.com/docs/user/login?destination=/docs/developer/getting_started
+  - URL:
+    https://academy.creatio.com/docs/user/login?destination=/docs/developer/getting_started
 
 - Developer documentation
   - URL: https://academy.creatio.com/docs/?vid_1=2
@@ -42,7 +44,8 @@
   - URL: https://academy.creatio.com/docs/?vid_1=2
 
 - Development recommendations
-  - URL: https://academy.creatio.com/docs/developer/getting_started/development_recommendations
+  - URL:
+    https://academy.creatio.com/docs/developer/getting_started/development_recommendations
 
 ### General
 
@@ -89,11 +92,12 @@
   - URL: https://academy.creatio.com/user/register?destination=academy/com
 
 - Log in
-  - URL: https://academy.creatio.com/docs/user/login?destination=/docs/user/platform_basics
+  - URL:
+    https://academy.creatio.com/docs/user/login?destination=/docs/user/platform_basics
 
 - Log in
-  - URL: https://academy.creatio.com/docs/user/login?destination=/docs/user/platform_basics
+  - URL:
+    https://academy.creatio.com/docs/user/login?destination=/docs/user/platform_basics
 
 - Guides
   - URL: https://academy.creatio.com/docs/8.x
-

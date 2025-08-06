@@ -8,11 +8,5 @@
     "release_notes": 0,
     "best_practices": 0
   },
-  "topics": [
-    "User Guide",
-    "Release Notes",
-    "General",
-    "Administration",
-    "Development"
-  ]
+  "topics": ["User Guide", "Release Notes", "General", "Administration", "Development"]
 }

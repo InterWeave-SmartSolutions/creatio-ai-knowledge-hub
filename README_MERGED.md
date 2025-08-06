@@ -1,11 +1,15 @@
 # Creatio Academy Knowledge Hub & Web Scraping Project
 
-A comprehensive knowledge management system for Creatio Academy content, featuring web scraping capabilities, AI-powered content processing, semantic search, and Model Context Protocol (MCP) server integration.
+A comprehensive knowledge management system for Creatio Academy content,
+featuring web scraping capabilities, AI-powered content processing, semantic
+search, and Model Context Protocol (MCP) server integration.
 
 ## 🌟 Project Overview
 
 This project combines:
-- **Web Scraping Infrastructure**: Comprehensive scraping tools for Creatio Academy
+
+- **Web Scraping Infrastructure**: Comprehensive scraping tools for Creatio
+  Academy
 - **Content Processing**: AI-powered analysis and organization
 - **Knowledge Database**: Structured storage of all Creatio content
 - **MCP Server**: API for AI agent interaction
@@ -46,6 +50,7 @@ This project combines:
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
+
 - Python 3.12+
 - Chrome browser (for Selenium)
 - Git
@@ -150,13 +155,15 @@ scraper = WebScraper(use_selenium=True, headless=True)
 
 ## 🤝 Contributing
 
-This project is part of InterWeave SmartSolutions' Creatio knowledge management initiative. For contributions or questions, please contact the team.
+This project is part of InterWeave SmartSolutions' Creatio knowledge management
+initiative. For contributions or questions, please contact the team.
 
 ## 📝 License
 
-This project is proprietary to InterWeave SmartSolutions. All Creatio content is subject to Creatio's terms of service.
+This project is proprietary to InterWeave SmartSolutions. All Creatio content is
+subject to Creatio's terms of service.
 
 ---
 
-**Last Updated**: August 1, 2025
-**Maintained by**: InterWeave SmartSolutions Team
+**Last Updated**: August 1, 2025 **Maintained by**: InterWeave SmartSolutions
+Team
