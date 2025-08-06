@@ -11,10 +11,11 @@ echo "[INFO] Starting pipeline at $TS" | tee -a "$LOG"
 echo "[INFO] Using config: $ROOT_DIR/config.yaml" | tee -a "$LOG"
 
 # Example steps (idempotent; skip if outputs exist)
+# Idempotence guards: skip steps if outputs present
 set -x
-python3 "$ROOT_DIR/academy_docs_scraper.py" --config "$ROOT_DIR/config.yaml" --out "$OUT_DIR/academy_docs" 2>&1 | tee -a "$LOG" || true
-python3 "$ROOT_DIR/analyze_creatio_structure.py" --config "$ROOT_DIR/config.yaml" --in "$OUT_DIR/academy_docs" --out "$OUT_DIR/structure" 2>&1 | tee -a "$LOG" || true
-python3 "$ROOT_DIR/comprehensive_solutions_scraper.py" --config "$ROOT_DIR/config.yaml" --out "$OUT_DIR/solutions" 2>&1 | tee -a "$LOG" || true
+[ -d "$OUT_DIR/academy_docs" ] || python3 "$ROOT_DIR/academy_docs_scraper.py" --config "$ROOT_DIR/config.yaml" --out "$OUT_DIR/academy_docs" 2>&1 | tee -a "$LOG" || true
+[ -d "$OUT_DIR/structure" ] || python3 "$ROOT_DIR/analyze_creatio_structure.py" --config "$ROOT_DIR/config.yaml" --in "$OUT_DIR/academy_docs" --out "$OUT_DIR/structure" 2>&1 | tee -a "$LOG" || true
+[ -d "$OUT_DIR/solutions" ] || python3 "$ROOT_DIR/comprehensive_solutions_scraper.py" --config "$ROOT_DIR/config.yaml" --out "$OUT_DIR/solutions" 2>&1 | tee -a "$LOG" || true
 set +x
 
 echo "[INFO] Pipeline complete" | tee -a "$LOG"
