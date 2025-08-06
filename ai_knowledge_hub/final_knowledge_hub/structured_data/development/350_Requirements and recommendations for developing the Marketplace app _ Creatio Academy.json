@@ -1,0 +1,19 @@
+{
+  "id": 350,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/category/requirements-and-recommendations",
+  "title": "Requirements and recommendations for developing the Marketplace app | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Requirements Recommendations",
+  "markdown": "[Requirements](/docs/8.x/dev/development-for-creatio-marketplace/app-development/requirements-and-recommendations/requirements)[Recommendations](/docs/8.x/dev/development-for-creatio-marketplace/app-development/requirements-and-recommendations/recommendations)\n",
+  "analysis": {
+    "word_count": 2,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:21:26.205158"
+}

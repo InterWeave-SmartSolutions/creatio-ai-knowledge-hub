@@ -1,0 +1,19 @@
+{
+  "id": 628,
+  "url": "https://academy.creatio.com/docs/8.x/setup-and-administration/category/access-management",
+  "title": "Access management | Creatio Academy",
+  "category": "administration",
+  "description": "",
+  "content": "Version: 8.3 Operation permissions Column permissions Record permissions Page permission checks Export permissions System operation permissions Object permissions by system operations System operation reference Delegate permissions",
+  "markdown": "Version: 8.3[Operation permissions](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/object-operation-permissions)[Column permissions](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/column-permissions)[Record permissions](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/record-permissions)[Page permission checks](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/page-permissions)[Export permissions](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/export-permissions)[System operation permissions](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/system-operation-permissions)[Object permissions by system operations](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/object-permissions-by-system-operations)[System operation reference](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/system-operation-reference)[Delegate permissions](/docs/8.x/setup-and-administration/administration/user-and-access-management/access-management/delegate-permissions)\n",
+  "analysis": {
+    "word_count": 26,
+    "key_concepts": ["operation"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "operation", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:27:07.471701"
+}

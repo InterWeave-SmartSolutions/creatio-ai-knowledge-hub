@@ -1,0 +1,19 @@
+{
+  "id": 738,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/category/chats",
+  "title": "Chats | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Overview Examples References",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/category/chats)** (8.3).\n\nVersion: 8.0[Overview](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/chat-management-api/overview)[Examples](/docs/8.x/dev/development-on-creatio-platform/8.0/chat-management-examples)[References](/docs/8.x/dev/development-on-creatio-platform/8.0/chat-references)\n",
+  "analysis": {
+    "word_count": 22,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:29:20.090449"
+}

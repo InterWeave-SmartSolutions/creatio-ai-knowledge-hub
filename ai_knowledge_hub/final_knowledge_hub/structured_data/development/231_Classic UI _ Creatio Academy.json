@@ -1,0 +1,19 @@
+{
+  "id": 231,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/classic-ui-1",
+  "title": "Classic UI | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Detail Marketing campaigns Telephony Machine learning Emails Task scheduler",
+  "markdown": "Version: 8.3[Detail](/docs/8.x/dev/development-on-creatio-platform/category/detail)[Marketing campaigns](/docs/8.x/dev/development-on-creatio-platform/category/marketing-campaigns)[Telephony](/docs/8.x/dev/development-on-creatio-platform/category/telephony)[Machine learning](/docs/8.x/dev/development-on-creatio-platform/category/machine-learning)[Emails](/docs/8.x/dev/development-on-creatio-platform/category/emails-1)[Task scheduler](/docs/8.x/dev/development-on-creatio-platform/platform-customization/classic-ui/task-scheduler)\n",
+  "analysis": {
+    "word_count": 11,
+    "key_concepts": ["detail", "campaign"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "campaign", "documentation", "detail"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:18:59.295772"
+}

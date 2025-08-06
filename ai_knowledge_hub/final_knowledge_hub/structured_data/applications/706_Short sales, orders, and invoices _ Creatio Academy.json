@@ -1,0 +1,19 @@
+{
+  "id": 706,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.0/category/short-sales-orders-and-invoices",
+  "title": "Short sales, orders, and invoices | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Create an order Create an invoice Installment plan Create a contract Add products FAQ",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/overview/platform-overview)** (8.3).\n\nVersion: 8.0[Create an order](/docs/8.x/creatio-apps/8.0/sales-tools/orders-and-invoices/create-an-order)[Create an invoice](/docs/8.x/creatio-apps/8.0/sales-tools/orders-and-invoices/create-an-invoice)[Installment plan](/docs/8.x/creatio-apps/8.0/sales-tools/orders-and-invoices/add-an-order-installment-plan)[Create a contract](/docs/8.x/creatio-apps/8.0/sales-tools/orders-and-invoices/create-a-contract-from-an-order)[Add products](/docs/8.x/creatio-apps/8.0/sales-tools/orders-and-invoices/add-products-to-an-invoice-or-an-order)[FAQ](/docs/8.x/creatio-apps/8.0/sales-tools/orders-and-invoices/orders-faq)\n",
+  "analysis": {
+    "word_count": 33,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:28:41.345230"
+}

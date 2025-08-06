@@ -1,0 +1,68 @@
+{
+  "scraping_session": {
+    "started_at": "2025-07-28T12:54:20.210376",
+    "base_url": "https://knowledge-hub.creatio.com",
+    "total_urls_processed": 0
+  },
+  "statistics": {
+    "pages": 0,
+    "images": 0,
+    "videos": 0,
+    "documents": 0,
+    "gifs": 0,
+    "errors": 0
+  },
+  "database_stats": {
+    "total_pages": 0,
+    "total_media_files": 0,
+    "total_links": 0
+  },
+  "file_structure": {
+    "gifs": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "documents": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "screenshots": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "metadata": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "images": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "transcripts": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "videos": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "search_data": {
+      "size_bytes": 2,
+      "size_mb": 0.0,
+      "file_count": 1
+    },
+    "pages": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    }
+  },
+  "recommendations": ["Use the search_index.json file for AI/API queries"]
+}

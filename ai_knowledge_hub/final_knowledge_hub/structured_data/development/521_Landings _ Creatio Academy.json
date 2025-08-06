@@ -1,0 +1,19 @@
+{
+  "id": 521,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/category/landings",
+  "title": "Landings | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Web-To-Object Web-to-Case",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations)** (8.3).\n\nVersion: 8.0[Web-To-Object](/docs/8.x/dev/development-on-creatio-platform/8.0/category/web-to-object)[Web-to-Case](/docs/8.x/dev/development-on-creatio-platform/8.0/category/web-to-case)\n",
+  "analysis": {
+    "word_count": 21,
+    "key_concepts": ["case"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["case", "intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:24:56.028909"
+}

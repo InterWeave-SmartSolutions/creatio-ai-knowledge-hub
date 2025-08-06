@@ -1,0 +1,19 @@
+{
+  "id": 269,
+  "url": "https://academy.creatio.com/docs/8.x/mobile/category/brand-and-publish-mobile-apps",
+  "title": "Brand and publish mobile apps | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "Overview References",
+  "markdown": "[Overview](/docs/8.x/mobile/mobile-development/customization/mobile-application-branding/brand-and-publish-mobile-apps-built)[References](/docs/8.x/mobile/mobile-branding-references)\n",
+  "analysis": {
+    "word_count": 2,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:19:43.425475"
+}

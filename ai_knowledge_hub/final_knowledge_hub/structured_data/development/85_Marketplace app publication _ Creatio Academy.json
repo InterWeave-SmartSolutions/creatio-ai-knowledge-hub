@@ -1,0 +1,19 @@
+{
+  "id": 85,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/category/publication",
+  "title": "Marketplace app publication | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Marketplace Console Marketplace listing resources Coming soon apps",
+  "markdown": "[Marketplace Console](/docs/8.x/dev/development-for-creatio-marketplace/category/marketplace-console)[Marketplace listing resources](/docs/8.x/dev/development-for-creatio-marketplace/app-publication/requirements-for-published-app-resources)[Coming soon apps](/docs/8.x/dev/development-for-creatio-marketplace/app-publication/coming-soon-app)\n",
+  "analysis": {
+    "word_count": 8,
+    "key_concepts": ["marketplace"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "marketplace", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:15:58.532159"
+}

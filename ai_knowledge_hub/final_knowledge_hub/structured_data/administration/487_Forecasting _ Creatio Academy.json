@@ -1,0 +1,19 @@
+{
+  "id": 487,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.0/category/forecasting",
+  "title": "Forecasting | Creatio Academy",
+  "category": "administration",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Set up a forecast Forecast versions Forecast access permissions Forecast periods",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/category/forecasting)** (8.3).\n\nVersion: 8.0[Set up a forecast](/docs/8.x/creatio-apps/8.0/sales-tools/forecasting/set-up-a-forecast)[Forecast versions](/docs/8.x/creatio-apps/8.0/sales-tools/forecasting/compare-the-forecast-versions)[Forecast access permissions](/docs/8.x/creatio-apps/8.0/sales-tools/forecasting/managing-access-to-forecasts)[Forecast periods](/docs/8.x/creatio-apps/8.0/sales-tools/forecasting/add-forecast-periods)\n",
+  "analysis": {
+    "word_count": 30,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:24:15.823452"
+}

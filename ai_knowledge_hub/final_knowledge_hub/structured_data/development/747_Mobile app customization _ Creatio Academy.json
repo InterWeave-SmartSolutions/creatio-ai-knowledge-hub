@@ -1,0 +1,19 @@
+{
+  "id": 747,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/category/customization",
+  "title": "Mobile app customization | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Freedom UI Manifest List Business rules Dashboards Portal Set up a dedicated section icon Branding and publishing Mobile Creatio for Intune",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations)** (8.3).\n\nVersion: 8.0[Freedom UI](/docs/8.x/dev/development-on-creatio-platform/8.0/freedomui-mobile)[Manifest](/docs/8.x/dev/development-on-creatio-platform/8.0/category/manifest)[List](/docs/8.x/dev/development-on-creatio-platform/8.0/category/list)[Business rules](/docs/8.x/dev/development-on-creatio-platform/8.0/category/business-rules)[Dashboards](/docs/8.x/dev/development-on-creatio-platform/8.0/category/dashboards)[Portal](/docs/8.x/dev/development-on-creatio-platform/8.0/mobile-development/customization/overview)[Set up a dedicated section icon](/docs/8.x/dev/development-on-creatio-platform/8.0/mobile-development/customization/set-up-section-icon)[Branding and publishing](/docs/8.x/dev/development-on-creatio-platform/8.0/category/branding-and-publishing)[Mobile Creatio for Intune](/docs/8.x/dev/development-on-creatio-platform/8.0/mobile-development/customization/mobile-creatio-for-intune)\n",
+  "analysis": {
+    "word_count": 40,
+    "key_concepts": ["freedom ui", "section", "dashboard"],
+    "use_cases": [],
+    "related_topics": ["customization", "layout", "ui design", "page schema"],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "dashboard", "intermediate", "freedom ui", "documentation", "section"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:29:30.805821"
+}

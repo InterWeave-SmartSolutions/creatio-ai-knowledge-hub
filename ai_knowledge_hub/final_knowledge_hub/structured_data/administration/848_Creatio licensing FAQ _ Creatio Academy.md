@@ -1,0 +1,113 @@
+# Creatio licensing FAQ | Creatio Academy
+
+**Category:** administration **Difficulty:** intermediate **Word Count:** 654
+**URL:**
+https://academy.creatio.com/docs/8.x/setup-and-administration/8.1/administration/licensing/creatio-licensing-faq
+
+## Description
+
+How can I provide all users with the same licenses?
+
+## Key Concepts
+
+section, role, synchronization, account, case
+
+## Use Cases
+
+## Content
+
+This is documentation for Creatio **8.1**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/setup-and-administration/administration/licensing/creatio-licensing-faq)**
+(8.3).
+
+Version: 8.1
+
+On this page
+
+## How can I provide all users with the same licenses?​
+
+You can
+[distribute licenses manually](https://academy.creatio.com/documents?id=1472&anchor=title-230-2)
+in the **License manager** or **System users** sections. Alternatively, bind all
+needed licenses to the "All employees" role so that licences are distributed
+automatically during **LDAP synchronization** or **Single Sign-On
+provisioning**. In both cases your colleagues will receive the same list of
+licenses.
+
+## How can I distribute different platform licenses for different user groups?​
+
+If you have multiple different platform licenses you can use a role-based
+license distribution approach to provide different user groups with different
+licenses.
+
+For example, you have "studio creatio unlimited plan cloud", "studio creatio
+limited internal cloud", "studio creatio self-service portal cloud" licenses and
+"Accountant department", "Office managers", "Sales department" and "System
+administrators" user roles.
+
+If employees in "Accountant department" role need to work with the **Invoices**
+section only, you can provide this role with "studio creatio limited internal
+cloud" license. If employees in "Office managers" role need to get service from
+system administrators only, you can provide them with "studio creatio
+self-service portal cloud" license. Finally, you can bind "Sales department" and
+"System administrators" roles with "studio creatio unlimited plan cloud" license
+to provide them with full access to the platform capabilities.
+
+Alternatively, you can bind these licenses to functional roles and give the
+roles to appropriate departments.
+
+## How can I provide different users with licenses for different Creatio products and apps?​
+
+If you use Creatio to automate work of different functional departments of your
+company, you can simply provide different user groups with different licenses
+for Creatio products and composable apps using role-based license distribution
+approach. To do this you can bind your platform license to the root role like
+"All employees" and distribute product licenses to child roles. For example, you
+can issue license "Marketing creatio product cloud" license to marketing
+department, "Sales creatio product cloud" to sales department, and "Service
+creatio product cloud" to service department.
+
+In this case company employees will receive the licenses they need based on the
+department and the list of issued licenses will be updated if somebody changes
+department.
+
+## How can I migrate to role-based license distribution approach?​
+
+You can migrate to new role-based license distribution mechanisms starting from
+Creatio 8.1.3. You can do that partially, for example by adding licenses only
+for some user roles like "System administrators," and start to use new
+functionality with them. In this case only this user group will receive licenses
+based on the new mechanism and distribution for all other users will remain the
+same. Instructions:
+[Manage user licenses](https://academy.creatio.com/documents?id=2309&anchor=title-230-3).
+
+## Do I need to provide user types with limited access like external B2C or limited internal with separate licenses for Creatio composable apps?​
+
+Creatio products like Sales or Marketing come with licenses that grant users
+access to all features within them, including composable apps. You do not need
+separate licenses for these built-in apps. However, if you purchase an
+additional composable app not included in your main product (like adding Case
+Management to Sales Creatio), separate licenses are required. This applies to
+full user, and self-service licenses. At the same time, you can grant access to
+specific sections within any Creatio product or app to users hat have external
+B2B, external B2C, mobile-only or limited Internal licenses without additional
+licenses for that specific app.
+
+---
+
+## See also​
+
+[Creatio licensing](https://academy.creatio.com/documents?id=1264)
+
+[Manage user licenses](https://academy.creatio.com/documents?id=1472)
+
+- How can I provide all users with the same licenses?
+- How can I distribute different platform licenses for different user groups?
+- How can I provide different users with licenses for different Creatio products
+  and apps?
+- How can I migrate to role-based license distribution approach?
+- Do I need to provide user types with limited access like external B2C or
+  limited internal with separate licenses for Creatio composable apps?
+- See also

@@ -1,0 +1,19 @@
+{
+  "id": 664,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/category/digital-ads",
+  "title": "Digital Ads | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Overview Ad campaign data Facebook Ads integration Google Ads integration FAQ",
+  "markdown": "Version: 8.3[Overview](/docs/8.x/creatio-apps/products/marketing-tools/digital-ads/overview-of-digital-ads-app)[Ad campaign data](/docs/8.x/creatio-apps/products/marketing-tools/digital-ads/view-ad-campaign-data)[Facebook Ads integration](/docs/8.x/creatio-apps/products/marketing-tools/digital-ads/integrate-facebook-ads-with-creatio)[Google Ads integration](/docs/8.x/creatio-apps/products/marketing-tools/digital-ads/integrate-google-ads-with-creatio)[FAQ](/docs/8.x/creatio-apps/products/marketing-tools/digital-ads/faq-on-digital-ads-app)\n",
+  "analysis": {
+    "word_count": 13,
+    "key_concepts": ["integration", "campaign"],
+    "use_cases": ["third-party integration", "data synchronization", "system connectivity"],
+    "related_topics": ["webhooks", "data sync", "web service", "api"],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "campaign", "documentation", "integration"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:27:50.862738"
+}

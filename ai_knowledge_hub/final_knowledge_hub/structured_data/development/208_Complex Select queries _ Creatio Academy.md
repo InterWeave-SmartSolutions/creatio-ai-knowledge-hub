@@ -1,0 +1,252 @@
+# Complex Select queries | Creatio Academy
+
+**Category:** development **Difficulty:** beginner **Word Count:** 1163 **URL:**
+https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.1/back-end-development/data-operations-back-end/complex-select-queries
+
+## Description
+
+Complex database queries can put a 100% load on the resources of the database
+server for a long time. This obstructs the workflow of other users or makes it
+impossible.
+
+## Key Concepts
+
+workflow, configuration, section, dashboard, sql, database, operation
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+This is documentation for Creatio **8.1**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/dev/development-on-creatio-platform/back-end-development/data-operations-back-end/complex-select-queries)**
+(8.3).
+
+Version: 8.1
+
+On this page
+
+Level: intermediate
+
+Complex database queries can put a 100% load on the resources of the database
+server for a long time. This obstructs the workflow of other users or makes it
+impossible.
+
+The **types** of complex queries are as follows:
+
+- suboptimal queries in dynamic folders, dashboard blocks
+- complex analytical selections in dashboard blocks
+
+You can execute complex `Select` queries using the following **means** :
+
+- a dedicated query pool (available for Microsoft SQL Server Enterprise Edition)
+- a read-only replica
+
+These **ways** to execute complex `Select` queries let you:
+
+- limit resources the database server dedicates to complex `Select` query
+  processing
+- reduce the impact of complex `Select` query processing on the workflow of
+  other users and the operation of other parts of Creatio
+
+## Dedicated query pool​
+
+The **purpose** of a dedicated query pool is to process complex `Select` queries
+that are not part of the transaction and are externalized to a dedicated pool.
+
+### 1\. Set up the connection of a dedicated query pool​
+
+Microsoft SQL Server lets you limit resource allocation using the built-in
+[Resource Governor](https://docs.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor)
+tool. The Resource Governor rates connections based on the information about the
+connection, not a particular query. The impact of the tool is barely noticeable
+on an idle server and short queries. The effect of the Resource Governor is
+observable when the database server has a 100% load and a complex query takes a
+long time to execute.
+
+To **set up the connection of a dedicated query pool** , open the
+`ConnectionStrings.config` configuration file and add the `_Limited` suffix to
+the `App` or `Application Name` property. This setting enables a special
+connection that divides the queries into simple and potentially complex.
+
+The connection **types** are as follows:
+
+- If you **do not specify a value** for the `App` property in the connection
+  string of the `ConnectionStrings.config` configuration file, Creatio will use
+  default connections. The default generic connection is ".Net SqlClient
+  DataProvider," the default connection of a dedicated query pool is ".Net
+  SqlClient DataProvider_Limited."
+
+- If you **specify** "creatio" for the `App` property in the connection string
+  of the `ConnectionStrings.config` configuration file, Creatio will replace the
+  connection property of the dedicated query pool with "creatio_Limited."
+  - Example of the set up App property (Creatio 8.1.4 and later)
+  - Example of the set up App property (Creatio 8.1.3 and earlier)
+
+  <add name="db" connectionString="App=creatio; Data Source=dbserver\mssql2022; Initial Catalog=BpmonlineSolution; Persist Security Info=True; MultipleActiveResultSets=True; Integrated Security=SSPI; Pooling = true; Max Pool Size = 100; Async = true; Connection Timeout=500" />
+
+  <add name="db" connectionString="App=creatio; Data Source=dbserver\mssql2016; Initial Catalog=BpmonlineSolution; Persist Security Info=True; MultipleActiveResultSets=True; Integrated Security=SSPI; Pooling = true; Max Pool Size = 100; Async = true; Connection Timeout=500" />
+
+As a result, Creatio adds more database connections when you load dashboards or
+filter sections using dynamic folders. Unlike main connections, the names of
+these connections contain the `_Limited` suffix.
+
+Important
+
+Creatio does not limit resources when using a dedicated query pool. Use the
+`_Limited` suffix to rate connections with Resource Governor tools.
+
+### 2\. Enable the dedicated query pool functionality​
+
+To **enable the dedicated query pool functionality** , set the `UseQueryKinds`
+key of the `<appSettings>` element in the `..\Terrasoft.WebApp\Web.config` file
+to `true`. The `UseQueryKinds` key lets you send queries from dashboards and
+dynamic folders to connections whose names contain the `_Limited` suffix.
+
+..\Terrasoft.WebApp\Web.config
+
+    <add key="UseQueryKinds" value="true" />
+
+### 3\. Set up the Resource Governor tool​
+
+The setup of the Resource Governor tool involves the setup of the groups and
+pool.
+
+To **set up the Resource Governor tool** , execute the SQL script.
+
+Example of the group and pool setup
+
+    ALTER RESOURCE POOL poolLimited WITH (
+        MAX_CPU_PERCENT = 20,
+        MIN_CPU_PERCENT = 0
+        -- REQUEST_MAX_MEMORY_GRANT_PERCENT = value
+        -- REQUEST_MAX_CPU_TIME_SEC = value
+        -- REQUEST_MEMORY_GRANT_TIMEOUT_SEC = value
+        -- MAX_DOP = value
+        -- GROUP_MAX_REQUESTS = value
+    );
+    GO
+    --- Create a workload group for off-hours processing
+    --- and configure the relative importance.
+        CREATE WORKLOAD GROUP groupLimited WITH (IMPORTANCE = LOW) USING poolLimited
+    GO ALTER RESOURCE GOVERNOR RECONFIGURE;
+    GO
+
+Learn more about setting up the tool in the official
+[Resource Governor documentation](https://docs.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor).
+
+The classifier function that returns the group name is run for each new
+connection.
+
+Example of the classifier function
+
+    USE [master]
+    GO
+
+    ALTER FUNCTION [dbo].[fnProtoClassifier]()
+        RETURNS sysname
+        WITH SCHEMABINDING
+    AS
+    BEGIN
+        IF(app_name() like '%_Limited')
+        BEGIN
+            RETURN N'groupLimited'
+        END
+        RETURN N'default'
+    END;
+
+## Read-only replica​
+
+Creatio supports reading data from a read-only replica. The **purpose** of a
+read-only replica is to process complex `Select` queries.
+
+Creatio can redirect the following **queries** :
+
+- Custom `SelectQuery` from Creatio UI.
+- `Select` queries from the back-end. For example, the **Script task** process
+  element.
+
+Similar to a
+[dedicated query pool](https://academy.creatio.com/documents?ver=8.1&id=15261&anchor=title-3509-1),
+a read-only replica only accepts `Select` queries that are not part of the
+transaction. Creatio supports only a single read-only replica.
+
+Learn more about setting up a read-only replica in the user documentation:
+[Process complex database queries faster](https://academy.creatio.com/documents?ver=8.1&id=2375).
+
+## Execute a complex Select query​
+
+To **execute** a `Select` **query** , retrieve a special `DBExecutor` by passing
+the `Limited` value from the `QueryKind` enumeration as an additional parameter.
+
+`QueryKind` is the argument of the `EnsureDBConnection()` method in the example
+below. Creatio retrieves the argument value from the `ESQ` client query and
+inserts the value into the `ESQ` server query, as well as the `Select` query.
+
+Retrieve the DBExecutor depending on retrieved QueryKind
+
+    using (DBExecutor executor = userConnection.EnsureDBConnection(QueryKind)) {
+        /* ... */
+    };
+
+The `EnsureDBConnection(QueryKind.General)` call is identical to the
+`EnsureDBConnection()` call that does not specify `QueryKind`.
+
+As a result, if you select the `QueryKind.Limited` flag in the front-end when
+you create an instance of the `Terrasoft.EntitySchemaQuery` class, Creatio will
+pass the value to the server and assign the query a special `DBExecutor` that
+uses a dedicated query pool.
+
+Example of the QueryKind.Limited flag selected for the ESQ client query in the
+ChartModule schema
+
+    ...
+    getChartDataESQ: function() {
+        return this.Ext.create("Terrasoft.EntitySchemaQuery", {
+            rootSchema: this.entitySchema,
+            queryKind: Terrasoft.QueryKind.LIMITED
+        });
+    },
+    ...
+
+Important
+
+If the code contains nested calls to
+`userConnection.EnsureDBConnection(QueryKind)`, make sure to use the same
+`QueryKind` value on every nesting level.
+
+---
+
+## See also​
+
+[Process complex database queries faster](https://academy.creatio.com/documents?ver=8.1&id=2375)
+(user documentation)
+
+---
+
+## Resources​
+
+[Resource Governor](https://docs.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor)
+(official Microsoft documentation)
+
+[SQL Server Replication](https://learn.microsoft.com/en-us/sql/relational-databases/replication/sql-server-replication?view=sql-server-ver15)
+(official Microsoft documentation)
+
+[Simple Streams Replication Configuration](https://docs.oracle.com/cd/B19306_01/server.102/b14228/config_simple.htm#STREP056)
+(official Oracle documentation)
+
+[Streaming Replication](https://wiki.postgresql.org/index.php?title=Streaming_Replication&oldid=36550)
+(official Postgres documentation)
+
+- Dedicated query pool
+  - 1\. Set up the connection of a dedicated query pool
+  - 2\. Enable the dedicated query pool functionality
+  - 3\. Set up the Resource Governor tool
+- Read-only replica
+- Execute a complex Select query
+- See also
+- Resources

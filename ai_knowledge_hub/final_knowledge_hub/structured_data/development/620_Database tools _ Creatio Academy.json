@@ -1,0 +1,19 @@
+{
+  "id": 620,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/category/database-tools",
+  "title": "Database tools | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 PostgreSQL features Backward compatible scripts",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/category/database-tools)** (8.3).\n\nVersion: 8.0[PostgreSQL features](/docs/8.x/dev/development-on-creatio-platform/8.0/category/postgresql-features)[Backward compatible scripts](/docs/8.x/dev/development-on-creatio-platform/8.0/development-tools/database-tools/backward-compatible-sql-scripts)\n",
+  "analysis": {
+    "word_count": 24,
+    "key_concepts": ["sql"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "sql", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:26:58.022612"
+}

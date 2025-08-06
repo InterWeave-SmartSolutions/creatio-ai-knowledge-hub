@@ -1,0 +1,94 @@
+# Structure of a Freedom UI page | Creatio Academy
+
+**Category:** development **Difficulty:** beginner **Word Count:** 370 **URL:**
+https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.1/front-end-development/freedom-ui/freedom-ui-page
+
+## Description
+
+A Freedom UI page is an app element that lets you display Freedom UI elements
+connected to data sources and positioned arbitrarily. A Freedom UI page schema
+of the Client module type controls each Freedom UI page. Learn more
+
+## Key Concepts
+
+page schema, configuration, freedom ui, section, package, no-code
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+This is documentation for Creatio **8.1**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/dev/development-on-creatio-platform/front-end-development/freedom-ui/freedom-ui-page)**
+(8.3).
+
+Version: 8.1
+
+On this page
+
+Level: beginner
+
+A **Freedom UI page** is an app element that lets you display Freedom UI
+elements connected to data sources and positioned arbitrarily. A **Freedom UI
+page** schema of the **Client module** type controls each Freedom UI page. Learn
+more:
+[Freedom UI page schema](https://academy.creatio.com/documents?ver=8.1&id=15106&anchor=title-2123-10).
+For example:
+
+- The `StudioHomePage` schema of the `CrtUIv2` package configures the Studio
+  home page.
+- The `BaseTemplate` schema of the `CrtUIv2` package implements the features of
+  the base Freedom UI page.
+
+All form page schemas must inherit from `BaseTemplate` or its descendants.
+Freedom UI page examples:
+
+- A page that has left area (the `PageWithLeftAreaTemplate` schema of the
+  `CrtUIv2` package).
+- A page that has a list (the `BaseGridSectionTemplate` schema of the `CrtUIv2`
+  package).
+
+Depending on the current app template, an app can contain a list page and a form
+page that contain a minimum set of elements. Customize the Freedom UI page
+further in the **Freedom UI Designer** using no-code tools. Learn more:
+[Overview of Freedom UI Designer and its elements](https://academy.creatio.com/documents?ver=8.1&id=2376),
+[Element setup examples](https://academy.creatio.com/docs/8.x/no-code-customization/category/element-setup-examples)
+(user documentation).
+
+The Freedom UI page elements of the app are placed in the corresponding
+containers. Configure the containers using the base Freedom UI page schema or
+the replacing **Freedom UI page** schema. Containers operate similarly
+regardless of the page type.
+
+note
+
+Creatio uses HTML container meta names. It generates actual IDs that match the
+HTML elements of the form page based on the meta names.
+
+View the main **containers of the Freedom UI page** in the figure below.
+
+![](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/FreedomUIPage/8.1/scr_Freedom_UI_Page.png)
+
+| Container | Description | MainHeader | Includes the `TitleContainer` and `ActionButtonsContainer` child containers. | TitleContainer | Includes the page title. | ActionButtonsContainer | Includes the page actions, such as add record, open page, import data, etc. | MainContainer | Includes the `MainFilterContainer` and `SectionContentWrapper` child containers. | MainFilterContainer | Includes the `LeftFilterContainer` and `RightFilterContainer` child containers. | LeftFilterContainer | Includes the menu of the **Folders** page element. | RightFilterContainer | Includes the filter of page content. | SectionContentWrapper | Includes the page content. |
+| --------- | ----------- | ---------- | ---------------------------------------------------------------------------- | -------------- | ------------------------ | ---------------------- | --------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------- | ------------------- | -------------------------------------------------- | -------------------- | ------------------------------------ | --------------------- | -------------------------- |
+
+---
+
+## See also​
+
+[Configuration elements of the Client module type](https://academy.creatio.com/documents?ver=8.1&id=15106)
+
+[Overview of Freedom UI Designer and its elements](https://academy.creatio.com/documents?ver=8.1&id=2376)
+(user documentation)
+
+[Element setup examples](https://academy.creatio.com/docs/8.x/no-code-customization/category/element-setup-examples)
+(user documentation)
+
+[Set up the app UI](https://academy.creatio.com/documents?ver=8.1&id=2379) (user
+documentation)
+
+- See also

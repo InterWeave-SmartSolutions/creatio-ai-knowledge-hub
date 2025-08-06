@@ -1,0 +1,19 @@
+{
+  "id": 574,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.0/category/crm-tools",
+  "title": "CRM tools | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Activities Accounts and contacts Knowledge base Landing pages and web forms Employees",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/overview/platform-overview)** (8.3).\n\nVersion: 8.0[Activities](/docs/8.x/creatio-apps/8.0/category/activities)[Accounts and contacts](/docs/8.x/creatio-apps/8.0/category/accounts-and-contacts)[Knowledge base](/docs/8.x/creatio-apps/8.0/category/knowledge-base)[Landing pages and web forms](/docs/8.x/creatio-apps/8.0/category/landing-pages-and-web-forms)[Employees](/docs/8.x/creatio-apps/8.0/category/employees)\n",
+  "analysis": {
+    "word_count": 31,
+    "key_concepts": ["contact", "account"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "contact", "intermediate", "documentation", "account"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:26:02.779250"
+}

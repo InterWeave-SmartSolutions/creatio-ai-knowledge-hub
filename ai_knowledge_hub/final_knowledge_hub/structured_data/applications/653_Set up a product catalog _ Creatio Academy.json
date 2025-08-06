@@ -1,0 +1,25 @@
+{
+  "id": 653,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/products/sales-tools/products-and-prices/set-up-a-product-catalog",
+  "title": "Set up a product catalog | Creatio Academy",
+  "category": "applications",
+  "description": "This functionality is available in Order and Contract Management app and Sales product.",
+  "content": "Version: 8.3 Sales Enterprise Sales Commerce On this page note This functionality is available in Order and Contract Management app and Sales product. The product catalog is a separate folder tree you can access in the Orders . section. To do this, click on the Products expanded list of the order page. (Fig. 1). Fig. 1 Product catalog Out of the box, the product hierarchy goes from category to type. You can edit the hierarchy using the lookups available in Products object by editing the Catalog component on the Freedom UI catalog page. To do this: Open the Orders section. Open any order record. Click on the Products expanded list of the order page. This opens a page. Click in the top right. This opens the Freedom UI Designer. Click the Catalog component on the canvas. This opens the component setup area. Click next to the relevant hierarchy level. (Fig. 2) This lets you make the following changes: Fig. 2 Set up the catalog hierarchy Click Add sub-hierarchy to add a sub-level. One hierarchy level can have only a single sub-level. Click Edit to change the lookup the hierarchy level uses. Click Delete to delete the hierarchy level. Save the changes . See also ​ Add products Manage prices Search products in the catalog See also",
+  "markdown": "Version: 8.3Sales EnterpriseSales Commerce\n\nOn this page\n\nnote\n\nThis functionality is available in **Order and Contract Management** app and Sales product.\n\nThe product catalog is a separate [folder tree](https://academy.creatio.com/documents?product=base&ver=7&id=1018) you can access in the **Orders**. section. To do this, click ![](https://academy.creatio.com/docs/sites/academy_en/files/images/Composable_apps/Products_and_prices/set_up_a_product_catalog/btn_add.png) on the **Products** expanded list of the order page. (Fig. 1).\n\nFig. 1 Product catalog\n\n![Fig. 1 Product catalog](https://academy.creatio.com/docs/sites/academy_en/files/images/Composable_apps/Products_and_prices/set_up_a_product_catalog/scr_product_catalog.png)\n\nOut of the box, the product hierarchy goes from category to type. You can **edit the hierarchy** using the lookups available in **Products** object by editing the **Catalog** component on the Freedom UI catalog page. To do this:\n\n  1. **Open** the **Orders** section.\n\n  2. **Open** any order record.\n\n  3. **Click** ![](https://academy.creatio.com/docs/sites/academy_en/files/images/Composable_apps/Products_and_prices/set_up_a_product_catalog/btn_add.png) on the **Products** expanded list of the order page. This opens a page.\n\n  4. **Click** ![](https://academy.creatio.com/docs/sites/academy_en/files/images/Composable_apps/Products_and_prices/set_up_a_product_catalog/btn_edit.png) in the top right. This opens the Freedom UI Designer.\n\n  5. **Click** the **Catalog** component on the canvas. This opens the component setup area.\n\n  6. **Click** ![](https://academy.creatio.com/docs/sites/academy_en/files/images/Composable_apps/Products_and_prices/set_up_a_product_catalog/btn_edit_hierarchy.png) next to the relevant hierarchy level. (Fig. 2) This lets you make the following changes:\n\nFig. 2 Set up the catalog hierarchy\n\n![Fig. 2 Set up the catalog hierarchy](https://academy.creatio.com/docs/sites/academy_en/files/images/Composable_apps/Products_and_prices/set_up_a_product_catalog/scr_edit_product_hierarchy.png)\n\n     * **Click** **Add sub-hierarchy** to add a sub-level. One hierarchy level can have only a single sub-level.\n     * **Click** **Edit** to change the lookup the hierarchy level uses.\n     * **Click** **Delete** to delete the hierarchy level.\n  7. **Save the changes**.\n\n\n\n\n* * *\n\n## See also​\n\n[Add products](https://academy.creatio.com/documents?product=enterprise&ver=7&id=1056)\n\n[Manage prices](https://academy.creatio.com/documents?product=enterprise&ver=7&id=2047)\n\n[Search products in the catalog](https://academy.creatio.com/documents?product=enterprise&ver=7&id=1801)\n\n  * See also\n\n\n",
+  "analysis": {
+    "word_count": 216,
+    "key_concepts": ["freedom ui", "section", "lookup"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": ["customization", "layout", "ui design", "page schema"],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "freedom ui", "documentation", "section", "lookup"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:27:38.892783"
+}

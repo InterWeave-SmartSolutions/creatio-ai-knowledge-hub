@@ -1,0 +1,25 @@
+{
+  "id": 538,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/products/marketing-tools/lead-generation/lead-generation-faq",
+  "title": "Lead Generation FAQ | Creatio Academy",
+  "category": "development",
+  "description": "Why am I getting \"An error occurred while processing the data\" error message while configuring Facebook integration?",
+  "content": "Version: 8.3 Marketing On this page Why am I getting \"An error occurred while processing the data\" error message while configuring Facebook integration? ​ Fig. 1 Data processing error The password for the Facebook page could have been changed, or your Facebook login session could have have expired. To resolve this issue, clear browser cache and relogin to your Facebook account. Learn more about connecting a Facebook form: Set up automatic lead registration from social networks . See also ​ Set up automatic lead registration from social networks Integrate with landing pages and web forms Lead management process Set up automatic lead registration from LinkedIn Why am I getting \"An error occurred while processing the data\" error message while configuring Facebook integration? See also",
+  "markdown": "Version: 8.3Marketing\n\nOn this page\n\n## Why am I getting \"An error occurred while processing the data\" error message while configuring Facebook integration?​\n\nFig. 1 Data processing error\n\n![Fig. 1 Data processing error](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Lead%20generation/scr_facebook_error.png)\n\nThe password for the Facebook page could have been changed, or your Facebook login session could have have expired. To resolve this issue, clear browser cache and relogin to your Facebook account. Learn more about connecting a Facebook form: [Set up automatic lead registration from social networks](https://academy.creatio.com/documents?id=2499#title-2499-1).\n\n* * *\n\n## See also​\n\n[Set up automatic lead registration from social networks](https://academy.creatio.com/documents?id=2499)\n\n[Integrate with landing pages and web forms](https://academy.creatio.com/documents?id=1081)\n\n[Lead management process](https://academy.creatio.com/documents?id=1767)\n\n[Set up automatic lead registration from LinkedIn](https://academy.creatio.com/documents?id=2368)\n\n  * Why am I getting \"An error occurred while processing the data\" error message while configuring Facebook integration?\n  * See also\n\n\n",
+  "analysis": {
+    "word_count": 124,
+    "key_concepts": ["integration", "lead", "account"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": ["webhooks", "data sync", "web service", "api"],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "documentation", "integration", "lead", "advanced", "account"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:25:17.364399"
+}

@@ -1,0 +1,53 @@
+{
+  "id": 336,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/app-development/steps-to-develop-the-app",
+  "title": "Steps to develop the Marketplace app | Creatio Academy",
+  "category": "development",
+  "description": "Steps to develop the Marketplace app are as follows:",
+  "content": "On this page Level: beginner Steps to develop the Marketplace app are as follows: Prepare the app development environment. Develop the app functionality. 1. Prepare the app development environment ​ Use the development environment, a separate website, to develop the Marketplace app. Learn more about the development environment: Environments . You can deploy the app development website in the following ways : On-site: deploy the Marketplace app on the local servers of the customer. Cloud: deploy the Marketplace app on the cloud. The cloud development environment is a bundle of Creatio base products (Sales Creatio, Marketing Creatio, and Service Creatio). This lets you use any base Creatio functionality when developing Marketplace apps. Learn more about the advantages and limitations of the Marketplace app development website: Creatio main application . To prepare a local development environment , contact Creatio Technical support ( support@creatio.com ) to retrieve the binary files of the Creatio app. To prepare a cloud development environment : Open the Creatio Marketplace website. Select Developer profile in the account menu of the toolbar. Click Applications → Development site on the properties panel. Enter the email address to send the link to the development environment in the Order cloud development site field. Click Send to request a cloud development environment to the Creatio Technical support. Creatio Technical support provides a free cloud development environment after processing the request. The user receives an email with a link to the development environment app to the email address from the Order cloud development site field. The link to the development environment app is displayed on the Development site tab of the Applications section in the Developer profile. 2. Develop the app functionality ​ When developing a Marketplace app, the developer can create any additional elements of the system, configuration, business processes, mobile app, or integration with software, service, or external app. The Marketplace app can be an improvement of any base Creatio product. A Marketplace app is a set of packages. It lets you extend the functionality of the base Creatio products. Learn more about packages: Packages basics . The number and composition of Marketplace app packages depend on the complexity of the implemented functionality. For example, to invoke a third-party service from an existing record page, replace one or more configuration element schemas, and group them in a single user-made package. To add a Creatio section, implement multiple dozen configuration element schemas. The Marketplace app development, as well as the Creatio instance, is performed using development tools and based on the basic principles of software design, in particular, the Don’t repeat yourself (DRY) principle. Creatio architecture implements this principle via package dependencies . Learn more about the DRY principle on the Wikipedia . Learn more about package dependencies: Packages basics . Learn more about tools for Marketplace app development in separate guides: Development tools , Marketplace app development . We recommend publishing the app as a Coming soon Marketplace app on the Application map if the app is not finished yet, but a beta release is available. Learn more: Coming soon Marketplace app . After that, you can move on to publishing the Marketplace app. Learn more: Steps to publish the Marketplace app . See also ​ Environments Creatio main application E-learning courses ​ Tech Hour - Marketplace Apps: Editor Picks Resources ​ Official Creatio Marketplace website Development tools Creatio documentation Definition of Don't repeat yourself principle Marketplace updates 1. Prepare the app development environment 2. Develop the app functionality See also E-learning courses Resources",
+  "markdown": "On this page\n\nLevel: beginner\n\n**Steps** to develop the Marketplace app are as follows:\n\n  1. Prepare the app development environment.\n  2. Develop the app functionality.\n\n\n\n## 1\\. Prepare the app development environment​\n\nUse the development environment, a separate website, to develop the Marketplace app. Learn more about the development environment: [Environments](https://academy.creatio.com/documents?id=15201&anchor=title-2124-1).\n\nYou can deploy the app development website in the following **ways** :\n\n  * On-site: deploy the Marketplace app on the local servers of the customer.\n  * Cloud: deploy the Marketplace app on the cloud. The cloud development environment is a bundle of Creatio base products (Sales Creatio, Marketing Creatio, and Service Creatio). This lets you use any base Creatio functionality when developing Marketplace apps.\n\n\n\nLearn more about the advantages and limitations of the Marketplace app development website: [Creatio main application](https://academy.creatio.com/documents?id=15051&anchor=title-1165-13).\n\nTo **prepare a local development environment** , contact Creatio Technical support (`support@creatio.com`) to retrieve the binary files of the Creatio app.\n\nTo **prepare a cloud development environment** :\n\n  1. Open the [Creatio Marketplace](https://marketplace.creatio.com/) website.\n  2. Select **Developer profile** in the account menu of the toolbar.\n  3. Click **Applications** → **Development site** on the properties panel.\n  4. Enter the email address to send the link to the development environment in the **Order cloud development site** field.\n  5. Click **Send** to request a cloud development environment to the Creatio Technical support.\n\n\n\nCreatio Technical support provides a free cloud development environment after processing the request. The user receives an email with a link to the development environment app to the email address from the **Order cloud development site** field. The link to the development environment app is displayed on the **Development site** tab of the **Applications** section in the Developer profile.\n\n![](https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/CreatioMarketplace/8.0/scr_development_site_link.png)\n\n## 2\\. Develop the app functionality​\n\nWhen developing a Marketplace app, the developer can create any additional elements of the system, configuration, business processes, mobile app, or integration with software, service, or external app. The Marketplace app can be an improvement of any base Creatio product.\n\nA Marketplace app is a set of packages. It lets you extend the functionality of the base Creatio products. Learn more about packages: [Packages basics](https://academy.creatio.com/documents?id=15121).\n\nThe number and composition of Marketplace app packages depend on the complexity of the implemented functionality. For example, to invoke a third-party service from an existing record page, replace one or more configuration element schemas, and group them in a single user-made package. To add a Creatio section, implement multiple dozen configuration element schemas.\n\nThe Marketplace app development, as well as the Creatio instance, is performed using [development tools](https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/development-tools) and based on the basic principles of software design, in particular, the **Don’t repeat yourself (DRY)** principle. Creatio architecture implements this principle via **package dependencies**. Learn more about the DRY principle on the [Wikipedia](https://en.wikipedia.org/w/index.php?title=Don%27t_repeat_yourself&oldid=1120914092). Learn more about package dependencies: [Packages basics](https://academy.creatio.com/documents?id=15121&anchor=title-2105-3).\n\nLearn more about tools for Marketplace app development in separate guides: [Development tools](https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/development-tools), [Marketplace app development](https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/category/development).\n\nWe recommend publishing the app as a Coming soon Marketplace app on the Application map if the app is not finished yet, but a beta release is available. Learn more: [Coming soon Marketplace app](https://academy.creatio.com/documents?id=15026).\n\nAfter that, you can move on to publishing the Marketplace app. Learn more: [Steps to publish the Marketplace app](https://academy.creatio.com/documents?id=15957).\n\n* * *\n\n## See also​\n\n[Environments](https://academy.creatio.com/documents?id=15201)\n\n[Creatio main application](https://academy.creatio.com/documents?id=15051)\n\n* * *\n\n## E-learning courses​\n\n[Tech Hour - Marketplace Apps: Editor Picks](https://www.youtube.com/watch?v=kZJe7CwHUXk)\n\n* * *\n\n## Resources​\n\n[Official Creatio Marketplace website](https://marketplace.creatio.com/)\n\n[Development tools Creatio documentation](https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/development-tools)\n\n[Definition of Don't repeat yourself principle](https://en.wikipedia.org/w/index.php?title=Don%27t_repeat_yourself&oldid=1120914092)\n\n[Marketplace updates](https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/category/marketplace-updates)\n\n  * 1\\. Prepare the app development environment\n  * 2\\. Develop the app functionality\n  * See also\n  * E-learning courses\n  * Resources\n\n\n",
+  "analysis": {
+    "word_count": 583,
+    "key_concepts": [
+      "business process",
+      "configuration",
+      "section",
+      "integration",
+      "package",
+      "mobile app",
+      "contact",
+      "account",
+      "marketplace"
+    ],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": [
+      "workflow",
+      "bpm",
+      "data sync",
+      "automation",
+      "process design",
+      "offline",
+      "mobile ui",
+      "web service"
+    ],
+    "difficulty": "beginner",
+    "ai_tags": [
+      "beginner",
+      "creatio",
+      "package",
+      "documentation",
+      "section",
+      "integration",
+      "configuration",
+      "business process"
+    ]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:21:07.731720"
+}

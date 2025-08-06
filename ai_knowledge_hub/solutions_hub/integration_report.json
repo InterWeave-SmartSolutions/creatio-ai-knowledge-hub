@@ -1,0 +1,109 @@
+{
+  "integration_session": {
+    "completed_at": "2025-07-28T12:59:43.563814",
+    "processing_statistics": {
+      "academy_urls_processed": 50,
+      "solutions_content_extracted": 0,
+      "total_pages_indexed": 50,
+      "media_files_processed": 0,
+      "ai_ready_entries": 50,
+      "errors": 0
+    }
+  },
+  "database_statistics": {
+    "total_knowledge_entries": 50,
+    "ai_ready_entries": 50,
+    "category_distribution": {
+      "administration": 6,
+      "applications": 7,
+      "development": 36,
+      "mobile": 1
+    },
+    "difficulty_distribution": {
+      "advanced": 27,
+      "beginner": 14,
+      "intermediate": 9
+    }
+  },
+  "file_structure": {
+    "gifs": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "documents": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "screenshots": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "solutions_content": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "ai_ready": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "academy_content": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "metadata": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "structured_data": {
+      "size_bytes": 621900,
+      "size_mb": 0.59,
+      "file_count": 104
+    },
+    "images": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "transcripts": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "videos": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "search_data": {
+      "size_bytes": 169200,
+      "size_mb": 0.16,
+      "file_count": 6
+    },
+    "pages": {
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "file_count": 0
+    }
+  },
+  "ai_features": {
+    "search_indices_created": true,
+    "structured_data_available": true,
+    "category_based_organization": true,
+    "difficulty_levels_assigned": true,
+    "ai_tags_generated": true
+  },
+  "recommendations": [
+    "Use the ai_search_index.json for comprehensive content search",
+    "Access structured data by category for specific domain queries",
+    "Use difficulty levels to guide content recommendations",
+    "Leverage AI tags for content classification and filtering",
+    "Query the database directly for complex content relationships"
+  ]
+}

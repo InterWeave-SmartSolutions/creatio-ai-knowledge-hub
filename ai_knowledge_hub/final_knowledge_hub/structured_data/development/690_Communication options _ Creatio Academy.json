@@ -1,0 +1,25 @@
+{
+  "id": 690,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/communication-options",
+  "title": "Communication options | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Сommunication option Communication type Custom action menu",
+  "markdown": "Version: 8.3[Сommunication option](/docs/8.x/dev/development-on-creatio-platform/category/сommunication-option)[Communication type](/docs/8.x/dev/development-on-creatio-platform/category/communication-type)[Custom action menu](/docs/8.x/dev/development-on-creatio-platform/category/custom-action-menu)\n",
+  "analysis": {
+    "word_count": 9,
+    "key_concepts": [],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:28:22.712351"
+}

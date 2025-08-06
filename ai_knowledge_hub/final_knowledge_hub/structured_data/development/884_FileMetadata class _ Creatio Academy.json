@@ -1,0 +1,19 @@
+{
+  "id": 884,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/back-end-development/api-for-file-management/references/filemetadata",
+  "title": "FileMetadata class | Creatio Academy",
+  "category": "development",
+  "description": "Terrasoft.File.Abstractions.Metadata namespace.",
+  "content": "Version: 8.3 On this page Level: intermediate Terrasoft.File.Abstractions.Metadata namespace. The Terrasoft.File.Abstractions.Metadata.FileMetadata abstract class provides the properties of file metadata and methods for metadata management, note Use the .NET classes reference to access the full list of the methods, properties, base classes, and implemented interfaces of the FileMetadata class. Properties ​ Name string File name. Length long The file size in bytes. CreatedOn DateTime Date and time the file was created. ModifiedOn DateTime Date and time the file was modified. FileContentStorageId Guid The identifier of the file storage. StoringState FileStoringState The state of the file (\"New,\" \"Modified,\" \"Unmodified,\" \"Deleted\"). Methods ​ abstract void SetAttribute < TValue > ( string name , TValue value ) Set the additional name file attribute to the specified value . abstract TValue GetAttribute < TValue > ( string name , TValue defaultValue ) Returns the specified value or the defaultValue of the additional name attribute. void SetStoringState ( FileStoringState newState ) Sets the file state to FileStoringState.Modified if the previous file state is not FileStoringState.New . Properties Methods",
+  "markdown": "Version: 8.3\n\nOn this page\n\nLevel: intermediate\n\n`Terrasoft.File.Abstractions.Metadata` namespace.\n\nThe `Terrasoft.File.Abstractions.Metadata.FileMetadata` abstract class provides the properties of file metadata and methods for metadata management,\n\nnote\n\nUse the [.NET classes reference](https://academy.creatio.com/api/netcoreapi/8.0.0/api/index.html) to access the full list of the methods, properties, base classes, and implemented interfaces of the `FileMetadata` class.\n\n## Properties​\n    \n    \n    Name string  \n    \n\nFile name.\n    \n    \n    Length long  \n    \n\nThe file size in bytes.\n    \n    \n    CreatedOn DateTime  \n    \n\nDate and time the file was created.\n    \n    \n    ModifiedOn DateTime  \n    \n\nDate and time the file was modified.\n    \n    \n    FileContentStorageId Guid  \n    \n\nThe identifier of the file storage.\n    \n    \n    StoringState FileStoringState  \n    \n\nThe state of the file (\"New,\" \"Modified,\" \"Unmodified,\" \"Deleted\").\n\n## Methods​\n    \n    \n    abstract void SetAttribute<TValue>(string name, TValue value)  \n    \n\nSet the additional `name` file attribute to the specified `value`.\n    \n    \n    abstract TValue GetAttribute<TValue>(string name, TValue defaultValue)  \n    \n\nReturns the specified value or the `defaultValue` of the additional `name` attribute.\n    \n    \n    void SetStoringState(FileStoringState newState)  \n    \n\nSets the file state to `FileStoringState.Modified` if the previous file state is not `FileStoringState.New`.\n\n  * Properties\n  * Methods\n\n\n",
+  "analysis": {
+    "word_count": 172,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:32:20.856046"
+}

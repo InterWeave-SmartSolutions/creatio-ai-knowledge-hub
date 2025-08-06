@@ -1,0 +1,19 @@
+{
+  "id": 410,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/category/email-marketing",
+  "title": "Email marketing | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "Version: 8.3 Overview Freedom UI Classic UI Email analytics Email domain verification Email guidelines Usage policy FAQ",
+  "markdown": "Version: 8.3[Overview](/docs/8.x/creatio-apps/products/marketing-tools/email-marketing/email-marketing-overview)[Freedom UI](/docs/8.x/creatio-apps/category/freedom-ui-1)[Classic UI](/docs/8.x/creatio-apps/category/classic-ui)[Email analytics](/docs/8.x/creatio-apps/category/email-analytics)[Email domain verification](/docs/8.x/creatio-apps/category/email-domain-verification)[Email guidelines](/docs/8.x/creatio-apps/category/email-guidelines)[Usage policy](/docs/8.x/creatio-apps/products/marketing-tools/email-marketing/emails-usage-policy)[FAQ](/docs/8.x/creatio-apps/products/marketing-tools/email-marketing/marketing-email-faq)\n",
+  "analysis": {
+    "word_count": 17,
+    "key_concepts": ["freedom ui", "classic ui"],
+    "use_cases": [],
+    "related_topics": ["customization", "layout", "ui design", "page schema"],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "freedom ui", "documentation", "classic ui"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:22:40.482223"
+}

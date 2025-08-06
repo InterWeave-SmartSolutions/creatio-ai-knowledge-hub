@@ -1,0 +1,19 @@
+{
+  "id": 767,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/category/product-selection",
+  "title": "Product selection | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "Version: 8.3 Overview Recommendations (NBO) Product selection Example process",
+  "markdown": "Version: 8.3[Overview](/docs/8.x/creatio-apps/products/finance-and-banking/financial-products/product-selection-finance/select-products-overview)[Recommendations (NBO)](/docs/8.x/creatio-apps/products/finance-and-banking/financial-products/product-selection-finance/next-best-offers)[Product selection](/docs/8.x/creatio-apps/products/finance-and-banking/financial-products/product-selection-finance/select-bank-product)[Example process](/docs/8.x/creatio-apps/products/finance-and-banking/financial-products/product-selection-finance/set-up-a-product-selection-business-process)\n",
+  "analysis": {
+    "word_count": 9,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:29:56.659194"
+}

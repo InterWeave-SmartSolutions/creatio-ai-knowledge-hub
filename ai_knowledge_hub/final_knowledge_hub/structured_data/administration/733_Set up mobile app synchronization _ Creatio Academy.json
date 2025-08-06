@@ -1,0 +1,34 @@
+{
+  "id": 733,
+  "url": "https://academy.creatio.com/docs/8.x/mobile/mobile-app-setup/synchronization",
+  "title": "Set up mobile app synchronization | Creatio Academy",
+  "category": "administration",
+  "description": "You can specify the objects and records to synchronize with the offline mode of the Mobile Creatio app. For example, this lets you select the records of existing objects. To do this:",
+  "content": "On this page Level: beginner You can specify the objects and records to synchronize with the offline mode of the Mobile Creatio app. For example, this lets you select the records of existing objects. To do this: Open the System Designer . To do this, click in the top right. Click Mobile application wizard in the System setup block. Select the workplace to edit → Open . Click Actions → Set up synchronization on the toolbar. This opens the Mobile synchronization settings page. The page contains the list of objects the workplace uses (Fig. 1). For example, sections, lookups, details, etc. Fig. 1 Opening the Mobile synchronization settings page Creatio adds an object to the Mobile synchronization settings page once you add and set up the corresponding object on the Mobile Creatio app page using Mobile Application Wizard . For example, add and set up \"Product in order\" detail to add the \"Product in order\" object to the Mobile synchronization settings page. Select an object whose synchronization settings to change. Change the object synchronization settings . You can turn the synchronization on or off for the entire object or filter records to synchronize (Fig. 2). Fig. 2 Filter settings for the Activity object Save the changes . Review the synchronized records . You can view the record number of a synchronized object in the Filtered records count column or synchronize an app on a mobile device and check. See also ​ Mobile app setup See also",
+  "markdown": "On this page\n\nLevel: beginner\n\nYou can specify the objects and records to synchronize with the offline mode of the Mobile Creatio app. For example, this lets you select the records of existing objects. To do this:\n\n  1. **Open the System Designer**. To do this, click ![](https://academy.creatio.com/docs/sites/academy_en/files/images/NoCodePlatform/Manage_Apps/btn_system_designer_8_shell.png) in the top right.\n\n  2. **Click Mobile application wizard** in the **System setup** block.\n\n  3. **Select the workplace** to edit → **Open**.\n\n  4. Click **Actions** → **Set up synchronization** on the toolbar. This opens the **Mobile synchronization settings** page.\n\nThe page contains the list of objects the workplace uses (Fig. 1). For example, sections, lookups, details, etc.\n\nFig. 1 Opening the Mobile synchronization settings page\n\n![Fig. 1 Opening the Mobile synchronization settings page](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/NoCode_Customization/set_up_mobile_app_synchronization/8.2/scr_process_of_opening_the_pages.gif)\n\nCreatio adds an object to the **Mobile synchronization settings** page once you add and set up the corresponding object on the Mobile Creatio app page using **Mobile Application Wizard**. For example, add and set up \"Product in order\" detail to add the \"Product in order\" object to the **Mobile synchronization settings** page.\n\n  5. **Select an object** whose synchronization settings to change.\n\n  6. **Change the object synchronization settings**. You can turn the synchronization on or off for the entire object or filter records to synchronize (Fig. 2).\n\nFig. 2 Filter settings for the Activity object\n\n![Fig. 2 Filter settings for the Activity object](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/NoCode_Customization/set_up_mobile_app_synchronization/8.2/scr_filter_settings.png)\n\n  7. **Save the changes**.\n\n  8. **Review the synchronized records**. You can view the record number of a synchronized object in the **Filtered records count** column or synchronize an app on a mobile device and check.\n\n\n\n\n* * *\n\n## See also​\n\n[Mobile app setup](https://academy.creatio.com/docs/8.x/no-code-customization/category/mobile-app-setup)\n\n  * See also\n\n\n",
+  "analysis": {
+    "word_count": 246,
+    "key_concepts": ["section", "detail", "lookup", "mobile app", "synchronization"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": ["mobile ui", "offline", "synchronization", "responsive"],
+    "difficulty": "intermediate",
+    "ai_tags": [
+      "creatio",
+      "intermediate",
+      "documentation",
+      "section",
+      "detail",
+      "lookup",
+      "synchronization",
+      "mobile app"
+    ]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:29:15.556084"
+}

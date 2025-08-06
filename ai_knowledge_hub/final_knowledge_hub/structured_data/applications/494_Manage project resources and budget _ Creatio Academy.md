@@ -1,0 +1,113 @@
+# Manage project resources and budget | Creatio Academy
+
+**Category:** applications **Difficulty:** advanced **Word Count:** 943 **URL:**
+https://academy.creatio.com/docs/8.x/creatio-apps/8.0/sales-tools/projects/manage-project-resources-and-budget
+
+## Description
+
+For new Creatio instances this functionality is available for Creatio version
+8.0.9 and earlier. Existing Creatio instances keep the Classic UI section after
+updating to Creatio version 8.0.10 and later.
+
+## Key Concepts
+
+classic ui, section, detail, role, operation, contact, account
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+This is documentation for Creatio **8.0**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/creatio-apps/overview/platform-overview)** (8.3).
+
+Version: 8.0Sales Creatio
+
+On this page
+
+note
+
+For new Creatio instances this functionality is available for Creatio version
+8.0.9 and earlier. Existing Creatio instances keep the Classic UI section after
+updating to Creatio version 8.0.10 and later.
+
+## Add a resource​
+
+Project resources are employees or roles required to complete the project.
+
+To add a resource:
+
+1. Go to the **Projects** section and open the needed record.
+
+2. Click
+   ![btn_chapter_mobile_wizard_new_role.png](https://academy.creatio.com/sites/default/files/documents/docs/product/bpm'online%20marketing/marketing/7.16.0/BPMonlineHelp/section_employees/btn_chapter_mobile_wizard_new_role.png)
+   in the **List of resources** detail on the **General information** tab.
+
+| Project | The name of the current project. This is a non-editable field. | Name | Resource name. For example, an employee's name or role in the project: "Analyst," "Developer," or "Designer." The field is required. | Contact | A Creatio contact who will work with the project. The field is required. | Expected working time, h | Employee's planned working hours within the project. The field is non-editable and is calculated by the system automatically as a sum of all planned working hours of the project tasks within the project. Planned working time for the project task is stored on the **Resources** detail. | Actual working time, h | The number of hours actually spent on the project by the employee. This is a non-editable field. The **Calculate actual working time** action automatically calculates the value for this field. | Wage | The prime cost of the resource for the company. The field is filled in automatically if the external fee specified on the **Wages** detail for the selected contact is valid at the project start date. | External fee | Cost of employee's work for the customer. The field is filled in automatically if an external fee, valid at the project start date, is specified on the **External fees** detail for the selected contact. |
+| ------- | -------------------------------------------------------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------ | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+3. Click **Save**.
+
+As a result, a new resource will be added to the plan record page.
+
+## Add a cash flow​
+
+Keep a record of the project financial operations using the **Cash flows**
+detail on the **Financial indicators** tab
+
+To add a new cashflow:
+
+1. Go to the **Projects** section and open the needed record.
+
+2. Click
+   ![btn_chapter_mobile_wizard_new_role.png](https://academy.creatio.com/sites/default/files/documents/docs/product/bpm'online%20marketing/marketing/7.16.0/BPMonlineHelp/section_employees/btn_chapter_mobile_wizard_new_role.png)
+   in the **Cash flows** detail on the **Financial indicators** tab.
+
+| Number | Operation sequence number. This is an automatically populated non-editable field. | Type | Type of the cash flow, for example, "Inflow" or "Outflow". The field is required. | Date | Planned or actual cash flow date. | Purpose | Cash flow purpose. | Amount, base currency | Total cash flow amount in the base currency. The field is populated by the user in the currency in which the operation was performed and is automatically recalculated taking into account the exchange rates. | Project | Name of the project the operation is related to. This is a non-editable field. | Status | Operation status – "Budget," "Completed" or "Canceled." The field is required. | Category | Cash flow category, for example, "Compensation of expenses" or "General expenses." |
+| ------ | --------------------------------------------------------------------------------- | ---- | --------------------------------------------------------------------------------- | ---- | --------------------------------- | ------- | ------------------ | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------ | -------- | ---------------------------------------------------------------------------------- |
+
+3. Click **Save**.
+
+As a result, a new cash flow operation will be added to the plan record page.
+
+## Calculate financial indicators [](https://academy.creatio.com#title-2635-8)​
+
+The project’s financial information is based on the data from the **Cash flows**
+and the **List of resources** details. When calculating the financial
+indicators, Creatio includes the rates from the project tasks’ **Resources**
+details and the project’s **List of resources** detail.
+
+To calculate:
+
+1. Go to the **Projects** section and open the needed record.
+2. On the **Cash flows** detail on the **Financial indicators** tab, click ![The
+   [Calculate} button](https://academy.creatio.com/docs/sites/en/files/2020-12/btn_calculate.png).
+
+As a result, the following financial indicators will be calculated:
+
+| Revenue | Expected | Expected revenue amount of the project. The calculation is done based on cash flows of the "Inflow" type that have the "Budgeted" status. | Actual | Actual revenue amount of the project. The calculation is done based on cash flows of the "Inflow" type that have the "Performed" status. | Total outflow | Expected | Expected outflow amount of the project. The calculation is done based on cash flows of the "Inflow" type that have the "Budgeted" status. | Actual | Actual outflow amount of the project. The calculation is done based on cash flows of the "Outflow" type that have the "Budgeted" status. | Total cost | Plan | The expected estimated cost of the project for the customer. The value is calculated as a sum of products of expected working time and external fees for the project participants. | Actual | The actual estimated cost of the project for the customer. The value is calculated as a sum of products of actual working time and external fees for the project participants. | Prime cost | Plan | The expected estimated cost of the project for the company. The value is calculated as a sum of products of expected working time and wages for the project participants. | Actual | The actual estimated cost of the project for the company. The value is calculated as a sum of products of actual working time and wages for the project participants. | Margin | Plan | The expected financial result of the project. The value is calculated by subtracting the expected outflows and prime cost from the project's expected revenue. | Actual | The actual financial result of the project. The value is calculated by subtracting the actual outflows and prime cost from the project's actual revenue. | Margin, % | Plan | Percentage of expected margin to expected revenues of the project. | Actual | Percentage of actual margin to actual revenues of the project. | Deviation | Deviation of the obtained values from the planned values. The value is calculated as a difference between actual and expected values, for example, between actual and expected revenues. | Deviation, % | Percentage of deviation from the expected value. |
+| ------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---- | ------------------------------------------------------------------ | ------ | -------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------ |
+
+---
+
+## See also​
+
+[Create a project](https://academy.creatio.com/documents?id=1021)
+
+[Manage project tasks](https://academy.creatio.com/documents?id=1220)
+
+---
+
+## Resources​
+
+[Project management](https://academy.creatio.com/node/618792/takecourse)
+
+- Add a resource
+- Add a cash flow
+- Calculate financial indicators
+- See also
+- Resources

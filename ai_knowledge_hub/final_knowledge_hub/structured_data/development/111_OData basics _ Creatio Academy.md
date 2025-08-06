@@ -1,0 +1,456 @@
+# OData basics | Creatio Academy
+
+**Category:** development **Difficulty:** beginner **Word Count:** 2484 **URL:**
+https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/integrations-and-api/data-services/odata/overview
+
+## Description
+
+The $count and $value OData 3 parameters will be retired in Creatio version
+8.0.10.
+
+## Key Concepts
+
+integration, web service, odata, rest api, database, operation, system setting,
+contact, account
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+This is documentation for Creatio **8.0**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations)**
+(8.3).
+
+Version: 8.0
+
+On this page
+
+Level: advanced
+
+Important
+
+The `$count` and `$value` OData 3 parameters will be retired in Creatio version
+8.0.10.
+
+**OData (Open Data Protocol)** is an ISO/IEC-approved OASIS standard. It defines
+a set of best practices for building and using REST API. Use OData to create
+REST-based services that let you publish and edit resources using simple HTTP
+requests. Such resources must be identified via a URL and defined in the data
+model.
+
+An OData protocol executes requests of third-party apps and web services to the
+Creatio database server. Creatio supports OData 4 and OData 3 protocols. OData 4
+provides more features than OData 3. The main difference between the protocols
+is the data format of the server response. Learn more:
+[official vendor documentation](https://docs.oasis-open.org/odata/new-in-odata/v4.01/new-in-odata-v4.01.html)
+(OData). We recommend using OData 4 for Creatio integration.
+
+All external requests to Creatio must be authenticated. We recommend using OAuth
+2.0 to authorize third-party apps and web services. Learn more:
+[Set up the OAuth 2.0 authorization](https://academy.creatio.com/documents?ver=8.0&id=2467)
+(user documentation).
+
+## OData 4 protocol​
+
+Creatio implements OData 4 protocol via `odata` web service. Use the
+`CreatioURL/0/odata` URL to access Creatio objects via the OData 4 protocol for
+**.NET Framework**. For example, `https://mycreatio.com/0/odata`. The URL to
+access Creatio objects via the OData 4 protocol for **.NET** is identical. That
+said, the `/0` prefix is not required.
+
+## OData 3 protocol​
+
+Creatio implements OData 3 protocol via `EntityDataService.svc` web service. Use
+the `CreatioURL/0/ServiceModel/EntityDataService.svc` URL to access Creatio
+objects via the OData 3 protocol for **.NET Framework**. For example,
+`https://mycreatio.com/0/ServiceModel/EntityDataService.svc`. The URL to access
+Creatio objects via the OData 3 protocol for **.NET** is identical. That said,
+the `/0` prefix is not required.
+
+Use the `EntityDataService.svc` service to work with Creatio objects in a WCF
+client. **Windows Communication Foundation (WCF)** is a program framework that
+handles data exchange between apps. WCF is a part of **.NET Framework**.
+
+The WCF client receives the service properties and creates client proxy classes.
+The client app will communicate with the `EntityDataService.svc` service using
+these mediator classes.
+
+To **implement the client app that communicates with the**
+`EntityDataService.svc` **service** :
+
+1. **Create a C# console app** to implement the Creatio integration.
+
+2. **Generate client proxy classes** for the `EntityDataService.svc` service.
+
+Using the DataServiceModel Metadata Utility Tool (`DataSvcUtil.exe`)
+
+`DataSvcUtil.exe` is a command line program provided by `WCF Data Services`.
+Learn more:
+[WCF Data Service Client Utility (DataSvcUtil.exe)](https://msdn.microsoft.com/en-us/library/ee383989.aspx)
+(official Microsoft documentation).
+
+**For 32-bit operating systems** , the `DataSvcUtil.exe` tool is usually
+installed in the `C:\Windows\Microsoft.NET\Framework\v4.0` directory. **For
+64-bit operating systems** , the `DataSvcUtil.exe` tool is usually installed in
+the `C:\Windows\Microsoft.NET\Framework64\v4.0` directory.
+
+To **call the** `DataSvcUtil.exe` **tool** , run the following command.
+
+Call the DataSvcUtil.exe tool
+
+         datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/language:devlang] [/nologo] [/version:ver] [/help]
+
+
+| The utility uses the OData channel and generates the client classes required to access the service from the .NET Framework client app. View property sources that the `DataSvcUtil.exe` uses to generate data classes in the table below.Property | Description | WSDL | The service property document. Describes the data model provided by data service. | CSDL | The data model file. Uses the common schema definition language (`CSDL`). Learn more: [[MC–CSDL]: Conceptual Schema Definition File Format](https://msdn.microsoft.com/en-us/library/dd541474.aspx) (official Microsoft documentation). | EDMX | An \*.xml file. Create it using programs for working with the `EDM` model. The programs are included in the `Entity Framework`. Learn more: [[MC–EDMX]: Entity Data Model for Data Services Packaging Format](https://msdn.microsoft.com/en-us/library/dd541284.aspx) (official Microsoft documentation). |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---- | --------------------------------------------------------------------------------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+From the C# app created in Microsoft Visual Studio
+
+     1. **Open a C# app** to implement the Creatio integration.
+
+     2. **Add a service reference**.
+
+        1. Go to the **Solution Explorer** tab.
+
+        2. Right-click **References** → select **Add Service Reference...**. This opens the **Add Service Reference** window.
+
+        3. Connect the `EntityDataService.svc` service to the C# console app. To do this, go to the **Address** field → enter the complete address of the `EntityDataService.svc` service → **Go** → **Yes** → specify the Creatio user credentials → **OK**. The entities supported by the service will appear in the **Services** window upon success.
+
+Microsoft Visual Studio also lets you generate the service's proxy classes from
+the **service property file** stored on your drive. To do this, go to the
+**Address** field → enter the complete path to the property file, starting from
+the `file://` prefix. For example, `file://C:/metadata.xml`.
+
+        4. Specify the namespace to include the generated proxy classes. To do this, go to the **Namespace** field → enter the namespace, for example, `CreatioServiceReference` → **OK**. This generates the proxy classes and adds a new `Reference.cs` code file that contains the description of proxy classes to the project. Use the classes to call and interact with the data service's resources as objects.
+
+     3. **Link the namespace** in the `using` block of the project.
+
+     4. **Ensure successful compilation of the C# app**.
+
+        1. Add the `using` directives.
+
+using directives
+
+               using System;
+               using System.Data.Services.Client;
+               using System.Net;
+               using Terrasoft.Sdk.Examples.CreatioServiceReference;
+               using System.Linq;
+
+
+        2. Declare the variable of the OData service URL.
+
+Declare the variable of the OData service URL
+
+               private static Uri serverUri = new Uri("CreatioURL/0/ServiceModel/EntityDataService.svc/");
+
+
+As a result, Microsoft Visual Studio will link the
+`Microsoft.Data.Services.Client.dll` build in the project upon generating the
+service's proxy classes. This ensures OData 3 protocol support. If the client
+app requires an earlier version of the protocol, link the corresponding build
+manually. This client library lets you call the `EntityDataService.svc` data
+service using the standard .NET Framework programming templates and the `LINQ`
+request language.
+
+3. **Create a context instance** of the `EntityDataService.svc` service's
+   runtime environment.
+
+Use the `DataServiceQuery` class to retrieve the service's object collection.
+This class is a request to the service that retrieves the collection of a
+specific type of entities. Learn more:
+[DataServiceQuery Class](http://msdn.microsoft.com/en-us/library/system.data.services.client.dataservicequery.aspx)
+(official Microsoft documentation).
+
+Creatio lets you create a context instance of the `EntityDataService.svc`
+service in multiple ways:
+
+Using a `LINQ` request to the named `DataServiceQuery` object received from the
+service context
+
+View the example of the `LINQ` request that returns all contact entities of the
+`EntityDataService.svc` service below.
+
+LINQ request
+
+         public static void GetOdataCollection()
+         {
+             /* Create the Creatio app context. */
+             var context = new Creatio(serverUri);
+
+             /* Define the method that adds authentication cookies upon creating a new request. The "AuthenticateExternalRequests()" method authenticates the user and adds the cookies received in response to the data request. */
+             context.SendingRequest += new EventHandler<SendingRequestEventArgs>(AuthenticateExternalRequests);
+             try
+             {
+
+                 /* Build a LINQ request that retrieves the contact collection. */
+                 var allContacts = from contacts in context.ContactCollection
+                     select contacts;
+                 foreach (Contact contact in allContacts)
+                 {
+                     /* Implement the custom business logic. */
+                 }
+             }
+             catch (Exception ex)
+             {
+                 /* Implement the custom business logic that handles errors. */
+             }
+         }
+
+
+Using an implicit request of the `DataServiceQuery` object received from the
+service context
+
+View the example of the implicit request that retrieves all contact entities of
+the `EntityDataService.svc` service below.
+
+GetOdataCollection()
+
+         public static void GetOdataCollection()
+         {
+             /* Create the Creatio app context. */
+             var context = new Creatio(serverUri);
+
+             /* Define the method that adds authentication cookies upon creating a new request. The "AuthenticateExternalRequests()" method authenticates the user and adds the cookies received in response to the data request. */
+             context.SendingRequest += new EventHandler<SendingRequestEventArgs>(AuthenticateExternalRequests);
+             try
+             {
+
+                 /* Define an implicit request that retrieves the contact collection from the service. */
+                 DataServiceQuery<Contact> allContacts = context.ContactCollection;
+                 foreach (Contact contact in allContacts)
+                 {
+                     /* Implement the custom business logic. */
+                 }
+             }
+             catch (Exception ex)
+             {
+                 /* Implement the custom business logic that handles errors. */
+             }
+         }
+
+
+Using an explicit request of the `DataServiceQuery` object received from the
+service context
+
+Use the `Execute()` method of the `DataServiceQuery` object received from the
+service context to implement an explicit request **synchronously**. Learn more:
+[DataServiceQuery.Execute Method](https://learn.microsoft.com/en-us/dotnet/api/system.data.services.client.dataservicequery.execute?view=netframework-4.8.1&redirectedfrom=MSDN#System_Data_Services_Client_DataServiceQuery_Execute)
+(official Microsoft documentation).
+
+View the example of the explicit request that retrieves all contact entities of
+the `EntityDataService.svc` service below.
+
+GetOdataCollection()
+
+         public static void GetOdataCollection()
+         {
+             /* Define the Uri of the service request that returns the contact collection. */
+             Uri contactUri = new Uri(serverUri, "ContactCollection");
+
+             /* Create the Creatio app context. */
+             var context = new Creatio(serverUri);
+
+             /* Define the method that adds authentication cookies upon creating a new request. The "AuthenticateExternalRequests()" method authenticates the user and adds the cookies received in response to the data request. */
+             context.SendingRequest += new EventHandler<SendingRequestEventArgs>(AuthenticateExternalRequests);
+             try
+             {
+                 /* Call the "Execute()" method that executes an explicit request to the service. */
+                 foreach (Contact contact in context.Execute<Contact>(contactUri))
+                 {
+                     /* Implement the custom business logic. */
+                 }
+             }
+             catch (Exception ex)
+             {
+                 /* Implement the custom business logic that handles errors. */
+             }
+         }
+
+
+Use the `BeginExecute()` method of the `DataServiceQuesry` object received from
+the service context to implement an explicit request **asynchronously** if
+needed. Learn more:
+[DataServiceQuery.BeginExecute(AsyncCallback, Object) Method](http://msdn.microsoft.com/en-us/library/system.data.services.client.dataservicequery.beginexecute.aspx)
+(official Microsoft documentation).
+
+4. **Implement the business logic** using the methods of the proxy class
+   instance.
+
+View the examples of the CRUD operations that use the methods of the proxy class
+instance below.
+
+     * Retrieve an object
+     * Create an object
+     * Update an object
+     * Delete an object
+
+    public static void RetrieveObjectViaWcf()
+    {
+        /* Create the Creatio app context. */
+        var context = new Creatio(serverUri);
+        /* Define the method that adds authentication cookies upon creating a new request. The "AuthenticateExternalRequests()" method authenticates the user and adds the cookies received in response to the data request. */
+        context.SendingRequest += new EventHandler<SendingRequestEventArgs>(AuthenticateExternalRequests);
+        var contact = context.ContactCollection.Where(c => c.Name.Contains("Some user name")).First();
+
+        /* Implement the custom business logic. */
+    }
+
+
+    public static void CreateObjectViaWcf()
+    {
+        /* Create a new contact and initialize its properties. */
+        var contact = new Contact()
+        {
+            Id = Guid.NewGuid(),
+            Name = "Some user name"
+        };
+
+        /* Create a new account to which the contact is connected and initialize the account properties. */
+        var account = new Account()
+        {
+            Id = Guid.NewGuid(),
+            Name = "Some company"
+        };
+        contact.Account = account;
+
+        /* Create the Creatio app context. */
+        var context = new Creatio(serverUri);
+
+        /* Define the method that adds authentication cookies upon creating a new request. The "AuthenticateExternalRequests()" method authenticates the user and adds the cookies received in response to the data request. */
+        context.SendingRequest += new EventHandler<SendingRequestEventArgs>(AuthenticateExternalRequests);
+
+        /* Add the contact to the service data model's contact collection. */
+        context.AddToAccountCollection(account);
+
+        /* Add the account to the service data model's account collection. */
+        context.AddToContactCollection(contact);
+
+        /* Connect the contact to the account in the service data model. */
+        context.SetLink(contact, "Account", account);
+
+        /* Save the changes to Creatio in a single request. */
+        DataServiceResponse responses = context.SaveChanges(SaveChangesOptions.Batch);
+
+        /* Implement the custom business logic that handles server responses. */
+    }
+
+
+    public static void UpdateObjectViaWcf()
+    {
+        /* Create the Creatio app context. */
+        var context = new Creatio(serverUri);
+
+        /* Define the method that adds authentication cookies upon creating a new request. The "AuthenticateExternalRequests()" method authenticates the user and adds the cookies received in response to the data request. */
+        context.SendingRequest += new EventHandler<SendingRequestEventArgs>(AuthenticateExternalRequests);
+
+        /* Select a contact to update. */
+        var updateContact = context.ContactCollection.Where(c =< c.Name.Contains("Some user name")).First();
+
+        /* Update the contact properties. */
+        updateContact.Notes = "Some new description for the contact";
+        updateContact.Phone = "Some new phone for the contact";
+
+        /* Save the changes to the service data model. */
+        context.UpdateObject(updateContact);
+
+        /* Save the changes to Creatio in a single request. */
+        var responses = context.SaveChanges(SaveChangesOptions.Batch);
+    }
+
+
+    public static void DeleteObjectViaWcf()
+    {
+        /* Create the Creatio app context. */
+        var context = new Creatio(serverUri);
+
+        /* Define the method that adds authentication cookies upon creating a new request. The "AuthenticateExternalRequests()" method authenticates the user and adds the cookies received in response to the data request. */
+        context.SendingRequest += new EventHandler<SendingRequestEventArgs>(AuthenticateExternalRequests);
+
+        /* Select a contact to delete. */
+        var deleteContact = context.ContactCollection.Where(c => c.Name.Contains("Some user name")).First();
+
+        /* Delete the contact. */
+        context.DeleteObject(deleteContact);
+
+        /* Save the changes to Creatio in a single request. */
+        var responses = context.SaveChanges(SaveChangesOptions.Batch);
+
+        /* Implement the custom business logic that handles server responses. */
+    }
+
+## Limitations of OData protocol​
+
+OData protocol usage has the following **limitations** :
+
+- It is not possible to create system users.
+  [Change the system user (Supervisor)](https://academy.creatio.com/documents?ver=8.0&id=1756)
+  (user documentation).
+- It is not possible to specify the culture of the returned data. The culture is
+  determined by the culture of the user on whose behalf you executed the
+  request.
+- The response body can contain up to 20 000 records. Learn more:
+  [Response body](https://academy.creatio.com/documents?ver=8.0&id=15437&anchor=title-2304-10).
+- A batch request can contain up to 100 sub-requests. Learn more:
+  [Batch request examples](https://academy.creatio.com/documents?ver=8.0&id=15434).
+- The **Attachment max size** (`MaxFileSize` code) system setting controls the
+  maximum size of the files you can upload using requests. The default value is
+  10 Mb.
+
+---
+
+## See also​
+
+[Set up the OAuth 2.0 authorization](https://academy.creatio.com/documents?ver=8.0&id=2467)
+(user documentation)
+
+[Change the system user (Supervisor)](https://academy.creatio.com/documents?ver=8.0&id=1756)
+(user documentation)
+
+[EntityDataService.svc web service (OData 3)](https://academy.creatio.com/documents?ver=8.0&id=15437)
+
+[Batch request examples](https://academy.creatio.com/documents?ver=8.0&id=15434)
+
+---
+
+## Resources​
+
+[Official Odata documentation](https://docs.oasis-open.org/odata/new-in-odata/v4.01/new-in-odata-v4.01.html)
+
+[WCF Data Service Client Utility (DataSvcUtil.exe)](https://msdn.microsoft.com/en-us/library/ee383989.aspx)
+(official Microsoft documentation)
+
+[[MC–CSDL]: Conceptual Schema Definition File Format](https://msdn.microsoft.com/en-us/library/dd541474.aspx)
+(official Microsoft documentation)
+
+[[MC–EDMX]: Entity Data Model for Data Services Packaging Format](https://msdn.microsoft.com/en-us/library/dd541284.aspx)
+(official Microsoft documentation)
+
+[DataServiceQuery Class](http://msdn.microsoft.com/en-us/library/system.data.services.client.dataservicequery.aspx)
+(official Microsoft documentation)
+
+[DataServiceQuery.Execute Method](https://learn.microsoft.com/en-us/dotnet/api/system.data.services.client.dataservicequery.execute?view=netframework-4.8.1&redirectedfrom=MSDN#System_Data_Services_Client_DataServiceQuery_Execute)
+(official Microsoft documentation)
+
+[DataServiceQuery.BeginExecute(AsyncCallback, Object) Method](http://msdn.microsoft.com/en-us/library/system.data.services.client.dataservicequery.beginexecute.aspx)
+(official Microsoft documentation)
+
+---
+
+## E-learning courses​
+
+[Tech Hour - Integrate like a boss with Creatio, part 2 (Odata)](https://www.youtube.com/watch?v=ehjfcBxpLsQ&list=PLnolcTT5TeE3v8WGd3VqlZSd2D02GWSGa&index=9)
+
+[Data integration, working with OData/DataService](https://academy.creatio.com/node/531101/takecourse)
+
+- OData 4 protocol
+- OData 3 protocol
+- Limitations of OData protocol
+- See also
+- Resources
+- E-learning courses

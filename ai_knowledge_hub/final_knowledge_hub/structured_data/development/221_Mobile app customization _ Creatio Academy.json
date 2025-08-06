@@ -1,0 +1,28 @@
+{
+  "id": 221,
+  "url": "https://academy.creatio.com/docs/8.x/mobile/category/customization",
+  "title": "Mobile app customization | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Freedom UI Set up a dedicated section icon Scan QR and bar codes Work with GPS data Set up the mobile portal Brand and publish mobile apps Manage the Mobile Creatio",
+  "markdown": "[Freedom UI](/docs/8.x/mobile/freedomui-mobile)[Set up a dedicated section icon](/docs/8.x/mobile/mobile-development/customization/set-up-section-icon)[Scan QR and bar codes](/docs/8.x/mobile/category/scan-qr-and-bar-codes)[Work with GPS data](/docs/8.x/mobile/category/work-with-gps-data)[Set up the mobile portal](/docs/8.x/mobile/mobile-development/customization/overview)[Brand and publish mobile apps](/docs/8.x/mobile/category/brand-and-publish-mobile-apps)[Manage the Mobile Creatio](/docs/8.x/mobile/mobile-development/customization/mobile-creatio-for-intune)\n",
+  "analysis": {
+    "word_count": 31,
+    "key_concepts": ["freedom ui", "section", "mobile app"],
+    "use_cases": [],
+    "related_topics": [
+      "customization",
+      "layout",
+      "offline",
+      "page schema",
+      "synchronization",
+      "mobile ui",
+      "ui design",
+      "responsive"
+    ],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "freedom ui", "documentation", "section", "mobile app"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:18:46.493239"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 529,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.2/file-management-references",
+  "title": "References | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 IFile IFileContentStorage IFileFactory EntityFileLocator EntityFileMetadata FileFactoryUtils FileMetadata FileUtils",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/file-management-references)** (8.3).\n\nVersion: 8.2[IFile](/docs/8.x/dev/development-on-creatio-platform/8.2/back-end-development/api-for-file-management/references/ifile)[IFileContentStorage](/docs/8.x/dev/development-on-creatio-platform/8.2/back-end-development/api-for-file-management/references/ifilecontentstorage)[IFileFactory](/docs/8.x/dev/development-on-creatio-platform/8.2/back-end-development/api-for-file-management/references/ifilefactory)[EntityFileLocator](/docs/8.x/dev/development-on-creatio-platform/8.2/back-end-development/api-for-file-management/references/entityfilelocator)[EntityFileMetadata](/docs/8.x/dev/development-on-creatio-platform/8.2/back-end-development/api-for-file-management/references/entityfilemetadata)[FileFactoryUtils](/docs/8.x/dev/development-on-creatio-platform/8.2/back-end-development/api-for-file-management/references/filefactoryutils)[FileMetadata](/docs/8.x/dev/development-on-creatio-platform/8.2/back-end-development/api-for-file-management/references/filemetadata)[FileUtils](/docs/8.x/dev/development-on-creatio-platform/8.2/back-end-development/api-for-file-management/references/fileutils)\n",
+  "analysis": {
+    "word_count": 27,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:25:06.099200"
+}

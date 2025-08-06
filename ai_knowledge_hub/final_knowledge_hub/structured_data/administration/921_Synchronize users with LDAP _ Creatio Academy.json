@@ -1,0 +1,19 @@
+{
+  "id": 921,
+  "url": "https://academy.creatio.com/docs/8.x/setup-and-administration/8.0/category/synchronize-users-with-ldap",
+  "title": "Synchronize users with LDAP | Creatio Academy",
+  "category": "administration",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Set up LDAP synchronization Set up AD filters Import users from AD Set up LDAP authentication FAQ",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/setup-and-administration/category/synchronize-users-with-ldap)** (8.3).\n\nVersion: 8.0[Set up LDAP synchronization](/docs/8.x/setup-and-administration/8.0/administration/user-and-access-management/synchronize-users-with-ldap/set-up-ldap-synchronization)[Set up AD filters](/docs/8.x/setup-and-administration/8.0/administration/user-and-access-management/synchronize-users-with-ldap/set-up-active-directory-filters)[Import users from AD](/docs/8.x/setup-and-administration/8.0/administration/user-and-access-management/synchronize-users-with-ldap/import-new-users-and-roles-from-active-directory)[Set up LDAP authentication](/docs/8.x/setup-and-administration/8.0/administration/user-and-access-management/synchronize-users-with-ldap/set-up-ldap-authentication)[FAQ](/docs/8.x/setup-and-administration/8.0/administration/user-and-access-management/synchronize-users-with-ldap/ldap-synchronization-faq)\n",
+  "analysis": {
+    "word_count": 36,
+    "key_concepts": ["synchronization"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "synchronization", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:33:06.953414"
+}

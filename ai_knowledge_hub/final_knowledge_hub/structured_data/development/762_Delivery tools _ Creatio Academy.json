@@ -1,0 +1,25 @@
+{
+  "id": 762,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/category/delivery-tools",
+  "title": "Delivery tools | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Environments Delivery management process Configuration section WorkspaceConsole utility Delivery process customization",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/category/delivery-tools)** (8.3).\n\nVersion: 8.0[Environments](/docs/8.x/dev/development-on-creatio-platform/8.0/development-tools/delivery/environments)[Delivery management process](/docs/8.x/dev/development-on-creatio-platform/8.0/development-tools/delivery/delivery-management-process)[Configuration section](/docs/8.x/dev/development-on-creatio-platform/8.0/category/configuration-section)[WorkspaceConsole utility](/docs/8.x/dev/development-on-creatio-platform/8.0/category/workspaceconsole-utility)[Delivery process customization](/docs/8.x/dev/development-on-creatio-platform/8.0/category/delivery-process-customization)\n",
+  "analysis": {
+    "word_count": 30,
+    "key_concepts": ["configuration", "section", "customization"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "documentation", "section", "customization", "configuration"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:29:51.286705"
+}

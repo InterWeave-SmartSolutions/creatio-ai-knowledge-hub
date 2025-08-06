@@ -1,0 +1,166 @@
+# Create a user-made package using Configuration section | Creatio Academy
+
+**URL:**
+https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.2/development-tools/packages/create-a-package
+**Category:** development **Word Count:** 847
+
+## Content
+
+Create a user-made package using Configuration section | Creatio Academy
+
+Skip to main content
+
+- [Creatio](https://www.creatio.com/)
+- [Community](https://community.creatio.com/)
+- [Marketplace](https://marketplace.creatio.com/)
+- [Knowledge Hub](https://knowledge-hub.creatio.com/)
+
+This is documentation for Creatio **8.2**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/dev/development-on-creatio-platform/development-tools/packages/create-a-package)**
+(8.3).
+
+Version: 8.2
+
+On this page
+
+Level: beginner
+
+## 1\. Create a package​
+
+1. **Open the Configuration section**. Instructions:
+   [Open the **Configuration** section](https://academy.creatio.com/documents?ver=8.2&id=15101&anchor=title-2093-2).
+
+2. **Create a package**. To do this, click
+   ![](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/CreateNewPackage/scr_pkg_create_button.png)
+   in the package workspace. This opens the **Package** window.
+
+3. **Fill out the package properties**.
+
+| Property | Property description | Name\* | The package name. The package name cannot match the names of other packages. | Compile into a separate assembly | The checkbox identifies an assembly package whose source and automatically generated code is compiled into a separate assembly. Out of the box, the checkbox is selected. Learn more: [Assembly package](https://academy.creatio.com/documents?ver=8.2&id=15125). | Use smart activation | The checkbox that identifies a smart activation package that combines functionality of multiple apps for compatibility between them in a single Creatio instance. Out of the box, the checkbox is cleared. Learn more: [Smart activation package](https://academy.creatio.com/documents?ver=8.2&id=15071). | Description | The package description. For example, package functionality details. | Version control system repository\* | The name of the SVN version control system repository that will store the package changes. Only SVN repositories from the configuration storage list that are marked as active are available in the dropdown list.ImportantThe **Version control system repository** property will become non-editable after you create the package. | Version | The package version in the SVN repository. Required if the package is connected to an SVN repository. Fill out the property when creating a package. Otherwise, the property is non-editable. The property accepts digits, Latin characters, as well as "." and "\_" characters. The value must start with a digit or a letter. All package elements are of the same version as the package itself. The package version is not related to the version of the Creatio instance. |
+| -------- | -------------------- | ------ | ---------------------------------------------------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+4. **Save the changes**.
+
+**As a result** :
+
+- Creatio will add the user-made package to the dependencies of the `Custom`
+  preinstalled package automatically.
+
+- Creatio will save the package properties to the `descriptor.json` file. A
+  separate `descriptor.json` file will be created for each package version.
+
+descriptor.json file
+
+        {
+            "Descriptor": {
+                "UId": "SomeUserMadePackageID",
+                "PackageVersion": "SomeUserMadePackageVersion",
+                "Name": "SomeUserMadePackage",
+                "ModifiedOnUtc": "\/Date(1522657977000)\/",
+                "Maintainer": "SomeDeveloper",
+                "DependsOn": []
+            }
+        }
+
+
+The `Maintainer` property contains information about the developer listed in the
+**Publisher** (`Maintainer` code) system setting.
+
+## 2\. Set up the package dependencies​
+
+Creatio lets you set up the package dependencies while creating the package and
+developing the app functionality. To do this:
+
+1. **Define the functionality to be inherited** by the user-made package.
+
+Inherit the entire Creatio functionality
+
+     1. Open the package dependencies diagram. To do this, click **Actions** on the **Configuration** section toolbar → go to the **Packages** action group → **Package dependencies diagram**. This opens the diagram in a new tab.
+
+     2. Find the parent package or packages to the `Custom` package in the hierarchy.
+
+Click a diagram node with the package name to view the package dependencies as
+animated arrows.
+
+![](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/CreatePackage/8.1/scr_package_dependencies_diagram.gif)
+
+For example, the `SalesEnterprise_Marketing_ServiceEnt` package in the CRM
+bundle product depends on the `ServiceEnterpriseSoftkey`, `MarketingSoftkeyEnu`,
+`SalesEnterprise`, `PRMMktgActivitiesPortal` packages and their parent packages.
+Also, the `SalesEnterprise_Marketing_ServiceEnt` package is a parent package to
+the `Custom` package.
+
+     3. Double-click the package name and copy it.
+
+     4. Close the tab that includes the package dependencies diagram.
+
+Inherit functionality of a specific package or packages
+
+     1. Search for a configuration element whose functionality needs to be inherited. Instructions: [Search for a configuration element](https://academy.creatio.com/documents?ver=8.2&id=15101&anchor=title-2093-16).
+     2. Make sure the configuration element schema includes the required functionality.
+     3. Find the package name that includes configuration element schema whose functionality needs to be inherited. To do this, click ![](https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ClientModule/8.0/scr_edit_button.png) in the schema properties area → go to the **Package** property.
+     4. Double-click the package name and copy it.
+     5. Close the schema.
+
+note
+
+The `CrtCore` package is the most common parent package whose functionality is
+inherited by user-made packages.
+
+2. **Add the package dependencies**.
+   1. Open the package properties. To do this, click
+      ![](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/documentation/sdk/en/BPMonlineWebSDK/Screenshots/PopulateDeliveryType/8.1/scr_open_properties.png)
+      → **Properties**. This opens the **Package properties** page.
+
+   2. Click **Add** in the **Depends on packages** property block on the
+      **Dependencies** tab. This opens the **Select package** window.
+
+   3. Select the package or packages whose functionality must be inherited. Use
+      the copied value if you need to inherit a single package.
+
+If you add multiple packages as dependencies to the current package, Creatio
+hides the packages you have already selected from the window.
+
+     4. Click **Select**.
+
+3. **Apply the changes**.
+
+**As a result** , Creatio will save the package dependencies to the `DependsOn`
+property in the `descriptor.json` file. The `DependsOn` property is an array of
+objects that contain the package name, version, and unique ID of the package
+whose functionality will be inherited.
+
+descriptor.json file
+
+    {
+        "Descriptor": {
+            "UId": "SomeUserMadePackageID",
+            "PackageVersion": "SomeUserMadePackageVersion",
+            "Name": "SomeUserMadePackage",
+            "ModifiedOnUtc": "\/Date(1522657977000)\/",
+            "Maintainer": "SomeDeveloper",
+            "DependsOn": [
+                {
+                    "UId": "SomePackageID",
+                    "PackageVersion": "SomePackageVersion",
+                    "Name": "SomePackage"
+                }
+            ]
+        }
+    }
+
+---
+
+## See also​
+
+[Creatio IDE overview](https://academy.creatio.com/documents?ver=8.2&id=15101)
+
+[Assembly package](https://academy.creatio.com/documents?ver=8.2&id=15125)
+
+[Smart activation package](https://academy.creatio.com/documents?ver=8.2&id=15071)
+
+- 1\. Create a package
+- 2\. Set up the package dependencies
+- See also

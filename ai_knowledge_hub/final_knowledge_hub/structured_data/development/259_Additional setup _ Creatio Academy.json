@@ -1,0 +1,19 @@
+{
+  "id": 259,
+  "url": "https://academy.creatio.com/docs/8.x/setup-and-administration/8.2/category/additional-setup",
+  "title": "Additional setup | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 Application server web-farm Google integration File storage Data enrichment service Chat access Case notifications Secure access to the portal Version control system Landing page integration RabbitMQ Identity Service",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/setup-and-administration/category/additional-setup)** (8.3).\n\nVersion: 8.2[Application server web-farm](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/application-server-web-farm)[Google integration](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/google-integration)[File storage](/docs/8.x/setup-and-administration/8.2/category/file-storage)[Data enrichment service](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/data-enrichment-service)[Chat access](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/chat-access-setup)[Case notifications](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/sase-resolution-notifications)[Secure access to the portal](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/secure-access-to-the-portal)[Version control system](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/version-control-system-for-development-environments)[Landing page integration](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/landing-page-integration)[RabbitMQ](/docs/8.x/setup-and-administration/8.2/on-site-deployment/deployment-additional-setup/rabbit-mq)[Identity Service](/docs/8.x/setup-and-administration/8.2/category/identity-service)\n",
+  "analysis": {
+    "word_count": 47,
+    "key_concepts": ["integration", "notification", "case"],
+    "use_cases": ["third-party integration", "data synchronization", "system connectivity"],
+    "related_topics": ["webhooks", "data sync", "web service", "api"],
+    "difficulty": "advanced",
+    "ai_tags": ["case", "creatio", "notification", "documentation", "integration", "advanced"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:19:32.678834"
+}

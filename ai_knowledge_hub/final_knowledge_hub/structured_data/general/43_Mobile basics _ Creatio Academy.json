@@ -1,0 +1,19 @@
+{
+  "id": 43,
+  "url": "https://academy.creatio.com/docs/8.x/mobile/category/mobile-basics",
+  "title": "Mobile basics | Creatio Academy",
+  "category": "general",
+  "description": "",
+  "content": "Install Freedom UI Classic UI Calendar Dashboards Portal FAQ",
+  "markdown": "[Install](/docs/8.x/mobile/basics/mobile-application-install)[Freedom UI](/docs/8.x/mobile/basics/mobile-application-freedom-interface)[Classic UI](/docs/8.x/mobile/basics/mobile-application-interface)[Calendar](/docs/8.x/mobile/basics/work-with-the-calendar)[Dashboards](/docs/8.x/mobile/basics/how-to-work-in-the-dashboards-section)[Portal](/docs/8.x/mobile/basics/use-the-portal-in-the-mobile-app)[FAQ](/docs/8.x/mobile/basics/mobile-application-faq)\n",
+  "analysis": {
+    "word_count": 9,
+    "key_concepts": ["freedom ui", "classic ui", "dashboard"],
+    "use_cases": [],
+    "related_topics": ["customization", "layout", "ui design", "page schema"],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "dashboard", "intermediate", "freedom ui", "documentation", "classic ui"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:15:08.378369"
+}

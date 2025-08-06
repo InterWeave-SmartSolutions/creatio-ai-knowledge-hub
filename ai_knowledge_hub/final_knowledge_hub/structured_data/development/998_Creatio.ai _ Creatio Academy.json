@@ -1,0 +1,19 @@
+{
+  "id": 998,
+  "url": "https://academy.creatio.com/docs/8.x/no-code-customization/8.2/category/creatio-ai",
+  "title": "Creatio.ai | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 Overview AI Skill list Develop AI Skill Architecture Data privacy FAQ",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/no-code-customization/category/creatio-ai)** (8.3).\n\nVersion: 8.2[Overview](/docs/8.x/no-code-customization/8.2/customization-tools/ai-tools/copilot/creatio-ai-overview)[AI Skill list](/docs/8.x/no-code-customization/8.2/customization-tools/ai-tools/copilot/ai-skill-list)[Develop AI Skill](/docs/8.x/no-code-customization/8.2/category/develop-ai-skill)[Architecture](/docs/8.x/no-code-customization/8.2/customization-tools/ai-tools/copilot/creatio-ai-architecture)[Data privacy](/docs/8.x/no-code-customization/8.2/customization-tools/ai-tools/copilot/data-privacy)[FAQ](/docs/8.x/no-code-customization/8.2/customization-tools/ai-tools/copilot/creatio-ai-faq)\n",
+  "analysis": {
+    "word_count": 30,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:34:36.179824"
+}

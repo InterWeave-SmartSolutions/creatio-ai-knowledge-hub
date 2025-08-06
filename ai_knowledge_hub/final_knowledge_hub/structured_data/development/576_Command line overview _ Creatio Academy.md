@@ -1,0 +1,57 @@
+# Command line overview | Creatio Academy
+
+**Category:** development **Difficulty:** advanced **Word Count:** 198 **URL:**
+https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/command-line
+
+## Description
+
+The command line enables quick access to the most frequently performed
+operations.
+
+## Key Concepts
+
+business process, section, database, operation, contact, account
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+This is documentation for Creatio **8.0**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations)**
+(8.3).
+
+Version: 8.0
+
+Level: beginner
+
+The command line enables quick access to the most frequently performed
+operations.
+
+To run a command, type it in the command line and click **Execute command** or
+press **Enter** on the keyboard. If you enter an incomplete command, the system
+will offer a list of possible commands in the drop-down list.
+
+![](https://academy.creatio.com/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots.en/BasicUIElements/CommandLine/scr_intro_ui_commandline.png)
+
+The features of the
+[command line](https://academy.creatio.com/documents?ver=8.0&id=1228) are:
+
+- Navigation – **Go to...** a section.
+- Search for records – **Search ...** for contacts, accounts or records.
+- Creating records – **Create...** a record.
+- Start business process – **Start process ...**.
+- Create custom commands with the **Create custom command**.
+
+The command line input field is located in the `mainHeaderContainer` container.
+
+To track commands and their execution in the system, use the
+`CommandLineService` service. To store commands in the system, a database table
+is used. The structure of database table is described by the `Command` object
+schema. The command parameters are described by using the `CommandParams` object
+schema. To display the list of available commands for autocompletion and other
+functionalities of the command line, the `CommandLineModule` module is used.

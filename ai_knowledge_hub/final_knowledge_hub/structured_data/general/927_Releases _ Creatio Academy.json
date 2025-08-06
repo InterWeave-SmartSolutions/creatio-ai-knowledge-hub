@@ -1,0 +1,19 @@
+{
+  "id": 927,
+  "url": "https://academy.creatio.com/docs/8.x/resources/category/releases",
+  "title": "Releases | Creatio Academy",
+  "category": "general",
+  "description": "",
+  "content": "Release notes Changelog Release calendar",
+  "markdown": "[Release notes](/docs/8.x/resources/category/release-notes)[Changelog](/docs/8.x/resources/category/changelog)[Release calendar](/docs/8.x/resources/release_calendar)\n",
+  "analysis": {
+    "word_count": 5,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:33:12.838906"
+}

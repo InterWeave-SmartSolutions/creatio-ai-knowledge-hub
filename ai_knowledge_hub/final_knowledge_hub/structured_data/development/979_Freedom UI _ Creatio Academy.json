@@ -1,0 +1,25 @@
+{
+  "id": 979,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/freedom-ui",
+  "title": "Freedom UI | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Front-end architecture Client schema Freedom UI page structure Custom components Data sources @creatio-devkit/common library",
+  "markdown": "Version: 8.3[Front-end architecture](/docs/8.x/dev/development-on-creatio-platform/front-end-development/freedom-ui/overview)[Client schema](/docs/8.x/dev/development-on-creatio-platform/category/client-schema)[Freedom UI page structure](/docs/8.x/dev/development-on-creatio-platform/front-end-development/freedom-ui/freedom-ui-page)[Custom components](/docs/8.x/dev/development-on-creatio-platform/category/custom-components)[Data sources](/docs/8.x/dev/development-on-creatio-platform/category/data-sources)[@creatio-devkit/common library](/docs/8.x/dev/development-on-creatio-platform/front-end-development/freedom-ui/creatio-devkit-common)\n",
+  "analysis": {
+    "word_count": 16,
+    "key_concepts": ["freedom ui"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": ["customization", "layout", "ui design", "page schema"],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "freedom ui", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:34:12.615226"
+}

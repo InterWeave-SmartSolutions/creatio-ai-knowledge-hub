@@ -1,0 +1,19 @@
+{
+  "id": 680,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/category/communication-panel",
+  "title": "Communication panel | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Overview Examples",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations)** (8.3).\n\nVersion: 8.0[Overview](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/classic-ui/communication-panel/overview)[Examples](/docs/8.x/dev/development-on-creatio-platform/8.0/communication-panel-examples)\n",
+  "analysis": {
+    "word_count": 21,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:28:09.400545"
+}

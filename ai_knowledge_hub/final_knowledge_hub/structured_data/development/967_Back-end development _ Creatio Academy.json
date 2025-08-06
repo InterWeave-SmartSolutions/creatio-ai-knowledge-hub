@@ -1,0 +1,19 @@
+{
+  "id": 967,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/back-end-development",
+  "title": "Back-end development | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 .NET types visibility Replacing class factory Data operations (back-end) Web services Object events Data storage and cache Localizable resources Automatic data binding File management API .NET classes reference",
+  "markdown": "Version: 8.3[.NET types visibility](/docs/8.x/dev/development-on-creatio-platform/back-end-development/types-visibility)[Replacing class factory](/docs/8.x/dev/development-on-creatio-platform/category/replacing-class-factory)[Data operations (back-end)](/docs/8.x/dev/development-on-creatio-platform/data-operations-back-end)[Web services](/docs/8.x/dev/development-on-creatio-platform/category/web-services)[Object events](/docs/8.x/dev/development-on-creatio-platform/back-end-development/objects-business-logic)[Data storage and cache](/docs/8.x/dev/development-on-creatio-platform/back-end-development/data-storage-and-cache)[Localizable resources](/docs/8.x/dev/development-on-creatio-platform/category/localizable-resources)[Automatic data binding](/docs/8.x/dev/development-on-creatio-platform/back-end-development/automatic-data-binding)[File management API](/docs/8.x/dev/development-on-creatio-platform/category/file-management-api)[.NET classes reference](/docs/8.x/dev/development-on-creatio-platform/back-end-development/net-class-libraries-of-platform-core)\n",
+  "analysis": {
+    "word_count": 30,
+    "key_concepts": ["web service", "operation"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "operation", "documentation", "web service", "advanced"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:33:57.681965"
+}

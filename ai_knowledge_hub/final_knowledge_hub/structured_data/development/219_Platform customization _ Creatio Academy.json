@@ -1,0 +1,19 @@
+{
+  "id": 219,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/platform-customization",
+  "title": "Platform customization | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Freedom UI Classic UI Interface control tools",
+  "markdown": "Version: 8.3[Freedom UI](/docs/8.x/dev/development-on-creatio-platform/freedom-ui-customization)[Classic UI](/docs/8.x/dev/development-on-creatio-platform/category/classic-ui-1)[Interface control tools](/docs/8.x/dev/development-on-creatio-platform/category/interface-control-tools)\n",
+  "analysis": {
+    "word_count": 9,
+    "key_concepts": ["freedom ui", "classic ui"],
+    "use_cases": [],
+    "related_topics": ["customization", "layout", "ui design", "page schema"],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "freedom ui", "documentation", "classic ui"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:18:43.673390"
+}

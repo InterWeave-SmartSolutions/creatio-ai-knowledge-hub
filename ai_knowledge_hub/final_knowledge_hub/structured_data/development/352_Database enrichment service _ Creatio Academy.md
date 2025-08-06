@@ -1,0 +1,102 @@
+# Database enrichment service | Creatio Academy
+
+**Category:** development **Difficulty:** advanced **Word Count:** 427 **URL:**
+https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.1/architecture/microservices/database-enrichment
+
+## Description
+
+Use the database enrichment service to search for the most up-to-date
+information on accounts and contacts, as well as their communication options,
+from emails and open Internet sources.
+
+## Key Concepts
+
+workflow, database, operation, system setting, synchronization, notification,
+contact, account
+
+## Use Cases
+
+## Content
+
+This is documentation for Creatio **8.1**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/dev/development-on-creatio-platform/architecture/microservices/database-enrichment)**
+(8.3).
+
+Version: 8.1
+
+On this page
+
+Level: beginner
+
+Use the database enrichment service to search for the most up-to-date
+information on accounts and contacts, as well as their communication options,
+from emails and open Internet sources.
+
+## Workflow​
+
+The workflow for account/contact information enrichment with emails is as
+follows:
+
+1. The
+   [Synch Engine mechanism](https://academy.creatio.com/documents?ver=8.1&id=15781)
+   performs the mail server synchronization. The mail server transfers the new
+   emails to the Synch Engine (1).
+2. The **Sync Engine** saves the transferred emails in the database as **"Email"
+   type** activities (2).
+3. The Creatio task scheduler occasionally runs the **"Email Mining Job"
+   process** (3). The mining process extracts a batch of the most recently
+   created unprocessed "Email" type activities. Then, the mining process
+   extracts the message body and format (plaintext or HTML) from each activity.
+4. The "Email Mining Job" process sends an HTTP request to the cloud Enrichment
+   Service for each selected email (4).
+5. The **Enrichment Service** performs the following operations (5):
+   - Extracts a thread of separate messages (replies) from the email.
+   - Extracts each message's signature.
+   - Extracts the following entities from the signature: contact (full name),
+     phones, email and web addresses, social networks, other communication
+     options, physical addresses, and the organization name.
+6. The "Email Mining Job" process parses the structure returned by the
+   Enrichment Service and stores it raw in the Creatio database (6).
+7. The "Email Mining Job" process sends a notification when the email data
+   mining is complete. The notifications about the processed emails are sent to
+   user communication panels via WebSocket.
+
+![](https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/ContactEnrichmentFromEmail/receive_info_schema.png)
+
+## Compatibility with Creatio products​
+
+The database enrichment service is compatible with all Creatio products of
+version 7.10 and later.
+
+## Deployment options​
+
+You can use the database enrichment service both on-site and in the cloud.
+
+A **personal cloud service key** and Creatio cloud services **connection URL**
+are required to use the database enrichment service.
+
+Use the following system settings to specify these values:
+
+- **Account enrichment service URL** – by default, this setting is populated for
+  all Creatio applications.
+- **Text parsing cloud service** – specify the contact data enrichment service
+  URL in this setting.
+- **Creatio cloud services API key** – by default, this setting is populated for
+  Creatio in the cloud. To set up the service on-site, request a personal key
+  from Creatio support, then paste the key to this system setting. Learn more
+  about setting up the database enrichment service on-site in the
+  [Data enrichment service](https://academy.creatio.com/documents?ver=8.1&id=1642)
+  article.
+
+---
+
+## See also​
+
+[Contact data enrichment from emails](https://academy.creatio.com/documents?ver=8.1&id=15778)
+
+- Workflow
+- Compatibility with Creatio products
+- Deployment options
+- See also

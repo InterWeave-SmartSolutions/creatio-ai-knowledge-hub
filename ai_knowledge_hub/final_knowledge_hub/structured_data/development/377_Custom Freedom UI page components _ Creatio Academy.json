@@ -1,0 +1,19 @@
+{
+  "id": 377,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/custom-components",
+  "title": "Custom Freedom UI page components | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Freedom UI component Validator Converter Request handler Localization Asserts Classic UI component Requirements for icons",
+  "markdown": "Version: 8.3[Freedom UI component](/docs/8.x/dev/development-on-creatio-platform/category/freedom-ui-component)[Validator](/docs/8.x/dev/development-on-creatio-platform/category/validator)[Converter](/docs/8.x/dev/development-on-creatio-platform/category/converter)[Request handler](/docs/8.x/dev/development-on-creatio-platform/category/request-handler)[Localization](/docs/8.x/dev/development-on-creatio-platform/front-end-development/freedom-ui/remote-module/localize-remote-module)[Asserts](/docs/8.x/dev/development-on-creatio-platform/front-end-development/freedom-ui/remote-module/overview)[Classic UI component](/docs/8.x/dev/development-on-creatio-platform/category/classic-ui-component)[Requirements for icons](/docs/8.x/dev/development-on-creatio-platform/front-end-development/freedom-ui/remote-module/requirements-for-icons)\n",
+  "analysis": {
+    "word_count": 17,
+    "key_concepts": ["freedom ui", "classic ui"],
+    "use_cases": [],
+    "related_topics": ["customization", "layout", "ui design", "page schema"],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "freedom ui", "documentation", "classic ui"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:22:00.767480"
+}

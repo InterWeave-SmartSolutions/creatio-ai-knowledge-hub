@@ -1,0 +1,452 @@
+# Add landing page elements | Creatio Academy
+
+**Category:** administration **Difficulty:** beginner **Word Count:** 5005
+**URL:**
+https://academy.creatio.com/docs/8.x/creatio-apps/products/marketing-tools/lead-generation/landing-pages/add-landing-page-elements
+
+## Description
+
+Title
+
+## Key Concepts
+
+low-code, customization
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+Version: 8.3Marketing
+
+On this page
+
+## Title​
+
+Use the **Title** element to display page headings.
+
+Fig. 1 Title element
+
+![Fig. 1 Title element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_title.png)
+
+Click the text to configure it in the rich text toolbar. Configure other element
+parameters in the setup area on the right.
+
+| Parameter | Functionality | Title | Hierarchy of the heading. Available values: H1, H2, H3. | Font family | Font type. | Font weight | Whether to use regular or bold font. This setting is independent from text effects configured in the rich text toolbar. | Font size | How large the title is. | Text color | Color of the normal text. You can specify a hex code or select from a color palette. | Link color | Color of the linked text. You can specify a hex code or select from a color palette. | Align | How to align the text. | Line height | Distance between lines. | Letter spacing | Distance between letters. | Text direction | Whether the text goes left to right or right to left. | Padding | Distance between the text border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. |
+| --------- | ------------- | ----- | ------------------------------------------------------- | ----------- | ---------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- | --------- | ----------------------- | ---------- | ------------------------------------------------------------------------------------ | ---------- | ------------------------------------------------------------------------------------ | ----- | ---------------------- | ----------- | ----------------------- | -------------- | ------------------------- | -------------- | ----------------------------------------------------- | ------- | ---------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
+
+## Paragraph​
+
+Use the **Paragraph** element to display rich text.
+
+Fig. 2 Paragraph element
+
+![Fig. 2 Paragraph element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_paragraph.png)
+
+Click the text to configure it in the rich text toolbar. Configure other element
+parameters in the setup area on the right.
+
+| Parameter | Functionality | Font family | Font type. | Font weight | Whether to use regular or bold font. This setting is independent from text effects configured in the rich text toolbar. | Font size | How large the text is. | Text color | Color of the normal text. You can specify a hex code or select from a color palette. | Link color | Color of the linked text. You can specify a hex code or select from a color palette. | Align | How to align the text. | Paragraph spacing | Distance between paragraphs. | Line height | Distance between lines. | Letter spacing | Distance between letters. | Text direction | Whether the text goes left to right or right to left. | Padding | Distance between the text border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. |
+| --------- | ------------- | ----------- | ---------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- | --------- | ---------------------- | ---------- | ------------------------------------------------------------------------------------ | ---------- | ------------------------------------------------------------------------------------ | ----- | ---------------------- | ----------------- | ---------------------------- | ----------- | ----------------------- | -------------- | ------------------------- | -------------- | ----------------------------------------------------- | ------- | ---------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
+
+## List​
+
+Use the **List** element to display ordered or unordered lists.
+
+Fig. 3 List element
+
+![Fig. 3 List element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_list.png)
+
+Click the text to configure it in the rich text toolbar. Configure other element
+parameters in the setup area on the right.
+
+| Parameter | Functionality | List type | Whether the list is ordered or unordered. | List style type | What characters to use for marking list items. | Font family | Font type. | Font weight | Whether to use regular or bold font. This setting is independent from text effects configured in the rich text toolbar. | Font size | How large the text is. | Text color | Color of the normal text. You can specify a hex code or select from a color palette. | Link color | Color of the linked text. You can specify a hex code or select from a color palette. | Align | How to align the text. | List items spacing | Distance between list items. | Nested items indent | How much to indent nested list items. | Line height | Distance between lines. | Letter spacing | Distance between letters. | Text direction | Whether the text goes left to right or right to left. | Padding | Distance between the text border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. |
+| --------- | ------------- | --------- | ----------------------------------------- | --------------- | ---------------------------------------------- | ----------- | ---------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- | --------- | ---------------------- | ---------- | ------------------------------------------------------------------------------------ | ---------- | ------------------------------------------------------------------------------------ | ----- | ---------------------- | ------------------ | ---------------------------- | ------------------- | ------------------------------------- | ----------- | ----------------------- | -------------- | ------------------------- | -------------- | ----------------------------------------------------- | ------- | ---------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
+
+## Image​
+
+Use the **Image** element to display images. The images can be visual elements
+as well as be linked to serve as a call to action. You can select from stock
+photos that have Creative Commons Zero license or upload your own images.
+
+Fig. 4 Image element
+
+![Fig. 4 Image element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_image.png)
+
+Configure the element in the setup area on the right.
+
+Parameter| Functionality| Auto width| Whether to calculate image width
+automatically or set a static value. Becomes available after you select the
+image file.| Align| How to align the image.| Dynamic image| You can use dynamic
+images provided externally, for example, for A/B testing. To connect a dynamic
+image, click the toggle and enter the dynamic image URL in the **Dynamic URL**
+parameter.When you use dynamic images, the **Url** parameter becomes the
+location of a placeholder image that is only shown in the editor. The **Dynamic
+Url** parameter is used in the HTML code. The size of the dynamic image is set
+based on the placeholder image, so use a placeholder of the same size.You can
+use an external service to create dynamic images. For example,
+[Niftyimages](https://niftyimages.com/),
+[Fresh Relevance](https://www.freshrelevance.com/features/countdown-timers-and-live-images/),
+[CountdownMail](https://countdownmail.com/), etc.| Choose image| Click the
+button to open the file manager or specify the image URL in the **Url**
+parameter.| Apply effects| Adjust the image in a simple editor. For example,
+crop it or change its color. Becomes available after you select the image file.|
+Alt text| Brief summary of the image in text form required for SEO and
+accessibility purposes.| Image rounded corners| Whether the image has corner
+radii.| Image link| Whether the image serves as a call to action. The following
+actions are available:
+
+- open web page / download a file
+- send email
+- make call
+- send SMS
+- open internal link
+
+| The exact parameters depend on the selected action. To use an internal link to an element, enable the block identifier in the setup area of the corresponding element. | Padding | Distance between the image border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ----------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## Button​
+
+Use the **Button** element to display clickable call-to-action buttons.
+
+Fig. 5 Button element
+
+![Fig. 5 Button element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_button.png)
+
+Click the button to configure the button caption in the toolbar. Configure other
+element parameters in the setup area on the right.
+
+Parameter| Functionality| Link type| What the button action is. The following
+actions are available:
+
+- open web page / download a file
+- send email
+- make call
+- send SMS
+- open internal link
+
+| The exact parameters depend on the selected action. To use an internal link to an element, enable the block identifier in the setup area of the corresponding element. | Auto width | Whether to calculate button width automatically or set a static value. | Font family | Font type. | Font weight | Whether to use regular or bold font. This setting is independent from text effects configured in the toolbar. | Font size | How large the caption is. | Background color | Color of the button. | Text color | Color of the caption. | Align | How to align the button. | Line height | Distance between lines. | Letter spacing | Distance between letters. | Text direction | Whether the caption goes left to right or right to left. | Border radius | Whether to round the corners of the button. | Content padding | Distance between the caption and the border of the button. | Border | Whether the button has an outline. | Padding | Distance between the button border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------- | ----------- | ---------- | ----------- | ------------------------------------------------------------------------------------------------------------- | --------- | ------------------------- | ---------------- | -------------------- | ---------- | --------------------- | ----- | ------------------------ | ----------- | ----------------------- | -------------- | ------------------------- | -------------- | -------------------------------------------------------- | ------------- | ------------------------------------------- | --------------- | ---------------------------------------------------------- | ------ | ---------------------------------- | ------- | ------------------------------------------------------ | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## Divider​
+
+Use the **Divider** element to separate page rows.
+
+Fig. 6 Divider element
+
+![Fig. 6 Divider element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_divider.png)
+
+Configure the element parameters in the setup area on the right.
+
+| Parameter | Functionality | Transparent | Whether to make the divider line transparent. | Line | Style and color of the divider line. | Width | Width of the divider line, in percentage of the total page width. | Align | How to align the divider line. | Height | Height of the divider element. Available only if the divider line is transparent. | Padding | Distance between the divider line and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. |
+| --------- | ------------- | ----------- | --------------------------------------------- | ---- | ------------------------------------ | ----- | ----------------------------------------------------------------- | ----- | ------------------------------ | ------ | --------------------------------------------------------------------------------- | ------- | ----------------------------------------------------- | ------- | ------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
+
+## Spacer​
+
+Use the **Spacer** element to add empty space vertically or horizontally.
+
+Fig. 7 Spacer element
+
+![Fig. 7 Spacer element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_spacer.png)
+
+Configure the spacer parameters in the setup area on the right.
+
+| Parameter | Functionality | Height | Height of the spacer element. | Padding | Distance between the divider line and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. |
+| --------- | ------------- | ------ | ----------------------------- | ------- | ----------------------------------------------------- | ------- | ------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
+
+## Video​
+
+Use the **Video** element to embed videos hosted on YouTube, Vimeo, or your own
+URL.
+
+Fig. 8 Video element
+
+![Fig. 8 Video element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_video.png)
+
+Configure the element parameters in the setup area on the right.
+
+Parameter| Functionality| Video URL| How to embed the video. Available values:
+
+- Thumbnail. Display the thumbnail of a YouTube or Vimeo video and a play
+  button. Users can click the button to open the video in a new tab.
+- Embedded. Embed the YouTube or Vimeo video on the page. Users can play the
+  video on the page itself.
+- Hosted video. Embed your own video into the page. Users can play the video on
+  the page itself.
+
+| Title | The text to display when holding the pointer over the thumbnail. Available only for "Thumbnail" type videos. | Play icon type | Which play icon to display. Available only for "Thumbnail" type videos. | Play icon color | Whether to use light or dark icon color scheme. Available only for "Thumbnail" type videos. | Play icon size | Size of the icon. Available only for "Thumbnail" type videos. | Controls | Whether to display video controls after the user starts playing the video. Available only for "Embedded" and "Hosted video" type videos. | Loop | Whether to loop the video. Available only for "Embedded" and "Hosted video" type videos. | Padding | Distance between the video and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| ----- | ------------------------------------------------------------------------------------------------------------ | -------------- | ----------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---- | ---------------------------------------------------------------------------------------- | ------- | ---------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## Icon​
+
+Use the **Icon** element to add small images that can serve as a visual
+representation of content or as calls-to-action. You can select from stock
+photos that have Creative Commons Zero license or upload your own images.
+
+Fig. 9 Icon element
+
+![Fig. 9 Icon element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_icons.png)
+
+Configure the icon parameters in the setup area on the right.
+
+Parameter| Functionality| Add new icon| Adds a placeholder icon you can
+configure as you see fit. You can add multiple icons to a single element. Drag
+icons up or down the list using the
+![btn_drag.png](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/btn_drag.png)
+button.| Apply effects| Adjust the icon in a simple editor. For example, crop it
+or change its color. Becomes available after you add a placeholder icon.| More
+options| Displays more options for an icon. Becomes available after you add a
+placeholder icon.| Image url| URL of the image. Becomes available after you
+click the **More options** toggle.| Alt text| Brief summary of the icon in text
+form required for SEO and accessibility purposes. Becomes available after you
+click the **More options** toggle.| Icon text| Text displayed next to the icon.
+Becomes available after you click the **More options** toggle.| Text position|
+Where to display the text relative to the icon. Becomes available after you
+enter icon text.| Link type| What the icon action is. The following actions are
+available:
+
+- open web page / download a file
+- send email
+- make call
+- send SMS
+- open internal link
+
+| The exact parameters depend on the selected action. To use an internal link to an element, enable the block identifier in the setup area of the corresponding element. | Title | Text that is displayed when a user holds the pointer over the icon. | Font family | Font type for the icon text. | Font weight | Whether to use regular or bold font for the icon text. | Font size | How large the icon text is. | Text color | Color of the icon text. You can specify a hex code or select from a color palette. | Align | How to align the icons. | Letter spacing | Distance between letters of the icon text. | Icon spacing | Distance between icons. | Icon padding | Distance between the icon and another icon. | Padding | Distance between the icon border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------- | ----------- | ---------------------------- | ----------- | ------------------------------------------------------ | --------- | --------------------------- | ---------- | ---------------------------------------------------------------------------------- | ----- | ----------------------- | -------------- | ------------------------------------------ | ------------ | ----------------------- | ------------ | ------------------------------------------- | ------- | ---------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## HTML​
+
+Use the **HTML** element to embed custom code, for example, a form, or code your
+own part of the page. The element includes sanitization. This means a service
+checks custom HTML and cleans it up to avoid inadvertent introduction of unsafe
+content.
+
+Fig. 10 HTML element
+
+![Fig. 10 HTML element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_html.png)
+
+Configure the element parameters in the setup area on the right.
+
+| Parameter | Functionality | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| --------- | ------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## Menu​
+
+Use the **Menu** element to enable users to navigate through the landing page
+easier, add links to other landing pages, or add more calls to action.
+
+Fig. 11 Menu element
+
+![Fig. 11 Menu element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_menu.png)
+
+Configure the element parameters in the setup area on the right.
+
+Parameter| Functionality| Add new item| Adds an item to the menu. This enables
+the **Configure menu item** parameter group.| Configure menu item| You can drag
+items up or down the list using the
+![btn_drag.png](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/btn_drag.png)
+button.| Text| Caption of the menu item.| Link type| What the item action is.
+The following actions are available:
+
+- open web page / download a file
+- send email
+- make call
+- send SMS
+- open internal link
+
+| The exact parameters depend on the selected action. To use an internal link to an element, enable the block identifier in the setup area of the corresponding element. | Font family | Font type. | Font weight | Whether to use regular or bold font. | Font size | How large the form text is. | Text color | Color of the normal text, for example, separator. You can specify a hex code or select from a color palette. | Link color | Color of the linked text. You can specify a hex code or select from a color palette. | Align | How to align the menu. | Letter spacing | Distance between the letters. | Layout | How to arrange the menu items. | Separator | What characters to display between menu items. | Mobile menu | Whether to use an expandable menu tailored for better mobile UX in mobile view. | Items padding | Distance between the menu items. | Padding | Distance between the menu items and the element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ----------- | ------------------------------------ | --------- | --------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------ | ---------- | ------------------------------------------------------------------------------------ | ----- | ---------------------- | -------------- | ----------------------------- | ------ | ------------------------------ | --------- | ---------------------------------------------- | ----------- | ------------------------------------------------------------------------------- | ------------- | -------------------------------- | ------- | ------------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
+
+## Social​
+
+Use the **Social** element to set up a set of links to social media.
+
+Fig. 12 Social element
+
+![Fig. 12 Social element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_social.png)
+
+Configure the element parameters in the setup area on the right.
+
+| Parameter | Functionality | Select icon collection | Select icon style that best fits your landing page. | Configure icon collection | You can drag icons up or down the list using the ![btn_drag.png](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/btn_drag.png) button. | Title | The text available when a user holds the pointer over the icon. Available when you click the **More options** toggle. | Alt text | Brief summary of the icon in text form required for SEO and accessibility purposes. Available after you click the **More options** toggle. | Url | Link to your social media profile. | Align | How to align the icons. | Icon spacing | Distance between the icons. | Padding | Distance between the icon border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| --------- | ------------- | ---------------------- | --------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | --------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --- | ---------------------------------- | ----- | ----------------------- | ------------ | --------------------------- | ------- | ---------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## Form​
+
+Use the **Form** element to add a web form to your landing page.
+
+Fig. 13 Form element
+
+![Fig. 13 Form element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_form.png)
+
+Configure the element parameters in the setup area on the right.
+
+Form layout
+
+Parameter| Functionality| Width| Width of the form in percentage relative to the
+element width.| Align| How to align the form.| Layout| How to arrange the form
+fields. Available values:
+
+- horizontal
+- vertical
+- grid
+
+| Font family | Font type. | Font weight | Whether to use regular or bold font. | Font size | How large the form text is. |
+| ----------- | ---------- | ----------- | ------------------------------------ | --------- | --------------------------- |
+
+Manage fields
+
+Parameter| Functionality| Manage fields| You can drag fields up or down the list
+using the
+![btn_drag.png](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/btn_drag.png)
+button. Change the label of the field or submit button in the text field. Click
+**Edit** in the field to edit the following values:
+
+- label
+- type
+- placeholder
+- permissions
+
+---|---
+
+Label options
+
+| Parameter | Functionality | Text color | Color of the field labels. You can specify a hex code or select from a color palette. | Align | How to align the field labels. | Line height | Distance between lines for field labels. | Letter spacing | Distance between letters for field labels. | Font style | Whether to make field labels bold or italic. | Label position | Where to place the labels relative to the fields. | Width | Width of the form fields. Available if you place labels to the side of fields. |
+| --------- | ------------- | ---------- | ------------------------------------------------------------------------------------- | ----- | ------------------------------ | ----------- | ---------------------------------------- | -------------- | ------------------------------------------ | ---------- | -------------------------------------------- | -------------- | ------------------------------------------------- | ----- | ------------------------------------------------------------------------------ |
+
+Field options
+
+| Parameter | Functionality | Text color | Color of the text inside form fields. | Background color | Color of the form fields. | Content padding | Distance between the text in form fields and form field border. | Border | Whether the form fields have outlines. | Border radius | Whether to round corners of form fields. | Active field outline color | Border color of the selected form field. |
+| --------- | ------------- | ---------- | ------------------------------------- | ---------------- | ------------------------- | --------------- | --------------------------------------------------------------- | ------ | -------------------------------------- | ------------- | ---------------------------------------- | -------------------------- | ---------------------------------------- |
+
+Button options
+
+| Parameter | Functionality | Auto width | Whether to set the button width automatically. | Width | Width of the button relative to the fields. | Text color | Color of the button caption. | Background color | Color of the button. | Letter spacing | Distance between the letters in button caption. | Font style | Whether to make button caption bold or italic. | Content padding | Distance between the caption and button border. | Padding | Distance between the button border and fields. | Border | Whether the button has an outline. | Border radius | Whether to round button corners. |
+| --------- | ------------- | ---------- | ---------------------------------------------- | ----- | ------------------------------------------- | ---------- | ---------------------------- | ---------------- | -------------------- | -------------- | ----------------------------------------------- | ---------- | ---------------------------------------------- | --------------- | ----------------------------------------------- | ------- | ---------------------------------------------- | ------ | ---------------------------------- | ------------- | -------------------------------- |
+
+Block options
+
+| Parameter | Functionality | Padding | Distance between form content and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| --------- | ------------- | ------- | ------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## GIFs​
+
+Use the **GIFs** element to display animated images from Giphy.
+
+Fig. 14 GIF element
+
+![Fig. 14 GIF element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_gif.png)
+
+Configure the element parameters in the setup area on the right.
+
+Parameter| Functionality| Search for gifs with Giphy| Click the button to browse
+Giphy.| Auto width| Whether to calculate image width automatically or set a
+static value. Becomes available after you select a GIF.| Full width on mobile|
+Whether to override the custom width in mobile view. Becomes available if you
+select custom width.| Align| How to align the GIF.| Dynamic image| You can use
+dynamic images provided externally, for example, for A/B testing. To connect a
+dynamic image, click the toggle and enter the dynamic image URL in the **Dynamic
+URL** parameter.When you use dynamic images, the **Url** parameter becomes the
+location of a placeholder image that is only shown in the editor. The **Dynamic
+Url** parameter is used in the HTML code. The size of the dynamic image is set
+based on the placeholder image, so use a placeholder of the same size.You can
+use an external service to create dynamic images. For example,
+[Niftyimages](https://niftyimages.com/),
+[Fresh Relevance](https://www.freshrelevance.com/features/countdown-timers-and-live-images/),
+[CountdownMail](https://countdownmail.com/), etc.| Alt text| Brief summary of
+the GIF in text form required for SEO and accessibility purposes.| Image rounded
+corners| Whether the GIF has corner radii.| Image link| Whether the GIF serves
+as a call to action. The following actions are available:
+
+- open web page / download a file
+- send email
+- make call
+- send SMS
+- open internal link
+
+| The exact parameters depend on the selected action. To use an internal link to an element, enable the block identifier in the setup area of the corresponding element. | Padding | Distance between the GIF border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## Stickers​
+
+Use the **Stickers** element to display small GIFs from Giphy.
+
+Fig. 15 Sticker element
+
+![Fig. 15 Sticker element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_sticker.png)
+
+Configure the element parameters in the setup area on the right.
+
+Parameter| Functionality| Search for stickers with Giphy| Click the button to
+browse Giphy.| Auto width| Whether to calculate sticker width automatically or
+set a static value. Becomes available after you select a sticker.| Full width on
+mobile| Whether to override the custom width in mobile view. Becomes available
+if you select custom width.| Align| How to align the sticker.| Dynamic image|
+You can use dynamic images provided externally, for example, for A/B testing. To
+connect a dynamic image, click the toggle and enter the dynamic image URL in the
+**Dynamic URL** parameter.When you use dynamic images, the **Url** parameter
+becomes the location of a placeholder image that is only shown in the editor.
+The **Dynamic Url** parameter is used in the HTML code. The size of the dynamic
+image is set based on the placeholder image, so use a placeholder of the same
+size.You can use an external service to create dynamic images. For example,
+[Niftyimages](https://niftyimages.com/),
+[Fresh Relevance](https://www.freshrelevance.com/features/countdown-timers-and-live-images/),
+[CountdownMail](https://countdownmail.com/), etc.| Alt text| Brief summary of
+the sticker in text form required for SEO and accessibility purposes.| Image
+rounded corners| Whether the sticker has corner radii.| Image link| Whether the
+sticker serves as a call to action. The following actions are available:
+
+- open web page / download a file
+- send email
+- make call
+- send SMS
+- open internal link
+
+| The exact parameters depend on the selected action. To use an internal link to an element, enable the block identifier in the setup area of the corresponding element. | Padding | Distance between the sticker border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------- | ------- | ------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+## Table​
+
+Use the Table element to display data in a structured format, for example, event
+schedule.
+
+Fig. 16 Table element
+
+![Fig. 16 Table element](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/add_landing_page_elements/scr_table.png)
+
+Click a cell to configure its text. Configure other element parameters in the
+setup area on the right.
+
+| Parameter | Functionality | Columns | Number of columns in the table. | Rows | Number of rows in the table. | Border | Whether the table has an outline. | Background color | Color of the table cells below the header row. | Striped rows | Whether to color the table cells in a striped manner. This enhances readability of larger tables. | Header row | Whether to color the top row differently. | Background color | Color of the header row cells. | Font weight | Whether to use regular or bold font in the header row. This setting is independent from text effects configured in the rich text toolbar. | Font size | How large the header row text is. | Text color | Color of the header row text. | Align | How to align the text in the header row. | Font family | Font type for all table cells. | Font weight | Whether to use regular or bold font in the main table cells. This setting is independent from text effects configured in the rich text toolbar. | Font size | How large the text in the main table cells is. | Text color | Color of the text in the main table cells. | Link color | Color of the linked text in the main table cells. | Align | How to align the text in the main table cells. | Line height | Distance between text lines. | Letter spacing | Distance between letters. | Text direction | Whether the text goes left to right or right to left. | Padding | Distance between the table border and element border. | Hide on | Whether to hide the element on desktop or mobile view. | Hide on | Whether to hide the element on AMP (accelerated mobile page) or HTML version of the landing page. An AMP version of a landing page is a simplified, faster-loading version designed specifically for mobile users. It uses streamlined code to deliver content almost instantly, improving speed and user experience on smartphones. In contrast, an HTML version is the standard, fully featured version of a page that allows for rich design, interactivity, and custom functionality but might load more slowly, especially on mobile devices that have weaker connection. | Block identifier | Whether to enable a unique element ID required for internal linking as well as low-code customization. |
+| --------- | ------------- | ------- | ------------------------------- | ---- | ---------------------------- | ------ | --------------------------------- | ---------------- | ---------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------- | ---------- | ----------------------------------------- | ---------------- | ------------------------------ | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------- | ---------- | ----------------------------- | ----- | ---------------------------------------- | ----------- | ------------------------------ | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------- | ---------- | ------------------------------------------ | ---------- | ------------------------------------------------- | ----- | ---------------------------------------------- | ----------- | ---------------------------- | -------------- | ------------------------- | -------------- | ----------------------------------------------------- | ------- | ----------------------------------------------------- | ------- | ------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
+
+---
+
+## See also​
+
+[Create a landing page](https://academy.creatio.com/documents?id=2579)
+
+[Set up rows and columns](https://academy.creatio.com/documents?id=2581)
+
+[Marketing landing pages functionality usage policy](https://academy.creatio.com/documents?id=2582)
+
+[Landing Page Designer FAQ](https://academy.creatio.com/documents?id=2583)
+
+- Title
+- Paragraph
+- List
+- Image
+- Button
+- Divider
+- Spacer
+- Video
+- Icon
+- HTML
+- Menu
+- Social
+- Form
+- GIFs
+- Stickers
+- Table
+- See also

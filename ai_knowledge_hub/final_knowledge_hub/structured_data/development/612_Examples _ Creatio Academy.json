@@ -1,0 +1,19 @@
+{
+  "id": 612,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/process-service-examples",
+  "title": "Examples | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Run the business process from the browser address bar (business process service) Run the business process from the C# console app (business process service) Run the business process (client module) Run the business process that receives parameters from a client module",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/process-service-examples)** (8.3).\n\nVersion: 8.0[Run the business process from the browser address bar (business process service)](/docs/8.x/dev/development-on-creatio-platform/8.0/integrations-and-api/business-process-service/examples/run-the-business-process-web-service)[Run the business process from the C# console app (business process service)](/docs/8.x/dev/development-on-creatio-platform/8.0/integrations-and-api/business-process-service/examples/run-the-business-process-from-console-app)[Run the business process (client module)](/docs/8.x/dev/development-on-creatio-platform/8.0/integrations-and-api/business-process-service/examples/run-the-business-process-from-a-client-module)[Run the business process that receives parameters from a client module](/docs/8.x/dev/development-on-creatio-platform/8.0/integrations-and-api/business-process-service/examples/run-the-business-process-that-receives-parameters-from-a-client-module)\n",
+  "analysis": {
+    "word_count": 60,
+    "key_concepts": ["business process"],
+    "use_cases": [],
+    "related_topics": ["automation", "workflow", "process design", "bpm"],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "business process", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:26:49.725720"
+}

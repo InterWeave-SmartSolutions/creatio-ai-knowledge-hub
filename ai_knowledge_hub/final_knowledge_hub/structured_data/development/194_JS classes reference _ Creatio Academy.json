@@ -1,0 +1,19 @@
+{
+  "id": 194,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.2/front-end-development/classic-ui/js-classes",
+  "title": "JS classes reference | Creatio Academy",
+  "category": "development",
+  "description": "The functionality is relevant to Classic UI.",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 Level: advanced note The functionality is relevant to Classic UI. The documentation for the client-side classes of platform core (JavaScript API): JS classes reference .",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/front-end-development/classic-ui/js-classes)** (8.3).\n\nVersion: 8.2\n\nLevel: advanced\n\nnote\n\nThe functionality is relevant to Classic UI.\n\nThe documentation for the client-side classes of platform core (JavaScript API): [JS classes reference](https://academy.creatio.com/api/jscoreapi/7.15.0/index.html).\n",
+  "analysis": {
+    "word_count": 44,
+    "key_concepts": ["classic ui"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["classic ui", "creatio", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:18:13.523198"
+}

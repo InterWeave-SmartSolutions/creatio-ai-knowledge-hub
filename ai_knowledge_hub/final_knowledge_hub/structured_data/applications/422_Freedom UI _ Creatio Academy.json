@@ -1,0 +1,19 @@
+{
+  "id": 422,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.1/category/freedom-ui",
+  "title": "Freedom UI | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "This is documentation for Creatio 8.1 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.1 Overview Record list Hotkeys",
+  "markdown": "This is documentation for Creatio **8.1**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/category/freedom-ui)** (8.3).\n\nVersion: 8.1[Overview](/docs/8.x/creatio-apps/8.1/creatio-basics/freedomUI/creatio-freedom-shell)[Record list](/docs/8.x/creatio-apps/8.1/creatio-basics/freedomUI/manage-a-freedom-ui-list)[Hotkeys](/docs/8.x/creatio-apps/8.1/creatio-basics/freedomUI/keyboard-shortcuts)\n",
+  "analysis": {
+    "word_count": 23,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:22:58.192618"
+}

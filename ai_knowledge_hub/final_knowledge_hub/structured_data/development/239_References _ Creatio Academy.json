@@ -1,0 +1,19 @@
+{
+  "id": 239,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/page-customization-references",
+  "title": "References | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 FlexContainer GridContainer DateTimePicker Checkbox Input NumberInput ImageInput Dropdown ExpansionPanel TabPanel ButtonTogglePanel Button",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/page-customization-references)** (8.3).\n\nVersion: 8.0[FlexContainer](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/flexcontainer)[GridContainer](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/gridcontainer)[DateTimePicker](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/datetimepicker)[Checkbox](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/checkbox)[Input](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/input)[NumberInput](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/numberinput)[ImageInput](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/imageinput)[Dropdown](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/dropdown)[ExpansionPanel](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/expansionpanel)[TabPanel](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/tabpanel)[ButtonTogglePanel](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/buttontogglepanel)[Button](/docs/8.x/dev/development-on-creatio-platform/8.0/platform-customization/freedom-ui/page-customization-basics/references/button)\n",
+  "analysis": {
+    "word_count": 31,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:19:08.616016"
+}

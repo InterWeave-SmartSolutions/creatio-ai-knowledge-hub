@@ -1,0 +1,52 @@
+{
+  "id": 5,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/app-types",
+  "title": "Marketplace listing types | Creatio Academy",
+  "category": "development",
+  "description": "Select the Marketplace listing type before you begin the development.",
+  "content": "On this page Level: beginner Select the Marketplace listing type before you begin the development. Important Only organizations that have the Marketplace partner status can develop and publish listings. Learn more: Marketplace partner program . Component for Creatio platform ​ Component for Creatio platform is a modular, reusable, and self-contained functional unit that can be easily integrated into composable apps or products. Components let you execute the following actions: Perform specific business tasks. Use extended functionality. Interact with other components in the Creatio ecosystem for flexibility and adaptability. Examples of components for Creatio platform are out-of-the-box Freedom UI components, business process elements, marketing campaign elements. Application on Creatio platform ​ Application on Creatio platform is ready-to-use functionality like sections, pages and business logic configured using components. Types of applications on Creatio platform: Apps that extend the functionality of out-of-the-box apps and Creatio products. Standalone composable apps developed on the Creatio platform. Examples of applications on Creatio platform are connectors that are installed into Creatio and extend the base logic. Product on Creatio platform ​ Product on Creatio platform is multiple apps that fulfill a need in a specific industry or cover entire workflows. The products let you execute the following actions: Create comprehensive solutions by uniting partner listings and Creatio composable apps, such as Customer 360 and Case Management , without any additional business logic. Offer a list of apps useful in a specific area, providing users with more attractive pricing and simplifying the procurement process. Integration via Creatio API ​ Integration via Creatio API is connecting external systems, app or services to the Creatio platform using only the Creatio API. As a rule, the integration is configured in an external app and no setup is required in Creatio. Integration via Creatio API ensures seamless interoperability and data exchange between Creatio and other software solutions. Resources ​ Marketplace partner program Marketplace updates Component for Creatio platform Application on Creatio platform Product on Creatio platform Integration via Creatio API Resources",
+  "markdown": "On this page\n\nLevel: beginner\n\nSelect the Marketplace listing type before you begin the development.\n\nImportant\n\nOnly organizations that have the Marketplace partner status can develop and publish listings. Learn more: [Marketplace partner program](https://marketplace.creatio.com/sites/marketplace/files/2025-04/Marketplace-PP-26FY.pdf).\n\n## Component for Creatio platform​\n\n**Component for Creatio platform** is a modular, reusable, and self-contained functional unit that can be easily integrated into composable apps or products. Components let you execute the following actions:\n\n  * Perform specific business tasks.\n  * Use extended functionality.\n  * Interact with other components in the Creatio ecosystem for flexibility and adaptability.\n\n\n\nExamples of components for Creatio platform are out-of-the-box Freedom UI components, business process elements, marketing campaign elements.\n\n## Application on Creatio platform​\n\n**Application on Creatio platform** is ready-to-use functionality like sections, pages and business logic configured using components.\n\n**Types** of applications on Creatio platform:\n\n  * Apps that extend the functionality of out-of-the-box apps and Creatio products.\n  * Standalone composable apps developed on the Creatio platform.\n\n\n\nExamples of applications on Creatio platform are connectors that are installed into Creatio and extend the base logic.\n\n## Product on Creatio platform​\n\n**Product on Creatio platform** is multiple apps that fulfill a need in a specific industry or cover entire workflows. The products let you execute the following actions:\n\n  * Create comprehensive solutions by uniting partner listings and Creatio composable apps, such as [**Customer 360**](https://marketplace.creatio.com/node/26005) and [**Case Management**](https://marketplace.creatio.com/node/26011), without any additional business logic.\n  * Offer a list of apps useful in a specific area, providing users with more attractive pricing and simplifying the procurement process.\n\n\n\n## Integration via Creatio API​\n\n**Integration via Creatio API** is connecting external systems, app or services to the Creatio platform using only the Creatio API. As a rule, the integration is configured in an external app and no setup is required in Creatio.\n\nIntegration via Creatio API ensures seamless interoperability and data exchange between Creatio and other software solutions.\n\n* * *\n\n## Resources​\n\n[Marketplace partner program](https://marketplace.creatio.com/sites/marketplace/files/2025-04/Marketplace-PP-26FY.pdf)\n\n[Marketplace updates](https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/category/marketplace-updates)\n\n  * Component for Creatio platform\n  * Application on Creatio platform\n  * Product on Creatio platform\n  * Integration via Creatio API\n  * Resources\n\n\n",
+  "analysis": {
+    "word_count": 329,
+    "key_concepts": [
+      "business process",
+      "workflow",
+      "freedom ui",
+      "section",
+      "integration",
+      "campaign",
+      "case",
+      "marketplace"
+    ],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": [
+      "workflow",
+      "bpm",
+      "data sync",
+      "automation",
+      "process design",
+      "customization",
+      "layout",
+      "page schema"
+    ],
+    "difficulty": "advanced",
+    "ai_tags": [
+      "workflow",
+      "creatio",
+      "freedom ui",
+      "documentation",
+      "section",
+      "integration",
+      "business process",
+      "advanced"
+    ]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:14:23.528404"
+}

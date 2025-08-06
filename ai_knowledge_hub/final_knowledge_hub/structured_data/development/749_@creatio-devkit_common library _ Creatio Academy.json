@@ -1,0 +1,19 @@
+{
+  "id": 749,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.2/front-end-development/freedom-ui/creatio-devkit-common",
+  "title": "@creatio-devkit/common library | Creatio Academy",
+  "category": "development",
+  "description": "@creatio-devkit/common library is available on an official npm website (index.d.ts file).",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 Level: advanced @creatio-devkit/common library is available on an official npm website ( index.d.ts file).",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/front-end-development/freedom-ui/creatio-devkit-common)** (8.3).\n\nVersion: 8.2\n\nLevel: advanced\n\n`@creatio-devkit/common` library is available on an [official npm website](https://www.npmjs.com/package/@creatio-devkit/common) (`index.d.ts` file).\n",
+  "analysis": {
+    "word_count": 33,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:29:33.606634"
+}

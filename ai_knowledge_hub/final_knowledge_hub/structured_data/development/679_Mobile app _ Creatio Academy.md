@@ -1,0 +1,216 @@
+# Mobile app | Creatio Academy
+
+**Category:** development **Difficulty:** beginner **Word Count:** 1044 **URL:**
+https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/architecture/microservices/mobile-application
+
+## Description
+
+Creatio’s mobile applications are remote workplaces with instant access to
+customer data, calendar, mobile feed, etc. The mobile application is an
+auxiliary tool for accessing the primary Creatio application on mobile devices.
+
+## Key Concepts
+
+configuration, section, detail, integration, web service, database, operation,
+package, mobile app, synchronization
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+Version: 8.3
+
+On this page
+
+Level: beginner
+
+Creatio’s mobile applications are remote workplaces with instant access to
+customer data, calendar, mobile feed, etc. The mobile application is an
+auxiliary tool for accessing the primary Creatio application on mobile devices.
+
+## Mobile application basics​
+
+Using the Mobile Creatio provides the following advantages:
+
+- Quick access to data and information exchange between the employee and the
+  management.
+- Enhanced interaction of the company’s employees and departments.
+- The timely arrival of vital information.
+- Swift reaction to the arriving information.
+- An increase in customer loyalty thanks to the swift reaction.
+- An increase in field staff productivity.
+
+Mobile Creatio offers the following opportunities to the users:
+
+- Working with the data of the primary Creatio application on a mobile device.
+- The information is accessible even without an established Internet connection
+  (hybrid and offline modes).
+
+Mobile Creatio is implemented using the hybrid approach. A hybrid application is
+a web application wrapped in a native container. Unlike native applications,
+hybrid applications have a single codebase for every platform.
+
+To customize Mobile Creatio (for example, change the section list, a set of
+business fields, the business logic settings, etc), set up the mobile
+application in the primary Creatio application. Learn more about customizing the
+Creatio mobile application:
+[Mobile app](https://academy.creatio.com/docs/8.x/creatio-apps/category/mobile-app)
+(user documentation). Setting up the list of sections available in the mobile
+application:
+[Mobile app setup](https://academy.creatio.com/docs/8.x/no-code-customization/category/mobile-app-setup)
+(user documentation).
+
+One of the steps required to set up the mobile application is to choose the
+operation mode. A Creatio mobile application has the following operation modes
+available:
+
+- `Hybrid mode`. The hybrid mode is designed for accessing the data when a
+  stable connection to the Creatio server cannot be established. It is enabled
+  automatically. This mode enables creating new records and working with
+  schedules. Additionally, the most recent records (10 last records) are
+  available for reading and editing when there is no Internet connection.
+- `Online`. The online mode requires an Internet connection. In this mode, the
+  user works directly with the server (the primary Creatio application). The
+  configuration settings are auto-synced in real-time.
+- `Offline`. The offline mode only requires an Internet connection for the
+  initial imports and subsequent synchronizations. In this mode, the data are
+  stored on the mobile device. To acquire the configuration changes and update
+  the data, run a synchronization with the Creatio application server manually.
+
+Learn more about the operation modes of Mobile Creatio:
+[Mobile app basics](https://academy.creatio.com/documents?ver=8.3&id=15851). The
+differences between the modes:
+[Message operation modes](https://academy.creatio.com/documents?ver=8.3&id=1920&anchor=title-773-3)
+(user documentation).
+
+The mobile application uses the DataService web service to synchronize with the
+Creatio server. Learn more about Creatio integration using DataService:
+[DataService](https://academy.creatio.com/documents?ver=8.3&id=15411).
+
+If conflicts occur during the synchronization, the details will be logged to the
+synchronization log, available in the hybrid and offline modes. Learn more about
+working with the synchronization log:
+[Message operation modes](https://academy.creatio.com/documents?ver=8.3&id=1920&anchor=title-773-3)
+(user documentation).
+
+To check if the custom functionality works as intended, use the instructions
+from the
+[Mobile app debugging](https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/debugging)
+block of articles.
+
+## Schemas​
+
+### Mobile application architecture schemas​
+
+Mobile Creatio application architecture schemas
+
+![Mobile Creatio application architecture schemas](https://academy.creatio.com/sites/default/files/documentation/sdk/ru/BPMonlineWebSDK/Screenshots/Mobile/7.18/scr_MobileArchitecture.png)
+
+The Creatio mobile application utilizes the
+[Apache Cordova](https://en.wikipedia.org/w/index.php?title=Apache_Cordova&oldid=972214721)
+framework for creating hybrid applications. The Cordova framework has the
+following advantages:
+
+- Access to native device APIs for interacting with the database or peripheral
+  devices (such as the camera or memory card).
+- Native plug-ins for using the APIs of multiple mobile platforms (iOS, Android,
+  Windows Phone, etc.). Additionally, developing custom plug-ins enables adding
+  extra features and extending the API.  
+  The list of supported platforms and core plug-ins is available in the
+  [Cordova documentation](https://cordova.apache.org/docs/en/latest/guide/support/index.html).
+
+Mobile Creatio’s core provides a single interface that enables the interaction
+of the client parts of the mobile application. The JavaScript files that the
+core utilizes can be divided into basic and configuration scripts.
+
+The basic scripts are part of the application package available in the
+application store. They include:
+
+- MVC components (page layouts, controllers, models).
+- Synchronization modules (data import and export, file import, etc.).
+- Client classes for web services.
+- Client classes for accessing native plug-ins.
+
+The application downloads the configuration files during the synchronization to
+the Creatio application server and then saves them to the local file system. The
+configuration files include the manifest of Mobile Creatio, as well as section
+schemas and settings.
+
+A manifest is a configuration object with properties that describe the structure
+(objects and their connections) of the mobile application. The manifest
+properties of Mobile Creatio consist of the following groups:
+
+- Application interface properties (setting up the application sections, the
+  main menu, and custom images).
+
+Learn more about the application interface properties:
+[Mobile app manifest basics](https://academy.creatio.com/documents?ver=8.3&id=15861).
+
+- Data and business logic properties (the description of imported data and the
+  custom business logic for processing such data in the mobile application).
+
+Learn more about the data and business logic properties:
+[Mobile app manifest basics](https://academy.creatio.com/documents?ver=8.3&id=15861).
+
+- Application synchronization properties (setting up synchronization parameters
+  for data-syncing with the primary application).
+
+Learn more about application synchronization properties:
+[Mobile app manifest basics](https://academy.creatio.com/documents?ver=8.3&id=15861).
+
+Learn more about the architecture of Mobile Creatio:
+[Mobile app basics](https://academy.creatio.com/documents?ver=8.3&id=15851).
+
+The **Approvals** section of Mobile Creatio uses
+[Flutter Framework](https://flutter.dev/).
+
+### Mobile application operation schema​
+
+The mobile Creatio application available in application stores is a set of
+modules required for synchronizing with Creatio servers. The working principles
+of Creatio Mobile:
+
+![](https://academy.creatio.com/sites/en/files/documentation/sdk/en/BPMonlineWebSDK/Screenshots/Mobile/scr_MobileWork.png)
+
+Each product and each customer website may contain an independent collection of
+settings for Creatio Mobile, custom business logic, and custom visual interface.
+A Mobile Creatio user must first install the application and then synchronize it
+with the main application.
+
+## Mobile application compatibility with Creatio products​
+
+Mobile Creatio is part of the Creatio platform. The mobile application is
+available to the users of the primary Creatio application version 7.15 and up.
+
+After the installation, the user specifies the connection parameter for a
+specific Creatio server. The application then imports data (application
+structure, system data, etc.) and regular data. Such an architecture makes the
+mobile application compatible with all Creatio products.
+
+note
+
+However, [portal](https://academy.creatio.com/documents?ver=8.0&id=1790) users
+cannot use the mobile application.
+
+## Mobile application Installation options​
+
+Creatio mobile application is available on:
+
+- [App Store](https://apps.apple.com/app/mobile-creatio/id708432450) – for
+  iPhone and iPad running
+  [iOS](https://en.wikipedia.org/w/index.php?title=IOS&oldid=108763094) version
+  13 and higher.
+- [Google Play](https://play.google.com/store/apps/details?id=com.creatio.mobileapp)
+  – for mobile devices running
+  [Android](https://en.wikipedia.org/w/index.php?title=Android&oldid=108556364)
+  version 7 and higher.
+
+- Mobile application basics
+- Schemas
+  - Mobile application architecture schemas
+  - Mobile application operation schema
+- Mobile application compatibility with Creatio products
+- Mobile application Installation options

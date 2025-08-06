@@ -1,0 +1,19 @@
+{
+  "id": 64,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/architecture",
+  "title": "Architecture | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Platform Microservices Creatio development",
+  "markdown": "Version: 8.3[Platform](/docs/8.x/dev/development-on-creatio-platform/architecture/creatio-platform)[Microservices](/docs/8.x/dev/development-on-creatio-platform/category/microservices)[Creatio development](/docs/8.x/dev/development-on-creatio-platform/creatio-development)\n",
+  "analysis": {
+    "word_count": 6,
+    "key_concepts": [],
+    "use_cases": ["building applications", "custom development", "API integration"],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:15:33.769514"
+}

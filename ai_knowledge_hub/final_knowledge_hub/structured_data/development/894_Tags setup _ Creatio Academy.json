@@ -1,0 +1,19 @@
+{
+  "id": 894,
+  "url": "https://academy.creatio.com/docs/8.x/no-code-customization/category/tags-setup",
+  "title": "Tags setup | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Tag storage location Tags in lookups",
+  "markdown": "Version: 8.3[Tag storage location](/docs/8.x/no-code-customization/customization-tools/set-up-tags/tag-storage-location)[Tags in lookups](/docs/8.x/no-code-customization/customization-tools/set-up-tags/manage-tags-from-a-lookup)\n",
+  "analysis": {
+    "word_count": 8,
+    "key_concepts": ["lookup"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "lookup", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:32:33.522246"
+}

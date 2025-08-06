@@ -1,0 +1,334 @@
+# Create a landing page | Creatio Academy
+
+**Category:** development **Difficulty:** beginner **Word Count:** 2022 **URL:**
+https://academy.creatio.com/docs/8.x/creatio-apps/products/marketing-tools/lead-generation/landing-pages/create-a-landing-page
+
+## Description
+
+Landing pages are focused, standalone web pages designed for a single objective,
+for example, capturing leads during marketing campaigns, registering event
+participants, or promoting a specific offer. Unlike general-purpose web pages,
+landing pages are streamlined to guide visitors toward a clear call to action.
+In Creatio, you can build responsive landing pages for both desktop and mobile
+devices easily using the no-code, visual, block-based Landing Page Designer that
+has intuitive drag-and-drop functionality.
+
+## Key Concepts
+
+section, campaign, lead, contact, case, no-code
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+Version: 8.3Marketing
+
+On this page
+
+Landing pages are focused, standalone web pages designed for a single objective,
+for example, capturing leads during marketing campaigns, registering event
+participants, or promoting a specific offer. Unlike general-purpose web pages,
+landing pages are streamlined to guide visitors toward a clear call to action.
+In Creatio, you can build responsive landing pages for both desktop and mobile
+devices easily using the no-code, visual, block-based Landing Page Designer that
+has intuitive drag-and-drop functionality.
+
+You can use the Landing Page Designer to design landing pages of any complexity,
+from simple form pages to extensive event promos. Working in the Landing Page
+Designer does not require an in-depth understanding of HTML. Creatio generates
+the code automatically based on the layout that you design.
+
+A landing page consists of a series of
+[rows](https://academy.creatio.com/documents?id=2054) that contain text, images,
+videos, forms, and their different combinations.
+
+Follow these steps to create a landing page:
+
+1. Create a landing page record.
+   [Read more >>>](https://academy.creatio.com/documents?id=2054#title-1572-1)
+2. Design the landing page.
+   [Read more >>>](https://academy.creatio.com/documents?id=2054#title-1572-2)
+3. Publish the landing page.
+   [Read more >>>](https://academy.creatio.com/documents?id=2054#title-1572-3)
+
+The setup procedure described below is similar for all types of landing pages.
+
+Example
+
+Create a landing page for capturing event participants. The page must have a
+form, an image background, contacts, and a call to action button.
+
+Fig. 1 Landing page
+
+![Fig. 1 Landing page](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_ready_page.png)
+
+## Step 1. Create a landing page record​
+
+1. **Open** the **Landing pages** section.
+
+2. **Click** **New**. This opens a mini page.
+
+3. **Fill out** the fields on the mini page.
+
+| **Field** | **Field value** | Name | Name of the landing page. The field is required. | Goal | What you intend to achieve using the page. For example, "register event participants." |
+| --------- | --------------- | ---- | ------------------------------------------------ | ---- | -------------------------------------------------------------------------------------- |
+
+4. **Click** **Save**.
+
+**As a result** , Creatio will add a new landing page records to the list.
+Proceed to step 2.
+
+## Step 2. Design the landing page​
+
+1. **Open** the record of the landing page created on step 1.
+
+2. **Click** **Design**. This opens the Landing Page Designer.
+
+3. **Design the heading row**.
+   1. Click **Settings** in the top right → drag the **Content area width**
+      slider all the way to 1440 px.
+
+   2. Click **Rows** in the top right → drag a row template to the canvas above
+      the existing row. For this example, select the four-column row.
+
+   3. Click the area around the row content to open the row setup area.
+
+   4. Configure the row parameters as specified in the table below.
+
+Fig. 2 Heading row
+
+![Fig. 2 Heading row](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_top_row.png)
+
+| **Parameter** | **Parameter value** | Vertical align | How to align the content vertically. For this example, select **Middle**. | Columns structure | How to group the row content horizontally. Point to the area between the columns and drag left or right to change the column proportions. For this example, set column structure to "6" - "2" - "2" - "2." | Padding | The amount of empty space between the column border and content elements. For this example, set it to **Top** \- "5," **Right** \- "20," **Bottom** \- "5," **Left** \- "20." |
+| ------------- | ------------------- | -------------- | ------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+     5. Click **Content** in the top right → drag content elements to the row.
+
+        1. Drag the **Image** element to the first column.
+
+        2. Drag the **Spacer** elements to the second and third columns.
+
+        3. Drag the **Button** element to the fourth column.
+
+     6. Click the image → configure the image parameters.
+
+Fig. 3 Set up an image
+
+![Fig. 3 Set up an image](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_image.png)
+
+| **Parameter** | **Parameter value** | Choose image | Upload an image from your image library or via a URL. This enables the **Auto width** parameter. | Auto width | Whether to set image width automatically or specify a custom value. For this example, disable the toggle and drag the **Width** slider to 10 percent. | Align | How to align the image. For this example, select **Left**. |
+| ------------- | ------------------- | ------------ | ------------------------------------------------------------------------------------------------ | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ---------------------------------------------------------- |
+
+     7. Click the text in the button and change it to "REGISTER NOW".
+
+     8. Configure the button parameters.
+
+Fig. 4 Set up a button
+
+![Fig. 4 Set up a button](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_button.png)
+
+| **Parameter** | **Parameter value** | Action | What the button does on click. For this example, leave the **Link type** parameter as is and set the **Url** parameter to the registration form page. | Background color | For this example, set it to "#006ce0." | Align | How to align the button. For this example, select **Right**. | Content padding | The amount of empty space between the column border and button. For this example, set it to **Top** \- "5," **Right** \- "25," **Bottom** \- "5," **Left** \- "30." |
+| ------------- | ------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------- | ----- | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+4. **Design the form row**.
+   1. Click **Rows** in the top right → drag a row template to the canvas above
+      the existing row. For this example, select any two-column row.
+
+   2. Click the area around the row content to open the row setup area.
+
+   3. Configure the row parameters as specified in the table below.
+
+Fig. 5 Form row
+
+![Fig. 5 Form row](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_middle_row.png)
+
+| **Parameter** | **Parameter value** | Row background image | For this example, set the **Url** parameter to an image that serves as a row background.. | Vertical align | How to align the content vertically. For this example, select **Middle**. | Columns structure | How to group the row content horizontally. Point to the area between the columns and drag left or right to change the column proportions. For this example, set column structure to "8" - "4. |
+| ------------- | ------------------- | -------------------- | ----------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+     4. Set the background color of the right column. To do this, click the right column in the **Columns structure** parameter → set the column background to "#0d2e4e."
+
+     5. Click **Content** in the top right → drag content elements to the row.
+
+        1. Drag the **Paragraph** , **Image** , and **Title element to the first column.
+
+        2. Drag the **Form** element to the second column.
+
+     6. Select the text in the **Paragraph** element and change it to "Orlando, Florida | May 13-15."
+
+     7. Configure the parameters of the **Paragraph** element.
+
+Fig. 6 Set up a paragraph
+
+![Fig. 6 Set up a paragraph](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_form_paragraph.png)
+
+| **Parameter** | **Parameter value** | Font size | How large the text is. For this example, set it to 22. | Text color | For this example, set it to "#ffffff." | Align | How to align the text. For this example, set it to center. | Letter spacing | The space between letters. For this example, set it to "1." | Background color | To access this option, select the text on the canvas and click icn_background.png. For this example, set the background color to "#ff4013." |
+| ------------- | ------------------- | --------- | ------------------------------------------------------ | ---------- | -------------------------------------- | ----- | ---------------------------------------------------------- | -------------- | ----------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+
+     8. Click the image → configure the image parameters.
+
+Fig. 7 Set up an image
+
+![Fig. 7 Set up an image](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_form_image.png)
+
+| **Parameter** | **Parameter value** | Choose image | Upload an image from your image library or via a URL. This enables the **Auto width** parameter. For this example, enter the logo URL in the **Url** parameter. | Padding | The amount of empty space between the column border and image. For this example, click **More options** and set padding to **Top** \- "0," **Right** \- "30," **Bottom** \- "0," **Left** \- "30." |
+| ------------- | ------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+     9. Select the text in the **Title** element and change it to "Brand new format!"
+
+     10. Configure the parameters of the **Title** element.
+
+Fig. 8 Set up a title
+
+![Fig. 8 Set up a title](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_title.png)
+
+| **Parameter** | **Parameter value** | Font size | How large the text is. For this example, set it to 22. | Text color | For this example, set it to "#ffffff." | Padding | The amount of empty space between the column border and image. For this example, click **More options** and set padding to **Top** \- "20," **Right** \- "0," **Bottom** \- "0," **Left** \- "0." |
+| ------------- | ------------------- | --------- | ------------------------------------------------------ | ---------- | -------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+     12. Configure the form fields.
+
+     13. Select the form → **Form settings** in the top right. This opens a window.
+
+     14. Specify the object in the **Create records** in parameter. "Submitted form" object is selected out of the box.
+
+     15. Select the following fields:
+
+        * **Phone number**
+        * **Email**
+        * **Last name**
+        * **First name**
+        * **Job title**
+        * **Website**
+     16. Click **Save**.
+
+     17. Configure the form parameters.
+
+Fig. 9 Set up a form
+
+![Fig. 9 Set up a form](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_form.png)
+
+| **Parameter** | **Parameter value** | Manage fields | Configures field order, labels, titles, placeholders, and permissions. For this example, leave the fields and button as they are. | Text color (label options) | For this example, set it to "#ffffff." | Text color (button options) | For this example, set it to "#0d2e4e." | Background color (button options) | For this example, set it to "#ffffff." | Padding (button options) | The amount of empty space between the other form content and the button. For this example, click **More options** and set padding to **Top** \- "5," **Right** \- "20," **Bottom** \- "5," **Left** \- "20." | Padding (block options) | The amount of empty space between the column borders and the form block. For this example, click **More options** and set padding to **Top** \- "10," **Right** \- "10," **Bottom** \- "10," **Left** \- "10." |
+| ------------- | ------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------- | --------------------------- | -------------------------------------- | --------------------------------- | -------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+5. **Design the contact info row**.
+   1. Click the area around the content of the bottom row that was available out
+      of the box to open the row setup area.
+
+   2. Configure the row parameters as specified in the table below.
+
+Fig. 10 Contact info row
+
+![Fig. 10 Contact info row](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_bottom_row.png)
+
+| **Parameter** | **Parameter value** | Row background color | For this example, set it to "#f3f3f3." | Columns structure | How to group the row content horizontally. Point to the area between the columns and drag left or right to change the column proportions. For this example, Click **Add new** twice and set column structure to "2" - "7" - "3." |
+| ------------- | ------------------- | -------------------- | -------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+     3. Click **Content** in the top right → drag content elements to the row.
+
+        1. Drag the **Image** element to the first column.
+
+        2. Drag the **Spacer** element to the second column.
+
+        3. Drag the **Paragraph** element to the third column.
+
+     4. Click the image → configure the image parameters.
+
+Fig. 11 Set up an image
+
+![Fig. 11 Set up an image](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_contact_image.png)
+
+| **Parameter** | **Parameter value** | Choose image | Upload an image from your image library or via a URL. This enables the **Auto width** parameter. | Auto width | Whether to set image width automatically or specify a custom value. For this example, disable the toggle and drag the **Width** slider to 45 percent. | Align | How to align the image. For this example, select "Left." | Padding | The amount of empty space between the column border and image. For this example, click **More options** and set padding to **Top** \- "0," **Right** \- "30," **Bottom** \- "0," **Left** \- "30." |
+| ------------- | ------------------- | ------------ | ------------------------------------------------------------------------------------------------ | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | -------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+     5. Select the text in the **Paragraph** element and add contact info.
+
+     6. Configure the parameters of the **Paragraph** element.
+
+Fig. 12 Set up a paragraph
+
+![Fig. 12 Set up a paragraph](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_ready_page.png)
+
+| **Parameter** | **Parameter value** | Text color | For this example, set it to "#727272." | Link color | For this example, set it to "#727272." | Padding | The amount of empty space between the column border and image. For this example, click **More options** and set padding to **Top** \- "20," **Right** \- "0," **Bottom** \- "0," **Left** \- "0." |
+| ------------- | ------------------- | ---------- | -------------------------------------- | ---------- | -------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+     7. Link the phones and email in the paragraph.
+
+        1. Select the first row.
+
+        2. Click ![btn_link.png](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/btn_link.png) in the toolbar. This opens a window.
+
+        3. Fill out the parameters in the window.
+
+Fig. 13 Link the text
+
+![Fig. 13 Link the text](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_phone_link.png)
+
+| **Parameter** | **Parameter value** | Link type | For this example, select "Tel." | Number | For this example, enter the phone number. | Target | For this example, select "None." |
+| ------------- | ------------------- | --------- | ------------------------------- | ------ | ----------------------------------------- | ------ | -------------------------------- |
+
+        4. Link the other phones and email in a similar way.
+
+6. **Design the mobile view**.
+   1. Click
+      ![btn_mobile.png](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/btn_mobile.png)
+      in the top left.
+
+   2. Check the mobile view and edit the page further if needed. For this
+      example, spacers are not necessary on mobile. You can hide them from the
+      mobile view. To do this, click the spacer → **Hide on mobile** in the
+      setup area.
+
+   3. Click
+      ![btn_hide.png](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/btn_hide.png)
+      in the top left to check how the page looks with elements hidden.
+
+Fig. 14 Mobile view
+
+![Fig. 14 Mobile view](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_mobile_view.png)
+
+**As a result** , your landing page will be ready for publishing. Proceed to
+step 3.
+
+## Step 3. Publish the landing page​
+
+You can either export the landing page you created to HTML and publish it on
+your own resource or publish it to an automatically generated URL provided by
+Creatio. In the latter case, you can still modify the ending part of the URL
+(URL slug) in the "Landing page" object.
+
+Fig. 15 Edit the URL slug
+
+![Fig. 15 Edit the URL slug](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/scr_url_slug.png)
+
+To **publish the landing page to an automatically generated URL** , click
+**Publish** on the record page. You will be able to unpublish the page or update
+its design without unpublishing it later. We recommend unpublishing landing
+pages that are no longer in use. This helps prevent losing prospects who might
+visit an outdated or inactive page.
+
+To **export the page as HTML** :
+
+1. **Click** **Close** to close the Landing Page Designer.
+
+2. **Click**
+   ![btn_more.png](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Marketing_Tools/create_a_landing_page/btn_more.png)
+   → **Download HTML**.
+
+---
+
+## See also​
+
+[Add landing page elements](https://academy.creatio.com/documents?id=2580)
+
+[Set up rows and columns](https://academy.creatio.com/documents?id=2581)
+
+[Marketing landing pages functionality usage policy](https://academy.creatio.com/documents?id=2582)
+
+[Landing Page Designer FAQ](https://academy.creatio.com/documents?id=2583)
+
+- Step 1. Create a landing page record
+- Step 2. Design the landing page
+- Step 3. Publish the landing page
+- See also

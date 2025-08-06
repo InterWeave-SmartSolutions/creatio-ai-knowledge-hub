@@ -1,0 +1,19 @@
+{
+  "id": 947,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/category/lead-generation-1",
+  "title": "Lead generation | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "Version: 8.3 Landing pages lead generation Facebook lead generation LinkedIn lead generation Facebook field mapping",
+  "markdown": "Version: 8.3[Landing pages lead generation](/docs/8.x/creatio-apps/products/marketing-tools/lead-generation/lead-generation/landing-pages)[Facebook lead generation](/docs/8.x/creatio-apps/products/marketing-tools/lead-generation/lead-generation/set-up-lead-registration-from-socials)[LinkedIn lead generation](/docs/8.x/creatio-apps/products/marketing-tools/lead-generation/lead-generation/set-up-automatic-lead-registration-from-linkedin)[Facebook field mapping](/docs/8.x/creatio-apps/products/marketing-tools/lead-generation/lead-generation/facebook-field-mapping)\n",
+  "analysis": {
+    "word_count": 15,
+    "key_concepts": ["lead"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "lead", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:33:35.373897"
+}

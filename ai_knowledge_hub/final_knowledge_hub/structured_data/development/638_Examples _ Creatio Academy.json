@@ -1,0 +1,19 @@
+{
+  "id": 638,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.2/business-rules-examples",
+  "title": "Examples | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 Filter values Select a field by condition Reset negative values to 0 Generate the activity title",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations)** (8.3).\n\nVersion: 8.2[Filter values](/docs/8.x/dev/development-on-creatio-platform/8.2/mobile-development/mobile-basics/business-rules/examples/filter-values)[Select a field by condition](/docs/8.x/dev/development-on-creatio-platform/8.2/mobile-development/mobile-basics/business-rules/examples/select-a-field-by-condition)[Reset negative values to 0](/docs/8.x/dev/development-on-creatio-platform/8.2/mobile-development/mobile-basics/business-rules/examples/reset-negative-values-to-0)[Generate the activity title](/docs/8.x/dev/development-on-creatio-platform/8.2/mobile-development/mobile-basics/business-rules/examples/generate-the-title-of-an-activity)\n",
+  "analysis": {
+    "word_count": 35,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:27:20.418157"
+}

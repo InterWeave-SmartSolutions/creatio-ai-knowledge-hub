@@ -1,0 +1,388 @@
+# Set up the Marketplace app properties | Creatio Academy
+
+**Category:** development **Difficulty:** intermediate **Word Count:** 1673
+**URL:**
+https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/app-development/app-metadata
+
+## Description
+
+App properties are app details stored within the app itself regardless of an
+environment.
+
+## Key Concepts
+
+detail, lookup, sql, database, system setting, package, marketplace
+
+## Use Cases
+
+## Content
+
+On this page
+
+Level: intermediate
+
+**App properties** are app details stored within the app itself regardless of an
+environment.
+
+The Marketplace app properties store the following **data** :
+
+- icon
+- icon color
+- name
+- description
+- code
+
+Set up the property values in the Application Hub. Learn more:
+[Manage apps](https://academy.creatio.com/documents?id=2377) (user
+documentation).
+
+Creatio lets you add app properties to a published or new Marketplace app.
+Instructions:
+[Set up the app properties](https://academy.creatio.com/documents?id=2405) (user
+documentation). You must fill out the parameters when you create an app, but you
+can change them at any moment. The code is generated on app creation and cannot
+be changed later.
+
+note
+
+Add properties to Marketplace apps developed for version 8.0.1 and earlier, i.
+e., apps without properties.
+
+Make sure the app properties meet the
+[Requirements for app properties](https://academy.creatio.com/documents?id=15003&anchor=title-3995-7).
+
+## Add properties to a published Marketplace app​
+
+The procedure to add properties to a published Marketplace app depends on the
+number of packages that contain the app functionality.
+
+### Add properties to a published Marketplace app that has a single package​
+
+1. **Install the Marketplace app**. Instructions:
+   [Install an app from a file](https://academy.creatio.com/documents?id=2377&anchor=title-2304-2)
+   (user documentation).
+
+2. **Unlock the package** that contains the Marketplace app functionality using
+   the Clio utility. Instructions:
+   [official vendor documentation](https://github.com/Advance-Technologies-Foundation/clio)
+   (GitHub).
+
+3. **Unlock the Marketplace app** in the Application Hub. To do this, execute
+   the SQL query to the `SysInstalledApp` database table.
+   - Microsoft SQL
+   - PostgreSQL
+   - Oracle
+
+
+    UPDATE SysInstalledApp
+    SET Maintainer = (SELECT TextValue FROM SysSettings
+        JOIN SysSettingsValue ON SysSettingsValue.SysSettingsId = SysSettings.Id
+        WHERE Code = 'Maintainer'
+        AND SysSettingsValue.SysAdminUnitId = 'A29A3BA5-4B0D-DE11-9A51-005056C00008')
+    WHERE name='SomeMarketplaceAppName'
+
+
+    UPDATE "SysInstalledApp"
+    SET "Maintainer" = (SELECT "TextValue" FROM "SysSettings"
+        JOIN "SysSettingsValue" ON "SysSettingsValue"."SysSettingsId" = "SysSettings"."Id"
+        WHERE "Code" = 'Maintainer'
+        AND "SysSettingsValue"."SysAdminUnitId" = '{A29A3BA5-4B0D-DE11-9A51-005056C00008}')
+    WHERE "Name" = 'SomeMarketplaceAppName'
+
+
+    UPDATE "SysInstalledApp"
+    SET "Maintainer" = (SELECT "TextValue" FROM "SysSettings"
+        JOIN "SysSettingsValue" ON "SysSettingsValue"."SysSettingsId" = "SysSettings"."Id"
+        WHERE "Code" = 'Maintainer'
+        AND "SysSettingsValue"."SysAdminUnitId" = 'A29A3BA5-4B0D-DE11-9A51-005056C00008')
+    WHERE "Name" = 'SomeMarketplaceAppName'
+
+`SomeMarketplaceAppName` is the name of the installed package that contains the
+Marketplace app functionality.
+
+4. **Change the Marketplace app properties**. Instructions:
+   [Change the app properties](https://academy.creatio.com/documents?id=2405&anchor=title-3990-2)
+   (user documentation).
+
+5. **Lock the package** that contains the Marketplace app functionality. To do
+   this, execute the SQL query to the `SysInstalledApp` database table.
+   - Microsoft SQL
+   - PostgreSQL
+   - Oracle
+
+
+    UPDATE SysInstalledApp
+    SET Maintainer='SomeMarketplaceAppMaintainer'
+    WHERE Name='SomeMarketplaceAppName'
+
+
+    UPDATE "SysInstalledApp"
+    SET "Maintainer" = 'SomeMarketplaceAppMaintainer'
+    WHERE "Name" = 'SomeMarketplaceAppName'
+
+
+    UPDATE "SysInstalledApp"
+    SET "Maintainer" = 'SomeMarketplaceAppMaintainer'
+    WHERE "Name" = 'SomeMarketplaceAppName'
+
+`SomeMarketplaceAppMaintainer` is the publisher of the package that contains the
+Marketplace app functionality.
+
+`SomeMarketplaceAppName` is the name of the installed package that contains the
+Marketplace app functionality.
+
+6. **Export the package** that contains the Marketplace app functionality.
+   Instructions:
+   [Download an app](https://academy.creatio.com/documents?id=2377&anchor=title-2232-8).
+
+**As a result** , the properties will be added to a published Marketplace app
+that has a single package. While managing the Marketplace listings, the \*.zip
+archive that contains the Marketplace app must be uploaded to the Creatio
+Marketplace Console (**Packages and updates** tab → **Application file**
+property). Learn more:
+[Steps to publish the Marketplace listing using Creatio Marketplace Console](https://academy.creatio.com/documents?id=15957&anchor=title-2399-8).
+
+### Add properties to a published Marketplace app that has multiple packages​
+
+If you install a Marketplace app that comprises multiple packages and has no app
+properties in Creatio, Creatio generates app properties automatically and saves
+it to an arbitrary package. If Marketplace apps that have different properties
+use the same base packages, the package installation ends with an error.
+
+Important
+
+Use the target package that contains properties only in one Marketplace app.
+
+To add properties to a published Marketplace app that has multiple packages:
+
+1. **Choose a unique package to store the Marketplace app properties**. Do not
+   use this package in other Marketplace apps.
+
+2. **Prepare the unique package** before installing it into Creatio.
+   1. Install the Clio utility (performed once). Instructions:
+      [official vendor documentation](https://github.com/Advance-Technologies-Foundation/clio#register-and-unregister)
+      (GitHub).
+   2. Unpack the \*.zip archive that contains the Marketplace app packages.
+   3. Run the `Extract package` Clio command to unpack the unique package.
+      Instructions:
+      [official vendor documentation](https://github.com/Advance-Technologies-Foundation/clio#extract-package)
+      (GitHub).
+   4. Download the
+      [app property file](https://academy.creatio.com/sites/default/files/documents/downloads/SDK/Packages/AddMetadataForMarketplaceApp/app-descriptor.json)
+      and add it to the `...\[Path to package folder]\Files\` directory.
+   5. Add the Marketplace app packages to the `Packages` file property. You can
+      modify other property values in the Application Hub.
+   6. Run the `Compress package` Clio command to compress the changed unique
+      package into a \*.gz package archive. Instructions:
+      [official vendor documentation](https://github.com/Advance-Technologies-Foundation/clio#compress-package)
+      (GitHub).
+   7. Compress the changed unique package and other Marketplace app packages
+      into a \*.zip archive.
+
+3. **Install the Marketplace app** that contains properties into Creatio.
+   Instructions:
+   [Install an app from a file](https://academy.creatio.com/documents?id=2377&anchor=title-2304-2)
+   (user documentation).
+
+4. **Unlock the packages** that contain the Marketplace app functionality using
+   the Clio utility. Instructions:
+   [official vendor documentation](https://github.com/Advance-Technologies-Foundation/clio)
+   (GitHub).
+
+Important
+
+If at least one package is locked, an additional package is created
+automatically when the properties are changed.
+
+5. **Unlock the Marketplace app** in the Application Hub. To do this, execute
+   the SQL query to the `SysInstalledApp` database table.
+   - Microsoft SQL
+   - PostgreSQL
+   - Oracle
+
+
+    UPDATE SysInstalledApp
+    SET Maintainer = (SELECT TextValue FROM SysSettings
+        JOIN SysSettingsValue ON SysSettingsValue.SysSettingsId = SysSettings.Id
+        WHERE Code = 'Maintainer'
+        AND SysSettingsValue.SysAdminUnitId = 'A29A3BA5-4B0D-DE11-9A51-005056C00008')
+    WHERE name='SomeMarketplaceAppName'
+
+
+    UPDATE "SysInstalledApp"
+    SET "Maintainer" = (SELECT "TextValue" FROM "SysSettings"
+        JOIN "SysSettingsValue" ON "SysSettingsValue"."SysSettingsId" = "SysSettings"."Id"
+        WHERE "Code" = 'Maintainer'
+        AND "SysSettingsValue"."SysAdminUnitId" = '{A29A3BA5-4B0D-DE11-9A51-005056C00008}')
+    WHERE "Name" = 'SomeMarketplaceAppName'
+
+
+    UPDATE "SysInstalledApp"
+    SET "Maintainer" = (SELECT "TextValue" FROM "SysSettings"
+        JOIN "SysSettingsValue" ON "SysSettingsValue"."SysSettingsId" = "SysSettings"."Id"
+        WHERE "Code" = 'Maintainer'
+        AND "SysSettingsValue"."SysAdminUnitId" = 'A29A3BA5-4B0D-DE11-9A51-005056C00008')
+    WHERE "Name" = 'SomeMarketplaceAppName'
+
+`SomeMarketplaceAppName` is the name of the installed package that contains the
+Marketplace app functionality.
+
+6. **Change the Marketplace app properties**. Instructions:
+   [Change the app properties](https://academy.creatio.com/documents?id=2405&anchor=title-3990-2)
+   (user documentation).
+
+7. **Lock the package** that contains the Marketplace app functionality. To do
+   this, execute the SQL query to the `SysInstalledApp` database table.
+   - Microsoft SQL
+   - PostgreSQL
+   - Oracle
+
+
+    UPDATE SysInstalledApp
+    SET Maintainer='SomeMarketplaceAppMaintainer'
+    WHERE Name='SomeMarketplaceAppName'
+
+
+    UPDATE "SysInstalledApp"
+    SET "Maintainer" = 'SomeMarketplaceAppMaintainer'
+    WHERE "Name" = 'SomeMarketplaceAppName'
+
+
+    UPDATE "SysInstalledApp"
+    SET "Maintainer" = 'SomeMarketplaceAppMaintainer'
+    WHERE "Name" = 'SomeMarketplaceAppName'
+
+`SomeMarketplaceAppMaintainer` is the publisher of the package that contains the
+Marketplace app functionality.
+
+`SomeMarketplaceAppName` is the name of the installed package that contains the
+Marketplace app functionality.
+
+8. **Export the package** that contains the Marketplace app functionality.
+   Instructions:
+   [Download an app](https://academy.creatio.com/documents?id=2377&anchor=title-2232-8).
+
+**As a result** , the properties will be added to a published Marketplace app
+that has multiple packages. While managing the Marketplace listings, the \*.zip
+archive that contains the Marketplace app must be uploaded to the Creatio
+Marketplace Console (**Packages and updates** tab → **Application file**
+property). Learn more:
+[Steps to publish the Marketplace listing using Creatio Marketplace Console](https://academy.creatio.com/documents?id=15957&anchor=title-2399-8).
+
+## Add properties to a new Marketplace app​
+
+The procedure to add properties to a new Marketplace app depends on the number
+of packages that contain the app functionality.
+
+### Add properties to a new Marketplace app that has a single package​
+
+Instructions:
+[Set up the app properties](https://academy.creatio.com/documents?id=2405&anchor=title-3990-1)
+(user documentation).
+
+### Add properties to a new Marketplace app that has multiple packages​
+
+Creatio lets you set a target package and create properties in it before you
+start developing a new Marketplace app that contains multiple packages.
+
+Important
+
+Before you add properties to a new Marketplace app that contains multiple
+packages, make sure that the Marketplace app packages are unlocked and do not
+contain any Marketplace app properties in Creatio.
+
+To add properties to a new Marketplace app that has multiple packages:
+
+1. **Choose a unique package to store the Marketplace app properties**. Do not
+   use this package in other Marketplace apps.
+
+2. **Create a lookup** based on the **Installed application** object.
+   1. Click **New lookup**.
+
+   2. Fill out the lookup properties.
+
+| Property | Property value | Name | Installed application | Object | Installed application |
+| -------- | -------------- | ---- | --------------------- | ------ | --------------------- |
+
+     3. Save the changes.
+
+3. **Add a lookup value**.
+   1. Open the **Installed application** lookup.
+
+   2. Click **New**.
+
+   3. Fill out the properties of the lookup value.
+
+| Property | Property value | Name | The app name to display in the Application Hub. | Code | The app code. | Maintainer | The Marketplace app developer. The value of the property must match the value of the **Publisher** (`Maintainer` code) system setting. | Description | Brief information about the Marketplace app. | App icon | The Marketplace app icon. The property is populated automatically. | Icon background color | The background of the Marketplace app icon. The property is populated automatically. |
+| -------- | -------------- | ---- | ----------------------------------------------- | ---- | ------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------- | -------- | ------------------------------------------------------------------ | --------------------- | ------------------------------------------------------------------------------------ |
+
+     4. Save the changes.
+
+4. **Create a lookup** based on the **Package in installed application** object.
+   1. Click **New lookup**.
+
+   2. Fill out the lookup properties.
+
+| Property | Property value | Name | Package in installed application | Object | Package in installed application |
+| -------- | -------------- | ---- | -------------------------------- | ------ | -------------------------------- |
+
+     3. Save the changes.
+
+5. **Add a lookup value**.
+   1. Open the **Package in installed application** lookup.
+
+   2. Click **New**.
+
+   3. Fill out the properties of the lookup value.
+
+| Property | Property value | Package | The Marketplace app package. | Installed application | The record of installed app from the previous step. | Primary | Select the checkbox for the unique Marketplace app package and clear the checkbox for other Marketplace app packages. |
+| -------- | -------------- | ------- | ---------------------------- | --------------------- | --------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------- |
+
+     4. Save the changes.
+
+6. **Change the Marketplace app properties**. Instructions:
+   [Change the app properties](https://academy.creatio.com/documents?id=2405&anchor=title-3990-2)
+   (user documentation).
+
+7. **Export the package** that contains the Marketplace app functionality.
+   Instructions:
+   [Download an app](https://academy.creatio.com/documents?id=2377&anchor=title-2232-8).
+
+**As a result** , the properties will be added to a new Marketplace app that has
+multiple packages. While managing the Marketplace listings, the \*.zip archive
+that contains the Marketplace app must be uploaded to the Creatio Marketplace
+Console (**Packages and updates** tab → **Application file** property). Learn
+more:
+[Steps to publish the Marketplace listing using Creatio Marketplace Console](https://academy.creatio.com/documents?id=15957&anchor=title-2399-8).
+
+---
+
+## See also​
+
+[Manage apps](https://academy.creatio.com/documents?id=2377) (user
+documentation)
+
+[Set up the app properties](https://academy.creatio.com/documents?id=2405) (user
+documentation)
+
+[Requirements for Marketplace app](https://academy.creatio.com/documents?id=15003)
+
+[Steps to publish the Marketplace listing using Creatio Marketplace Console](https://academy.creatio.com/documents?id=15957)
+
+---
+
+## Resources​
+
+[Official Clio utility documentation](https://github.com/Advance-Technologies-Foundation/clio)
+(GitHub)
+
+[Marketplace updates](https://academy.creatio.com/docs/8.x/dev/development-for-creatio-marketplace/category/marketplace-updates)
+
+- Add properties to a published Marketplace app
+  - Add properties to a published Marketplace app that has a single package
+  - Add properties to a published Marketplace app that has multiple packages
+- Add properties to a new Marketplace app
+  - Add properties to a new Marketplace app that has a single package
+  - Add properties to a new Marketplace app that has multiple packages
+- See also
+- Resources

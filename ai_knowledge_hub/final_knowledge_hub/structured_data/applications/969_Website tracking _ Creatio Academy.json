@@ -1,0 +1,19 @@
+{
+  "id": 969,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.0/category/website-tracking",
+  "title": "Website tracking | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Matomo tracking Contact tracking Lead tracking Set up lead tracking",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/category/website-tracking)** (8.3).\n\nVersion: 8.0[Matomo tracking](/docs/8.x/creatio-apps/8.0/marketing-tools/website-tracking/matomo-tracking-solution)[Contact tracking](/docs/8.x/creatio-apps/8.0/marketing-tools/website-tracking/review-online-behavior-of-a-contact)[Lead tracking](/docs/8.x/creatio-apps/8.0/marketing-tools/website-tracking/lead-source-tracking)[Set up lead tracking](/docs/8.x/creatio-apps/8.0/marketing-tools/website-tracking/setup-tracking-lead-sources)\n",
+  "analysis": {
+    "word_count": 29,
+    "key_concepts": ["lead", "contact"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "contact", "intermediate", "documentation", "lead"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:34:00.427599"
+}

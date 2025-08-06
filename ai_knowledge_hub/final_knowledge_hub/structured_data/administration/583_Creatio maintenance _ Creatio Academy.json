@@ -1,0 +1,19 @@
+{
+  "id": 583,
+  "url": "https://academy.creatio.com/docs/8.x/setup-and-administration/8.1/category/creatio-maintenance",
+  "title": "Creatio maintenance | Creatio Academy",
+  "category": "administration",
+  "description": "",
+  "content": "This is documentation for Creatio 8.1 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.1 Creatio cloud IPs Clean up the drive space Improve page loading time Limit thread count for DB queries Query management rules Back up database Maintain Creatio website Compile an app on a web farm",
+  "markdown": "This is documentation for Creatio **8.1**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/setup-and-administration/category/creatio-maintenance)** (8.3).\n\nVersion: 8.1[Creatio cloud IPs](/docs/8.x/setup-and-administration/8.1/cloud-ips)[Clean up the drive space](/docs/8.x/setup-and-administration/8.1/administration/creatio-maintenance/clean-up-the-drive-space)[Improve page loading time](/docs/8.x/setup-and-administration/8.1/administration/creatio-maintenance/process-complex-database-queries-faster)[Limit thread count for DB queries](/docs/8.x/setup-and-administration/8.1/administration/creatio-maintenance/limit-DB-thread-count)[Query management rules](/docs/8.x/setup-and-administration/8.1/administration/creatio-maintenance/manage-resource-intensive-queries)[Back up database](/docs/8.x/setup-and-administration/8.1/administration/creatio-maintenance/backup-datadase)[Maintain Creatio website](/docs/8.x/setup-and-administration/8.1/administration/creatio-maintenance/manage-site)[Compile an app on a web farm](/docs/8.x/setup-and-administration/8.1/administration/creatio-maintenance/compile-app-on-web-farm)\n",
+  "analysis": {
+    "word_count": 53,
+    "key_concepts": ["database"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "database", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:26:13.473596"
+}

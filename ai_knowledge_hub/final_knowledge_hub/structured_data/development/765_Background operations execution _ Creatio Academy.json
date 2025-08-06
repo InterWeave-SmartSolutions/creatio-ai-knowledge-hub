@@ -1,0 +1,19 @@
+{
+  "id": 765,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.1/category/background-operations",
+  "title": "Background operations execution | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.1 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.1 Overview Examples",
+  "markdown": "This is documentation for Creatio **8.1**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/category/background-operations)** (8.3).\n\nVersion: 8.1[Overview](/docs/8.x/dev/development-on-creatio-platform/8.1/back-end-development/data-operations-back-end/execute-operations-in-the-background/overview)[Examples](/docs/8.x/dev/development-on-creatio-platform/8.1/background-operations-examples)\n",
+  "analysis": {
+    "word_count": 21,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:29:54.876541"
+}

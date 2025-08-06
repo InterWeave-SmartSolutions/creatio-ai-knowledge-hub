@@ -1,0 +1,19 @@
+{
+  "id": 310,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/category/running-business-processes",
+  "title": "Running business processes | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "Version: 8.3 Run a process Execute a process Resume a process",
+  "markdown": "Version: 8.3[Run a process](/docs/8.x/creatio-apps/creatio-basics/running-business-processes/run-business-process)[Execute a process](/docs/8.x/creatio-apps/creatio-basics/running-business-processes/execute-process-steps)[Resume a process](/docs/8.x/creatio-apps/creatio-basics/running-business-processes/resume-business-process)\n",
+  "analysis": {
+    "word_count": 11,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:20:33.705428"
+}

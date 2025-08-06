@@ -1,0 +1,19 @@
+{
+  "id": 770,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.0/category/marketing-tools",
+  "title": "Marketing tools | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Leads Email marketing Marketing campaigns Website tracking Marketing plans Marketing events Digital Ads",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/category/marketing-tools)** (8.3).\n\nVersion: 8.0[Leads](/docs/8.x/creatio-apps/8.0/category/leads)[Email marketing](/docs/8.x/creatio-apps/8.0/category/email-marketing)[Marketing campaigns](/docs/8.x/creatio-apps/8.0/category/marketing-campaigns)[Website tracking](/docs/8.x/creatio-apps/8.0/category/website-tracking)[Marketing plans](/docs/8.x/creatio-apps/8.0/marketing-tools/plan-marketing-budget)[Marketing events](/docs/8.x/creatio-apps/8.0/category/marketing-events)[Digital Ads](/docs/8.x/creatio-apps/8.0/category/digital-ads)\n",
+  "analysis": {
+    "word_count": 32,
+    "key_concepts": ["campaign", "lead"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "campaign", "documentation", "lead"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:30:00.610198"
+}

@@ -1,0 +1,25 @@
+{
+  "id": 293,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.1/creatio-basics/use-two-factor-authentication",
+  "title": "Use two-factor authentication | Creatio Academy",
+  "category": "development",
+  "description": "Two-factor authentication (2FA) functionality lets you secure your identity by adding a verification code sent via email/SMS or generated in an authenticator app when you log in to Creatio or change your password. 2FA also lets you recover your password on your own.",
+  "content": "This is documentation for Creatio 8.1 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.1 On this page Two-factor authentication (2FA) functionality lets you secure your identity by adding a verification code sent via email/SMS or generated in an authenticator app when you log in to Creatio or change your password. 2FA also lets you recover your password on your own. Fig. 1 2FA form note If you enter the verification code incorrectly multiple times, your user account will be temporarily locked out or deactivated. In general, 2FA setup is performed by the system administrator. However, you might need to take some steps on your own depending on the configuration. Connect an authenticator app ​ If authenticator app is the primary 2FA method in Creatio, you need to connect an authenticator app when you first log in. To do this: Install an authenticator app to your mobile device. You can use any app of your choice, for example, Google Authenticator, Microsoft Authenticator. Scan the QR code displayed in Creatio using the app. Enter the code generated in the app in Creatio (Fig. 1). Fig. 2 Enter the app verification code Click Connect . As a result, Creatio will connect the authenticator app. You can disconnect it on the user profile page, for example, if you lose access to the device or want to use a different app. See also ​ Set up two-factor authentication Connect an authenticator app See also",
+  "markdown": "This is documentation for Creatio **8.1**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/creatio-basics/use-two-factor-authentication)** (8.3).\n\nVersion: 8.1\n\nOn this page\n\nTwo-factor authentication (2FA) functionality lets you secure your identity by adding a verification code sent via email/SMS or generated in an authenticator app when you log in to Creatio or change your password. 2FA also lets you recover your password on your own.\n\nFig. 1 2FA form\n\n![Fig. 1 2FA form](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Setup_and_Administration/use_two-factor_authentication/scr_2fa_form.png)\n\nnote\n\nIf you enter the verification code incorrectly multiple times, your user account will be temporarily locked out or deactivated.\n\nIn general, 2FA setup is performed by the system administrator. However, you might need to take some steps on your own depending on the configuration.\n\n## Connect an authenticator app​\n\nIf authenticator app is the primary 2FA method in Creatio, you need to connect an authenticator app when you first log in. To do this:\n\n  1. **Install an authenticator app** to your mobile device. You can use any app of your choice, for example, Google Authenticator, Microsoft Authenticator.\n  2. **Scan the QR code** displayed in Creatio using the app.\n  3. **Enter the code** generated in the app in Creatio (Fig. 1). Fig. 2 Enter the app verification code\n\n![Fig. 2 Enter the app verification code](https://d3a7ykdi65m4cy.cloudfront.net/ac-en/s3fs-public/images/Setup_and_Administration/use_two-factor_authentication/scr_connect_authenticator_app.png)\n\n  4. **Click** **Connect**.\n\n\n\nAs a result, Creatio will connect the authenticator app. You can disconnect it on the user profile page, for example, if you lose access to the device or want to use a different app.\n\n* * *\n\n## See also​\n\n[Set up two-factor authentication](https://academy.creatio.com/documents?id=2538)\n\n  * Connect an authenticator app\n  * See also\n\n\n",
+  "analysis": {
+    "word_count": 244,
+    "key_concepts": ["configuration", "account"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation", "configuration", "account"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:20:11.740300"
+}

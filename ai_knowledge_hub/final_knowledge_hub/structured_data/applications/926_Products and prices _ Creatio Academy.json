@@ -1,0 +1,19 @@
+{
+  "id": 926,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/category/products-and-prices",
+  "title": "Products and prices | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "Version: 8.3 Add a product Product catalog",
+  "markdown": "Version: 8.3[Add a product](/docs/8.x/creatio-apps/products/sales-tools/products-and-prices/add-products)[Product catalog](/docs/8.x/creatio-apps/products/sales-tools/products-and-prices/set-up-a-product-catalog)\n",
+  "analysis": {
+    "word_count": 7,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:33:11.840856"
+}

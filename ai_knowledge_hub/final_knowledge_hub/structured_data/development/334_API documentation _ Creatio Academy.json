@@ -1,0 +1,19 @@
+{
+  "id": 334,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/integrations-and-api/integration-examples",
+  "title": "API documentation | Creatio Academy",
+  "category": "development",
+  "description": "View the Creatio API documentation that lets you:",
+  "content": "Version: 8.3 On this page Level: advanced View the Creatio API documentation that lets you: authorize external requests using AuthService.svc web service that implements forms authentication authorize external requests using OAuth token to retrieve Creatio data work with stream data execute batch requests set up filtering The Postman request collection that tests requests is available in Creatio API documentation . Resources ​ Creatio API documentation Resources",
+  "markdown": "Version: 8.3\n\nOn this page\n\nLevel: advanced\n\nView the Creatio API documentation that lets you:\n\n  * authorize external requests using `AuthService.svc` web service that implements forms authentication\n  * authorize external requests using OAuth token to retrieve Creatio data\n  * work with stream data\n  * execute batch requests\n  * set up filtering\n\n\n\nThe Postman request collection that tests requests is available in [Creatio API documentation](https://documenter.getpostman.com/view/10204500/SztHX5Qb?version=latest#0e2dd1ce-1a5d-4870-bb0b-c0cc2eb25a31).\n\n* * *\n\n## Resources​\n\n[Creatio API documentation](https://documenter.getpostman.com/view/10204500/SztHX5Qb?version=latest)\n\n  * Resources\n\n\n",
+  "analysis": {
+    "word_count": 66,
+    "key_concepts": ["web service"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "documentation", "web service", "advanced"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:21:05.174940"
+}

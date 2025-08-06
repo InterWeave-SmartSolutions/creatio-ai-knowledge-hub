@@ -1,0 +1,19 @@
+{
+  "id": 657,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/app-development",
+  "title": "First Creatio app development | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 App description 1. Create a section 2. Add data 3. Implement the validation 4. Implement the page population 5. Implement a web service",
+  "markdown": "Version: 8.3[App description](/docs/8.x/dev/development-on-creatio-platform/getting-started/first-app/develop-application/getting-started)[1\\. Create a section](/docs/8.x/dev/development-on-creatio-platform/getting-started/first-app/develop-application/step-1-create-a-new-section)[2\\. Add data](/docs/8.x/dev/development-on-creatio-platform/getting-started/first-app/develop-application/step-2-add-new-data)[3\\. Implement the validation](/docs/8.x/dev/development-on-creatio-platform/getting-started/first-app/develop-application/step-3-add-page-validation)[4\\. Implement the page population](/docs/8.x/dev/development-on-creatio-platform/getting-started/first-app/develop-application/step-4-implement-the-population)[5\\. Implement a web service](/docs/8.x/dev/development-on-creatio-platform/getting-started/first-app/develop-application/step-5-create-a-web-service)\n",
+  "analysis": {
+    "word_count": 25,
+    "key_concepts": ["section", "web service"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["creatio", "intermediate", "documentation", "section", "web service"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:27:43.692398"
+}

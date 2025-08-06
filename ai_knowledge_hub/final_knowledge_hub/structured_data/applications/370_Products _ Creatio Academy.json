@@ -1,0 +1,19 @@
+{
+  "id": 370,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.1/category/products",
+  "title": "Products | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "This is documentation for Creatio 8.1 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.1 Common features Marketing tools Sales tools Service tools Finance and banking Industry cases",
+  "markdown": "This is documentation for Creatio **8.1**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/category/products)** (8.3).\n\nVersion: 8.1[Common features](/docs/8.x/creatio-apps/8.1/category/common-features)[Marketing tools](/docs/8.x/creatio-apps/8.1/category/marketing-tools)[Sales tools](/docs/8.x/creatio-apps/8.1/category/sales-tools)[Service tools](/docs/8.x/creatio-apps/8.1/category/service-tools)[Finance and banking](/docs/8.x/creatio-apps/8.1/category/finance-and-banking)[Industry cases](/docs/8.x/creatio-apps/8.1/category/industry-cases)\n",
+  "analysis": {
+    "word_count": 32,
+    "key_concepts": ["case"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["case", "intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:21:50.637149"
+}

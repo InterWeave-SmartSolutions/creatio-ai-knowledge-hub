@@ -1,0 +1,19 @@
+{
+  "id": 145,
+  "url": "https://academy.creatio.com/docs/8.x/setup-and-administration/8.1/category/сontainerized-components",
+  "title": "Сontainerized components | Creatio Academy",
+  "category": "administration",
+  "description": "",
+  "content": "This is documentation for Creatio 8.1 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.1 Global search Global search FAQ Bulk duplicate search Email Listener Machine learning service",
+  "markdown": "This is documentation for Creatio **8.1**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/setup-and-administration/category/сontainerized-components)** (8.3).\n\nVersion: 8.1[Global search](/docs/8.x/setup-and-administration/8.1/on-site-deployment/containerized-components/global-search)[Global search FAQ](/docs/8.x/setup-and-administration/8.1/on-site-deployment/containerized-components/global-search-and-deduplication-faq)[Bulk duplicate search](/docs/8.x/setup-and-administration/8.1/on-site-deployment/containerized-components/bulk-duplicate-search)[Email Listener](/docs/8.x/setup-and-administration/8.1/on-site-deployment/containerized-components/email-listener-synchronization-service)[Machine learning service](/docs/8.x/setup-and-administration/8.1/on-site-deployment/containerized-components/machine-learning-service)\n",
+  "analysis": {
+    "word_count": 32,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:17:13.260001"
+}

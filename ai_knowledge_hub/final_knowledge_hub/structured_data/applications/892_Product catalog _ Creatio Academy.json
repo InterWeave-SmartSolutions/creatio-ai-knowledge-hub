@@ -1,0 +1,19 @@
+{
+  "id": 892,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/category/product-catalog",
+  "title": "Product catalog | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "Version: 8.3 Product categories and types Product conditions Copy conditions Product description",
+  "markdown": "Version: 8.3[Product categories and types](/docs/8.x/creatio-apps/products/finance-and-banking/financial-products/product-catalog-finance/form-bank-product-categories-and-types)[Product conditions](/docs/8.x/creatio-apps/products/finance-and-banking/financial-products/product-catalog-finance/form-product-conditions)[Copy conditions](/docs/8.x/creatio-apps/products/finance-and-banking/financial-products/product-catalog-finance/copy-product-with-conditions)[Product description](/docs/8.x/creatio-apps/products/finance-and-banking/financial-products/product-catalog-finance/add-product-selection-description)\n",
+  "analysis": {
+    "word_count": 12,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:32:30.372165"
+}

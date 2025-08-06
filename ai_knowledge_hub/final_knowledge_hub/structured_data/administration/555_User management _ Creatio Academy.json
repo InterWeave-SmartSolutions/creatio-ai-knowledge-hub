@@ -1,0 +1,19 @@
+{
+  "id": 555,
+  "url": "https://academy.creatio.com/docs/8.x/setup-and-administration/8.2/category/user-management",
+  "title": "User management | Creatio Academy",
+  "category": "administration",
+  "description": "",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 Organizational roles Functional roles Add users Import users from Excel Assign a user role The system user (Supervisor) Technical user Password recovery Unblock a user",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/setup-and-administration/category/user-management)** (8.3).\n\nVersion: 8.2[Organizational roles](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/organizational-roles)[Functional roles](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/functional-roles)[Add users](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/add-users)[Import users from Excel](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/import-users-from-excel)[Assign a user role](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/assign-a-user-role)[The system user (Supervisor)](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/change-the-system-user-supervisor)[Technical user](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/technical-user)[Password recovery](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/password-recovery)[Unblock a user](/docs/8.x/setup-and-administration/8.2/administration/user-and-access-management/user-management/unblock-a-user)\n",
+  "analysis": {
+    "word_count": 44,
+    "key_concepts": ["role"],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["role", "creatio", "intermediate", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:25:40.357240"
+}

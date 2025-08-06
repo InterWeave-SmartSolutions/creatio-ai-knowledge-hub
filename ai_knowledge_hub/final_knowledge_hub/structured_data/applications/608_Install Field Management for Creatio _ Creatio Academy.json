@@ -1,0 +1,25 @@
+{
+  "id": 608,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.1/products/more-apps/field-management/install-the-field-management-for-creatio-app",
+  "title": "Install Field Management for Creatio | Creatio Academy",
+  "category": "applications",
+  "description": "The Field Management for Creatio add-on can automate field staff tasks.",
+  "content": "This is documentation for Creatio 8.1 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.1 On this page The Field Management for Creatio add-on can automate field staff tasks. This lets you: Plan field staff meetings (\"visits\"). Build optimal routes between the meeting locations on the map. Maintain the visit agenda and guidelines. Keep a record of the employee’s activities during the visit. Create custom visit agenda and guidelines. Field staff uses Creatio mobile app in the field to record the meeting time frame and conduct presentations during a visit. Field Management for Creatio is fully compatible with all Creatio products. Use it as a framework for custom field apps. For example, field banking or field service. Install the app from the marketplace to access the field functionality. To do this: Open the System Designer, e.g., by clicking . Click Installed applications . The app management page opens. Click Add application → Choose from Marketplace . Install the \"Field Management\" app. If your Creatio application is deployed on-site, make sure that the application is not restricted from accessing the Internet, before you install Field Management for Creatio. To do this: Grant access to the website http://marketplace.creatio.com/ . Install the Field Management for Creatio app: http://marketplace.creatio.com/app/field-module-creatio . Learn more in a separate article: Manage apps . Important To access the field sales functionality, all field staff members must be licensed separately. See also ​ Set up visit rules and actions for sales reps Schedule sales rep visits Set up visit actions for sales reps Check-in verification for sales reps See also",
+  "markdown": "This is documentation for Creatio **8.1**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/products/more-apps/field-management/install-the-field-management-for-creatio-app)** (8.3).\n\nVersion: 8.1\n\nOn this page\n\nThe Field Management for Creatio add-on can automate field staff tasks.\n\nThis lets you:\n\n  * Plan field staff meetings (\"visits\").\n  * Build optimal routes between the meeting locations on the map.\n  * Maintain the visit agenda and guidelines.\n  * Keep a record of the employee’s activities during the visit.\n  * Create custom visit agenda and guidelines.\n\n\n\nField staff uses Creatio mobile app in the field to record the meeting time frame and conduct presentations during a visit. Field Management for Creatio is fully compatible with all Creatio products. Use it as a framework for custom field apps. For example, field banking or field service.\n\nInstall the app from the marketplace to access the field functionality. To do this:\n\n  1. Open the System Designer, e.g., by clicking ![btn_system_designer.png](https://academy.creatio.com/docs/sites/default/files/documentation/user/ru/field_sales/BPMonlineHelp/field_sales_install_app/btn_system_designer.png).\n  2. Click **Installed applications**. The app management page opens.\n  3. Click **Add application** → **Choose from Marketplace**.\n  4. Install the \"Field Management\" app.\n\n\n\nIf your Creatio application is deployed on-site, make sure that the application is not restricted from accessing the Internet, before you install Field Management for Creatio. To do this:\n\n  1. Grant access to the website [http://marketplace.creatio.com/](https://marketplace.creatio.com/).\n\n  2. Install the Field Management for Creatio app: [http://marketplace.creatio.com/app/field-module-creatio](https://marketplace.creatio.com/app/field-management).\n\nLearn more in a separate article: [Manage apps](https://academy.creatio.com/documents?id=1836).\n\n\n\n\nImportant\n\nTo access the field sales functionality, all field staff members must be licensed separately.\n\n* * *\n\n## See also​\n\n[Set up visit rules and actions for sales reps](https://academy.creatio.com/documents?id=2332)\n\n[Schedule sales rep visits](https://academy.creatio.com/documents?id=2333)\n\n[Set up visit actions for sales reps](https://academy.creatio.com/documents?id=2334)\n\n[Check-in verification for sales reps](https://academy.creatio.com/documents?id=2335)\n\n  * See also\n\n\n",
+  "analysis": {
+    "word_count": 264,
+    "key_concepts": ["mobile app", "marketplace"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": ["mobile ui", "offline", "synchronization", "responsive"],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "marketplace", "documentation", "mobile app", "advanced"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:26:44.605345"
+}

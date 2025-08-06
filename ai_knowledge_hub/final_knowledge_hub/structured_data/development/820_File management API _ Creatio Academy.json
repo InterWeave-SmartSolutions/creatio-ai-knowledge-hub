@@ -1,0 +1,19 @@
+{
+  "id": 820,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/file-management-api",
+  "title": "File management API | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Overview References",
+  "markdown": "Version: 8.3[Overview](/docs/8.x/dev/development-on-creatio-platform/back-end-development/api-for-file-management/overview)[References](/docs/8.x/dev/development-on-creatio-platform/file-management-references)\n",
+  "analysis": {
+    "word_count": 4,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "beginner",
+    "ai_tags": ["beginner", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:31:02.805652"
+}

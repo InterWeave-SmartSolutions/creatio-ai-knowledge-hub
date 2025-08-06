@@ -1,0 +1,477 @@
+{
+  "timestamp": "2025-07-28T14:15:01.727287",
+  "site_analysis": {
+    "base_url_status": 403,
+    "base_url_headers": {
+      "Date": "Mon, 28 Jul 2025 18:15:02 GMT",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "Keep-Alive": "timeout=60",
+      "Cache-Control": "max-age=1800, public",
+      "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+      "X-Drupal-Cache": "HIT",
+      "Content-language": "en",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "Vary": "Cookie",
+      "Age": "0",
+      "Cache-Tags": "MISS",
+      "Content-Encoding": "gzip"
+    },
+    "base_url_redirects": 1,
+    "redirect_chain": ["https://knowledge-hub.creatio.com/"],
+    "final_url": "https://knowledge-hub.creatio.com/solutions/",
+    "login_page_status": 200,
+    "login_page_headers": {
+      "Date": "Mon, 28 Jul 2025 18:15:03 GMT",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "Cache-Control": "max-age=600, public",
+      "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "Vary": "Cookie",
+      "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+      "Content-language": "en",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "SAMEORIGIN",
+      "From-Origin": "https://profile.creatio.com",
+      "X-Drupal-Cache": "MISS",
+      "Age": "1158",
+      "Cache-Tags": "HIT",
+      "Content-Security-Policy": "script-src 'self' 'nonce-7b27b198c312032ac3ef6394328ee635' 'strict-dynamic' www.gstatic.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net www.google.com; script-src-elem 'self' 'nonce-7b27b198c312032ac3ef6394328ee635' www.gstatic.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net www.google.com; frame-ancestors 'self'; object-src 'none'; base-uri 'none'",
+      "Content-Encoding": "gzip",
+      "Set-Cookie": "visid_incap_2885159=LGLyg5BbSxSecIezuF4fKia+h2gAAAAAQUIPAAAAAABzAqjundNkZ95KP6/QxhAK; expires=Tue, 28 Jul 2026 07:15:37 GMT; HttpOnly; path=/; Domain=.creatio.com, incap_ses_161_2885159=UtLbb9tS1EnZ1X3HCf07Aie+h2gAAAAAOE/CQBtWsHX2AAZ+Qrzerw==; path=/; Domain=.creatio.com",
+      "X-CDN": "Imperva",
+      "X-Iinfo": "16-53189214-53189223 NNNN CT(81 92 0) RT(1753726503139 70) q(0 0 2 1) r(3 3) U12"
+    },
+    "login_forms_count": 1,
+    "login_form_action": "/user/login?destination=hub/com",
+    "login_form_method": "post",
+    "login_form_fields": {
+      "name": {
+        "type": "email",
+        "value": "",
+        "required": true
+      },
+      "pass": {
+        "type": "password",
+        "value": "",
+        "required": true
+      },
+      "form_build_id": {
+        "type": "hidden",
+        "value": "form-cGquGaeQD5cG6XqbpXuDi4q4dzKpzos1GJwsiws4J-U",
+        "required": false
+      },
+      "form_id": {
+        "type": "hidden",
+        "value": "user_login_form",
+        "required": false
+      },
+      "op": {
+        "type": "submit",
+        "value": "Log in",
+        "required": false
+      }
+    },
+    "javascript_scripts_count": 5,
+    "csrf_tokens_found": 0
+  },
+  "authentication_analysis": {
+    "Set 1": {
+      "username": "amagown@interweave.biz",
+      "attempts": [
+        {
+          "method": "standard_form",
+          "result": {
+            "status_code": 400,
+            "headers": {
+              "Date": "Mon, 28 Jul 2025 18:15:03 GMT",
+              "Content-Type": "text/html; charset=UTF-8",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Keep-Alive": "timeout=60",
+              "Cache-Control": "no-cache, private",
+              "Age": "0",
+              "Cache-Tags": "MISS"
+            },
+            "form_data_sent": {
+              "name": "amagown@interweave.biz",
+              "form_build_id": "form-cGquGaeQD5cG6XqbpXuDi4q4dzKpzos1GJwsiws4J-U",
+              "form_id": "user_login_form",
+              "op": "Log in"
+            },
+            "response_size": 52,
+            "cookies_received": 0,
+            "redirect_location": null
+          }
+        },
+        {
+          "method": "json_payload",
+          "result": {
+            "status_code": 301,
+            "headers": {
+              "Date": "Mon, 28 Jul 2025 18:15:04 GMT",
+              "Content-Type": "text/html; charset=utf-8",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Keep-Alive": "timeout=60",
+              "Location": "https://profile.creatio.com/user/login?destination=hub/com",
+              "Content-language": "en",
+              "X-Content-Type-Options": "nosniff",
+              "X-Frame-Options": "SAMEORIGIN",
+              "Cache-Control": "must-revalidate, no-cache, private",
+              "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+              "Age": "0",
+              "Cache-Tags": "MISS",
+              "Content-Security-Policy": "script-src 'self' 'nonce-2b468ed2aad5e2aba5691fc3e83048b3' 'strict-dynamic' www.youtube.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net cdnjs.cloudflare.com libraries.creatio.com unpkg.com; script-src-elem 'self' 'nonce-2b468ed2aad5e2aba5691fc3e83048b3' www.youtube.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net cdnjs.cloudflare.com libraries.creatio.com unpkg.com; frame-ancestors 'self'; object-src 'none'; base-uri 'none'"
+            },
+            "content_type": "text/html; charset=utf-8",
+            "response_size": 478,
+            "cookies_received": 0
+          }
+        },
+        {
+          "method": "ajax_request",
+          "result": {
+            "status_code": 301,
+            "headers": {
+              "Date": "Mon, 28 Jul 2025 18:15:04 GMT",
+              "Content-Type": "text/html; charset=utf-8",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Keep-Alive": "timeout=60",
+              "Location": "https://profile.creatio.com/user/login?destination=hub/com",
+              "Content-language": "en",
+              "X-Content-Type-Options": "nosniff",
+              "X-Frame-Options": "SAMEORIGIN",
+              "Cache-Control": "must-revalidate, no-cache, private",
+              "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+              "Age": "0",
+              "Cache-Tags": "MISS",
+              "Content-Security-Policy": "script-src 'self' 'nonce-2ddd594fb8ec10e6e49c372a92686c21' 'strict-dynamic' www.youtube.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net cdnjs.cloudflare.com libraries.creatio.com unpkg.com; script-src-elem 'self' 'nonce-2ddd594fb8ec10e6e49c372a92686c21' www.youtube.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net cdnjs.cloudflare.com libraries.creatio.com unpkg.com; frame-ancestors 'self'; object-src 'none'; base-uri 'none'"
+            },
+            "content_type": "text/html; charset=utf-8",
+            "response_size": 478,
+            "cookies_received": 0
+          }
+        }
+      ]
+    },
+    "Set 2": {
+      "username": "bmagown@interweave.biz",
+      "attempts": [
+        {
+          "method": "standard_form",
+          "result": {
+            "status_code": 400,
+            "headers": {
+              "Date": "Mon, 28 Jul 2025 18:15:04 GMT",
+              "Content-Type": "text/html; charset=UTF-8",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Keep-Alive": "timeout=60",
+              "Cache-Control": "no-cache, private",
+              "Age": "0",
+              "Cache-Tags": "MISS"
+            },
+            "form_data_sent": {
+              "name": "bmagown@interweave.biz",
+              "form_build_id": "form-cGquGaeQD5cG6XqbpXuDi4q4dzKpzos1GJwsiws4J-U",
+              "form_id": "user_login_form",
+              "op": "Log in"
+            },
+            "response_size": 52,
+            "cookies_received": 0,
+            "redirect_location": null
+          }
+        },
+        {
+          "method": "json_payload",
+          "result": {
+            "status_code": 301,
+            "headers": {
+              "Date": "Mon, 28 Jul 2025 18:15:04 GMT",
+              "Content-Type": "text/html; charset=utf-8",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Keep-Alive": "timeout=60",
+              "Location": "https://profile.creatio.com/user/login?destination=hub/com",
+              "Content-language": "en",
+              "X-Content-Type-Options": "nosniff",
+              "X-Frame-Options": "SAMEORIGIN",
+              "Cache-Control": "must-revalidate, no-cache, private",
+              "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+              "Age": "0",
+              "Cache-Tags": "MISS",
+              "Content-Security-Policy": "script-src 'self' 'nonce-f309bc1dcd8f24888d47fb90ecc1a005' 'strict-dynamic' www.youtube.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net cdnjs.cloudflare.com libraries.creatio.com unpkg.com; script-src-elem 'self' 'nonce-f309bc1dcd8f24888d47fb90ecc1a005' www.youtube.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net cdnjs.cloudflare.com libraries.creatio.com unpkg.com; frame-ancestors 'self'; object-src 'none'; base-uri 'none'"
+            },
+            "content_type": "text/html; charset=utf-8",
+            "response_size": 478,
+            "cookies_received": 0
+          }
+        },
+        {
+          "method": "ajax_request",
+          "result": {
+            "status_code": 301,
+            "headers": {
+              "Date": "Mon, 28 Jul 2025 18:15:04 GMT",
+              "Content-Type": "text/html; charset=utf-8",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Keep-Alive": "timeout=60",
+              "Location": "https://profile.creatio.com/user/login?destination=hub/com",
+              "Content-language": "en",
+              "X-Content-Type-Options": "nosniff",
+              "X-Frame-Options": "SAMEORIGIN",
+              "Cache-Control": "must-revalidate, no-cache, private",
+              "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+              "Age": "0",
+              "Cache-Tags": "MISS",
+              "Content-Security-Policy": "script-src 'self' 'nonce-5dfa5b74dc99279972925376302e9cfc' 'strict-dynamic' www.youtube.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net cdnjs.cloudflare.com libraries.creatio.com unpkg.com; script-src-elem 'self' 'nonce-5dfa5b74dc99279972925376302e9cfc' www.youtube.com consent.cookiebot.com consentcdn.cookiebot.com cdn.jsdelivr.net cdnjs.cloudflare.com libraries.creatio.com unpkg.com; frame-ancestors 'self'; object-src 'none'; base-uri 'none'"
+            },
+            "content_type": "text/html; charset=utf-8",
+            "response_size": 478,
+            "cookies_received": 0
+          }
+        }
+      ]
+    }
+  },
+  "security_measures": {
+    "rate_limiting": [
+      {
+        "attempt": 1,
+        "status_code": 403,
+        "response_time": 0.11331677436828613,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 2,
+        "status_code": 403,
+        "response_time": 0.11673331260681152,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 3,
+        "status_code": 403,
+        "response_time": 0.11505722999572754,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 4,
+        "status_code": 403,
+        "response_time": 0.1144559383392334,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 5,
+        "status_code": 403,
+        "response_time": 0.17371225357055664,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 6,
+        "status_code": 403,
+        "response_time": 0.22484683990478516,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 7,
+        "status_code": 403,
+        "response_time": 0.28288793563842773,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 8,
+        "status_code": 403,
+        "response_time": 0.14262819290161133,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 9,
+        "status_code": 403,
+        "response_time": 0.21878623962402344,
+        "rate_limit_headers": {}
+      },
+      {
+        "attempt": 10,
+        "status_code": 403,
+        "response_time": 0.21329069137573242,
+        "rate_limit_headers": {}
+      }
+    ],
+    "client_ip": "98.118.9.96",
+    "bot_detection": {
+      "has_captcha": false,
+      "has_cloudflare": false,
+      "has_bot_detection": true,
+      "suspicious_headers": {
+        "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+        "X-Drupal-Cache": "HIT",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN"
+      }
+    }
+  },
+  "access_attempts": {
+    "unauthenticated_access": {
+      "https://knowledge-hub.creatio.com/solutions/": {
+        "status_code": 403,
+        "headers": {
+          "Date": "Mon, 28 Jul 2025 18:15:04 GMT",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "keep-alive",
+          "Keep-Alive": "timeout=60",
+          "Cache-Control": "max-age=1800, public",
+          "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+          "X-Drupal-Cache": "HIT",
+          "Content-language": "en",
+          "X-Content-Type-Options": "nosniff",
+          "X-Frame-Options": "SAMEORIGIN",
+          "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+          "Vary": "Cookie",
+          "Age": "0",
+          "Cache-Tags": "MISS",
+          "Content-Encoding": "gzip"
+        },
+        "redirect_location": null,
+        "content_preview": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"hub_site-solutions\">\n  <head>\n    <!-- Google Tag Manager -->\n    <script nonce=\"25f015b62a19d1c71c82111feb12a146\">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('["
+      },
+      "https://knowledge-hub.creatio.com/solutions/general": {
+        "status_code": 403,
+        "headers": {
+          "Date": "Mon, 28 Jul 2025 18:15:04 GMT",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "keep-alive",
+          "Keep-Alive": "timeout=60",
+          "Cache-Control": "max-age=1800, public",
+          "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+          "X-Drupal-Cache": "HIT",
+          "Content-language": "en",
+          "X-Content-Type-Options": "nosniff",
+          "X-Frame-Options": "SAMEORIGIN",
+          "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+          "Vary": "Cookie",
+          "Age": "0",
+          "Cache-Tags": "MISS",
+          "Content-Encoding": "gzip"
+        },
+        "redirect_location": null,
+        "content_preview": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"hub_site-solutions\">\n  <head>\n    <!-- Google Tag Manager -->\n    <script nonce=\"a6a2413e3d93b35de9e5122b3cb30a09\">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('["
+      },
+      "https://knowledge-hub.creatio.com/solutions/crm": {
+        "status_code": 404,
+        "headers": {
+          "Date": "Mon, 28 Jul 2025 18:15:05 GMT",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "keep-alive",
+          "Keep-Alive": "timeout=60",
+          "Cache-Control": "max-age=1800, public",
+          "X-Drupal-Dynamic-Cache": "HIT",
+          "X-Drupal-Cache": "MISS",
+          "Content-language": "en",
+          "X-Content-Type-Options": "nosniff",
+          "X-Frame-Options": "SAMEORIGIN",
+          "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+          "Vary": "Cookie",
+          "Age": "1805",
+          "Cache-Tags": "HIT",
+          "Content-Encoding": "gzip"
+        },
+        "redirect_location": null,
+        "content_preview": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"hub_site-solutions\">\n  <head>\n    <!-- Google Tag Manager -->\n    <script nonce=\"b8487bf38460df4c5fc5f341378f4b00\">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('["
+      },
+      "https://knowledge-hub.creatio.com/guides": {
+        "status_code": 400,
+        "headers": {
+          "Date": "Mon, 28 Jul 2025 18:15:05 GMT",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "keep-alive",
+          "Keep-Alive": "timeout=60",
+          "Cache-Control": "no-cache, private",
+          "Age": "0",
+          "Cache-Tags": "MISS"
+        },
+        "redirect_location": null,
+        "content_preview": "The provided host name is not valid for this server."
+      },
+      "https://knowledge-hub.creatio.com/articles": {
+        "status_code": 400,
+        "headers": {
+          "Date": "Mon, 28 Jul 2025 18:15:05 GMT",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "keep-alive",
+          "Keep-Alive": "timeout=60",
+          "Cache-Control": "no-cache, private",
+          "Age": "0",
+          "Cache-Tags": "MISS"
+        },
+        "redirect_location": null,
+        "content_preview": "The provided host name is not valid for this server."
+      }
+    },
+    "user_agent_tests": {
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb": {
+        "status_code": 403,
+        "blocked": true
+      },
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap": {
+        "status_code": 403,
+        "blocked": true
+      },
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36": {
+        "status_code": 403,
+        "blocked": true
+      },
+      "CreatioBot/1.0 (+https://www.creatio.com/bot)": {
+        "status_code": 403,
+        "blocked": true
+      },
+      "curl/7.68.0": {
+        "status_code": 403,
+        "blocked": true
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "issue": "No successful login responses detected",
+      "recommendation": "Verify credentials are correct and account is active",
+      "priority": "high"
+    },
+    {
+      "issue": "Bot detection or CAPTCHA present",
+      "recommendation": "Use browser automation tools (Selenium) or request API access",
+      "priority": "high"
+    }
+  ],
+  "session_analysis": {
+    "cookie_analysis": {
+      "initial_cookies": {
+        "visid_incap_2885159": "D3RVoTP7RZeQV/JCozLP4ie+h2gAAAAAQUIPAAAAAACX9S4XApUMcle5EZbvFSSZ",
+        "incap_ses_161_2885159": "78jiP6HVfwpX133HCf07AjO+h2gAAAAA8CduR4cPZnGpt9f316nHYw=="
+      },
+      "post_login_cookies": {
+        "visid_incap_2885159": "D3RVoTP7RZeQV/JCozLP4ie+h2gAAAAAQUIPAAAAAACX9S4XApUMcle5EZbvFSSZ",
+        "incap_ses_161_2885159": "78jiP6HVfwpX133HCf07AjO+h2gAAAAA8CduR4cPZnGpt9f316nHYw=="
+      },
+      "new_cookies": {},
+      "login_response_status": 400,
+      "login_final_url": "https://knowledge-hub.creatio.com/user/login?destination=hub/com"
+    },
+    "authenticated_access_test": {
+      "status_code": 403,
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"hub_site-solutions\">\n  <head>\n    <!-- Google Tag Manager -->\n    <script nonce=\"9c92037033cf8b23ceacb0c21febc28f\">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[",
+      "has_login_indicators": true
+    }
+  }
+}

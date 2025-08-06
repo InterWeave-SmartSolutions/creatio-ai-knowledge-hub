@@ -1,0 +1,25 @@
+{
+  "id": 658,
+  "url": "https://academy.creatio.com/docs/8.x/no-code-customization/category/bpm-tools",
+  "title": "BPM tools | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Business process setup Process elements reference Process element use cases Process examples Process administration Dynamic case setup (DCM)",
+  "markdown": "Version: 8.3[Business process setup](/docs/8.x/no-code-customization/category/business-process-setup)[Process elements reference](/docs/8.x/no-code-customization/category/process-elements-reference)[Process element use cases](/docs/8.x/no-code-customization/category/process-element-use-cases)[Process examples](/docs/8.x/no-code-customization/category/process-examples)[Process administration](/docs/8.x/no-code-customization/category/process-administration)[Dynamic case setup (DCM)](/docs/8.x/no-code-customization/category/dynamic-case-setup-dcm)\n",
+  "analysis": {
+    "word_count": 20,
+    "key_concepts": ["business process", "case"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": ["automation", "workflow", "process design", "bpm"],
+    "difficulty": "advanced",
+    "ai_tags": ["case", "creatio", "documentation", "business process", "advanced"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:27:44.614378"
+}

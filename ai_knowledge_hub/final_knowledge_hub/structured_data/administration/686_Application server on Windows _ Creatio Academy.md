@@ -1,0 +1,27 @@
+# Application server on Windows | Creatio Academy
+
+**Category:** administration **Difficulty:** intermediate **Word Count:** 45
+**URL:**
+https://academy.creatio.com/docs/8.x/setup-and-administration/8.2/category/application-server-on-windows
+
+## Description
+
+## Key Concepts
+
+sql
+
+## Use Cases
+
+building applications, custom development, API integration, system
+administration, user management
+
+## Content
+
+This is documentation for Creatio **8.2**.
+
+For up-to-date documentation, see the
+**[latest version](/docs/8.x/setup-and-administration/category/application-server-on-windows)**
+(8.3).
+
+Version:
+8.2[Check required components](/docs/8.x/setup-and-administration/8.2/on-site-deployment/application-server-on-windows/enable-required-windows-components)[ConnectionStrings.config for MS SQL](/docs/8.x/setup-and-administration/8.2/on-site-deployment/application-server-on-windows/modify-connectionstrings-config-for-ms-sql-server)[ConnectionStrings.config for Oracle](/docs/8.x/setup-and-administration/8.2/on-site-deployment/application-server-on-windows/modify-connectionstrings-config-for-oracle-database)[ConnectionStrings.config for PostgreSQL](/docs/8.x/setup-and-administration/8.2/on-site-deployment/application-server-on-windows/modify-connectionstrings-config-for-postgresql)[Set up Web.config](/docs/8.x/setup-and-administration/8.2/on-site-deployment/application-server-on-windows/modify-web-config)[Set up IIS](/docs/8.x/setup-and-administration/8.2/on-site-deployment/application-server-on-windows/deploy-creatio-application-server-on-iis)[Set up WebSockets](/docs/8.x/setup-and-administration/8.2/on-site-deployment/application-server-on-windows/set-up-websockets)[Switch Creatio to HTTPS](/docs/8.x/setup-and-administration/8.2/on-site-deployment/application-server-on-windows/switch-creatio-website-from-http-to-https)

@@ -1,0 +1,19 @@
+{
+  "id": 544,
+  "url": "https://academy.creatio.com/docs/8.x/mobile/mobile-branding-references",
+  "title": "References | Creatio Academy",
+  "category": "general",
+  "description": "",
+  "content": "SDKConsole parameters",
+  "markdown": "[SDKConsole parameters](/docs/8.x/mobile/mobile-development/customization/mobile-application-branding/references/sdkconsole-utility-settings)\n",
+  "analysis": {
+    "word_count": 2,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:25:24.220710"
+}

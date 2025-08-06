@@ -1,0 +1,34 @@
+{
+  "id": 842,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.2/getting-started/development-recommendations",
+  "title": "Creatio development recommendations and best practices | Creatio Academy",
+  "category": "development",
+  "description": "Creatio is a no-code platform designed to accelerate application development, implementation, and scaling. The platform is built with customization, flexibility, and scalability in mind. This enables creating applications by developers of varying skill levels and proficiencies – from a business analyst to a full-stack developer.",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 On this page Level: beginner Creatio is a no-code platform designed to accelerate application development, implementation, and scaling. The platform is built with customization, flexibility, and scalability in mind. This enables creating applications by developers of varying skill levels and proficiencies – from a business analyst to a full-stack developer. The CRM products based on the Creatio platform are presented on the figure below. The Creatio platform also offers innovative solutions for business process management. Creatio provides a wide variety of tools that let you develop new and modify existing applications. Learn more about the platform tools: Application development in Creatio , Development tools . Developer skills requirements ​ Any employee with a set of required skills can act as a Creatio developer. Minimum skills requirements : more than 6 months of C#, JavaScript, and T-SQL (PL-SQL) experience. Recommended skills requirements : more than 1 year of C#, JavaScript, and T-SQL (PL-SQL) experience. Knowledge of WCF, OData, and the RequireJS library. Creatio development guidelines ​ Creatio developers and partners compiled a set of guidelines as a result of their experience with the development of new features. Several employees can develop simultaneously in their personal development environments. Main development guidelines : Only develop using a development environment and the Default configuration. Only develop using a user-made package with all dependencies and data bindings installed. Use a prefix for custom schemas ( Usr by default). Use a version control system when planning code revisions or co-development. Resources ​ Development tools E-learning courses ​ Setup and administration Development on Creatio platform Developer skills requirements Creatio development guidelines Resources E-learning courses",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/getting-started/development-recommendations)** (8.3).\n\nVersion: 8.2\n\nOn this page\n\nLevel: beginner\n\n**Creatio** is a no-code platform designed to accelerate application development, implementation, and scaling. The platform is built with customization, flexibility, and scalability in mind. This enables creating applications by developers of varying skill levels and proficiencies – from a business analyst to a full-stack developer.\n\nThe CRM products based on the Creatio platform are presented on the figure below.\n\n![](https://academy.creatio.com/sites/default/files/images/training/enu_creatio_products.png)\n\nThe Creatio platform also offers innovative solutions for business process management.\n\nCreatio provides a wide variety of tools that let you develop new and modify existing applications. Learn more about the platform tools: [Application development in Creatio](https://academy.creatio.com/documents?ver=8.2&id=15081), [Development tools](https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/development-tools).\n\n## Developer skills requirements​\n\nAny employee with a set of required skills can act as a Creatio developer.\n\n**Minimum skills requirements** : more than 6 months of C#, JavaScript, and T-SQL (PL-SQL) experience.\n\n**Recommended skills requirements** : more than 1 year of C#, JavaScript, and T-SQL (PL-SQL) experience. Knowledge of WCF, OData, and the RequireJS library.\n\n## Creatio development guidelines​\n\nCreatio developers and partners compiled a set of guidelines as a result of their experience with the development of new features. Several employees can develop simultaneously in their personal development environments.\n\nMain **development guidelines** :\n\n  * Only develop using a development environment and the `Default` configuration.\n  * Only develop using a user-made package with all dependencies and data bindings installed.\n  * Use a prefix for custom schemas (`Usr` by default).\n  * Use a version control system when planning code revisions or co-development.\n\n\n\n* * *\n\n## Resources​\n\n[Development tools](https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/category/development-tools)\n\n* * *\n\n## E-learning courses​\n\n[Setup and administration ](https://academy.creatio.com/online-courses/setup-and-administration)\n\n[Development on Creatio platform](https://academy.creatio.com/e-learning/development-creatio-platform)\n\n  * Developer skills requirements\n  * Creatio development guidelines\n  * Resources\n  * E-learning courses\n\n\n",
+  "analysis": {
+    "word_count": 286,
+    "key_concepts": ["business process", "configuration", "odata", "sql", "package", "no-code", "customization"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": ["automation", "workflow", "process design", "bpm"],
+    "difficulty": "intermediate",
+    "ai_tags": [
+      "creatio",
+      "package",
+      "intermediate",
+      "sql",
+      "documentation",
+      "odata",
+      "configuration",
+      "business process"
+    ]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:31:29.592162"
+}

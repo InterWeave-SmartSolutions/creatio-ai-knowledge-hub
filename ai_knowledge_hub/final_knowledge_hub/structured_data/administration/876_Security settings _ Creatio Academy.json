@@ -1,0 +1,19 @@
+{
+  "id": 876,
+  "url": "https://academy.creatio.com/docs/8.x/setup-and-administration/8.0/category/security-settings",
+  "title": "Security settings | Creatio Academy",
+  "category": "administration",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Information security settings Secure file upload HTTP response headers Remote access for Creatio support Sensitive data security IP restrictions",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/setup-and-administration/category/security-settings)** (8.3).\n\nVersion: 8.0[Information security settings](/docs/8.x/setup-and-administration/8.0/administration/security-settings/recommended-information-security-settings)[Secure file upload](/docs/8.x/setup-and-administration/8.0/administration/security-settings/secure-file-upload)[HTTP response headers](/docs/8.x/setup-and-administration/8.0/administration/security-settings/manage-http-headers)[Remote access for Creatio support](/docs/8.x/setup-and-administration/8.0/administration/security-settings/remote-access-for-creatio-support)[Sensitive data security](/docs/8.x/setup-and-administration/8.0/administration/security-settings/store-secrets-in-vault)[IP restrictions](/docs/8.x/setup-and-administration/8.0/administration/security-settings/limit-ip-for-login)\n",
+  "analysis": {
+    "word_count": 38,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:32:10.967210"
+}

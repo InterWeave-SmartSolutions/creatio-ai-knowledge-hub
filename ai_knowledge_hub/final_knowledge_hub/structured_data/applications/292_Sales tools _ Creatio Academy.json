@@ -1,0 +1,19 @@
+{
+  "id": 292,
+  "url": "https://academy.creatio.com/docs/8.x/creatio-apps/8.0/category/sales-tools",
+  "title": "Sales tools | Creatio Academy",
+  "category": "applications",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Long sales Short sales, orders, and invoices Field sales Сhannel sales Forecasting Products and prices Document flow Projects",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/creatio-apps/category/sales-tools)** (8.3).\n\nVersion: 8.0[Long sales](/docs/8.x/creatio-apps/8.0/category/long-sales)[Short sales, orders, and invoices](/docs/8.x/creatio-apps/8.0/category/short-sales-orders-and-invoices)[Field sales](/docs/8.x/creatio-apps/8.0/category/field-sales)[Сhannel sales](/docs/8.x/creatio-apps/8.0/category/сhannel-sales)[Forecasting](/docs/8.x/creatio-apps/8.0/category/forecasting)[Products and prices](/docs/8.x/creatio-apps/8.0/category/products-and-prices)[Document flow](/docs/8.x/creatio-apps/8.0/category/document-flow)[Projects](/docs/8.x/creatio-apps/8.0/category/projects)\n",
+  "analysis": {
+    "word_count": 37,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:20:10.631707"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 135,
+  "url": "https://academy.creatio.com/docs/8.x/dev/development-on-creatio-platform/8.0/category/app-development",
+  "title": "First Creatio app development | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "This is documentation for Creatio 8.0 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.0 Development Transfer",
+  "markdown": "This is documentation for Creatio **8.0**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/dev/development-on-creatio-platform/category/app-development)** (8.3).\n\nVersion: 8.0[Development](/docs/8.x/dev/development-on-creatio-platform/8.0/app-development)[Transfer](/docs/8.x/dev/development-on-creatio-platform/8.0/getting-started/first-app/transfer-application)\n",
+  "analysis": {
+    "word_count": 21,
+    "key_concepts": [],
+    "use_cases": ["building applications", "custom development", "API integration"],
+    "related_topics": [],
+    "difficulty": "advanced",
+    "ai_tags": ["creatio", "advanced", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:17:00.302321"
+}

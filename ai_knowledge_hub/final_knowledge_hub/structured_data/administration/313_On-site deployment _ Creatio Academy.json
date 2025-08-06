@@ -1,0 +1,25 @@
+{
+  "id": 313,
+  "url": "https://academy.creatio.com/docs/8.x/setup-and-administration/8.2/category/on-site-deployment",
+  "title": "On-site deployment | Creatio Academy",
+  "category": "administration",
+  "description": "",
+  "content": "This is documentation for Creatio 8.2 . For up-to-date documentation, see the latest version ( 8.3 ). Version: 8.2 System requirements General deployment procedure Database server Caching server Application server on Linux Application server on Windows Additional setup Сontainerized components FAQ",
+  "markdown": "This is documentation for Creatio **8.2**.\n\nFor up-to-date documentation, see the **[latest version](/docs/8.x/setup-and-administration/category/on-site-deployment)** (8.3).\n\nVersion: 8.2[System requirements](/docs/8.x/setup-and-administration/8.2/category/system-requirements)[General deployment procedure](/docs/8.x/setup-and-administration/8.2/on-site-deployment/general-creatio-deployment-procedure)[Database server](/docs/8.x/setup-and-administration/8.2/category/database-server)[Caching server](/docs/8.x/setup-and-administration/8.2/category/caching-server)[Application server on Linux](/docs/8.x/setup-and-administration/8.2/category/application-server-on-linux)[Application server on Windows](/docs/8.x/setup-and-administration/8.2/category/application-server-on-windows)[Additional setup](/docs/8.x/setup-and-administration/8.2/category/additional-setup)[Сontainerized components](/docs/8.x/setup-and-administration/8.2/category/сontainerized-components)[FAQ](/docs/8.x/setup-and-administration/8.2/category/faq)\n",
+  "analysis": {
+    "word_count": 41,
+    "key_concepts": ["database"],
+    "use_cases": [
+      "building applications",
+      "custom development",
+      "API integration",
+      "system administration",
+      "user management"
+    ],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "database", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:20:37.099264"
+}

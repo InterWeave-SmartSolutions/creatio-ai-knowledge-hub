@@ -1,0 +1,19 @@
+{
+  "id": 828,
+  "url": "https://academy.creatio.com/docs/8.x/no-code-customization/category/custom-localization",
+  "title": "Custom localization | Creatio Academy",
+  "category": "development",
+  "description": "",
+  "content": "Version: 8.3 Manage languages Translate the UI Import from Excel The Key column",
+  "markdown": "Version: 8.3[Manage languages](/docs/8.x/no-code-customization/customization-tools/custom-localization/manage-ui-languages)[Translate the UI](/docs/8.x/no-code-customization/customization-tools/custom-localization/localize-ui-via-the-\\[translation\\]-section)[Import from Excel](/docs/8.x/no-code-customization/customization-tools/custom-localization/import-translations-from-excel)[The Key column](/docs/8.x/no-code-customization/customization-tools/custom-localization/determine-translation-string-context-by-the-key-column)\n",
+  "analysis": {
+    "word_count": 13,
+    "key_concepts": [],
+    "use_cases": [],
+    "related_topics": [],
+    "difficulty": "intermediate",
+    "ai_tags": ["intermediate", "creatio", "documentation"]
+  },
+  "ai_optimized": true,
+  "processed_at": "2025-07-28T13:31:12.078294"
+}
